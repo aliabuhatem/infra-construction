@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #213B4D;
+  --color-secondary: #1F93A4;
+  --color-gray-mid: #5E5E5E;
+  --color-white: #ffffff;
+
+  --font-heading: var(--font-barlow-condensed), "Arial Narrow", sans-serif;
+  --font-body: var(--font-source-sans), Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #213B4D;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+}
+
+/* Marquee ticker */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Smooth image zoom on card hover */
+.img-zoom img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-zoom:hover img {
+  transform: scale(1.06);
+}
