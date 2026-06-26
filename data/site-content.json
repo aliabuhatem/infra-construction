@@ -503,5 +503,15 @@
       "favicon": "/favicon.ico"
     }
   },
-  "media": []
+  "media": [
+    {
+      "id": "1782482244056",
+      "title": "West Assiut Plateau Road.jpg.jpeg",
+      "alt": "West Assiut Plateau Road.jpg.jpeg",
+      "category": "hero",
+      "url": "/admin-uploads/1782482243195-west-assiut-plateau-road.jpg.jpeg",
+      "source": "upload",
+      "createdAt": "2026-06-26T13:57:24.056Z"
+    }
+  ]
 }
