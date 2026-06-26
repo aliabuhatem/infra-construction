@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Allow the coming-soon page and Next.js internals through
+  // Always allow these paths through
   if (
     pathname === "/coming-soon" ||
     pathname.startsWith("/admin") ||
@@ -17,8 +17,20 @@ export function middleware(request: NextRequest) {
   ) {
     return NextResponse.next();
   }
-  return NextResponse.next();
-  //return NextResponse.redirect(new URL("/coming-soon", request.url));
+
+  // If coming soon mode is not enabled, show the real site to everyone
+  if (process.env.COMING_SOON !== "true") {
+    return NextResponse.next();
+  }
+
+  // If the user has an admin session cookie, show them the real site
+  const adminCookie = request.cookies.get("infra_admin_session");
+  if (adminCookie?.value) {
+    return NextResponse.next();
+  }
+
+  // Otherwise redirect public visitors to coming soon
+  return NextResponse.redirect(new URL("/coming-soon", request.url));
 }
 
 export const config = {
