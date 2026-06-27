@@ -10,7 +10,7 @@
       "ctaSecondaryText": "About Us",
       "locationsLabel": "Operating in",
       "locationsList": "UAE · Egypt · Yemen · Canada",
-      "backgroundImage": "/admin-uploads/1782482243195-west-assiut-plateau-road.jpg.jpeg"
+      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
     },
     "home_statement": {
       "eyebrowLabel": "Est. 2000",
@@ -20,6 +20,7 @@
       "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
       "cert1": "ISO 9001",
       "cert2": "ISO 14001",
+      "cert3": "OHSAS 18001",
       "linkText": "Our Story"
     },
     "home_sectors_header": {
@@ -193,13 +194,13 @@
       "image": "/media/company-operating-philosophy.jpeg"
     },
     "about_leadership_founder": {
-      "name": "MR. Hani Sahooly",
+      "name": "Mr. Hani Sahooly",
       "title": "Founder, HS Group",
       "image": "/media/FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.png",
       "bio": "Founder and chairman with over three decades of experience in regional infrastructure delivery."
     },
     "about_leadership_2": {
-      "name": "Mr. Khaled Alariqee",
+      "name": "Mr. Mostafa Yaslem",
       "title": "Executive Leadership",
       "image": "/media/Mr. Khaled Alariqee photo.png",
       "bio": "Senior leader overseeing operations and project delivery."
