@@ -6,7 +6,7 @@ import styles from "./AdminPanel.module.css";
 /* ─────────────────────────────────────────────
    HELPERS
 ───────────────────────────────────────────── */
-const blankStore = { content: {}, media: [] };
+const blankStore = { content: {}, media: [], _deletedSections: [] };
 
 const isImagePath = (v) =>
   typeof v === "string" &&
@@ -282,12 +282,17 @@ export default function AdminPanel() {
 
   function addSection(sectionId, firstFieldName) {
     if (!sectionId) return;
-    updateField(sectionId.trim(), firstFieldName || "title", "");
+    const id = sectionId.trim();
+    // If this section was previously deleted, un-delete it
+    setStore((cur) => ({
+      ...cur,
+      _deletedSections: (Array.isArray(cur._deletedSections) ? cur._deletedSections : []).filter((s) => s !== id),
+    }));
+    updateField(id, firstFieldName || "title", "");
     setAddingSection(false);
     setNewSectionId("");
-    // Auto-expand the new section
-    setCollapsed((c) => ({ ...c, [sectionId]: false }));
-    showToast("success", `Section "${sectionId}" added`);
+    setCollapsed((c) => ({ ...c, [id]: false }));
+    showToast("success", `Section "${id}" added`);
   }
 
   function deleteSection(section) {
@@ -295,7 +300,8 @@ export default function AdminPanel() {
       setStore((cur) => {
         const content = { ...cur.content };
         delete content[section];
-        return { ...cur, content };
+        const prev = Array.isArray(cur._deletedSections) ? cur._deletedSections : [];
+        return { ...cur, content, _deletedSections: [...new Set([...prev, section])] };
       });
       setHasUnsaved(true);
       setConfirmDialog(null);

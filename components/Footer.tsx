@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ContentText from "@/components/admin-panel/ContentText";
 
 const B = "var(--font-source-sans), Arial, sans-serif";
 
@@ -77,7 +78,7 @@ export default function Footer() {
             <span className="text-2xl font-light text-[#4FC3B7]">CONSTRUCTION</span>
           </div>
           <p className="text-white/60 text-sm leading-relaxed mb-5" style={{ fontFamily: B }}>
-            A leading contracting company delivering world-class infrastructure, buildings, and industrial projects since 2000.
+            <ContentText section="footer" name="tagline" fallback="A leading contracting company delivering world-class infrastructure, buildings, and industrial projects since 2000." />
           </p>
           <div className="flex gap-2 mb-5">
             {["ISO 9001", "ISO 14001"].map((cert) => (

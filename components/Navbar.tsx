@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import ContentText from "@/components/admin-panel/ContentText";
 
 const B = "var(--font-source-sans), Arial, sans-serif";
 
@@ -196,7 +197,7 @@ export default function Navbar() {
           className="hidden lg:inline-flex items-center gap-2 px-6 py-2.5 bg-[#1F93A4] text-white text-[13px] font-bold tracking-wider uppercase hover:bg-white hover:text-[#213B4D] transition-all duration-300"
           style={{ fontFamily: B }}
         >
-          Contact Us
+          <ContentText section="navbar" name="ctaText" fallback="Contact Us" />
         </Link>
 
         <button

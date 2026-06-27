@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ContentText from "@/components/admin-panel/ContentText";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -9,6 +10,7 @@ interface Feature      { title: string; body: string }
 interface FAQ          { q: string; a: string }
 
 interface SectorLayoutProps {
+  sectionKey?: string;
   eyebrow: string;
   heroTitle: string;
   heroSubtitle: string;
@@ -56,21 +58,18 @@ const SERVICE_ICONS = [
   </svg>,
 ];
 
-function Eyebrow({ text, light = false }: { text: string; light?: boolean }) {
+function Eyebrow({ text }: { text: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-4">
       <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-      <p
-        className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
-        style={{ fontFamily: B }}
-      >
+      <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
         {text}
       </p>
     </div>
   );
 }
 
-function SectionHeading({ text, light = false, center = false }: { text: string; light?: boolean; center?: boolean }) {
+function SectionHeading({ text, light = false, center = false }: { text: React.ReactNode; light?: boolean; center?: boolean }) {
   return (
     <h2
       className={`uppercase leading-tight ${light ? "text-white" : "text-[#213B4D]"} ${center ? "text-center" : ""}`}
@@ -84,10 +83,16 @@ function SectionHeading({ text, light = false, center = false }: { text: string;
 /* ── Component ─────────────────────────────────────────────────────────── */
 
 export default function SectorLayout({
+  sectionKey,
   eyebrow, heroTitle, heroSubtitle, heroDescription, heroImage,
   intro, serviceGroups, features, process, whyUs,
   industries, faqs, ctaTitle, ctaBody,
 }: SectorLayoutProps) {
+  const sk = sectionKey;
+
+  const T = (section: string, name: string, fallback: string): React.ReactNode =>
+    sk ? <ContentText section={section} name={name} fallback={fallback} /> : fallback;
+
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────── */}
@@ -103,19 +108,19 @@ export default function SectorLayout({
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/300 via-[#213B4D]/85 to-[#213B4D]/15" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
-          <Eyebrow text={eyebrow} />
+          <Eyebrow text={T(sk || "", "eyebrow", eyebrow)} />
           <h1
             className="text-white uppercase leading-[0.92] mb-5"
             style={{ fontFamily: H, fontSize: "clamp(44px, 7.5vw, 90px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            {heroTitle}
+            {T(sk || "", "heroTitle", heroTitle)}
           </h1>
           <p className="text-white/60 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
-            {heroSubtitle}
+            {T(sk || "", "heroSubtitle", heroSubtitle)}
           </p>
           {heroDescription && (
             <p className="text-white/40 text-[13px] max-w-lg leading-relaxed mt-3" style={{ fontFamily: B }}>
-              {heroDescription}
+              {T(sk || "", "heroDescription", heroDescription)}
             </p>
           )}
         </div>
@@ -142,7 +147,7 @@ export default function SectorLayout({
             <div className="mt-6 space-y-4">
               {intro.map((para, i) => (
                 <p key={i} className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
-                  {para}
+                  {T(`${sk}_intro`, `p${i + 1}`, para)}
                 </p>
               ))}
             </div>
@@ -158,16 +163,17 @@ export default function SectorLayout({
             </div>
             <ul className="space-y-5">
               {features.map((f, i) => (
-                <li key={f.title} className="border-b border-white/8 pb-5 last:border-0 last:pb-0 flex gap-4">
-                  <span
-                    className="text-[#1F93A4] text-[13px] font-bold shrink-0 mt-0.5"
-                    style={{ fontFamily: H }}
-                  >
+                <li key={i} className="border-b border-white/8 pb-5 last:border-0 last:pb-0 flex gap-4">
+                  <span className="text-[#1F93A4] text-[13px] font-bold shrink-0 mt-0.5" style={{ fontFamily: H }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <div className="text-white text-[13px] font-bold mb-1" style={{ fontFamily: B }}>{f.title}</div>
-                    <div className="text-white/45 text-[12px] leading-relaxed" style={{ fontFamily: B }}>{f.body}</div>
+                    <div className="text-white text-[13px] font-bold mb-1" style={{ fontFamily: B }}>
+                      {T(`${sk}_feature_${i + 1}`, "title", f.title)}
+                    </div>
+                    <div className="text-white/45 text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                      {T(`${sk}_feature_${i + 1}`, "body", f.body)}
+                    </div>
                   </div>
                 </li>
               ))}
@@ -178,8 +184,6 @@ export default function SectorLayout({
 
       {/* ── SERVICES ──────────────────────────────────────────────────── */}
       <section className="py-24 bg-[#0d1e28] relative overflow-hidden">
-
-        {/* Subtle photo on right — gives depth without distraction */}
         <div className="absolute inset-y-0 right-0 w-1/2 pointer-events-none select-none">
           <Image
             src={heroImage}
@@ -192,8 +196,6 @@ export default function SectorLayout({
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0d1e28] via-[#0d1e28]/60 to-transparent" />
         </div>
-
-        {/* Dot-grid texture overlay */}
         <div
           className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{ backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)", backgroundSize: "28px 28px" }}
@@ -213,10 +215,9 @@ export default function SectorLayout({
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-white/5">
             {serviceGroups.map((sg, i) => (
               <div
-                key={sg.title}
+                key={i}
                 className="bg-[#0d1e28] p-8 hover:bg-[#152836] transition-all duration-300 group relative overflow-hidden"
               >
-                {/* Decorative background number */}
                 <div
                   className="absolute -bottom-4 right-3 leading-none select-none pointer-events-none text-white/[0.04] group-hover:text-white/[0.07] transition-colors duration-300"
                   style={{ fontFamily: H, fontSize: "100px", fontWeight: 700 }}
@@ -224,33 +225,27 @@ export default function SectorLayout({
                 >
                   {String(i + 1).padStart(2, "0")}
                 </div>
-
-                {/* Icon */}
                 <div className="w-8 h-8 text-[#1F93A4] mb-5 group-hover:scale-110 group-hover:text-[#25afc2] transition-all duration-300">
                   {SERVICE_ICONS[i % SERVICE_ICONS.length]}
                 </div>
-
                 <div className="w-6 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-12 transition-all duration-300" />
-                <h4
-                  className="text-white font-bold text-[15px] mb-2 group-hover:text-[#1F93A4] transition-colors"
-                  style={{ fontFamily: B }}
-                >
-                  {sg.title}
+                <h4 className="text-white font-bold text-[15px] mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                  {T(`${sk}_sg_${i + 1}`, "title", sg.title)}
                 </h4>
                 {sg.description && (
                   <p className="text-white/40 text-[12px] leading-relaxed mb-3" style={{ fontFamily: B }}>
-                    {sg.description}
+                    {T(`${sk}_sg_${i + 1}`, "description", sg.description)}
                   </p>
                 )}
                 <ul className="space-y-2">
-                  {sg.items.map((item) => (
+                  {sg.items.map((item, j) => (
                     <li
-                      key={item}
+                      key={j}
                       className="flex items-start gap-2 text-[13px] text-white/40 group-hover:text-white/60 transition-colors"
                       style={{ fontFamily: B }}
                     >
                       <span className="text-[#1F93A4] mt-0.5 text-[10px] shrink-0">▸</span>
-                      {item}
+                      {T(`${sk}_sg_${i + 1}`, `item_${j + 1}`, item)}
                     </li>
                   ))}
                 </ul>
@@ -273,19 +268,16 @@ export default function SectorLayout({
             </div>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] border border-[#213B4D]/8">
-            {process.map((step) => (
-              <div key={step.num} className="p-8 border-r border-b border-[#213B4D]/8 last:border-r-0 hover:bg-[#f4f6f8] transition-colors group">
-                <div
-                  className="text-[#1F93A4] leading-none mb-4"
-                  style={{ fontFamily: H, fontSize: "48px", fontWeight: 600 }}
-                >
+            {process.map((step, i) => (
+              <div key={i} className="p-8 border-r border-b border-[#213B4D]/8 last:border-r-0 hover:bg-[#f4f6f8] transition-colors group">
+                <div className="text-[#1F93A4] leading-none mb-4" style={{ fontFamily: H, fontSize: "48px", fontWeight: 600 }}>
                   {step.num}
                 </div>
                 <h4 className="text-[#213B4D] font-bold text-[15px] mb-2" style={{ fontFamily: B }}>
-                  {step.title}
+                  {T(`${sk}_step_${i + 1}`, "title", step.title)}
                 </h4>
                 <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
-                  {step.body}
+                  {T(`${sk}_step_${i + 1}`, "body", step.body)}
                 </p>
               </div>
             ))}
@@ -301,11 +293,15 @@ export default function SectorLayout({
             <SectionHeading text="Why Choose INFRA Construction" light center />
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[1px] bg-white/5">
-            {whyUs.map((w) => (
-              <div key={w.title} className="bg-[#213B4D] p-7 hover:bg-[#1a2f3d] transition-colors group">
+            {whyUs.map((w, i) => (
+              <div key={i} className="bg-[#213B4D] p-7 hover:bg-[#1a2f3d] transition-colors group">
                 <div className="w-6 h-[2px] bg-[#1F93A4] mb-5 group-hover:w-10 transition-all duration-300" />
-                <h4 className="text-white font-bold text-[14px] mb-2" style={{ fontFamily: B }}>{w.title}</h4>
-                <p className="text-white/45 text-[12px] leading-relaxed" style={{ fontFamily: B }}>{w.body}</p>
+                <h4 className="text-white font-bold text-[14px] mb-2" style={{ fontFamily: B }}>
+                  {T(`${sk}_whyus_${i + 1}`, "title", w.title)}
+                </h4>
+                <p className="text-white/45 text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                  {T(`${sk}_whyus_${i + 1}`, "body", w.body)}
+                </p>
               </div>
             ))}
           </div>
@@ -320,13 +316,13 @@ export default function SectorLayout({
             <Eyebrow text="Who We Work With" />
             <SectionHeading text="Industries We Serve" />
             <div className="flex flex-wrap gap-2.5 mt-6">
-              {industries.map((ind) => (
+              {industries.map((ind, i) => (
                 <span
-                  key={ind}
+                  key={i}
                   className="border border-[#213B4D]/15 text-[#213B4D] text-[12px] font-semibold px-4 py-2 hover:border-[#1F93A4] hover:text-[#1F93A4] transition-colors"
                   style={{ fontFamily: B }}
                 >
-                  {ind}
+                  {T(`${sk}_industries`, `item_${i + 1}`, ind)}
                 </span>
               ))}
             </div>
@@ -337,13 +333,15 @@ export default function SectorLayout({
             <Eyebrow text="Common Questions" />
             <SectionHeading text="FAQs" />
             <div className="mt-6 space-y-3">
-              {faqs.map((faq) => (
-                <div key={faq.q} className="border border-[#213B4D]/10 p-6 hover:border-[#1F93A4] transition-colors">
+              {faqs.map((faq, i) => (
+                <div key={i} className="border border-[#213B4D]/10 p-6 hover:border-[#1F93A4] transition-colors">
                   <div className="text-[#213B4D] font-bold text-[14px] mb-2 flex items-start gap-2" style={{ fontFamily: B }}>
                     <span className="text-[#1F93A4] shrink-0">Q</span>
-                    {faq.q}
+                    {T(`${sk}_faq_${i + 1}`, "q", faq.q)}
                   </div>
-                  <div className="text-[#5E5E5E] text-[13px] leading-relaxed pl-5" style={{ fontFamily: B }}>{faq.a}</div>
+                  <div className="text-[#5E5E5E] text-[13px] leading-relaxed pl-5" style={{ fontFamily: B }}>
+                    {T(`${sk}_faq_${i + 1}`, "a", faq.a)}
+                  </div>
                 </div>
               ))}
             </div>
@@ -368,10 +366,10 @@ export default function SectorLayout({
             className="text-white uppercase leading-[0.92] mb-6"
             style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            {ctaTitle}
+            {T(sk || "", "ctaTitle", ctaTitle)}
           </h2>
           <p className="text-white/65 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
-            {ctaBody}
+            {T(sk || "", "ctaBody", ctaBody)}
           </p>
           <Link
             href="/contact"

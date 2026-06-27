@@ -1,4 +1,4 @@
-import SectorLayout from "@/components/SectorLayout";
+﻿import SectorLayout from "@/components/SectorLayout";
 
 export const metadata = {
   title: "Engineering & EPC Services Company | INFRA Construction",
@@ -9,6 +9,7 @@ export default function EngineeringEPCPage() {
   return (
     <SectorLayout
       eyebrow="Our Sectors"
+      sectionKey="sector_epc"
       heroTitle="Engineering & EPC"
       heroSubtitle="Delivering integrated engineering and EPC solutions with precision, innovation, and operational excellence."
       heroDescription="INFRA Construction provides complete Engineering, Procurement, and Construction services for industrial, infrastructure, utility, and development projects."

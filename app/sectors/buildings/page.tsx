@@ -8,6 +8,7 @@ export const metadata = {
 export default function BuildingsPage() {
   return (
     <SectorLayout
+      sectionKey="sector_buildings"
       eyebrow="Our Sectors"
       heroTitle="Buildings & Architecture"
       heroSubtitle="Crafting enduring and efficient structures that foster comfort, functionality, and spatial harmony across residential, commercial, and institutional developments."

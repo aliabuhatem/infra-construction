@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { newsItems } from "@/lib/news-data";
+import ContentText from "@/components/admin-panel/ContentText";
+import MediaImage from "@/components/admin-panel/MediaImage";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
@@ -33,17 +35,17 @@ export default function NewsPage() {
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
             <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-              Latest Updates
+              <ContentText section="news_hero" name="eyebrow" fallback="Latest Updates" />
             </p>
           </div>
           <h1
             className="text-white uppercase leading-[0.92] mb-5"
             style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            News &<br />Updates
+            <ContentText section="news_hero" name="title" fallback="News & Updates" />
           </h1>
           <p className="text-white/60 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
-            Project milestones, partnerships, certifications, and company developments from across our global operations.
+            <ContentText section="news_hero" name="subtitle" fallback="Project milestones, partnerships, certifications, and company developments from across our global operations." />
           </p>
         </div>
       </section>
@@ -93,15 +95,12 @@ export default function NewsPage() {
           </div>
           <div className="grid lg:grid-cols-2 gap-[1px] bg-[#213B4D]/8 overflow-hidden">
             <div className="relative h-64 lg:h-[420px] bg-[#0d1e28]">
-              <Image
-                src={featured.image}
+              <MediaImage
+                category={featured.sectionKey}
+                title={`${featured.sectionKey}_image`}
+                fallbackSrc={featured.image}
                 alt={featured.title}
-                fill
-                priority
-                quality={100}
-                unoptimized
-                sizes="100vw"
-                className="object-cover object-center"
+                className="object-cover object-center w-full h-full"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/60 to-transparent" />
             </div>
@@ -111,18 +110,20 @@ export default function NewsPage() {
                   className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
                   style={{ fontFamily: B }}
                 >
-                  {featured.category}
+                  <ContentText section={featured.sectionKey} name="category" fallback={featured.category} />
                 </span>
-                <span className="text-[#5E5E5E] text-[12px]" style={{ fontFamily: B }}>{featured.date}</span>
+                <span className="text-[#5E5E5E] text-[12px]" style={{ fontFamily: B }}>
+                  <ContentText section={featured.sectionKey} name="date" fallback={featured.date} />
+                </span>
               </div>
               <h2
                 className="text-[#213B4D] leading-tight mb-5"
                 style={{ fontFamily: H, fontSize: "clamp(24px, 3vw, 38px)", fontWeight: 600, letterSpacing: "-0.01em" }}
               >
-                {featured.title}
+                <ContentText section={featured.sectionKey} name="title" fallback={featured.title} />
               </h2>
               <p className="text-[#5E5E5E] text-[14px] leading-relaxed mb-7" style={{ fontFamily: B }}>
-                {featured.excerpt}
+                <ContentText section={featured.sectionKey} name="excerpt" fallback={featured.excerpt} />
               </p>
               <Link
                 href={`/news/${featured.slug}`}
@@ -153,14 +154,12 @@ export default function NewsPage() {
                 className="group bg-white hover:bg-[#f4f6f8] transition-colors overflow-hidden block"
               >
                 <div className="relative h-44 overflow-hidden">
-                  <Image
-                    src={item.image}
+                  <MediaImage
+                    category={item.sectionKey}
+                    title={`${item.sectionKey}_image`}
+                    fallbackSrc={item.image}
                     alt={item.title}
-                    fill
-                    quality={100}
-                    unoptimized
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/20 to-transparent" />
                 </div>
@@ -170,19 +169,21 @@ export default function NewsPage() {
                       className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
                       style={{ fontFamily: B }}
                     >
-                      {item.category}
+                      <ContentText section={item.sectionKey} name="category" fallback={item.category} />
                     </span>
-                    <span className="text-[#5E5E5E] text-[11px]" style={{ fontFamily: B }}>{item.date}</span>
+                    <span className="text-[#5E5E5E] text-[11px]" style={{ fontFamily: B }}>
+                      <ContentText section={item.sectionKey} name="date" fallback={item.date} />
+                    </span>
                   </div>
                   <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
                   <h3
                     className="text-[#213B4D] font-bold text-[14px] leading-snug mb-3 group-hover:text-[#1F93A4] transition-colors"
                     style={{ fontFamily: B }}
                   >
-                    {item.title}
+                    <ContentText section={item.sectionKey} name="title" fallback={item.title} />
                   </h3>
                   <p className="text-[#5E5E5E] text-[13px] leading-relaxed line-clamp-3" style={{ fontFamily: B }}>
-                    {item.excerpt}
+                    <ContentText section={item.sectionKey} name="excerpt" fallback={item.excerpt} />
                   </p>
                   <div
                     className="mt-5 text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2 group-hover:gap-3 transition-all"

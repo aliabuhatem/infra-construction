@@ -8,8 +8,8 @@ export default function ContentText({ section, name, fallback = "", as: Tag = "s
   let text = fallback;
   if (!loading) {
     const value = store?.content?.[section]?.[name];
-    if (value !== undefined && value !== null && value !== "") {
-      text = value;
+    if (value !== undefined && value !== null) {
+      text = value; // empty string intentionally clears the field
     }
   }
 

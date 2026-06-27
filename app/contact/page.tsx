@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import ContentText from "@/components/admin-panel/ContentText";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
@@ -17,36 +18,11 @@ const CONTACT = {
 };
 
 const offices = [
-  {
-    city: "Abu Dhabi",
-    country: "UAE",
-    address: "Office 606, EREC Building, Zone 1, Al Danah, Abu Dhabi, UAE",
-    license: "CN-2347468",
-  },
-  {
-    city: "Dubai",
-    country: "UAE",
-    address: "Office 306, Bld 121, Al Manar Area, Dubai, UAE",
-    license: "1019817",
-  },
-  {
-    city: "Cairo",
-    country: "Egypt",
-    address: "224 Khalid Ibn Al Waleed, South of the Academy, Fifth Settlement, Cairo, Egypt",
-    license: "162505",
-  },
-  {
-    city: "Aden",
-    country: "Yemen",
-    address: "Bldg. 1, Bader Roundabout, P.O. Box 70116, Khormaksar, Aden, Yemen",
-    license: "2769",
-  },
-  {
-    city: "Ontario",
-    country: "Canada",
-    address: "3280 Donald Mackay Street, Oakville, Ontario",
-    license: "57582091",
-  },
+  { city: "Abu Dhabi", country: "UAE",    address: "Office 606, EREC Building, Zone 1, Al Danah, Abu Dhabi, UAE",                            license: "CN-2347468", section: "contact_office_1" },
+  { city: "Dubai",     country: "UAE",    address: "Office 306, Bld 121, Al Manar Area, Dubai, UAE",                                         license: "1019817",   section: "contact_office_2" },
+  { city: "Cairo",     country: "Egypt",  address: "224 Khalid Ibn Al Waleed, South of the Academy, Fifth Settlement, Cairo, Egypt",          license: "162505",    section: "contact_office_3" },
+  { city: "Aden",      country: "Yemen",  address: "Bldg. 1, Bader Roundabout, P.O. Box 70116, Khormaksar, Aden, Yemen",                    license: "2769",      section: "contact_office_4" },
+  { city: "Ontario",   country: "Canada", address: "3280 Donald Mackay Street, Oakville, Ontario",                                           license: "57582091",  section: "contact_office_5" },
 ];
 
 export default function ContactPage() {
@@ -98,17 +74,17 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
             <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-              Get in Touch
+              <ContentText section="contact_hero" name="eyebrow" fallback="Get in Touch" />
             </p>
           </div>
           <h1
             className="text-white uppercase leading-[0.92] mb-5"
             style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            Contact Us
+            <ContentText section="contact_hero" name="title" fallback="Contact Us" />
           </h1>
           <p className="text-white/60 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
-            Reach out to our team across five global offices — we are ready to discuss your project requirements.
+            <ContentText section="contact_hero" name="subtitle" fallback="Reach out to our team across five global offices — we are ready to discuss your project requirements." />
           </p>
         </div>
       </section>
@@ -130,14 +106,14 @@ export default function ContactPage() {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
               <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-                Send a Message
+                <ContentText section="contact_form" name="eyebrow" fallback="Send a Message" />
               </p>
             </div>
             <h2
               className="text-[#213B4D] uppercase leading-tight mb-10"
               style={{ fontFamily: H, fontSize: "clamp(28px, 3.5vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}
             >
-              Let&apos;s Discuss<br />Your Project
+              <ContentText section="contact_form" name="title" fallback="Let's Discuss Your Project" />
             </h2>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
@@ -249,19 +225,19 @@ export default function ContactPage() {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
               <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-                Global Offices
+                <ContentText section="contact_offices" name="eyebrow" fallback="Global Offices" />
               </p>
             </div>
             <h2
               className="text-[#213B4D] uppercase leading-tight mb-10"
               style={{ fontFamily: H, fontSize: "clamp(28px, 3.5vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}
             >
-              Find Us<br />Worldwide
+              <ContentText section="contact_offices" name="title" fallback="Find Us Worldwide" />
             </h2>
             <div className="space-y-[1px] bg-[#213B4D]/8">
               {offices.map((o) => (
                 <div
-                  key={o.city}
+                  key={o.section}
                   className="bg-white hover:bg-[#f4f6f8] transition-colors px-6 py-5 group"
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -269,20 +245,20 @@ export default function ContactPage() {
                       className="text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors"
                       style={{ fontFamily: B }}
                     >
-                      {o.city}
+                      <ContentText section={o.section} name="city" fallback={o.city} />
                     </div>
                     <span
                       className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#1F93A4]/30 px-2 py-0.5"
                       style={{ fontFamily: B }}
                     >
-                      {o.country}
+                      <ContentText section={o.section} name="country" fallback={o.country} />
                     </span>
                   </div>
                   <div className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
-                    {o.address}
+                    <ContentText section={o.section} name="address" fallback={o.address} />
                   </div>
                   <div className="text-[#5E5E5E]/60 text-[11px] mt-1.5 uppercase tracking-wider" style={{ fontFamily: B }}>
-                    Lic. {o.license}
+                    Lic. <ContentText section={o.section} name="license" fallback={o.license} />
                   </div>
                 </div>
               ))}
@@ -321,23 +297,23 @@ export default function ContactPage() {
               className="text-white uppercase"
               style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}
             >
-              Operating Across 5 Countries
+              <ContentText section="contact_offices" name="subtitle" fallback="Operating Across 5 Countries" />
             </h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-[1px] bg-white/5">
             {offices.map((o) => (
-              <div key={o.city} className="bg-[#213B4D] hover:bg-[#1a2f3d] transition-colors p-6 group text-center">
+              <div key={o.section} className="bg-[#213B4D] hover:bg-[#1a2f3d] transition-colors p-6 group text-center">
                 <div
                   className="text-[#1F93A4] text-[9px] font-bold uppercase tracking-[0.3em] mb-2"
                   style={{ fontFamily: B }}
                 >
-                  {o.country}
+                  <ContentText section={o.section} name="country" fallback={o.country} />
                 </div>
                 <div
                   className="text-white text-[15px] font-semibold group-hover:text-[#1F93A4] transition-colors"
                   style={{ fontFamily: B }}
                 >
-                  {o.city}
+                  <ContentText section={o.section} name="city" fallback={o.city} />
                 </div>
               </div>
             ))}
@@ -356,23 +332,23 @@ export default function ContactPage() {
         />
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
           <p className="text-white/50 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
-            Let&apos;s Start
+            <ContentText section="contact_cta" name="eyebrow" fallback="Let's Start" />
           </p>
           <h2
             className="text-white uppercase leading-[0.92] mb-6"
             style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            Your Vision,<br />Our Expertise
+            <ContentText section="contact_cta" name="title" fallback="Your Vision, Our Expertise" />
           </h2>
           <p className="text-white/65 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
-            Whether it is a megaproject or a targeted engineering service, INFRA Construction is ready to deliver.
+            <ContentText section="contact_cta" name="body" fallback="Whether it is a megaproject or a targeted engineering service, INFRA Construction is ready to deliver." />
           </p>
           <a
             href={`mailto:${CONTACT.email}`}
             className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
             style={{ fontFamily: B }}
           >
-            Email Us Directly <span>→</span>
+            <ContentText section="contact_cta" name="buttonText" fallback="Email Us Directly" /> <span>→</span>
           </a>
         </div>
       </section>

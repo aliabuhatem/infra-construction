@@ -6,6 +6,7 @@
 
 export type NewsItem = {
   slug: string;
+  sectionKey: string;
   date: string;
   category: string;
   title: string;
@@ -22,6 +23,7 @@ export const newsItems: NewsItem[] = [
   // ── 1. MOST RECENT: Shaanxi Partnership (LinkedIn June 2025) ─────────────
   {
     slug: "infra-construction-shaanxi-global-partnership-2025",
+    sectionKey: "news_1",
     date: "June 2025",
     category: "Partnerships",
     title: "INFRA Construction Group Partners with Shaanxi Construction",
@@ -48,6 +50,7 @@ export const newsItems: NewsItem[] = [
   // ── 2. Kuwait Market Expansion Meeting (LinkedIn 2025) ───────────────────
   {
     slug: "infra-construction-kuwait-market-expansion-2025",
+    sectionKey: "news_2",
     date: "May 2025",
     category: "Business Development",
     title: "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
@@ -74,6 +77,7 @@ export const newsItems: NewsItem[] = [
   // ── 3. Nad Al Sheba Dubai Residential Delivery (LinkedIn ~1 month ago) ───
   {
     slug: "infra-construction-nad-al-sheba-dubai-villas-2025",
+    sectionKey: "news_3",
     date: "May 2025",
     category: "Projects",
     title: "Business as Unusual: INFRA Completes Two Residential Plots in Nad Al Sheba, Dubai",
@@ -100,6 +104,7 @@ export const newsItems: NewsItem[] = [
   // ── 4. Jordan Independence Day (LinkedIn May 2025) ───────────────────────
   {
     slug: "infra-construction-jordan-independence-day-2025",
+    sectionKey: "news_4",
     date: "May 2025",
     category: "Community",
     title: "INFRA Construction Celebrates Jordan's Independence Day",
@@ -126,6 +131,7 @@ export const newsItems: NewsItem[] = [
   // ── 5. Railway & Intelligent Transportation Expansion (LinkedIn 2025) ────
   {
     slug: "infra-construction-railway-intelligent-transport-expansion-2025",
+    sectionKey: "news_5",
     date: "April 2025",
     category: "Business Development",
     title: "INFRA Expands into Railway Projects and Intelligent Transportation Systems",
@@ -152,6 +158,7 @@ export const newsItems: NewsItem[] = [
   // ── 6. HS Group / INFRA East Africa Focus (LinkedIn 2025) ────────────────
   {
     slug: "infra-construction-hs-group-east-africa-expansion-2025",
+    sectionKey: "news_6",
     date: "March 2025",
     category: "Partnerships",
     title: "INFRA Strengthens Its Role Within HS Group with Focus on East Africa",
@@ -178,6 +185,7 @@ export const newsItems: NewsItem[] = [
   // ── 7. Gradspan Cooperation Agreement (LinkedIn 2025) ────────────────────
   {
     slug: "infra-construction-gradspan-cooperation-agreement-2025",
+    sectionKey: "news_7",
     date: "February 2025",
     category: "Partnerships",
     title: "INFRA Construction Signs Cooperation Agreement with Gradspan",

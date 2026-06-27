@@ -1,4 +1,4 @@
-import SectorLayout from "@/components/SectorLayout";
+﻿import SectorLayout from "@/components/SectorLayout";
 
 export const metadata = {
   title: "Infrastructure & Civil Works Services | INFRA Construction",
@@ -9,6 +9,7 @@ export default function InfrastructureCivilPage() {
   return (
     <SectorLayout
       eyebrow="Our Sectors"
+      sectionKey="sector_civil"
       heroTitle="Infrastructure & Civil Works"
       heroSubtitle="Building resilient infrastructure and civil works solutions that support economic growth, connectivity, and sustainable development."
       heroDescription="INFRA Construction delivers large-scale infrastructure and civil engineering services for transportation, utilities, public infrastructure, marine facilities, and urban development projects."

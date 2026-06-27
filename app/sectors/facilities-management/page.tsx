@@ -1,4 +1,4 @@
-import SectorLayout from "@/components/SectorLayout";
+﻿import SectorLayout from "@/components/SectorLayout";
 
 export const metadata = {
   title: "Facilities Management & Operations Services | INFRA Construction",
@@ -9,6 +9,7 @@ export default function FacilitiesManagementPage() {
   return (
     <SectorLayout
       eyebrow="Our Sectors"
+      sectionKey="sector_facilities"
       heroTitle="Facilities Management & Operations"
       heroSubtitle="Delivering reliable facilities management and operational excellence for industrial, commercial, governmental, and infrastructure assets across multiple sectors and regions."
       heroDescription="INFRA Construction provides integrated Facilities Management & Operations solutions designed to maximize asset performance, reduce operational downtime, improve workplace safety, and enhance long-term value for clients."

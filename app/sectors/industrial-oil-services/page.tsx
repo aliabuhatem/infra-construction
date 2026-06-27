@@ -1,4 +1,4 @@
-import SectorLayout from "@/components/SectorLayout";
+﻿import SectorLayout from "@/components/SectorLayout";
 
 export const metadata = {
   title: "Industrial & Oil Services Solutions | INFRA Construction",
@@ -9,6 +9,7 @@ export default function IndustrialOilPage() {
   return (
     <SectorLayout
       eyebrow="Our Sectors"
+      sectionKey="sector_industrial"
       heroTitle="Industrial & Oil Services"
       heroSubtitle="Delivering reliable industrial and oilfield engineering solutions with advanced technical expertise, operational excellence, and global project capabilities."
       heroDescription="INFRA Construction provides specialized Industrial & Oil Services for energy, petrochemical, industrial processing, and oil & gas infrastructure projects."

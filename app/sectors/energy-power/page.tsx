@@ -1,4 +1,4 @@
-import SectorLayout from "@/components/SectorLayout";
+﻿import SectorLayout from "@/components/SectorLayout";
 
 export const metadata = {
   title: "Energy & Power Infrastructure Services | INFRA Construction",
@@ -9,6 +9,7 @@ export default function EnergyPowerPage() {
   return (
     <SectorLayout
       eyebrow="Our Sectors"
+      sectionKey="sector_energy"
       heroTitle="Energy & Power"
       heroSubtitle="Powering communities, industries, and future development through reliable energy infrastructure and advanced engineering solutions."
       heroDescription="INFRA Construction delivers integrated Energy & Power services covering generation, transmission, distribution, substations, and utility infrastructure projects."

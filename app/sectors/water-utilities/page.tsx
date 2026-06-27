@@ -1,4 +1,4 @@
-import SectorLayout from "@/components/SectorLayout";
+﻿import SectorLayout from "@/components/SectorLayout";
 
 export const metadata = {
   title: "Water & Utilities Infrastructure Services | INFRA Construction",
@@ -9,6 +9,7 @@ export default function WaterUtilitiesPage() {
   return (
     <SectorLayout
       eyebrow="Our Sectors"
+      sectionKey="sector_water"
       heroTitle="Water & Utilities"
       heroSubtitle="Building sustainable water and utility infrastructure solutions that support communities, industries, and future development."
       heroDescription="INFRA Construction delivers advanced Water & Utilities services for water supply systems, wastewater treatment, irrigation networks, dams, and utility infrastructure projects."

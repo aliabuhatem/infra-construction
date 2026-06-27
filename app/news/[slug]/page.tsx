@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { newsItems, getNewsBySlug } from "@/lib/news-data";
+import ContentText from "@/components/admin-panel/ContentText";
+import MediaImage from "@/components/admin-panel/MediaImage";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
@@ -37,15 +39,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     <>
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[520px] flex items-end overflow-hidden bg-[#0d1e28]">
-        <Image
-          src={item.image}
+        <MediaImage
+          category={item.sectionKey}
+          title={`${item.sectionKey}_image`}
+          fallbackSrc={item.image}
           alt={item.title}
-          fill
-          priority
-          quality={100}
-          unoptimized
-          sizes="100vw"
-          className="object-cover object-center"
+          className="absolute inset-0 object-cover object-center w-full h-full"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28] via-[#0d1e28]/70 to-[#0d1e28]/20" />
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-14 pb-16 w-full">
@@ -54,13 +53,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
               style={{ fontFamily: B }}
             >
-              {item.category}
+              <ContentText section={item.sectionKey} name="category" fallback={item.category} />
             </span>
-            <span className="text-white/60 text-[12px]" style={{ fontFamily: B }}>{item.date}</span>
+            <span className="text-white/60 text-[12px]" style={{ fontFamily: B }}>
+              <ContentText section={item.sectionKey} name="date" fallback={item.date} />
+            </span>
             {item.location && (
               <>
                 <span className="text-white/30">·</span>
-                <span className="text-white/60 text-[12px]" style={{ fontFamily: B }}>{item.location}</span>
+                <span className="text-white/60 text-[12px]" style={{ fontFamily: B }}>
+                  <ContentText section={item.sectionKey} name="location" fallback={item.location} />
+                </span>
               </>
             )}
           </div>
@@ -68,7 +71,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             className="text-white uppercase leading-[0.95]"
             style={{ fontFamily: H, fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            {item.title}
+            <ContentText section={item.sectionKey} name="title" fallback={item.title} />
           </h1>
         </div>
       </section>
@@ -102,13 +105,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </div>
 
           <p className="text-[#213B4D] text-[19px] leading-relaxed font-semibold mb-10" style={{ fontFamily: B }}>
-            {item.excerpt}
+            <ContentText section={item.sectionKey} name="excerpt" fallback={item.excerpt} />
           </p>
 
           <div className="space-y-6">
             {item.content.map((p, i) => (
               <p key={i} className="text-[#3a3a3a] text-[16px] leading-[1.85]" style={{ fontFamily: B }}>
-                {p}
+                <ContentText section={item.sectionKey} name={`p${i + 1}`} fallback={p} />
               </p>
             ))}
           </div>
@@ -168,14 +171,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 className="group bg-white hover:bg-[#f4f6f8] transition-colors block"
               >
                 <div className="relative h-40 overflow-hidden">
-                  <Image
-                    src={r.image}
+                  <MediaImage
+                    category={r.sectionKey}
+                    title={`${r.sectionKey}_image`}
+                    fallbackSrc={r.image}
                     alt={r.title}
-                    fill
-                    quality={100}
-                    unoptimized
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
@@ -184,15 +185,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                       className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
                       style={{ fontFamily: B }}
                     >
-                      {r.category}
+                      <ContentText section={r.sectionKey} name="category" fallback={r.category} />
                     </span>
-                    <span className="text-[#5E5E5E] text-[11px]" style={{ fontFamily: B }}>{r.date}</span>
+                    <span className="text-[#5E5E5E] text-[11px]" style={{ fontFamily: B }}>
+                      <ContentText section={r.sectionKey} name="date" fallback={r.date} />
+                    </span>
                   </div>
                   <h3
                     className="text-[#213B4D] font-bold text-[14px] leading-snug group-hover:text-[#1F93A4] transition-colors"
                     style={{ fontFamily: B }}
                   >
-                    {r.title}
+                    <ContentText section={r.sectionKey} name="title" fallback={r.title} />
                   </h3>
                 </div>
               </Link>
