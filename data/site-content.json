@@ -2343,12 +2343,12 @@
       "image": "/media/water-al-atiyat-wastewater-treatment-egypt.jpeg"
     },
     "project_2": {
-      "title": "Al Riyan Airport",
-      "country": "Yemen",
-      "sector": "Airports",
-      "type": "Aviation Infrastructure",
+      "title": "Bani Mazar Bridge",
+      "country": "Egypt",
+      "sector": "Bridge ",
+      "type": "Transportation",
       "description": "Airport construction and civil works for Al Riyan International Airport.",
-      "image": "/media/airports-al-riyan-airport-yemen.jpeg"
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
     },
     "project_3": {
       "title": "Bassra Wastewater Treatment Plan",
