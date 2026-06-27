@@ -216,6 +216,18 @@
       "image": "/media/OSAMA ABO GHANEM.png",
       "bio": "Senior leader in technical and commercial operations."
     },
+    "about_leadership_5": {
+      "name": "Mr. Nedal Mustafa",
+      "title": "Executive Leadership",
+      "image": "/media/Nedal.png",
+      "bio": "Technology strategy, digital transformation, and innovation across all project operations."
+    },
+    "about_leadership_1": {
+      "name": "Mr. Mustafa Al Awlaqi",
+      "title": "Executive Leadership",
+      "image": "/media/Mr. Khaled Alariqee photo.png",
+      "bio": "Market expansion, client acquisition, bidding strategy, and international partnership development."
+    },
     "about_org_structure": {
       "title": "Organization structure",
       "description": "Functional teams across engineering, project controls, HSE, commercial and corporate services.",
