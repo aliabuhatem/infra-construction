@@ -175,6 +175,7 @@ export default function AdminPanel() {
   const [hasUnsaved, setHasUnsaved] = useState(false);
   const toastTimer = useRef(null);
   const fileInputRef = useRef(null);
+  const mainRef = useRef(null);
 
   function showToast(type, text) {
     setToast({ type, text });
@@ -337,6 +338,8 @@ export default function AdminPanel() {
   async function uploadMedia(event) {
     event.preventDefault();
     if (!uploadForm.file) { showToast("error", "Please select an image first"); return; }
+    // Capture scroll position before any state updates that will cause a re-render
+    const savedScroll = mainRef.current?.scrollTop ?? 0;
     setUploading(true);
     try {
       const form = new FormData();
@@ -355,6 +358,12 @@ export default function AdminPanel() {
       showToast("error", error.message);
     } finally {
       setUploading(false);
+      // Restore scroll position after React has re-rendered and the browser has painted
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          if (mainRef.current) mainRef.current.scrollTop = savedScroll;
+        });
+      });
     }
   }
 
@@ -596,7 +605,7 @@ export default function AdminPanel() {
       </aside>
 
       {/* ── MAIN PANEL ── */}
-      <main className={styles.main}>
+      <main ref={mainRef} className={styles.main}>
         {/* Top Bar */}
         <div className={styles.topBar}>
           <div className={styles.topBarLeft}>
