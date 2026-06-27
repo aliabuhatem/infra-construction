@@ -43,11 +43,11 @@ const departments = [
 ];
 
 const leadership = [
-  { role: "Chief Human Resources Officer", name: "Khaled Alariqee",  scope: "Strategic direction, corporate governance, and stakeholder relations across all global offices.",    image: "/media/KHALED ALARIQEE.png",                                         section: "about_leader_2" },
-  { role: "Central Business District",     name: "Adnan Gazaz",      scope: "Oversight of project delivery, resource allocation, and on-ground execution across all active sites.", image: "/media/Mr. Adnan Gazaz photo.png",                                   section: "about_leader_3" },
-  { role: "Chief Operating Officer",       name: "Osama Abo Ghanem", scope: "Engineering standards, design review, quality assurance, and technical compliance.",                 image: "/media/OSAMA ABO GHANEM.png",                                        section: "about_leader_4" },
-  { role: "Chief Technology Officer",      name: "Nedal Mustafa",    scope: "Technology strategy, digital transformation, and innovation across all project operations.",          image: "/media/Nedal.png",                                                   section: "about_leader_5" },
-  { role: "Chief Commercial Officer",      name: "Mustafa Al Awlaqi",scope: "Market expansion, client acquisition, bidding strategy, and international partnership development.", image: "/media/Mr. Khaled Alariqee photo.png",                               section: "about_leader_1" },
+  { role: "Chief Human Resources Officer", name: "Khaled Alariqee",   scope: "Strategic direction, corporate governance, and stakeholder relations across all global offices.",    image: "/media/KHALED ALARIQEE.png",           section: "about_leadership_2" },
+  { role: "Central Business District",     name: "Adnan Gazaz",       scope: "Oversight of project delivery, resource allocation, and on-ground execution across all active sites.", image: "/media/Mr. Adnan Gazaz photo.png",     section: "about_leadership_3" },
+  { role: "Chief Operating Officer",       name: "Osama Abo Ghanem",  scope: "Engineering standards, design review, quality assurance, and technical compliance.",                 image: "/media/OSAMA ABO GHANEM.png",          section: "about_leadership_4" },
+  { role: "Chief Technology Officer",      name: "Nedal Mustafa",     scope: "Technology strategy, digital transformation, and innovation across all project operations.",          image: "/media/Nedal.png",                     section: "about_leadership_5" },
+  { role: "Chief Commercial Officer",      name: "Mustafa Al Awlaqi", scope: "Market expansion, client acquisition, bidding strategy, and international partnership development.", image: "/media/Mr. Khaled Alariqee photo.png", section: "about_leadership_1" },
 ];
 
 const mgmtSystems = [
@@ -363,8 +363,8 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-12 gap-0 bg-[#0d1e28]">
             <div className="lg:col-span-5 relative bg-[#0d1e28] min-h-[460px] lg:min-h-[600px] overflow-hidden">
               <MediaImage
-                category="about_ceo"
-                title="about_ceo_image"
+                category="about_leadership_founder"
+                title="about_leadership_founder_image"
                 fallbackSrc="/media/FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.png"
                 alt="Mr. Hany El-Sahooly — Founder & CEO"
                 className="object-cover object-top w-full h-full absolute inset-0"
@@ -379,17 +379,17 @@ export default function AboutPage() {
             <div className="lg:col-span-7 p-10 lg:p-16 flex flex-col justify-center relative">
               <span aria-hidden="true" className="absolute top-6 right-10 leading-none select-none pointer-events-none" style={{ fontFamily: H, fontSize: "160px", color: "#1F93A4", opacity: 0.15, lineHeight: 1 }}>&ldquo;</span>
               <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.35em] mb-3" style={{ fontFamily: B }}>
-                <ContentText section="about_ceo" name="role" fallback="Founder & Chief Executive Officer" />
+                <ContentText section="about_leadership_founder" name="title" fallback="Founder & Chief Executive Officer" />
               </div>
               <h3 className="text-white uppercase leading-[0.95] mb-2" style={{ fontFamily: H, fontSize: "clamp(36px, 4.5vw, 56px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-                <ContentText section="about_ceo" name="name" fallback="Mr. Hany El-Sahooly" />
+                <ContentText section="about_leadership_founder" name="name" fallback="Mr. Hany El-Sahooly" />
               </h3>
               <div className="w-12 h-[2px] bg-[#1F93A4] mb-7 mt-4" />
               <p className="text-white/75 text-[17px] leading-relaxed mb-5" style={{ fontFamily: B }}>
-                <ContentText section="about_ceo_bio" name="bio1" fallback="As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 2000." />
+                <ContentText section="about_leadership_founder" name="bio" fallback="As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 2000." />
               </p>
               <p className="text-white/55 text-[15px] leading-relaxed mb-8" style={{ fontFamily: B }}>
-                <ContentText section="about_ceo_bio" name="bio2" fallback="His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step." />
+                <ContentText section="about_leadership_founder" name="bio2" fallback="His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step." />
               </p>
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
                 <div>
@@ -455,10 +455,10 @@ export default function AboutPage() {
                     <ContentText section={l.section} name="name" fallback={l.name} />
                   </div>
                   <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] mb-3" style={{ fontFamily: B }}>
-                    <ContentText section={l.section} name="role" fallback={l.role} />
+                    <ContentText section={l.section} name="title" fallback={l.role} />
                   </div>
                   <p className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
-                    <ContentText section={l.section} name="scope" fallback={l.scope} />
+                    <ContentText section={l.section} name="bio" fallback={l.scope} />
                   </p>
                 </div>
               </div>
@@ -477,14 +477,20 @@ export default function AboutPage() {
             </span>
           </div>
           <h2 className="text-[#213B4D] uppercase leading-tight mb-4" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600 }}>
-            <ContentText section="about_org_full" name="title" fallback="Organizational Structure" />
+            <ContentText section="about_org_structure" name="title" fallback="Organizational Structure" />
           </h2>
           <p className="text-[#5E5E5E] text-[17px] max-w-2xl mb-10" style={{ fontFamily: B }}>
-            <ContentText section="about_org_full" name="p1" fallback="Adaptable and expandable, our structure maintains horizontal relationships across all departments while growing to meet market demand." />
+            <ContentText section="about_org_structure" name="description" fallback="Adaptable and expandable, our structure maintains horizontal relationships across all departments while growing to meet market demand." />
           </p>
 
           <div className="relative w-full overflow-hidden rounded-sm mb-12 border border-[#213B4D]/10">
-            <Image src="/media/company-org-structure-header.png" alt="INFRA Construction Organizational Structure" width={898} height={462} quality={100} sizes="100vw" className="w-full h-auto object-contain bg-white" />
+            <MediaImage
+              category="about_org_structure"
+              title="about_org_structure_image"
+              fallbackSrc="/media/company-org-structure-header.png"
+              alt="INFRA Construction Organizational Structure"
+              className="w-full h-auto object-contain bg-white"
+            />
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-[1px] bg-[#213B4D]/10 border border-[#213B4D]/10">
