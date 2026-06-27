@@ -20,6 +20,7 @@
       "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
       "cert1": "ISO 9001",
       "cert2": "ISO 14001",
+      "cert3": "OHSAS 18001",
       "linkText": "Our Story"
     },
     "home_sectors_header": {
@@ -178,6 +179,8 @@
     },
     "about_hero": {
       "eyebrow": "About INFRA",
+      "headlineLine1": "About INFRA",
+      "headlineLine2": "Construction",
       "title": "A construction company built on engineering discipline",
       "subtitle": "Decades of delivering infrastructure, buildings, water and energy projects across the Middle East and Africa.",
       "backgroundImage": "/media/about-.sectionjpg.jpg"
@@ -196,7 +199,8 @@
       "name": "Mr. Hani Sahooly",
       "title": "Founder, HS Group",
       "image": "/media/FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.png",
-      "bio": "Founder and chairman with over three decades of experience in regional infrastructure delivery."
+      "bio": "Founder and chairman with over three decades of experience in regional infrastructure delivery.",
+      "bio2": "His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step."
     },
     "about_leadership_2": {
       "name": "Mr. Mostafa Yaslem",
@@ -440,6 +444,8 @@
     },
     "careers_hero": {
       "eyebrow": "Careers",
+      "headlineLine1": "Build Your Career",
+      "headlineLine2": "With INFRA",
       "title": "Build your career with INFRA",
       "subtitle": "Join engineers, planners and crews delivering landmark infrastructure projects.",
       "backgroundImage": "/media/careers hero section photo.png"
@@ -506,7 +512,8 @@
       "title": "A Legacy of Building the World",
       "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000.",
       "p2": "Every task Infra Construction took up was executed through hard work and dedication from our team professionals. Possessing all the needed resources is a crucial factor in achieving any project successfully — however, the factor that delivers outstanding results is managing these resources optimally.",
-      "p3": "Infra Construction represents the working arm providing professional services in the contracting niche — especially in the infrastructure field — executing according to international codes and project specifications across the UAE, Egypt, Yemen, and Canada."
+      "p3": "Infra Construction represents the working arm providing professional services in the contracting niche — especially in the infrastructure field — executing according to international codes and project specifications across the UAE, Egypt, Yemen, and Canada.",
+      "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg"
     },
     "about_ceo_bio": {
       "bio1": "As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 2000 — shaping it into a trusted name in buildings, infrastructure, and industrial construction across the Middle East, Africa, and North America.",
@@ -525,7 +532,8 @@
       "goal_1": "Private investors and developers worldwide",
       "goal_2": "Government authorities — ministries and local councils",
       "goal_3": "International funding agencies (World Bank, Arab Fund, Kuwait Fund)",
-      "goal_4": "Long-term joint ventures with regional and international partners"
+      "goal_4": "Long-term joint ventures with regional and international partners",
+      "image": "/media/about-.sectionjpg.jpg"
     },
     "about_team_roles": {
       "eyebrow": "Our People",
@@ -536,7 +544,8 @@
       "role_3": "Inspectors",
       "role_4": "Quantity Surveyors",
       "role_5": "Project Managers",
-      "role_6": "Consultants"
+      "role_6": "Consultants",
+      "image": "/media/industrial-floating-marine-pier-yemen.jpeg"
     },
     "about_org_full": {
       "eyebrow": "How We Work",
@@ -2769,7 +2778,8 @@
       "eyebrow": "Our Commitment",
       "title": "We Empower Our People",
       "p1": "At INFRA Construction, we believe that the quality of our projects is a direct reflection of the quality of our people. We recruit talented individuals and invest in their growth through structured training, challenging project assignments, and a culture of continuous improvement.",
-      "p2": "Our technical teams are supported by experienced leadership, modern tools, and a collaborative work environment that rewards initiative, creativity, and professional excellence."
+      "p2": "Our technical teams are supported by experienced leadership, modern tools, and a collaborative work environment that rewards initiative, creativity, and professional excellence.",
+      "image": "/media/water-dam-construction-yemen.jpeg"
     },
     "careers_openings": {
       "eyebrow": "Open Positions",
