@@ -18,9 +18,8 @@
       "bigNumberSuffix": "+",
       "bigNumberLabel": "Projects Delivered",
       "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
-      "cert1": "ISO 9001",
+      "cert1": "ISO 9002",
       "cert2": "ISO 14001",
-      "cert3": "OHSAS 18001",
       "linkText": "Our Story"
     },
     "home_sectors_header": {
@@ -200,7 +199,7 @@
       "bio": "Founder and chairman with over three decades of experience in regional infrastructure delivery."
     },
     "about_leadership_2": {
-      "name": "Mr. Khaled Alariqee",
+      "name": "Mr. Mostafa Yaslem",
       "title": "Executive Leadership",
       "image": "/media/Mr. Khaled Alariqee photo.png",
       "bio": "Senior leader overseeing operations and project delivery."
@@ -299,7 +298,7 @@
       "eyebrow": "Projects",
       "title": "Our Project Portfolio",
       "subtitle": "Recent and ongoing works across buildings, infrastructure, water, energy and industrial sectors.",
-      "backgroundImage": "/media/project-hero.jpg"
+      "backgroundImage": "/admin-uploads/1782556835612-ministry-of-foreign-aden-yemen.jpeg"
     },
     "project_dhobab_airport": {
       "title": "Dhobab Airport",
@@ -503,5 +502,24 @@
       "favicon": "/favicon.ico"
     }
   },
-  "media": []
+  "media": [
+    {
+      "id": "1782556836409",
+      "title": "projects_herobg",
+      "alt": "projects_herobg",
+      "category": "projects",
+      "url": "/admin-uploads/1782556835612-ministry-of-foreign-aden-yemen.jpeg",
+      "source": "upload",
+      "createdAt": "2026-06-27T10:40:36.409Z"
+    },
+    {
+      "id": "1782482244056",
+      "title": "West Assiut Plateau Road.jpg.jpeg",
+      "alt": "West Assiut Plateau Road.jpg.jpeg",
+      "category": "hero",
+      "url": "/admin-uploads/1782482243195-west-assiut-plateau-road.jpg.jpeg",
+      "source": "upload",
+      "createdAt": "2026-06-26T13:57:24.056Z"
+    }
+  ]
 }
