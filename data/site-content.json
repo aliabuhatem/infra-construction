@@ -2455,12 +2455,12 @@
       "buttonText": "Contact Our Team"
     },
     "project_1": {
-      "title": "Dhobab Airport",
-      "country": "Yemen",
-      "sector": "Airports",
-      "type": "Aviation Infrastructure",
-      "description": "Airfield development and strategic infrastructure delivery for Dhobab Airport.",
-      "image": "/media/airports-dhobab-airport-yemen.jpeg"
+      "title": "Al-Attiyat Al-Bahariya Wastewater",
+      "country": "Egypt",
+      "sector": "Water Infrastructure",
+      "type": "Water Infrastructure",
+      "description": "Al-Attiyat Al-Bahariya Wastewater Treatment Plant in  Abnoub - Hayah Kareema",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.jpeg"
     },
     "project_2": {
       "title": "Al Riyan Airport",
