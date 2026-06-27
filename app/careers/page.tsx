@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
+import MediaImage from "@/components/admin-panel/MediaImage";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
@@ -39,7 +40,7 @@ export default function CareersPage() {
     <>
       {/* ── HERO ────────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[540px] flex items-end overflow-hidden">
-        <Image src="/media/careers hero section photo.png" alt="Careers at INFRA" fill priority quality={100} unoptimized sizes="100vw" className="object-cover object-center" />
+        <MediaImage category="careers_hero" title="backgroundImage" fallbackSrc="/media/careers hero section photo.png" alt="Careers at INFRA" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/96 via-[#213B4D]/70 to-[#213B4D]/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
           <div className="flex items-center gap-3 mb-4">
@@ -116,7 +117,7 @@ export default function CareersPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
           <div className="grid lg:grid-cols-2 gap-[1px] items-stretch">
             <div className="relative min-h-[480px]">
-              <Image src="/media/water-dam-construction-yemen.jpeg" alt="Work with INFRA" fill priority quality={100} unoptimized sizes="100vw" className="object-cover object-center" />
+              <MediaImage category="careers_empower" title="image" fallbackSrc="/media/water-dam-construction-yemen.jpeg" alt="Work with INFRA" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-r from-[#0d1e28]/30 to-transparent" />
             </div>
             <div className="py-20 px-10 lg:px-16 flex flex-col justify-center">

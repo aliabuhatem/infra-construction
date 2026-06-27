@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
+import MediaImage from "@/components/admin-panel/MediaImage";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
@@ -42,7 +43,7 @@ export default function SectorsPage() {
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
-        <Image src="/media/sectors hero section photo.png" alt="Our Sectors" fill priority quality={100} unoptimized sizes="100vw" className="object-cover object-center" />
+        <MediaImage category="sectors_hub_hero" title="backgroundImage" fallbackSrc="/media/sectors hero section photo.png" alt="Our Sectors" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/96 via-[#213B4D]/30 to-[#213B4D]/5" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
           <div className="flex items-center gap-3 mb-4">

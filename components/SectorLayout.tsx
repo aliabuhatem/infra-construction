@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
+import MediaImage from "@/components/admin-panel/MediaImage";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -97,15 +98,11 @@ export default function SectorLayout({
     <>
       {/* ── HERO ──────────────────────────────────────────────────────── */}
       <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
-        <Image
-          src={heroImage}
-          alt={heroTitle}
-          fill
-          className="object-cover object-center"
-          priority
-          quality={100}
-          sizes="100vw"
-        />
+        {sk ? (
+          <MediaImage category={sk} title="heroImage" fallbackSrc={heroImage} alt={heroTitle} className="absolute inset-0 w-full h-full object-cover object-center" />
+        ) : (
+          <Image src={heroImage} alt={heroTitle} fill className="object-cover object-center" priority quality={100} sizes="100vw" />
+        )}
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/300 via-[#213B4D]/85 to-[#213B4D]/15" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
           <Eyebrow text={T(sk || "", "eyebrow", eyebrow)} />

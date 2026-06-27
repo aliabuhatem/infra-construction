@@ -79,7 +79,7 @@ export default function AboutPage() {
     <>
       {/* ── HERO ────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[540px] flex items-end overflow-hidden">
-        <Image src="/media/Abyan Coast Cornich-01.jpeg" alt="About INFRA Construction" fill className="object-cover object-center" priority quality={100} sizes="100vw" />
+        <MediaImage category="about_hero" title="backgroundImage" fallbackSrc="/media/Abyan Coast Cornich-01.jpeg" alt="About INFRA Construction" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/100 via-[#213B4D]/60 to-[#213B4D]/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
           <div className="flex items-center gap-3 mb-4">
@@ -143,7 +143,7 @@ export default function AboutPage() {
           </div>
 
           <div className="relative h-[500px] lg:h-full min-h-[420px] overflow-hidden">
-            <Image src="/media/infrastructure-aden-causeway-widening-yemen.jpeg" alt="INFRA Construction project site" fill priority quality={100} unoptimized sizes="100vw" className="object-cover object-center" />
+            <MediaImage category="about_story_full" title="image" fallbackSrc="/media/infrastructure-aden-causeway-widening-yemen.jpeg" alt="INFRA Construction project site" className="absolute inset-0 w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <div className="flex flex-wrap gap-3">
@@ -272,7 +272,7 @@ export default function AboutPage() {
       {/* ── FUTURE GOALS ────────────────────────────────────────────── */}
       <section className="py-28 bg-[#213B4D] relative overflow-hidden">
         <div className="absolute inset-y-0 right-0 w-1/2 pointer-events-none hidden lg:block">
-          <Image src="/media/about-.sectionjpg.jpg" alt="" fill priority quality={100} sizes="(min-width:1024px) 100vw, 100vw" className="object-cover object-center" />
+          <MediaImage category="about_future_goals" title="image" fallbackSrc="/media/about-.sectionjpg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#213B4D] via-[#213B4D]/70 to-transparent" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14">
@@ -548,7 +548,7 @@ export default function AboutPage() {
       <section className="bg-[#f4f6f8]">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 min-h-[480px]">
           <div className="relative h-72 lg:h-auto overflow-hidden img-zoom">
-            <Image src="/media/industrial-floating-marine-pier-yemen.jpeg" alt="Our team" fill priority quality={100} unoptimized sizes="100vw" className="object-cover object-center" />
+            <MediaImage category="about_team_roles" title="image" fallbackSrc="/media/industrial-floating-marine-pier-yemen.jpeg" alt="Our team" className="absolute inset-0 w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-[#213B4D]/25" />
           </div>
           <div className="px-10 lg:px-16 py-16 lg:py-20 flex flex-col justify-center">
