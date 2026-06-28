@@ -2393,7 +2393,7 @@
     "project_8": {
       "title": "Sheikh Khalifa Housing — 204 Units",
       "country": "Hadramout, Yemen",
-      "sector": "Residential",
+      "sector": "Building",
       "type": "Infrastructure Design & Construction",
       "description": "Infrastructure development for a housing project in Yemen.",
       "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.jpeg"
@@ -2401,7 +2401,7 @@
     "project_9": {
       "title": "Assiut University Buildings",
       "country": "Egypt",
-      "sector": "Residential",
+      "sector": "Building",
       "type": "Construction",
       "description": "Construction of university medical buildings in Egypt.",
       "image": "/media/buildings-social-housing-assiut-egypt.avif"
@@ -2417,7 +2417,7 @@
     "project_11": {
       "title": "Design and Build of Sixteen Low Cost Housing Units",
       "country": "Indonesia",
-      "sector": "Social Housing",
+      "sector": "Building",
       "type": "Design and build",
       "description": "Design and construction of low-cost housing in Indonesia.",
       "image": "/media/fm-hotel-moroni-comoros.jpeg"
@@ -2425,7 +2425,7 @@
     "project_12": {
       "title": "Dialysis Center",
       "country": "Somaliland",
-      "sector": "Social Housing",
+      "sector": "Building",
       "type": "Social Housing",
       "description": "Construction of a medical dialysis center in Somaliland.",
       "image": "/media/buildings-dialysis-center-hargeisa-somaliland.jpeg"
@@ -2433,7 +2433,7 @@
     "project_13": {
       "title": "Implementation of the Ministry of Foreign Affairs building",
       "country": "Yemen",
-      "sector": "Social Housing",
+      "sector": "Building",
       "type": "Implementation",
       "description": "Implementation of government ministry building in Aden, Yemen.",
       "image": "/media/buildings-ministry-foreign-aden-yemen.jpeg"
@@ -2441,7 +2441,7 @@
     "project_14": {
       "title": "Slaughterhouse Barbara",
       "country": "Somaliland",
-      "sector": "Social Housing",
+      "sector": "Building",
       "type": "Design and build",
       "description": "Design and build of a modern slaughterhouse in Somaliland.",
       "image": "/media/1782635477365-slaughterhouse-barbara-somaliland-01.jpg"
