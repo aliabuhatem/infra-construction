@@ -10,10 +10,9 @@ export default async function HomePage() {
   const c = await getContent();
   const deleted = new Set(c._deletedSections || []);
 
-  // Latest 3 news — descending by section number so newest additions appear first
+  // Latest 3 news — first 3 of the sorted list (news_1 = most recent)
   const latestNews = getSectionsByPrefix(c, "news_")
     .filter((n) => /^news_\d+$/.test(n._key))
-    .reverse()
     .slice(0, 3);
   return (
     <>
