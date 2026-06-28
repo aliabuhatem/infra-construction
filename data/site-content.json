@@ -2728,6 +2728,15 @@
   },
   "media": [
     {
+      "id": "1782639551806",
+      "title": "news 6",
+      "alt": "news 6",
+      "category": "gallery",
+      "url": "/media/1782639550767-news-6.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-28T09:39:11.806Z"
+    },
+    {
       "id": "1782639523335",
       "title": "news 5",
       "alt": "news 5",
