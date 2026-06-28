@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
+import { getContent } from "@/lib/getContent";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
@@ -33,7 +34,10 @@ const projects = [
   { title: "Aswan University Buildings",               country: "Egypt",     sector: "Buildings",                    type: "Civil Works",          description: "Civil work and material supply for University Buildings, Aswan, Egypt.",                                                       image: "/media/buildings-social-housing-assiut-egypt.avif",         sectionKey: "project_24" },
 ];
 
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  const c = await getContent();
+  const deleted = new Set(c._deletedSections || []);
+  const visibleProjects = projects.filter((p) => !deleted.has(p.sectionKey));
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
@@ -86,7 +90,7 @@ export default function ProjectsPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
-            {projects.map((p, i) => (
+            {visibleProjects.map((p, i) => (
               <div key={i} className="group bg-white hover:bg-[#f4f6f8] transition-colors overflow-hidden">
                 <div className="relative h-52 overflow-hidden">
                   <MediaImage

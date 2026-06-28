@@ -21,6 +21,7 @@ export type ContentStore = {
     source: string;
     createdAt: string;
   }>;
+  _deletedSections: string[];
 };
 
 let cache: { data: ContentStore; ts: number } | null = null;
@@ -37,7 +38,7 @@ export async function getContent(): Promise<ContentStore> {
     cache = { data, ts: Date.now() };
     return data;
   } catch {
-    return { content: {}, media: [] };
+    return { content: {}, media: [], _deletedSections: [] };
   }
 }
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { newsItems } from "@/lib/news-data";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
+import { getContent } from "@/lib/getContent";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
@@ -13,8 +14,11 @@ export const metadata = {
     "Project milestones, certifications, and company developments from across INFRA Construction's global operations.",
 };
 
-export default function NewsPage() {
-  const [featured, ...rest] = newsItems;
+export default async function NewsPage() {
+  const c = await getContent();
+  const deleted = new Set(c._deletedSections || []);
+  const visibleItems = newsItems.filter((n) => !deleted.has(n.sectionKey));
+  const [featured, ...rest] = visibleItems;
 
   return (
     <>
@@ -85,6 +89,7 @@ export default function NewsPage() {
       </div>
 
       {/* ── FEATURED ──────────────────────────────────────────────────────── */}
+      {featured && (
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
           <div className="flex items-center gap-3 mb-10">
@@ -136,6 +141,7 @@ export default function NewsPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* ── NEWS GRID ─────────────────────────────────────────────────────── */}
       <section className="pb-24 bg-white">

@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import ContentText from "../components/admin-panel/ContentText";
 import MediaImage from "../components/admin-panel/MediaImage";
+import { getContent } from "../lib/getContent";
 
 /* ─── Component ─────────────────────────────────────────────────────────── */
 
-export default function HomePage() {
+export default async function HomePage() {
+  const c = await getContent();
+  const deleted = new Set(c._deletedSections || []);
   return (
     <>
       {/* ── 1. HERO ────────────────────────────────────────────────────── */}
@@ -409,7 +412,7 @@ export default function HomePage() {
               { key: "home_project_1", fallbackTitle: "Hassan Dam Project", fallbackCountry: "Yemen", fallbackType: "Water Infrastructure", fallbackImage: "/media/water-hassan-dam-project-yemen.jpeg" },
               { key: "home_project_2", fallbackTitle: "Stormwater Drainage System", fallbackCountry: "Yemen", fallbackType: "Civil Works", fallbackImage: "/media/infrastructure-stormwater-drainage-yemen.jpeg" },
               { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.jpeg" },
-            ].map((p) => (
+            ].filter((p) => !deleted.has(p.key)).map((p) => (
               <Link
                 key={p.key}
                 href="/projects"
@@ -610,7 +613,7 @@ export default function HomePage() {
               { key: "home_news_1", fallbackDate: "March 2025", fallbackCategory: "Projects", fallbackTitle: "INFRA Completes Major Water Infrastructure Project in Djibouti", fallbackImage: "/media/water-al-som-supply-hadramawt-yemen.jpeg" },
               { key: "home_news_2", fallbackDate: "January 2025", fallbackCategory: "Certifications", fallbackTitle: "INFRA Renews ISO 9001 and ISO 14001 Certifications for 2025", fallbackImage: "/media/company-brand-quote.jpeg" },
               { key: "home_news_3", fallbackDate: "November 2024", fallbackCategory: "Projects", fallbackTitle: "INFRA Delivers Dhobab Airport Strategic Infrastructure, Yemen", fallbackImage: "/media/airports-dhobab-airport-diagram.png" },
-            ].map((n) => (
+            ].filter((n) => !deleted.has(n.key)).map((n) => (
               <Link
                 key={n.key}
                 href="/news"
