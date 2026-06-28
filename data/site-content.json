@@ -2446,78 +2446,6 @@
       "description": "Water storage tank construction for Aden city water supply.",
       "image": "/media/1782635477365-slaughterhouse-barbara-somaliland-01.jpg"
     },
-    "project_15": {
-      "title": "Dam Reservoir",
-      "country": "Yemen",
-      "sector": "Water",
-      "type": "Water Infrastructure",
-      "description": "Reservoir construction and water storage infrastructure project.",
-      "image": "/media/water-dam-reservoir-yemen.jpeg"
-    },
-    "project_16": {
-      "title": "Al-Haswa Power Plant",
-      "country": "Aden, Yemen",
-      "sector": "Energy",
-      "type": "Power Generation",
-      "description": "Power plant construction and mechanical works at Al-Haswa, Aden.",
-      "image": "/media/energy-power-plant-alhaswa-aden-yemen.jpeg"
-    },
-    "project_17": {
-      "title": "Taiz Power Plant Maintenance",
-      "country": "Yemen",
-      "sector": "Energy",
-      "type": "O&M",
-      "description": "Long-term operations and maintenance for Taiz power generation facility.",
-      "image": "/media/energy-power-plant-maintenance-taiz-yemen.jpeg"
-    },
-    "project_18": {
-      "title": "Abyan Coast Corniche",
-      "country": "Yemen",
-      "sector": "Civil Works",
-      "type": "Coastal Infrastructure",
-      "description": "Coastal road and corniche development along the Abyan coastline.",
-      "image": "/media/Abyan Coast Cornich-01.jpeg"
-    },
-    "project_19": {
-      "title": "Aden Causeway Widening",
-      "country": "Yemen",
-      "sector": "Transportation",
-      "type": "Civil Works",
-      "description": "Major causeway widening project improving connectivity to Aden.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg"
-    },
-    "project_20": {
-      "title": "Design and Build of Sixteen Low Cost Housing Units",
-      "country": "Indonesia",
-      "sector": "Facilities Management",
-      "type": "FM Services",
-      "description": "Complete facilities management and operations for Hotel Moroni.",
-      "image": "/media/fm-hotel-moroni-comoros.jpeg"
-    },
-    "project_21": {
-      "title": "Coastal Highway — Taiz",
-      "country": "Yemen",
-      "sector": "Transportation",
-      "type": "Highway",
-      "description": "Coastal highway construction and road infrastructure in Taiz Governorate.",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
-    },
-    "project_22": {
-      "title": "Dam Construction",
-      "country": "Yemen",
-      "sector": "Water",
-      "type": "Dam Construction",
-      "description": "Large-scale dam construction supporting regional water supply and flood control.",
-      "image": "/media/water-dam-construction-yemen.jpeg"
-    },
-    "project_23": {
-      "title": "Stormwater Drainage System",
-      "country": "Yemen",
-      "sector": "Civil Works",
-      "type": "Drainage",
-      "description": "Urban stormwater drainage network design and construction.",
-      "image": "/media/infrastructure-stormwater-drainage-yemen.jpeg"
-    },
     "news_1": {
       "title": "INFRA Construction Group Partners with Shaanxi Construction",
       "date": "June 2025",
@@ -2884,6 +2812,15 @@
     "project_taiz_power_maintenance",
     "project_abyan_corniche",
     "project_aden_causeway",
-    "project_24"
+    "project_24",
+    "project_23",
+    "project_22",
+    "project_21",
+    "project_15",
+    "project_16",
+    "project_17",
+    "project_18",
+    "project_19",
+    "project_20"
   ]
 }
