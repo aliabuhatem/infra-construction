@@ -2468,6 +2468,7 @@
       "image": "/media/news-kuwait-expansion-2025.jpg",
       "author": "INFRA Communications",
       "location": "Africa",
+      "readTime": "3 min read",
       "p1": "As part of its ongoing strategy to expand its footprint in development and infrastructure projects across Africa, Infra Construction has participated in the prequalification process for the construction of two vocational training centers in two cities in Somaliland, a project funded by the German Development Bank (KfW).",
       "p2": "The company has successfully advanced to the shortlist alongside four other international firms and is currently proceeding through the technical evaluation and post-qualification stages, reflecting the strength of its expertise and its ability to compete in large-scale development projects.",
       "p3": "This achievement highlights the growing confidence in Infra Construction's capabilities as a reliable partner in delivering sustainable projects that support development and create a meaningful impact in the communities they serve.",
@@ -2726,6 +2727,15 @@
     }
   },
   "media": [
+    {
+      "id": "1782639051067",
+      "title": "news 1",
+      "alt": "news 1",
+      "category": "gallery",
+      "url": "/media/1782639050032-screenshot-2026-06-28-122302.png",
+      "source": "upload",
+      "createdAt": "2026-06-28T09:30:51.067Z"
+    },
     {
       "id": "1782635478530",
       "title": "Slaughterhouse Barbara Somaliland",
