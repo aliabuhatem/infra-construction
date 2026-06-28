@@ -2353,7 +2353,7 @@
     "project_3": {
       "title": "Bassra Wastewater Treatment Plan",
       "country": "Egypt",
-      "sector": "Water Infrastructure",
+      "sector": "Infrastructure",
       "type": "Water Infrastructure",
       "description": "Comprehensive master plan study for Aden Port infrastructure development.",
       "image": "/media/fm-hotel-moroni-comoros.jpeg"
@@ -2361,7 +2361,7 @@
     "project_4": {
       "title": "Abyan Coast Cornich",
       "country": "Yemen",
-      "sector": "Civil",
+      "sector": "Infrastructure",
       "type": "Civil Infrastructure",
       "description": "CIVIL WORKS AND SHORE PROTECTION FOR ABYAN COAST CORNICHE.",
       "image": "/media/Abyan Coast Cornich-01.jpeg"
@@ -2377,7 +2377,7 @@
     "project_6": {
       "title": "THREE WATER WELLS  HADIBO",
       "country": "Socotra - Yemen",
-      "sector": "Water Infrastructure",
+      "sector": "Infrastructure",
       "type": "Water Infrastructure",
       "description": "Port infrastructure development on the island of Socotra.",
       "image": "/media/1782632769253-3-water-supply-wells-in-the-zone-of-qalansiyah-01.jpg"
@@ -2385,7 +2385,7 @@
     "project_7": {
       "title": "NEW ASSIUT BARRAGE",
       "country": "Cairo, Egypt",
-      "sector": "Transportation",
+      "sector": "Infrastructure",
       "type": "Transportation",
       "description": "Construction of government ministry building in Aden.",
       "image": "/media/1782633413952-new-assiut-barrage-01.jpg"
@@ -2409,7 +2409,7 @@
     "project_10": {
       "title": "West Assiut Plateau Road",
       "country": "Egypt",
-      "sector": "Transportation",
+      "sector": "Infrastructure",
       "type": "Civil Works",
       "description": "Highway and infrastructure works along the Assiut Plateau corridor.",
       "image": "/media/infrastructure-assiut-plateau-axis-egypt.jpeg"
