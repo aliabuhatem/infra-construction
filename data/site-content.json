@@ -2518,14 +2518,6 @@
       "description": "Urban stormwater drainage network design and construction.",
       "image": "/media/infrastructure-stormwater-drainage-yemen.jpeg"
     },
-    "project_24": {
-      "title": "General Buildings Construction",
-      "country": "Middle East",
-      "sector": "Buildings",
-      "type": "Construction",
-      "description": "Commercial and institutional building construction project.",
-      "image": "/media/buildings-general-facade.jpeg"
-    },
     "news_1": {
       "title": "INFRA Construction Group Partners with Shaanxi Construction",
       "date": "June 2025",
@@ -2891,6 +2883,7 @@
     "project_alhaswa_power",
     "project_taiz_power_maintenance",
     "project_abyan_corniche",
-    "project_aden_causeway"
+    "project_aden_causeway",
+    "project_24"
   ]
 }
