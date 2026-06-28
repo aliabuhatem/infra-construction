@@ -2,13 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import ContentText from "../components/admin-panel/ContentText";
 import MediaImage from "../components/admin-panel/MediaImage";
-import { getContent } from "../lib/getContent";
+import { getContent, getSectionsByPrefix } from "../lib/getContent";
 
 /* ─── Component ─────────────────────────────────────────────────────────── */
 
 export default async function HomePage() {
   const c = await getContent();
   const deleted = new Set(c._deletedSections || []);
+
+  // Latest 3 news — descending by section number so newest additions appear first
+  const latestNews = getSectionsByPrefix(c, "news_")
+    .filter((n) => /^news_\d+$/.test(n._key))
+    .reverse()
+    .slice(0, 3);
   return (
     <>
       {/* ── 1. HERO ────────────────────────────────────────────────────── */}
@@ -609,22 +615,18 @@ export default async function HomePage() {
             </Link>
           </div>
           <div className="grid lg:grid-cols-3 gap-6">
-            {[
-              { key: "home_news_1", fallbackDate: "March 2025", fallbackCategory: "Projects", fallbackTitle: "INFRA Completes Major Water Infrastructure Project in Djibouti", fallbackImage: "/media/water-al-som-supply-hadramawt-yemen.jpeg" },
-              { key: "home_news_2", fallbackDate: "January 2025", fallbackCategory: "Certifications", fallbackTitle: "INFRA Renews ISO 9001 and ISO 14001 Certifications for 2025", fallbackImage: "/media/company-brand-quote.jpeg" },
-              { key: "home_news_3", fallbackDate: "November 2024", fallbackCategory: "Projects", fallbackTitle: "INFRA Delivers Dhobab Airport Strategic Infrastructure, Yemen", fallbackImage: "/media/airports-dhobab-airport-diagram.png" },
-            ].filter((n) => !deleted.has(n.key)).map((n) => (
+            {latestNews.map((n) => (
               <Link
-                key={n.key}
-                href="/news"
+                key={n._key}
+                href={`/news/${n.slug || n._key}`}
                 className="img-zoom group block overflow-hidden border border-[#213B4D]/8 hover:border-[#1F93A4] transition-colors duration-300"
               >
                 <div className="relative h-52 overflow-hidden">
                   <MediaImage
-                    category={n.key}
-                    title={`${n.key}_image`}
-                    fallbackSrc={n.fallbackImage}
-                    alt={n.fallbackTitle}
+                    category={n._key}
+                    title={`${n._key}_image`}
+                    fallbackSrc={n.image || ""}
+                    alt={n.title || ""}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-[#213B4D]/30 group-hover:bg-[#213B4D]/15 transition-colors duration-300" />
@@ -633,7 +635,7 @@ export default async function HomePage() {
                       className="bg-[#1F93A4] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1"
                       style={{ fontFamily: "var(--font-source-sans)" }}
                     >
-                      <ContentText section={n.key} name="category" fallback={n.fallbackCategory} />
+                      <ContentText section={n._key} name="category" fallback={n.category || ""} />
                     </span>
                   </div>
                 </div>
@@ -642,13 +644,13 @@ export default async function HomePage() {
                     className="text-[#5E5E5E] text-[11px] uppercase tracking-widest mb-2"
                     style={{ fontFamily: "var(--font-source-sans)" }}
                   >
-                    <ContentText section={n.key} name="date" fallback={n.fallbackDate} />
+                    <ContentText section={n._key} name="date" fallback={n.date || ""} />
                   </p>
                   <h3
                     className="text-[#213B4D] font-bold text-[15px] leading-snug group-hover:text-[#1F93A4] transition-colors"
                     style={{ fontFamily: "var(--font-source-sans)" }}
                   >
-                    <ContentText section={n.key} name="title" fallback={n.fallbackTitle} />
+                    <ContentText section={n._key} name="title" fallback={n.title || ""} />
                   </h3>
                 </div>
               </Link>

@@ -72,3 +72,26 @@ export function section<T extends Record<string, string>>(
   }
   return result as T;
 }
+
+/**
+ * Helper: return all sections whose key starts with `prefix`, sorted numerically,
+ * excluding any sections in `_deletedSections`.
+ * Each returned entry has `_key` (the section key) plus all its fields.
+ */
+export function getSectionsByPrefix(
+  store: ContentStore,
+  prefix: string
+): Array<Record<string, string> & { _key: string }> {
+  const deleted = new Set(store._deletedSections || []);
+  return Object.entries(store.content || {})
+    .filter(([key]) => key.startsWith(prefix) && !deleted.has(key))
+    .map(([key, fields]) => ({ _key: key, ...(fields as Record<string, string>) }))
+    .sort((a, b) => {
+      const suffA = a._key.slice(prefix.length);
+      const suffB = b._key.slice(prefix.length);
+      const numA = parseInt(suffA, 10);
+      const numB = parseInt(suffB, 10);
+      if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
+      return suffA.localeCompare(suffB);
+    });
+}

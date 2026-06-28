@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { newsItems } from "@/lib/news-data";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
@@ -17,8 +16,19 @@ export const metadata = {
 export default async function NewsPage() {
   const c = await getContent();
   const deleted = new Set(c._deletedSections || []);
-  const visibleItems = newsItems.filter((n) => !deleted.has(n.sectionKey));
-  const [featured, ...rest] = visibleItems;
+  const allItems = Object.entries(c.content || {})
+    .filter(([k]) => /^news_\d+$/.test(k) && !deleted.has(k))
+    .sort(([a], [b]) => parseInt(a.replace("news_", ""), 10) - parseInt(b.replace("news_", ""), 10))
+    .map(([k, f]) => ({
+      sectionKey: k,
+      slug:       f.slug     || k,
+      title:      f.title    || "",
+      date:       f.date     || "",
+      category:   f.category || "",
+      excerpt:    f.excerpt  || "",
+      image:      f.image    || "",
+    }));
+  const [featured, ...rest] = allItems;
 
   return (
     <>

@@ -4,28 +4,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import ContentText from "@/components/admin-panel/ContentText";
+import { useContentStore } from "@/components/admin-panel/ContentProvider";
+import type { ContentStore } from "@/lib/getContent";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
 
-// Contact details (same as first code)
-const CONTACT = {
-  email: "info@ic-gp.com",
-  phone: "+20345680875",
-  phoneDisplay: "+20 345680875",
-  facebook: "https://www.facebook.com/share/1DznurcqWH/",
-  linkedin: "https://www.linkedin.com/company/ic-gp/",
-};
-
-const offices = [
-  { city: "Abu Dhabi", country: "UAE",    address: "Office 606, EREC Building, Zone 1, Al Danah, Abu Dhabi, UAE",                            license: "CN-2347468", section: "contact_office_1" },
-  { city: "Dubai",     country: "UAE",    address: "Office 306, Bld 121, Al Manar Area, Dubai, UAE",                                         license: "1019817",   section: "contact_office_2" },
-  { city: "Cairo",     country: "Egypt",  address: "224 Khalid Ibn Al Waleed, South of the Academy, Fifth Settlement, Cairo, Egypt",          license: "162505",    section: "contact_office_3" },
-  { city: "Aden",      country: "Yemen",  address: "Bldg. 1, Bader Roundabout, P.O. Box 70116, Khormaksar, Aden, Yemen",                    license: "2769",      section: "contact_office_4" },
-  { city: "Ontario",   country: "Canada", address: "3280 Donald Mackay Street, Oakville, Ontario",                                           license: "57582091",  section: "contact_office_5" },
-];
-
 export default function ContactPage() {
+  const { store: rawStore } = useContentStore();
+  const store = rawStore as ContentStore | null;
+  const email    = store?.content?.footer?.email    || "info@ic-gp.com";
+  const phone    = store?.content?.footer?.phone    || "+20345680875";
+  const facebook = store?.content?.footer?.facebook || "https://www.facebook.com/share/1DznurcqWH/";
+  const linkedin = store?.content?.footer?.linkedin || "https://www.linkedin.com/company/ic-gp/";
+  const deleted  = new Set(store?._deletedSections || []);
+  const offices  = Object.entries((store?.content || {}) as Record<string, Record<string, string>>)
+    .filter(([k]) => /^contact_office_\d+$/.test(k) && !deleted.has(k))
+    .sort(([a], [b]) => parseInt(a.replace("contact_office_", ""), 10) - parseInt(b.replace("contact_office_", ""), 10))
+    .map(([k, f]) => ({ _key: k, city: f.city || "", country: f.country || "", address: f.address || "", license: f.license || "" }));
+
   const [showOptions, setShowOptions] = useState(false);
   const [form, setForm] = useState({
     firstName: "",
@@ -237,7 +234,7 @@ export default function ContactPage() {
             <div className="space-y-[1px] bg-[#213B4D]/8">
               {offices.map((o) => (
                 <div
-                  key={o.section}
+                  key={o._key}
                   className="bg-white hover:bg-[#f4f6f8] transition-colors px-6 py-5 group"
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -245,20 +242,20 @@ export default function ContactPage() {
                       className="text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors"
                       style={{ fontFamily: B }}
                     >
-                      <ContentText section={o.section} name="city" fallback={o.city} />
+                      <ContentText section={o._key} name="city" fallback={o.city} />
                     </div>
                     <span
                       className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#1F93A4]/30 px-2 py-0.5"
                       style={{ fontFamily: B }}
                     >
-                      <ContentText section={o.section} name="country" fallback={o.country} />
+                      <ContentText section={o._key} name="country" fallback={o.country} />
                     </span>
                   </div>
                   <div className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
-                    <ContentText section={o.section} name="address" fallback={o.address} />
+                    <ContentText section={o._key} name="address" fallback={o.address} />
                   </div>
                   <div className="text-[#5E5E5E]/60 text-[11px] mt-1.5 uppercase tracking-wider" style={{ fontFamily: B }}>
-                    Lic. <ContentText section={o.section} name="license" fallback={o.license} />
+                    Lic. <ContentText section={o._key} name="license" fallback={o.license} />
                   </div>
                 </div>
               ))}
@@ -302,18 +299,18 @@ export default function ContactPage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-[1px] bg-white/5">
             {offices.map((o) => (
-              <div key={o.section} className="bg-[#213B4D] hover:bg-[#1a2f3d] transition-colors p-6 group text-center">
+              <div key={o._key} className="bg-[#213B4D] hover:bg-[#1a2f3d] transition-colors p-6 group text-center">
                 <div
                   className="text-[#1F93A4] text-[9px] font-bold uppercase tracking-[0.3em] mb-2"
                   style={{ fontFamily: B }}
                 >
-                  <ContentText section={o.section} name="country" fallback={o.country} />
+                  <ContentText section={o._key} name="country" fallback={o.country} />
                 </div>
                 <div
                   className="text-white text-[15px] font-semibold group-hover:text-[#1F93A4] transition-colors"
                   style={{ fontFamily: B }}
                 >
-                  <ContentText section={o.section} name="city" fallback={o.city} />
+                  <ContentText section={o._key} name="city" fallback={o.city} />
                 </div>
               </div>
             ))}
@@ -321,7 +318,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── CTA (unchanged except email link updated to CONTACT.email) ── */}
+      {/* ── CTA (unchanged except email link updated to email) ── */}
       <section className="relative py-28 bg-[#1F93A4] overflow-hidden">
         <div
           className="absolute inset-0 opacity-5"
@@ -344,7 +341,7 @@ export default function ContactPage() {
             <ContentText section="contact_cta" name="body" fallback="Whether it is a megaproject or a targeted engineering service, INFRA Construction is ready to deliver." />
           </p>
           <a
-            href={`mailto:${CONTACT.email}`}
+            href={`mailto:${email}`}
             className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
             style={{ fontFamily: B }}
           >
@@ -385,7 +382,7 @@ export default function ContactPage() {
 
             <div className="space-y-3">
               <a
-                href={`mailto:${CONTACT.email}?subject=${buildSubject()}&body=${buildBody()}`}
+                href={`mailto:${email}?subject=${buildSubject()}&body=${buildBody()}`}
                 className="flex items-center justify-between border border-[#213B4D]/15 px-5 py-4 hover:border-[#1F93A4] hover:bg-[#F5F5F0] transition"
                 style={{ fontFamily: B }}
               >
@@ -393,14 +390,14 @@ export default function ContactPage() {
                   <span className="w-9 h-9 rounded-full bg-[#1F93A4]/10 text-[#1F93A4] flex items-center justify-center">✉</span>
                   <span>
                     <span className="block text-[#213B4D] font-semibold text-sm">Email</span>
-                    <span className="block text-xs text-[#213B4D]/60">{CONTACT.email}</span>
+                    <span className="block text-xs text-[#213B4D]/60">{email}</span>
                   </span>
                 </span>
                 <span className="text-[#213B4D]/40">→</span>
               </a>
 
               <a
-                href={`tel:${CONTACT.phone}`}
+                href={`tel:${phone}`}
                 className="flex items-center justify-between border border-[#213B4D]/15 px-5 py-4 hover:border-[#1F93A4] hover:bg-[#F5F5F0] transition"
                 style={{ fontFamily: B }}
               >
@@ -408,14 +405,14 @@ export default function ContactPage() {
                   <span className="w-9 h-9 rounded-full bg-[#1F93A4]/10 text-[#1F93A4] flex items-center justify-center">☎</span>
                   <span>
                     <span className="block text-[#213B4D] font-semibold text-sm">Call Us</span>
-                    <span className="block text-xs text-[#213B4D]/60">{CONTACT.phoneDisplay}</span>
+                    <span className="block text-xs text-[#213B4D]/60">{phone}</span>
                   </span>
                 </span>
                 <span className="text-[#213B4D]/40">→</span>
               </a>
 
               <a
-                href={CONTACT.facebook}
+                href={facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between border border-[#213B4D]/15 px-5 py-4 hover:border-[#1F93A4] hover:bg-[#F5F5F0] transition"
@@ -432,7 +429,7 @@ export default function ContactPage() {
               </a>
 
               <a
-                href={CONTACT.linkedin}
+                href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between border border-[#213B4D]/15 px-5 py-4 hover:border-[#1F93A4] hover:bg-[#F5F5F0] transition"

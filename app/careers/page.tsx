@@ -1,30 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
+import { getContent, getSectionsByPrefix } from "@/lib/getContent";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
-
-const openings = [
-  { title: "Senior Civil Engineer",             location: "Abu Dhabi, UAE",     type: "Full-Time", sector: "Infrastructure",      section: "careers_opening_1" },
-  { title: "Project Manager – Infrastructure",  location: "Dubai, UAE",         type: "Full-Time", sector: "Project Management",  section: "careers_opening_2" },
-  { title: "Electrical Engineer",               location: "Cairo, Egypt",        type: "Full-Time", sector: "Energy & Power",      section: "careers_opening_3" },
-  { title: "Quantity Surveyor",                 location: "Amman, Jordan",      type: "Full-Time", sector: "Commercial",           section: "careers_opening_4" },
-  { title: "MEP Engineer",                      location: "Abu Dhabi, UAE",     type: "Full-Time", sector: "Buildings",            section: "careers_opening_5" },
-  { title: "BIM Coordinator",                   location: "Dubai, UAE",         type: "Full-Time", sector: "Engineering",          section: "careers_opening_6" },
-  { title: "HSE Officer",                       location: "Multiple Locations", type: "Full-Time", sector: "HSSE",                 section: "careers_opening_7" },
-  { title: "Procurement Specialist",            location: "Dubai, UAE",         type: "Full-Time", sector: "Procurement",          section: "careers_opening_8" },
-];
-
-const benefits = [
-  { title: "Competitive Compensation", body: "Attractive salary packages aligned with industry standards and your experience level.", section: "careers_benefit_1" },
-  { title: "International Exposure",   body: "Work on diverse projects across the Middle East, Africa, and beyond.",                  section: "careers_benefit_2" },
-  { title: "Career Development",       body: "Continuous learning, training, and growth opportunities within a dynamic organisation.", section: "careers_benefit_3" },
-  { title: "Diverse Culture",          body: "A multicultural and inclusive work environment that values every team member.",          section: "careers_benefit_4" },
-  { title: "Technical Resources",      body: "Access to advanced tools, software, and technical resources to support your work.",     section: "careers_benefit_5" },
-  { title: "Stability & Growth",       body: "Join a company with 25 years of consistent growth and an expanding global footprint.",  section: "careers_benefit_6" },
-];
 
 const benefitIcons = [
   <svg key="1" className="w-6 h-6 text-[#1F93A4] group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v2m0 8v2M9.5 9.5a2.5 2.5 0 015 0c0 1.5-1.5 2-2.5 2.5S9.5 15 9.5 16.5a2.5 2.5 0 005 0"/></svg>,
@@ -35,7 +15,11 @@ const benefitIcons = [
   <svg key="6" className="w-6 h-6 text-[#1F93A4] group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
 ];
 
-export default function CareersPage() {
+export default async function CareersPage() {
+  const c = await getContent();
+  const openings = getSectionsByPrefix(c, "careers_opening_");
+  const benefits = getSectionsByPrefix(c, "careers_benefit_");
+
   return (
     <>
       {/* ── HERO ────────────────────────────────────────────────────────── */}
@@ -100,10 +84,10 @@ export default function CareersPage() {
                   {benefitIcons[i]}
                 </div>
                 <h3 className="text-[#213B4D] font-bold text-[16px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
-                  <ContentText section={benefit.section} name="title" fallback={benefit.title} />
+                  <ContentText section={benefit._key} name="title" fallback={benefit.title || ""} />
                 </h3>
                 <p className="text-[#5E5E5E] text-[14px] leading-relaxed" style={{ fontFamily: B }}>
-                  <ContentText section={benefit.section} name="body" fallback={benefit.body} />
+                  <ContentText section={benefit._key} name="body" fallback={benefit.body || ""} />
                 </p>
                 <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#1F93A4] group-hover:w-full transition-all duration-500" />
               </div>
@@ -171,17 +155,17 @@ export default function CareersPage() {
               <div key={i} className="bg-white hover:bg-[#f4f6f8] transition-colors px-8 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 group">
                 <div>
                   <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
-                    <ContentText section={job.section} name="sector" fallback={job.sector} />
+                    <ContentText section={job._key} name="sector" fallback={job.sector || ""} />
                   </div>
                   <h3 className="text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
-                    <ContentText section={job.section} name="title" fallback={job.title} />
+                    <ContentText section={job._key} name="title" fallback={job.title || ""} />
                   </h3>
                   <div className="flex items-center gap-5 mt-2" style={{ fontFamily: B }}>
                     <span className="text-[#5E5E5E] text-[12px]">
-                      <ContentText section={job.section} name="location" fallback={job.location} />
+                      <ContentText section={job._key} name="location" fallback={job.location || ""} />
                     </span>
                     <span className="border border-[#213B4D]/20 text-[#213B4D] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1">
-                      <ContentText section={job.section} name="type" fallback={job.type} />
+                      <ContentText section={job._key} name="type" fallback={job.type || ""} />
                     </span>
                   </div>
                 </div>

@@ -1,49 +1,76 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { newsItems, getNewsBySlug } from "@/lib/news-data";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
+import { readContentStore } from "@/lib/admin/content-store";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
 
-export function generateStaticParams() {
-  return newsItems.map((n) => ({ slug: n.slug }));
+type Fields = Record<string, string>;
+type Store = { content: Record<string, Fields>; _deletedSections?: string[] };
+type NewsItem = { _key: string } & Fields;
+
+function getNewsItems(store: Store): NewsItem[] {
+  const deleted = new Set(store._deletedSections || []);
+  return Object.entries(store.content || {})
+    .filter(([k]) => /^news_\d+$/.test(k) && !deleted.has(k))
+    .sort(([a], [b]) => parseInt(a.replace("news_", ""), 10) - parseInt(b.replace("news_", ""), 10))
+    .map(([k, f]) => ({ _key: k, ...f } as NewsItem));
+}
+
+export async function generateStaticParams() {
+  try {
+    const store = (await readContentStore({ includeSiteMedia: false })) as Store;
+    return getNewsItems(store)
+      .filter((n) => n.slug)
+      .map((n) => ({ slug: n.slug }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = getNewsBySlug(slug);
-  if (!item) return { title: "Article — INFRA Construction" };
-  return {
-    title: `${item.title} — INFRA Construction`,
-    description: item.excerpt,
-    openGraph: {
-      title: item.title,
-      description: item.excerpt,
-      images: [item.image],
-      type: "article",
-    },
-  };
+  try {
+    const store = (await readContentStore({ includeSiteMedia: false })) as Store;
+    const item = getNewsItems(store).find((n) => n.slug === slug);
+    if (!item) return { title: "Article — INFRA Construction" };
+    return {
+      title: `${item.title || slug} — INFRA Construction`,
+      description: item.excerpt || "",
+      openGraph: {
+        title: item.title || "",
+        description: item.excerpt || "",
+        images: item.image ? [item.image] : [],
+        type: "article",
+      },
+    };
+  } catch {
+    return { title: "Article — INFRA Construction" };
+  }
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = getNewsBySlug(slug);
+  const store = (await readContentStore({ includeSiteMedia: false })) as Store;
+  const allItems = getNewsItems(store);
+  const item = allItems.find((n) => n.slug === slug);
   if (!item) notFound();
 
-  const related = newsItems.filter((n) => n.slug !== item.slug).slice(0, 3);
+  const related = allItems.filter((n) => n.slug !== slug).slice(0, 3);
+  const paragraphs = [1, 2, 3, 4, 5].map((n) => item[`p${n}`]).filter(Boolean);
+  const highlights = [1, 2, 3, 4].map((n) => item[`h${n}`]).filter(Boolean);
 
   return (
     <>
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[520px] flex items-end overflow-hidden bg-[#0d1e28]">
         <MediaImage
-          category={item.sectionKey}
-          title={`${item.sectionKey}_image`}
-          fallbackSrc={item.image}
-          alt={item.title}
+          category={item._key}
+          title={`${item._key}_image`}
+          fallbackSrc={item.image || ""}
+          alt={item.title || ""}
           className="absolute inset-0 object-cover object-center w-full h-full"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28] via-[#0d1e28]/70 to-[#0d1e28]/20" />
@@ -53,16 +80,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
               style={{ fontFamily: B }}
             >
-              <ContentText section={item.sectionKey} name="category" fallback={item.category} />
+              <ContentText section={item._key} name="category" fallback={item.category || ""} />
             </span>
             <span className="text-white/60 text-[12px]" style={{ fontFamily: B }}>
-              <ContentText section={item.sectionKey} name="date" fallback={item.date} />
+              <ContentText section={item._key} name="date" fallback={item.date || ""} />
             </span>
             {item.location && (
               <>
                 <span className="text-white/30">·</span>
                 <span className="text-white/60 text-[12px]" style={{ fontFamily: B }}>
-                  <ContentText section={item.sectionKey} name="location" fallback={item.location} />
+                  <ContentText section={item._key} name="location" fallback={item.location} />
                 </span>
               </>
             )}
@@ -71,7 +98,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             className="text-white uppercase leading-[0.95]"
             style={{ fontFamily: H, fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            <ContentText section={item.sectionKey} name="title" fallback={item.title} />
+            <ContentText section={item._key} name="title" fallback={item.title || ""} />
           </h1>
         </div>
       </section>
@@ -98,44 +125,52 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             style={{ fontFamily: B }}
           >
             {item.author && (
-              <span>By <span className="text-[#213B4D] font-semibold">{item.author}</span></span>
+              <span>
+                By{" "}
+                <span className="text-[#213B4D] font-semibold">
+                  <ContentText section={item._key} name="author" fallback={item.author} />
+                </span>
+              </span>
             )}
-            <span>{item.date}</span>
-            {item.readTime && <span>{item.readTime}</span>}
+            <span>
+              <ContentText section={item._key} name="date" fallback={item.date || ""} />
+            </span>
+            {item.readTime && (
+              <span>
+                <ContentText section={item._key} name="readTime" fallback={item.readTime} />
+              </span>
+            )}
           </div>
 
           <p className="text-[#213B4D] text-[19px] leading-relaxed font-semibold mb-10" style={{ fontFamily: B }}>
-            <ContentText section={item.sectionKey} name="excerpt" fallback={item.excerpt} />
+            <ContentText section={item._key} name="excerpt" fallback={item.excerpt || ""} />
           </p>
 
           <div className="space-y-6">
-            {item.content.map((p, i) => (
+            {paragraphs.map((p, i) => (
               <p key={i} className="text-[#3a3a3a] text-[16px] leading-[1.85]" style={{ fontFamily: B }}>
-                <ContentText section={item.sectionKey} name={`p${i + 1}`} fallback={p} />
+                <ContentText section={item._key} name={`p${i + 1}`} fallback={p} />
               </p>
             ))}
           </div>
 
-          {item.highlights && item.highlights.length > 0 && (
+          {highlights.length > 0 && (
             <div className="mt-14 bg-[#f4f6f8] border-l-4 border-[#1F93A4] p-8">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-                <p
-                  className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
-                  style={{ fontFamily: B }}
-                >
+                <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
                   Project Highlights
                 </p>
               </div>
               <ul className="space-y-3">
-                {item.highlights.map((h, i) => (
+                {highlights.map((h, i) => (
                   <li
                     key={i}
                     className="flex gap-3 text-[#213B4D] text-[15px] leading-relaxed"
                     style={{ fontFamily: B }}
                   >
                     <span className="text-[#1F93A4] font-bold mt-[2px]">▸</span>
-                    <span>{h}</span>
+                    <ContentText section={item._key} name={`h${i + 1}`} fallback={h} />
                   </li>
                 ))}
               </ul>
@@ -155,54 +190,56 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* RELATED */}
-      <section className="pb-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-14">
-          <div className="flex items-center gap-3 mb-10">
-            <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-            <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-              More Updates
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
-            {related.map((r) => (
-              <Link
-                key={r.slug}
-                href={`/news/${r.slug}`}
-                className="group bg-white hover:bg-[#f4f6f8] transition-colors block"
-              >
-                <div className="relative h-40 overflow-hidden">
-                  <MediaImage
-                    category={r.sectionKey}
-                    title={`${r.sectionKey}_image`}
-                    fallbackSrc={r.image}
-                    alt={r.title}
-                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span
-                      className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
+      {related.length > 0 && (
+        <section className="pb-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6 lg:px-14">
+            <div className="flex items-center gap-3 mb-10">
+              <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
+              <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+                More Updates
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
+              {related.map((r) => (
+                <Link
+                  key={r._key}
+                  href={`/news/${r.slug || r._key}`}
+                  className="group bg-white hover:bg-[#f4f6f8] transition-colors block"
+                >
+                  <div className="relative h-40 overflow-hidden">
+                    <MediaImage
+                      category={r._key}
+                      title={`${r._key}_image`}
+                      fallbackSrc={r.image || ""}
+                      alt={r.title || ""}
+                      className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span
+                        className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
+                        style={{ fontFamily: B }}
+                      >
+                        <ContentText section={r._key} name="category" fallback={r.category || ""} />
+                      </span>
+                      <span className="text-[#5E5E5E] text-[11px]" style={{ fontFamily: B }}>
+                        <ContentText section={r._key} name="date" fallback={r.date || ""} />
+                      </span>
+                    </div>
+                    <h3
+                      className="text-[#213B4D] font-bold text-[14px] leading-snug group-hover:text-[#1F93A4] transition-colors"
                       style={{ fontFamily: B }}
                     >
-                      <ContentText section={r.sectionKey} name="category" fallback={r.category} />
-                    </span>
-                    <span className="text-[#5E5E5E] text-[11px]" style={{ fontFamily: B }}>
-                      <ContentText section={r.sectionKey} name="date" fallback={r.date} />
-                    </span>
+                      <ContentText section={r._key} name="title" fallback={r.title || ""} />
+                    </h3>
                   </div>
-                  <h3
-                    className="text-[#213B4D] font-bold text-[14px] leading-snug group-hover:text-[#1F93A4] transition-colors"
-                    style={{ fontFamily: B }}
-                  >
-                    <ContentText section={r.sectionKey} name="title" fallback={r.title} />
-                  </h3>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   );
 }

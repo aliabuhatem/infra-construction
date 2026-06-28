@@ -1,80 +1,26 @@
-import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
+import { getContent, getSectionsByPrefix } from "@/lib/getContent";
 
 const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
 const B = "var(--font-source-sans), Arial, sans-serif";
 
-const keyData = [
-  { label: "Legal Status",      value: "Limited Liability Company",              section: "about_keydata_1" },
-  { label: "Line of Business",  value: "Buildings & Infrastructure",             section: "about_keydata_2" },
-  { label: "Capital",           value: "2 Million AED",                          section: "about_keydata_3" },
-  { label: "Established",       value: "Year 2000",                              section: "about_keydata_4" },
-  { label: "Head Office",       value: "Abu Dhabi, UAE",                         section: "about_keydata_5" },
-  { label: "Int'l Clients",     value: "37+ Regional & International",           section: "about_keydata_6" },
-  { label: "Core Employees",    value: "175+ Permanent Staff",                   section: "about_keydata_7" },
-  { label: "Project Workforce", value: "1,000+ On-Site Workforce",              section: "about_keydata_8" },
-  { label: "Certifications",    value: "ISO 9001 · ISO 14001 · OHSAS 18001",    section: "about_keydata_9" },
+const mgmtIcons = [
+  <svg key="0" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>,
+  <svg key="1" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M17 18h1" /><path d="M12 18h1" /><path d="M7 18h1" /></svg>,
+  <svg key="2" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 12.5l3 3 8-8" /><circle cx="12" cy="12" r="10" /></svg>,
 ];
 
-const offices = [
-  { city: "Abu Dhabi", country: "UAE",    address: "Office 606, EREC Building, Zone 1, Al Danah",                            section: "about_office_1" },
-  { city: "Dubai",     country: "UAE",    address: "Office 306, Bld 121, Al Manar Area",                                     section: "about_office_2" },
-  { city: "Cairo",     country: "Egypt",  address: "Ground Floor, Villa 224C, Khaled Ibn Alwaleed St., 5th Settlement",     section: "about_office_3" },
-  { city: "Aden",      country: "Yemen",  address: "Bldg. 1, Bader Roundabout, Khormaksar, P.O. Box 70116",                section: "about_office_4" },
-  { city: "Ontario",   country: "Canada", address: "3280 Donald Mackay St, Oakville, L6M 5K2",                              section: "about_office_5" },
-];
+export default async function AboutPage() {
+  const c = await getContent();
+  const keyDataItems  = getSectionsByPrefix(c, "about_keydata_");
+  const serviceItems  = getSectionsByPrefix(c, "about_service_");
+  const mgmtItems     = getSectionsByPrefix(c, "about_mgmtsys_");
+  const leaderItems   = getSectionsByPrefix(c, "about_leadership_").filter((l) => /^about_leadership_\d+$/.test(l._key));
+  const deptItems     = getSectionsByPrefix(c, "about_dept_");
+  const officeItems   = getSectionsByPrefix(c, "about_office_");
 
-const services = [
-  "Construction Services", "Infrastructure Projects", "Quantity Surveying",
-  "Project Management", "Construction Supervision", "Procurement Management",
-  "Risk Assessment & Management", "Value Engineering", "Claims Management",
-  "Contract Administration", "Scope, Cost & Schedule Management",
-  "Quality Assurance Management", "Detailed Engineering", "Operation & Maintenance",
-];
-
-const departments = [
-  { title: "Administration",    items: ["Public Relations", "Human Resources", "Logistics", "Communication"],               section: "about_dept_1" },
-  { title: "Financial",         items: ["Accounting", "Auditing", "Banking", "Budget", "Supply Chain"],                    section: "about_dept_2" },
-  { title: "Business Dev.",     items: ["Business Development", "Bidding", "Planning"],                                     section: "about_dept_3" },
-  { title: "Technical",         items: ["Buildings Section", "Infrastructure", "Construction Mgmt", "Document Control"],   section: "about_dept_4" },
-  { title: "Legal & Contracts", items: ["Legal", "Contract", "Quantity Surveying"],                                        section: "about_dept_5" },
-];
-
-const leadership = [
-  { role: "Chief Human Resources Officer", name: "Khaled Alariqee",   scope: "Strategic direction, corporate governance, and stakeholder relations across all global offices.",    image: "/media/KHALED ALARIQEE.png",           section: "about_leadership_2" },
-  { role: "Central Business District",     name: "Adnan Gazaz",       scope: "Oversight of project delivery, resource allocation, and on-ground execution across all active sites.", image: "/media/Mr. Adnan Gazaz photo.png",     section: "about_leadership_3" },
-  { role: "Chief Operating Officer",       name: "Osama Abo Ghanem",  scope: "Engineering standards, design review, quality assurance, and technical compliance.",                 image: "/media/OSAMA ABO GHANEM.png",          section: "about_leadership_4" },
-  { role: "Chief Technology Officer",      name: "Nedal Mustafa",     scope: "Technology strategy, digital transformation, and innovation across all project operations.",          image: "/media/Nedal.png",                     section: "about_leadership_5" },
-  { role: "Chief Commercial Officer",      name: "Mustafa Al Awlaqi", scope: "Market expansion, client acquisition, bidding strategy, and international partnership development.", image: "/media/Mr. Khaled Alariqee photo.png", section: "about_leadership_1" },
-];
-
-const mgmtSystems = [
-  {
-    code: "ISO 9001", section: "about_mgmtsys_1",
-    title: "Quality Assurance & Control",
-    desc: "INFRA is a premier provider of comprehensive QA/QC solutions — empowering clients to achieve and maintain the highest standards of quality.",
-    items: ["ISO 9001:2015 — Quality Management", "Stringent inspection & testing protocols", "Statistical Process Control (SPC)", "Defect analysis & corrective action", "Continual improvement of management systems"],
-    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>,
-  },
-  {
-    code: "ISO 14001", section: "about_mgmtsys_2",
-    title: "Sustainability",
-    desc: "INFRA supports the ten Principles of the UN Global Compact with respect to human rights, labour, environment, and anti-corruption.",
-    items: ["UN Global Compact — 10 Principles", "Paris Climate Change Agreement", "United Nations 17 SDGs alignment", "Sustainable procurement practices", "Carbon footprint reduction initiatives"],
-    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M17 18h1" /><path d="M12 18h1" /><path d="M7 18h1" /></svg>,
-  },
-  {
-    code: "OHSAS 18001", section: "about_mgmtsys_3",
-    title: "Health, Safety & Environment",
-    desc: "Our commitment to occupational health and safety ensures a safe working environment — we are committed to the target of 'zero harm.'",
-    items: ["'Zero harm' HSE commitment", "Safe working environment management", "Environmental impact reduction", "ESHS — holistic approach to sustainability", "Regulatory & statutory compliance"],
-    icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 12.5l3 3 8-8" /><circle cx="12" cy="12" r="10" /></svg>,
-  },
-];
-
-export default function AboutPage() {
   return (
     <>
       {/* ── HERO ────────────────────────────────────────────────────── */}
@@ -147,13 +93,13 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <div className="flex flex-wrap gap-3">
-                {keyData.slice(0, 3).map((d) => (
-                  <div key={d.label} className="bg-[#0d1e28]/80 backdrop-blur-sm px-4 py-2.5">
+                {keyDataItems.slice(0, 3).map((d) => (
+                  <div key={d._key} className="bg-[#0d1e28]/80 backdrop-blur-sm px-4 py-2.5">
                     <div className="text-[#1F93A4] text-[9px] font-bold uppercase tracking-[0.25em] mb-0.5" style={{ fontFamily: B }}>
-                      <ContentText section={d.section} name="label" fallback={d.label} />
+                      <ContentText section={d._key} name="label" fallback={d.label || ""} />
                     </div>
                     <div className="text-white text-[12px] font-semibold" style={{ fontFamily: B }}>
-                      <ContentText section={d.section} name="value" fallback={d.value} />
+                      <ContentText section={d._key} name="value" fallback={d.value || ""} />
                     </div>
                   </div>
                 ))}
@@ -254,14 +200,14 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#FFFFFF]/8">
-            {services.map((s, i) => (
-              <div key={i} className="bg-white p-7 group hover:bg-[#213B4D] transition-colors relative overflow-hidden">
+            {serviceItems.map((s, i) => (
+              <div key={s._key} className="bg-white p-7 group hover:bg-[#213B4D] transition-colors relative overflow-hidden">
                 <span aria-hidden="true" className="absolute top-2 right-7 pointer-events-none select-none leading-none" style={{ fontFamily: H, fontSize: "72px", fontWeight: 700, color: "#213B4D", opacity: 0.3, lineHeight: 1 }}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="w-6 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-10 transition-all duration-300" />
                 <p className="text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors relative" style={{ fontFamily: B }}>
-                  <ContentText section={`about_service_${i + 1}`} name="title" fallback={s} />
+                  <ContentText section={s._key} name="title" fallback={s.title || ""} />
                 </p>
               </div>
             ))}
@@ -322,23 +268,23 @@ export default function AboutPage() {
           <h2 className="text-white uppercase leading-tight mb-14" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600 }}>Management Systems</h2>
 
           <div className="grid lg:grid-cols-3 gap-6">
-            {mgmtSystems.map((sys) => (
-              <div key={sys.code} className="bg-[#152836] border border-white/5 p-8 flex flex-col group hover:border-[#1F93A4]/30 transition-colors">
+            {mgmtItems.map((sys, i) => (
+              <div key={sys._key} className="bg-[#152836] border border-white/5 p-8 flex flex-col group hover:border-[#1F93A4]/30 transition-colors">
                 <div className="flex items-start justify-between mb-6">
-                  <div className="text-[#1F93A4]">{sys.icon}</div>
+                  <div className="text-[#1F93A4]">{mgmtIcons[i]}</div>
                   <span className="text-[#1F93A4]/30 font-bold text-[11px] uppercase tracking-[0.2em] border border-[#1F93A4]/20 px-2.5 py-1 group-hover:border-[#1F93A4]/50 group-hover:text-[#1F93A4]/60 transition-colors" style={{ fontFamily: B }}>
-                    <ContentText section={sys.section} name="code" fallback={sys.code} />
+                    <ContentText section={sys._key} name="code" fallback={sys.code || ""} />
                   </span>
                 </div>
                 <h3 className="text-white font-bold text-[16px] mb-4 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
-                  <ContentText section={sys.section} name="title" fallback={sys.title} />
+                  <ContentText section={sys._key} name="title" fallback={sys.title || ""} />
                 </h3>
                 <p className="text-white/45 text-[13px] leading-relaxed mb-6 flex-1" style={{ fontFamily: B }}>
-                  <ContentText section={sys.section} name="desc" fallback={sys.desc} />
+                  <ContentText section={sys._key} name="desc" fallback={sys.desc || ""} />
                 </p>
                 <div className="border-t border-white/8 pt-5 space-y-2.5">
-                  {sys.items.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
+                  {(sys.items || "").split(",").map((item) => item.trim()).filter(Boolean).map((item, j) => (
+                    <div key={j} className="flex items-start gap-3">
                       <span className="text-[#1F93A4] text-[8px] mt-1 shrink-0">▸</span>
                       <span className="text-white/50 text-[12px]" style={{ fontFamily: B }}>{item}</span>
                     </div>
@@ -435,14 +381,14 @@ export default function AboutPage() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-white">
-            {leadership.map((l, i) => (
-              <div key={i} className="bg-white group hover:bg-white transition-colors relative overflow-hidden flex flex-col">
+            {leaderItems.map((l, i) => (
+              <div key={l._key} className="bg-white group hover:bg-white transition-colors relative overflow-hidden flex flex-col">
                 <div className="relative w-full bg-[#0d1e28] overflow-hidden" style={{ height: "320px" }}>
                   <MediaImage
-                    category={l.section}
-                    title={`${l.section}_image`}
-                    fallbackSrc={l.image}
-                    alt={l.name}
+                    category={l._key}
+                    title={`${l._key}_image`}
+                    fallbackSrc={l.image || ""}
+                    alt={l.name || ""}
                     className="object-contain object-center w-full h-full"
                   />
                 </div>
@@ -452,13 +398,13 @@ export default function AboutPage() {
                   </span>
                   <div className="w-8 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-12 transition-all duration-300" />
                   <div className="text-[#213B4D] font-bold text-[16px] mb-1 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, letterSpacing: "0.01em" }}>
-                    <ContentText section={l.section} name="name" fallback={l.name} />
+                    <ContentText section={l._key} name="name" fallback={l.name || ""} />
                   </div>
                   <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] mb-3" style={{ fontFamily: B }}>
-                    <ContentText section={l.section} name="title" fallback={l.role} />
+                    <ContentText section={l._key} name="title" fallback={l.title || ""} />
                   </div>
                   <p className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
-                    <ContentText section={l.section} name="bio" fallback={l.scope} />
+                    <ContentText section={l._key} name="bio" fallback={l.bio || ""} />
                   </p>
                 </div>
               </div>
@@ -494,13 +440,13 @@ export default function AboutPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-[1px] bg-[#213B4D]/10 border border-[#213B4D]/10">
-            {departments.map((d) => (
-              <div key={d.section} className="bg-white p-6">
+            {deptItems.map((d) => (
+              <div key={d._key} className="bg-white p-6">
                 <h4 className="text-[#213B4D] font-bold text-[12px] uppercase tracking-wide mb-4 pb-3 border-b border-[#1F93A4]/30" style={{ fontFamily: B }}>
-                  <ContentText section={d.section} name="title" fallback={d.title} />
+                  <ContentText section={d._key} name="title" fallback={d.title || ""} />
                 </h4>
                 <ul className="space-y-2">
-                  {d.items.map((item, j) => (
+                  {(d.items || "").split(",").map((item) => item.trim()).filter(Boolean).map((item, j) => (
                     <li key={j} className="text-[#5E5E5E] text-[12px] flex items-center gap-2" style={{ fontFamily: B }}>
                       <span className="text-[#1F93A4] text-[8px]">◆</span>
                       {item}
@@ -527,16 +473,16 @@ export default function AboutPage() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-white/0">
-            {offices.map((o) => (
-              <div key={o.section} className="bg-[#0d1e28] p-8 hover:bg-[#1a3040] transition-colors group">
+            {officeItems.map((o) => (
+              <div key={o._key} className="bg-[#0d1e28] p-8 hover:bg-[#1a3040] transition-colors group">
                 <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.3em] mb-2" style={{ fontFamily: B }}>
-                  <ContentText section={o.section} name="country" fallback={o.country} />
+                  <ContentText section={o._key} name="country" fallback={o.country || ""} />
                 </div>
                 <div className="text-white font-bold mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, fontSize: "26px" }}>
-                  <ContentText section={o.section} name="city" fallback={o.city} />
+                  <ContentText section={o._key} name="city" fallback={o.city || ""} />
                 </div>
                 <div className="text-white/35 text-[12px] leading-relaxed" style={{ fontFamily: B }}>
-                  <ContentText section={o.section} name="address" fallback={o.address} />
+                  <ContentText section={o._key} name="address" fallback={o.address || ""} />
                 </div>
               </div>
             ))}
