@@ -2391,15 +2391,15 @@
       "image": "/media/1782633413952-new-assiut-barrage-01.jpg"
     },
     "project_8": {
-      "title": "Sheikh Khalifa Housing — 204 Units",
-      "country": "Hadramout, Yemen",
-      "sector": "Residential",
-      "type": "Social Housing",
+      "title": "West Assiut Plateau Road",
+      "country": "Egypt",
+      "sector": "Transportation",
+      "type": "Transportation",
       "description": "Social housing development of 204 units in Hadramout.",
-      "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.jpeg"
+      "image": "/media/infrastructure-assiut-plateau-axis-egypt.jpeg"
     },
     "project_9": {
-      "title": "Social Housing — Assiut",
+      "title": "Assiut University Buildings",
       "country": "Egypt",
       "sector": "Residential",
       "type": "Social Housing",
@@ -2407,28 +2407,28 @@
       "image": "/media/buildings-social-housing-assiut-egypt.avif"
     },
     "project_10": {
-      "title": "Assiut Plateau Axis",
-      "country": "Egypt",
-      "sector": "Transportation",
-      "type": "Civil Works",
+      "title": "Design and Build of Sixteen Low Cost Housing Units",
+      "country": "Indonesia",
+      "sector": "Residential",
+      "type": "Residential",
       "description": "Highway and infrastructure works along the Assiut Plateau corridor.",
-      "image": "/media/infrastructure-assiut-plateau-axis-egypt.jpeg"
+      "image": "/media/fm-hotel-moroni-comoros.jpeg"
     },
     "project_11": {
-      "title": "Basra Wastewater Treatment",
-      "country": "Egypt",
-      "sector": "Water",
-      "type": "Water Infrastructure",
+      "title": "Dialysis Center",
+      "country": "Residential",
+      "sector": "Residential",
+      "type": "Somaliland",
       "description": "Wastewater treatment plant construction and commissioning.",
-      "image": "/media/water-basra-wastewater-treatment-egypt.jpeg"
+      "image": "/media/buildings-dialysis-center-hargeisa-somaliland.jpeg"
     },
     "project_12": {
-      "title": "Hassan Dam Project",
+      "title": "Implementation of the Ministry of Foreign Affairs building",
       "country": "Yemen",
-      "sector": "Water",
-      "type": "Dam Construction",
+      "sector": "Residential",
+      "type": "Residential",
       "description": "Earth-fill dam construction and associated water infrastructure.",
-      "image": "/media/water-hassan-dam-project-yemen.jpeg"
+      "image": "/media/buildings-ministry-foreign-aden-yemen.jpeg"
     },
     "project_13": {
       "title": "Al Som Water Supply",
