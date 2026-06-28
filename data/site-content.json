@@ -316,126 +316,6 @@
       "subtitle": "Recent and ongoing works across buildings, infrastructure, water, energy and industrial sectors.",
       "backgroundImage": "/admin-uploads/1782556835612-ministry-of-foreign-aden-yemen.jpeg"
     },
-    "project_dhobab_airport": {
-      "title": "Al-Attiyat Al-Bahariya Wastewater",
-      "country": "Egypt",
-      "sector": "Water Infrastructure",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.jpeg"
-    },
-    "project_al_riyan_airport": {
-      "title": "Al Riyan Airport",
-      "country": "Yemen",
-      "sector": "Airports",
-      "image": "/media/airports-al-riyan-airport-yemen.jpeg"
-    },
-    "project_aden_port": {
-      "title": "Aden Master Plan Port Study",
-      "country": "Yemen",
-      "sector": "Ports",
-      "image": "/media/ports-aden-master-plan-port-study.png"
-    },
-    "project_marine_breakwater": {
-      "title": "Marine Breakwater",
-      "country": "Yemen",
-      "sector": "Ports & Marine",
-      "image": "/media/ports-marine-breakwater-yemen.jpeg"
-    },
-    "project_floating_pier": {
-      "title": "Floating Marine Pier",
-      "country": "Yemen",
-      "sector": "Ports & Marine",
-      "image": "/media/ports-floating-marine-pier-yemen.jpeg"
-    },
-    "project_hulaf_socotra": {
-      "title": "Hulaf, Socotra",
-      "country": "Yemen",
-      "sector": "Ports",
-      "image": "/media/ports-hulaf-socotra-yemen.jpeg"
-    },
-    "project_ministry_foreign": {
-      "title": "Ministry of Foreign Affairs",
-      "country": "Aden, Yemen",
-      "sector": "Buildings",
-      "image": "/media/buildings-ministry-foreign-aden-yemen.jpeg"
-    },
-    "project_sheikh_khalifa_housing": {
-      "title": "Sheikh Khalifa Housing — 204 Units",
-      "country": "Hadramout, Yemen",
-      "sector": "Social Housing",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.jpeg"
-    },
-    "project_social_housing_assiut": {
-      "title": "Social Housing — Assiut",
-      "country": "Egypt",
-      "sector": "Social Housing",
-      "image": "/media/buildings-social-housing-assiut-egypt.avif"
-    },
-    "project_assiut_plateau_axis": {
-      "title": "Assiut Plateau Axis",
-      "country": "Egypt",
-      "sector": "Civil Works",
-      "image": "/media/infrastructure-assiut-plateau-axis-egypt.jpeg"
-    },
-    "project_basra_wastewater": {
-      "title": "Basra Wastewater Treatment",
-      "country": "Egypt",
-      "sector": "Water",
-      "image": "/media/water-basra-wastewater-treatment-egypt.jpeg"
-    },
-    "project_hassan_dam": {
-      "title": "Hassan Dam Project",
-      "country": "Yemen",
-      "sector": "Water",
-      "image": "/media/water-hassan-dam-project-yemen.jpeg"
-    },
-    "project_al_som_supply": {
-      "title": "Al Som Water Supply",
-      "country": "Hadramawt, Yemen",
-      "sector": "Water",
-      "image": "/media/water-al-som-supply-hadramawt-yemen.jpeg"
-    },
-    "project_water_tank_aden": {
-      "title": "Water Tank — Aden",
-      "country": "Yemen",
-      "sector": "Water",
-      "image": "/media/water-tank-aden-yemen.jpeg"
-    },
-    "project_dam_reservoir": {
-      "title": "Dam Reservoir",
-      "country": "Yemen",
-      "sector": "Water",
-      "image": "/media/water-dam-reservoir-yemen.jpeg"
-    },
-    "project_alhaswa_power": {
-      "title": "Al-Haswa Power Plant",
-      "country": "Aden, Yemen",
-      "sector": "Energy",
-      "image": "/media/energy-power-plant-alhaswa-aden-yemen.jpeg"
-    },
-    "project_taiz_power_maintenance": {
-      "title": "Taiz Power Plant Maintenance",
-      "country": "Yemen",
-      "sector": "Energy",
-      "image": "/media/energy-power-plant-maintenance-taiz-yemen.jpeg"
-    },
-    "project_abyan_corniche": {
-      "title": "Abyan Coast Corniche",
-      "country": "Yemen",
-      "sector": "Civil Works",
-      "image": "/media/Abyan Coast Cornich-01.jpeg"
-    },
-    "project_aden_causeway": {
-      "title": "Aden Causeway Widening",
-      "country": "Yemen",
-      "sector": "Civil Works",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg"
-    },
-    "project_hotel_moroni": {
-      "title": "Hotel Moroni",
-      "country": "Comoros",
-      "sector": "Facilities Management",
-      "image": "/media/fm-hotel-moroni-comoros.jpeg"
-    },
     "news_hero": {
       "eyebrow": "News & Insights",
       "title": "Latest from INFRA",
@@ -2463,52 +2343,52 @@
       "image": "/media/water-al-atiyat-wastewater-treatment-egypt.jpeg"
     },
     "project_2": {
-      "title": "Al Riyan Airport",
-      "country": "Yemen",
-      "sector": "Airports",
-      "type": "Aviation Infrastructure",
+      "title": "Bani Mazar Bridge",
+      "country": "Egypt",
+      "sector": "Bridge ",
+      "type": "Transportation",
       "description": "Airport construction and civil works for Al Riyan International Airport.",
-      "image": "/media/airports-al-riyan-airport-yemen.jpeg"
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
     },
     "project_3": {
-      "title": "Aden Master Plan Port Study",
-      "country": "Yemen",
-      "sector": "Ports",
-      "type": "Marine Planning",
+      "title": "Bassra Wastewater Treatment Plan",
+      "country": "Egypt",
+      "sector": "Water Infrastructure",
+      "type": "Water Infrastructure",
       "description": "Comprehensive master plan study for Aden Port infrastructure development.",
-      "image": "/media/ports-aden-master-plan-port-study.png"
+      "image": "/media/fm-hotel-moroni-comoros.jpeg"
     },
     "project_4": {
-      "title": "Marine Breakwater",
+      "title": "Abyan Coast Cornich",
       "country": "Yemen",
-      "sector": "Ports & Marine",
-      "type": "Marine Infrastructure",
-      "description": "Coastal protection breakwater construction for marine facility.",
-      "image": "/media/ports-marine-breakwater-yemen.jpeg"
+      "sector": "Civil",
+      "type": "Civil Infrastructure",
+      "description": "CIVIL WORKS AND SHORE PROTECTION FOR ABYAN COAST CORNICHE.",
+      "image": "/media/Abyan Coast Cornich-01.jpeg"
     },
     "project_5": {
-      "title": "Floating Marine Pier",
-      "country": "Yemen",
-      "sector": "Ports & Marine",
-      "type": "Marine Infrastructure",
+      "title": "Berbera International Airport",
+      "country": " Somaliland",
+      "sector": "Infrastructure ",
+      "type": "Infrastructure",
       "description": "Floating pier design and construction for industrial marine operations.",
-      "image": "/media/ports-floating-marine-pier-yemen.jpeg"
+      "image": "/admin-uploads/1782561704079-berbera-international-airport.png"
     },
     "project_6": {
-      "title": "Hulaf Port, Socotra",
-      "country": "Yemen",
-      "sector": "Ports",
-      "type": "Port Infrastructure",
+      "title": "THREE WATER WELLS  HADIBO",
+      "country": "Socotra - Yemen",
+      "sector": "Water Infrastructure",
+      "type": "Water Infrastructure",
       "description": "Port infrastructure development on the island of Socotra.",
-      "image": "/media/ports-hulaf-socotra-yemen.jpeg"
+      "image": "/media/1782632769253-3-water-supply-wells-in-the-zone-of-qalansiyah-01.jpg"
     },
     "project_7": {
-      "title": "Ministry of Foreign Affairs",
-      "country": "Aden, Yemen",
-      "sector": "Buildings",
-      "type": "Government Building",
+      "title": "NEW ASSIUT BARRAGE",
+      "country": "Cairo, Egypt",
+      "sector": "Transportation",
+      "type": "Transportation",
       "description": "Construction of government ministry building in Aden.",
-      "image": "/media/buildings-ministry-foreign-aden-yemen.jpeg"
+      "image": "/media/1782633413952-new-assiut-barrage-01.jpg"
     },
     "project_8": {
       "title": "Sheikh Khalifa Housing — 204 Units",
@@ -2519,7 +2399,7 @@
       "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.jpeg"
     },
     "project_9": {
-      "title": "Social Housing — Assiut",
+      "title": "Assiut University Buildings",
       "country": "Egypt",
       "sector": "Residential",
       "type": "Social Housing",
@@ -2527,7 +2407,7 @@
       "image": "/media/buildings-social-housing-assiut-egypt.avif"
     },
     "project_10": {
-      "title": "Assiut Plateau Axis",
+      "title": "West Assiut Plateau Road",
       "country": "Egypt",
       "sector": "Transportation",
       "type": "Civil Works",
@@ -2535,36 +2415,36 @@
       "image": "/media/infrastructure-assiut-plateau-axis-egypt.jpeg"
     },
     "project_11": {
-      "title": "Basra Wastewater Treatment",
-      "country": "Egypt",
-      "sector": "Water",
-      "type": "Water Infrastructure",
+      "title": "Design and Build of Sixteen Low Cost Housing Units",
+      "country": "Indonesia",
+      "sector": "Social Housing",
+      "type": "Social Housing",
       "description": "Wastewater treatment plant construction and commissioning.",
-      "image": "/media/water-basra-wastewater-treatment-egypt.jpeg"
+      "image": "/media/fm-hotel-moroni-comoros.jpeg"
     },
     "project_12": {
-      "title": "Hassan Dam Project",
-      "country": "Yemen",
-      "sector": "Water",
-      "type": "Dam Construction",
+      "title": "Dialysis Center",
+      "country": "Somaliland",
+      "sector": "Social Housing",
+      "type": "Social Housing",
       "description": "Earth-fill dam construction and associated water infrastructure.",
-      "image": "/media/water-hassan-dam-project-yemen.jpeg"
+      "image": "/media/buildings-dialysis-center-hargeisa-somaliland.jpeg"
     },
     "project_13": {
-      "title": "Al Som Water Supply",
-      "country": "Hadramawt, Yemen",
-      "sector": "Water",
-      "type": "Water Supply",
+      "title": "Implementation of the Ministry of Foreign Affairs building",
+      "country": "Yemen",
+      "sector": "Social Housing",
+      "type": "Social Housing",
       "description": "Potable water supply network in Hadramawt Governorate.",
-      "image": "/media/water-al-som-supply-hadramawt-yemen.jpeg"
+      "image": "/media/buildings-ministry-foreign-aden-yemen.jpeg"
     },
     "project_14": {
-      "title": "Water Tank — Aden",
-      "country": "Yemen",
-      "sector": "Water",
-      "type": "Water Storage",
+      "title": "Slaughterhouse Barbara",
+      "country": "Somaliland",
+      "sector": "Social Housing",
+      "type": "Social Housing",
       "description": "Water storage tank construction for Aden city water supply.",
-      "image": "/media/water-tank-aden-yemen.jpeg"
+      "image": "/media/1782635477365-slaughterhouse-barbara-somaliland-01.jpg"
     },
     "project_15": {
       "title": "Dam Reservoir",
@@ -2607,8 +2487,8 @@
       "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg"
     },
     "project_20": {
-      "title": "Hotel Moroni",
-      "country": "Comoros",
+      "title": "Design and Build of Sixteen Low Cost Housing Units",
+      "country": "Indonesia",
       "sector": "Facilities Management",
       "type": "FM Services",
       "description": "Complete facilities management and operations for Hotel Moroni.",
@@ -2637,14 +2517,6 @@
       "type": "Drainage",
       "description": "Urban stormwater drainage network design and construction.",
       "image": "/media/infrastructure-stormwater-drainage-yemen.jpeg"
-    },
-    "project_24": {
-      "title": "General Buildings Construction",
-      "country": "Middle East",
-      "sector": "Buildings",
-      "type": "Construction",
-      "description": "Commercial and institutional building construction project.",
-      "image": "/media/buildings-general-facade.jpeg"
     },
     "news_1": {
       "title": "INFRA Construction Group Partners with Shaanxi Construction",
@@ -2928,6 +2800,33 @@
   },
   "media": [
     {
+      "id": "1782635478530",
+      "title": "Slaughterhouse Barbara Somaliland",
+      "alt": "Slaughterhouse Barbara Somaliland",
+      "category": "gallery",
+      "url": "/media/1782635477365-slaughterhouse-barbara-somaliland-01.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-28T08:31:18.530Z"
+    },
+    {
+      "id": "1782633414800",
+      "title": "NEW ASSIUT BARRAGE",
+      "alt": "NEW ASSIUT BARRAGE",
+      "category": "gallery",
+      "url": "/media/1782633413952-new-assiut-barrage-01.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-28T07:56:54.800Z"
+    },
+    {
+      "id": "1782632770236",
+      "title": "WATER WELLS  HADIBO",
+      "alt": "WATER WELLS  HADIBO",
+      "category": "gallery",
+      "url": "/media/1782632769253-3-water-supply-wells-in-the-zone-of-qalansiyah-01.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-28T07:46:10.236Z"
+    },
+    {
       "id": "1782561705892",
       "title": "Berbera Airport",
       "alt": "Berbera Airport",
@@ -2964,5 +2863,27 @@
       "createdAt": "2026-06-26T13:57:24.056Z"
     }
   ],
-  "_deletedSections": []
+  "_deletedSections": [
+    "project_dhobab_airport",
+    "project_al_riyan_airport",
+    "project_aden_port",
+    "project_marine_breakwater",
+    "project_hotel_moroni",
+    "project_floating_pier",
+    "project_hulaf_socotra",
+    "project_ministry_foreign",
+    "project_sheikh_khalifa_housing",
+    "project_social_housing_assiut",
+    "project_assiut_plateau_axis",
+    "project_basra_wastewater",
+    "project_hassan_dam",
+    "project_al_som_supply",
+    "project_water_tank_aden",
+    "project_dam_reservoir",
+    "project_alhaswa_power",
+    "project_taiz_power_maintenance",
+    "project_abyan_corniche",
+    "project_aden_causeway",
+    "project_24"
+  ]
 }
