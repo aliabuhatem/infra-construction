@@ -7,7 +7,7 @@ export default function HomePageExample() {
       <section>
         <h1><ContentText section="hero" name="title" fallback="Building Tomorrow's Infrastructure" /></h1>
         <p><ContentText section="hero" name="subtitle" fallback="Premium construction services." /></p>
-        <button><ContentText section="hero" name="ctaText" fallback="Get a Quote" /></button>
+        <button><ContentText section="hero" name="ctaText" fallback="Contact US" /></button>
         <MediaImage category="hero" fallbackSrc="/your-existing-hero-image.jpg" alt="Construction project" />
       </section>
     </main>
