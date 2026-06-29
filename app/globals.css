@@ -6,8 +6,8 @@
   --color-gray-mid: #5E5E5E;
   --color-white: #ffffff;
 
-  --font-heading: var(--font-barlow-condensed), "Arial Narrow", sans-serif;
-  --font-body: var(--font-source-sans), Arial, sans-serif;
+  --font-heading: var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif;
 }
 
 *, *::before, *::after {
@@ -25,6 +25,12 @@ body {
   color: #213B4D;
   background: #ffffff;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Never fake a weight/style — if a weight isn't loaded, fail loud rather
+     than render a jagged synthesized glyph. We load all used weights above. */
+  font-synthesis: none;
 }
 
 h1, h2 {

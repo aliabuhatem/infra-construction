@@ -2,7 +2,7 @@ import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import { getContent, getSectionsByPrefix } from "@/lib/getContent";
 
-const B = "var(--font-source-sans), Arial, sans-serif";
+const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
 const sectors = [
   { label: "Buildings", href: "/sectors/buildings" },
@@ -37,7 +37,7 @@ export default async function Footer() {
         <div>
           <div className="mb-5">
             <span className="text-2xl font-bold tracking-wide">INFRA</span>
-            <span className="text-2xl font-light text-[#4FC3B7]">CONSTRUCTION</span>
+            <span className="text-2xl font-normal text-[#4FC3B7]">CONSTRUCTION</span>
           </div>
           <p className="text-white/60 text-sm leading-relaxed mb-5" style={{ fontFamily: B }}>
             <ContentText section="footer" name="tagline" fallback="A leading contracting company delivering world-class infrastructure, buildings, and industrial projects since 2000." />

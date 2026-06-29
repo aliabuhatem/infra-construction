@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import ContentText from "@/components/admin-panel/ContentText";
 
-const B = "var(--font-source-sans), Arial, sans-serif";
+const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
 const preLinks = [
   { label: "Home", href: "/" },

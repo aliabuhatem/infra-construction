@@ -3,8 +3,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "@/lib/getContent";
 
-const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
-const B = "var(--font-source-sans), Arial, sans-serif";
+const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
 const mgmtIcons = [
   <svg key="0" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>,

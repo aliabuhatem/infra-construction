@@ -3,8 +3,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "@/lib/getContent";
 
-const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
-const B = "var(--font-source-sans), Arial, sans-serif";
+const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
 const benefitIcons = [
   <svg key="1" className="w-6 h-6 text-[#1F93A4] group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v2m0 8v2M9.5 9.5a2.5 2.5 0 015 0c0 1.5-1.5 2-2.5 2.5S9.5 15 9.5 16.5a2.5 2.5 0 005 0"/></svg>,

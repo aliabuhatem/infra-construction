@@ -4,8 +4,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { readContentStore } from "@/lib/admin/content-store";
 
-const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
-const B = "var(--font-source-sans), Arial, sans-serif";
+const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
 type Fields = Record<string, string>;
 type Store = { content: Record<string, Fields>; _deletedSections?: string[] };

@@ -16,8 +16,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-barlow-condensed)", "Helvetica", "Arial Narrow", "sans-serif"],
-        body: ["var(--font-source-sans)", "Myriad Pro", "Arial", "sans-serif"],
+        heading: ["var(--font-ibm-plex-sans)", "system-ui", "-apple-system", "sans-serif"],
+        body: ["var(--font-ibm-plex-sans)", "system-ui", "-apple-system", "sans-serif"],
       },
       fontSize: {
         "h1": ["75px", { lineHeight: "1.05", fontWeight: "500" }],

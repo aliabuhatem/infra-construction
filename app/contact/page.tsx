@@ -7,8 +7,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import { useContentStore } from "@/components/admin-panel/ContentProvider";
 import type { ContentStore } from "@/lib/getContent";
 
-const H = "var(--font-barlow-condensed), Arial Narrow, sans-serif";
-const B = "var(--font-source-sans), Arial, sans-serif";
+const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
 export default function ContactPage() {
   const { store: rawStore } = useContentStore();
