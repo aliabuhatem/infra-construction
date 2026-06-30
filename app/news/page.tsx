@@ -28,7 +28,6 @@ export default async function NewsPage() {
       excerpt:    f.excerpt  || "",
       image:      f.image    || "",
     }));
-  const [featured, ...rest] = allItems;
 
   return (
     <>
@@ -108,7 +107,7 @@ export default async function NewsPage() {
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
-            {rest.map((item) => (
+            {allItems.map((item) => (
               <Link
                 key={item.slug}
                 href={`/news/${item.slug}`}
