@@ -2763,6 +2763,15 @@
   },
   "media": [
     {
+      "id": "1782808760807",
+      "title": "about_bg.jpg",
+      "alt": "Abou Hero",
+      "category": "gallery",
+      "url": "/media/1782808759944-about_bg.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-30T08:39:20.807Z"
+    },
+    {
       "id": "1782641734021",
       "title": "Eng. Hani",
       "alt": "Eng. Hani",
