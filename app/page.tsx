@@ -35,7 +35,7 @@ export default async function HomePage() {
           <p className="text-white text-[9px] uppercase tracking-[0.35em] mb-1">
             <ContentText section="home_hero" name="locationsLabel" fallback="Operating in" />
           </p>
-          <p className="text-white/50 text-[10px] uppercase tracking-widest leading-loose">
+          <p className="text-white text-[10px] uppercase tracking-widest leading-loose">
             <ContentText section="home_hero" name="locationsList" fallback="UAE · Egypt · Yemen · Canada" />
           </p>
         </div>
