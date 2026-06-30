@@ -453,8 +453,8 @@ export default async function HomePage() {
           {/* 3-column project cards */}
           <div className="grid lg:grid-cols-3 gap-6">
             {[
-              { key: "home_project_1", fallbackTitle: "Hassan Dam Project", fallbackCountry: "Yemen", fallbackType: "Water Infrastructure", fallbackImage: "/media/water-hassan-dam-project-yemen.jpeg" },
-              { key: "home_project_2", fallbackTitle: "Stormwater Drainage System", fallbackCountry: "Yemen", fallbackType: "Civil Works", fallbackImage: "/media/infrastructure-stormwater-drainage-yemen.jpeg" },
+              { key: "home_project_1", fallbackTitle: "MINISTRY OF FOREIGN AFFAIRS BUILDING, ADEN", fallbackCountry: "Yemen", fallbackType: "Building", fallbackImage: "/media/buildings-ministry-foreign-aden-yemen.jpeg" },
+              { key: "home_project_2", fallbackTitle: "ASSIUT UNIVERSITY BUILDINGS", fallbackCountry: "Egypt", fallbackType: "Building", fallbackImage: "/media/buildings-general-facade.jpeg" },
               { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.jpeg" },
             ].filter((p) => !deleted.has(p.key)).map((p) => (
               <Link
