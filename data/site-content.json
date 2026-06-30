@@ -43,7 +43,7 @@
       "short": "Civil works, water systems, energy, and industrial projects across the Middle East and Africa.",
       "exploreText": "Explore",
       "href": "/sectors/infrastructure",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg"
+      "image": "/media/infrastructure-assiut-plateau-axis-egypt.jpeg"
     },
     "home_subsector_civil": {
       "num": "01",
@@ -185,7 +185,7 @@
       "headlineLine2": "Construction",
       "title": "A construction company built on engineering discipline",
       "subtitle": "Decades of delivering infrastructure, buildings, water and energy projects across the Middle East and Africa.",
-      "backgroundImage": "/media/about-.sectionjpg.jpg"
+      "backgroundImage": "/media/1782808759944-about_bg.jpg"
     },
     "about_story": {
       "title": "Our story",
@@ -195,7 +195,7 @@
     "about_philosophy": {
       "title": "Operating philosophy",
       "description": "Engineering integrity, safety, and on-time delivery are non-negotiable. We invest in people, plant, and partnerships that compound over years.",
-      "image": "/media/company-operating-philosophy.jpeg"
+      "image": "/media/company-team-photo.jpeg"
     },
     "about_leadership_founder": {
       "name": "Eng. Hani Sahooly",
@@ -415,7 +415,7 @@
       "goal_2": "Government authorities — ministries and local councils",
       "goal_3": "International funding agencies (World Bank, Arab Fund, Kuwait Fund)",
       "goal_4": "Long-term joint ventures with regional and international partners",
-      "image": "/media/about-.sectionjpg.jpg"
+      "image": "/media/1782808759944-about_bg.jpg"
     },
     "about_team_roles": {
       "eyebrow": "Our People",
@@ -2764,6 +2764,15 @@
     }
   },
   "media": [
+    {
+      "id": "1782808760807",
+      "title": "about_bg.jpg",
+      "alt": "Abou Hero",
+      "category": "gallery",
+      "url": "/media/1782808759944-about_bg.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-30T08:39:20.807Z"
+    },
     {
       "id": "1782641734021",
       "title": "Eng. Hani",
