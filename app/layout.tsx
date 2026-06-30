@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ContentProvider } from "@/components/admin-panel/ContentProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 // Single typeface for the whole site. next/font downloads the woff2 files at
 // build time and self-hosts them from our own origin (no runtime request to
@@ -49,6 +50,7 @@ export default function RootLayout({
           <Footer />
         </ContentProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
