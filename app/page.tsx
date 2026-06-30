@@ -341,12 +341,7 @@ export default async function HomePage() {
       {/* ── 5. PHILOSOPHY STRIP ───────────────────────────────────────── */}
       <section className="bg-[#213B4D] py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-14 text-center">
-          <p
-            className="text-white/30 text-[11px] font-bold uppercase tracking-[0.4em] mb-5"
-            style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
-          >
-            <ContentText section="home_philosophy" name="eyebrow" fallback="Our Operating Philosophy" />
-          </p>
+      
           <h2
             className="text-white uppercase leading-none mb-6"
             style={{
@@ -356,16 +351,10 @@ export default async function HomePage() {
               letterSpacing: "0.04em",
             }}
           >
-            <span className="text-white"><ContentText section="home_philosophy" name="word1" fallback="SCOPE" /></span>
-            <span className="text-[#1F93A4] mx-4 text-[0.6em]">·</span>
-            <span className="text-white"><ContentText section="home_philosophy" name="word2" fallback="TIME" /></span>
-            <span className="text-[#1F93A4] mx-4 text-[0.6em]">·</span>
-            <span className="text-white"><ContentText section="home_philosophy" name="word3" fallback="COST" /></span>
-            <span className="text-[#1F93A4] mx-4 text-[0.6em]">·</span>
-            <span className="text-white"><ContentText section="home_philosophy" name="word4" fallback="QUALITY" /></span>
+            <ContentText section="home_philosophy" name="eyebrow" fallback="Our Operating Philosophy" />
           </h2>
           <p
-            className="text-white/45 text-[17px] max-w-xl mx-auto leading-relaxed"
+            className="text-white text-[17px] max-w-xl mx-auto leading-relaxed"
             style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
           >
             <ContentText
