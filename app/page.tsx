@@ -1,8 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
+import localFont from "next/font/local";
 import ContentText from "../components/admin-panel/ContentText";
 import MediaImage from "../components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "../lib/getContent";
+
+/* ─── Test font: Bebas Neue (home page only) ────────────────────────────────
+   Self-hosted from app/fonts/BebasNeue-Regular.ttf via next/font/local.
+   Scoped to this page by overriding the shared --font-ibm-plex-sans variable on
+   the home wrapper below, so every element that references that variable (the
+   whole home page) renders in Bebas Neue while the rest of the site keeps IBM
+   Plex Sans. Remove the import + wrapper styles to revert. */
+const bebas = localFont({
+  src: "./fonts/BebasNeue-Regular.ttf",
+  variable: "--font-bebas",
+  display: "swap",
+});
+
+// Override the site font variable with Bebas for this page's subtree.
+const homeFontStyle = {
+  "--font-ibm-plex-sans": "var(--font-bebas)",
+  fontFamily: "var(--font-bebas), system-ui, sans-serif",
+} as React.CSSProperties;
 
 /* ─── Component ─────────────────────────────────────────────────────────── */
 
@@ -15,7 +34,7 @@ export default async function HomePage() {
     .filter((n) => /^news_\d+$/.test(n._key))
     .slice(0, 3);
   return (
-    <>
+    <div className={bebas.variable} style={homeFontStyle}>
       {/* ── 1. HERO ────────────────────────────────────────────────────── */}
       <section className="relative h-screen min-h-[640px] flex flex-col justify-end overflow-hidden">
         <MediaImage
@@ -815,6 +834,6 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
-    </>
+    </div>
   );
 }
