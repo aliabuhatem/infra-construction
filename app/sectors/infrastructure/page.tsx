@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
+import SectorProjects from "@/components/SectorProjects";
 
 const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
@@ -153,6 +154,9 @@ export default function InfrastructurePage() {
           </div>
         </div>
       </section>
+
+      {/* PROJECTS */}
+      <SectorProjects sector="infrastructure" eyebrow="Our Work" title="Infrastructure Projects" />
 
       {/* CTA */}
       <section className="relative py-28 bg-[#1F93A4] overflow-hidden">

@@ -26,6 +26,7 @@ interface SectorLayoutProps {
   faqs: FAQ[];
   ctaTitle: string;
   ctaBody: string;
+  projectsSlot?: React.ReactNode;
 }
 
 /* ── Shared style helpers ──────────────────────────────────────────────── */
@@ -87,7 +88,7 @@ export default function SectorLayout({
   sectionKey,
   eyebrow, heroTitle, heroSubtitle, heroDescription, heroImage,
   intro, serviceGroups, features, process, whyUs,
-  industries, faqs, ctaTitle, ctaBody,
+  industries, faqs, ctaTitle, ctaBody, projectsSlot,
 }: SectorLayoutProps) {
   const sk = sectionKey;
 
@@ -345,6 +346,9 @@ export default function SectorLayout({
           </div>
         </div>
       </section>
+
+      {/* ── SECTOR PROJECTS (optional) ────────────────────────────────── */}
+      {projectsSlot}
 
       {/* ── CTA ───────────────────────────────────────────────────────── */}
       <section className="relative py-28 bg-[#1F93A4] overflow-hidden">

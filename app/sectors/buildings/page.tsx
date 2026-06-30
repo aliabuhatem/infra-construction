@@ -1,4 +1,5 @@
 import SectorLayout from "@/components/SectorLayout";
+import SectorProjects from "@/components/SectorProjects";
 
 export const metadata = {
   title: "Buildings & Architecture Services | INFRA Construction",
@@ -155,6 +156,7 @@ export default function BuildingsPage() {
       ]}
       ctaTitle="Build Your Vision with INFRA"
       ctaBody="Partner with INFRA Construction for exceptional Buildings & Architecture solutions that combine design excellence, engineering expertise, and reliable construction delivery."
+      projectsSlot={<SectorProjects sector="building" eyebrow="Our Work" title="Building Projects" />}
     />
   );
 }

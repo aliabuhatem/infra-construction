@@ -402,20 +402,33 @@ export default async function HomePage() {
               </h2>
             </div>
             <div className="flex flex-col gap-3 shrink-0 lg:items-end">
+              <span
+                className="text-[#213B4D]/45 text-[10px] font-bold uppercase tracking-[0.3em]"
+                style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              >
+                Browse Projects By Sector
+              </span>
               <div className="flex flex-wrap gap-2">
                 <Link
                   href="/projects?category=infrastructure"
-                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-2 transition-colors"
+                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   Infrastructure
                 </Link>
                 <Link
                   href="/projects?category=building"
-                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-2 transition-colors"
+                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   Building
+                </Link>
+                <Link
+                  href="/projects"
+                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
+                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                >
+                  All
                 </Link>
               </div>
               <Link
