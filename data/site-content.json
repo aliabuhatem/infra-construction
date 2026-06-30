@@ -101,22 +101,23 @@
       "type": "Transportation",
       "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
     },
-    "home_whoweare": {
+    "home_about_split": {
       "eyebrow": "Who We Are",
-      "headingLine1": "A Global Engineering &",
-      "headingLine2": "Construction Partner",
+      "heading": "A Global Engineering & Construction Partner",
       "paragraph1": "Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000. Every task is executed through hard work, dedication, and optimal management of resources.",
       "paragraph2": "We provide professional services in contracting — especially in the infrastructure field — executing according to international codes and project specifications, with offices across the UAE, Egypt, Yemen, Jordan, and Canada.",
-      "stat1Value": "25",
-      "stat1Suffix": "",
-      "stat1Label": "Years",
-      "stat1Sublabel": "of Excellence",
-      "stat2Value": "12",
-      "stat2Suffix": "",
-      "stat2Label": "Countries",
-      "stat2Sublabel": "of Operation",
+      "stat1Value": "25 Years",
+      "stat1Label": "of Excellence",
+      "stat2Value": "12 Countries",
+      "stat2Label": "of Operation",
+      "service1": "Construction Services",
+      "service2": "Project Management",
+      "service3": "Detailed Engineering",
+      "service4": "Procurement Management",
+      "service5": "Quantity Surveying",
+      "service6": "Operation & Maintenance",
       "linkText": "Discover Our Story",
-      "image": "/media/1782809288798-who_we_are.jpg"
+      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
     },
     "home_news_header": {
       "eyebrow": "Latest News",
@@ -2761,26 +2762,34 @@
       "logoDark": "/media/INFRA LOGO.png",
       "favicon": "/favicon.ico"
     },
-    "home_about_split": {
+    "home_whoweare": {
       "eyebrow": "Who We Are",
-      "heading": "A Global Engineering & Construction Partner",
+      "headingLine1": "A Global Engineering &",
+      "headingLine2": "Construction Partner",
       "paragraph1": "Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000. Every task is executed through hard work, dedication, and optimal management of resources.",
       "paragraph2": "We provide professional services in contracting — especially in the infrastructure field — executing according to international codes and project specifications, with offices across the UAE, Egypt, Yemen, Jordan, and Canada.",
-      "stat1Value": "25 Years",
-      "stat1Label": "of Excellence",
-      "stat2Value": "12 Countries",
-      "stat2Label": "of Operation",
-      "service1": "Construction Services",
-      "service2": "Project Management",
-      "service3": "Detailed Engineering",
-      "service4": "Procurement Management",
-      "service5": "Quantity Surveying",
-      "service6": "Operation & Maintenance",
+      "stat1Value": "25",
+      "stat1Suffix": "",
+      "stat1Label": "Years",
+      "stat1Sublabel": "of Excellence",
+      "stat2Value": "12",
+      "stat2Suffix": "",
+      "stat2Label": "Countries",
+      "stat2Sublabel": "of Operation",
       "linkText": "Discover Our Story",
-      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
+      "image": "/media/1782809288798-who_we_are.jpg"
     }
   },
   "media": [
+    {
+      "id": "1782815674576",
+      "title": "location_ahead",
+      "alt": "location_ahead",
+      "category": "gallery",
+      "url": "/media/1782815673567-location_ahead.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-30T10:34:34.576Z"
+    },
     {
       "id": "1782809289521",
       "title": "who_we_are",
