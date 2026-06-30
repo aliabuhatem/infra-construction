@@ -20,34 +20,7 @@ export type NewsItem = {
 };
 
 export const newsItems: NewsItem[] = [
-  // ── 1. MOST RECENT: Shaanxi Partnership (LinkedIn June 2025) ─────────────
-  {
-    slug: "infra-construction-shaanxi-global-partnership-2025",
-    sectionKey: "news_1",
-    date: "June 2025",
-    category: "Partnerships",
-    title: "INFRA Construction Group Partners with Shaanxi Construction",
-    excerpt:
-      "INFRA Construction Group has entered into a strategic partnership with Shaanxi Construction Engineering Group Corporation, marking a significant expansion of global collaboration to deliver large-scale infrastructure projects across key markets.",
-    image: "/media/news-shaanxi-partnership-2025.jpg",
-    location: "Abu Dhabi, UAE",
-    author: "INFRA Communications",
-    readTime: "4 min read",
-    content: [
-      "INFRA Construction Group has formalised a strategic partnership with Shaanxi Construction Engineering Group Corporation — the largest state-owned investment and construction group in Shaanxi Province, China — through the signing of a Memorandum of Understanding.",
-      "The partnership is designed to combine INFRA's deep expertise in Middle Eastern and African markets with Shaanxi Construction's large-scale engineering capabilities and proven global delivery record. Together, the two organisations will target complex infrastructure programmes across multiple regions.",
-      "This collaboration is expected to open new business development avenues, enhance competitive positioning, and enable both organisations to pursue projects that neither could as effectively approach independently. The agreement covers a wide range of infrastructure disciplines, including civil works, industrial projects, and large-scale transportation infrastructure.",
-      "INFRA Construction's CEO and leadership team expressed strong confidence in the long-term value of this global partnership, noting that it aligns directly with the company's strategic direction and its commitment to delivering excellence across borders.",
-    ],
-    highlights: [
-      "MOU signed with Shaanxi Construction Engineering Group Corporation",
-      "Shaanxi Construction is the largest state-owned construction group in Shaanxi Province",
-      "Targeting large-scale infrastructure projects across global markets",
-      "Combines INFRA's regional expertise with Shaanxi's engineering scale",
-    ],
-  },
-
-  // ── 2. Kuwait Market Expansion Meeting (LinkedIn 2025) ───────────────────
+  // ── 1. Kuwait Market Expansion Meeting (LinkedIn 2025) ───────────────────
   {
     slug: "infra-construction-kuwait-market-expansion-2025",
     sectionKey: "news_2",
