@@ -112,7 +112,7 @@ export default async function AboutPage() {
       {/* ── BRAND QUOTE ─────────────────────────────────────────────── */}
       <section className="py-16 bg-[#213B4D] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-14 text-center">
-          <p className="text-white uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(22px, 3.5vw, 40px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
+          <p className="text-white uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(12px, 3.5vw, 30px)", fontWeight: 400, letterSpacing: "-0.01em" }}>
             &ldquo;<ContentText section="about_quote" name="text" fallback="We Do Not Only Aim To Meet Your Expectation, But To Exceed Them At Every Step." />&rdquo;
           </p>
         </div>
