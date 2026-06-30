@@ -3,13 +3,27 @@ import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
+import ProjectsPortfolio from "@/components/ProjectsPortfolio";
 
 const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
-export default async function ProjectsPage() {
+export default async function ProjectsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string; country?: string }>;
+}) {
   const c = await getContent();
   const deleted = new Set(c._deletedSections || []);
+
+  // Read the optional ?category= / ?country= filters from the URL (set by the
+  // home page links and reflected by the on-page filter buttons). Unknown values
+  // fall back to showing everything.
+  const sp = await searchParams;
+  const rawCategory = sp?.category?.toLowerCase();
+  const initialCategory =
+    rawCategory === "infrastructure" || rawCategory === "building" ? rawCategory : "all";
+  const initialCountry = sp?.country?.toLowerCase() || "all";
 
   const visibleProjects = Object.entries(c.content || {})
     .filter(([k]) => /^project_\d+$/.test(k) && !deleted.has(k))
@@ -56,61 +70,7 @@ export default async function ProjectsPage() {
 
       {/* ── PROJECTS GRID ─────────────────────────────────────────────────── */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-14">
-          <div className="grid lg:grid-cols-12 gap-14 mb-14">
-            <div className="lg:col-span-7">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-                <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-                  <ContentText section="projects_header" name="eyebrow" fallback="Portfolio" />
-                </p>
-              </div>
-              <h2 className="text-[#213B4D] uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-                <ContentText section="projects_header" name="title" fallback="75+ Projects Delivered Across Multiple Regions" />
-              </h2>
-              <p className="text-[#5E5E5E] text-[15px] leading-relaxed mt-4" style={{ fontFamily: B }}>
-                <ContentText section="projects_header" name="subtitle" fallback="Since 2000, INFRA Construction has accomplished projects in various fields of specialisation across the Middle East, Africa, and beyond." />
-              </p>
-            </div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
-            {visibleProjects.map((p, i) => (
-              <div key={i} className="group bg-white hover:bg-[#f4f6f8] transition-colors overflow-hidden">
-                <div className="relative h-52 overflow-hidden">
-                  <MediaImage
-                    category={p.sectionKey}
-                    title={`${p.sectionKey}_image`}
-                    fallbackSrc={p.image}
-                    alt={p.title}
-                    className="object-cover object-center w-full h-full group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/70 to-transparent" />
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="bg-[#1F93A4] text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
-                      <ContentText section={p.sectionKey} name="country" fallback={p.country} />
-                    </span>
-                    <span className="bg-[#0d1e28]/80 text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
-                      <ContentText section={p.sectionKey} name="type" fallback={p.type} />
-                    </span>
-                  </div>
-                </div>
-                <div className="p-7">
-                  <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
-                  <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
-                    <ContentText section={p.sectionKey} name="sector" fallback={p.sector} />
-                  </div>
-                  <h3 className="text-[#213B4D] font-bold text-[15px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
-                    <ContentText section={p.sectionKey} name="title" fallback={p.title} />
-                  </h3>
-                  <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
-                    <ContentText section={p.sectionKey} name="description" fallback={p.description} />
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <ProjectsPortfolio projects={visibleProjects} initialCategory={initialCategory} initialCountry={initialCountry} />
       </section>
 
       {/* ── STATEMENT ─────────────────────────────────────────────────────── */}

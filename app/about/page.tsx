@@ -383,7 +383,7 @@ export default async function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-white">
             {leaderItems.map((l, i) => (
               <div key={l._key} className="bg-white group hover:bg-white transition-colors relative overflow-hidden flex flex-col">
-                <div className="relative w-full bg-[#0d1e28] overflow-hidden" style={{ height: "320px" }}>
+                <div className="relative w-full bg-[#f4f6f8] overflow-hidden" style={{ height: "320px" }}>
                   <MediaImage
                     category={l._key}
                     title={`${l._key}_image`}

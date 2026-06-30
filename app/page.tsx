@@ -32,7 +32,7 @@ export default async function HomePage() {
           className="absolute top-[105px] right-6 lg:right-14 text-right z-10 hidden lg:block"
           style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
         >
-          <p className="text-white/35 text-[9px] uppercase tracking-[0.35em] mb-1">
+          <p className="text-white text-[9px] uppercase tracking-[0.35em] mb-1">
             <ContentText section="home_hero" name="locationsLabel" fallback="Operating in" />
           </p>
           <p className="text-white/50 text-[10px] uppercase tracking-widest leading-loose">
@@ -401,14 +401,32 @@ export default async function HomePage() {
                 <ContentText section="home_featured_projects" name="headingLine2" fallback="Multiple Regions" />
               </h2>
             </div>
-            <Link
-              href="/projects"
-              className="text-[#213B4D]/60 hover:text-[#1F93A4] text-[13px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
-              style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
-            >
-              <ContentText section="home_featured_projects" name="linkText" fallback="View All Projects" />
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
-            </Link>
+            <div className="flex flex-col gap-3 shrink-0 lg:items-end">
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href="/projects?category=infrastructure"
+                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-2 transition-colors"
+                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                >
+                  Infrastructure
+                </Link>
+                <Link
+                  href="/projects?category=building"
+                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-2 transition-colors"
+                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                >
+                  Building
+                </Link>
+              </div>
+              <Link
+                href="/projects"
+                className="text-[#213B4D]/60 hover:text-[#1F93A4] text-[13px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group"
+                style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              >
+                <ContentText section="home_featured_projects" name="linkText" fallback="View All Projects" />
+                <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
+            </div>
           </div>
 
           {/* 3-column project cards */}
@@ -724,7 +742,7 @@ export default async function HomePage() {
                   <ContentText section={o.key} name="city" fallback={o.fallbackCity} />
                 </span>
                 <span
-                  className="text-white/30 text-[12px] font-bold uppercase tracking-[0.25em] shrink-0"
+                  className="text-white text-[12px] font-bold uppercase tracking-[0.25em] shrink-0"
                   style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section={o.key} name="country" fallback={o.fallbackCountry} />
