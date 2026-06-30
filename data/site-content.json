@@ -101,22 +101,23 @@
       "type": "Transportation",
       "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
     },
-    "home_whoweare": {
+    "home_about_split": {
       "eyebrow": "Who We Are",
-      "headingLine1": "A Global Engineering &",
-      "headingLine2": "Construction Partner",
+      "heading": "A Global Engineering & Construction Partner",
       "paragraph1": "Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000. Every task is executed through hard work, dedication, and optimal management of resources.",
       "paragraph2": "We provide professional services in contracting — especially in the infrastructure field — executing according to international codes and project specifications, with offices across the UAE, Egypt, Yemen, Jordan, and Canada.",
-      "stat1Value": "25",
-      "stat1Suffix": "",
-      "stat1Label": "Years",
-      "stat1Sublabel": "of Excellence",
-      "stat2Value": "12",
-      "stat2Suffix": "",
-      "stat2Label": "Countries",
-      "stat2Sublabel": "of Operation",
+      "stat1Value": "25 Years",
+      "stat1Label": "of Excellence",
+      "stat2Value": "12 Countries",
+      "stat2Label": "of Operation",
+      "service1": "Construction Services",
+      "service2": "Project Management",
+      "service3": "Detailed Engineering",
+      "service4": "Procurement Management",
+      "service5": "Quantity Surveying",
+      "service6": "Operation & Maintenance",
       "linkText": "Discover Our Story",
-      "image": "/media/1782809288798-who_we_are.jpg"
+      "backgroundImage": "/media/1782809288798-who_we_are.jpg"
     },
     "home_news_header": {
       "eyebrow": "Latest News",
@@ -236,7 +237,7 @@
     "about_team": {
       "title": "Our team",
       "description": "200+ engineers, planners, supervisors and skilled crews delivering work in challenging environments.",
-      "image": "/media/company-team-photo.jpeg"
+      "image": "/media/1782815816981-our_story.jpg"
     },
     "sectors_hero": {
       "eyebrow": "Sectors",
@@ -248,7 +249,7 @@
       "title": "Buildings",
       "tagline": "Residential, commercial, and institutional",
       "description": "Concept-to-handover delivery of housing, commercial complexes, ministries, and institutional facilities.",
-      "heroImage": "/media/buildings-hero.jpg",
+      "heroImage": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.jpeg",
       "image2": "/media/buildings-general-facade.jpeg",
       "image3": "/media/buildings-general-structure.jpeg"
     },
@@ -257,7 +258,7 @@
       "tagline": "Civil works and transportation",
       "description": "Highways, bridges, airports, ports, marine works and stormwater systems built to international standards.",
       "heroImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg",
-      "image2": "/media/infrastructure-aden-causeway-widening-yemen.jpeg",
+      "image2": "/admin-uploads/1782482243195-west-assiut-plateau-road.jpg.jpeg",
       "image3": "/media/infrastructure-stormwater-drainage-yemen.jpeg"
     },
     "sector_water": {
@@ -389,7 +390,7 @@
       "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000.",
       "p2": "Every task Infra Construction took up was executed through hard work and dedication from our team professionals. Possessing all the needed resources is a crucial factor in achieving any project successfully — however, the factor that delivers outstanding results is managing these resources optimally.",
       "p3": "Infra Construction represents the working arm providing professional services in the contracting niche — especially in the infrastructure field — executing according to international codes and project specifications across the UAE, Egypt, Yemen, and Canada.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg"
+      "image": "/media/1782815816981-our_story.jpg"
     },
     "about_ceo_bio": {
       "bio1": "As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 2000 — shaping it into a trusted name in buildings, infrastructure, and industrial construction across the Middle East, Africa, and North America.",
@@ -2756,26 +2757,43 @@
       "logoDark": "/media/INFRA LOGO.png",
       "favicon": "/favicon.ico"
     },
-    "home_about_split": {
+    "home_whoweare": {
       "eyebrow": "Who We Are",
-      "heading": "A Global Engineering & Construction Partner",
+      "headingLine1": "A Global Engineering &",
+      "headingLine2": "Construction Partner",
       "paragraph1": "Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000. Every task is executed through hard work, dedication, and optimal management of resources.",
       "paragraph2": "We provide professional services in contracting — especially in the infrastructure field — executing according to international codes and project specifications, with offices across the UAE, Egypt, Yemen, Jordan, and Canada.",
-      "stat1Value": "25 Years",
-      "stat1Label": "of Excellence",
-      "stat2Value": "12 Countries",
-      "stat2Label": "of Operation",
-      "service1": "Construction Services",
-      "service2": "Project Management",
-      "service3": "Detailed Engineering",
-      "service4": "Procurement Management",
-      "service5": "Quantity Surveying",
-      "service6": "Operation & Maintenance",
+      "stat1Value": "25",
+      "stat1Suffix": "",
+      "stat1Label": "Years",
+      "stat1Sublabel": "of Excellence",
+      "stat2Value": "12",
+      "stat2Suffix": "",
+      "stat2Label": "Countries",
+      "stat2Sublabel": "of Operation",
       "linkText": "Discover Our Story",
-      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
+      "image": "/media/1782809288798-who_we_are.jpg"
     }
   },
   "media": [
+    {
+      "id": "1782815817895",
+      "title": "our_story",
+      "alt": "our_story",
+      "category": "gallery",
+      "url": "/media/1782815816981-our_story.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-30T10:36:57.896Z"
+    },
+    {
+      "id": "1782815674576",
+      "title": "location_ahead",
+      "alt": "location_ahead",
+      "category": "gallery",
+      "url": "/media/1782815673567-location_ahead.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-30T10:34:34.576Z"
+    },
     {
       "id": "1782809289521",
       "title": "who_we_are",
