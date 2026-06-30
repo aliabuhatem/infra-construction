@@ -1,155 +1,191 @@
-import Image from "next/image";
-import Link from "next/link";
-import ContentText from "@/components/admin-panel/ContentText";
-import MediaImage from "@/components/admin-panel/MediaImage";
+import SectorLayout from "@/components/SectorLayout";
 import SectorProjectsList from "@/components/SectorProjectsList";
+
+export const metadata = {
+  title: "Infrastructure & Civil Works | INFRA Construction",
+  description: "Comprehensive infrastructure and civil works — highways, bridges, airports, ports, marine works, water systems, dams, energy, and industrial projects delivered to international standards.",
+};
 
 const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
-const subsectors = [
-  { num: "01", title: "Water",          short: "Water supply systems, treatment plants, and integrated utility networks built for longevity.",                    href: "/sectors/water-utilities",            image: "/media/water-dam-construction-yemen.jpeg",              disciplines: ["Water Supply Networks", "Wastewater Treatment", "Desalination", "Utility Networks"],               sectionKey: "infra_hub_sub_1" },
-  { num: "02", title: "Dams & Irrigation", short: "Dam construction, dike works, and large-scale irrigation infrastructure across arid regions.",               href: "/sectors/water-utilities",            image: "/media/water-hassan-dam-project-yemen.jpeg",            disciplines: ["Dam Construction", "Dikes", "Irrigation Networks", "Flood Control"],                              sectionKey: "infra_hub_sub_2" },
-  { num: "03", title: "Ports",          short: "Marine ports, quay walls, breakwaters, and harbour infrastructure delivered to international standards.",         href: "/sectors/infrastructure-civil-works", image: "/media/ports-hulaf-socotra-yemen.jpeg",                 disciplines: ["Quay Walls", "Breakwaters", "Marine Structures", "Port Master Planning"],                         sectionKey: "infra_hub_sub_3" },
-  { num: "04", title: "Airports",       short: "Airfield works, runways, terminal facilities, and aviation infrastructure for civil and strategic use.",          href: "/sectors/infrastructure-civil-works", image: "/media/airports-dhobab-airport-diagram.png",            disciplines: ["Runways", "Airfield Works", "Terminal Facilities", "Aviation Infrastructure"],                    sectionKey: "infra_hub_sub_4" },
-  { num: "05", title: "Transportation", short: "Highways, bridges, flyovers, and large-scale road networks delivered with proven civil engineering expertise.",   href: "/sectors/infrastructure-civil-works", image: "/media/infrastructure-coastal-highway-taiz-yemen.jpeg", disciplines: ["Highways & Roads", "Bridges & Flyovers", "Causeways", "Road Rehabilitation"],                     sectionKey: "infra_hub_sub_5" },
-  { num: "06", title: "Oil",            short: "Oil & gas pipelines, plant construction, and comprehensive industrial operations support.",                       href: "/sectors/industrial-oil-services",    image: "/media/industrial-floating-marine-pier-yemen.jpeg",     disciplines: ["Oil & Gas Pipelines", "Plant Construction", "Industrial O&M", "Marine Pipelines"],                sectionKey: "infra_hub_sub_6" },
-  { num: "07", title: "Power",          short: "Power generation, transmission networks, substations, and renewable energy infrastructure.",                      href: "/sectors/energy-power",               image: "/media/energy-power-plant-alhaswa-aden-yemen.jpeg",     disciplines: ["Power Plants", "Transmission Lines", "Substations", "Renewable Energy"],                          sectionKey: "infra_hub_sub_7" },
-];
-
 export default function InfrastructurePage() {
   return (
-    <>
-      {/* HERO */}
-      <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
-        <MediaImage category="infra_hub_hero" title="backgroundImage" fallbackSrc="/media/infrastructure-aden-causeway-widening-yemen.jpeg" alt="Infrastructure" className="absolute inset-0 w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/96 via-[#213B4D]/70 to-[#213B4D]/20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-            <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-              <ContentText section="infra_hub_hero" name="eyebrow" fallback="Core Sector" />
-            </p>
-          </div>
-          <h1 className="text-white uppercase leading-[0.92] mb-5" style={{ fontFamily: H, fontSize: "clamp(44px, 7.5vw, 90px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-            <ContentText section="infra_hub_hero" name="title" fallback="Infrastructure" />
-          </h1>
-          <p className="text-white/60 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
-            <ContentText section="infra_hub_hero" name="subtitle" fallback="Civil works, water systems, energy, and industrial projects — delivered across the Middle East and Africa since 2000." />
-          </p>
-        </div>
-      </section>
-
-      {/* BREADCRUMB */}
-      <div className="bg-[#0d1e28] border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase" style={{ fontFamily: B }}>
-          <Link href="/" className="text-white/35 hover:text-[#1F93A4] transition-colors">Home</Link>
-          <span className="text-white/20">›</span>
-          <Link href="/sectors" className="text-white/35 hover:text-[#1F93A4] transition-colors">Sectors</Link>
-          <span className="text-white/20">›</span>
-          <span className="text-[#1F93A4]">Infrastructure</span>
-        </div>
-      </div>
-
-      {/* INTRO */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-14 grid lg:grid-cols-12 gap-14 items-start">
-          <div className="lg:col-span-7">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-              <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-                <ContentText section="infra_hub_intro" name="eyebrow" fallback="Overview" />
+    <SectorLayout
+      sectionKey="sector_infrastructure"
+      eyebrow="Core Sector"
+      heroTitle="Infrastructure"
+      heroSubtitle="Civil works, water systems, energy, and industrial projects — delivered across the Middle East and Africa since 2000."
+      heroDescription="INFRA Construction delivers complex civil and infrastructure projects — from highways, bridges, and airports to ports, dams, power, and industrial works — engineered and built to international standards."
+      heroImage="/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
+      intro={[
+        "INFRA Construction's Infrastructure sector encompasses all major civil, utility, energy, and industrial disciplines. From highway construction and dam engineering to power generation and oil services, our integrated teams deliver complex infrastructure projects to international standards.",
+        "Operating across the Middle East and Africa since 2000, we bring proven technical expertise, ISO-certified quality management, and deep regional experience to every infrastructure engagement — executing each project according to international codes and exacting specifications.",
+        "Our infrastructure division combines civil engineering, marine works, water systems, transportation, energy, and industrial capabilities under one coordinated team — providing clients with a complete delivery solution from feasibility and design through construction and commissioning.",
+        "Backed by abundant plant, equipment, and a skilled multidisciplinary workforce, INFRA Construction has the resources and flexibility to execute large-scale infrastructure works safely and on schedule, even in challenging and remote locations.",
+      ]}
+      serviceGroups={[
+        {
+          title: "Water Supply & Utilities",
+          description: "INFRA Construction delivers complete water and utility infrastructure — from transmission and distribution networks to treatment and storage systems built for longevity.",
+          items: [
+            "Water supply networks",
+            "Wastewater treatment plants",
+            "Desalination infrastructure",
+            "Reservoirs and storage tanks",
+            "Pumping stations",
+            "Utility distribution networks",
+            "Pipeline transmission systems",
+            "Stormwater and drainage",
+          ],
+        },
+        {
+          title: "Dams & Irrigation",
+          description: "We construct dams, dikes, and large-scale irrigation infrastructure across arid regions — providing water retention, flood control, and agricultural supply.",
+          items: [
+            "Dam construction",
+            "Dikes and embankments",
+            "Barrages and weirs",
+            "Irrigation networks",
+            "Flood control systems",
+            "Water retention structures",
+            "Canal and channel works",
+            "Earth and rockfill works",
+          ],
+        },
+        {
+          title: "Ports & Marine Works",
+          description: "Our marine teams deliver ports, quay walls, breakwaters, and harbour infrastructure to international standards for civil and strategic use.",
+          items: [
+            "Quay walls and berths",
+            "Breakwaters and seawalls",
+            "Jetties and floating piers",
+            "Marine structures",
+            "Coastal protection works",
+            "Port master planning",
+            "Dredging and reclamation",
+            "Mooring and berthing systems",
+          ],
+        },
+        {
+          title: "Airports & Aviation",
+          description: "INFRA Construction executes airfield works, runways, and aviation infrastructure for both civil and strategic aviation requirements.",
+          items: [
+            "Runway construction",
+            "Taxiways and aprons",
+            "Airfield ground works",
+            "Terminal facilities",
+            "Aviation infrastructure",
+            "Airfield drainage",
+            "Pavement and surfacing",
+            "Lighting and navigation civil works",
+          ],
+        },
+        {
+          title: "Roads, Bridges & Transportation",
+          description: "We deliver highways, bridges, and large-scale road networks with proven civil engineering expertise — from earthworks to final surfacing.",
+          items: [
+            "Highways and road networks",
+            "Bridges and flyovers",
+            "Causeways and widening",
+            "Road rehabilitation",
+            "Earthworks and grading",
+            "Pavement and asphalt works",
+            "Drainage and culverts",
+            "Road safety infrastructure",
+          ],
+        },
+        {
+          title: "Energy, Power & Industrial",
+          description: "Our teams build power generation, transmission, and industrial infrastructure — including oil & gas works, pipelines, and long-term plant operations support.",
+          items: [
+            "Power plants and stations",
+            "Transmission lines and substations",
+            "Oil & gas pipelines",
+            "Plant piping and mechanical works",
+            "Industrial plant construction",
+            "Concrete mix plants",
+            "Plant operations & maintenance",
+            "Renewable energy infrastructure",
+          ],
+        },
+      ]}
+      features={[
+        { title: "Civil Engineering Expertise", body: "Proven technical depth across highways, bridges, marine works, water, energy, and industrial disciplines built over two decades of delivery." },
+        { title: "Multidisciplinary Delivery", body: "Civil, structural, marine, mechanical, and electrical capabilities coordinated under one integrated infrastructure team." },
+        { title: "Abundant Plant & Equipment", body: "Access to a vast fleet of heavy plant, machinery, and a skilled workforce to execute large-scale civil works at pace." },
+        { title: "Remote Location Capability", body: "Demonstrated experience delivering infrastructure in challenging and remote environments without compromising quality or safety." },
+        { title: "International Standards", body: "Every project executed according to international codes and specifications under ISO-certified quality management systems." },
+        { title: "Regional Presence", body: "Established offices across the UAE, Egypt, Yemen, and Canada providing responsive local support across key markets." },
+        { title: "Proven Since 2000", body: "A consistent track record of delivering complex infrastructure projects on time and to specification across the Middle East and Africa." },
+        { title: "HSE Commitment", body: "A 'zero harm' safety culture embedded across all infrastructure sites through strict HSE protocols and regular training." },
+      ]}
+      process={[
+        { num: "01", title: "Assessment & Survey", body: "We evaluate site conditions, ground data, hydrology, and project requirements to establish a sound engineering basis for delivery." },
+        { num: "02", title: "Engineering & Design", body: "Our engineers prepare detailed civil, structural, and systems designs aligned with international codes and project specifications." },
+        { num: "03", title: "Procurement", body: "We source and procure all materials, plant, and subcontracted works to quality, cost, and schedule requirements." },
+        { num: "04", title: "Construction & Execution", body: "Experienced site teams execute earthworks, civil, structural, marine, and MEP works with rigorous quality and safety management." },
+        { num: "05", title: "Quality & Testing", body: "Continuous inspection, materials testing, and compliance verification are carried out throughout the construction process." },
+        { num: "06", title: "Commissioning & Handover", body: "We complete testing, commissioning, documentation, and formal handover with full as-built records and ongoing support." },
+      ]}
+      whyUs={[
+        { title: "Proven Infrastructure Record", body: "Successfully delivered highways, bridges, airports, ports, dams, and power projects across multiple countries." },
+        { title: "Integrated Civil Capability", body: "In-house civil, marine, structural, and MEP teams delivering seamless coordination across complex infrastructure works." },
+        { title: "International Quality Standards", body: "ISO 9001 certified quality management with stringent inspection and testing protocols across all civil works." },
+        { title: "Skilled Multidisciplinary Workforce", body: "Civil engineers, marine specialists, surveyors, project managers, and construction crews working as one cohesive team." },
+        { title: "Strong Regional Presence", body: "Established offices across the UAE, Egypt, Yemen, and Canada providing responsive local support across key markets." },
+        { title: "HSE Commitment", body: "A 'zero harm' safety culture embedded across all infrastructure sites through strict HSE protocols and regular safety training." },
+        { title: "Flexible Delivery Models", body: "Adaptable project structures including design-build, construction management, and full EPC delivery to suit client requirements." },
+        { title: "Heavy Plant Resources", body: "Owned fleet of plant and equipment enabling self-performed earthworks and civil construction at scale and on schedule." },
+      ]}
+      industries={[
+        "Government & Public Sector",
+        "Transportation Authorities",
+        "Water & Utility Authorities",
+        "Energy & Power",
+        "Oil & Gas",
+        "Ports & Maritime",
+        "Aviation & Airports",
+        "Municipalities",
+        "Defense & Strategic",
+        "International Development",
+      ]}
+      faqs={[
+        { q: "What infrastructure disciplines does INFRA Construction deliver?", a: "We deliver highways, bridges, airports, ports and marine works, water systems, dams and irrigation, energy and power, and industrial infrastructure across the Middle East and Africa." },
+        { q: "Do you self-perform civil and earthworks?", a: "Yes. INFRA Construction owns an extensive fleet of plant and equipment and self-performs earthworks, civil, and structural construction at scale." },
+        { q: "Can you work in remote or challenging locations?", a: "Absolutely. We have a proven track record delivering infrastructure projects in challenging and remote environments without compromising quality or safety." },
+        { q: "Can you manage the full project lifecycle?", a: "Yes. We provide complete delivery from assessment and engineering through procurement, construction, testing, and commissioning." },
+        { q: "Are your infrastructure projects compliant with international standards?", a: "Yes. All projects are executed according to international engineering codes and specifications under our ISO 9001 certified quality management system." },
+      ]}
+      ctaTitle="Have an Infrastructure Challenge?"
+      ctaBody="Partner with INFRA Construction for complex civil and infrastructure projects — combining engineering expertise, heavy resources, and reliable delivery to international standards."
+      projectsSlot={
+        /* Mirrors the buildings page exactly — lists infrastructure projects in
+           the dark "Disciplines Covered" box. Projects added via the admin panel
+           (sector "Infrastructure…") appear here automatically. */
+        <section className="py-24 bg-white border-t border-[#213B4D]/8">
+          <div className="max-w-7xl mx-auto px-6 lg:px-14 grid lg:grid-cols-12 gap-14 items-start">
+            <div className="lg:col-span-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
+                <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+                  Our Work
+                </p>
+              </div>
+              <h2
+                className="text-[#213B4D] uppercase leading-tight mb-6"
+                style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}
+              >
+                Infrastructure Projects
+              </h2>
+              <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
+                A selection of infrastructure and civil works projects delivered across the Middle East, Africa, and beyond.
               </p>
             </div>
-            <h2 className="text-[#213B4D] uppercase leading-tight mb-6" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-              <ContentText section="infra_hub_intro" name="title" fallback="Comprehensive Infrastructure Delivery" />
-            </h2>
-            <p className="text-[#5E5E5E] text-[15px] leading-relaxed mb-4" style={{ fontFamily: B }}>
-              <ContentText section="infra_hub_intro" name="p1" fallback="INFRA Construction's Infrastructure sector encompasses all major civil, utility, energy, and industrial disciplines. From highway construction and dam engineering to power generation and oil services, our integrated teams deliver complex infrastructure projects to international standards." />
-            </p>
-            <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
-              <ContentText section="infra_hub_intro" name="p2" fallback="Operating across the Middle East and Africa since 2000, we bring proven technical expertise, ISO-certified quality management, and deep regional experience to every infrastructure engagement." />
-            </p>
+            <SectorProjectsList sector="infrastructure" eyebrow="Disciplines Covered" className="lg:col-span-5" />
           </div>
-          {/* Disciplines Covered box — now lists this sector's projects.
-              Any project added via the admin panel (sector "Infrastructure…")
-              appears here automatically; there is no separate projects section. */}
-          <SectorProjectsList
-            sector="infrastructure"
-            eyebrow={<ContentText section="infra_hub_disciplines" name="eyebrow" fallback="Disciplines Covered" />}
-            className="lg:col-span-5"
-          />
-        </div>
-      </section>
-
-      {/* SUBSECTORS */}
-      <section className="py-24 bg-[#0d1e28]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-14">
-          <div className="mb-14">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-              <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-                <ContentText section="infra_hub_disciplines" name="eyebrow" fallback="Subsectors" />
-              </p>
-            </div>
-            <h2 className="text-white uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-              <ContentText section="infra_hub_disciplines" name="title" fallback="Seven Core Disciplines" />
-            </h2>
-          </div>
-          <div className="grid sm:grid-cols-2 gap-[1px] bg-white/0">
-            {subsectors.map((s, i) => {
-              const isLast = i === subsectors.length - 1;
-              return (
-                <Link key={s.sectionKey} href={s.href} className="group relative overflow-hidden block bg-[#0d1e28] hover:bg-[#1a3040] transition-colors">
-                  <div className={`relative ${isLast ? "h-72" : "h-56"} overflow-hidden`}>
-                    <Image src={s.image} alt={s.title} fill quality={95} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/90 via-[#0d1e28]/40 to-transparent" />
-                    <div className="absolute top-5 left-5 text-[#1F93A4] leading-none" style={{ fontFamily: H, fontSize: "36px", fontWeight: 600 }}>
-                      <ContentText section={s.sectionKey} name="num" fallback={s.num} />
-                    </div>
-                  </div>
-                  <div className="p-7">
-                    <div className="w-6 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-10 transition-all duration-300" />
-                    <h3 className="text-white font-bold text-[15px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
-                      <ContentText section={s.sectionKey} name="title" fallback={s.title} />
-                    </h3>
-                    <p className="text-white/45 text-[13px] leading-relaxed mb-4" style={{ fontFamily: B }}>
-                      <ContentText section={s.sectionKey} name="short" fallback={s.short} />
-                    </p>
-                    <div className="flex flex-wrap gap-1.5 mb-5">
-                      {s.disciplines.map((d) => (
-                        <span key={d} className="text-white/30 text-[10px] border border-white/10 px-2 py-0.5" style={{ fontFamily: B }}>{d}</span>
-                      ))}
-                    </div>
-                    <span className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] flex items-center gap-2" style={{ fontFamily: B }}>
-                      Explore <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative py-28 bg-[#1F93A4] overflow-hidden">
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%)", backgroundSize: "20px 20px" }} />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
-          <p className="text-white/50 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
-            <ContentText section="infra_hub_cta" name="eyebrow" fallback="Start Your Project" />
-          </p>
-          <h2 className="text-white uppercase leading-[0.92] mb-6" style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-            <ContentText section="infra_hub_cta" name="title" fallback="Have an Infrastructure Challenge?" />
-          </h2>
-          <p className="text-white/65 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
-            <ContentText section="infra_hub_cta" name="body" fallback="Our specialists are ready to discuss your requirements and design a tailored infrastructure solution for your specific needs." />
-          </p>
-          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
-            <ContentText section="infra_hub_cta" name="buttonText" fallback="Contact Our Team" /> <span>→</span>
-          </Link>
-        </div>
-      </section>
-    </>
+        </section>
+      }
+    />
   );
 }

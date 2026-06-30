@@ -96,63 +96,8 @@ export default async function NewsPage() {
             INFRA on LinkedIn →
           </a>
         </div>
-      </div>
-
-      {/* ── FEATURED ──────────────────────────────────────────────────────── */}
-      {featured && (
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-14">
-          <div className="flex items-center gap-3 mb-10">
-            <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-            <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-              Featured Story
-            </p>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-[1px] bg-[#213B4D]/8 overflow-hidden">
-            <div className="relative h-64 lg:h-[420px] bg-[#0d1e28]">
-              <MediaImage
-                category={featured.sectionKey}
-                title={`${featured.sectionKey}_image`}
-                fallbackSrc={featured.image}
-                alt={featured.title}
-                className="object-cover object-center w-full h-full"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/60 to-transparent" />
-            </div>
-            <div className="bg-white p-10 lg:p-14 flex flex-col justify-center">
-              <div className="flex items-center gap-3 mb-6">
-                <span
-                  className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
-                  style={{ fontFamily: B }}
-                >
-                  <ContentText section={featured.sectionKey} name="category" fallback={featured.category} />
-                </span>
-                <span className="text-[#5E5E5E] text-[12px]" style={{ fontFamily: B }}>
-                  <ContentText section={featured.sectionKey} name="date" fallback={featured.date} />
-                </span>
-              </div>
-              <h2
-                className="text-[#213B4D] leading-tight mb-5"
-                style={{ fontFamily: H, fontSize: "clamp(24px, 3vw, 38px)", fontWeight: 600, letterSpacing: "-0.01em" }}
-              >
-                <ContentText section={featured.sectionKey} name="title" fallback={featured.title} />
-              </h2>
-              <p className="text-[#5E5E5E] text-[14px] leading-relaxed mb-7" style={{ fontFamily: B }}>
-                <ContentText section={featured.sectionKey} name="excerpt" fallback={featured.excerpt} />
-              </p>
-              <Link
-                href={`/news/${featured.slug}`}
-                className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2 hover:gap-3 transition-all"
-                style={{ fontFamily: B }}
-              >
-                Read Full Story <span>→</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-      )}
-
+      </div>  
+ 
       {/* ── NEWS GRID ─────────────────────────────────────────────────────── */}
       <section className="pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
