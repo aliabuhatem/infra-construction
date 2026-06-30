@@ -53,6 +53,7 @@ const sectionGroup = (name) => {
   if (lower.startsWith("about_") || lower === "about") return "About Page";
   if (lower.startsWith("sectors_") && !lower.startsWith("sector_")) return "Sectors Page";
   if (lower.startsWith("sector_")) return "Sector Pages";
+  if (lower.startsWith("infra_hub")) return "Sector Pages";
   if (lower.startsWith("projects_") || lower.startsWith("project_")) return "Projects Page";
   if (lower.startsWith("news_") || lower.startsWith("news-")) return "News Page";
   if (lower.startsWith("careers_") || lower.startsWith("career_")) return "Careers Page";

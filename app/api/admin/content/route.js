@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import { requireAdmin } from "../../../../lib/admin/auth";
 import { readContentStore, writeContentStore, sanitizeStore } from "../../../../lib/admin/content-store";
 import { revalidatePath } from "next/cache";
+import { revalidateAllContent } from "../../../../lib/admin/revalidate-paths";
 
 export async function GET() {
   if (!(await requireAdmin())) {
@@ -24,12 +25,9 @@ export async function POST(request) {
     const clean = sanitizeStore(body);
     await writeContentStore(clean, "Admin content update");
 
-    // Revalidate all public pages so changes appear immediately
-    const paths = ["/", "/about", "/sectors", "/projects", "/news", "/careers", "/contact"];
-    for (const p of paths) {
-      try { revalidatePath(p); } catch {}
-    }
-    try { revalidatePath("/", "layout"); } catch {}
+    // Revalidate every content-driven page (incl. sector sub-pages) so changes
+    // — text and images — appear on the live site immediately after saving.
+    revalidateAllContent(revalidatePath);
 
     // Re-read to confirm saved correctly and return the fresh store
     const fresh = await readContentStore();
