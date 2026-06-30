@@ -1,18 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import localFont from "next/font/local";
+import { Bebas_Neue } from "next/font/google";
 import ContentText from "../components/admin-panel/ContentText";
 import MediaImage from "../components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "../lib/getContent";
 
 /* ─── Test font: Bebas Neue (home page only) ────────────────────────────────
-   Self-hosted from app/fonts/BebasNeue-Regular.ttf via next/font/local.
+   Loaded from Google Fonts via next/font/google (downloaded and self-hosted at
+   build time — no font file in the repo, no runtime request to Google).
    Scoped to this page by overriding the shared --font-ibm-plex-sans variable on
    the home wrapper below, so every element that references that variable (the
    whole home page) renders in Bebas Neue while the rest of the site keeps IBM
    Plex Sans. Remove the import + wrapper styles to revert. */
-const bebas = localFont({
-  src: "./fonts/BebasNeue-Regular.ttf",
+const bebas = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
   variable: "--font-bebas",
   display: "swap",
 });
