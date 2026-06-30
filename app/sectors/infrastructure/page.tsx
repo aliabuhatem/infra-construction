@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
-import SectorProjects from "@/components/SectorProjects";
+import SectorProjectsList from "@/components/SectorProjectsList";
 
 const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
@@ -15,21 +15,6 @@ const subsectors = [
   { num: "05", title: "Transportation", short: "Highways, bridges, flyovers, and large-scale road networks delivered with proven civil engineering expertise.",   href: "/sectors/infrastructure-civil-works", image: "/media/infrastructure-coastal-highway-taiz-yemen.jpeg", disciplines: ["Highways & Roads", "Bridges & Flyovers", "Causeways", "Road Rehabilitation"],                     sectionKey: "infra_hub_sub_5" },
   { num: "06", title: "Oil",            short: "Oil & gas pipelines, plant construction, and comprehensive industrial operations support.",                       href: "/sectors/industrial-oil-services",    image: "/media/industrial-floating-marine-pier-yemen.jpeg",     disciplines: ["Oil & Gas Pipelines", "Plant Construction", "Industrial O&M", "Marine Pipelines"],                sectionKey: "infra_hub_sub_6" },
   { num: "07", title: "Power",          short: "Power generation, transmission networks, substations, and renewable energy infrastructure.",                      href: "/sectors/energy-power",               image: "/media/energy-power-plant-alhaswa-aden-yemen.jpeg",     disciplines: ["Power Plants", "Transmission Lines", "Substations", "Renewable Energy"],                          sectionKey: "infra_hub_sub_7" },
-];
-
-const disciplines = [
-  { title: "Water Supply Networks",           sectionKey: "infra_hub_disc_1" },
-  { title: "Wastewater Treatment",            sectionKey: "infra_hub_disc_2" },
-  { title: "Dams & Irrigation",               sectionKey: "infra_hub_disc_3" },
-  { title: "Ports & Marine Structures",        sectionKey: "infra_hub_disc_4" },
-  { title: "Airports & Runways",              sectionKey: "infra_hub_disc_5" },
-  { title: "Transportation & Roads",           sectionKey: "infra_hub_disc_6" },
-  { title: "Bridges & Flyovers",              sectionKey: "infra_hub_disc_7" },
-  { title: "Oil & Gas Pipelines",             sectionKey: "infra_hub_disc_8" },
-  { title: "Industrial Plants",               sectionKey: "infra_hub_disc_9" },
-  { title: "Power Generation",               sectionKey: "infra_hub_disc_10" },
-  { title: "Power Transmission & Distribution", sectionKey: "infra_hub_disc_11" },
-  { title: "Earthworks & Grading",            sectionKey: "infra_hub_disc_12" },
 ];
 
 export default function InfrastructurePage() {
@@ -86,22 +71,14 @@ export default function InfrastructurePage() {
               <ContentText section="infra_hub_intro" name="p2" fallback="Operating across the Middle East and Africa since 2000, we bring proven technical expertise, ISO-certified quality management, and deep regional experience to every infrastructure engagement." />
             </p>
           </div>
-          <div className="lg:col-span-5 bg-[#0d1e28] p-8 self-start">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-5 h-[2px] bg-[#1F93A4]" />
-              <span className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
-                <ContentText section="infra_hub_disciplines" name="eyebrow" fallback="Disciplines Covered" />
-              </span>
-            </div>
-            <div className="space-y-0">
-              {disciplines.map((d) => (
-                <div key={d.sectionKey} className="flex items-center gap-2 text-white/55 text-[12px] py-2 border-b border-white/8 last:border-0" style={{ fontFamily: B }}>
-                  <span className="text-[#1F93A4] text-[8px] shrink-0">▸</span>
-                  <ContentText section={d.sectionKey} name="title" fallback={d.title} />
-                </div>
-              ))}
-            </div>
-          </div>
+          {/* Disciplines Covered box — now lists this sector's projects.
+              Any project added via the admin panel (sector "Infrastructure…")
+              appears here automatically; there is no separate projects section. */}
+          <SectorProjectsList
+            sector="infrastructure"
+            eyebrow={<ContentText section="infra_hub_disciplines" name="eyebrow" fallback="Disciplines Covered" />}
+            className="lg:col-span-5"
+          />
         </div>
       </section>
 
@@ -154,9 +131,6 @@ export default function InfrastructurePage() {
           </div>
         </div>
       </section>
-
-      {/* PROJECTS */}
-      <SectorProjects sector="infrastructure" eyebrow="Our Work" title="Infrastructure Projects" />
 
       {/* CTA */}
       <section className="relative py-28 bg-[#1F93A4] overflow-hidden">

@@ -1,10 +1,13 @@
 import SectorLayout from "@/components/SectorLayout";
-import SectorProjects from "@/components/SectorProjects";
+import SectorProjectsList from "@/components/SectorProjectsList";
 
 export const metadata = {
   title: "Buildings & Architecture Services | INFRA Construction",
   description: "Comprehensive buildings and architecture services including architectural design, MEP engineering, residential, commercial, and institutional construction.",
 };
+
+const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
 
 export default function BuildingsPage() {
   return (
@@ -156,7 +159,33 @@ export default function BuildingsPage() {
       ]}
       ctaTitle="Build Your Vision with INFRA"
       ctaBody="Partner with INFRA Construction for exceptional Buildings & Architecture solutions that combine design excellence, engineering expertise, and reliable construction delivery."
-      projectsSlot={<SectorProjects sector="building" eyebrow="Our Work" title="Building Projects" />}
+      projectsSlot={
+        /* New section mirroring infrastructure's "Disciplines Covered" box —
+           lists building projects as a text list. Projects added via the admin
+           panel (sector "Building…") appear here automatically. */
+        <section className="py-24 bg-white border-t border-[#213B4D]/8">
+          <div className="max-w-7xl mx-auto px-6 lg:px-14 grid lg:grid-cols-12 gap-14 items-start">
+            <div className="lg:col-span-7">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
+                <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+                  Our Work
+                </p>
+              </div>
+              <h2
+                className="text-[#213B4D] uppercase leading-tight mb-6"
+                style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}
+              >
+                Building Projects
+              </h2>
+              <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
+                A selection of buildings and architecture projects delivered across the Middle East, Africa, and beyond.
+              </p>
+            </div>
+            <SectorProjectsList sector="building" eyebrow="Disciplines Covered" className="lg:col-span-5" />
+          </div>
+        </section>
+      }
     />
   );
 }
