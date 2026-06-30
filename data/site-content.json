@@ -2765,6 +2765,15 @@
   },
   "media": [
     {
+      "id": "1782809289521",
+      "title": "who_we_are",
+      "alt": "who_we_are",
+      "category": "gallery",
+      "url": "/media/1782809288798-who_we_are.jpg",
+      "source": "upload",
+      "createdAt": "2026-06-30T08:48:09.521Z"
+    },
+    {
       "id": "1782808760807",
       "title": "about_bg.jpg",
       "alt": "Abou Hero",
