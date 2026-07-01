@@ -94,7 +94,7 @@ export default function ComingSoonPage() {
             © {new Date().getFullYear()} INFRA Construction for Contracting LLC. All rights reserved.
           </span>
           <span className="text-white/15 text-[11px] tracking-wider" style={{ fontFamily: B }}>
-            Est. 2000 · Abu Dhabi, UAE
+            Developed by Eng.Ali Abuhatem
           </span>
         </div>
       </div>

@@ -1,25 +1,45 @@
 export const runtime = "nodejs";
 
+import crypto from "crypto";
 import { NextResponse } from "next/server";
-import { cookies } from "next/headers";
-import { createSessionToken, verifySessionToken } from "@/lib/admin/auth";
+import { createSessionToken, verifySessionToken, isAdminConfigured } from "@/lib/admin/auth";
 
-export async function GET() {
-  const cookieStore = await cookies();
-  const token = cookieStore.get("infra_admin_session")?.value;
+// Constant-time string comparison to avoid leaking credential length/prefix
+// through response timing.
+function safeEqual(a, b) {
+  const ba = Buffer.from(String(a));
+  const bb = Buffer.from(String(b));
+  if (ba.length !== bb.length) return false;
+  return crypto.timingSafeEqual(ba, bb);
+}
+
+export async function GET(request) {
+  const token = request.cookies.get("infra_admin_session")?.value;
   return NextResponse.json({ loggedIn: verifySessionToken(token) });
 }
 
 export async function POST(request) {
   try {
+    const expectedUsername = process.env.ADMIN_USERNAME || "admin";
+    const expectedPassword = process.env.ADMIN_PASSWORD || "";
+
+    // Fail closed until real credentials are configured via environment
+    // variables. Never accept the in-repo default password, and never run with
+    // the default/empty signing secret (that would allow session forgery).
+    if (!isAdminConfigured() || !expectedPassword || expectedPassword === "admin12345") {
+      return NextResponse.json(
+        { error: "Admin login is not configured on the server." },
+        { status: 503 }
+      );
+    }
+
     const body = await request.json();
     const username = String(body.username || "");
     const password = String(body.password || "");
 
-    const expectedUsername = process.env.ADMIN_USERNAME || "admin";
-    const expectedPassword = process.env.ADMIN_PASSWORD || "admin12345";
-
-    if (username !== expectedUsername || password !== expectedPassword) {
+    const okUser = safeEqual(username, expectedUsername);
+    const okPass = safeEqual(password, expectedPassword);
+    if (!okUser || !okPass) {
       return NextResponse.json({ error: "Invalid username or password" }, { status: 401 });
     }
 

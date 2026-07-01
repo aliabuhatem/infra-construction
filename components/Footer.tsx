@@ -120,7 +120,7 @@ export default async function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-white/50" style={{ fontFamily: B }}>
           <p>© {new Date().getFullYear()} INFRA Construction for Contracting LLC. All rights reserved.</p>
-          <p>Est. 2000 · Abu Dhabi, UAE</p>
+          <p>Developed by Eng.Ali Abuhatem</p>
         </div>
       </div>
     </footer>

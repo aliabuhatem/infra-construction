@@ -71,7 +71,7 @@ export default async function HomePage() {
               className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
               style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
             >
-              <ContentText section="home_hero" name="eyebrow" fallback="Est. 2000 · Abu Dhabi, UAE" />
+              <ContentText section="home_hero" name="eyebrow" fallback="Developed by Eng.Ali Abuhatem" />
             </span>
           </div>
 
