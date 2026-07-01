@@ -79,7 +79,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center shrink-0">
           <span className="inline-flex items-center bg-white rounded-md p-1.5 shadow-sm">
             <Image
-              src="/media/infra-logo-transparent.png"
+              src="/media/Infra-Logo.png"
               alt="INFRA Construction"
               width={180}
               height={100}
