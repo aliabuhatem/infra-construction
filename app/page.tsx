@@ -35,7 +35,7 @@ export default async function HomePage() {
           <p className="text-white text-[9px] uppercase tracking-[0.35em] mb-1">
             <ContentText section="home_hero" name="locationsLabel" fallback="Operating in" />
           </p>
-          <p className="text-white text-[12px] uppercase tracking-widest leading-loose">
+          <p className="text-white text-[10px] uppercase tracking-widest leading-loose">
             <ContentText section="home_hero" name="locationsList" fallback="UAE · Egypt · Yemen · Canada" />
           </p>
         </div>
@@ -85,14 +85,14 @@ export default async function HomePage() {
             <div className="flex items-center gap-4">
               <Link
                 href="/sectors"
-                className="inline-flex items-center gap-2 bg-[#1F93A4] text-white font-bold px-8 py-3.5 text-[13px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
+                className="inline-flex items-center gap-2 bg-[#1F93A4] text-white font-bold px-8 py-3.5 text-[12px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
                 style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_hero" name="ctaPrimaryText" fallback="Our Sectors" />
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 border border-white/40 text-white font-bold px-8 py-3.5 text-[13px] uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all duration-300"
+                className="inline-flex items-center gap-2 border border-white/40 text-white font-bold px-8 py-3.5 text-[12px] uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all duration-300"
                 style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_hero" name="ctaSecondaryText" fallback="About Us" />
@@ -176,13 +176,13 @@ export default async function HomePage() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <span
-                  className="border border-[#1F93A4] text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
+                  className="border border-[#1F93A4] text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_statement" name="cert1" fallback="ISO 9001" />
                 </span>
                 <span
-                  className="border border-[#1F93A4] text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
+                  className="border border-[#1F93A4] text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_statement" name="cert2" fallback="ISO 14001" />
@@ -190,7 +190,7 @@ export default async function HomePage() {
               
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 text-[#213B4D] text-[13px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
+                  className="inline-flex items-center gap-2 text-[#213B4D] text-[12px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_statement" name="linkText" fallback="Our Story" /> →
@@ -232,7 +232,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/sectors"
-              className="text-[#213B4D]/75 hover:text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
+              className="text-[#213B4D]/75 hover:text-[#1F93A4] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
               style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText section="home_sectors_header" name="linkText" fallback="View All Sectors" />
@@ -262,7 +262,7 @@ export default async function HomePage() {
 
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <p className="text-[#ffffff] text-[12px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-myriad)" }}>
+                  <p className="text-[#ffffff] text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_buildings" name="badgeLabel" fallback="01 · Standalone Sector" />
                   </p>
                 </div>
@@ -272,14 +272,14 @@ export default async function HomePage() {
                     style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
                     <ContentText section="home_sector_buildings" name="title" fallback="Buildings" />
                   </h3>
-                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-myriad)" }}>
+                  <p className="text-white/85 text-[15px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText
                       section="home_sector_buildings"
                       name="short"
                       fallback="Residential, commercial, and institutional construction from concept to handover."
                     />
                   </p>
-                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-myriad)" }}>
+                  <span className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_buildings" name="exploreText" fallback="Explore" />{" "}
                     <span className="group-hover:translate-x-1.5 transition-transform duration-300 inline-block">→</span>
                   </span>
@@ -304,7 +304,7 @@ export default async function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#213B4D]/50 via-[#213B4D]/50 to-transparent" />
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <p className="text-[#ffffff] text-[13px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-myriad)" }}>
+                  <p className="text-[#ffffff] text-[12px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_infrastructure" name="badgeLabel" fallback="02 · Umbrella Sector" />
                   </p>
                 </div>
@@ -314,14 +314,14 @@ export default async function HomePage() {
                     style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
                     <ContentText section="home_sector_infrastructure" name="title" fallback="Infrastructure" />
                   </h3>
-                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-myriad)" }}>
+                  <p className="text-white/85 text-[15px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText
                       section="home_sector_infrastructure"
                       name="short"
                       fallback="Civil works, water systems, energy, and industrial projects across the Middle East and Africa."
                     />
                   </p>
-                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-myriad)" }}>
+                  <span className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_infrastructure" name="exploreText" fallback="Explore" />{" "}
                     <span className="group-hover:translate-x-1.5 transition-transform duration-300 inline-block">→</span>
                   </span>
@@ -387,7 +387,7 @@ export default async function HomePage() {
             </div>
             <div className="flex flex-col gap-3 shrink-0 lg:items-end">
               <span
-                className="text-[#213B4D]/70 text-[12px] font-bold uppercase tracking-[0.3em]"
+                className="text-[#213B4D]/70 text-[10px] font-bold uppercase tracking-[0.3em]"
                 style={{ fontFamily: "var(--font-myriad)" }}
               >
                 Browse Projects By Sector
@@ -395,21 +395,21 @@ export default async function HomePage() {
               <div className="flex flex-wrap gap-2">
                 <Link
                   href="/projects?category=infrastructure"
-                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
+                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   Infrastructure
                 </Link>
                 <Link
                   href="/projects?category=building"
-                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
+                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   Building
                 </Link>
                 <Link
                   href="/projects"
-                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
+                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   All
@@ -495,7 +495,7 @@ export default async function HomePage() {
                   <ContentText section="home_about_split" name="stat1Value" fallback="25 Years" />
                 </p>
                 <p
-                  className="text-white/70 text-[12px] uppercase tracking-[0.3em] mt-1"
+                  className="text-white/70 text-[10px] uppercase tracking-[0.3em] mt-1"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_about_split" name="stat1Label" fallback="of Excellence" />
@@ -514,7 +514,7 @@ export default async function HomePage() {
                   <ContentText section="home_about_split" name="stat2Value" fallback="12 Countries" />
                 </p>
                 <p
-                  className="text-white/70 text-[12px] uppercase tracking-[0.3em] mt-1"
+                  className="text-white/70 text-[10px] uppercase tracking-[0.3em] mt-1"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_about_split" name="stat2Label" fallback="of Operation" />
@@ -568,17 +568,17 @@ export default async function HomePage() {
               ].map((item) => (
                 <div
                   key={item.name}
-                  className="flex items-center gap-2 text-[15px] text-white/85 py-1.5 border-b border-white/10"
+                  className="flex items-center gap-2 text-[13px] text-white/85 py-1.5 border-b border-white/10"
                   style={{ fontFamily: "var(--font-myriad)" }}
                 >
-                  <span className="text-[#1F93A4] text-[12px]">▸</span>
+                  <span className="text-[#1F93A4] text-[10px]">▸</span>
                   <ContentText section="home_about_split" name={item.name} fallback={item.fallback} />
                 </div>
               ))}
             </div>
             <Link
               href="/about"
-              className="inline-flex items-center gap-3 text-white font-bold text-[15px] uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
+              className="inline-flex items-center gap-3 text-white font-bold text-[13px] uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
               style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText section="home_about_split" name="linkText" fallback="Discover Our Story" />
@@ -615,7 +615,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/news"
-              className="text-[#213B4D]/80 hover:text-[#1F93A4] text-[15px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
+              className="text-[#213B4D]/80 hover:text-[#1F93A4] text-[13px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
               style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText section="home_news_header" name="linkText" fallback="View All News" />
@@ -640,7 +640,7 @@ export default async function HomePage() {
                   <div className="absolute inset-0 bg-[#213B4D]/30 group-hover:bg-[#213B4D]/15 transition-colors duration-300" />
                   <div className="absolute top-4 left-4">
                     <span
-                      className="bg-[#1F93A4] text-white text-[12px] font-bold uppercase tracking-wider px-2.5 py-1"
+                      className="bg-[#1F93A4] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1"
                       style={{ fontFamily: "var(--font-myriad)" }}
                     >
                       <ContentText section={n._key} name="category" fallback={n.category || ""} />
@@ -655,7 +655,7 @@ export default async function HomePage() {
                     <ContentText section={n._key} name="date" fallback={n.date || ""} />
                   </p>
                   <h3
-                    className="text-[#213B4D] font-bold text-[16px] leading-snug group-hover:text-[#1F93A4] transition-colors"
+                    className="text-[#213B4D] font-bold text-[15px] leading-snug group-hover:text-[#1F93A4] transition-colors"
                     style={{ fontFamily: "var(--font-myriad)" }}
                   >
                     <ContentText section={n._key} name="title" fallback={n.title || ""} />
@@ -717,7 +717,7 @@ export default async function HomePage() {
                 className="group flex items-center border-b border-white/[0.08] py-5 hover:bg-white/[0.03] transition-colors -mx-6 lg:-mx-14 px-6 lg:px-14"
               >
                 <span
-                  className="text-[#1F93A4] text-[13px] font-bold tracking-widest w-10 shrink-0"
+                  className="text-[#1F93A4] text-[12px] font-bold tracking-widest w-10 shrink-0"
                   style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section={o.key} name="num" fallback={o.fallbackNum} />
@@ -733,7 +733,7 @@ export default async function HomePage() {
                   <ContentText section={o.key} name="city" fallback={o.fallbackCity} />
                 </span>
                 <span
-                  className="text-white text-[13px] font-bold uppercase tracking-[0.25em] shrink-0"
+                  className="text-white text-[12px] font-bold uppercase tracking-[0.25em] shrink-0"
                   style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section={o.key} name="country" fallback={o.fallbackCountry} />
@@ -744,7 +744,7 @@ export default async function HomePage() {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-white/80 text-[13px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
+              className="inline-flex items-center gap-2 text-white/80 text-[12px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
               style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText section="home_global" name="linkText" fallback="Find Our Offices" />
@@ -796,7 +796,7 @@ export default async function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-400"
+            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-400"
             style={{ fontFamily: "var(--font-myriad)" }}
           >
             <ContentText section="home_cta" name="buttonText" fallback="Contact Our Team" />
