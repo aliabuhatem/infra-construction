@@ -58,7 +58,7 @@ export default async function HomePage() {
             className="text-white uppercase leading-[0.9] mb-0"
             style={{
               fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
-              fontSize: "clamp(42px, 6.5vw, 92px)",
+              fontSize: "clamp(30px, 6.5vw, 70px)",
               fontWeight: 600,
               letterSpacing: "-0.01em",
             }}
