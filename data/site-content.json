@@ -2961,6 +2961,15 @@
   },
   "media": [
     {
+      "id": "1782903521592",
+      "title": "news_bg",
+      "alt": "news_bg",
+      "category": "gallery",
+      "url": "/media/1782903519939-news_bg.png",
+      "source": "upload",
+      "createdAt": "2026-07-01T10:58:41.592Z"
+    },
+    {
       "id": "1782815817895",
       "title": "our_story",
       "alt": "our_story",
