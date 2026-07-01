@@ -6,8 +6,8 @@ export const metadata = {
   description: "Comprehensive buildings and architecture services including architectural design, MEP engineering, residential, commercial, and institutional construction.",
 };
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 export default function BuildingsPage() {
   return (

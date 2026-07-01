@@ -3,8 +3,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "@/lib/getContent";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 const mgmtIcons = [
   <svg key="0" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>,
@@ -68,12 +68,12 @@ export default async function AboutPage() {
             </h2>
             <div className="inline-flex items-center gap-4 bg-[#0d1e28] px-6 py-4 mb-8">
               <div>
-                <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.3em] mb-0.5" style={{ fontFamily: B }}>Founded</div>
+                <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.3em] mb-0.5" style={{ fontFamily: B }}>Founded</div>
                 <div className="text-white font-bold" style={{ fontFamily: H, fontSize: "32px", letterSpacing: "-0.01em" }}>Est. 2000</div>
               </div>
               <div className="w-[1px] h-10 bg-white/15" />
               <div>
-                <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.3em] mb-0.5" style={{ fontFamily: B }}>Headquarters</div>
+                <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.3em] mb-0.5" style={{ fontFamily: B }}>Headquarters</div>
                 <div className="text-white text-[16px] font-semibold" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
               </div>
             </div>
@@ -324,7 +324,7 @@ export default async function AboutPage() {
 
             <div className="lg:col-span-7 p-10 lg:p-16 flex flex-col justify-center relative">
               <span aria-hidden="true" className="absolute top-6 right-10 leading-none select-none pointer-events-none" style={{ fontFamily: H, fontSize: "160px", color: "#1F93A4", opacity: 0.15, lineHeight: 1 }}>&ldquo;</span>
-              <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.35em] mb-3" style={{ fontFamily: B }}>
+              <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.35em] mb-3" style={{ fontFamily: B }}>
                 <ContentText section="about_leadership_founder" name="title" fallback="Founder & Chief Executive Officer" />
               </div>
               <h3 className="text-white uppercase leading-[0.95] mb-2" style={{ fontFamily: H, fontSize: "clamp(36px, 4.5vw, 56px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
@@ -342,7 +342,7 @@ export default async function AboutPage() {
                   <div className="text-white font-bold leading-none mb-1" style={{ fontFamily: H, fontSize: "34px" }}>
                     <ContentText section="about_ceo_bio" name="stat1Value" fallback="25+" />
                   </div>
-                  <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em]" style={{ fontFamily: B }}>
+                  <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em]" style={{ fontFamily: B }}>
                     <ContentText section="about_ceo_bio" name="stat1Label" fallback="Years of Leadership" />
                   </div>
                 </div>
@@ -350,7 +350,7 @@ export default async function AboutPage() {
                   <div className="text-white font-bold leading-none mb-1" style={{ fontFamily: H, fontSize: "34px" }}>
                     <ContentText section="about_ceo_bio" name="stat2Value" fallback="5" />
                   </div>
-                  <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em]" style={{ fontFamily: B }}>
+                  <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em]" style={{ fontFamily: B }}>
                     <ContentText section="about_ceo_bio" name="stat2Label" fallback="Global Offices" />
                   </div>
                 </div>
@@ -358,7 +358,7 @@ export default async function AboutPage() {
                   <div className="text-white font-bold leading-none mb-1" style={{ fontFamily: H, fontSize: "34px" }}>
                     <ContentText section="about_ceo_bio" name="stat3Value" fallback="1,000+" />
                   </div>
-                  <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em]" style={{ fontFamily: B }}>
+                  <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em]" style={{ fontFamily: B }}>
                     <ContentText section="about_ceo_bio" name="stat3Label" fallback="Workforce" />
                   </div>
                 </div>
@@ -400,7 +400,7 @@ export default async function AboutPage() {
                   <div className="text-[#213B4D] font-bold text-[16px] mb-1 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, letterSpacing: "0.01em" }}>
                     <ContentText section={l._key} name="name" fallback={l.name || ""} />
                   </div>
-                  <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] mb-3" style={{ fontFamily: B }}>
+                  <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] mb-3" style={{ fontFamily: B }}>
                     <ContentText section={l._key} name="title" fallback={l.title || ""} />
                   </div>
                   <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
@@ -475,7 +475,7 @@ export default async function AboutPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-white/0">
             {officeItems.map((o) => (
               <div key={o._key} className="bg-[#0d1e28] p-8 hover:bg-[#1a3040] transition-colors group">
-                <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.3em] mb-2" style={{ fontFamily: B }}>
+                <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.3em] mb-2" style={{ fontFamily: B }}>
                   <ContentText section={o._key} name="country" fallback={o.country || ""} />
                 </div>
                 <div className="text-white font-bold mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, fontSize: "26px" }}>
@@ -514,7 +514,7 @@ export default async function AboutPage() {
             <div className="grid grid-cols-2 gap-x-6 gap-y-0 border-t border-[#213B4D]/10 mb-8">
               {["Engineers", "Technicians", "Inspectors", "Quantity Surveyors", "Project Managers", "Consultants"].map((role, i) => (
                 <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-[#213B4D]/8 text-[15px] text-[#5E5E5E]" style={{ fontFamily: B }}>
-                  <span className="text-[#1F93A4] text-[10px]">▸</span>
+                  <span className="text-[#1F93A4] text-[12px]">▸</span>
                   <ContentText section="about_team_roles" name={`role_${i + 1}`} fallback={role} />
                 </div>
               ))}

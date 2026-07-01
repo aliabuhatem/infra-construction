@@ -4,8 +4,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 export const metadata = {
   title: "News & Updates — INFRA Construction",
@@ -126,7 +126,7 @@ export default async function NewsPage() {
                 <div className="p-7">
                   <div className="flex items-center gap-3 mb-4">
                     <span
-                      className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
+                      className="bg-[#1F93A4]/12 text-[#1F93A4] text-[12px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
                       style={{ fontFamily: B }}
                     >
                       <ContentText section={item.sectionKey} name="category" fallback={item.category} />

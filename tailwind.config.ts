@@ -16,14 +16,15 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-ibm-plex-sans)", "system-ui", "-apple-system", "sans-serif"],
-        body: ["var(--font-ibm-plex-sans)", "system-ui", "-apple-system", "sans-serif"],
+        heading: ["Myriad Pro", "Segoe UI", "system-ui", "-apple-system", "sans-serif"],
+        body: ["Myriad Pro", "Segoe UI", "system-ui", "-apple-system", "sans-serif"],
       },
       fontSize: {
-        "h1": ["75px", { lineHeight: "1.05", fontWeight: "500" }],
-        "h2": ["48px", { lineHeight: "1.1", fontWeight: "500" }],
+        // First pass: headings bold (700), body/regular handled per-element.
+        "h1": ["75px", { lineHeight: "1.05", fontWeight: "700" }],
+        "h2": ["48px", { lineHeight: "1.1", fontWeight: "700" }],
         "h3": ["20px", { lineHeight: "1.4", fontWeight: "700" }],
-        "cta": ["35px", { lineHeight: "1", fontWeight: "500" }],
+        "cta": ["35px", { lineHeight: "1", fontWeight: "700" }],
       },
     },
   },

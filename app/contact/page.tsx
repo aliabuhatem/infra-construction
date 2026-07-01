@@ -7,8 +7,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import { useContentStore } from "@/components/admin-panel/ContentProvider";
 import type { ContentStore } from "@/lib/getContent";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 export default function ContactPage() {
   const { store: rawStore } = useContentStore();
@@ -115,7 +115,7 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                  <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                     First Name *
                   </label>
                   <input
@@ -130,7 +130,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                  <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                     Last Name *
                   </label>
                   <input
@@ -146,7 +146,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Email Address *
                 </label>
                 <input
@@ -161,7 +161,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Company / Organisation
                 </label>
                 <input
@@ -175,7 +175,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Subject
                 </label>
                 <select
@@ -193,7 +193,7 @@ export default function ContactPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Message *
                 </label>
                 <textarea
@@ -245,7 +245,7 @@ export default function ContactPage() {
                       <ContentText section={o._key} name="city" fallback={o.city} />
                     </div>
                     <span
-                      className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#1F93A4]/30 px-2 py-0.5"
+                      className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] border border-[#1F93A4]/30 px-2 py-0.5"
                       style={{ fontFamily: B }}
                     >
                       <ContentText section={o._key} name="country" fallback={o.country} />
@@ -265,7 +265,7 @@ export default function ContactPage() {
             <div className="mt-8 bg-[#0d1e28] p-6 flex gap-5 items-center flex-wrap">
               <div className="flex items-center gap-3 mb-2 w-full">
                 <div className="w-4 h-[2px] bg-[#1F93A4]" />
-                <span className="text-white/70 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: B }}>
+                <span className="text-white/70 text-[12px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: B }}>
                   Certifications
                 </span>
               </div>

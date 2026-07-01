@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 export const metadata = {
   title: "Coming Soon — INFRA Construction",

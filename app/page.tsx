@@ -1,29 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Bebas_Neue } from "next/font/google";
 import ContentText from "../components/admin-panel/ContentText";
 import MediaImage from "../components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "../lib/getContent";
-
-/* ─── Test font: Bebas Neue (home page only) ────────────────────────────────
-   Loaded from Google Fonts via next/font/google (downloaded and self-hosted at
-   build time — no font file in the repo, no runtime request to Google).
-   Scoped to this page by overriding the shared --font-ibm-plex-sans variable on
-   the home wrapper below, so every element that references that variable (the
-   whole home page) renders in Bebas Neue while the rest of the site keeps IBM
-   Plex Sans. Remove the import + wrapper styles to revert. */
-const bebas = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-bebas",
-  display: "swap",
-});
-
-// Override the site font variable with Bebas for this page's subtree.
-const homeFontStyle = {
-  "--font-ibm-plex-sans": "var(--font-bebas)",
-  fontFamily: "var(--font-bebas), system-ui, sans-serif",
-} as React.CSSProperties;
 
 /* ─── Component ─────────────────────────────────────────────────────────── */
 
@@ -36,7 +15,7 @@ export default async function HomePage() {
     .filter((n) => /^news_\d+$/.test(n._key))
     .slice(0, 3);
   return (
-    <div className={bebas.variable} style={homeFontStyle}>
+    <div>
       {/* ── 1. HERO ────────────────────────────────────────────────────── */}
       <section className="relative h-screen min-h-[640px] flex flex-col justify-end overflow-hidden">
         <MediaImage
@@ -51,12 +30,12 @@ export default async function HomePage() {
         {/* Locations strip — top right, well below navbar */}
         <div
           className="absolute top-[105px] right-6 lg:right-14 text-right z-10 hidden lg:block"
-          style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+          style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
         >
           <p className="text-white text-[9px] uppercase tracking-[0.35em] mb-1">
             <ContentText section="home_hero" name="locationsLabel" fallback="Operating in" />
           </p>
-          <p className="text-white text-[10px] uppercase tracking-widest leading-loose">
+          <p className="text-white text-[12px] uppercase tracking-widest leading-loose">
             <ContentText section="home_hero" name="locationsList" fallback="UAE · Egypt · Yemen · Canada" />
           </p>
         </div>
@@ -69,7 +48,7 @@ export default async function HomePage() {
             <div className="w-8 h-[2px] bg-[#1F93A4]" />
             <span
               className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
-              style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+              style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText section="home_hero" name="eyebrow" fallback="Developed by Eng.Ali Abuhatem" />
             </span>
@@ -78,7 +57,7 @@ export default async function HomePage() {
           <h1
             className="text-white uppercase leading-[0.9] mb-0"
             style={{
-              fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+              fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
               fontSize: "clamp(42px, 6.5vw, 92px)",
               fontWeight: 600,
               letterSpacing: "-0.01em",
@@ -95,7 +74,7 @@ export default async function HomePage() {
           <div className="mt-7 pt-6 border-t border-white/15 max-w-2xl">
             <p
               className="text-white/90 text-[17px] leading-relaxed mb-7"
-              style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+              style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText
                 section="home_hero"
@@ -107,14 +86,14 @@ export default async function HomePage() {
               <Link
                 href="/sectors"
                 className="inline-flex items-center gap-2 bg-[#1F93A4] text-white font-bold px-8 py-3.5 text-[13px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
-                style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+                style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_hero" name="ctaPrimaryText" fallback="Our Sectors" />
               </Link>
               <Link
                 href="/about"
                 className="inline-flex items-center gap-2 border border-white/40 text-white font-bold px-8 py-3.5 text-[13px] uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all duration-300"
-                style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+                style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_hero" name="ctaSecondaryText" fallback="About Us" />
               </Link>
@@ -131,7 +110,7 @@ export default async function HomePage() {
               aria-hidden="true"
               className="pointer-events-none select-none absolute bottom-0 right-0 leading-none hidden lg:block"
               style={{
-                fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                 fontSize: "300px",
                 fontWeight: 700,
                 color: "#213B4D",
@@ -144,14 +123,14 @@ export default async function HomePage() {
             <div className="lg:col-span-5 flex flex-col gap-4">
               <p
                 className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
-                style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+                style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_statement" name="eyebrowLabel" fallback="Est. 2000" />
               </p>
               <div className="flex items-end leading-none">
                 <span
                   style={{
-                    fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                    fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                     fontSize: "clamp(100px, 14vw, 180px)",
                     fontWeight: 700,
                     color: "#213B4D",
@@ -162,7 +141,7 @@ export default async function HomePage() {
                 </span>
                 <span
                   style={{
-                    fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                    fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                     fontSize: "clamp(100px, 14vw, 180px)",
                     fontWeight: 700,
                     color: "#1F93A4",
@@ -174,7 +153,7 @@ export default async function HomePage() {
               </div>
               <p
                 className="text-[#213B4D]/70 text-[11px] font-bold uppercase tracking-[0.35em]"
-                style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+                style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_statement" name="bigNumberLabel" fallback="Projects Delivered" />
               </p>
@@ -183,7 +162,7 @@ export default async function HomePage() {
               <p
                 className="text-[#213B4D] leading-[1.12]"
                 style={{
-                  fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                  fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                   fontSize: "clamp(28px, 3.5vw, 46px)",
                   fontWeight: 600,
                   letterSpacing: "-0.01em",
@@ -197,27 +176,27 @@ export default async function HomePage() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <span
-                  className="border border-[#1F93A4] text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  className="border border-[#1F93A4] text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_statement" name="cert1" fallback="ISO 9001" />
                 </span>
                 <span
-                  className="border border-[#1F93A4] text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  className="border border-[#1F93A4] text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_statement" name="cert2" fallback="ISO 14001" />
                 </span>
                 <span
-                  className="border border-[#1F93A4] text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  className="border border-[#1F93A4] text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_statement" name="cert3" fallback="OHSAS 18001" />
                 </span>
                 <Link
                   href="/about"
                   className="inline-flex items-center gap-2 text-[#213B4D] text-[13px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_statement" name="linkText" fallback="Our Story" /> →
                 </Link>
@@ -238,7 +217,7 @@ export default async function HomePage() {
                 <div className="w-6 h-[2px] bg-[#1F93A4]" />
                 <p
                   className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_sectors_header" name="eyebrow" fallback="Our Expertise" />
                 </p>
@@ -246,7 +225,7 @@ export default async function HomePage() {
               <h2
                 className="text-[#213B4D] uppercase leading-tight"
                 style={{
-                  fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                  fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                   fontSize: "clamp(36px, 5vw, 60px)",
                   fontWeight: 600,
                   letterSpacing: "-0.01em",
@@ -259,7 +238,7 @@ export default async function HomePage() {
             <Link
               href="/sectors"
               className="text-[#213B4D]/75 hover:text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
-              style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText section="home_sectors_header" name="linkText" fallback="View All Sectors" />
               <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -288,24 +267,24 @@ export default async function HomePage() {
 
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <p className="text-[#ffffff] text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-[#ffffff] text-[12px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_buildings" name="badgeLabel" fallback="01 · Standalone Sector" />
                   </p>
                 </div>
                 <div>
                   <div className="w-8 h-[2px] bg-[#1F93A4] mb-5 group-hover:w-14 transition-all duration-300" />
                   <h3 className="text-white uppercase leading-tight mb-3 group-hover:text-[#1F93A4] transition-colors duration-300"
-                    style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
+                    style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
                     <ContentText section="home_sector_buildings" name="title" fallback="Buildings" />
                   </h3>
-                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText
                       section="home_sector_buildings"
                       name="short"
                       fallback="Residential, commercial, and institutional construction from concept to handover."
                     />
                   </p>
-                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_buildings" name="exploreText" fallback="Explore" />{" "}
                     <span className="group-hover:translate-x-1.5 transition-transform duration-300 inline-block">→</span>
                   </span>
@@ -330,24 +309,24 @@ export default async function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#213B4D]/50 via-[#213B4D]/50 to-transparent" />
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <p className="text-[#ffffff] text-[13px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-[#ffffff] text-[13px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_infrastructure" name="badgeLabel" fallback="02 · Umbrella Sector" />
                   </p>
                 </div>
                 <div>
                   <div className="w-8 h-[2px] bg-[#1F93A4] mb-5 group-hover:w-14 transition-all duration-300" />
                   <h3 className="text-white uppercase leading-tight mb-3 group-hover:text-[#1F93A4] transition-colors duration-300"
-                    style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
+                    style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
                     <ContentText section="home_sector_infrastructure" name="title" fallback="Infrastructure" />
                   </h3>
-                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText
                       section="home_sector_infrastructure"
                       name="short"
                       fallback="Civil works, water systems, energy, and industrial projects across the Middle East and Africa."
                     />
                   </p>
-                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-myriad)" }}>
                     <ContentText section="home_sector_infrastructure" name="exploreText" fallback="Explore" />{" "}
                     <span className="group-hover:translate-x-1.5 transition-transform duration-300 inline-block">→</span>
                   </span>
@@ -366,7 +345,7 @@ export default async function HomePage() {
           <h2
             className="text-white uppercase leading-none mb-6"
             style={{
-              fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+              fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
               fontSize: "clamp(40px, 8vw, 110px)",
               fontWeight: 600,
               letterSpacing: "0.04em",
@@ -376,7 +355,7 @@ export default async function HomePage() {
           </h2>
           <p
             className="text-white text-[17px] max-w-xl mx-auto leading-relaxed"
-            style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+            style={{ fontFamily: "var(--font-myriad)" }}
           >
             <ContentText
               section="home_philosophy"
@@ -395,14 +374,14 @@ export default async function HomePage() {
             <div>
               <p
                 className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em] mb-3"
-                style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                style={{ fontFamily: "var(--font-myriad)" }}
               >
                 <ContentText section="home_featured_projects" name="eyebrow" fallback="Our Work" />
               </p>
               <h2
                 className="text-[#213B4D] uppercase leading-tight"
                 style={{
-                  fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                  fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                   fontSize: "clamp(32px, 4.5vw, 54px)",
                   fontWeight: 600,
                 }}
@@ -413,8 +392,8 @@ export default async function HomePage() {
             </div>
             <div className="flex flex-col gap-3 shrink-0 lg:items-end">
               <span
-                className="text-[#213B4D]/70 text-[10px] font-bold uppercase tracking-[0.3em]"
-                style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                className="text-[#213B4D]/70 text-[12px] font-bold uppercase tracking-[0.3em]"
+                style={{ fontFamily: "var(--font-myriad)" }}
               >
                 Browse Projects By Sector
               </span>
@@ -422,21 +401,21 @@ export default async function HomePage() {
                 <Link
                   href="/projects?category=infrastructure"
                   className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   Infrastructure
                 </Link>
                 <Link
                   href="/projects?category=building"
                   className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   Building
                 </Link>
                 <Link
                   href="/projects"
                   className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   All
                 </Link>
@@ -470,7 +449,7 @@ export default async function HomePage() {
                   <div className="absolute top-4 left-4">
                     <span
                       className="bg-[#1F93A4] text-white text-[11px] font-bold uppercase tracking-wider px-2.5 py-1"
-                      style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                      style={{ fontFamily: "var(--font-myriad)" }}
                     >
                       <ContentText section={p.key} name="country" fallback={p.fallbackCountry} />
                     </span>
@@ -479,13 +458,13 @@ export default async function HomePage() {
                 <div className="p-6">
                   <p
                     className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-widest mb-1"
-                    style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                    style={{ fontFamily: "var(--font-myriad)" }}
                   >
                     <ContentText section={p.key} name="type" fallback={p.fallbackType} />
                   </p>
                   <h3
                     className="text-[#213B4D] font-bold text-lg group-hover:text-[#1F93A4] transition-colors"
-                    style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                    style={{ fontFamily: "var(--font-myriad)" }}
                   >
                     <ContentText section={p.key} name="title" fallback={p.fallbackTitle} />
                   </h3>
@@ -513,7 +492,7 @@ export default async function HomePage() {
                 <p
                   className="text-white uppercase leading-none"
                   style={{
-                    fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                    fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                     fontSize: "clamp(28px, 3vw, 40px)",
                     fontWeight: 700,
                   }}
@@ -521,8 +500,8 @@ export default async function HomePage() {
                   <ContentText section="home_about_split" name="stat1Value" fallback="25 Years" />
                 </p>
                 <p
-                  className="text-white/70 text-[10px] uppercase tracking-[0.3em] mt-1"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  className="text-white/70 text-[12px] uppercase tracking-[0.3em] mt-1"
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_about_split" name="stat1Label" fallback="of Excellence" />
                 </p>
@@ -532,7 +511,7 @@ export default async function HomePage() {
                 <p
                   className="text-white uppercase leading-none"
                   style={{
-                    fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                    fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                     fontSize: "clamp(28px, 3vw, 40px)",
                     fontWeight: 700,
                   }}
@@ -540,8 +519,8 @@ export default async function HomePage() {
                   <ContentText section="home_about_split" name="stat2Value" fallback="12 Countries" />
                 </p>
                 <p
-                  className="text-white/70 text-[10px] uppercase tracking-[0.3em] mt-1"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  className="text-white/70 text-[12px] uppercase tracking-[0.3em] mt-1"
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_about_split" name="stat2Label" fallback="of Operation" />
                 </p>
@@ -549,14 +528,14 @@ export default async function HomePage() {
             </div>
             <p
               className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em] mb-4"
-              style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText section="home_about_split" name="eyebrow" fallback="Who We Are" />
             </p>
             <h2
               className="text-white uppercase leading-tight mb-6"
               style={{
-                fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                 fontSize: "clamp(30px, 3.5vw, 46px)",
                 fontWeight: 600,
               }}
@@ -565,7 +544,7 @@ export default async function HomePage() {
             </h2>
             <p
               className="text-white/90 text-[17px] leading-relaxed mb-5"
-              style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText
                 section="home_about_split"
@@ -575,7 +554,7 @@ export default async function HomePage() {
             </p>
             <p
               className="text-white/90 text-[17px] leading-relaxed mb-8"
-              style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText
                 section="home_about_split"
@@ -595,9 +574,9 @@ export default async function HomePage() {
                 <div
                   key={item.name}
                   className="flex items-center gap-2 text-[15px] text-white/85 py-1.5 border-b border-white/10"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
-                  <span className="text-[#1F93A4] text-[10px]">▸</span>
+                  <span className="text-[#1F93A4] text-[12px]">▸</span>
                   <ContentText section="home_about_split" name={item.name} fallback={item.fallback} />
                 </div>
               ))}
@@ -605,7 +584,7 @@ export default async function HomePage() {
             <Link
               href="/about"
               className="inline-flex items-center gap-3 text-white font-bold text-[15px] uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
-              style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText section="home_about_split" name="linkText" fallback="Discover Our Story" />
               <span className="group-hover:translate-x-1.5 transition-transform inline-block">→</span>
@@ -623,7 +602,7 @@ export default async function HomePage() {
                 <div className="w-6 h-[2px] bg-[#1F93A4]" />
                 <p
                   className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                  style={{ fontFamily: "var(--font-myriad)" }}
                 >
                   <ContentText section="home_news_header" name="eyebrow" fallback="Latest News" />
                 </p>
@@ -631,7 +610,7 @@ export default async function HomePage() {
               <h2
                 className="text-[#213B4D] uppercase leading-tight"
                 style={{
-                  fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                  fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                   fontSize: "clamp(32px, 4.5vw, 54px)",
                   fontWeight: 600,
                 }}
@@ -642,7 +621,7 @@ export default async function HomePage() {
             <Link
               href="/news"
               className="text-[#213B4D]/80 hover:text-[#1F93A4] text-[15px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
-              style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+              style={{ fontFamily: "var(--font-myriad)" }}
             >
               <ContentText section="home_news_header" name="linkText" fallback="View All News" />
               <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -666,8 +645,8 @@ export default async function HomePage() {
                   <div className="absolute inset-0 bg-[#213B4D]/30 group-hover:bg-[#213B4D]/15 transition-colors duration-300" />
                   <div className="absolute top-4 left-4">
                     <span
-                      className="bg-[#1F93A4] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1"
-                      style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                      className="bg-[#1F93A4] text-white text-[12px] font-bold uppercase tracking-wider px-2.5 py-1"
+                      style={{ fontFamily: "var(--font-myriad)" }}
                     >
                       <ContentText section={n._key} name="category" fallback={n.category || ""} />
                     </span>
@@ -676,13 +655,13 @@ export default async function HomePage() {
                 <div className="p-6">
                   <p
                     className="text-[#5E5E5E] text-[11px] uppercase tracking-widest mb-2"
-                    style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                    style={{ fontFamily: "var(--font-myriad)" }}
                   >
                     <ContentText section={n._key} name="date" fallback={n.date || ""} />
                   </p>
                   <h3
                     className="text-[#213B4D] font-bold text-[16px] leading-snug group-hover:text-[#1F93A4] transition-colors"
-                    style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+                    style={{ fontFamily: "var(--font-myriad)" }}
                   >
                     <ContentText section={n._key} name="title" fallback={n.title || ""} />
                   </h3>
@@ -702,7 +681,7 @@ export default async function HomePage() {
                 <div className="w-6 h-[2px] bg-[#1F93A4]" />
                 <p
                   className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+                  style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section="home_global" name="eyebrow" fallback="Where We Operate" />
                 </p>
@@ -710,7 +689,7 @@ export default async function HomePage() {
               <h2
                 className="text-white uppercase leading-tight"
                 style={{
-                  fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                  fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                   fontSize: "clamp(30px, 3.5vw, 48px)",
                   fontWeight: 600,
                   letterSpacing: "-0.01em",
@@ -721,7 +700,7 @@ export default async function HomePage() {
             </div>
             <p
               className="text-white/70 text-[17px] leading-relaxed lg:pt-14"
-              style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+              style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText
                 section="home_global"
@@ -744,14 +723,14 @@ export default async function HomePage() {
               >
                 <span
                   className="text-[#1F93A4] text-[13px] font-bold tracking-widest w-10 shrink-0"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+                  style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section={o.key} name="num" fallback={o.fallbackNum} />
                 </span>
                 <span
                   className="flex-1 text-white group-hover:text-[#1F93A4] transition-colors uppercase leading-none"
                   style={{
-                    fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+                    fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
                     fontSize: "clamp(22px, 2.8vw, 40px)",
                     fontWeight: 600,
                   }}
@@ -760,7 +739,7 @@ export default async function HomePage() {
                 </span>
                 <span
                   className="text-white text-[13px] font-bold uppercase tracking-[0.25em] shrink-0"
-                  style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+                  style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section={o.key} name="country" fallback={o.fallbackCountry} />
                 </span>
@@ -771,7 +750,7 @@ export default async function HomePage() {
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 text-white/80 text-[13px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
-              style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
+              style={{ fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText section="home_global" name="linkText" fallback="Find Our Offices" />
               <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
@@ -793,14 +772,14 @@ export default async function HomePage() {
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-14 text-center">
           <p
             className="text-white/80 text-[11px] font-bold uppercase tracking-[0.45em] mb-6"
-            style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+            style={{ fontFamily: "var(--font-myriad)" }}
           >
             <ContentText section="home_cta" name="eyebrow" fallback="Start Your Project" />
           </p>
           <h2
             className="text-white uppercase leading-[0.9] mb-8"
             style={{
-              fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif",
+              fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
               fontSize: "clamp(52px, 9vw, 120px)",
               fontWeight: 600,
               letterSpacing: "-0.01em",
@@ -812,7 +791,7 @@ export default async function HomePage() {
           </h2>
           <p
             className="text-white/90 text-[17px] mb-10 max-w-lg mx-auto leading-relaxed"
-            style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+            style={{ fontFamily: "var(--font-myriad)" }}
           >
             <ContentText
               section="home_cta"
@@ -823,7 +802,7 @@ export default async function HomePage() {
           <Link
             href="/contact"
             className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-400"
-            style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
+            style={{ fontFamily: "var(--font-myriad)" }}
           >
             <ContentText section="home_cta" name="buttonText" fallback="Contact Our Team" />
             <span>→</span>

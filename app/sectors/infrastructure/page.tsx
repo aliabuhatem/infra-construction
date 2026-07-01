@@ -6,8 +6,8 @@ export const metadata = {
   description: "Comprehensive infrastructure and civil works — highways, bridges, airports, ports, marine works, water systems, dams, energy, and industrial projects delivered to international standards.",
 };
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 export default function InfrastructurePage() {
   return (

@@ -1,7 +1,7 @@
 import { getContent } from "@/lib/getContent";
 import ContentText from "@/components/admin-panel/ContentText";
 
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 type SectorKey = "building" | "infrastructure";
 

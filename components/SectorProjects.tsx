@@ -2,8 +2,8 @@ import { getContent } from "@/lib/getContent";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 type SectorKey = "building" | "infrastructure";
 
@@ -82,17 +82,17 @@ export default async function SectorProjects({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/70 to-transparent" />
                 <div className="absolute top-4 left-4 flex gap-2">
-                  <span className="bg-[#1F93A4] text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
+                  <span className="bg-[#1F93A4] text-white text-[12px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
                     <ContentText section={p.sectionKey} name="country" fallback={p.country} />
                   </span>
-                  <span className="bg-[#0d1e28]/80 text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
+                  <span className="bg-[#0d1e28]/80 text-white text-[12px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
                     <ContentText section={p.sectionKey} name="type" fallback={p.type} />
                   </span>
                 </div>
               </div>
               <div className="p-7">
                 <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
-                <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
+                <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="sector" fallback={p.sector} />
                 </div>
                 <h3 className="text-[#213B4D] font-bold text-[16px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>

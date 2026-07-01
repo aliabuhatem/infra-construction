@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import ContentText from "@/components/admin-panel/ContentText";
 
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 const preLinks = [
   { label: "Home", href: "/" },
@@ -174,7 +174,7 @@ export default function Navbar() {
               <div className="border-t border-white/10 px-7 py-3">
                 <Link
                   href="/sectors"
-                  className="text-white/60 hover:text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] transition-colors"
+                  className="text-white/60 hover:text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] transition-colors"
                   style={{ fontFamily: B }}
                   onClick={closeAll}
                 >
@@ -245,7 +245,7 @@ export default function Navbar() {
               style={{ maxHeight: mobileSectorsOpen ? "440px" : "0px" }}
             >
               <div className="pb-3 pl-3 space-y-1">
-                <Link href="/sectors" onClick={() => setOpen(false)} className="block text-white/70 hover:text-[#1F93A4] py-1.5 text-[10px] uppercase tracking-widest transition-colors" style={{ fontFamily: B }}>
+                <Link href="/sectors" onClick={() => setOpen(false)} className="block text-white/70 hover:text-[#1F93A4] py-1.5 text-[12px] uppercase tracking-widest transition-colors" style={{ fontFamily: B }}>
                   All Sectors Overview
                 </Link>
                 <Link href="/sectors/buildings" onClick={() => setOpen(false)} className="block text-white/90 hover:text-[#1F93A4] py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors" style={{ fontFamily: B }}>
@@ -261,7 +261,7 @@ export default function Navbar() {
                         key={sub.label}
                         href={sub.href}
                         onClick={() => setOpen(false)}
-                        className="flex items-center gap-1.5 text-white/70 hover:text-[#1F93A4] py-1.5 text-[10px] uppercase tracking-wide transition-colors"
+                        className="flex items-center gap-1.5 text-white/70 hover:text-[#1F93A4] py-1.5 text-[12px] uppercase tracking-wide transition-colors"
                         style={{ fontFamily: B }}
                       >
                         <span className="text-[#1F93A4] text-[8px]">▸</span>

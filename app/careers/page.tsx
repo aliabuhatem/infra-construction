@@ -3,8 +3,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "@/lib/getContent";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 const benefitIcons = [
   <svg key="1" className="w-6 h-6 text-[#1F93A4] group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v2m0 8v2M9.5 9.5a2.5 2.5 0 015 0c0 1.5-1.5 2-2.5 2.5S9.5 15 9.5 16.5a2.5 2.5 0 005 0"/></svg>,
@@ -123,7 +123,7 @@ export default async function CareersPage() {
               <div className="grid grid-cols-2 gap-[1px] bg-white/5">
                 {["Engineers", "Project Managers", "Technicians", "Consultants", "Inspectors", "Specialists"].map((role) => (
                   <div key={role} className="bg-[#0d1e28] px-4 py-3 flex items-center gap-2 hover:bg-[#1a3040] transition-colors group">
-                    <span className="text-[#1F93A4] text-[10px]">▸</span>
+                    <span className="text-[#1F93A4] text-[12px]">▸</span>
                     <span className="text-white/85 text-[15px] group-hover:text-white transition-colors" style={{ fontFamily: B }}>{role}</span>
                   </div>
                 ))}
@@ -154,7 +154,7 @@ export default async function CareersPage() {
             {openings.map((job, i) => (
               <div key={i} className="bg-white hover:bg-[#f4f6f8] transition-colors px-8 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 group">
                 <div>
-                  <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                  <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                     <ContentText section={job._key} name="sector" fallback={job.sector || ""} />
                   </div>
                   <h3 className="text-[#213B4D] font-bold text-[16px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
@@ -164,7 +164,7 @@ export default async function CareersPage() {
                     <span className="text-[#5E5E5E] text-[13px]">
                       <ContentText section={job._key} name="location" fallback={job.location || ""} />
                     </span>
-                    <span className="border border-[#213B4D]/20 text-[#213B4D] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1">
+                    <span className="border border-[#213B4D]/20 text-[#213B4D] text-[12px] font-bold uppercase tracking-wider px-2.5 py-1">
                       <ContentText section={job._key} name="type" fallback={job.type || ""} />
                     </span>
                   </div>

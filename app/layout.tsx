@@ -1,22 +1,12 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ContentProvider } from "@/components/admin-panel/ContentProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// Single typeface for the whole site. next/font downloads the woff2 files at
-// build time and self-hosts them from our own origin (no runtime request to
-// Google), injects @font-face with font-display: swap, and adds a
-// size-adjusted fallback so layout doesn't shift. We load every weight the UI
-// actually uses (400/500/600/700) so the browser never has to synthesize one.
-const ibmPlexSans = IBM_Plex_Sans({
-  variable: "--font-ibm-plex-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
+// The site font (Myriad Pro) is self-hosted via @font-face in app/globals.css
+// and applied through the --font-myriad CSS variable.
 
 export const metadata: Metadata = {
   title: "INFRA Construction",
@@ -40,7 +30,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning
       lang="en"
-      className={`${ibmPlexSans.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <ContentProvider>

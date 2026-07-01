@@ -31,8 +31,8 @@ interface SectorLayoutProps {
 
 /* ── Shared style helpers ──────────────────────────────────────────────── */
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 /* ── Service card icons (cycling, engineering-themed SVG) ──────────────── */
 
@@ -242,7 +242,7 @@ export default function SectorLayout({
                       className="flex items-start gap-2 text-[15px] text-white/70 group-hover:text-white/85 transition-colors"
                       style={{ fontFamily: B }}
                     >
-                      <span className="text-[#1F93A4] mt-0.5 text-[10px] shrink-0">▸</span>
+                      <span className="text-[#1F93A4] mt-0.5 text-[12px] shrink-0">▸</span>
                       {T(`${sk}_sg_${i + 1}`, `item_${j + 1}`, item)}
                     </li>
                   ))}

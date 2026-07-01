@@ -5,8 +5,8 @@ import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
 import ProjectsPortfolio from "@/components/ProjectsPortfolio";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 export default async function ProjectsPage({
   searchParams,

@@ -4,8 +4,8 @@ import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { readContentStore } from "@/lib/admin/content-store";
 
-const H = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
-const B = "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif";
+const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 type Fields = Record<string, string>;
 type Store = { content: Record<string, Fields>; _deletedSections?: string[] };
@@ -77,7 +77,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-14 pb-16 w-full">
           <div className="flex items-center gap-3 mb-5">
             <span
-              className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
+              className="bg-[#1F93A4] text-white text-[12px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
               style={{ fontFamily: B }}
             >
               <ContentText section={item._key} name="category" fallback={item.category || ""} />
@@ -218,7 +218,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span
-                        className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
+                        className="bg-[#1F93A4]/12 text-[#1F93A4] text-[12px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
                         style={{ fontFamily: B }}
                       >
                         <ContentText section={r._key} name="category" fallback={r.category || ""} />
