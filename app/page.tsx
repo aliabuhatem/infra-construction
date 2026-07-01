@@ -288,7 +288,7 @@ export default async function HomePage() {
 
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <p className="text-[#f5f7f7] text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-[#bfc6c7] text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
                     <ContentText section="home_sector_buildings" name="badgeLabel" fallback="01 · Standalone Sector" />
                   </p>
                 </div>
@@ -330,7 +330,7 @@ export default async function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#213B4D]/50 via-[#213B4D]/50 to-transparent" />
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <p className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-[#bfc6c7] text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
                     <ContentText section="home_sector_infrastructure" name="badgeLabel" fallback="02 · Umbrella Sector" />
                   </p>
                 </div>
