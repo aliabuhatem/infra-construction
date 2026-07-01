@@ -1,14 +1,68 @@
 @import "tailwindcss";
 
+/* ─── Myriad Pro (self-hosted) ──────────────────────────────────────────────
+   Put the font files in  public/fonts/  with these EXACT names:
+     public/fonts/MyriadPro-Regular.woff2   → weight 400 (body)
+     public/fonts/MyriadPro-Bold.woff2      → weight 700 (headings/emphasis)
+   (Optional) public/fonts/MyriadPro-Semibold.woff2 → weight 600 (enable block below)
+   Myriad Pro is a licensed Adobe font and is NOT bundled with the project.
+   Until these files exist, the site falls back to Segoe UI / system-ui. */
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/fonts/MyriadPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/fonts/MyriadPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Optional Semibold — add MyriadPro-Semibold.woff2 and uncomment to enable 600.
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/fonts/MyriadPro-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
 @theme {
   --color-primary: #213B4D;
   --color-secondary: #1F93A4;
   --color-gray-mid: #5E5E5E;
   --color-white: #ffffff;
 
-  --font-heading: var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif;
-  --font-body: var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif;
+  /* Primary typeface + fallback stack — used everywhere via var(--font-myriad). */
+  --font-myriad: "Myriad Pro", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-myriad);
+  --font-body: var(--font-myriad);
 }
+
+/* ─── FONT-WEIGHT EXPERIMENT CONTROLS ───────────────────────────────────────
+   Myriad Pro loads as Regular (400) + Bold (700). First-pass mapping:
+     headings / section titles → bold      body / paragraphs → regular
+     buttons & nav             → bold      eyebrows / labels → bold
+   Two ways to experiment:
+   1) Change the --fw-* defaults below (affects <h1>/<h2>/<h3> that have no
+      inline weight).
+   2) Drop a helper class on ANY element or section to FORCE a weight — these
+      override inline weights: .fw-regular  .fw-semibold  .fw-bold
+   Note: with only Regular+Bold loaded, weight 500 renders Regular, 600 renders Bold. */
+:root {
+  --fw-heading: 700;   /* hero + section titles */
+  --fw-body: 400;      /* paragraphs / body copy */
+  --fw-nav: 700;       /* navbar links */
+  --fw-button: 700;    /* buttons / CTAs */
+  --fw-eyebrow: 700;   /* small uppercase labels */
+}
+.fw-regular,  .fw-regular *  { font-weight: 400 !important; }
+.fw-semibold, .fw-semibold * { font-weight: 600 !important; }
+.fw-bold,     .fw-bold *     { font-weight: 700 !important; }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -33,8 +87,9 @@ body {
   font-synthesis: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: var(--font-heading);
+  font-weight: var(--fw-heading);
   letter-spacing: -0.01em;
 }
 
