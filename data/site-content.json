@@ -1,7 +1,7 @@
 {
   "content": {
     "home_hero": {
-      "eyebrow": "Developed by Eng.Ali Abuhatem",
+      "eyebrow": "EST. 2000 . Abu Dhabi, UAE",
       "headlineLine1": "We Do Not Only Aim To Meet Your Expectation, But To Exceed",
       "headlineLine2": "Them At Every Step",
       "headlineLine3": "",
@@ -316,7 +316,7 @@
       "eyebrow": "News & Insights",
       "title": "Latest from INFRA",
       "subtitle": "Project milestones, awards, and company updates.",
-      "backgroundImage": "/media/news-hero.jpg"
+      "backgroundImage": "/media/1782903519939-news_bg.png"
     },
     "careers_hero": {
       "eyebrow": "Careers",
@@ -2960,6 +2960,15 @@
     }
   },
   "media": [
+    {
+      "id": "1782903521592",
+      "title": "news_bg",
+      "alt": "news_bg",
+      "category": "gallery",
+      "url": "/media/1782903519939-news_bg.png",
+      "source": "upload",
+      "createdAt": "2026-07-01T10:58:41.592Z"
+    },
     {
       "id": "1782815817895",
       "title": "our_story",
