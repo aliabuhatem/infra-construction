@@ -441,14 +441,8 @@ export default async function HomePage() {
                   All
                 </Link>
               </div>
-              <Link
-                href="/projects"
-                className="text-[#213B4D]/60 hover:text-[#1F93A4] text-[13px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group"
-                style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
-              >
-                <ContentText section="home_featured_projects" name="linkText" fallback="View All Projects" />
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </Link>
+              
+             
             </div>
           </div>
 
