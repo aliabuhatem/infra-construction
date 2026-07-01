@@ -77,16 +77,15 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-14 flex items-center justify-between h-[96px]">
 
         <Link href="/" className="flex items-center shrink-0">
-          <span className="inline-flex items-center bg-white rounded-md p-1.5 shadow-sm">
-            <Image
-              src="/media/Infra-Logo.png"
-              alt="INFRA Construction"
-              width={180}
-              height={100}
-              className="object-contain h-[64px] w-auto block"
-              priority
-            />
-          </span>
+          <Image
+            src="/media/Infra-Logo.png"
+            alt="INFRA Construction"
+            width={180}
+            height={100}
+            className="object-contain h-[64px] w-auto block"
+            style={{ filter: "brightness(0) invert(1)" }}
+            priority
+          />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-9">
