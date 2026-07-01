@@ -501,7 +501,7 @@
 }
 
 .iconBtn {
-  width: 30px; height: 30px; border-radius: 7px;
+  width: 20px; height: 20px; border-radius: 7px;
   background: white; border: 1.5px solid var(--ap-border);
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; color: var(--ap-muted); transition: 0.15s;

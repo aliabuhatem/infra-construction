@@ -174,7 +174,7 @@ export default function InfrastructurePage() {
               </div>
               <h2
                 className="text-[#213B4D] uppercase leading-tight mb-6"
-                style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}
+                style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}
               >
                 Infrastructure Projects
               </h2>

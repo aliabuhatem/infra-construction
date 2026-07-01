@@ -44,7 +44,7 @@ export default async function Footer() {
           </p>
           <div className="flex gap-2 mb-5">
             {["ISO 9001", "ISO 14001"].map((cert) => (
-              <span key={cert} className="text-[12px] uppercase tracking-widest border border-[#4FC3B7]/40 text-[#4FC3B7] px-2 py-1" style={{ fontFamily: B }}>
+              <span key={cert} className="text-[10px] uppercase tracking-widest border border-[#4FC3B7]/40 text-[#4FC3B7] px-2 py-1" style={{ fontFamily: B }}>
                 {cert}
               </span>
             ))}

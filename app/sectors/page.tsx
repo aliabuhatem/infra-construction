@@ -124,12 +124,12 @@ export default function SectorsPage() {
                   <h2 className="text-white uppercase leading-tight mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, fontSize: "clamp(32px, 5vw, 64px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
                     <ContentText section="sectors_hub_buildings" name="title" fallback="Buildings" />
                   </h2>
-                  <p className="text-white/85 text-[16px] leading-relaxed max-w-lg" style={{ fontFamily: B }}>
+                  <p className="text-white/85 text-[15px] leading-relaxed max-w-lg" style={{ fontFamily: B }}>
                     <ContentText section="sectors_hub_buildings" name="short" fallback="Architectural design, MEP engineering, and construction of residential, commercial, and institutional buildings — from concept to handover." />
                   </p>
                 </div>
                 <div className="mt-6 lg:mt-0 lg:ml-12 shrink-0">
-                  <span className="text-[#1F93A4] text-[15px] font-bold uppercase tracking-[0.2em] flex items-center gap-2" style={{ fontFamily: B }}>
+                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.2em] flex items-center gap-2" style={{ fontFamily: B }}>
                     <ContentText section="sectors_hub_buildings" name="exploreText" fallback="Explore Buildings" /> <span className="group-hover:translate-x-1.5 transition-transform inline-block">→</span>
                   </span>
                 </div>
@@ -160,11 +160,11 @@ export default function SectorsPage() {
                   <h2 className="text-white uppercase leading-tight mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, fontSize: "clamp(28px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
                     <ContentText section="sectors_hub_infra" name="title" fallback="Infrastructure" />
                   </h2>
-                  <p className="text-white/80 text-[15px]" style={{ fontFamily: B }}>
+                  <p className="text-white/80 text-[14px]" style={{ fontFamily: B }}>
                     <ContentText section="sectors_hub_infra" name="short" fallback="Civil works · Water · Energy · Industrial — an integrated sector umbrella" />
                   </p>
                 </div>
-                <span className="text-[#1F93A4] text-[15px] font-bold uppercase tracking-[0.2em] flex items-center gap-2 shrink-0 ml-6" style={{ fontFamily: B }}>
+                <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.2em] flex items-center gap-2 shrink-0 ml-6" style={{ fontFamily: B }}>
                   <ContentText section="sectors_hub_infra" name="exploreText" fallback="Sector Overview" /> <span className="group-hover:translate-x-1.5 transition-transform inline-block">→</span>
                 </span>
               </div>
@@ -183,10 +183,10 @@ export default function SectorsPage() {
                 </div>
                 <div className="p-6">
                   <div className="w-5 h-[2px] bg-[#1F93A4] mb-3 group-hover:w-9 transition-all duration-300" />
-                  <h3 className="text-white font-bold text-[15px] mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                  <h3 className="text-white font-bold text-[13px] mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                     <ContentText section={s.sectionKey} name="title" fallback={s.title} />
                   </h3>
-                  <p className="text-white/70 text-[13px] leading-relaxed mb-4" style={{ fontFamily: B }}>
+                  <p className="text-white/70 text-[12px] leading-relaxed mb-4" style={{ fontFamily: B }}>
                     <ContentText section={s.sectionKey} name="short" fallback={s.short} />
                   </p>
                   <span className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] flex items-center gap-2" style={{ fontFamily: B }}>
@@ -210,7 +210,7 @@ export default function SectorsPage() {
                   <ContentText section="sectors_hub_activities" name="eyebrow" fallback="Scope of Activities" />
                 </p>
               </div>
-              <h2 className="text-[#213B4D] uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
+              <h2 className="text-[#213B4D] uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
                 <ContentText section="sectors_hub_activities" name="title" fallback="Broad Sector Coverage" />
               </h2>
               <p className="text-[#5E5E5E] text-[17px] leading-relaxed mt-5" style={{ fontFamily: B }}>
@@ -222,7 +222,7 @@ export default function SectorsPage() {
             {activityAreas.map((area) => (
               <Link key={area.sectionKey} href={area.href} className="bg-white p-6 hover:bg-[#f4f6f8] transition-colors group block">
                 <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
-                <span className="text-[#213B4D] text-[15px] font-semibold group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                <span className="text-[#213B4D] text-[13px] font-semibold group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                   <ContentText section={area.sectionKey} name="label" fallback={area.label} />
                 </span>
               </Link>
@@ -244,7 +244,7 @@ export default function SectorsPage() {
           <p className="text-white/90 text-[17px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="sectors_hub_cta" name="body" fallback="Our specialists are ready to discuss your requirements and tailor a solution for your specific needs." />
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
+          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
             <ContentText section="sectors_hub_cta" name="buttonText" fallback="Contact Our Team" /> <span>→</span>
           </Link>
         </div>

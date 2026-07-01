@@ -170,7 +170,7 @@ export default async function NewsPage() {
             </div>
             <h2
               className="text-white uppercase leading-tight"
-              style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}
+              style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}
             >
               Follow Our Latest<br />Developments
             </h2>

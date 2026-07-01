@@ -117,10 +117,10 @@ export default function ProjectsPortfolio({
               <ContentText section="projects_header" name="eyebrow" fallback="Portfolio" />
             </p>
           </div>
-          <h2 className="text-[#213B4D] uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
+          <h2 className="text-[#213B4D] uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="projects_header" name="title" fallback="75+ Projects Delivered Across Multiple Regions" />
           </h2>
-          <p className="text-[#5E5E5E] text-[16px] leading-relaxed mt-4" style={{ fontFamily: B }}>
+          <p className="text-[#5E5E5E] text-[15px] leading-relaxed mt-4" style={{ fontFamily: B }}>
             <ContentText section="projects_header" name="subtitle" fallback="Since 2000, INFRA Construction has accomplished projects in various fields of specialisation across the Middle East, Africa, and beyond." />
           </p>
         </div>
@@ -143,7 +143,7 @@ export default function ProjectsPortfolio({
 
       {/* Country filter row */}
       <div className="flex flex-wrap items-center gap-2 mb-12 pb-8 border-b border-[#213B4D]/8" role="group" aria-label="Filter projects by country">
-        <span className="text-[#213B4D]/75 text-[12px] font-bold uppercase tracking-[0.25em] mr-1" style={{ fontFamily: B }}>
+        <span className="text-[#213B4D]/75 text-[10px] font-bold uppercase tracking-[0.25em] mr-1" style={{ fontFamily: B }}>
           Country
         </span>
         <button
@@ -170,7 +170,7 @@ export default function ProjectsPortfolio({
       </div>
 
       {filtered.length === 0 ? (
-        <p className="text-[#5E5E5E] text-[16px] py-12 text-center" style={{ fontFamily: B }}>
+        <p className="text-[#5E5E5E] text-[15px] py-12 text-center" style={{ fontFamily: B }}>
           No projects match the selected filters.
         </p>
       ) : (
@@ -187,23 +187,23 @@ export default function ProjectsPortfolio({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/70 to-transparent" />
                 <div className="absolute top-4 left-4 flex gap-2">
-                  <span className="bg-[#1F93A4] text-white text-[12px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
+                  <span className="bg-[#1F93A4] text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
                     <ContentText section={p.sectionKey} name="country" fallback={p.country} />
                   </span>
-                  <span className="bg-[#0d1e28]/80 text-white text-[12px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
+                  <span className="bg-[#0d1e28]/80 text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider" style={{ fontFamily: B }}>
                     <ContentText section={p.sectionKey} name="type" fallback={p.type} />
                   </span>
                 </div>
               </div>
               <div className="p-7">
                 <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
-                <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
+                <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="sector" fallback={p.sector} />
                 </div>
-                <h3 className="text-[#213B4D] font-bold text-[16px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                <h3 className="text-[#213B4D] font-bold text-[15px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="title" fallback={p.title} />
                 </h3>
-                <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
+                <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="description" fallback={p.description} />
                 </p>
               </div>

@@ -80,7 +80,7 @@ export default function ContactPage() {
           >
             <ContentText section="contact_hero" name="title" fallback="Contact Us" />
           </h1>
-          <p className="text-white/85 text-[16px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/85 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="contact_hero" name="subtitle" fallback="Reach out to our team across five global offices — we are ready to discuss your project requirements." />
           </p>
         </div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                  <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                     First Name *
                   </label>
                   <input
@@ -124,13 +124,13 @@ export default function ContactPage() {
                     required
                     value={form.firstName}
                     onChange={onChange}
-                    className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[15px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
+                    className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[14px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
                     placeholder="John"
                     style={{ fontFamily: B }}
                   />
                 </div>
                 <div>
-                  <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                  <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                     Last Name *
                   </label>
                   <input
@@ -139,14 +139,14 @@ export default function ContactPage() {
                     required
                     value={form.lastName}
                     onChange={onChange}
-                    className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[15px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
+                    className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[14px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
                     placeholder="Smith"
                     style={{ fontFamily: B }}
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Email Address *
                 </label>
                 <input
@@ -155,13 +155,13 @@ export default function ContactPage() {
                   required
                   value={form.email}
                   onChange={onChange}
-                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[15px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
+                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[14px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
                   placeholder="john@company.com"
                   style={{ fontFamily: B }}
                 />
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Company / Organisation
                 </label>
                 <input
@@ -169,20 +169,20 @@ export default function ContactPage() {
                   name="company"
                   value={form.company}
                   onChange={onChange}
-                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[15px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
+                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[14px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors"
                   placeholder="Your Company"
                   style={{ fontFamily: B }}
                 />
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Subject
                 </label>
                 <select
                   name="subject"
                   value={form.subject}
                   onChange={onChange}
-                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[15px] text-[#213B4D] focus:outline-none focus:border-[#1F93A4] transition-colors bg-white"
+                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[14px] text-[#213B4D] focus:outline-none focus:border-[#1F93A4] transition-colors bg-white"
                   style={{ fontFamily: B }}
                 >
                   <option>Project Inquiry</option>
@@ -193,7 +193,7 @@ export default function ContactPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-[#213B4D] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                <label className="block text-[#213B4D] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                   Message *
                 </label>
                 <textarea
@@ -202,14 +202,14 @@ export default function ContactPage() {
                   rows={5}
                   value={form.message}
                   onChange={onChange}
-                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[15px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors resize-none"
+                  className="w-full border border-[#213B4D]/20 px-4 py-3.5 text-[14px] text-[#213B4D] placeholder-[#5E5E5E]/40 focus:outline-none focus:border-[#1F93A4] transition-colors resize-none"
                   placeholder="Tell us about your project or inquiry..."
                   style={{ fontFamily: B }}
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#213B4D] text-white font-bold py-4 text-[15px] uppercase tracking-widest hover:bg-[#1F93A4] transition-colors duration-300"
+                className="w-full bg-[#213B4D] text-white font-bold py-4 text-[13px] uppercase tracking-widest hover:bg-[#1F93A4] transition-colors duration-300"
                 style={{ fontFamily: B }}
               >
                 Send Message →
@@ -239,19 +239,19 @@ export default function ContactPage() {
                 >
                   <div className="flex items-center justify-between mb-2">
                     <div
-                      className="text-[#213B4D] font-bold text-[16px] group-hover:text-[#1F93A4] transition-colors"
+                      className="text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors"
                       style={{ fontFamily: B }}
                     >
                       <ContentText section={o._key} name="city" fallback={o.city} />
                     </div>
                     <span
-                      className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] border border-[#1F93A4]/30 px-2 py-0.5"
+                      className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] border border-[#1F93A4]/30 px-2 py-0.5"
                       style={{ fontFamily: B }}
                     >
                       <ContentText section={o._key} name="country" fallback={o.country} />
                     </span>
                   </div>
-                  <div className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
+                  <div className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
                     <ContentText section={o._key} name="address" fallback={o.address} />
                   </div>
                   <div className="text-[#5E5E5E]/60 text-[11px] mt-1.5 uppercase tracking-wider" style={{ fontFamily: B }}>
@@ -265,7 +265,7 @@ export default function ContactPage() {
             <div className="mt-8 bg-[#0d1e28] p-6 flex gap-5 items-center flex-wrap">
               <div className="flex items-center gap-3 mb-2 w-full">
                 <div className="w-4 h-[2px] bg-[#1F93A4]" />
-                <span className="text-white/70 text-[12px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: B }}>
+                <span className="text-white/70 text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: B }}>
                   Certifications
                 </span>
               </div>
@@ -292,7 +292,7 @@ export default function ContactPage() {
             </div>
             <h2
               className="text-white uppercase"
-              style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}
+              style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}
             >
               <ContentText section="contact_offices" name="subtitle" fallback="Operating Across 5 Countries" />
             </h2>
@@ -307,7 +307,7 @@ export default function ContactPage() {
                   <ContentText section={o._key} name="country" fallback={o.country} />
                 </div>
                 <div
-                  className="text-white text-[16px] font-semibold group-hover:text-[#1F93A4] transition-colors"
+                  className="text-white text-[15px] font-semibold group-hover:text-[#1F93A4] transition-colors"
                   style={{ fontFamily: B }}
                 >
                   <ContentText section={o._key} name="city" fallback={o.city} />
@@ -337,12 +337,12 @@ export default function ContactPage() {
           >
             <ContentText section="contact_cta" name="title" fallback="Your Vision, Our Expertise" />
           </h2>
-          <p className="text-white/90 text-[16px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/90 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="contact_cta" name="body" fallback="Whether it is a megaproject or a targeted engineering service, INFRA Construction is ready to deliver." />
           </p>
           <a
             href={`mailto:${email}`}
-            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
             style={{ fontFamily: B }}
           >
             <ContentText section="contact_cta" name="buttonText" fallback="Email Us Directly" /> <span>→</span>

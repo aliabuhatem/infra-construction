@@ -53,7 +53,7 @@ export default async function ProjectsPage({
           <h1 className="text-white uppercase leading-[0.92] mb-5" style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="projects_hero" name="title" fallback="Projects" />
           </h1>
-          <p className="text-white/85 text-[16px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/85 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="projects_hero" name="subtitle" fallback="Over 75 projects delivered across multiple regions — each one a testament to INFRA's commitment to quality." />
           </p>
         </div>
@@ -85,9 +85,9 @@ export default async function ProjectsPage({
             </p>
           </div>
           <div className="lg:col-span-3 border-l border-white/10 pl-10 hidden lg:block">
-            <div className="text-white/70 text-[13px] font-semibold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>Est.</div>
+            <div className="text-white/70 text-[12px] font-semibold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>Est.</div>
             <div className="text-[#1F93A4] leading-none" style={{ fontFamily: H, fontSize: "72px", fontWeight: 600 }}>2000</div>
-            <div className="text-white/70 text-[13px] font-semibold uppercase tracking-[0.2em] mt-2" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
+            <div className="text-white/70 text-[12px] font-semibold uppercase tracking-[0.2em] mt-2" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
           </div>
         </div>
       </section>
@@ -102,10 +102,10 @@ export default async function ProjectsPage({
           <h2 className="text-white uppercase leading-[0.92] mb-6" style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="projects_cta" name="title" fallback="Start Your Project" />
           </h2>
-          <p className="text-white/90 text-[16px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/90 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="projects_cta" name="body" fallback="Partner with INFRA Construction for reliable project delivery across all infrastructure and building sectors." />
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
+          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
             <ContentText section="projects_cta" name="buttonText" fallback="Contact Our Team" /> <span>→</span>
           </Link>
         </div>

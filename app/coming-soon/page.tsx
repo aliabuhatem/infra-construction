@@ -77,7 +77,7 @@ export default function ComingSoonPage() {
         {/* Contact CTA */}
         <a
           href="mailto:info@infraconstruction.com"
-          className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
+          className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
           style={{ fontFamily: B }}
         >
           Contact Us <span>→</span>

@@ -86,7 +86,7 @@ export default async function CareersPage() {
                 <h3 className="text-[#213B4D] font-bold text-[16px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                   <ContentText section={benefit._key} name="title" fallback={benefit.title || ""} />
                 </h3>
-                <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
+                <p className="text-[#5E5E5E] text-[14px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section={benefit._key} name="body" fallback={benefit.body || ""} />
                 </p>
                 <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#1F93A4] group-hover:w-full transition-all duration-500" />
@@ -123,8 +123,8 @@ export default async function CareersPage() {
               <div className="grid grid-cols-2 gap-[1px] bg-white/5">
                 {["Engineers", "Project Managers", "Technicians", "Consultants", "Inspectors", "Specialists"].map((role) => (
                   <div key={role} className="bg-[#0d1e28] px-4 py-3 flex items-center gap-2 hover:bg-[#1a3040] transition-colors group">
-                    <span className="text-[#1F93A4] text-[12px]">▸</span>
-                    <span className="text-white/85 text-[15px] group-hover:text-white transition-colors" style={{ fontFamily: B }}>{role}</span>
+                    <span className="text-[#1F93A4] text-[10px]">▸</span>
+                    <span className="text-white/85 text-[13px] group-hover:text-white transition-colors" style={{ fontFamily: B }}>{role}</span>
                   </div>
                 ))}
               </div>
@@ -144,7 +144,7 @@ export default async function CareersPage() {
                   <ContentText section="careers_openings" name="eyebrow" fallback="Open Positions" />
                 </p>
               </div>
-              <h2 className="text-[#213B4D] uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
+              <h2 className="text-[#213B4D] uppercase leading-tight" style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
                 <ContentText section="careers_openings" name="title" fallback="Current Openings" />
               </h2>
             </div>
@@ -154,22 +154,22 @@ export default async function CareersPage() {
             {openings.map((job, i) => (
               <div key={i} className="bg-white hover:bg-[#f4f6f8] transition-colors px-8 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 group">
                 <div>
-                  <div className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
+                  <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                     <ContentText section={job._key} name="sector" fallback={job.sector || ""} />
                   </div>
-                  <h3 className="text-[#213B4D] font-bold text-[16px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                  <h3 className="text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                     <ContentText section={job._key} name="title" fallback={job.title || ""} />
                   </h3>
                   <div className="flex items-center gap-5 mt-2" style={{ fontFamily: B }}>
-                    <span className="text-[#5E5E5E] text-[13px]">
+                    <span className="text-[#5E5E5E] text-[12px]">
                       <ContentText section={job._key} name="location" fallback={job.location || ""} />
                     </span>
-                    <span className="border border-[#213B4D]/20 text-[#213B4D] text-[12px] font-bold uppercase tracking-wider px-2.5 py-1">
+                    <span className="border border-[#213B4D]/20 text-[#213B4D] text-[10px] font-bold uppercase tracking-wider px-2.5 py-1">
                       <ContentText section={job._key} name="type" fallback={job.type || ""} />
                     </span>
                   </div>
                 </div>
-                <Link href="/contact" className="shrink-0 border border-[#213B4D] text-[#213B4D] font-bold text-[13px] uppercase tracking-widest px-6 py-3 hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
+                <Link href="/contact" className="shrink-0 border border-[#213B4D] text-[#213B4D] font-bold text-[12px] uppercase tracking-widest px-6 py-3 hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
                   Apply Now
                 </Link>
               </div>
@@ -188,10 +188,10 @@ export default async function CareersPage() {
           <h2 className="text-white uppercase leading-[0.92] mb-6" style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="careers_cta" name="title" fallback="Don't See Your Role?" />
           </h2>
-          <p className="text-white/90 text-[16px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/90 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="careers_cta" name="body" fallback="We are always looking for talented professionals to join our growing team. Send us your CV and let us know how you can contribute." />
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
+          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
             <ContentText section="careers_cta" name="buttonText" fallback="Send Your CV" /> <span>→</span>
           </Link>
         </div>

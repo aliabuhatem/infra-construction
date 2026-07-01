@@ -531,7 +531,7 @@ export default async function HomePage() {
               className="text-white uppercase leading-tight mb-6"
               style={{
                 fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
-                fontSize: "clamp(30px, 3.5vw, 46px)",
+                fontSize: "clamp(20px, 3.5vw, 46px)",
                 fontWeight: 600,
               }}
             >
@@ -685,7 +685,7 @@ export default async function HomePage() {
                 className="text-white uppercase leading-tight"
                 style={{
                   fontFamily: "var(--font-myriad), system-ui, -apple-system, sans-serif",
-                  fontSize: "clamp(30px, 3.5vw, 48px)",
+                  fontSize: "clamp(20px, 3.5vw, 48px)",
                   fontWeight: 600,
                   letterSpacing: "-0.01em",
                 }}

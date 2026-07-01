@@ -77,18 +77,18 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-14 pb-16 w-full">
           <div className="flex items-center gap-3 mb-5">
             <span
-              className="bg-[#1F93A4] text-white text-[12px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
+              className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
               style={{ fontFamily: B }}
             >
               <ContentText section={item._key} name="category" fallback={item.category || ""} />
             </span>
-            <span className="text-white/85 text-[13px]" style={{ fontFamily: B }}>
+            <span className="text-white/85 text-[12px]" style={{ fontFamily: B }}>
               <ContentText section={item._key} name="date" fallback={item.date || ""} />
             </span>
             {item.location && (
               <>
                 <span className="text-white/60">·</span>
-                <span className="text-white/85 text-[13px]" style={{ fontFamily: B }}>
+                <span className="text-white/85 text-[12px]" style={{ fontFamily: B }}>
                   <ContentText section={item._key} name="location" fallback={item.location} />
                 </span>
               </>
@@ -121,7 +121,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-0">
           <div
-            className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-12 pb-6 border-b border-[#213B4D]/10 text-[13px] text-[#5E5E5E]"
+            className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-12 pb-6 border-b border-[#213B4D]/10 text-[12px] text-[#5E5E5E]"
             style={{ fontFamily: B }}
           >
             {item.author && (
@@ -166,7 +166,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 {highlights.map((h, i) => (
                   <li
                     key={i}
-                    className="flex gap-3 text-[#213B4D] text-[16px] leading-relaxed"
+                    className="flex gap-3 text-[#213B4D] text-[15px] leading-relaxed"
                     style={{ fontFamily: B }}
                   >
                     <span className="text-[#1F93A4] font-bold mt-[2px]">▸</span>
@@ -180,7 +180,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <div className="mt-16 pt-8 border-t border-[#213B4D]/10">
             <Link
               href="/news"
-              className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2 hover:gap-3 transition-all"
+              className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2 hover:gap-3 transition-all"
               style={{ fontFamily: B }}
             >
               <span>←</span> Back to All News
@@ -218,7 +218,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span
-                        className="bg-[#1F93A4]/12 text-[#1F93A4] text-[12px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
+                        className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
                         style={{ fontFamily: B }}
                       >
                         <ContentText section={r._key} name="category" fallback={r.category || ""} />
@@ -228,7 +228,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                       </span>
                     </div>
                     <h3
-                      className="text-[#213B4D] font-bold text-[15px] leading-snug group-hover:text-[#1F93A4] transition-colors"
+                      className="text-[#213B4D] font-bold text-[14px] leading-snug group-hover:text-[#1F93A4] transition-colors"
                       style={{ fontFamily: B }}
                     >
                       <ContentText section={r._key} name="title" fallback={r.title || ""} />
