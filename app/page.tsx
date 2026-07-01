@@ -187,12 +187,7 @@ export default async function HomePage() {
                 >
                   <ContentText section="home_statement" name="cert2" fallback="ISO 14001" />
                 </span>
-                <span
-                  className="border border-[#1F93A4] text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.25em] px-3 py-1.5"
-                  style={{ fontFamily: "var(--font-myriad)" }}
-                >
-                  <ContentText section="home_statement" name="cert3" fallback="OHSAS 18001" />
-                </span>
+              
                 <Link
                   href="/about"
                   className="inline-flex items-center gap-2 text-[#213B4D] text-[13px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"

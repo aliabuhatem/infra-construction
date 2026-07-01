@@ -20,7 +20,6 @@
       "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
       "cert1": "ISO 9001",
       "cert2": "ISO 14001",
-      "cert3": "OHSAS 18001",
       "linkText": "Our Story"
     },
     "home_sectors_header": {
@@ -437,7 +436,7 @@
       "title": "Two Decades of Infrastructure Excellence",
       "p1": "INFRA Construction was established in 2000 with a clear mission: to deliver complex infrastructure and construction projects to international standards in markets where excellence is most needed. From a specialist contractor serving the Middle East, INFRA has grown into a multi-sector, multi-regional construction group operating across the UAE, Egypt, Yemen, Jordan, Canada, and East Africa.",
       "p2": "Today, INFRA Construction operates as a member of HS Group — delivering projects across Buildings & Architecture, Infrastructure & Civil Works, Water & Utilities, Energy & Power, Industrial & Oil Services, Engineering & EPC, and Facilities Management. Our integrated capabilities allow us to serve as a single trusted partner from project inception through long-term operations.",
-      "p3": "Backed by ISO 9001, ISO 14001, and OHSAS 18001 certifications, our commitment to quality, safety, and environmental responsibility is embedded in every project we undertake."
+      "p3": "Backed by ISO 9001 and ISO 14001, certifications, our commitment to quality, safety, and environmental responsibility is embedded in every project we undertake."
     },
     "about_stats": {
       "eyebrow": "At a Glance",
@@ -562,7 +561,6 @@
       "items": "Environmental impact assessment, waste management, pollution prevention, sustainability compliance"
     },
     "about_mgmtsys_3": {
-      "code": "OHSAS 18001",
       "title": "Occupational Health & Safety",
       "desc": "Health and safety management system ensuring the protection of all workers and project stakeholders.",
       "items": "Risk assessment, HSE training, incident management, safety audits"
@@ -2910,7 +2908,6 @@
       "cert1Title": "Quality Management",
       "cert2Code": "ISO 14001",
       "cert2Title": "Environmental Management",
-      "cert3Code": "OHSAS 18001",
       "cert3Title": "Health & Safety"
     },
     "contact_cta": {
