@@ -104,8 +104,8 @@ export default function SectorLayout({
         ) : (
           <Image src={heroImage} alt={heroTitle} fill className="object-cover object-center" priority quality={100} sizes="100vw" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/300 via-[#213B4D]/85 to-[#213B4D]/15" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/80 to-[#213B4D]/45" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <Eyebrow text={T(sk || "", "eyebrow", eyebrow)} />
           <h1
             className="text-white uppercase leading-[0.92] mb-5"
@@ -113,11 +113,11 @@ export default function SectorLayout({
           >
             {T(sk || "", "heroTitle", heroTitle)}
           </h1>
-          <p className="text-white/60 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/85 text-[16px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             {T(sk || "", "heroSubtitle", heroSubtitle)}
           </p>
           {heroDescription && (
-            <p className="text-white/40 text-[13px] max-w-lg leading-relaxed mt-3" style={{ fontFamily: B }}>
+            <p className="text-white/70 text-[15px] max-w-lg leading-relaxed mt-3" style={{ fontFamily: B }}>
               {T(sk || "", "heroDescription", heroDescription)}
             </p>
           )}
@@ -127,9 +127,9 @@ export default function SectorLayout({
       {/* ── BREADCRUMB ────────────────────────────────────────────────── */}
       <div className="bg-[#0d1e28] border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase" style={{ fontFamily: B }}>
-          <Link href="/" className="text-white/35 hover:text-[#1F93A4] transition-colors">Home</Link>
+          <Link href="/" className="text-white/65 hover:text-[#1F93A4] transition-colors">Home</Link>
           <span className="text-white/20">›</span>
-          <Link href="/sectors" className="text-white/35 hover:text-[#1F93A4] transition-colors">Sectors</Link>
+          <Link href="/sectors" className="text-white/65 hover:text-[#1F93A4] transition-colors">Sectors</Link>
           <span className="text-white/20">›</span>
           <span className="text-[#1F93A4]">{heroTitle}</span>
         </div>
@@ -144,7 +144,7 @@ export default function SectorLayout({
             <SectionHeading text="About This Service" />
             <div className="mt-6 space-y-4">
               {intro.map((para, i) => (
-                <p key={i} className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
+                <p key={i} className="text-[#5E5E5E] text-[16px] leading-relaxed" style={{ fontFamily: B }}>
                   {T(`${sk}_intro`, `p${i + 1}`, para)}
                 </p>
               ))}
@@ -162,14 +162,14 @@ export default function SectorLayout({
             <ul className="space-y-5">
               {features.map((f, i) => (
                 <li key={i} className="border-b border-white/8 pb-5 last:border-0 last:pb-0 flex gap-4">
-                  <span className="text-[#1F93A4] text-[13px] font-bold shrink-0 mt-0.5" style={{ fontFamily: H }}>
+                  <span className="text-[#1F93A4] text-[15px] font-bold shrink-0 mt-0.5" style={{ fontFamily: H }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <div className="text-white text-[13px] font-bold mb-1" style={{ fontFamily: B }}>
+                    <div className="text-white text-[15px] font-bold mb-1" style={{ fontFamily: B }}>
                       {T(`${sk}_feature_${i + 1}`, "title", f.title)}
                     </div>
-                    <div className="text-white/45 text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                    <div className="text-white/70 text-[13px] leading-relaxed" style={{ fontFamily: B }}>
                       {T(`${sk}_feature_${i + 1}`, "body", f.body)}
                     </div>
                   </div>
@@ -205,7 +205,7 @@ export default function SectorLayout({
               <Eyebrow text="What We Provide" />
               <SectionHeading text="Our Services" light />
             </div>
-            <p className="text-white/35 text-[13px] max-w-xs leading-relaxed hidden lg:block" style={{ fontFamily: B }}>
+            <p className="text-white/65 text-[15px] max-w-xs leading-relaxed hidden lg:block" style={{ fontFamily: B }}>
               Comprehensive capabilities across every phase of your project lifecycle.
             </p>
           </div>
@@ -227,11 +227,11 @@ export default function SectorLayout({
                   {SERVICE_ICONS[i % SERVICE_ICONS.length]}
                 </div>
                 <div className="w-6 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-12 transition-all duration-300" />
-                <h4 className="text-white font-bold text-[15px] mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                <h4 className="text-white font-bold text-[16px] mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                   {T(`${sk}_sg_${i + 1}`, "title", sg.title)}
                 </h4>
                 {sg.description && (
-                  <p className="text-white/40 text-[12px] leading-relaxed mb-3" style={{ fontFamily: B }}>
+                  <p className="text-white/70 text-[13px] leading-relaxed mb-3" style={{ fontFamily: B }}>
                     {T(`${sk}_sg_${i + 1}`, "description", sg.description)}
                   </p>
                 )}
@@ -239,7 +239,7 @@ export default function SectorLayout({
                   {sg.items.map((item, j) => (
                     <li
                       key={j}
-                      className="flex items-start gap-2 text-[13px] text-white/40 group-hover:text-white/60 transition-colors"
+                      className="flex items-start gap-2 text-[15px] text-white/70 group-hover:text-white/85 transition-colors"
                       style={{ fontFamily: B }}
                     >
                       <span className="text-[#1F93A4] mt-0.5 text-[10px] shrink-0">▸</span>
@@ -260,7 +260,7 @@ export default function SectorLayout({
             <div className="lg:col-span-4">
               <Eyebrow text="How We Work" />
               <SectionHeading text="Our Process" />
-              <p className="text-[#5E5E5E] text-[15px] leading-relaxed mt-4" style={{ fontFamily: B }}>
+              <p className="text-[#5E5E5E] text-[16px] leading-relaxed mt-4" style={{ fontFamily: B }}>
                 A structured, transparent approach to every engagement — from assessment through handover.
               </p>
             </div>
@@ -271,10 +271,10 @@ export default function SectorLayout({
                 <div className="text-[#1F93A4] leading-none mb-4" style={{ fontFamily: H, fontSize: "48px", fontWeight: 600 }}>
                   {step.num}
                 </div>
-                <h4 className="text-[#213B4D] font-bold text-[15px] mb-2" style={{ fontFamily: B }}>
+                <h4 className="text-[#213B4D] font-bold text-[16px] mb-2" style={{ fontFamily: B }}>
                   {T(`${sk}_step_${i + 1}`, "title", step.title)}
                 </h4>
-                <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
+                <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
                   {T(`${sk}_step_${i + 1}`, "body", step.body)}
                 </p>
               </div>
@@ -294,10 +294,10 @@ export default function SectorLayout({
             {whyUs.map((w, i) => (
               <div key={i} className="bg-[#213B4D] p-7 hover:bg-[#1a2f3d] transition-colors group">
                 <div className="w-6 h-[2px] bg-[#1F93A4] mb-5 group-hover:w-10 transition-all duration-300" />
-                <h4 className="text-white font-bold text-[14px] mb-2" style={{ fontFamily: B }}>
+                <h4 className="text-white font-bold text-[15px] mb-2" style={{ fontFamily: B }}>
                   {T(`${sk}_whyus_${i + 1}`, "title", w.title)}
                 </h4>
-                <p className="text-white/45 text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                <p className="text-white/70 text-[13px] leading-relaxed" style={{ fontFamily: B }}>
                   {T(`${sk}_whyus_${i + 1}`, "body", w.body)}
                 </p>
               </div>
@@ -317,7 +317,7 @@ export default function SectorLayout({
               {industries.map((ind, i) => (
                 <span
                   key={i}
-                  className="border border-[#213B4D]/15 text-[#213B4D] text-[12px] font-semibold px-4 py-2 hover:border-[#1F93A4] hover:text-[#1F93A4] transition-colors"
+                  className="border border-[#213B4D]/15 text-[#213B4D] text-[13px] font-semibold px-4 py-2 hover:border-[#1F93A4] hover:text-[#1F93A4] transition-colors"
                   style={{ fontFamily: B }}
                 >
                   {T(`${sk}_industries`, `item_${i + 1}`, ind)}
@@ -333,11 +333,11 @@ export default function SectorLayout({
             <div className="mt-6 space-y-3">
               {faqs.map((faq, i) => (
                 <div key={i} className="border border-[#213B4D]/10 p-6 hover:border-[#1F93A4] transition-colors">
-                  <div className="text-[#213B4D] font-bold text-[14px] mb-2 flex items-start gap-2" style={{ fontFamily: B }}>
+                  <div className="text-[#213B4D] font-bold text-[15px] mb-2 flex items-start gap-2" style={{ fontFamily: B }}>
                     <span className="text-[#1F93A4] shrink-0">Q</span>
                     {T(`${sk}_faq_${i + 1}`, "q", faq.q)}
                   </div>
-                  <div className="text-[#5E5E5E] text-[13px] leading-relaxed pl-5" style={{ fontFamily: B }}>
+                  <div className="text-[#5E5E5E] text-[15px] leading-relaxed pl-5" style={{ fontFamily: B }}>
                     {T(`${sk}_faq_${i + 1}`, "a", faq.a)}
                   </div>
                 </div>
@@ -360,7 +360,7 @@ export default function SectorLayout({
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
-          <p className="text-white/50 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
+          <p className="text-white/80 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
             Start Your Project
           </p>
           <h2
@@ -369,12 +369,12 @@ export default function SectorLayout({
           >
             {T(sk || "", "ctaTitle", ctaTitle)}
           </h2>
-          <p className="text-white/65 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/90 text-[16px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             {T(sk || "", "ctaBody", ctaBody)}
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
             style={{ fontFamily: B }}
           >
             Contact Our Team <span>→</span>

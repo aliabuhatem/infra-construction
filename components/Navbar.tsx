@@ -65,7 +65,7 @@ export default function Navbar() {
   };
 
   const navLinkClass =
-    "text-white/85 hover:text-white text-[13px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#1F93A4] after:transition-all after:duration-300 hover:after:w-full";
+    "text-white/85 hover:text-white text-[15px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#1F93A4] after:transition-all after:duration-300 hover:after:w-full";
 
   return (
     <header
@@ -104,7 +104,7 @@ export default function Navbar() {
             onMouseLeave={scheduleClose}
           >
             <button
-              className={`flex items-center gap-1.5 text-white/85 hover:text-white text-[13px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-[#1F93A4] after:transition-all after:duration-300 ${sectorsOpen ? "text-white after:w-full" : "after:w-0 hover:after:w-full"}`}
+              className={`flex items-center gap-1.5 text-white/85 hover:text-white text-[15px] font-semibold tracking-[0.12em] uppercase transition-colors duration-200 relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-[#1F93A4] after:transition-all after:duration-300 ${sectorsOpen ? "text-white after:w-full" : "after:w-0 hover:after:w-full"}`}
               style={{ fontFamily: B }}
               aria-expanded={sectorsOpen}
             >
@@ -136,7 +136,7 @@ export default function Navbar() {
                   <p className="text-white font-bold text-[16px] uppercase mb-1.5 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                     Buildings
                   </p>
-                  <p className="text-white/35 text-[11px] leading-relaxed" style={{ fontFamily: B }}>
+                  <p className="text-white/65 text-[11px] leading-relaxed" style={{ fontFamily: B }}>
                     Residential, commercial & institutional construction
                   </p>
                 </Link>
@@ -160,7 +160,7 @@ export default function Navbar() {
                       <Link
                         key={sub.label}
                         href={sub.href}
-                        className="flex items-center gap-2 text-white/45 hover:text-[#1F93A4] text-[11px] uppercase tracking-[0.08em] transition-colors group"
+                        className="flex items-center gap-2 text-white/70 hover:text-[#1F93A4] text-[11px] uppercase tracking-[0.08em] transition-colors group"
                         style={{ fontFamily: B }}
                         onClick={closeAll}
                       >
@@ -175,7 +175,7 @@ export default function Navbar() {
               <div className="border-t border-white/10 px-7 py-3">
                 <Link
                   href="/sectors"
-                  className="text-white/30 hover:text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] transition-colors"
+                  className="text-white/60 hover:text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] transition-colors"
                   style={{ fontFamily: B }}
                   onClick={closeAll}
                 >
@@ -196,7 +196,7 @@ export default function Navbar() {
 
         <Link
           href="/contact"
-          className="hidden lg:inline-flex items-center gap-2 px-6 py-2.5 bg-[#1F93A4] text-white text-[13px] font-bold tracking-wider uppercase hover:bg-white hover:text-[#213B4D] transition-all duration-300"
+          className="hidden lg:inline-flex items-center gap-2 px-6 py-2.5 bg-[#1F93A4] text-white text-[15px] font-bold tracking-wider uppercase hover:bg-white hover:text-[#213B4D] transition-all duration-300"
           style={{ fontFamily: B }}
         >
           <ContentText section="navbar" name="ctaText" fallback="Contact Us" />
@@ -246,14 +246,14 @@ export default function Navbar() {
               style={{ maxHeight: mobileSectorsOpen ? "440px" : "0px" }}
             >
               <div className="pb-3 pl-3 space-y-1">
-                <Link href="/sectors" onClick={() => setOpen(false)} className="block text-white/40 hover:text-[#1F93A4] py-1.5 text-[10px] uppercase tracking-widest transition-colors" style={{ fontFamily: B }}>
+                <Link href="/sectors" onClick={() => setOpen(false)} className="block text-white/70 hover:text-[#1F93A4] py-1.5 text-[10px] uppercase tracking-widest transition-colors" style={{ fontFamily: B }}>
                   All Sectors Overview
                 </Link>
-                <Link href="/sectors/buildings" onClick={() => setOpen(false)} className="block text-white/70 hover:text-[#1F93A4] py-2 text-[12px] font-semibold uppercase tracking-wide transition-colors" style={{ fontFamily: B }}>
+                <Link href="/sectors/buildings" onClick={() => setOpen(false)} className="block text-white/90 hover:text-[#1F93A4] py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors" style={{ fontFamily: B }}>
                   Buildings
                 </Link>
                 <div>
-                  <Link href="/sectors/infrastructure" onClick={() => setOpen(false)} className="block text-white/70 hover:text-[#1F93A4] py-2 text-[12px] font-semibold uppercase tracking-wide transition-colors" style={{ fontFamily: B }}>
+                  <Link href="/sectors/infrastructure" onClick={() => setOpen(false)} className="block text-white/90 hover:text-[#1F93A4] py-2 text-[13px] font-semibold uppercase tracking-wide transition-colors" style={{ fontFamily: B }}>
                     Infrastructure
                   </Link>
                   <div className="pl-3 space-y-0.5">
@@ -262,7 +262,7 @@ export default function Navbar() {
                         key={sub.label}
                         href={sub.href}
                         onClick={() => setOpen(false)}
-                        className="flex items-center gap-1.5 text-white/40 hover:text-[#1F93A4] py-1.5 text-[10px] uppercase tracking-wide transition-colors"
+                        className="flex items-center gap-1.5 text-white/70 hover:text-[#1F93A4] py-1.5 text-[10px] uppercase tracking-wide transition-colors"
                         style={{ fontFamily: B }}
                       >
                         <span className="text-[#1F93A4] text-[8px]">▸</span>

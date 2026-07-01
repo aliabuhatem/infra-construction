@@ -26,8 +26,8 @@ export default async function AboutPage() {
       {/* ── HERO ────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[540px] flex items-end overflow-hidden">
         <MediaImage category="about_hero" title="backgroundImage" fallbackSrc="/media/Abyan Coast Cornich-01.jpeg" alt="About INFRA Construction" className="absolute inset-0 w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/100 via-[#213B4D]/60 to-[#213B4D]/20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/75 to-[#213B4D]/45" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4]" />
             <span className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
@@ -38,7 +38,7 @@ export default async function AboutPage() {
             <ContentText section="about_hero" name="headlineLine1" fallback="About INFRA" /><br />
             <ContentText section="about_hero" name="headlineLine2" fallback="Construction" />
           </h1>
-          <p className="text-white/55 text-[17px] max-w-md leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/85 text-[17px] max-w-md leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="about_hero" name="subtitle" fallback="25 years of engineering excellence across the Middle East, Africa, and beyond." />
           </p>
         </div>
@@ -47,7 +47,7 @@ export default async function AboutPage() {
       {/* ── BREADCRUMB ────────────────────────────────────────────────── */}
       <div className="bg-[#0d1e28] border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase" style={{ fontFamily: B }}>
-          <Link href="/" className="text-white/35 hover:text-[#1F93A4] transition-colors">Home</Link>
+          <Link href="/" className="text-white/65 hover:text-[#1F93A4] transition-colors">Home</Link>
           <span className="text-white/20">›</span>
           <span className="text-[#1F93A4]">About</span>
         </div>
@@ -74,7 +74,7 @@ export default async function AboutPage() {
               <div className="w-[1px] h-10 bg-white/15" />
               <div>
                 <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.3em] mb-0.5" style={{ fontFamily: B }}>Headquarters</div>
-                <div className="text-white text-[15px] font-semibold" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
+                <div className="text-white text-[16px] font-semibold" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
               </div>
             </div>
             <p className="text-[#5E5E5E] text-[17px] leading-relaxed mb-4" style={{ fontFamily: B }}>
@@ -98,7 +98,7 @@ export default async function AboutPage() {
                     <div className="text-[#1F93A4] text-[9px] font-bold uppercase tracking-[0.25em] mb-0.5" style={{ fontFamily: B }}>
                       <ContentText section={d._key} name="label" fallback={d.label || ""} />
                     </div>
-                    <div className="text-white text-[12px] font-semibold" style={{ fontFamily: B }}>
+                    <div className="text-white text-[13px] font-semibold" style={{ fontFamily: B }}>
                       <ContentText section={d._key} name="value" fallback={d.value || ""} />
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default async function AboutPage() {
               <h3 className="text-white uppercase mb-5" style={{ fontFamily: H, fontSize: "40px", fontWeight: 600 }}>
                 <ContentText section="about_mvp" name="missionLabel" fallback="Mission" />
               </h3>
-              <p className="text-white/70 text-[17px] leading-relaxed" style={{ fontFamily: B }}>
+              <p className="text-white/90 text-[17px] leading-relaxed" style={{ fontFamily: B }}>
                 <ContentText section="about_mvp" name="missionText" fallback="In order to meet our clients' high expectations, our diverse and highly qualified staff apply their teamwork skills optimizing end results with high international standards." />
               </p>
             </div>
@@ -158,7 +158,7 @@ export default async function AboutPage() {
                 <h3 className="text-white uppercase mb-4" style={{ fontFamily: H, fontSize: "28px", fontWeight: 600 }}>
                   <ContentText section="about_mvp" name="visionLabel" fallback="Vision" />
                 </h3>
-                <p className="text-white/55 text-[16px] leading-relaxed" style={{ fontFamily: B }}>
+                <p className="text-white/85 text-[16px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section="about_mvp" name="visionText" fallback="With a focus on outstanding time, cost, and resources management, our company strives to assume a significant role in the construction of Mega projects across various domains." />
                 </p>
               </div>
@@ -169,7 +169,7 @@ export default async function AboutPage() {
                 <h3 className="text-white uppercase mb-4" style={{ fontFamily: H, fontSize: "28px", fontWeight: 600 }}>
                   <ContentText section="about_mvp" name="philosophyLabel" fallback="Philosophy" />
                 </h3>
-                <p className="text-white/55 text-[16px] leading-relaxed" style={{ fontFamily: B }}>
+                <p className="text-white/85 text-[16px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section="about_mvp" name="philosophyText" fallback="Infra Construction works to introduce excellent ways of management for a wide range of project types. All projects are managed to achieve the best goals of Scope, Time, Cost & Quality." />
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default async function AboutPage() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div className="w-6 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-10 transition-all duration-300" />
-                <p className="text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors relative" style={{ fontFamily: B }}>
+                <p className="text-[#213B4D] font-bold text-[16px] group-hover:text-[#1F93A4] transition-colors relative" style={{ fontFamily: B }}>
                   <ContentText section={s._key} name="title" fallback={s.title || ""} />
                 </p>
               </div>
@@ -232,7 +232,7 @@ export default async function AboutPage() {
             <h2 className="text-white uppercase leading-tight mb-6" style={{ fontFamily: H, fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 600 }}>
               <ContentText section="about_future_goals" name="title" fallback="Future Goals & Partnerships" />
             </h2>
-            <p className="text-white/50 text-[17px] leading-relaxed mb-10" style={{ fontFamily: B }}>
+            <p className="text-white/80 text-[17px] leading-relaxed mb-10" style={{ fontFamily: B }}>
               <ContentText section="about_future_goals" name="p1" fallback="INFRA Construction aims to build mutual interest with clients, developers, and project management units across the globe." />
             </p>
             <div>
@@ -245,8 +245,8 @@ export default async function AboutPage() {
                 ];
                 return (
                   <div key={key} className="flex items-start gap-6 border-b border-white/10 py-6">
-                    <span className="text-[#1F93A4] font-bold text-[13px] shrink-0 pt-0.5" style={{ fontFamily: B }}>0{i + 1}</span>
-                    <span className="text-white/65 text-[17px] leading-relaxed" style={{ fontFamily: B }}>
+                    <span className="text-[#1F93A4] font-bold text-[15px] shrink-0 pt-0.5" style={{ fontFamily: B }}>0{i + 1}</span>
+                    <span className="text-white/90 text-[17px] leading-relaxed" style={{ fontFamily: B }}>
                       <ContentText section="about_future_goals" name={key} fallback={defaults[i]} />
                     </span>
                   </div>
@@ -279,14 +279,14 @@ export default async function AboutPage() {
                 <h3 className="text-white font-bold text-[16px] mb-4 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                   <ContentText section={sys._key} name="title" fallback={sys.title || ""} />
                 </h3>
-                <p className="text-white/45 text-[13px] leading-relaxed mb-6 flex-1" style={{ fontFamily: B }}>
+                <p className="text-white/70 text-[15px] leading-relaxed mb-6 flex-1" style={{ fontFamily: B }}>
                   <ContentText section={sys._key} name="desc" fallback={sys.desc || ""} />
                 </p>
                 <div className="border-t border-white/8 pt-5 space-y-2.5">
                   {(sys.items || "").split(",").map((item) => item.trim()).filter(Boolean).map((item, j) => (
                     <div key={j} className="flex items-start gap-3">
                       <span className="text-[#1F93A4] text-[8px] mt-1 shrink-0">▸</span>
-                      <span className="text-white/50 text-[12px]" style={{ fontFamily: B }}>{item}</span>
+                      <span className="text-white/80 text-[13px]" style={{ fontFamily: B }}>{item}</span>
                     </div>
                   ))}
                 </div>
@@ -334,7 +334,7 @@ export default async function AboutPage() {
               <p className="text-white/75 text-[17px] leading-relaxed mb-5" style={{ fontFamily: B }}>
                 <ContentText section="about_leadership_founder" name="bio" fallback="As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 2000." />
               </p>
-              <p className="text-white/55 text-[15px] leading-relaxed mb-8" style={{ fontFamily: B }}>
+              <p className="text-white/85 text-[16px] leading-relaxed mb-8" style={{ fontFamily: B }}>
                 <ContentText section="about_leadership_founder" name="bio2" fallback="His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step." />
               </p>
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
@@ -403,7 +403,7 @@ export default async function AboutPage() {
                   <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.25em] mb-3" style={{ fontFamily: B }}>
                     <ContentText section={l._key} name="title" fallback={l.title || ""} />
                   </div>
-                  <p className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                  <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
                     <ContentText section={l._key} name="bio" fallback={l.bio || ""} />
                   </p>
                 </div>
@@ -442,12 +442,12 @@ export default async function AboutPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-[1px] bg-[#213B4D]/10 border border-[#213B4D]/10">
             {deptItems.map((d) => (
               <div key={d._key} className="bg-white p-6">
-                <h4 className="text-[#213B4D] font-bold text-[12px] uppercase tracking-wide mb-4 pb-3 border-b border-[#1F93A4]/30" style={{ fontFamily: B }}>
+                <h4 className="text-[#213B4D] font-bold text-[13px] uppercase tracking-wide mb-4 pb-3 border-b border-[#1F93A4]/30" style={{ fontFamily: B }}>
                   <ContentText section={d._key} name="title" fallback={d.title || ""} />
                 </h4>
                 <ul className="space-y-2">
                   {(d.items || "").split(",").map((item) => item.trim()).filter(Boolean).map((item, j) => (
-                    <li key={j} className="text-[#5E5E5E] text-[12px] flex items-center gap-2" style={{ fontFamily: B }}>
+                    <li key={j} className="text-[#5E5E5E] text-[13px] flex items-center gap-2" style={{ fontFamily: B }}>
                       <span className="text-[#1F93A4] text-[8px]">◆</span>
                       {item}
                     </li>
@@ -481,7 +481,7 @@ export default async function AboutPage() {
                 <div className="text-white font-bold mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, fontSize: "26px" }}>
                   <ContentText section={o._key} name="city" fallback={o.city || ""} />
                 </div>
-                <div className="text-white/35 text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                <div className="text-white/65 text-[13px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section={o._key} name="address" fallback={o.address || ""} />
                 </div>
               </div>
@@ -513,14 +513,14 @@ export default async function AboutPage() {
 
             <div className="grid grid-cols-2 gap-x-6 gap-y-0 border-t border-[#213B4D]/10 mb-8">
               {["Engineers", "Technicians", "Inspectors", "Quantity Surveyors", "Project Managers", "Consultants"].map((role, i) => (
-                <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-[#213B4D]/8 text-[13px] text-[#5E5E5E]" style={{ fontFamily: B }}>
+                <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-[#213B4D]/8 text-[15px] text-[#5E5E5E]" style={{ fontFamily: B }}>
                   <span className="text-[#1F93A4] text-[10px]">▸</span>
                   <ContentText section="about_team_roles" name={`role_${i + 1}`} fallback={role} />
                 </div>
               ))}
             </div>
 
-            <Link href="/careers" className="inline-flex items-center gap-3 text-[#213B4D] font-bold text-[13px] uppercase tracking-widest hover:text-[#1F93A4] transition-colors group" style={{ fontFamily: B }}>
+            <Link href="/careers" className="inline-flex items-center gap-3 text-[#213B4D] font-bold text-[15px] uppercase tracking-widest hover:text-[#1F93A4] transition-colors group" style={{ fontFamily: B }}>
               Join Our Team <span className="group-hover:translate-x-1.5 transition-transform inline-block">→</span>
             </Link>
           </div>
@@ -531,16 +531,16 @@ export default async function AboutPage() {
       <section className="relative py-28 bg-[#1F93A4] overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%)", backgroundSize: "20px 20px" }} />
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
-          <p className="text-white/50 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
+          <p className="text-white/80 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
             <ContentText section="about_cta" name="eyebrow" fallback="Start Your Project" />
           </p>
           <h2 className="text-white uppercase leading-[0.92] mb-6" style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="about_cta" name="title" fallback="LET'S BUILD TOGETHER" />
           </h2>
-          <p className="text-white/65 text-[17px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/90 text-[17px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="about_cta" name="body" fallback="Connect with our team to discuss your next infrastructure, building, or industrial project." />
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
+          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
             <ContentText section="about_cta" name="buttonText" fallback="Contact Us" /> <span>→</span>
           </Link>
         </div>

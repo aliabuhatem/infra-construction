@@ -46,7 +46,7 @@ export default async function HomePage() {
           alt="INFRA Construction"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/120 via-[#213B4D]/90 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/80 to-[#213B4D]/30" />
 
         {/* Locations strip — top right, well below navbar */}
         <div
@@ -62,7 +62,7 @@ export default async function HomePage() {
         </div>
 
         {/* Main content — sits at bottom */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
 
           {/* Eyebrow */}
           <div className="flex items-center gap-3 mb-5">
@@ -94,7 +94,7 @@ export default async function HomePage() {
           {/* Sub-section */}
           <div className="mt-7 pt-6 border-t border-white/15 max-w-2xl">
             <p
-              className="text-white/70 text-[17px] leading-relaxed mb-7"
+              className="text-white/90 text-[17px] leading-relaxed mb-7"
               style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText
@@ -106,14 +106,14 @@ export default async function HomePage() {
             <div className="flex items-center gap-4">
               <Link
                 href="/sectors"
-                className="inline-flex items-center gap-2 bg-[#1F93A4] text-white font-bold px-8 py-3.5 text-[12px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
+                className="inline-flex items-center gap-2 bg-[#1F93A4] text-white font-bold px-8 py-3.5 text-[13px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
                 style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_hero" name="ctaPrimaryText" fallback="Our Sectors" />
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 border border-white/40 text-white font-bold px-8 py-3.5 text-[12px] uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all duration-300"
+                className="inline-flex items-center gap-2 border border-white/40 text-white font-bold px-8 py-3.5 text-[13px] uppercase tracking-widest hover:border-white hover:bg-white/10 transition-all duration-300"
                 style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_hero" name="ctaSecondaryText" fallback="About Us" />
@@ -173,7 +173,7 @@ export default async function HomePage() {
                 </span>
               </div>
               <p
-                className="text-[#213B4D]/40 text-[11px] font-bold uppercase tracking-[0.35em]"
+                className="text-[#213B4D]/70 text-[11px] font-bold uppercase tracking-[0.35em]"
                 style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
               >
                 <ContentText section="home_statement" name="bigNumberLabel" fallback="Projects Delivered" />
@@ -216,7 +216,7 @@ export default async function HomePage() {
                 </span>
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 text-[#213B4D] text-[12px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
+                  className="inline-flex items-center gap-2 text-[#213B4D] text-[13px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   <ContentText section="home_statement" name="linkText" fallback="Our Story" /> →
@@ -258,7 +258,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/sectors"
-              className="text-[#213B4D]/50 hover:text-[#1F93A4] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
+              className="text-[#213B4D]/75 hover:text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
               style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
             >
               <ContentText section="home_sectors_header" name="linkText" fallback="View All Sectors" />
@@ -298,14 +298,14 @@ export default async function HomePage() {
                     style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
                     <ContentText section="home_sector_buildings" name="title" fallback="Buildings" />
                   </h3>
-                  <p className="text-white/55 text-[15px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
                     <ContentText
                       section="home_sector_buildings"
                       name="short"
                       fallback="Residential, commercial, and institutional construction from concept to handover."
                     />
                   </p>
-                  <span className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
                     <ContentText section="home_sector_buildings" name="exploreText" fallback="Explore" />{" "}
                     <span className="group-hover:translate-x-1.5 transition-transform duration-300 inline-block">→</span>
                   </span>
@@ -330,7 +330,7 @@ export default async function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#213B4D]/50 via-[#213B4D]/50 to-transparent" />
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <p className="text-[#bfc6c7] text-[12px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-[#bfc6c7] text-[13px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
                     <ContentText section="home_sector_infrastructure" name="badgeLabel" fallback="02 · Umbrella Sector" />
                   </p>
                 </div>
@@ -340,14 +340,14 @@ export default async function HomePage() {
                     style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif", fontSize: "clamp(32px, 4vw, 52px)", fontWeight: 600 }}>
                     <ContentText section="home_sector_infrastructure" name="title" fallback="Infrastructure" />
                   </h3>
-                  <p className="text-white/55 text-[15px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <p className="text-white/85 text-[16px] leading-relaxed mb-6 max-w-sm" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
                     <ContentText
                       section="home_sector_infrastructure"
                       name="short"
                       fallback="Civil works, water systems, energy, and industrial projects across the Middle East and Africa."
                     />
                   </p>
-                  <span className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
+                  <span className="text-[#1F93A4] text-[13px] font-bold uppercase tracking-widest flex items-center gap-2" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
                     <ContentText section="home_sector_infrastructure" name="exploreText" fallback="Explore" />{" "}
                     <span className="group-hover:translate-x-1.5 transition-transform duration-300 inline-block">→</span>
                   </span>
@@ -413,7 +413,7 @@ export default async function HomePage() {
             </div>
             <div className="flex flex-col gap-3 shrink-0 lg:items-end">
               <span
-                className="text-[#213B4D]/45 text-[10px] font-bold uppercase tracking-[0.3em]"
+                className="text-[#213B4D]/70 text-[10px] font-bold uppercase tracking-[0.3em]"
                 style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
               >
                 Browse Projects By Sector
@@ -421,21 +421,21 @@ export default async function HomePage() {
               <div className="flex flex-wrap gap-2">
                 <Link
                   href="/projects?category=infrastructure"
-                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
+                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   Infrastructure
                 </Link>
                 <Link
                   href="/projects?category=building"
-                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
+                  className="bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   Building
                 </Link>
                 <Link
                   href="/projects"
-                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
+                  className="border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[13px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 transition-colors"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   All
@@ -505,8 +505,8 @@ export default async function HomePage() {
           alt="INFRA Construction team"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0d1e28]/105 via-[#0d1e28]/95 to-transparent" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 py-20 flex flex-col justify-center" style={{ minHeight: "620px" }}>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0d1e28] via-[#0d1e28]/90 to-[#0d1e28]/20" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 py-20 flex flex-col justify-center text-shadow-legible" style={{ minHeight: "620px" }}>
           <div className="max-w-xl">
             <div className="flex items-center gap-8 mb-8">
               <div>
@@ -521,7 +521,7 @@ export default async function HomePage() {
                   <ContentText section="home_about_split" name="stat1Value" fallback="25 Years" />
                 </p>
                 <p
-                  className="text-white/40 text-[10px] uppercase tracking-[0.3em] mt-1"
+                  className="text-white/70 text-[10px] uppercase tracking-[0.3em] mt-1"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   <ContentText section="home_about_split" name="stat1Label" fallback="of Excellence" />
@@ -540,7 +540,7 @@ export default async function HomePage() {
                   <ContentText section="home_about_split" name="stat2Value" fallback="12 Countries" />
                 </p>
                 <p
-                  className="text-white/40 text-[10px] uppercase tracking-[0.3em] mt-1"
+                  className="text-white/70 text-[10px] uppercase tracking-[0.3em] mt-1"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   <ContentText section="home_about_split" name="stat2Label" fallback="of Operation" />
@@ -564,7 +564,7 @@ export default async function HomePage() {
               <ContentText section="home_about_split" name="heading" fallback="A Global Engineering & Construction Partner" />
             </h2>
             <p
-              className="text-white/65 text-[17px] leading-relaxed mb-5"
+              className="text-white/90 text-[17px] leading-relaxed mb-5"
               style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
             >
               <ContentText
@@ -574,7 +574,7 @@ export default async function HomePage() {
               />
             </p>
             <p
-              className="text-white/65 text-[17px] leading-relaxed mb-8"
+              className="text-white/90 text-[17px] leading-relaxed mb-8"
               style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
             >
               <ContentText
@@ -594,7 +594,7 @@ export default async function HomePage() {
               ].map((item) => (
                 <div
                   key={item.name}
-                  className="flex items-center gap-2 text-[13px] text-white/55 py-1.5 border-b border-white/10"
+                  className="flex items-center gap-2 text-[15px] text-white/85 py-1.5 border-b border-white/10"
                   style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                 >
                   <span className="text-[#1F93A4] text-[10px]">▸</span>
@@ -604,7 +604,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/about"
-              className="inline-flex items-center gap-3 text-white font-bold text-[13px] uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
+              className="inline-flex items-center gap-3 text-white font-bold text-[15px] uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
               style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
             >
               <ContentText section="home_about_split" name="linkText" fallback="Discover Our Story" />
@@ -641,7 +641,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/news"
-              className="text-[#213B4D]/60 hover:text-[#1F93A4] text-[13px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
+              className="text-[#213B4D]/80 hover:text-[#1F93A4] text-[15px] font-semibold uppercase tracking-widest flex items-center gap-2 transition-colors group shrink-0"
               style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
             >
               <ContentText section="home_news_header" name="linkText" fallback="View All News" />
@@ -681,7 +681,7 @@ export default async function HomePage() {
                     <ContentText section={n._key} name="date" fallback={n.date || ""} />
                   </p>
                   <h3
-                    className="text-[#213B4D] font-bold text-[15px] leading-snug group-hover:text-[#1F93A4] transition-colors"
+                    className="text-[#213B4D] font-bold text-[16px] leading-snug group-hover:text-[#1F93A4] transition-colors"
                     style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
                   >
                     <ContentText section={n._key} name="title" fallback={n.title || ""} />
@@ -720,7 +720,7 @@ export default async function HomePage() {
               </h2>
             </div>
             <p
-              className="text-white/45 text-[17px] leading-relaxed lg:pt-14"
+              className="text-white/70 text-[17px] leading-relaxed lg:pt-14"
               style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText
@@ -743,7 +743,7 @@ export default async function HomePage() {
                 className="group flex items-center border-b border-white/[0.08] py-5 hover:bg-white/[0.03] transition-colors -mx-6 lg:-mx-14 px-6 lg:px-14"
               >
                 <span
-                  className="text-[#1F93A4] text-[12px] font-bold tracking-widest w-10 shrink-0"
+                  className="text-[#1F93A4] text-[13px] font-bold tracking-widest w-10 shrink-0"
                   style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section={o.key} name="num" fallback={o.fallbackNum} />
@@ -759,7 +759,7 @@ export default async function HomePage() {
                   <ContentText section={o.key} name="city" fallback={o.fallbackCity} />
                 </span>
                 <span
-                  className="text-white text-[12px] font-bold uppercase tracking-[0.25em] shrink-0"
+                  className="text-white text-[13px] font-bold uppercase tracking-[0.25em] shrink-0"
                   style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
                 >
                   <ContentText section={o.key} name="country" fallback={o.fallbackCountry} />
@@ -770,7 +770,7 @@ export default async function HomePage() {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-white/50 text-[12px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
+              className="inline-flex items-center gap-2 text-white/80 text-[13px] font-bold uppercase tracking-widest hover:text-[#1F93A4] transition-colors group"
               style={{ fontFamily: "var(--font-ibm-plex-sans), system-ui, -apple-system, sans-serif" }}
             >
               <ContentText section="home_global" name="linkText" fallback="Find Our Offices" />
@@ -792,7 +792,7 @@ export default async function HomePage() {
         />
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-14 text-center">
           <p
-            className="text-white/50 text-[11px] font-bold uppercase tracking-[0.45em] mb-6"
+            className="text-white/80 text-[11px] font-bold uppercase tracking-[0.45em] mb-6"
             style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
           >
             <ContentText section="home_cta" name="eyebrow" fallback="Start Your Project" />
@@ -811,7 +811,7 @@ export default async function HomePage() {
             <ContentText section="home_cta" name="headingLine3" fallback="GREAT" />
           </h2>
           <p
-            className="text-white/65 text-[17px] mb-10 max-w-lg mx-auto leading-relaxed"
+            className="text-white/90 text-[17px] mb-10 max-w-lg mx-auto leading-relaxed"
             style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
           >
             <ContentText
@@ -822,7 +822,7 @@ export default async function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-400"
+            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-400"
             style={{ fontFamily: "var(--font-ibm-plex-sans)" }}
           >
             <ContentText section="home_cta" name="buttonText" fallback="Contact Our Team" />

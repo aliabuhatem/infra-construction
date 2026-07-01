@@ -59,14 +59,14 @@ export default async function SectorProjectsList({
         {projects.map((p) => (
           <div
             key={p.sectionKey}
-            className="flex items-start gap-2 text-white/55 text-[12px] py-2 border-b border-white/8 last:border-0"
+            className="flex items-start gap-2 text-white/85 text-[13px] py-2 border-b border-white/8 last:border-0"
             style={{ fontFamily: B }}
           >
             <span className="text-[#1F93A4] text-[8px] shrink-0 mt-1.5">▸</span>
             <span>
               <ContentText section={p.sectionKey} name="title" fallback={p.title} />
               {p.country && (
-                <span className="text-white/30">
+                <span className="text-white/60">
                   {" — "}
                   <ContentText section={p.sectionKey} name="country" fallback={p.country} />
                 </span>

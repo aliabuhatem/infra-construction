@@ -39,7 +39,7 @@ export default async function Footer() {
             <span className="text-2xl font-bold tracking-wide">INFRA</span>
             <span className="text-2xl font-normal text-[#4FC3B7]">CONSTRUCTION</span>
           </div>
-          <p className="text-white/60 text-sm leading-relaxed mb-5" style={{ fontFamily: B }}>
+          <p className="text-white/85 text-sm leading-relaxed mb-5" style={{ fontFamily: B }}>
             <ContentText section="footer" name="tagline" fallback="A leading contracting company delivering world-class infrastructure, buildings, and industrial projects since 2000." />
           </p>
           <div className="flex gap-2 mb-5">
@@ -68,7 +68,7 @@ export default async function Footer() {
           <ul className="space-y-2">
             {sectors.map((s) => (
               <li key={s.href}>
-                <Link href={s.href} className="text-sm text-white/70 hover:text-[#4FC3B7] flex items-center gap-2" style={{ fontFamily: B }}>
+                <Link href={s.href} className="text-sm text-white/90 hover:text-[#4FC3B7] flex items-center gap-2" style={{ fontFamily: B }}>
                   <span className="text-[#4FC3B7]">▸</span> {s.label}
                 </Link>
               </li>
@@ -82,7 +82,7 @@ export default async function Footer() {
           <ul className="space-y-2">
             {nav.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-sm text-white/70 hover:text-[#4FC3B7] flex items-center gap-2" style={{ fontFamily: B }}>
+                <Link href={l.href} className="text-sm text-white/90 hover:text-[#4FC3B7] flex items-center gap-2" style={{ fontFamily: B }}>
                   <span className="text-[#4FC3B7]">▸</span> {l.label}
                 </Link>
               </li>
@@ -97,16 +97,16 @@ export default async function Footer() {
             {offices.map((o) => (
               <li key={o._key} className="text-sm" style={{ fontFamily: B }}>
                 <span className="text-white">{o.city}</span>
-                <span className="text-white/40 ml-2 text-xs">{o.country}</span>
+                <span className="text-white/70 ml-2 text-xs">{o.country}</span>
               </li>
             ))}
           </ul>
 
           <div className="space-y-2 pt-4 border-t border-white/10" style={{ fontFamily: B }}>
-            <a href={`mailto:${email}`} className="block text-sm text-white/70 hover:text-[#4FC3B7]">
+            <a href={`mailto:${email}`} className="block text-sm text-white/90 hover:text-[#4FC3B7]">
               ✉ {email}
             </a>
-            <a href={`tel:${phone}`} className="block text-sm text-white/70 hover:text-[#4FC3B7]">
+            <a href={`tel:${phone}`} className="block text-sm text-white/90 hover:text-[#4FC3B7]">
               ☎ {phone}
             </a>
             <Link href="/contact" className="inline-block text-[11px] uppercase tracking-widest text-[#4FC3B7] hover:text-white mt-2">
@@ -118,7 +118,7 @@ export default async function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-white/50" style={{ fontFamily: B }}>
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-white/80" style={{ fontFamily: B }}>
           <p>© {new Date().getFullYear()} INFRA Construction for Contracting LLC. All rights reserved.</p>
           <p>Developed by Eng.Ali Abuhatem</p>
         </div>

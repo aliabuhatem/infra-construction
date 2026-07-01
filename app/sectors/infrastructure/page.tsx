@@ -178,7 +178,7 @@ export default function InfrastructurePage() {
               >
                 Infrastructure Projects
               </h2>
-              <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
+              <p className="text-[#5E5E5E] text-[16px] leading-relaxed" style={{ fontFamily: B }}>
                 A selection of infrastructure and civil works projects delivered across the Middle East, Africa, and beyond.
               </p>
             </div>

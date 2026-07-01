@@ -95,10 +95,10 @@ export default async function SectorProjects({
                 <div className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="sector" fallback={p.sector} />
                 </div>
-                <h3 className="text-[#213B4D] font-bold text-[15px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                <h3 className="text-[#213B4D] font-bold text-[16px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="title" fallback={p.title} />
                 </h3>
-                <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
+                <p className="text-[#5E5E5E] text-[15px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="description" fallback={p.description} />
                 </p>
               </div>

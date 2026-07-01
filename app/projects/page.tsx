@@ -42,8 +42,8 @@ export default async function ProjectsPage({
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
         <MediaImage category="projects_hero" title="backgroundImage" fallbackSrc="/media/project-hero.jpg" alt="Our Projects" className="absolute inset-0 w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/90 via-[#213B4D]/50 to-[#213B4D]/7" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/72 to-[#213B4D]/42" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
             <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
@@ -53,7 +53,7 @@ export default async function ProjectsPage({
           <h1 className="text-white uppercase leading-[0.92] mb-5" style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="projects_hero" name="title" fallback="Projects" />
           </h1>
-          <p className="text-white/60 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/85 text-[16px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="projects_hero" name="subtitle" fallback="Over 75 projects delivered across multiple regions — each one a testament to INFRA's commitment to quality." />
           </p>
         </div>
@@ -62,7 +62,7 @@ export default async function ProjectsPage({
       {/* ── BREADCRUMB ────────────────────────────────────────────────────── */}
       <div className="bg-[#0d1e28] border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase" style={{ fontFamily: B }}>
-          <Link href="/" className="text-white/35 hover:text-[#1F93A4] transition-colors">Home</Link>
+          <Link href="/" className="text-white/65 hover:text-[#1F93A4] transition-colors">Home</Link>
           <span className="text-white/20">›</span>
           <span className="text-[#1F93A4]">Projects</span>
         </div>
@@ -85,9 +85,9 @@ export default async function ProjectsPage({
             </p>
           </div>
           <div className="lg:col-span-3 border-l border-white/10 pl-10 hidden lg:block">
-            <div className="text-white/40 text-[12px] font-semibold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>Est.</div>
+            <div className="text-white/70 text-[13px] font-semibold uppercase tracking-[0.2em] mb-2" style={{ fontFamily: B }}>Est.</div>
             <div className="text-[#1F93A4] leading-none" style={{ fontFamily: H, fontSize: "72px", fontWeight: 600 }}>2000</div>
-            <div className="text-white/40 text-[12px] font-semibold uppercase tracking-[0.2em] mt-2" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
+            <div className="text-white/70 text-[13px] font-semibold uppercase tracking-[0.2em] mt-2" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
           </div>
         </div>
       </section>
@@ -96,16 +96,16 @@ export default async function ProjectsPage({
       <section className="relative py-28 bg-[#1F93A4] overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%)", backgroundSize: "20px 20px" }} />
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
-          <p className="text-white/50 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
+          <p className="text-white/80 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
             <ContentText section="projects_cta" name="eyebrow" fallback="Partner With Us" />
           </p>
           <h2 className="text-white uppercase leading-[0.92] mb-6" style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="projects_cta" name="title" fallback="Start Your Project" />
           </h2>
-          <p className="text-white/65 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/90 text-[16px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="projects_cta" name="body" fallback="Partner with INFRA Construction for reliable project delivery across all infrastructure and building sectors." />
           </p>
-          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
+          <Link href="/contact" className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300" style={{ fontFamily: B }}>
             <ContentText section="projects_cta" name="buttonText" fallback="Contact Our Team" /> <span>→</span>
           </Link>
         </div>

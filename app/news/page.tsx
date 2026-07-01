@@ -43,8 +43,8 @@ export default async function NewsPage() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/96 via-[#213B4D]/70 to-[#213B4D]/20" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full">
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/75 to-[#213B4D]/45" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
             <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
@@ -57,7 +57,7 @@ export default async function NewsPage() {
           >
             <ContentText section="news_hero" name="title" fallback="News & Updates" />
           </h1>
-          <p className="text-white/60 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/85 text-[16px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="news_hero" name="subtitle" fallback="Project milestones, partnerships, certifications, and company developments from across our global operations." />
           </p>
         </div>
@@ -69,7 +69,7 @@ export default async function NewsPage() {
           className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase"
           style={{ fontFamily: B }}
         >
-          <Link href="/" className="text-white/35 hover:text-[#1F93A4] transition-colors">Home</Link>
+          <Link href="/" className="text-white/65 hover:text-[#1F93A4] transition-colors">Home</Link>
           <span className="text-white/20">›</span>
           <span className="text-[#1F93A4]">News</span>
         </div>
@@ -79,7 +79,7 @@ export default async function NewsPage() {
       {/* Source note: all news content sourced from INFRA LinkedIn page */}
       <div className="bg-[#213B4D] border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-14 py-3.5 flex items-center justify-between gap-4">
-          <p className="text-white/50 text-[12px]" style={{ fontFamily: B }}>
+          <p className="text-white/80 text-[13px]" style={{ fontFamily: B }}>
             Follow us on LinkedIn for the latest updates and project news
           </p>
           <a
@@ -137,12 +137,12 @@ export default async function NewsPage() {
                   </div>
                   <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
                   <h3
-                    className="text-[#213B4D] font-bold text-[14px] leading-snug mb-3 group-hover:text-[#1F93A4] transition-colors"
+                    className="text-[#213B4D] font-bold text-[15px] leading-snug mb-3 group-hover:text-[#1F93A4] transition-colors"
                     style={{ fontFamily: B }}
                   >
                     <ContentText section={item.sectionKey} name="title" fallback={item.title} />
                   </h3>
-                  <p className="text-[#5E5E5E] text-[13px] leading-relaxed line-clamp-3" style={{ fontFamily: B }}>
+                  <p className="text-[#5E5E5E] text-[15px] leading-relaxed line-clamp-3" style={{ fontFamily: B }}>
                     <ContentText section={item.sectionKey} name="excerpt" fallback={item.excerpt} />
                   </p>
                   <div
@@ -174,7 +174,7 @@ export default async function NewsPage() {
             >
               Follow Our Latest<br />Developments
             </h2>
-            <p className="text-white/50 text-[15px] leading-relaxed mt-5" style={{ fontFamily: B }}>
+            <p className="text-white/80 text-[16px] leading-relaxed mt-5" style={{ fontFamily: B }}>
               All INFRA Construction news and updates are sourced directly from our official LinkedIn page. Follow us to stay up to date with project milestones, new partnerships, certifications, and company news in real time.
             </p>
           </div>
@@ -183,7 +183,7 @@ export default async function NewsPage() {
               href="https://www.linkedin.com/company/ic-gp"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
+              className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
               style={{ fontFamily: B }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -193,7 +193,7 @@ export default async function NewsPage() {
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 border border-[#1F93A4] text-[#1F93A4] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#1F93A4] hover:text-white transition-all duration-300"
+              className="inline-flex items-center gap-3 border border-[#1F93A4] text-[#1F93A4] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#1F93A4] hover:text-white transition-all duration-300"
               style={{ fontFamily: B }}
             >
               Get in Touch →
@@ -212,7 +212,7 @@ export default async function NewsPage() {
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
-          <p className="text-white/50 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
+          <p className="text-white/80 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
             Work With Us
           </p>
           <h2
@@ -221,12 +221,12 @@ export default async function NewsPage() {
           >
             Ready to Build<br />Something Great?
           </h2>
-          <p className="text-white/65 text-[15px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
+          <p className="text-white/90 text-[16px] mb-10 max-w-lg mx-auto leading-relaxed" style={{ fontFamily: B }}>
             Reach out to our team and let us know how INFRA Construction can contribute to your next project.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[15px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
             style={{ fontFamily: B }}
           >
             Contact Our Team <span>→</span>

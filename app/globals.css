@@ -62,3 +62,10 @@ h1, h2 {
 .img-zoom:hover img {
   transform: scale(1.06);
 }
+
+/* Legibility helper: applied to text sitting on top of background images/photos
+   so it stays readable regardless of the image behind it. */
+.text-shadow-legible,
+.text-shadow-legible * {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 2px 14px rgba(0, 0, 0, 0.4);
+}
