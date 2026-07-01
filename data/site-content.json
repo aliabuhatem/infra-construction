@@ -2930,7 +2930,7 @@
       "phone": "+20 345680875"
     },
     "navbar": {
-      "logo": "/media/1782904914470-infra-logo.png",
+      "logo": "/media/Infra-Logo.png",
       "ctaText": "Contact US",
       "ctaHref": "/contact"
     },
@@ -2965,7 +2965,7 @@
       "title": "logo",
       "alt": "logo",
       "category": "gallery",
-      "url": "/media/1782904914470-infra-logo.png",
+      "url": "/media/Infra-Logo.png",
       "source": "upload",
       "createdAt": "2026-07-01T11:21:55.121Z"
     },
