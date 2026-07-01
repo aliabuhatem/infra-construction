@@ -289,7 +289,7 @@ export default async function HomePage() {
               <div className="absolute inset-0 p-8 lg:p-10 flex flex-col justify-between">
                 <div>
                   <p className="text-[#1F93A4] text-[10px] font-bold uppercase tracking-[0.3em]" style={{ fontFamily: "var(--font-ibm-plex-sans)" }}>
-                    <ContentText section="home_sector_buildings" name="badgeLabel" fallback="01 · Standalone Sector" />
+rgb(255, 255, 255)             <ContentText section="home_sector_buildings" name="badgeLabel" fallback="01 · Standalone Sector" />
                   </p>
                 </div>
                 <div>
