@@ -35,6 +35,8 @@ const fieldLabel = (name) =>
 // Map section prefix → display group name with order priority
 const GROUP_ORDER = [
   "Home Page",
+  "Sectors",
+  "Services",
   "About Page",
   "Sectors Page",
   "Sector Pages",
@@ -50,6 +52,9 @@ const GROUP_ORDER = [
 const sectionGroup = (name) => {
   const lower = name.toLowerCase();
   if (lower.startsWith("home_") || lower === "home") return "Home Page";
+  // New expertise system: svc_<slug> / sct_<slug> (+ svc_hub / sct_hub)
+  if (lower.startsWith("svc_")) return "Services";
+  if (lower.startsWith("sct_")) return "Sectors";
   if (lower.startsWith("about_") || lower === "about") return "About Page";
   if (lower.startsWith("sectors_") && !lower.startsWith("sector_")) return "Sectors Page";
   if (lower.startsWith("sector_")) return "Sector Pages";

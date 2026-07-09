@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
+import { Reveal } from "@/components/motion";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -44,15 +45,15 @@ export default async function NewsPage() {
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/75 to-[#213B4D]/45" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
+        <Reveal className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-            <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+            <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
               <ContentText section="news_hero" name="eyebrow" fallback="Latest Updates" />
             </p>
           </div>
           <h1
-            className="text-white uppercase leading-[0.92] mb-5"
+            className="text-white  leading-[0.92] mb-5"
             style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
             <ContentText section="news_hero" name="title" fallback="News & Updates" />
@@ -60,33 +61,33 @@ export default async function NewsPage() {
           <p className="text-white/85 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="news_hero" name="subtitle" fallback="Project milestones, partnerships, certifications, and company developments from across our global operations." />
           </p>
-        </div>
+        </Reveal>
       </section>
 
       {/* ── BREADCRUMB ────────────────────────────────────────────────────── */}
-      <div className="bg-[#0d1e28] border-b border-white/5">
+      <div className="bg-[#f6f8f9] border-b border-[#213B4D]/10">
         <div
-          className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase"
+          className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] "
           style={{ fontFamily: B }}
         >
-          <Link href="/" className="text-white/65 hover:text-[#1F93A4] transition-colors">Home</Link>
-          <span className="text-white/20">›</span>
-          <span className="text-[#1F93A4]">News</span>
+          <Link href="/" className="text-[#5E5E5E] hover:text-[#1F93A4] transition-colors">Home</Link>
+          <span className="text-[#213B4D]/25">›</span>
+          <span className="text-[#1F93A4] font-semibold">News</span>
         </div>
       </div>
 
       {/* ── LINKEDIN BANNER ───────────────────────────────────────────────── */}
       {/* Source note: all news content sourced from INFRA LinkedIn page */}
-      <div className="bg-[#213B4D] border-b border-white/5">
+      <div className="bg-white border-b border-[#213B4D]/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-14 py-3.5 flex items-center justify-between gap-4">
-          <p className="text-white/80 text-[12px]" style={{ fontFamily: B }}>
+          <p className="text-[#5E5E5E] text-[12px]" style={{ fontFamily: B }}>
             Follow us on LinkedIn for the latest updates and project news
           </p>
           <a
             href="https://www.linkedin.com/company/ic-gp"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] hover:text-white transition-colors shrink-0"
+            className="flex items-center gap-2 text-[#1F93A4] text-[11px] font-bold  tracking-[0.2em] hover:text-white transition-colors shrink-0"
             style={{ fontFamily: B }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -98,14 +99,14 @@ export default async function NewsPage() {
       </div>  
  
       {/* ── NEWS GRID ─────────────────────────────────────────────────────── */}
-      <section className="pb-24 bg-white">
+      <section className="pb-24 pt-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
-          <div className="flex items-center gap-3 mb-10">
+          <Reveal className="flex items-center gap-3 mb-10">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-            <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+            <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
               Recent Updates
             </p>
-          </div>
+          </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
             {allItems.map((item) => (
               <Link
@@ -126,7 +127,7 @@ export default async function NewsPage() {
                 <div className="p-7">
                   <div className="flex items-center gap-3 mb-4">
                     <span
-                      className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
+                      className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1  tracking-[0.15em]"
                       style={{ fontFamily: B }}
                     >
                       <ContentText section={item.sectionKey} name="category" fallback={item.category} />
@@ -146,7 +147,7 @@ export default async function NewsPage() {
                     <ContentText section={item.sectionKey} name="excerpt" fallback={item.excerpt} />
                   </p>
                   <div
-                    className="mt-5 text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2 group-hover:gap-3 transition-all"
+                    className="mt-5 text-[#1F93A4] text-[11px] font-bold  tracking-[0.2em] inline-flex items-center gap-2 group-hover:gap-3 transition-all"
                     style={{ fontFamily: B }}
                   >
                     Read More <span>→</span>
@@ -159,22 +160,22 @@ export default async function NewsPage() {
       </section>
 
       {/* ── STAY CONNECTED ────────────────────────────────────────────────── */}
-      <section className="py-24 bg-[#0d1e28]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-14 grid lg:grid-cols-12 gap-14 items-center">
+      <section className="py-24 bg-[#f6f8f9] border-t border-[#213B4D]/8">
+        <Reveal className="max-w-7xl mx-auto px-6 lg:px-14 grid lg:grid-cols-12 gap-14 items-center">
           <div className="lg:col-span-7">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-              <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 Stay Connected
               </p>
             </div>
             <h2
-              className="text-white uppercase leading-tight"
+              className="text-[#213B4D]  leading-tight"
               style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 52px)", fontWeight: 600, letterSpacing: "-0.01em" }}
             >
               Follow Our Latest<br />Developments
             </h2>
-            <p className="text-white/80 text-[15px] leading-relaxed mt-5" style={{ fontFamily: B }}>
+            <p className="text-[#5E5E5E] text-[15px] leading-relaxed mt-5" style={{ fontFamily: B }}>
               All INFRA Construction news and updates are sourced directly from our official LinkedIn page. Follow us to stay up to date with project milestones, new partnerships, certifications, and company news in real time.
             </p>
           </div>
@@ -183,7 +184,7 @@ export default async function NewsPage() {
               href="https://www.linkedin.com/company/ic-gp"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
+              className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[13px]  tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
               style={{ fontFamily: B }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -193,13 +194,13 @@ export default async function NewsPage() {
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 border border-[#1F93A4] text-[#1F93A4] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#1F93A4] hover:text-white transition-all duration-300"
+              className="inline-flex items-center gap-3 border border-[#1F93A4] text-[#1F93A4] font-bold px-10 py-4 text-[13px]  tracking-widest hover:bg-[#1F93A4] hover:text-white transition-all duration-300"
               style={{ fontFamily: B }}
             >
               Get in Touch →
             </Link>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
@@ -211,12 +212,12 @@ export default async function NewsPage() {
             backgroundSize: "20px 20px",
           }}
         />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
-          <p className="text-white/80 text-[11px] font-bold uppercase tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
+        <Reveal className="relative z-10 max-w-4xl mx-auto px-6 lg:px-14 text-center">
+          <p className="text-white/80 text-[11px] font-bold  tracking-[0.45em] mb-5" style={{ fontFamily: B }}>
             Work With Us
           </p>
           <h2
-            className="text-white uppercase leading-[0.92] mb-6"
+            className="text-white  leading-[0.92] mb-6"
             style={{ fontFamily: H, fontSize: "clamp(44px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
             Ready to Build<br />Something Great?
@@ -226,12 +227,12 @@ export default async function NewsPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
+            className="inline-flex items-center gap-3 rounded-md bg-white text-[#213B4D] font-bold px-10 py-4 text-[13px]  tracking-widest hover:bg-[#213B4D] hover:text-white transition-all duration-300"
             style={{ fontFamily: B }}
           >
             Contact Our Team <span>→</span>
           </Link>
-        </div>
+        </Reveal>
       </section>
     </>
   );

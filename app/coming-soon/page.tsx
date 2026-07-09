@@ -38,7 +38,7 @@ export default function ComingSoonPage() {
         <div className="flex items-center justify-center gap-3 mb-12">
           <div className="w-8 h-[2px] bg-[#1F93A4]" />
           <span
-            className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.4em]"
+            className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.4em]"
             style={{ fontFamily: B }}
           >
             INFRA Construction for Contracting LLC
@@ -48,7 +48,7 @@ export default function ComingSoonPage() {
 
         {/* Big headline */}
         <h1
-          className="text-white uppercase leading-[0.88] mb-8"
+          className="text-white  leading-[0.88] mb-8"
           style={{
             fontFamily: H,
             fontSize: "clamp(72px, 16vw, 200px)",
@@ -77,7 +77,7 @@ export default function ComingSoonPage() {
         {/* Contact CTA */}
         <a
           href="mailto:info@infraconstruction.com"
-          className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[13px] uppercase tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
+          className="inline-flex items-center gap-3 bg-[#1F93A4] text-white font-bold px-10 py-4 text-[13px]  tracking-widest hover:bg-white hover:text-[#213B4D] transition-all duration-300"
           style={{ fontFamily: B }}
         >
           Contact Us <span>→</span>
@@ -94,7 +94,16 @@ export default function ComingSoonPage() {
             © {new Date().getFullYear()} INFRA Construction for Contracting LLC. All rights reserved.
           </span>
           <span className="text-white/15 text-[11px] tracking-wider" style={{ fontFamily: B }}>
-            Developed by Eng.Ali Abuhatem
+            <a
+              href="https://www.linkedin.com/in/ali-abuhatem-93b13927b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              LinkedIn
+            </a>
+            <span className="mx-2">·</span>
+            Developed by Eng. Ali Abuhatem
           </span>
         </div>
       </div>

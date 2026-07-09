@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { readContentStore } from "@/lib/admin/content-store";
+import { Reveal } from "@/components/motion";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -77,7 +78,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-14 pb-16 w-full">
           <div className="flex items-center gap-3 mb-5">
             <span
-              className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5 uppercase tracking-[0.2em]"
+              className="bg-[#1F93A4] text-white text-[10px] font-bold px-3 py-1.5  tracking-[0.2em]"
               style={{ fontFamily: B }}
             >
               <ContentText section={item._key} name="category" fallback={item.category || ""} />
@@ -95,7 +96,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             )}
           </div>
           <h1
-            className="text-white uppercase leading-[0.95]"
+            className="text-white  leading-[0.95]"
             style={{ fontFamily: H, fontSize: "clamp(36px, 6vw, 72px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
             <ContentText section={item._key} name="title" fallback={item.title || ""} />
@@ -104,16 +105,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       </section>
 
       {/* BREADCRUMB */}
-      <div className="bg-[#0d1e28] border-b border-white/5">
+      <div className="bg-[#f6f8f9] border-b border-[#213B4D]/10">
         <div
-          className="max-w-5xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase"
+          className="max-w-5xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] "
           style={{ fontFamily: B }}
         >
-          <Link href="/" className="text-white/65 hover:text-[#1F93A4] transition-colors">Home</Link>
-          <span className="text-white/20">›</span>
-          <Link href="/news" className="text-white/65 hover:text-[#1F93A4] transition-colors">News</Link>
-          <span className="text-white/20">›</span>
-          <span className="text-[#1F93A4] truncate max-w-[60vw]">{item.title}</span>
+          <Link href="/" className="text-[#5E5E5E] hover:text-[#1F93A4] transition-colors">Home</Link>
+          <span className="text-[#213B4D]/25">›</span>
+          <Link href="/news" className="text-[#5E5E5E] hover:text-[#1F93A4] transition-colors">News</Link>
+          <span className="text-[#213B4D]/25">›</span>
+          <span className="text-[#1F93A4] font-semibold truncate max-w-[60vw]">{item.title}</span>
         </div>
       </div>
 
@@ -158,7 +159,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <div className="mt-14 bg-[#f4f6f8] border-l-4 border-[#1F93A4] p-8">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-                <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+                <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                   Project Highlights
                 </p>
               </div>
@@ -180,7 +181,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <div className="mt-16 pt-8 border-t border-[#213B4D]/10">
             <Link
               href="/news"
-              className="text-[#1F93A4] text-[12px] font-bold uppercase tracking-[0.2em] inline-flex items-center gap-2 hover:gap-3 transition-all"
+              className="text-[#1F93A4] text-[12px] font-bold  tracking-[0.2em] inline-flex items-center gap-2 hover:gap-3 transition-all"
               style={{ fontFamily: B }}
             >
               <span>←</span> Back to All News
@@ -193,12 +194,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       {related.length > 0 && (
         <section className="pb-24 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-14">
-            <div className="flex items-center gap-3 mb-10">
+            <Reveal className="flex items-center gap-3 mb-10">
               <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-              <p className="text-[#1F93A4] text-[11px] font-bold uppercase tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 More Updates
               </p>
-            </div>
+            </Reveal>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
               {related.map((r) => (
                 <Link
@@ -218,7 +219,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span
-                        className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1 uppercase tracking-[0.15em]"
+                        className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1  tracking-[0.15em]"
                         style={{ fontFamily: B }}
                       >
                         <ContentText section={r._key} name="category" fallback={r.category || ""} />

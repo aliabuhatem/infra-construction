@@ -4,6 +4,12 @@ import type { NextConfig } from "next";
 // CSP allows 'unsafe-inline' for scripts/styles because Next.js injects inline
 // hydration scripts and inline styles; it still blocks framing, plugins, and
 // restricts sources to same-origin (+ data/blob images and self-hosted fonts).
+//
+// In development, Next.js/React (Turbopack RSC client, Fast Refresh, callstack
+// reconstruction) requires eval(), so 'unsafe-eval' is added for dev only.
+// Production never uses eval() and stays strict.
+const isDev = process.env.NODE_ENV !== "production";
+
 const ContentSecurityPolicy = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -12,8 +18,8 @@ const ContentSecurityPolicy = [
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
   "style-src 'self' 'unsafe-inline'",
-  "script-src 'self' 'unsafe-inline'",
-  "connect-src 'self'",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  isDev ? "connect-src 'self' ws: wss:" : "connect-src 'self'",
   "form-action 'self'",
   "upgrade-insecure-requests",
 ].join("; ");
@@ -29,6 +35,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Hide the floating Next.js dev-tools logo/indicator in development.
+  devIndicators: false,
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

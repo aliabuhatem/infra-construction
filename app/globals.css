@@ -43,16 +43,7 @@
   --font-body: var(--font-myriad);
 }
 
-/* ─── FONT-WEIGHT EXPERIMENT CONTROLS ───────────────────────────────────────
-   Myriad Pro loads as Regular (400) + Bold (700). First-pass mapping:
-     headings / section titles → bold      body / paragraphs → regular
-     buttons & nav             → bold      eyebrows / labels → bold
-   Two ways to experiment:
-   1) Change the --fw-* defaults below (affects <h1>/<h2>/<h3> that have no
-      inline weight).
-   2) Drop a helper class on ANY element or section to FORCE a weight — these
-      override inline weights: .fw-regular  .fw-semibold  .fw-bold
-   Note: with only Regular+Bold loaded, weight 500 renders Regular, 600 renders Bold. */
+
 :root {
   --fw-heading: 700;   /* hero + section titles */
   --fw-body: 400;      /* paragraphs / body copy */
