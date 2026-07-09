@@ -76,6 +76,18 @@ body {
   /* Never fake a weight/style — if a weight isn't loaded, fail loud rather
      than render a jagged synthesized glyph. We load all used weights above. */
   font-synthesis: none;
+  /* Hide the stray blinking text caret that the browser paints when clicking
+     on non-editable content (e.g. with caret-browsing on). Real form fields
+     re-enable it below so typing still shows a cursor. */
+  caret-color: transparent;
+}
+
+input,
+textarea,
+select,
+[contenteditable="true"],
+[contenteditable=""] {
+  caret-color: auto;
 }
 
 h1, h2, h3 {
