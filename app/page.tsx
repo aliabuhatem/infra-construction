@@ -172,9 +172,9 @@ export default async function HomePage() {
                   </p>
                 </div>
                 <h2 className="text-[#213B4D] leading-tight" style={{ fontFamily: B, fontSize: "clamp(36px, 5vw, 60px)", fontWeight: 700, letterSpacing: "-0.01em" }}>
-                  <ContentText section="home_sectors_header" name="headingLine1" fallback="Seven Sectors." />{" "}
+                  <ContentText section="home_sectors_header" name="headingLine1" fallback="Sectors &." />{" "}
                   <span className="text-[#1F93A4]">
-                    <ContentText section="home_sectors_header" name="headingLine2" fallback="Fourteen Services." />
+                    <ContentText section="home_sectors_header" name="headingLine2" fallback="Services." />
                   </span>
                 </h2>
               </div>
