@@ -1,7 +1,7 @@
 {
   "content": {
     "home_hero": {
-      "eyebrow": "EST. 2000 . Abu Dhabi, UAE",
+      "eyebrow": "EST. 1990. Abu Dhabi, UAE",
       "headlineLine1": "We Do Not Only Aim To Meet Your Expectation, But To Exceed",
       "headlineLine2": "Them At Every Step",
       "headlineLine3": "",
@@ -13,11 +13,11 @@
       "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
     },
     "home_statement": {
-      "eyebrowLabel": "Est. 2000",
+      "eyebrowLabel": "Est. 1990",
       "bigNumber": "75",
       "bigNumberSuffix": "+",
       "bigNumberLabel": "Projects Delivered",
-      "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
+      "heading": "Since 1990, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
       "cert1": "ISO 9001",
       "cert2": "ISO 14001",
       "linkText": "Our Story"
@@ -115,7 +115,7 @@
       "service5": "Quantity Surveying",
       "service6": "Operation & Maintenance",
       "linkText": "Discover Our Story",
-      "backgroundImage": "/media/1782809288798-who_we_are.jpg"
+      "backgroundImage": "/media/1783233909458-new-assiut-barrage.png"
     },
     "home_news_header": {
       "eyebrow": "Latest News",
@@ -2957,6 +2957,15 @@
     }
   },
   "media": [
+    {
+      "id": "1783233910687",
+      "title": "New Assiut Barrage 1",
+      "alt": "New Assiut Barrage 1",
+      "category": "gallery",
+      "url": "/media/1783233909458-new-assiut-barrage.png",
+      "source": "upload",
+      "createdAt": "2026-07-05T06:45:10.687Z"
+    },
     {
       "id": "1782904915121",
       "title": "logo",
