@@ -196,7 +196,7 @@ export default async function HomePage() {
             </div>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-16">
-            {sectorItems.map((s, i) => (
+            {sectorItems.slice(0, 4).map((s, i) => (
               <ExpertiseCard key={s.slug} item={s} base="/sectors" index={i} />
             ))}
           </div>
@@ -213,7 +213,7 @@ export default async function HomePage() {
             </div>
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {serviceItems.map((s, i) => (
+            {serviceItems.slice(0, 4).map((s, i) => (
               <Reveal key={s.slug} delay={(i % 4) * 0.05}>
                 <div className="group flex h-full flex-col overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white p-4 shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
                   <Link href={`/services/${s.slug}`} className="relative block h-40 overflow-hidden rounded-md">
