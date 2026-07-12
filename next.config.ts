@@ -37,6 +37,13 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   // Hide the floating Next.js dev-tools logo/indicator in development.
   devIndicators: false,
+  images: {
+    // Serve images as-is (no optimizer) so that PNG, WebP, AVIF, and other
+    // formats uploaded via the admin panel display correctly everywhere,
+    // including inside next/image <Image> components on the sectors, services,
+    // and expertise pages.
+    unoptimized: true,
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
