@@ -1,5 +1,186 @@
 {
   "content": {
+    "svc_detailed_engineering": {
+      "title": "Detailed Engineering Services",
+      "summary": "Multidisciplinary engineering delivered by 275+ professionals using advanced CAD/CAE tools.",
+      "image": "/media/buildings-general-structure.jpeg",
+      "description": "Our engineering offices, staffed by over 275 qualified professionals, provide a wide range of detailed engineering services across every discipline a modern project demands.\nWe utilise advanced CAD/CAE design software and maintain in-house capabilities for specialised requirements — covering Buildings, Civil and Structural Works, Water Reservoirs and Networks, Sewage Treatment, Dams and Irrigation, Marine Works, Power Generation, and Transportation Engineering.",
+      "capabilities": "Buildings, civil & structural design, Water reservoirs and networks, Sewage treatment engineering, Dams, irrigation & marine works, Power generation systems, Transportation engineering"
+    },
+    "svc_procurement_expediting": {
+      "title": "Procurement & Expediting Services",
+      "summary": "ISO 9001 procurement ensuring the right materials arrive on time, at the highest quality.",
+      "image": "/media/industrial-concrete-mix-plant-yemen.jpeg",
+      "description": "Our central procurement department, operating under an ISO 9001-approved manual, ensures the timely acquisition of materials, equipment, and services at the highest quality standards.\nOur scope includes purchasing and sourcing, shop expediting, quality surveillance, and logistics expertise. We also utilise E-Procurement solutions — including a unified materials catalogue and supply agreements — to enhance efficiency.",
+      "capabilities": "Purchasing & strategic sourcing, Shop expediting, Quality surveillance, Logistics & freight management, E-procurement & materials catalogue, Supply agreements"
+    },
+    "svc_construction_services": {
+      "title": "Construction Services",
+      "summary": "Comprehensive construction capability across building, civil, and MEP works at any scale.",
+      "image": "/media/buildings-social-housing-assiut-egypt.avif",
+      "description": "With teams of experienced construction specialists, INFRA Construction provides comprehensive construction capabilities across multiple fields.\nWe have a proven track record of managing diverse workforces and efficiently mobilising equipment and crews for projects of any scale. Our services include building works, civil engineering, and the erection of mechanical, electrical, and piping systems.",
+      "capabilities": "Building works, Civil engineering, Mechanical erection, Electrical installation, Piping systems, Rapid crew & equipment mobilisation"
+    },
+    "svc_construction_management": {
+      "title": "Construction Management Services",
+      "summary": "Sophisticated controls that keep large, complex projects safe, on time, and effective.",
+      "image": "/media/infrastructure-highway-expansion-mocha-yemen.jpeg",
+      "description": "INFRA Construction excels in managing large, complex projects, employing sophisticated management controls for planning and monitoring to ensure safe, timely, and effective construction.\nWe leverage our global experience and deep understanding of local laws to facilitate rapid mobilisation and successful project execution wherever we operate.",
+      "capabilities": "Planning & scheduling controls, Progress monitoring, Safety management, Local regulatory compliance, Rapid mobilisation, Multi-site coordination"
+    },
+    "svc_facilities_management": {
+      "title": "Facilities Management Services",
+      "summary": "A one-stop-shop for management, maintenance, procurement, design, and health & safety.",
+      "image": "/media/fm-hotel-moroni-comoros.jpeg",
+      "description": "As a comprehensive “one-stop-shop”, INFRA Construction offers top-tier facility and property management services. Our team provides complete solutions for management, maintenance, procurement, design, and health and safety.\nWe tailor our services on a client-by-client basis, providing both on-site teams and off-site support such as help desks.",
+      "capabilities": "Property & facility management, Planned maintenance, Procurement support, Design services, Health & safety, On-site teams & help desks"
+    },
+    "svc_operation_maintenance": {
+      "title": "Operation & Maintenance Services",
+      "summary": "Comprehensive O&M that optimises the performance and longevity of your assets.",
+      "image": "/media/energy-power-plant-maintenance-taiz-yemen.jpeg",
+      "description": "We specialise in providing comprehensive O&M services to optimise the operational performance and longevity of our clients' assets.\nOur services include routine inspections, preventive and corrective maintenance, breakdown and emergency repairs, and manpower support tailored to each facility.",
+      "capabilities": "Routine inspections, Preventive maintenance, Corrective maintenance, Breakdown & emergency repairs, Manpower support, Performance optimisation"
+    },
+    "svc_project_management_consultancy": {
+      "title": "Project Management Consultancy",
+      "summary": "Expert PMC balancing scope, time, cost, and quality from planning through handover.",
+      "image": "/media/company-team-photo.jpeg",
+      "description": "We offer expert project management consultancy to ensure your projects meet the best goals of scope, time, cost, and quality.\nOur services cover project planning, risk assessment, claims management, contract administration, and value engineering — a full advisory layer around your programme.",
+      "capabilities": "Project planning, Risk assessment, Claims management, Contract administration, Value engineering, Scope, time, cost & quality control"
+    },
+    "svc_construction_supervision": {
+      "title": "Construction Supervision",
+      "summary": "Rigorous on-site supervision ensuring work meets specifications and international codes.",
+      "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg",
+      "description": "Our experienced professionals provide rigorous construction supervision to ensure that all work is executed according to specifications, international codes, and quality standards.\nWe oversee every aspect of the construction process to guarantee compliance and quality at each stage of delivery.",
+      "capabilities": "Specification compliance, International code adherence, Quality assurance, Workmanship inspection, Site coordination, Progress verification"
+    },
+    "svc_quantity_surveying": {
+      "title": "Quantity Surveying",
+      "summary": "Precise cost estimates, bills of quantities, and cost control across the lifecycle.",
+      "image": "/media/buildings-general-facade.jpeg",
+      "description": "We provide accurate and detailed quantity surveying services to help manage project costs effectively.\nOur team delivers precise cost estimates, bills of quantities, and cost control throughout the project lifecycle, giving clients confidence in every figure.",
+      "capabilities": "Cost estimation, Bills of quantities, Cost control & reporting, Valuations & payments, Tender pricing, Final account settlement"
+    },
+    "svc_risk_assessment_management": {
+      "title": "Risk Assessment & Management",
+      "summary": "Identifying project challenges early and building strategies that keep delivery stable.",
+      "image": "/media/infrastructure-stormwater-drainage-yemen.jpeg",
+      "description": "INFRA Construction conducts thorough risk assessments to identify potential project challenges before they threaten delivery.\nWe develop and implement comprehensive risk management strategies to mitigate these risks, ensuring project stability and success.",
+      "capabilities": "Risk identification, Impact & probability analysis, Mitigation strategies, Risk registers, Contingency planning, Ongoing monitoring"
+    },
+    "svc_value_engineering": {
+      "title": "Value Engineering",
+      "summary": "Optimising designs and processes for the highest value without compromising quality.",
+      "image": "/media/infrastructure-bani-mazar-bridge-egypt.jpeg",
+      "description": "We apply value engineering principles to optimise project designs and processes.\nOur goal is to achieve the highest value for our clients by analysing functions and identifying cost-effective alternatives without compromising quality or performance.",
+      "capabilities": "Function analysis, Design optimisation, Cost-effective alternatives, Lifecycle cost review, Constructability studies, Performance benchmarking"
+    },
+    "svc_claims_management": {
+      "title": "Claims Management",
+      "summary": "Preparing and defending claims efficiently to protect our clients' interests.",
+      "image": "/media/company-brand-quote.jpeg",
+      "description": "Our team has the expertise to navigate complex contractual issues.\nWe provide professional claims management services — preparing and defending claims efficiently and effectively to protect our clients' interests throughout a contract's life.",
+      "capabilities": "Claim preparation, Claim defence, Contractual analysis, Delay & disruption analysis, Negotiation support, Dispute avoidance"
+    },
+    "svc_contract_administration": {
+      "title": "Contract Administration",
+      "summary": "Managing every contractual obligation so projects run exactly to their terms.",
+      "image": "/media/about-.sectionjpg.jpg",
+      "description": "We offer comprehensive contract administration services to manage all aspects of contractual agreements.\nThis ensures that all parties meet their obligations, and the project is executed according to the contract's terms and conditions.",
+      "capabilities": "Contract drafting review, Obligation tracking, Variation management, Payment certification, Correspondence control, Close-out administration"
+    },
+    "svc_building_information_modelling": {
+      "title": "Building Information Modelling (BIM)",
+      "summary": "Intelligent 3D digital models that improve delivery across the facility lifecycle.",
+      "image": "/media/airports-dhobab-airport-diagram.png",
+      "description": "Our BIM centres are staffed with engineers and IT professionals who support projects of varying size and complexity.\nWe use intelligent 3D digital representations to improve project delivery, facilitate decision-making, and manage information throughout the entire facility lifecycle.",
+      "capabilities": "3D coordinated modelling, Clash detection, 4D scheduling & 5D cost, Information management, Design collaboration, Lifecycle asset data"
+    },
+    "sct_buildings": {
+      "title": "Buildings",
+      "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
+      "image": "/media/buildings-social-housing-assiut-egypt.avif",
+      "description": "We construct distinguished and exceptional public and private buildings.\nOur portfolio showcases a range of outstanding projects, reflecting our commitment to excellence and innovation in architecture, MEP (Mechanical, Electrical, and Plumbing), and civil works.",
+      "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
+    },
+    "sct_networks_infrastructures": {
+      "title": "Networks & Infrastructures",
+      "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
+      "image": "/media/infrastructure-aden-causeway-widening-yemen.jpeg",
+      "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
+      "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
+    },
+    "sct_civil_works": {
+      "title": "Civil Works",
+      "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
+      "image": "/media/water-tank-aden-yemen.jpeg",
+      "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
+      "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
+    },
+    "sct_transportation_roads_bridges": {
+      "title": "Transportation, Roads & Bridges",
+      "summary": "Complex transport projects that enhance communities and quality of life.",
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg",
+      "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
+      "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
+    },
+    "sct_water_sewage_treatment": {
+      "title": "Water & Sewage Treatment Plants & Networks",
+      "summary": "Complete water and sewage solutions — treatment plants to distribution networks.",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.jpeg",
+      "description": "INFRA Construction provides complete solutions for water and sewage treatment.\nOur services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
+      "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
+    },
+    "sct_dams_irrigation": {
+      "title": "Dams & Irrigation",
+      "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
+      "image": "/media/water-hassan-dam-project-yemen.jpeg",
+      "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
+      "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
+    },
+    "sct_pipelines": {
+      "title": "Pipelines",
+      "summary": "Complex pipeline systems for refinery, petrochemical, cross-state, and utility use.",
+      "image": "/media/energy-power-plant-piping-aden-yemen.png",
+      "description": "Our capabilities include the construction and installation of complex pipeline systems for various applications.\nWe provide engineering services for refinery piping, petrochemical piping, cross-state pipelines, and utility piping — complete with 3D modelling and stress analysis.",
+      "capabilities": "Refinery piping, Petrochemical piping, Cross-state pipelines, Utility piping, 3D modelling, Pipe stress analysis"
+    },
+    "svc_hub": {
+      "eyebrow": "Our Expertise",
+      "title": "Our Services",
+      "subtitle": "A full spectrum of services covering the entire project lifecycle — from initial design and procurement through construction, maintenance, and facility management.",
+      "intro": "INFRA Construction is a comprehensive contracting and project-management firm offering integrated solutions that ensure project success. Our commitment to international standards, quality, and safety drives every one of the 14 services we deliver.",
+      "heroImage": "/media/company-team-photo.jpeg",
+      "stat1Value": "14",
+      "stat1Label": "Integrated Services",
+      "stat2Value": "275+",
+      "stat2Label": "Professionals",
+      "stat3Value": "25+",
+      "stat3Label": "Years Delivering",
+      "stat4Value": "ISO 9001",
+      "stat4Label": "Quality Standard",
+      "ctaTitle": "Have a Project in Mind?",
+      "ctaBody": "Partner with INFRA Construction for engineering precision and dependable delivery."
+    },
+    "sct_hub": {
+      "eyebrow": "Our Expertise",
+      "title": "Our Sectors",
+      "subtitle": "A rich history of executing projects across a diverse range of sectors — demonstrating our versatility and technical depth across two continents.",
+      "intro": "INFRA Construction has a strong presence in the Middle East, East Africa, and East Asia. We apply our comprehensive services across seven core sectors of activity, delivering robust and sustainable outcomes in each.",
+      "heroImage": "/media/sectors hero section photo.png",
+      "stat1Value": "7",
+      "stat1Label": "Sectors of Activity",
+      "stat2Value": "75+",
+      "stat2Label": "Projects Delivered",
+      "stat3Value": "12+",
+      "stat3Label": "Countries",
+      "stat4Value": "2",
+      "stat4Label": "Continents",
+      "ctaTitle": "Have a Project in Mind?",
+      "ctaBody": "Partner with INFRA Construction for engineering precision and dependable delivery."
+    },
     "home_hero": {
       "eyebrow": "EST. 1990. Abu Dhabi, UAE",
       "headlineLine1": "We Do Not Only Aim To Meet Your Expectation, But To Exceed",
@@ -26,12 +207,12 @@
       "eyebrow": "Our Expertise",
       "headingLine1": "Sectors &",
       "headingLine2": "Services",
-      "linkText": "View All Sectors",
       "subtitle": "One integrated partner covering the full project lifecycle — click any card to explore the detail.",
       "sectorsLabel": "Sectors of Activity",
       "sectorsLink": "All 7 Sectors",
       "servicesLabel": "Services We Provide",
-      "servicesLink": "All 14 Services"
+      "servicesLink": "All 14 Services",
+      "linkText": "View All Sectors"
     },
     "home_sector_buildings": {
       "badgeLabel": "01 · Standalone Sector",
@@ -152,27 +333,32 @@
     "home_office_1": {
       "num": "01",
       "city": "Abu Dhabi",
-      "country": "UAE"
+      "country": "UAE",
+      "address": "Business Bay, Abu Dhabi, United Arab Emirates"
     },
     "home_office_2": {
       "num": "02",
       "city": "Dubai",
-      "country": "UAE"
+      "country": "UAE",
+      "address": "Business Bay, Dubai, United Arab Emirates"
     },
     "home_office_3": {
       "num": "03",
       "city": "Cairo",
-      "country": "Egypt"
+      "country": "Egypt",
+      "address": "New Cairo, Cairo, Egypt"
     },
     "home_office_4": {
       "num": "04",
       "city": "Aden",
-      "country": "Yemen"
+      "country": "Yemen",
+      "address": "Crater District, Aden, Republic of Yemen"
     },
     "home_office_5": {
       "num": "05",
       "city": "Ontario",
-      "country": "Canada"
+      "country": "Canada",
+      "address": "Ontario, Canada"
     },
     "home_cta": {
       "eyebrow": "Start Your Project",
@@ -241,74 +427,6 @@
       "title": "Our team",
       "description": "200+ engineers, planners, supervisors and skilled crews delivering work in challenging environments.",
       "image": "/media/1782815816981-our_story.jpg"
-    },
-    "sectors_hero": {
-      "eyebrow": "Sectors",
-      "title": "Engineered for every sector we serve",
-      "subtitle": "From dams to data-grade buildings, we deliver integrated construction across all major infrastructure sectors.",
-      "backgroundImage": "/media/sectors hero section photo.png"
-    },
-    "sector_buildings": {
-      "title": "Buildings",
-      "tagline": "Residential, commercial, and institutional",
-      "description": "Concept-to-handover delivery of housing, commercial complexes, ministries, and institutional facilities.",
-      "heroImage": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.jpeg",
-      "image2": "/media/buildings-general-facade.jpeg",
-      "image3": "/media/buildings-general-structure.jpeg"
-    },
-    "sector_infrastructure": {
-      "title": "Infrastructure",
-      "tagline": "Civil works and transportation",
-      "description": "Highways, bridges, airports, ports, marine works and stormwater systems built to international standards.",
-      "heroImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg",
-      "image2": "/admin-uploads/1782482243195-west-assiut-plateau-road.jpg.jpeg",
-      "image3": "/media/infrastructure-stormwater-drainage-yemen.jpeg"
-    },
-    "sector_water": {
-      "title": "Water & Utilities",
-      "tagline": "Dams, supply, and wastewater",
-      "description": "Dam construction, water supply networks, reservoirs, and wastewater treatment plants.",
-      "heroImage": "/media/water-dam-construction-yemen.jpeg",
-      "image2": "/media/water-hassan-dam-project-yemen.jpeg",
-      "image3": "/media/water-basra-wastewater-treatment-egypt.jpeg"
-    },
-    "sector_energy": {
-      "title": "Energy & Power",
-      "tagline": "Generation and transmission",
-      "description": "Power plants, piping, substations, transmission networks, and long-term plant maintenance.",
-      "heroImage": "/media/energy-power-plant-alhaswa-aden-yemen.jpeg",
-      "image2": "/media/energy-power-plant-piping-aden-yemen.png",
-      "image3": "/media/energy-power-plant-maintenance-taiz-yemen.jpeg"
-    },
-    "sector_industrial": {
-      "title": "Industrial & Oil Services",
-      "tagline": "Plants, pipelines and O&M",
-      "description": "Concrete mix plants, marine piers, oil & gas pipelines and industrial operations & maintenance.",
-      "heroImage": "/media/industrial-concrete-mix-plant-yemen.jpeg",
-      "image2": "/media/ports-floating-marine-pier-yemen.jpeg",
-      "image3": "/media/ports-marine-breakwater-yemen.jpeg"
-    },
-    "sector_facilities": {
-      "title": "Facilities Management",
-      "tagline": "Operations and maintenance",
-      "description": "Full FM services for hospitality, government and industrial facilities including the Hotel Moroni, Comoros.",
-      "heroImage": "/media/fm-hotel-moroni-comoros.jpeg",
-      "image2": "/media/fm-concrete-gates-abyan-yemen.jpeg",
-      "image3": "/media/company-team-photo.jpeg"
-    },
-    "sector_civil": {
-      "title": "Infrastructure & Civil Works",
-      "tagline": "Roads, bridges and earthworks",
-      "description": "Coastal highways, causeway widening, and large-scale civil works delivered safely and on schedule.",
-      "heroImage": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg",
-      "image2": "/media/infrastructure-hassan-dam-dike-yemen.jpeg",
-      "image3": "/media/Abyan Coast Cornich-01.jpeg"
-    },
-    "sector_epc": {
-      "title": "Engineering & EPC",
-      "tagline": "Design, procurement and construction",
-      "description": "Full EPC services from detailed engineering and procurement through to construction and commissioning.",
-      "heroImage": "/media/buildings-general-structure.jpeg"
     },
     "projects_hero": {
       "eyebrow": "Projects",
@@ -670,1858 +788,6 @@
       "body": "Partner with INFRA Construction for engineering excellence, operational reliability, and long-term value across every sector we serve.",
       "buttonText": "Contact Our Team"
     },
-    "sectors_hub_hero": {
-      "eyebrow": "Our Sectors",
-      "title": "Engineered for Every Sector We Serve",
-      "subtitle": "From infrastructure and civil works to buildings, energy, water, and industrial services — INFRA Construction delivers across all major construction sectors.",
-      "backgroundImage": "/media/sectors hero section photo.png"
-    },
-    "sectors_hub_intro": {
-      "eyebrow": "Our Capabilities",
-      "title": "Two Core Sectors. Seven Disciplines.",
-      "p1": "INFRA Construction organizes its work across two primary sectors — Buildings and Infrastructure — with Infrastructure encompassing five specialized disciplines including water, energy, industrial, facilities management, and engineering & EPC.",
-      "p2": "This structure allows us to bring integrated, multidisciplinary capabilities to every project, ensuring that clients benefit from our full depth of expertise regardless of the sector they operate in."
-    },
-    "sectors_hub_stat_1": {
-      "value": "75+",
-      "label": "Projects Delivered"
-    },
-    "sectors_hub_stat_2": {
-      "value": "25+",
-      "label": "Years of Excellence"
-    },
-    "sectors_hub_stat_3": {
-      "value": "12+",
-      "label": "Countries Served"
-    },
-    "sectors_hub_stat_4": {
-      "value": "200+",
-      "label": "Professionals"
-    },
-    "sectors_hub_buildings": {
-      "badgeLabel": "01 · Standalone Sector",
-      "title": "Buildings",
-      "short": "Residential, commercial, and institutional construction from concept to handover.",
-      "exploreText": "Explore Buildings",
-      "href": "/sectors/buildings"
-    },
-    "sectors_hub_infra": {
-      "badgeLabel": "02 · Umbrella Sector",
-      "title": "Infrastructure",
-      "short": "Civil works, water systems, energy, and industrial projects across the Middle East and Africa.",
-      "exploreText": "Explore Infrastructure",
-      "href": "/sectors/infrastructure"
-    },
-    "sectors_hub_sub_1": {
-      "num": "01",
-      "title": "Water & Utilities",
-      "short": "Water supply, dams, wastewater treatment, and utility systems.",
-      "href": "/sectors/water-utilities",
-      "image": "/media/water-dam-construction-yemen.jpeg"
-    },
-    "sectors_hub_sub_2": {
-      "num": "02",
-      "title": "Energy & Power",
-      "short": "Power generation, transmission networks, and substations.",
-      "href": "/sectors/energy-power",
-      "image": "/media/energy-power-plant-alhaswa-aden-yemen.jpeg"
-    },
-    "sectors_hub_sub_3": {
-      "num": "03",
-      "title": "Industrial & Oil Services",
-      "short": "Pipeline engineering, plant construction, and industrial O&M.",
-      "href": "/sectors/industrial-oil-services",
-      "image": "/media/industrial-floating-marine-pier-yemen.jpeg"
-    },
-    "sectors_hub_sub_4": {
-      "num": "04",
-      "title": "Engineering & EPC",
-      "short": "Full EPC services from engineering and procurement to construction.",
-      "href": "/sectors/engineering-epc",
-      "image": "/media/buildings-general-structure.jpeg"
-    },
-    "sectors_hub_sub_5": {
-      "num": "05",
-      "title": "Facilities Management",
-      "short": "Operations and maintenance for industrial and institutional facilities.",
-      "href": "/sectors/facilities-management",
-      "image": "/media/fm-concrete-gates-abyan-yemen.jpeg"
-    },
-    "sectors_hub_sub_6": {
-      "num": "06",
-      "title": "Infrastructure & Civil Works",
-      "short": "Roads, bridges, ports, airports, and large-scale civil engineering.",
-      "href": "/sectors/infrastructure-civil-works",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
-    },
-    "sectors_hub_sub_7": {
-      "num": "07",
-      "title": "Water & Marine",
-      "short": "Marine infrastructure, ports, and coastal works.",
-      "href": "/sectors/water-utilities",
-      "image": "/media/ports-hulaf-socotra-yemen.jpeg"
-    },
-    "sectors_hub_activities": {
-      "eyebrow": "Activity Areas",
-      "title": "What We Build"
-    },
-    "sectors_hub_activity_1": {
-      "label": "Residential & Social Housing"
-    },
-    "sectors_hub_activity_2": {
-      "label": "Commercial Buildings"
-    },
-    "sectors_hub_activity_3": {
-      "label": "Institutional & Government"
-    },
-    "sectors_hub_activity_4": {
-      "label": "Highways & Roads"
-    },
-    "sectors_hub_activity_5": {
-      "label": "Bridges & Flyovers"
-    },
-    "sectors_hub_activity_6": {
-      "label": "Ports & Marine Works"
-    },
-    "sectors_hub_activity_7": {
-      "label": "Airports & Runways"
-    },
-    "sectors_hub_activity_8": {
-      "label": "Dams & Reservoirs"
-    },
-    "sectors_hub_activity_9": {
-      "label": "Water Supply Systems"
-    },
-    "sectors_hub_activity_10": {
-      "label": "Power Plants"
-    },
-    "sectors_hub_activity_11": {
-      "label": "Oil & Gas Infrastructure"
-    },
-    "sectors_hub_activity_12": {
-      "label": "Industrial Plants"
-    },
-    "sectors_hub_cta": {
-      "eyebrow": "Start Your Project",
-      "title": "Ready to Build?",
-      "body": "Tell us about your project. Our sector specialists are ready to design a solution tailored to your specific requirements.",
-      "buttonText": "Contact Our Team"
-    },
-    "infra_hub_hero": {
-      "eyebrow": "Core Sector",
-      "title": "Infrastructure",
-      "subtitle": "Civil works, water systems, energy, and industrial projects — delivered across the Middle East and Africa since 1990.",
-      "backgroundImage": "/media/infrastructure-assiut-plateau-axis-egypt.jpeg"
-    },
-    "infra_hub_intro": {
-      "eyebrow": "Overview",
-      "title": "Comprehensive Infrastructure Delivery",
-      "p1": "INFRA Construction's Infrastructure sector encompasses all major civil, utility, energy, and industrial disciplines. From highway construction and dam engineering to power generation and oil services, our integrated teams deliver complex infrastructure projects to international standards.",
-      "p2": "Operating across the Middle East and Africa since 1990, we bring proven technical expertise, ISO-certified quality management, and deep regional experience to every infrastructure engagement."
-    },
-    "infra_hub_disciplines": {
-      "eyebrow": "Disciplines Covered",
-      "title": "Seven Core Disciplines"
-    },
-    "infra_hub_disc_1": {
-      "title": "Water Supply Networks"
-    },
-    "infra_hub_disc_2": {
-      "title": "Wastewater Treatment"
-    },
-    "infra_hub_disc_3": {
-      "title": "Dams & Irrigation"
-    },
-    "infra_hub_disc_4": {
-      "title": "Ports & Marine Structures"
-    },
-    "infra_hub_disc_5": {
-      "title": "Airports & Runways"
-    },
-    "infra_hub_disc_6": {
-      "title": "Transportation & Roads"
-    },
-    "infra_hub_disc_7": {
-      "title": "Bridges & Flyovers"
-    },
-    "infra_hub_disc_8": {
-      "title": "Oil & Gas Pipelines"
-    },
-    "infra_hub_disc_9": {
-      "title": "Industrial Plants"
-    },
-    "infra_hub_disc_10": {
-      "title": "Power Generation"
-    },
-    "infra_hub_disc_11": {
-      "title": "Power Transmission & Distribution"
-    },
-    "infra_hub_disc_12": {
-      "title": "Earthworks & Grading"
-    },
-    "infra_hub_sub_1": {
-      "num": "01",
-      "title": "Water",
-      "short": "Water supply systems, treatment plants, and integrated utility networks built for longevity.",
-      "href": "/sectors/water-utilities",
-      "image": "/media/water-dam-construction-yemen.jpeg"
-    },
-    "infra_hub_sub_2": {
-      "num": "02",
-      "title": "Dams & Irrigation",
-      "short": "Dam construction, dike works, and large-scale irrigation infrastructure across arid regions.",
-      "href": "/sectors/water-utilities",
-      "image": "/media/water-hassan-dam-project-yemen.jpeg"
-    },
-    "infra_hub_sub_3": {
-      "num": "03",
-      "title": "Ports",
-      "short": "Marine ports, quay walls, breakwaters, and harbour infrastructure delivered to international standards.",
-      "href": "/sectors/infrastructure-civil-works",
-      "image": "/media/ports-hulaf-socotra-yemen.jpeg"
-    },
-    "infra_hub_sub_4": {
-      "num": "04",
-      "title": "Airports",
-      "short": "Airfield works, runways, terminal facilities, and aviation infrastructure for civil and strategic use.",
-      "href": "/sectors/infrastructure-civil-works",
-      "image": "/media/airports-dhobab-airport-diagram.png"
-    },
-    "infra_hub_sub_5": {
-      "num": "05",
-      "title": "Transportation",
-      "short": "Highways, bridges, flyovers, and large-scale road networks delivered with proven civil engineering expertise.",
-      "href": "/sectors/infrastructure-civil-works",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
-    },
-    "infra_hub_sub_6": {
-      "num": "06",
-      "title": "Oil",
-      "short": "Oil & gas pipelines, plant construction, and comprehensive industrial operations support.",
-      "href": "/sectors/industrial-oil-services",
-      "image": "/media/industrial-floating-marine-pier-yemen.jpeg"
-    },
-    "infra_hub_sub_7": {
-      "num": "07",
-      "title": "Power",
-      "short": "Power generation, transmission networks, substations, and renewable energy infrastructure.",
-      "href": "/sectors/energy-power",
-      "image": "/media/energy-power-plant-alhaswa-aden-yemen.jpeg"
-    },
-    "infra_hub_cta": {
-      "eyebrow": "Start Your Project",
-      "title": "Have an Infrastructure Challenge?",
-      "body": "Our specialists are ready to discuss your requirements and design a tailored infrastructure solution for your specific needs.",
-      "buttonText": "Contact Our Team"
-    },
-    "sector_buildings_intro": {
-      "p1": "INFRA Construction delivers comprehensive Buildings & Architecture services across residential, commercial, institutional, and mixed-use development projects. Our multidisciplinary teams combine architectural expertise, structural engineering, MEP integration, and construction management to deliver high-quality buildings that meet international standards.",
-      "p2": "We approach every building project with a focus on design quality, construction precision, material excellence, and on-time delivery. From concept to handover, our integrated teams manage all aspects of the building process — including design coordination, procurement, construction, MEP installations, finishing, and commissioning.",
-      "p3": "Our experience spans social housing developments, commercial complexes, government ministries, hospitality facilities, institutional buildings, and mixed-use projects across the Middle East, East Africa, and beyond.",
-      "p4": "INFRA Construction's commitment to quality is backed by ISO 9001 certification and a robust quality management system that is applied consistently across all building projects, ensuring that every client receives a finished product that meets or exceeds their expectations."
-    },
-    "sector_buildings_feature_1": {
-      "title": "Integrated Design & Build",
-      "body": "Architectural, structural, and MEP design coordinated through integrated engineering teams."
-    },
-    "sector_buildings_feature_2": {
-      "title": "Quality Construction",
-      "body": "Certified quality management systems applied across all building construction activities."
-    },
-    "sector_buildings_feature_3": {
-      "title": "MEP Engineering",
-      "body": "Mechanical, electrical, and plumbing engineering integrated seamlessly into building design."
-    },
-    "sector_buildings_feature_4": {
-      "title": "Project Management",
-      "body": "Professional project controls ensuring schedule, cost, and quality performance on every project."
-    },
-    "sector_buildings_feature_5": {
-      "title": "Client-Focused Delivery",
-      "body": "Close client collaboration throughout the design and construction process for optimal outcomes."
-    },
-    "sector_buildings_feature_6": {
-      "title": "Safety Standards",
-      "body": "Strict HSE protocols maintained across all construction sites and building operations."
-    },
-    "sector_buildings_feature_7": {
-      "title": "Sustainable Design",
-      "body": "Environmentally responsible design and construction practices embedded in all building projects."
-    },
-    "sector_buildings_feature_8": {
-      "title": "Multi-Sector Experience",
-      "body": "Delivered residential, commercial, institutional, government, and mixed-use buildings across multiple regions."
-    },
-    "sector_buildings_sg_1": {
-      "title": "Residential Buildings",
-      "description": "INFRA Construction delivers high-quality residential developments including social housing, villas, apartment complexes, and residential communities.",
-      "item_1": "Social housing developments",
-      "item_2": "Villa construction",
-      "item_3": "Apartment buildings",
-      "item_4": "Residential communities",
-      "item_5": "Staff accommodation",
-      "item_6": "Residential fit-out",
-      "item_7": "Residential infrastructure"
-    },
-    "sector_buildings_sg_2": {
-      "title": "Commercial & Office Buildings",
-      "description": "We provide complete construction services for commercial buildings, office complexes, retail developments, and mixed-use projects.",
-      "item_1": "Office buildings",
-      "item_2": "Commercial complexes",
-      "item_3": "Retail developments",
-      "item_4": "Mixed-use projects",
-      "item_5": "Business parks",
-      "item_6": "Commercial fit-out",
-      "item_7": "Facade systems"
-    },
-    "sector_buildings_sg_3": {
-      "title": "Institutional & Government Buildings",
-      "description": "INFRA Construction has extensive experience delivering government facilities, ministries, administrative buildings, and institutional projects.",
-      "item_1": "Government ministries",
-      "item_2": "Administrative buildings",
-      "item_3": "Public facilities",
-      "item_4": "Educational buildings",
-      "item_5": "Healthcare facilities",
-      "item_6": "Security facilities",
-      "item_7": "Community buildings"
-    },
-    "sector_buildings_sg_4": {
-      "title": "Hospitality & Tourism",
-      "description": "We deliver hospitality and tourism developments including hotels, resorts, restaurants, and leisure facilities.",
-      "item_1": "Hotel construction",
-      "item_2": "Resort developments",
-      "item_3": "Restaurant fit-out",
-      "item_4": "Leisure facilities",
-      "item_5": "Hospitality renovations",
-      "item_6": "Tourism infrastructure",
-      "item_7": "FM for hospitality"
-    },
-    "sector_buildings_sg_5": {
-      "title": "MEP Engineering Services",
-      "description": "Our MEP engineering teams provide complete mechanical, electrical, and plumbing engineering and installation services for all building types.",
-      "item_1": "Mechanical systems",
-      "item_2": "Electrical systems",
-      "item_3": "Plumbing systems",
-      "item_4": "HVAC systems",
-      "item_5": "Fire protection",
-      "item_6": "Building automation",
-      "item_7": "Low-voltage systems"
-    },
-    "sector_buildings_sg_6": {
-      "title": "Construction Management",
-      "description": "We provide professional construction management services covering all phases of building delivery.",
-      "item_1": "Design coordination",
-      "item_2": "Procurement management",
-      "item_3": "Site management",
-      "item_4": "Quality control",
-      "item_5": "HSE management",
-      "item_6": "Cost control",
-      "item_7": "Commissioning & handover"
-    },
-    "sector_buildings_step_1": {
-      "num": "01",
-      "title": "Design & Planning",
-      "body": "We coordinate architectural, structural, and MEP design to develop a fully coordinated building design and construction plan."
-    },
-    "sector_buildings_step_2": {
-      "num": "02",
-      "title": "Permitting & Approvals",
-      "body": "Our teams manage all necessary building permits, regulatory approvals, and authority submissions."
-    },
-    "sector_buildings_step_3": {
-      "num": "03",
-      "title": "Procurement",
-      "body": "We source and procure all materials, systems, and subcontracted works to quality and schedule requirements."
-    },
-    "sector_buildings_step_4": {
-      "num": "04",
-      "title": "Construction",
-      "body": "Our experienced construction teams execute all structural, civil, architectural, and MEP works to specification."
-    },
-    "sector_buildings_step_5": {
-      "num": "05",
-      "title": "Quality & Inspections",
-      "body": "Continuous quality inspections, testing, and compliance monitoring throughout the construction process."
-    },
-    "sector_buildings_step_6": {
-      "num": "06",
-      "title": "Commissioning & Handover",
-      "body": "Complete testing, system commissioning, and formal handover with full as-built documentation."
-    },
-    "sector_buildings_whyus_1": {
-      "title": "Multi-Sector Building Experience",
-      "body": "Delivered residential, commercial, institutional, and government buildings across multiple regions."
-    },
-    "sector_buildings_whyus_2": {
-      "title": "Integrated Design & Construction",
-      "body": "Coordinated architectural, structural, and MEP design through a single delivery team."
-    },
-    "sector_buildings_whyus_3": {
-      "title": "Certified Quality Management",
-      "body": "ISO 9001 certified quality systems applied consistently across all building projects."
-    },
-    "sector_buildings_whyus_4": {
-      "title": "Strong Regional Experience",
-      "body": "Deep regional knowledge and established local supply chains across the Middle East and Africa."
-    },
-    "sector_buildings_whyus_5": {
-      "title": "Safety-First Culture",
-      "body": "Strict HSE standards and a proven safety record across all construction operations."
-    },
-    "sector_buildings_whyus_6": {
-      "title": "Client Partnership",
-      "body": "Close collaboration with clients from concept through handover to ensure project success."
-    },
-    "sector_buildings_whyus_7": {
-      "title": "On-Time Delivery",
-      "body": "Strong project controls and construction management systems to maintain schedule performance."
-    },
-    "sector_buildings_whyus_8": {
-      "title": "Value Engineering",
-      "body": "Optimized design and construction solutions to maximize value without compromising quality."
-    },
-    "sector_buildings_industries": {
-      "item_1": "Residential Development",
-      "item_2": "Commercial Real Estate",
-      "item_3": "Government & Institutional",
-      "item_4": "Hospitality & Tourism",
-      "item_5": "Healthcare",
-      "item_6": "Education",
-      "item_7": "Industrial Buildings",
-      "item_8": "Mixed-Use Developments"
-    },
-    "sector_buildings_faq_1": {
-      "q": "What types of buildings does INFRA Construction deliver?",
-      "a": "We deliver residential, commercial, institutional, government, hospitality, and mixed-use buildings across the Middle East, Africa, and beyond."
-    },
-    "sector_buildings_faq_2": {
-      "q": "Do you provide MEP engineering services?",
-      "a": "Yes. Our integrated MEP engineering teams provide complete mechanical, electrical, and plumbing design and installation services."
-    },
-    "sector_buildings_faq_3": {
-      "q": "Can you manage the full project lifecycle?",
-      "a": "Yes. INFRA Construction provides complete design-to-handover project delivery, including design coordination, procurement, construction, and commissioning."
-    },
-    "sector_buildings_faq_4": {
-      "q": "Are your buildings projects ISO certified?",
-      "a": "Yes. All building construction activities are managed under our ISO 9001 certified quality management system."
-    },
-    "sector_buildings_faq_5": {
-      "q": "Do you deliver social housing projects?",
-      "a": "Yes. We have extensive experience delivering social housing and residential development programmes."
-    },
-    "sector_infrastructure_intro": {
-      "p1": "INFRA Construction's Infrastructure sector encompasses all major civil, utility, energy, and industrial disciplines. From highway construction and dam engineering to power generation and oil services, our integrated teams deliver complex infrastructure projects to international standards.",
-      "p2": "Operating across the Middle East and Africa since 1990, we bring proven technical expertise, ISO-certified quality management, and deep regional experience to every infrastructure engagement — executing each project according to international codes and exacting specifications.",
-      "p3": "Our infrastructure division combines civil engineering, marine works, water systems, transportation, energy, and industrial capabilities under one coordinated team — providing clients with a complete delivery solution from feasibility and design through construction and commissioning.",
-      "p4": "Backed by abundant plant, equipment, and a skilled multidisciplinary workforce, INFRA Construction has the resources and flexibility to execute large-scale infrastructure works safely and on schedule, even in challenging and remote locations."
-    },
-    "sector_infrastructure_sg_1": {
-      "title": "Water Supply & Utilities",
-      "description": "INFRA Construction delivers complete water and utility infrastructure — from transmission and distribution networks to treatment and storage systems built for longevity.",
-      "item_1": "Water supply networks",
-      "item_2": "Wastewater treatment plants",
-      "item_3": "Desalination infrastructure",
-      "item_4": "Reservoirs and storage tanks",
-      "item_5": "Pumping stations",
-      "item_6": "Utility distribution networks",
-      "item_7": "Pipeline transmission systems",
-      "item_8": "Stormwater and drainage"
-    },
-    "sector_infrastructure_sg_2": {
-      "title": "Dams & Irrigation",
-      "description": "We construct dams, dikes, and large-scale irrigation infrastructure across arid regions — providing water retention, flood control, and agricultural supply.",
-      "item_1": "Dam construction",
-      "item_2": "Dikes and embankments",
-      "item_3": "Barrages and weirs",
-      "item_4": "Irrigation networks",
-      "item_5": "Flood control systems",
-      "item_6": "Water retention structures",
-      "item_7": "Canal and channel works",
-      "item_8": "Earth and rockfill works"
-    },
-    "sector_infrastructure_sg_3": {
-      "title": "Ports & Marine Works",
-      "description": "Our marine teams deliver ports, quay walls, breakwaters, and harbour infrastructure to international standards for civil and strategic use.",
-      "item_1": "Quay walls and berths",
-      "item_2": "Breakwaters and seawalls",
-      "item_3": "Jetties and floating piers",
-      "item_4": "Marine structures",
-      "item_5": "Coastal protection works",
-      "item_6": "Port master planning",
-      "item_7": "Dredging and reclamation",
-      "item_8": "Mooring and berthing systems"
-    },
-    "sector_infrastructure_sg_4": {
-      "title": "Airports & Aviation",
-      "description": "INFRA Construction executes airfield works, runways, and aviation infrastructure for both civil and strategic aviation requirements.",
-      "item_1": "Runway construction",
-      "item_2": "Taxiways and aprons",
-      "item_3": "Airfield ground works",
-      "item_4": "Terminal facilities",
-      "item_5": "Aviation infrastructure",
-      "item_6": "Airfield drainage",
-      "item_7": "Pavement and surfacing",
-      "item_8": "Lighting and navigation civil works"
-    },
-    "sector_infrastructure_sg_5": {
-      "title": "Roads, Bridges & Transportation",
-      "description": "We deliver highways, bridges, and large-scale road networks with proven civil engineering expertise — from earthworks to final surfacing.",
-      "item_1": "Highways and road networks",
-      "item_2": "Bridges and flyovers",
-      "item_3": "Causeways and widening",
-      "item_4": "Road rehabilitation",
-      "item_5": "Earthworks and grading",
-      "item_6": "Pavement and asphalt works",
-      "item_7": "Drainage and culverts",
-      "item_8": "Road safety infrastructure"
-    },
-    "sector_infrastructure_sg_6": {
-      "title": "Energy, Power & Industrial",
-      "description": "Our teams build power generation, transmission, and industrial infrastructure — including oil & gas works, pipelines, and long-term plant operations support.",
-      "item_1": "Power plants and stations",
-      "item_2": "Transmission lines and substations",
-      "item_3": "Oil & gas pipelines",
-      "item_4": "Plant piping and mechanical works",
-      "item_5": "Industrial plant construction",
-      "item_6": "Concrete mix plants",
-      "item_7": "Plant operations & maintenance",
-      "item_8": "Renewable energy infrastructure"
-    },
-    "sector_infrastructure_feature_1": {
-      "title": "Civil Engineering Expertise",
-      "body": "Proven technical depth across highways, bridges, marine works, water, energy, and industrial disciplines built over two decades of delivery."
-    },
-    "sector_infrastructure_feature_2": {
-      "title": "Multidisciplinary Delivery",
-      "body": "Civil, structural, marine, mechanical, and electrical capabilities coordinated under one integrated infrastructure team."
-    },
-    "sector_infrastructure_feature_3": {
-      "title": "Abundant Plant & Equipment",
-      "body": "Access to a vast fleet of heavy plant, machinery, and a skilled workforce to execute large-scale civil works at pace."
-    },
-    "sector_infrastructure_feature_4": {
-      "title": "Remote Location Capability",
-      "body": "Demonstrated experience delivering infrastructure in challenging and remote environments without compromising quality or safety."
-    },
-    "sector_infrastructure_feature_5": {
-      "title": "International Standards",
-      "body": "Every project executed according to international codes and specifications under ISO-certified quality management systems."
-    },
-    "sector_infrastructure_feature_6": {
-      "title": "Regional Presence",
-      "body": "Established offices across the UAE, Egypt, Yemen, and Canada providing responsive local support across key markets."
-    },
-    "sector_infrastructure_feature_7": {
-      "title": "Proven Since 1990",
-      "body": "A consistent track record of delivering complex infrastructure projects on time and to specification across the Middle East and Africa."
-    },
-    "sector_infrastructure_feature_8": {
-      "title": "HSE Commitment",
-      "body": "A 'zero harm' safety culture embedded across all infrastructure sites through strict HSE protocols and regular training."
-    },
-    "sector_infrastructure_step_1": {
-      "num": "01",
-      "title": "Assessment & Survey",
-      "body": "We evaluate site conditions, ground data, hydrology, and project requirements to establish a sound engineering basis for delivery."
-    },
-    "sector_infrastructure_step_2": {
-      "num": "02",
-      "title": "Engineering & Design",
-      "body": "Our engineers prepare detailed civil, structural, and systems designs aligned with international codes and project specifications."
-    },
-    "sector_infrastructure_step_3": {
-      "num": "03",
-      "title": "Procurement",
-      "body": "We source and procure all materials, plant, and subcontracted works to quality, cost, and schedule requirements."
-    },
-    "sector_infrastructure_step_4": {
-      "num": "04",
-      "title": "Construction & Execution",
-      "body": "Experienced site teams execute earthworks, civil, structural, marine, and MEP works with rigorous quality and safety management."
-    },
-    "sector_infrastructure_step_5": {
-      "num": "05",
-      "title": "Quality & Testing",
-      "body": "Continuous inspection, materials testing, and compliance verification are carried out throughout the construction process."
-    },
-    "sector_infrastructure_step_6": {
-      "num": "06",
-      "title": "Commissioning & Handover",
-      "body": "We complete testing, commissioning, documentation, and formal handover with full as-built records and ongoing support."
-    },
-    "sector_infrastructure_whyus_1": {
-      "title": "Proven Infrastructure Record",
-      "body": "Successfully delivered highways, bridges, airports, ports, dams, and power projects across multiple countries."
-    },
-    "sector_infrastructure_whyus_2": {
-      "title": "Integrated Civil Capability",
-      "body": "In-house civil, marine, structural, and MEP teams delivering seamless coordination across complex infrastructure works."
-    },
-    "sector_infrastructure_whyus_3": {
-      "title": "International Quality Standards",
-      "body": "ISO 9001 certified quality management with stringent inspection and testing protocols across all civil works."
-    },
-    "sector_infrastructure_whyus_4": {
-      "title": "Skilled Multidisciplinary Workforce",
-      "body": "Civil engineers, marine specialists, surveyors, project managers, and construction crews working as one cohesive team."
-    },
-    "sector_infrastructure_whyus_5": {
-      "title": "Strong Regional Presence",
-      "body": "Established offices across the UAE, Egypt, Yemen, and Canada providing responsive local support across key markets."
-    },
-    "sector_infrastructure_whyus_6": {
-      "title": "HSE Commitment",
-      "body": "A 'zero harm' safety culture embedded across all infrastructure sites through strict HSE protocols and regular safety training."
-    },
-    "sector_infrastructure_whyus_7": {
-      "title": "Flexible Delivery Models",
-      "body": "Adaptable project structures including design-build, construction management, and full EPC delivery to suit client requirements."
-    },
-    "sector_infrastructure_whyus_8": {
-      "title": "Heavy Plant Resources",
-      "body": "Owned fleet of plant and equipment enabling self-performed earthworks and civil construction at scale and on schedule."
-    },
-    "sector_infrastructure_industries": {
-      "item_1": "Government & Public Sector",
-      "item_2": "Transportation Authorities",
-      "item_3": "Water & Utility Authorities",
-      "item_4": "Energy & Power",
-      "item_5": "Oil & Gas",
-      "item_6": "Ports & Maritime",
-      "item_7": "Aviation & Airports",
-      "item_8": "Municipalities",
-      "item_9": "Defense & Strategic",
-      "item_10": "International Development"
-    },
-    "sector_infrastructure_faq_1": {
-      "q": "What infrastructure disciplines does INFRA Construction deliver?",
-      "a": "We deliver highways, bridges, airports, ports and marine works, water systems, dams and irrigation, energy and power, and industrial infrastructure across the Middle East and Africa."
-    },
-    "sector_infrastructure_faq_2": {
-      "q": "Do you self-perform civil and earthworks?",
-      "a": "Yes. INFRA Construction owns an extensive fleet of plant and equipment and self-performs earthworks, civil, and structural construction at scale."
-    },
-    "sector_infrastructure_faq_3": {
-      "q": "Can you work in remote or challenging locations?",
-      "a": "Absolutely. We have a proven track record delivering infrastructure projects in challenging and remote environments without compromising quality or safety."
-    },
-    "sector_infrastructure_faq_4": {
-      "q": "Can you manage the full project lifecycle?",
-      "a": "Yes. We provide complete delivery from assessment and engineering through procurement, construction, testing, and commissioning."
-    },
-    "sector_infrastructure_faq_5": {
-      "q": "Are your infrastructure projects compliant with international standards?",
-      "a": "Yes. All projects are executed according to international engineering codes and specifications under our ISO 9001 certified quality management system."
-    },
-    "sector_energy_intro": {
-      "p1": "INFRA Construction provides comprehensive Energy & Power infrastructure services — spanning power generation, transmission networks, distribution systems, substations, and operations & maintenance. Our experienced engineering teams deliver energy projects from detailed design through construction, commissioning, and long-term operational support.",
-      "p2": "We understand that reliable energy infrastructure is fundamental to economic development, industrial operations, and quality of life. INFRA Construction combines technical expertise, international standards compliance, and proven project delivery systems to execute power and energy projects across challenging regional environments.",
-      "p3": "Our energy capabilities cover power plants, high-voltage transmission lines, substations, distribution networks, diesel and gas-based generation systems, renewable energy infrastructure, and operational maintenance programmes.",
-      "p4": "INFRA Construction has delivered power and energy projects across the Middle East and Africa, with a strong track record of on-time, on-budget delivery in complex operational environments."
-    },
-    "sector_energy_feature_1": {
-      "title": "Power Generation Expertise",
-      "body": "Engineering and construction of diesel, gas, steam, and renewable energy generation facilities."
-    },
-    "sector_energy_feature_2": {
-      "title": "Transmission & Distribution",
-      "body": "High-voltage transmission lines, substations, and distribution network construction and maintenance."
-    },
-    "sector_energy_feature_3": {
-      "title": "Operations & Maintenance",
-      "body": "Long-term O&M programmes for power plants, substations, and energy distribution infrastructure."
-    },
-    "sector_energy_feature_4": {
-      "title": "Technical Excellence",
-      "body": "Multidisciplinary engineering teams providing civil, structural, electrical, and mechanical energy solutions."
-    },
-    "sector_energy_feature_5": {
-      "title": "International Standards",
-      "body": "All energy projects designed and constructed to international electrical, safety, and quality standards."
-    },
-    "sector_energy_feature_6": {
-      "title": "Regional Market Experience",
-      "body": "Proven experience delivering energy infrastructure across the Middle East and East Africa."
-    },
-    "sector_energy_feature_7": {
-      "title": "Safety & Compliance",
-      "body": "Strict HSE systems implemented across all energy construction and operations activities."
-    },
-    "sector_energy_feature_8": {
-      "title": "End-to-End Capability",
-      "body": "Design, procurement, construction, commissioning, and long-term O&M delivered by one integrated team."
-    },
-    "sector_energy_sg_1": {
-      "title": "Power Generation",
-      "description": "INFRA Construction provides complete engineering and construction services for power generation facilities.",
-      "item_1": "Diesel power plants",
-      "item_2": "Gas-turbine plants",
-      "item_3": "Steam power plants",
-      "item_4": "Combined-cycle plants",
-      "item_5": "Captive power systems",
-      "item_6": "Emergency generation systems",
-      "item_7": "Renewable energy installations"
-    },
-    "sector_energy_sg_2": {
-      "title": "Transmission & Grid Infrastructure",
-      "description": "We design, procure, and construct high-voltage transmission systems and grid infrastructure.",
-      "item_1": "HV transmission lines",
-      "item_2": "Grid substation construction",
-      "item_3": "Transmission towers",
-      "item_4": "Cable systems",
-      "item_5": "Grid interconnections",
-      "item_6": "Protection systems",
-      "item_7": "SCADA & control systems"
-    },
-    "sector_energy_sg_3": {
-      "title": "Substation Engineering",
-      "description": "INFRA Construction builds high-voltage, medium-voltage, and low-voltage substations.",
-      "item_1": "HV/MV substations",
-      "item_2": "Distribution substations",
-      "item_3": "Transformer installation",
-      "item_4": "Switchgear systems",
-      "item_5": "Control & protection",
-      "item_6": "Metering systems",
-      "item_7": "Civil substation works"
-    },
-    "sector_energy_sg_4": {
-      "title": "Electrical Distribution Networks",
-      "description": "We deliver medium- and low-voltage distribution networks for industrial and utility projects.",
-      "item_1": "MV distribution networks",
-      "item_2": "LV distribution systems",
-      "item_3": "Underground cabling",
-      "item_4": "Overhead lines",
-      "item_5": "Network extensions",
-      "item_6": "Load-balancing systems",
-      "item_7": "Street lighting infrastructure"
-    },
-    "sector_energy_sg_5": {
-      "title": "Power Plant Operations & Maintenance",
-      "description": "We provide O&M support for power stations and energy infrastructure.",
-      "item_1": "Preventive maintenance",
-      "item_2": "Corrective maintenance",
-      "item_3": "Shutdown maintenance",
-      "item_4": "Equipment inspections",
-      "item_5": "Reliability improvement",
-      "item_6": "Spare parts management",
-      "item_7": "Technical manpower"
-    },
-    "sector_energy_sg_6": {
-      "title": "Renewable Energy Infrastructure",
-      "description": "INFRA supports development of renewable energy projects as markets transition.",
-      "item_1": "Solar PV infrastructure",
-      "item_2": "Wind energy support works",
-      "item_3": "Renewable grid integration",
-      "item_4": "Battery storage civil works",
-      "item_5": "Renewable access roads",
-      "item_6": "Renewable site preparation"
-    },
-    "sector_energy_step_1": {
-      "num": "01",
-      "title": "Needs Assessment",
-      "body": "We evaluate power demand, generation requirements, grid constraints, fuel supply, and project objectives."
-    },
-    "sector_energy_step_2": {
-      "num": "02",
-      "title": "Engineering & Design",
-      "body": "Our teams prepare detailed electrical, civil, and mechanical designs, specifications, and procurement plans."
-    },
-    "sector_energy_step_3": {
-      "num": "03",
-      "title": "Procurement",
-      "body": "We source and procure equipment, materials, and systems from qualified international suppliers."
-    },
-    "sector_energy_step_4": {
-      "num": "04",
-      "title": "Construction & Installation",
-      "body": "INFRA executes civil, structural, mechanical, and electrical works on site."
-    },
-    "sector_energy_step_5": {
-      "num": "05",
-      "title": "Testing & Commissioning",
-      "body": "We perform load testing, protection coordination, system commissioning, and performance verification."
-    },
-    "sector_energy_step_6": {
-      "num": "06",
-      "title": "Operations & Handover",
-      "body": "Our teams provide O&M support, training, and comprehensive handover documentation."
-    },
-    "sector_energy_whyus_1": {
-      "title": "Proven Energy Project Record",
-      "body": "Successfully delivered power plants, transmission systems, and energy infrastructure across the region."
-    },
-    "sector_energy_whyus_2": {
-      "title": "Full Project Lifecycle",
-      "body": "Engineering, procurement, construction, commissioning, and O&M delivered by one team."
-    },
-    "sector_energy_whyus_3": {
-      "title": "Strong Technical Team",
-      "body": "Electrical, mechanical, and civil engineers with deep energy sector expertise."
-    },
-    "sector_energy_whyus_4": {
-      "title": "Quality & Safety Commitment",
-      "body": "ISO-certified quality systems and strict HSE protocols maintained across all energy projects."
-    },
-    "sector_energy_whyus_5": {
-      "title": "Regional Market Knowledge",
-      "body": "Deep knowledge of energy sector conditions and requirements across the Middle East and Africa."
-    },
-    "sector_energy_whyus_6": {
-      "title": "Reliable O&M Support",
-      "body": "Long-term operations and maintenance programmes ensuring maximum uptime and performance."
-    },
-    "sector_energy_whyus_7": {
-      "title": "International Standards Compliance",
-      "body": "All energy projects executed to international electrical, safety, and quality standards."
-    },
-    "sector_energy_whyus_8": {
-      "title": "Flexible Delivery Models",
-      "body": "EPC, design-build, construction management, and O&M delivery models available."
-    },
-    "sector_energy_industries": {
-      "item_1": "National Power Utilities",
-      "item_2": "Industrial Facilities",
-      "item_3": "Oil & Gas Operations",
-      "item_4": "Government Infrastructure",
-      "item_5": "Mining & Heavy Industry",
-      "item_6": "Commercial Developments",
-      "item_7": "Hospitals & Healthcare",
-      "item_8": "Ports & Marine Facilities"
-    },
-    "sector_energy_faq_1": {
-      "q": "What energy services does INFRA Construction provide?",
-      "a": "We provide power generation construction, transmission systems, substation engineering, distribution networks, and O&M services."
-    },
-    "sector_energy_faq_2": {
-      "q": "Can you construct power plants from start to finish?",
-      "a": "Yes. INFRA provides complete EPC services for power generation facilities including engineering, procurement, construction, and commissioning."
-    },
-    "sector_energy_faq_3": {
-      "q": "Do you offer operations and maintenance for power plants?",
-      "a": "Yes. We provide long-term O&M support, preventive maintenance, and operational management for power facilities."
-    },
-    "sector_energy_faq_4": {
-      "q": "What regions do you operate in?",
-      "a": "We operate across the Middle East and Africa, with regional offices in the UAE, Egypt, Yemen, and Jordan."
-    },
-    "sector_energy_faq_5": {
-      "q": "Are your energy projects compliant with international standards?",
-      "a": "Yes. All energy projects are designed and executed to international electrical, safety, and quality management standards."
-    },
-    "sector_water_intro": {
-      "p1": "INFRA Construction provides comprehensive Water & Utilities infrastructure services — spanning water supply systems, wastewater treatment, dam construction, irrigation networks, desalination plants, and utility infrastructure. Our engineering teams bring decades of experience in water infrastructure delivery across some of the most challenging environments in the Middle East and Africa.",
-      "p2": "We understand the critical importance of reliable, sustainable water infrastructure to communities, industrial operations, and regional development. INFRA Construction delivers water projects from engineering and design through construction, commissioning, and long-term operational support.",
-      "p3": "Our water and utilities capabilities cover potable water supply networks, wastewater collection and treatment, dam and reservoir construction, irrigation infrastructure, desalination facilities, stormwater management, and integrated utility networks.",
-      "p4": "INFRA Construction has a proven track record in water infrastructure — having delivered dams, water tanks, supply networks, and wastewater treatment projects across Yemen, Egypt, and other regional markets."
-    },
-    "sector_water_feature_1": {
-      "title": "Dam Engineering Expertise",
-      "body": "Extensive experience designing and constructing dams, reservoirs, and water storage infrastructure."
-    },
-    "sector_water_feature_2": {
-      "title": "Water Supply Systems",
-      "body": "Complete water supply networks from source to distribution, including treatment and storage."
-    },
-    "sector_water_feature_3": {
-      "title": "Wastewater Treatment",
-      "body": "Wastewater collection, treatment, and disposal systems for urban and industrial applications."
-    },
-    "sector_water_feature_4": {
-      "title": "Irrigation Infrastructure",
-      "body": "Agricultural irrigation systems supporting food security and rural development programmes."
-    },
-    "sector_water_feature_5": {
-      "title": "Utility Network Integration",
-      "body": "Integrated utility systems combining water, wastewater, and stormwater management."
-    },
-    "sector_water_feature_6": {
-      "title": "International Standards",
-      "body": "All water projects designed and constructed to international water and environmental standards."
-    },
-    "sector_water_feature_7": {
-      "title": "Remote Project Capability",
-      "body": "Proven ability to deliver water infrastructure in remote and challenging environments."
-    },
-    "sector_water_feature_8": {
-      "title": "Sustainable Solutions",
-      "body": "Environmentally responsible water infrastructure supporting long-term sustainability objectives."
-    },
-    "sector_water_sg_1": {
-      "title": "Dam & Reservoir Construction",
-      "description": "INFRA Construction has extensive experience in dam engineering and reservoir construction.",
-      "item_1": "Earth-fill dams",
-      "item_2": "Concrete dams",
-      "item_3": "Rock-fill dams",
-      "item_4": "Dike construction",
-      "item_5": "Reservoir infrastructure",
-      "item_6": "Spillway construction",
-      "item_7": "Dam rehabilitation"
-    },
-    "sector_water_sg_2": {
-      "title": "Water Supply Networks",
-      "description": "We design and build complete potable water supply systems from source to consumer.",
-      "item_1": "Water intake structures",
-      "item_2": "Treatment plants",
-      "item_3": "Pumping stations",
-      "item_4": "Transmission mains",
-      "item_5": "Distribution networks",
-      "item_6": "Service reservoirs",
-      "item_7": "Water storage tanks"
-    },
-    "sector_water_sg_3": {
-      "title": "Wastewater Collection & Treatment",
-      "description": "INFRA provides complete wastewater infrastructure from collection networks to treatment facilities.",
-      "item_1": "Sewerage collection networks",
-      "item_2": "Wastewater treatment plants",
-      "item_3": "Pumping stations",
-      "item_4": "Effluent disposal systems",
-      "item_5": "Sludge management",
-      "item_6": "Industrial wastewater systems",
-      "item_7": "Package treatment plants"
-    },
-    "sector_water_sg_4": {
-      "title": "Irrigation & Agricultural Water",
-      "description": "We deliver irrigation infrastructure supporting agricultural development and food security.",
-      "item_1": "Irrigation canals",
-      "item_2": "Irrigation networks",
-      "item_3": "Pumping systems",
-      "item_4": "Agricultural drainage",
-      "item_5": "Sprinkler systems",
-      "item_6": "Flood irrigation",
-      "item_7": "Farm water supply"
-    },
-    "sector_water_sg_5": {
-      "title": "Stormwater Management",
-      "description": "INFRA delivers stormwater drainage, flood control, and urban drainage infrastructure.",
-      "item_1": "Storm drainage networks",
-      "item_2": "Culverts and channels",
-      "item_3": "Flood protection structures",
-      "item_4": "Retention basins",
-      "item_5": "Urban drainage systems",
-      "item_6": "Coastal drainage",
-      "item_7": "Drainage rehabilitation"
-    },
-    "sector_water_sg_6": {
-      "title": "Utility Networks & Infrastructure",
-      "description": "We deliver integrated utility networks combining water, wastewater, and stormwater systems.",
-      "item_1": "Integrated utility corridors",
-      "item_2": "Utility network planning",
-      "item_3": "Pipeline installation",
-      "item_4": "Pumping infrastructure",
-      "item_5": "Utility metering systems",
-      "item_6": "Network rehabilitation",
-      "item_7": "Smart utility integration"
-    },
-    "sector_water_step_1": {
-      "num": "01",
-      "title": "Hydrological Assessment",
-      "body": "We evaluate water resources, catchment areas, demand requirements, and environmental constraints."
-    },
-    "sector_water_step_2": {
-      "num": "02",
-      "title": "Engineering & Design",
-      "body": "Our teams develop hydraulic models, detailed designs, specifications, and construction drawings."
-    },
-    "sector_water_step_3": {
-      "num": "03",
-      "title": "Procurement",
-      "body": "We source pipes, pumping equipment, treatment systems, and materials from qualified suppliers."
-    },
-    "sector_water_step_4": {
-      "num": "04",
-      "title": "Civil Construction",
-      "body": "INFRA executes all civil, structural, mechanical, and pipeline installation works on site."
-    },
-    "sector_water_step_5": {
-      "num": "05",
-      "title": "Testing & Commissioning",
-      "body": "We conduct hydraulic testing, water quality verification, and system commissioning."
-    },
-    "sector_water_step_6": {
-      "num": "06",
-      "title": "Handover & O&M Support",
-      "body": "Our teams complete formal handover and provide optional O&M support programmes."
-    },
-    "sector_water_whyus_1": {
-      "title": "Proven Dam Engineering",
-      "body": "Successfully delivered dam, reservoir, and water storage infrastructure across regional markets."
-    },
-    "sector_water_whyus_2": {
-      "title": "Comprehensive Water Capabilities",
-      "body": "Full water cycle delivery from source through treatment, distribution, and wastewater management."
-    },
-    "sector_water_whyus_3": {
-      "title": "Remote Project Experience",
-      "body": "Proven capability to deliver water infrastructure in challenging and remote environments."
-    },
-    "sector_water_whyus_4": {
-      "title": "Quality Management",
-      "body": "ISO 9001 certified quality systems ensuring consistent delivery across all water projects."
-    },
-    "sector_water_whyus_5": {
-      "title": "Sustainability Focus",
-      "body": "Environmentally responsible water engineering supporting long-term resource sustainability."
-    },
-    "sector_water_whyus_6": {
-      "title": "Technical Excellence",
-      "body": "Experienced civil, structural, and hydraulic engineers with deep water sector expertise."
-    },
-    "sector_water_whyus_7": {
-      "title": "Regional Market Knowledge",
-      "body": "Extensive understanding of water infrastructure challenges and requirements in our markets."
-    },
-    "sector_water_whyus_8": {
-      "title": "Integrated Utility Solutions",
-      "body": "Combined water, wastewater, and utility systems delivered through one experienced team."
-    },
-    "sector_water_industries": {
-      "item_1": "Municipal Water Authorities",
-      "item_2": "Government Infrastructure",
-      "item_3": "Agricultural Sector",
-      "item_4": "Industrial Facilities",
-      "item_5": "Oil & Gas Operations",
-      "item_6": "Residential Developments",
-      "item_7": "Mining Operations",
-      "item_8": "Power Generation",
-      "item_9": "Hospitality & Tourism",
-      "item_10": "Military Infrastructure"
-    },
-    "sector_water_faq_1": {
-      "q": "What water services does INFRA Construction provide?",
-      "a": "We provide dam construction, water supply networks, wastewater treatment, irrigation infrastructure, stormwater management, and utility systems."
-    },
-    "sector_water_faq_2": {
-      "q": "Do you construct dams and reservoirs?",
-      "a": "Yes. INFRA Construction has extensive experience in dam engineering and reservoir construction across multiple regions."
-    },
-    "sector_water_faq_3": {
-      "q": "Can you deliver wastewater treatment plants?",
-      "a": "Yes. We provide complete wastewater collection, treatment, and disposal system delivery."
-    },
-    "sector_water_faq_4": {
-      "q": "Do you work in remote environments?",
-      "a": "Yes. INFRA has proven capability to deliver water infrastructure projects in remote and challenging environments."
-    },
-    "sector_water_faq_5": {
-      "q": "Are your water projects environmentally compliant?",
-      "a": "Yes. All water infrastructure is designed and constructed to international environmental and water quality standards."
-    },
-    "sector_epc_intro": {
-      "p1": "INFRA Construction provides comprehensive Engineering & EPC services designed to support the successful delivery of complex infrastructure, industrial, utility, transportation, and development projects. Our multidisciplinary engineering teams, project management specialists, procurement professionals, and construction experts work collaboratively to deliver integrated project solutions from concept through completion.",
-      "p2": "We understand that successful EPC project delivery requires technical precision, efficient coordination, procurement reliability, construction excellence, and operational discipline. INFRA Construction combines advanced engineering technologies, experienced personnel, strong supply chain networks, and proven management systems to execute projects efficiently while maintaining quality, safety, and schedule performance.",
-      "p3": "Our capabilities span engineering design, procurement management, construction execution, project controls, BIM coordination, quality assurance, testing and commissioning, and operational support.",
-      "p4": "INFRA Construction's engineering offices in Amman, Jordan and Cairo, Egypt maintain a permanent core staff of approximately 275 qualified professionals — capable of delivering over 150,000 engineering man-hours per year.",
-      "p5": "With international project experience and strong regional capabilities, INFRA Construction successfully delivers projects across multiple sectors and complex operational environments."
-    },
-    "sector_epc_feature_1": {
-      "title": "Integrated EPC Capability",
-      "body": "End-to-end project delivery covering engineering, procurement, construction, and commissioning under one team."
-    },
-    "sector_epc_feature_2": {
-      "title": "Advanced Engineering Technology",
-      "body": "Modern engineering software, BIM systems, and digital coordination platforms for precision delivery."
-    },
-    "sector_epc_feature_3": {
-      "title": "Strong Procurement Network",
-      "body": "Efficient sourcing systems supporting quality control and timely delivery of materials and equipment."
-    },
-    "sector_epc_feature_4": {
-      "title": "Experienced Project Teams",
-      "body": "Engineers, planners, procurement specialists, construction managers, and technical professionals."
-    },
-    "sector_epc_feature_5": {
-      "title": "International Standards Compliance",
-      "body": "All engineering and construction activities comply with international technical, quality, and safety standards."
-    },
-    "sector_epc_feature_6": {
-      "title": "Flexible Project Delivery Models",
-      "body": "EPC services adapted according to client requirements, project complexity, and operational conditions."
-    },
-    "sector_epc_feature_7": {
-      "title": "Quality & Safety Focus",
-      "body": "Strict QA/QC systems and HSE procedures implemented across all EPC projects."
-    },
-    "sector_epc_feature_8": {
-      "title": "Multi-Sector Experience",
-      "body": "EPC solutions delivered across industrial, infrastructure, utility, transportation, energy, and building sectors."
-    },
-    "sector_epc_sg_1": {
-      "title": "Detailed Engineering Services",
-      "description": "INFRA Construction provides multidisciplinary engineering design services for infrastructure, industrial, utility, transportation, and building projects.",
-      "item_1": "Civil engineering",
-      "item_2": "Structural engineering",
-      "item_3": "Mechanical engineering",
-      "item_4": "Electrical engineering",
-      "item_5": "MEP engineering",
-      "item_6": "Utility engineering",
-      "item_7": "Transportation engineering",
-      "item_8": "Water infrastructure engineering",
-      "item_9": "Industrial plant engineering",
-      "item_10": "Architectural design"
-    },
-    "sector_epc_sg_2": {
-      "title": "Engineering Design & Consultancy",
-      "description": "Our engineering teams utilize advanced CAD, BIM, and engineering software systems to develop accurate and efficient project solutions.",
-      "item_1": "Concept design",
-      "item_2": "Detailed design",
-      "item_3": "Feasibility studies",
-      "item_4": "Technical analysis",
-      "item_5": "Value engineering",
-      "item_6": "Engineering consultancy",
-      "item_7": "Technical specifications",
-      "item_8": "Design coordination"
-    },
-    "sector_epc_sg_3": {
-      "title": "Procurement & Supply Chain Management",
-      "description": "The Central Procurement Department, situated in Dubai, UAE, operates in accordance with an ISO 9001 approved procurement manual.",
-      "item_1": "Material sourcing & purchasing",
-      "item_2": "Vendor management",
-      "item_3": "Procurement planning",
-      "item_4": "Equipment procurement",
-      "item_5": "Desk and shop expediting services",
-      "item_6": "Quality surveillance",
-      "item_7": "Traffic & logistics expertise",
-      "item_8": "Supply chain optimization"
-    },
-    "sector_epc_sg_4": {
-      "title": "EPC Project Delivery",
-      "description": "We provide complete EPC project execution services covering engineering, procurement, construction, commissioning, and handover.",
-      "item_1": "Turnkey project delivery",
-      "item_2": "Design-build services",
-      "item_3": "Construction management",
-      "item_4": "Site supervision",
-      "item_5": "Project controls",
-      "item_6": "Risk management",
-      "item_7": "QA/QC management",
-      "item_8": "Testing & commissioning"
-    },
-    "sector_epc_sg_5": {
-      "title": "Building Information Modeling (BIM)",
-      "description": "INFRA Construction integrates BIM technologies to improve design coordination, project visualization, clash detection, and construction planning.",
-      "item_1": "3D modeling",
-      "item_2": "Coordination modeling",
-      "item_3": "Clash detection",
-      "item_4": "Quantity takeoffs",
-      "item_5": "Construction sequencing",
-      "item_6": "Asset information management",
-      "item_7": "Digital project controls"
-    },
-    "sector_epc_sg_6": {
-      "title": "Construction Management Services",
-      "description": "We provide professional construction management solutions focused on safety, quality, efficiency, and schedule performance.",
-      "item_1": "Site management",
-      "item_2": "Workforce coordination",
-      "item_3": "Progress monitoring",
-      "item_4": "Contract administration",
-      "item_5": "Quality inspections",
-      "item_6": "HSE management",
-      "item_7": "Cost control",
-      "item_8": "Schedule management"
-    },
-    "sector_epc_step_1": {
-      "num": "01",
-      "title": "Project Analysis & Planning",
-      "body": "We evaluate technical requirements, project objectives, operational conditions, and client expectations."
-    },
-    "sector_epc_step_2": {
-      "num": "02",
-      "title": "Engineering & Design Development",
-      "body": "Our engineering teams prepare technical designs, calculations, BIM models, specifications, and project documentation."
-    },
-    "sector_epc_step_3": {
-      "num": "03",
-      "title": "Procurement & Supply Chain Coordination",
-      "body": "We manage sourcing, supplier coordination, inspections, logistics, and procurement scheduling."
-    },
-    "sector_epc_step_4": {
-      "num": "04",
-      "title": "Construction & Execution",
-      "body": "INFRA Construction executes project works through experienced construction teams and management systems."
-    },
-    "sector_epc_step_5": {
-      "num": "05",
-      "title": "Quality Control & Commissioning",
-      "body": "We conduct inspections, testing, commissioning, performance verification, and compliance assessments."
-    },
-    "sector_epc_step_6": {
-      "num": "06",
-      "title": "Handover & Operational Support",
-      "body": "Our teams provide final project handover, documentation, operational support, and maintenance coordination."
-    },
-    "sector_epc_whyus_1": {
-      "title": "Proven EPC Experience",
-      "body": "Delivered engineering and construction projects across multiple industries and regions."
-    },
-    "sector_epc_whyus_2": {
-      "title": "Multidisciplinary Engineering Teams",
-      "body": "Integrated engineering departments providing comprehensive technical expertise across all disciplines."
-    },
-    "sector_epc_whyus_3": {
-      "title": "Reliable Procurement Systems",
-      "body": "Efficient procurement and logistics systems that support successful project execution."
-    },
-    "sector_epc_whyus_4": {
-      "title": "Strong Construction Capability",
-      "body": "Workforce, equipment, and project management systems capable of executing complex construction projects."
-    },
-    "sector_epc_whyus_5": {
-      "title": "Commitment to Excellence",
-      "body": "Projects delivered safely, efficiently, on schedule, and according to quality standards."
-    },
-    "sector_epc_whyus_6": {
-      "title": "Flexible & Scalable Solutions",
-      "body": "EPC services adapting to projects of varying sizes, complexities, and operational requirements."
-    },
-    "sector_epc_whyus_7": {
-      "title": "Global Project Reach",
-      "body": "Capability to mobilize resources and execute projects across diverse international markets."
-    },
-    "sector_epc_whyus_8": {
-      "title": "BIM Integration",
-      "body": "Advanced digital tools for design coordination, project visualization, and construction planning."
-    },
-    "sector_epc_industries": {
-      "item_1": "Industrial Facilities",
-      "item_2": "Infrastructure Projects",
-      "item_3": "Water & Utilities",
-      "item_4": "Energy & Power",
-      "item_5": "Transportation Infrastructure",
-      "item_6": "Buildings & Developments",
-      "item_7": "Oil & Gas",
-      "item_8": "Government Projects",
-      "item_9": "Commercial Developments",
-      "item_10": "Ports & Marine Infrastructure"
-    },
-    "sector_epc_faq_1": {
-      "q": "What EPC services does INFRA Construction provide?",
-      "a": "We provide engineering, procurement, construction, commissioning, project management, BIM coordination, and operational support services."
-    },
-    "sector_epc_faq_2": {
-      "q": "Do you offer turnkey project delivery?",
-      "a": "Yes. INFRA Construction provides complete turnkey EPC solutions for infrastructure, industrial, and development projects."
-    },
-    "sector_epc_faq_3": {
-      "q": "Can you manage large-scale international projects?",
-      "a": "Absolutely. We possess the technical resources, workforce, procurement systems, and operational experience required for large-scale projects."
-    },
-    "sector_epc_faq_4": {
-      "q": "Do you use BIM technologies?",
-      "a": "Yes. We integrate BIM and advanced engineering software systems to improve coordination, planning, and project efficiency."
-    },
-    "sector_epc_faq_5": {
-      "q": "What sectors do you serve?",
-      "a": "We serve industrial, infrastructure, energy, water, transportation, oil & gas, and commercial development sectors."
-    },
-    "sector_facilities_intro": {
-      "p1": "INFRA Construction delivers comprehensive Facilities Management & Operations services tailored to the unique requirements of commercial developments, industrial facilities, public infrastructure, utilities, residential communities, and institutional projects. Backed by decades of regional and international experience, we provide integrated operational solutions that ensure facilities remain safe, efficient, compliant, and sustainable throughout their lifecycle.",
-      "p2": "Our approach combines technical expertise, proactive maintenance strategies, operational planning, and advanced asset management systems to help clients optimize performance while reducing operational costs.",
-      "p3": "We support clients across various industries by providing both hard and soft facilities management services, operations management, preventive maintenance, corrective maintenance, asset lifecycle planning, infrastructure operations, and technical support services.",
-      "p4": "INFRA Construction has developed a reputation for delivering dependable, high-quality facility services across governmental, private, industrial, and infrastructure sectors."
-    },
-    "sector_facilities_feature_1": {
-      "title": "Customized Facility Solutions",
-      "body": "Management strategies and operational plans tailored to client industry, facility type, and performance objectives."
-    },
-    "sector_facilities_feature_2": {
-      "title": "Preventive Maintenance Approach",
-      "body": "Proactive and predictive maintenance strategies to reduce equipment failure and extend asset lifespan."
-    },
-    "sector_facilities_feature_3": {
-      "title": "24/7 Operational Support",
-      "body": "Dedicated response teams providing around-the-clock emergency maintenance and operational support."
-    },
-    "sector_facilities_feature_4": {
-      "title": "Skilled Technical Workforce",
-      "body": "Highly trained engineers, technicians, operators, inspectors, and maintenance specialists."
-    },
-    "sector_facilities_feature_5": {
-      "title": "HSE Compliance",
-      "body": "Strict compliance with international HSE standards and operational safety procedures."
-    },
-    "sector_facilities_feature_6": {
-      "title": "Technology-Driven Operations",
-      "body": "Digital asset management, maintenance tracking software, reporting platforms, and performance monitoring tools."
-    },
-    "sector_facilities_feature_7": {
-      "title": "Sustainability Integration",
-      "body": "Energy efficiency, resource optimization, and environmentally responsible facility operations."
-    },
-    "sector_facilities_feature_8": {
-      "title": "Multi-Sector Experience",
-      "body": "Experience spanning commercial buildings, industrial facilities, utility infrastructure, and government projects."
-    },
-    "sector_facilities_sg_1": {
-      "title": "Integrated Facilities Management",
-      "description": "We provide fully integrated facilities management solutions combining technical operations, maintenance, administration, and safety management.",
-      "item_1": "Technical operations management",
-      "item_2": "Maintenance and administration",
-      "item_3": "Safety management systems",
-      "item_4": "Support services integration",
-      "item_5": "Service quality assurance",
-      "item_6": "Single management framework"
-    },
-    "sector_facilities_sg_2": {
-      "title": "Hard Facilities Management",
-      "description": "Our hard FM services focus on maintaining and optimizing critical building systems and infrastructure components.",
-      "item_1": "HVAC system maintenance",
-      "item_2": "Electrical systems maintenance",
-      "item_3": "Plumbing and drainage",
-      "item_4": "Mechanical systems operations",
-      "item_5": "Fire protection systems",
-      "item_6": "Power generation systems",
-      "item_7": "Civil and structural maintenance"
-    },
-    "sector_facilities_sg_3": {
-      "title": "Soft Facilities Management",
-      "description": "We provide professional soft FM services that support daily functionality, comfort, and safety.",
-      "item_1": "Cleaning and janitorial services",
-      "item_2": "Waste management",
-      "item_3": "Landscaping maintenance",
-      "item_4": "Pest control",
-      "item_5": "Reception and helpdesk services",
-      "item_6": "Security coordination",
-      "item_7": "Logistics support"
-    },
-    "sector_facilities_sg_4": {
-      "title": "Operations & Maintenance Services",
-      "description": "INFRA Construction specializes in preventive, predictive, and corrective maintenance services.",
-      "item_1": "Preventive maintenance programs",
-      "item_2": "Corrective maintenance",
-      "item_3": "Emergency maintenance response",
-      "item_4": "Shutdown planning and execution",
-      "item_5": "Equipment inspection and testing",
-      "item_6": "Asset integrity management",
-      "item_7": "Spare parts management"
-    },
-    "sector_facilities_sg_5": {
-      "title": "Industrial Facility Operations",
-      "description": "We support industrial clients managing complex operational environments.",
-      "item_1": "Manufacturing plant operations",
-      "item_2": "Utility facility management",
-      "item_3": "Processing plant support",
-      "item_4": "Power station operations",
-      "item_5": "Infrastructure network management",
-      "item_6": "Productivity and uptime optimization"
-    },
-    "sector_facilities_sg_6": {
-      "title": "Asset Management Solutions",
-      "description": "We implement strategic asset management systems to monitor performance and optimize lifecycle costs.",
-      "item_1": "Asset performance monitoring",
-      "item_2": "Maintenance activity planning",
-      "item_3": "Lifecycle cost optimization",
-      "item_4": "Operational decision-making support"
-    },
-    "sector_facilities_sg_7": {
-      "title": "Infrastructure Operations",
-      "description": "INFRA Construction provides operations and maintenance support for roads, utilities, water systems, and power distribution networks.",
-      "item_1": "Roads and utilities O&M",
-      "item_2": "Power distribution maintenance",
-      "item_3": "Public infrastructure management",
-      "item_4": "Water network operations",
-      "item_5": "Long-term performance monitoring"
-    },
-    "sector_facilities_step_1": {
-      "num": "01",
-      "title": "Facility Assessment",
-      "body": "We evaluate infrastructure, operational requirements, maintenance history, asset conditions, and performance objectives."
-    },
-    "sector_facilities_step_2": {
-      "num": "02",
-      "title": "Operational Planning",
-      "body": "Our specialists develop a customized operations and maintenance strategy aligned with client requirements."
-    },
-    "sector_facilities_step_3": {
-      "num": "03",
-      "title": "Resource Mobilization",
-      "body": "We deploy qualified personnel, equipment, maintenance systems, and operational resources."
-    },
-    "sector_facilities_step_4": {
-      "num": "04",
-      "title": "Implementation & Operations",
-      "body": "Our teams execute day-to-day operations, preventive maintenance, inspections, and emergency response."
-    },
-    "sector_facilities_step_5": {
-      "num": "05",
-      "title": "Performance Monitoring",
-      "body": "We continuously monitor operational performance using KPIs, maintenance reporting, inspections, and analytics."
-    },
-    "sector_facilities_step_6": {
-      "num": "06",
-      "title": "Continuous Improvement",
-      "body": "INFRA Construction continually refines operational procedures and maintenance schedules to improve efficiency."
-    },
-    "sector_facilities_whyus_1": {
-      "title": "Extensive Industry Experience",
-      "body": "Successfully delivered FM and operations solutions across diverse sectors and challenging environments."
-    },
-    "sector_facilities_whyus_2": {
-      "title": "One-Stop Operational Partner",
-      "body": "Complete facilities management and operational support under one integrated management structure."
-    },
-    "sector_facilities_whyus_3": {
-      "title": "Proven Operational Reliability",
-      "body": "Committed to minimizing downtime, maximizing performance, and ensuring operational continuity."
-    },
-    "sector_facilities_whyus_4": {
-      "title": "Strong Technical Capabilities",
-      "body": "Experienced engineers, technicians, and operational specialists delivering reliable solutions."
-    },
-    "sector_facilities_whyus_5": {
-      "title": "Flexible Service Models",
-      "body": "Scalable and flexible contracts tailored to client requirements, budgets, and project durations."
-    },
-    "sector_facilities_whyus_6": {
-      "title": "Commitment to Safety",
-      "body": "Safety integrated into every aspect of operations through strict HSE protocols and training."
-    },
-    "sector_facilities_whyus_7": {
-      "title": "Sustainable Operations",
-      "body": "Sustainable practices through energy-efficient maintenance and environmentally responsible operations."
-    },
-    "sector_facilities_whyus_8": {
-      "title": "Regional & International Reach",
-      "body": "Operations across multiple countries with capability to mobilize in remote and complex locations."
-    },
-    "sector_facilities_industries": {
-      "item_1": "Commercial Buildings",
-      "item_2": "Residential Communities",
-      "item_3": "Government Facilities",
-      "item_4": "Industrial Plants",
-      "item_5": "Oil & Gas Facilities",
-      "item_6": "Power Plants",
-      "item_7": "Water & Utility Infrastructure",
-      "item_8": "Transportation Infrastructure",
-      "item_9": "Healthcare Facilities",
-      "item_10": "Educational Institutions",
-      "item_11": "Hospitality & Tourism",
-      "item_12": "Ports & Marine Facilities",
-      "item_13": "Airports & Aviation Infrastructure"
-    },
-    "sector_facilities_faq_1": {
-      "q": "What facilities management services do you provide?",
-      "a": "We provide integrated hard and soft FM including maintenance, operations, asset management, technical support, cleaning, landscaping, and operational coordination."
-    },
-    "sector_facilities_faq_2": {
-      "q": "Do you offer 24/7 maintenance support?",
-      "a": "Yes. INFRA Construction provides round-the-clock emergency maintenance and operational support services."
-    },
-    "sector_facilities_faq_3": {
-      "q": "Can you manage industrial and infrastructure facilities?",
-      "a": "Absolutely. We specialize in industrial operations, infrastructure maintenance, utility management, and large-scale operational support."
-    },
-    "sector_facilities_faq_4": {
-      "q": "Do you provide preventive maintenance programs?",
-      "a": "Yes. Our preventive maintenance programs improve equipment reliability, reduce downtime, and optimize lifecycle performance."
-    },
-    "sector_facilities_faq_5": {
-      "q": "Are your operations compliant with international safety standards?",
-      "a": "Yes. We implement strict health, safety, environmental, and quality management systems aligned with international standards."
-    },
-    "sector_industrial_intro": {
-      "p1": "INFRA Construction provides integrated Industrial & Oil Services designed to support the development, operation, maintenance, and expansion of industrial and energy infrastructure projects. Our multidisciplinary capabilities allow us to deliver technically advanced solutions for oil & gas facilities, petrochemical plants, industrial processing facilities, utility infrastructure, and energy-related developments.",
-      "p2": "We understand the demanding nature of industrial environments where operational reliability, safety compliance, engineering precision, and efficient project execution are critical. Our teams combine engineering expertise, operational experience, advanced technology, and strict quality control systems to deliver projects that meet international industry standards.",
-      "p3": "From pipeline engineering and plant construction to maintenance services and operational support, INFRA Construction provides end-to-end industrial solutions tailored to the requirements of each client and project environment.",
-      "p4": "Our experience across regional and international markets enables us to manage projects in remote, complex, and technically demanding environments while maintaining operational safety, schedule efficiency, and construction quality."
-    },
-    "sector_industrial_feature_1": {
-      "title": "Specialized Technical Expertise",
-      "body": "Multidisciplinary teams with expertise in industrial systems, pipelines, utility networks, and mechanical installations."
-    },
-    "sector_industrial_feature_2": {
-      "title": "International Standards Compliance",
-      "body": "All industrial and oilfield projects executed in accordance with international engineering, safety, and quality standards."
-    },
-    "sector_industrial_feature_3": {
-      "title": "Safety-First Operations",
-      "body": "Strict HSE protocols and operational safety systems to ensure safe industrial operations."
-    },
-    "sector_industrial_feature_4": {
-      "title": "Advanced Engineering Technology",
-      "body": "Modern engineering software, 3D modeling systems, BIM technologies, and digital coordination tools."
-    },
-    "sector_industrial_feature_5": {
-      "title": "Skilled Industrial Workforce",
-      "body": "Experienced engineers, technicians, welders, inspectors, operators, and industrial specialists."
-    },
-    "sector_industrial_feature_6": {
-      "title": "Remote Project Capability",
-      "body": "Resources and operational experience required to execute projects in remote and challenging environments."
-    },
-    "sector_industrial_feature_7": {
-      "title": "Reliable Project Delivery",
-      "body": "Project management systems ensuring timely execution, efficient coordination, and cost-effective delivery."
-    },
-    "sector_industrial_feature_8": {
-      "title": "Integrated Solutions",
-      "body": "End-to-end industrial services covering engineering, procurement, construction, operations, and maintenance."
-    },
-    "sector_industrial_sg_1": {
-      "title": "Oil & Gas Infrastructure Services",
-      "description": "We provide specialized engineering and construction services for upstream, midstream, and downstream oil & gas infrastructure.",
-      "item_1": "Oil & gas pipeline construction",
-      "item_2": "Refinery infrastructure support",
-      "item_3": "Petrochemical facility works",
-      "item_4": "Utility piping systems",
-      "item_5": "Process piping installation",
-      "item_6": "Mechanical systems integration",
-      "item_7": "Storage facility infrastructure"
-    },
-    "sector_industrial_sg_2": {
-      "title": "Pipeline Engineering & Construction",
-      "description": "INFRA Construction delivers complete pipeline engineering, fabrication, installation, and maintenance services.",
-      "item_1": "Cross-country pipelines",
-      "item_2": "Utility pipelines",
-      "item_3": "Steam piping systems",
-      "item_4": "Industrial ducting systems",
-      "item_5": "Pipeline stress analysis",
-      "item_6": "Pipe support systems",
-      "item_7": "Piping fabrication and erection"
-    },
-    "sector_industrial_sg_3": {
-      "title": "Plant Engineering Services",
-      "description": "We provide engineering support for industrial plants, processing facilities, and utility systems.",
-      "item_1": "Industrial plant layouts",
-      "item_2": "Mechanical engineering",
-      "item_3": "Structural engineering",
-      "item_4": "Electrical systems engineering",
-      "item_5": "Industrial process support",
-      "item_6": "Equipment foundations",
-      "item_7": "3D plant modeling"
-    },
-    "sector_industrial_sg_4": {
-      "title": "Industrial Construction Services",
-      "description": "INFRA Construction supports construction and expansion of industrial facilities.",
-      "item_1": "Industrial buildings",
-      "item_2": "Processing facilities",
-      "item_3": "Utility infrastructure",
-      "item_4": "Mechanical installations",
-      "item_5": "Structural steel works",
-      "item_6": "Heavy civil works",
-      "item_7": "Industrial maintenance shutdowns"
-    },
-    "sector_industrial_sg_5": {
-      "title": "Industrial Operations & Maintenance",
-      "description": "We provide operational support and maintenance services for industrial facilities.",
-      "item_1": "Preventive maintenance",
-      "item_2": "Corrective maintenance",
-      "item_3": "Shutdown maintenance",
-      "item_4": "Equipment inspections",
-      "item_5": "Emergency repairs",
-      "item_6": "Reliability improvement programs",
-      "item_7": "Asset integrity management"
-    },
-    "sector_industrial_sg_6": {
-      "title": "Engineering Design & Technical Support",
-      "description": "Our engineering teams provide technical design, drafting, modeling, and engineering consultancy.",
-      "item_1": "Technical design and drafting",
-      "item_2": "3D modeling and BIM",
-      "item_3": "Engineering consultancy",
-      "item_4": "Feasibility and technical studies",
-      "item_5": "Specifications development",
-      "item_6": "Design coordination"
-    },
-    "sector_industrial_step_1": {
-      "num": "01",
-      "title": "Project Evaluation",
-      "body": "We analyze project requirements, operational objectives, technical specifications, and safety standards."
-    },
-    "sector_industrial_step_2": {
-      "num": "02",
-      "title": "Engineering & Planning",
-      "body": "Our engineering teams develop detailed technical designs, schedules, and procurement plans."
-    },
-    "sector_industrial_step_3": {
-      "num": "03",
-      "title": "Procurement & Logistics",
-      "body": "We manage sourcing, quality inspections, logistics coordination, and material procurement."
-    },
-    "sector_industrial_step_4": {
-      "num": "04",
-      "title": "Construction & Installation",
-      "body": "Our construction teams execute civil, mechanical, piping, electrical, and structural works."
-    },
-    "sector_industrial_step_5": {
-      "num": "05",
-      "title": "Testing & Commissioning",
-      "body": "We perform testing, inspections, commissioning activities, and operational verification."
-    },
-    "sector_industrial_step_6": {
-      "num": "06",
-      "title": "O&M Support",
-      "body": "INFRA Construction provides ongoing maintenance, operational support, and reliability management."
-    },
-    "sector_industrial_whyus_1": {
-      "title": "Proven Industrial Experience",
-      "body": "Successfully supported industrial, utility, and oil-related infrastructure projects across multiple regions."
-    },
-    "sector_industrial_whyus_2": {
-      "title": "Multidisciplinary Engineering Capability",
-      "body": "Integrated engineering teams covering civil, structural, mechanical, electrical, and piping disciplines."
-    },
-    "sector_industrial_whyus_3": {
-      "title": "Strong Resource Network",
-      "body": "Access to equipment, technical resources, skilled manpower, and procurement systems."
-    },
-    "sector_industrial_whyus_4": {
-      "title": "Commitment to Quality",
-      "body": "Comprehensive QA/QC systems and inspection procedures for consistent project quality."
-    },
-    "sector_industrial_whyus_5": {
-      "title": "Flexible Project Execution",
-      "body": "Teams that adapt efficiently to project-specific requirements and client expectations."
-    },
-    "sector_industrial_whyus_6": {
-      "title": "Operational Reliability",
-      "body": "Focused on minimizing operational disruptions and maximizing long-term system reliability."
-    },
-    "sector_industrial_whyus_7": {
-      "title": "Global Project Reach",
-      "body": "International operational experience across diverse geographic and industrial environments."
-    },
-    "sector_industrial_whyus_8": {
-      "title": "Technical Excellence",
-      "body": "Advanced engineering capabilities backed by decades of industrial project delivery experience."
-    },
-    "sector_industrial_industries": {
-      "item_1": "Oil & Gas",
-      "item_2": "Petrochemical Plants",
-      "item_3": "Energy & Utilities",
-      "item_4": "Industrial Manufacturing",
-      "item_5": "Processing Facilities",
-      "item_6": "Power Generation",
-      "item_7": "Water & Wastewater Infrastructure",
-      "item_8": "Heavy Industrial Facilities",
-      "item_9": "Transportation Infrastructure",
-      "item_10": "Government Industrial Projects"
-    },
-    "sector_industrial_faq_1": {
-      "q": "What industrial services does INFRA Construction provide?",
-      "a": "We provide industrial engineering, pipeline construction, mechanical installations, plant engineering, operations support, and maintenance services."
-    },
-    "sector_industrial_faq_2": {
-      "q": "Do you support oil & gas infrastructure projects?",
-      "a": "Yes. We provide engineering, construction, and maintenance services for pipelines, utility systems, and oilfield infrastructure."
-    },
-    "sector_industrial_faq_3": {
-      "q": "Can you handle remote industrial projects?",
-      "a": "Absolutely. INFRA Construction has extensive experience operating in remote and challenging environments."
-    },
-    "sector_industrial_faq_4": {
-      "q": "Do you provide plant maintenance services?",
-      "a": "Yes. We offer preventive maintenance, corrective maintenance, shutdown support, inspections, and operational maintenance."
-    },
-    "sector_industrial_faq_5": {
-      "q": "Are your projects compliant with safety regulations?",
-      "a": "Yes. We implement strict HSE standards and internationally recognized quality and safety management systems."
-    },
-    "sector_civil_intro": {
-      "p1": "INFRA Construction provides comprehensive Infrastructure & Civil Works services for public, private, industrial, transportation, utility, and development sectors. Our extensive project experience, multidisciplinary engineering expertise, and operational capabilities enable us to successfully deliver complex civil infrastructure projects across multiple regions.",
-      "p2": "Infrastructure development plays a critical role in economic growth, urban expansion, industrial advancement, and community improvement. INFRA Construction supports these objectives through high-quality engineering, efficient construction management, advanced technologies, and reliable project execution.",
-      "p3": "Our infrastructure capabilities cover roads, highways, bridges, utility networks, marine works, dams, ports, airports, drainage systems, transportation infrastructure, and heavy civil engineering works.",
-      "p4": "We combine technical expertise, operational efficiency, quality assurance systems, and strong project controls to deliver infrastructure projects that meet international standards while supporting long-term operational sustainability."
-    },
-    "sector_civil_feature_1": {
-      "title": "Large-Scale Infrastructure Expertise",
-      "body": "Extensive experience delivering major infrastructure and civil engineering projects across multiple regions."
-    },
-    "sector_civil_feature_2": {
-      "title": "Advanced Construction Capability",
-      "body": "Equipment fleet, workforce, and technical systems supporting complex infrastructure execution."
-    },
-    "sector_civil_feature_3": {
-      "title": "Strong Project Controls",
-      "body": "Detailed planning, monitoring, scheduling, cost control, and reporting across all projects."
-    },
-    "sector_civil_feature_4": {
-      "title": "Multidisciplinary Engineering Support",
-      "body": "Integrated support across civil, structural, utility, transportation, and marine disciplines."
-    },
-    "sector_civil_feature_5": {
-      "title": "International Quality Standards",
-      "body": "All infrastructure projects executed according to international engineering and construction standards."
-    },
-    "sector_civil_feature_6": {
-      "title": "Safety-Driven Operations",
-      "body": "Strict HSE systems and operational safety procedures maintained across all project sites."
-    },
-    "sector_civil_feature_7": {
-      "title": "Remote Project Mobilization",
-      "body": "Capability to execute projects in remote and challenging environments worldwide."
-    },
-    "sector_civil_feature_8": {
-      "title": "Sustainable Infrastructure Development",
-      "body": "Environmentally responsible engineering approaches integrated throughout all civil works."
-    },
-    "sector_civil_sg_1": {
-      "title": "Roads & Highways Construction",
-      "description": "INFRA Construction provides complete road and highway engineering and construction services.",
-      "item_1": "Highway construction",
-      "item_2": "Urban roads",
-      "item_3": "Rural roads",
-      "item_4": "Road widening projects",
-      "item_5": "Pavement systems",
-      "item_6": "Road rehabilitation",
-      "item_7": "Drainage systems",
-      "item_8": "Traffic infrastructure"
-    },
-    "sector_civil_sg_2": {
-      "title": "Bridges & Transportation Infrastructure",
-      "description": "We deliver transportation infrastructure designed to improve connectivity and mobility.",
-      "item_1": "Bridge construction",
-      "item_2": "Transportation corridors",
-      "item_3": "Public parking infrastructure",
-      "item_4": "Interchange construction",
-      "item_5": "Traffic engineering works",
-      "item_6": "Road structures"
-    },
-    "sector_civil_sg_3": {
-      "title": "Civil Engineering Works",
-      "description": "Our civil works capabilities support infrastructure, industrial, utility, and public development projects.",
-      "item_1": "Earthworks",
-      "item_2": "Excavation works",
-      "item_3": "Concrete structures",
-      "item_4": "Structural foundations",
-      "item_5": "Retaining structures",
-      "item_6": "Drainage systems",
-      "item_7": "Utility corridors"
-    },
-    "sector_civil_sg_4": {
-      "title": "Marine & Port Infrastructure",
-      "description": "INFRA Construction specializes in marine engineering and coastal infrastructure.",
-      "item_1": "Port infrastructure",
-      "item_2": "Marine breakwaters",
-      "item_3": "Floating marine piers",
-      "item_4": "Coastal protection systems",
-      "item_5": "Harbor infrastructure",
-      "item_6": "Marine civil works",
-      "item_7": "Waterfront developments"
-    },
-    "sector_civil_sg_5": {
-      "title": "Airport Infrastructure",
-      "description": "We support airport rehabilitation, expansion, and infrastructure development.",
-      "item_1": "Airport civil works",
-      "item_2": "Runway infrastructure",
-      "item_3": "Utility integration",
-      "item_4": "Terminal support infrastructure",
-      "item_5": "Airport expansion works",
-      "item_6": "Airside infrastructure"
-    },
-    "sector_civil_sg_6": {
-      "title": "Utility & Infrastructure Networks",
-      "description": "INFRA Construction delivers integrated infrastructure systems for urban and industrial developments.",
-      "item_1": "Water infrastructure",
-      "item_2": "Sewerage systems",
-      "item_3": "Stormwater systems",
-      "item_4": "Underground utilities",
-      "item_5": "Electrical utility networks",
-      "item_6": "Smart infrastructure integration"
-    },
-    "sector_civil_sg_7": {
-      "title": "Construction Management Services",
-      "description": "We provide professional project and construction management focused on quality, safety, and schedule.",
-      "item_1": "Project management",
-      "item_2": "Construction supervision",
-      "item_3": "Quality control and inspections",
-      "item_4": "HSE management",
-      "item_5": "Cost control and scheduling",
-      "item_6": "Contract administration",
-      "item_7": "Progress monitoring and reporting"
-    },
-    "sector_civil_step_1": {
-      "num": "01",
-      "title": "Feasibility & Assessment",
-      "body": "We evaluate project requirements, site conditions, infrastructure demands, environmental factors, and regulatory standards."
-    },
-    "sector_civil_step_2": {
-      "num": "02",
-      "title": "Engineering & Planning",
-      "body": "Our teams prepare technical designs, construction methodologies, schedules, and project controls."
-    },
-    "sector_civil_step_3": {
-      "num": "03",
-      "title": "Procurement & Mobilization",
-      "body": "We coordinate procurement, equipment mobilization, workforce deployment, and logistics."
-    },
-    "sector_civil_step_4": {
-      "num": "04",
-      "title": "Construction & Execution",
-      "body": "INFRA executes infrastructure and civil works according to approved designs and safety standards."
-    },
-    "sector_civil_step_5": {
-      "num": "05",
-      "title": "Quality & Inspections",
-      "body": "We conduct inspections, testing, quality verification, and compliance monitoring."
-    },
-    "sector_civil_step_6": {
-      "num": "06",
-      "title": "Completion & Handover",
-      "body": "Our teams finalize testing, commissioning, documentation, and handover procedures."
-    },
-    "sector_civil_whyus_1": {
-      "title": "Proven Infrastructure Experience",
-      "body": "Delivered roads, bridges, utilities, ports, airports, dams, and infrastructure systems across multiple countries."
-    },
-    "sector_civil_whyus_2": {
-      "title": "Strong Resource Capability",
-      "body": "Advanced equipment, skilled manpower, engineering support, and procurement systems."
-    },
-    "sector_civil_whyus_3": {
-      "title": "Efficient Project Delivery",
-      "body": "Project management systems ensuring timely execution, cost efficiency, and operational reliability."
-    },
-    "sector_civil_whyus_4": {
-      "title": "Quality & Safety Commitment",
-      "body": "Construction quality, workforce safety, environmental compliance, and operational excellence."
-    },
-    "sector_civil_whyus_5": {
-      "title": "Flexible & Scalable Solutions",
-      "body": "We adapt efficiently to projects of varying complexity, size, and operational environments."
-    },
-    "sector_civil_whyus_6": {
-      "title": "Multidisciplinary Technical Expertise",
-      "body": "Engineering teams supporting transportation, utility, marine, civil, and environmental disciplines."
-    },
-    "sector_civil_whyus_7": {
-      "title": "International Operational Reach",
-      "body": "Extensive experience executing projects across regional and international markets."
-    },
-    "sector_civil_whyus_8": {
-      "title": "Remote Mobilization Capability",
-      "body": "Resources and operational systems for project execution in remote and challenging environments."
-    },
-    "sector_civil_industries": {
-      "item_1": "Government Infrastructure",
-      "item_2": "Transportation Authorities",
-      "item_3": "Municipalities",
-      "item_4": "Utility Authorities",
-      "item_5": "Industrial Developments",
-      "item_6": "Residential Communities",
-      "item_7": "Commercial Developments",
-      "item_8": "Ports & Marine Authorities",
-      "item_9": "Airport Authorities",
-      "item_10": "Energy & Utility Projects"
-    },
-    "sector_civil_faq_1": {
-      "q": "What infrastructure services does INFRA Construction provide?",
-      "a": "We provide roads, highways, bridges, marine works, utility infrastructure, airports, drainage systems, and civil engineering services."
-    },
-    "sector_civil_faq_2": {
-      "q": "Do you execute transportation infrastructure projects?",
-      "a": "Yes. We deliver highways, bridges, transportation corridors, road widening, and public infrastructure projects."
-    },
-    "sector_civil_faq_3": {
-      "q": "Can you manage marine and port infrastructure works?",
-      "a": "Absolutely. We provide marine engineering, breakwaters, floating piers, harbor infrastructure, and coastal civil works."
-    },
-    "sector_civil_faq_4": {
-      "q": "Do you provide infrastructure construction management?",
-      "a": "Yes. We offer project management, construction supervision, quality control, planning, and operational coordination."
-    },
-    "sector_civil_faq_5": {
-      "q": "Are your infrastructure projects compliant with international standards?",
-      "a": "Yes. All projects follow international engineering, safety, environmental, and quality standards."
-    },
     "projects_header": {
       "eyebrow": "Our Work",
       "title": "Project Portfolio",
@@ -2654,7 +920,7 @@
       "date": "Jun 2026",
       "category": "Business Development",
       "excerpt": "As part of its ongoing strategy to expand its footprint in development and infrastructure projects across Africa, Infra Construction has participated in the prequalification process for the construction of two vocational training centers in two cities in Somaliland, a project funded by the German Development Bank (KfW).",
-      "image": "/media/1782639050032-screenshot-2026-06-28-122302.png",
+      "image": "/media/1783859042233-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities.png",
       "author": "INFRA Communications",
       "location": "Africa",
       "readTime": "3 min read",
@@ -2962,6 +1228,60 @@
     }
   },
   "media": [
+    {
+      "id": "1783859085984",
+      "title": "news 6",
+      "alt": "news 6",
+      "category": "gallery",
+      "url": "/media/1783859084682-we-are-pleased-to-announce-the-start-of-construction-works-for-the-al-wathba-slaughterhouse-cold-sto.png",
+      "source": "upload",
+      "createdAt": "2026-07-12T12:24:45.984Z"
+    },
+    {
+      "id": "1783859074143",
+      "title": "news 5",
+      "alt": "news 5",
+      "category": "gallery",
+      "url": "/media/1783859073214-infra-construction-has-successfully-completed-and-delivered-two-residential-plots-in-nad-al-sheba-d.png",
+      "source": "upload",
+      "createdAt": "2026-07-12T12:24:34.143Z"
+    },
+    {
+      "id": "1783859062113",
+      "title": "news 4",
+      "alt": "news 4",
+      "category": "gallery",
+      "url": "/media/1783859061055-in-a-step-that-reflects-our-strategic-direction-toward-expanding-regional-partnerships..png",
+      "source": "upload",
+      "createdAt": "2026-07-12T12:24:22.113Z"
+    },
+    {
+      "id": "1783859043576",
+      "title": "news 3 ",
+      "alt": "news 3 ",
+      "category": "gallery",
+      "url": "/media/1783859042233-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities.png",
+      "source": "upload",
+      "createdAt": "2026-07-12T12:24:03.576Z"
+    },
+    {
+      "id": "1783858979396",
+      "title": "new 2",
+      "alt": "new 2",
+      "category": "gallery",
+      "url": "/media/1783858978411-as-part-of-its-continuous-efforts-to-explore-expansion-opportunities-in-the-kuwaiti-market.png",
+      "source": "upload",
+      "createdAt": "2026-07-12T12:22:59.396Z"
+    },
+    {
+      "id": "1783858957960",
+      "title": "news_1",
+      "alt": "news_1",
+      "category": "gallery",
+      "url": "/media/1783858956758-as-part-of-its-commitment-to-advancing-smart-solutions-and-embracing-cutting-edge-technologies-in-th.png",
+      "source": "upload",
+      "createdAt": "2026-07-12T12:22:37.960Z"
+    },
     {
       "id": "1783233910687",
       "title": "New Assiut Barrage 1",
