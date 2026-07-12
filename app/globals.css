@@ -37,8 +37,9 @@
   --color-gray-mid: #5E5E5E;
   --color-white: #ffffff;
 
-  /* Primary typeface + fallback stack — used everywhere via var(--font-myriad). */
-  --font-myriad: "Myriad Pro", "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Primary typeface — Source Sans 3 loaded via next/font (auto self-hosted).
+     Falls back to Segoe UI / system-ui if the variable is somehow absent. */
+  --font-myriad: var(--font-source-sans), "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-heading: var(--font-myriad);
   --font-body: var(--font-myriad);
 }

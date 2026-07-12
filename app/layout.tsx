@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ContentProvider } from "@/components/admin-panel/ContentProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// The site font (Myriad Pro) is self-hosted via @font-face in app/globals.css
-// and applied through the --font-myriad CSS variable.
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  variable: "--font-source-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "INFRA Construction",
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning
       lang="en"
-      className="h-full antialiased"
+      className={`${sourceSans.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <ContentProvider>
