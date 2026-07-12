@@ -1,47 +1,10 @@
 @import "tailwindcss";
 
-/* ─── Myriad Pro (self-hosted) ──────────────────────────────────────────────
-   Put the font files in  public/fonts/  with these EXACT names:
-     public/fonts/MyriadPro-Regular.woff2   → weight 400 (body)
-     public/fonts/MyriadPro-Bold.woff2      → weight 700 (headings/emphasis)
-   (Optional) public/fonts/MyriadPro-Semibold.woff2 → weight 600 (enable block below)
-   Myriad Pro is a licensed Adobe font and is NOT bundled with the project.
-   Until these files exist, the site falls back to Segoe UI / system-ui. */
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("/fonts/MyriadPro-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("/fonts/MyriadPro-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-/* Optional Semibold — add MyriadPro-Semibold.woff2 and uncomment to enable 600.
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("/fonts/MyriadPro-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-*/
-
 @theme {
   --color-primary: #213B4D;
   --color-secondary: #1F93A4;
   --color-gray-mid: #5E5E5E;
   --color-white: #ffffff;
-
-  /* Primary typeface — Source Sans 3 loaded via next/font (auto self-hosted).
-     Falls back to Segoe UI / system-ui if the variable is somehow absent. */
-  --font-myriad: var(--font-source-sans), "Segoe UI", system-ui, -apple-system, sans-serif;
-  --font-heading: var(--font-myriad);
-  --font-body: var(--font-myriad);
 }
 
 
@@ -67,7 +30,7 @@ html, body {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-source-sans), "Segoe UI", system-ui, -apple-system, sans-serif;
   color: #213B4D;
   background: #ffffff;
   overflow-x: hidden;
@@ -92,8 +55,8 @@ select,
 }
 
 h1, h2, h3 {
-  font-family: var(--font-heading);
-  font-weight: var(--fw-heading);
+  font-family: var(--font-source-sans), "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
