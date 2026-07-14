@@ -18,7 +18,7 @@ export default async function ServicesPage() {
     <ExpertiseHub
       kind="service"
       items={resolveServices(c)}
-      eyebrow={g("eyebrow", "Our Expertise")}
+      eyebrow={g("eyebrow", "Our Services")}
       title={g("title", "Our Services")}
       subtitle={g("subtitle", "A full spectrum of services covering the entire project lifecycle — from initial design and procurement through construction, maintenance, and facility management.")}
       intro={g("intro", "INFRA Construction is a comprehensive contracting and project-management firm offering integrated solutions that ensure project success. Our commitment to international standards, quality, and safety drives every one of the 14 services we deliver.")}

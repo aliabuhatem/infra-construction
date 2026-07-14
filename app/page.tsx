@@ -168,7 +168,7 @@ export default async function HomePage() {
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-6 h-[2px] bg-[#1F93A4]" />
                   <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
-                    <ContentText section="home_sectors_header" name="eyebrow" fallback="Our Expertise" />
+                    <ContentText section="home_sectors_header" name="eyebrow" fallback="Our Sectors" />
                   </p>
                 </div>
                 <h2 className="text-[#213B4D] leading-tight" style={{ fontFamily: B, fontSize: "clamp(36px, 5vw, 60px)", fontWeight: 700, letterSpacing: "-0.01em" }}>
@@ -208,7 +208,7 @@ export default async function HomePage() {
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-6 h-[2px] bg-[#1F93A4]" />
                   <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
-                    <ContentText section="home_services_header" name="eyebrow" fallback="Our Expertise" />
+                    <ContentText section="home_services_header" name="eyebrow" fallback="Our Services" />
                   </p>
                 </div>
                 <h2 className="text-[#213B4D] leading-tight" style={{ fontFamily: B, fontSize: "clamp(36px, 5vw, 60px)", fontWeight: 700, letterSpacing: "-0.01em" }}>

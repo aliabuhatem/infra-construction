@@ -18,7 +18,7 @@ export default async function SectorsPage() {
     <ExpertiseHub
       kind="sector"
       items={resolveSectors(c)}
-      eyebrow={g("eyebrow", "Our Expertise")}
+      eyebrow={g("eyebrow", "Our Sectors")}
       title={g("title", "Our Sectors")}
       subtitle={g("subtitle", "A rich history of executing projects across a diverse range of sectors — demonstrating our versatility and technical depth across two continents.")}
       intro={g("intro", "INFRA Construction has a strong presence in the Middle East, East Africa, and East Asia. We apply our comprehensive services across seven core sectors of activity, delivering robust and sustainable outcomes in each.")}
