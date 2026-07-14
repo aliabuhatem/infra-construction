@@ -114,7 +114,7 @@ export default async function AboutPage() {
       <section className="py-16 bg-[#f6f8f9] border-y border-[#213B4D]/8 overflow-hidden">
         <Reveal className="max-w-7xl mx-auto px-6 lg:px-14 text-center">
           <p className="text-[#213B4D]  leading-tight" style={{ fontFamily: H, fontSize: "clamp(12px, 3.5vw, 20px)", fontWeight: 400, letterSpacing: "-0.01em" }}>
-            &ldquo;<ContentText section="about_quote" name="text" fallback="We Do Not Only Aim To Meet Your Expectation, But To Exceed Them At Every Step." />&rdquo;
+            &ldquo;<ContentText section="about_quote" name="text" fallback="We Do Not Only Aim To Meet Your Expectation, But To Exceed Them At Every Step" />&rdquo;
           </p>
         </Reveal>
       </section>
