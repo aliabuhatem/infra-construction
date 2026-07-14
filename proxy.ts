@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Always allow these paths through
@@ -19,7 +19,9 @@ export function middleware(request: NextRequest) {
   }
 
   // If coming soon mode is not enabled, show the real site to everyone
-  if (process.env.COMING_SOON !== "true") {
+  // (trim/lowercase so a stray space or capitalization in the env var still works)
+  const comingSoon = (process.env.COMING_SOON ?? "").trim().toLowerCase() === "true";
+  if (!comingSoon) {
     return NextResponse.next();
   }
 
