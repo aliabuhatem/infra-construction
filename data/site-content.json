@@ -205,14 +205,10 @@
     },
     "home_sectors_header": {
       "eyebrow": "Our Expertise",
-      "headingLine1": "Sectors &",
-      "headingLine2": "Services",
-      "subtitle": "One integrated partner covering the full project lifecycle — click any card to explore the detail.",
-      "sectorsLabel": "Sectors of Activity",
-      "sectorsLink": "All 7 Sectors",
-      "servicesLabel": "Services We Provide",
-      "servicesLink": "All 14 Services",
-      "linkText": "View All Sectors"
+      "headingLine1": "Sectors of",
+      "headingLine2": "Activity.",
+      "subtitle": "Seven core sectors of activity — from buildings and civil works to pipelines and water treatment.",
+      "link": "All 7 Sectors"
     },
     "home_sector_buildings": {
       "badgeLabel": "01 · Standalone Sector",
@@ -1225,6 +1221,13 @@
       "stat2Sublabel": "of Operation",
       "linkText": "Discover Our Story",
       "image": "/media/1782809288798-who_we_are.jpg"
+    },
+    "home_services_header": {
+      "eyebrow": "Our Expertise",
+      "headingLine1": "Services We",
+      "headingLine2": "Provide.",
+      "subtitle": "Fourteen integrated services spanning the full project lifecycle — engineering, procurement, construction, and management.",
+      "link": "All 14 Services"
     }
   },
   "media": [

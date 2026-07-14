@@ -159,11 +159,11 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── 3. OUR EXPERTISE (Sectors + Services) ─────────────────────── */}
-      <section className="bg-white pt-14 pb-24 border-t border-[#213B4D]/8">
+      {/* ── 3. OUR SECTORS ─────────────────────────────────────────────── */}
+      <section className="bg-white pt-14 pb-20 border-t border-[#213B4D]/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
           <Reveal>
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-14 gap-5">
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-5">
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-6 h-[2px] bg-[#1F93A4]" />
@@ -172,43 +172,62 @@ export default async function HomePage() {
                   </p>
                 </div>
                 <h2 className="text-[#213B4D] leading-tight" style={{ fontFamily: B, fontSize: "clamp(36px, 5vw, 60px)", fontWeight: 700, letterSpacing: "-0.01em" }}>
-                  <ContentText section="home_sectors_header" name="headingLine1" fallback="Sectors &." />{" "}
+                  <ContentText section="home_sectors_header" name="headingLine1" fallback="Sectors of" />{" "}
                   <span className="text-[#1F93A4]">
-                    <ContentText section="home_sectors_header" name="headingLine2" fallback="Services." />
+                    <ContentText section="home_sectors_header" name="headingLine2" fallback="Activity." />
                   </span>
                 </h2>
               </div>
               <p className="text-[#5E5E5E] text-[15px] max-w-sm leading-relaxed" style={{ fontFamily: B }}>
-                <ContentText section="home_sectors_header" name="subtitle" fallback="One integrated partner covering the full project lifecycle — click any card to explore the detail." />
+                <ContentText section="home_sectors_header" name="subtitle" fallback="Seven core sectors of activity — from buildings and civil works to pipelines and water treatment." />
               </p>
             </div>
           </Reveal>
 
-          {/* Sectors */}
           <Reveal>
-            <div className="flex items-center justify-between mb-6">
-              <h3 className="text-[#213B4D] text-[14px] font-bold tracking-[0.2em]" style={{ fontFamily: B }}>
-                <ContentText section="home_sectors_header" name="sectorsLabel" fallback="Sectors of Activity" />
-              </h3>
+            <div className="flex items-center justify-end mb-6">
               <Link href="/sectors" className="text-[#213B4D]/70 hover:text-[#1F93A4] text-[12px] font-bold tracking-widest flex items-center gap-2 transition-colors group" style={{ fontFamily: B }}>
-                <ContentText section="home_sectors_header" name="sectorsLink" fallback="All 7 Sectors" /> <span className="group-hover:translate-x-1 transition-transform">→</span>
+                <ContentText section="home_sectors_header" name="link" fallback="All 7 Sectors" /> <span className="group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             </div>
           </Reveal>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-16">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {sectorItems.slice(0, 4).map((s, i) => (
               <ExpertiseCard key={s.slug} item={s} base="/sectors" index={i} />
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Services */}
+      {/* ── 4. OUR SERVICES ────────────────────────────────────────────── */}
+      <section className="bg-[#f6f8f9] pt-16 pb-24 border-t border-[#213B4D]/8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-14">
           <Reveal>
-            <div className="flex items-center justify-between mb-6">
-              <h3 className="text-[#213B4D] text-[14px] font-bold tracking-[0.2em]" style={{ fontFamily: B }}>
-                <ContentText section="home_sectors_header" name="servicesLabel" fallback="Services We Provide" />
-              </h3>
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-5">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-6 h-[2px] bg-[#1F93A4]" />
+                  <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+                    <ContentText section="home_services_header" name="eyebrow" fallback="Our Expertise" />
+                  </p>
+                </div>
+                <h2 className="text-[#213B4D] leading-tight" style={{ fontFamily: B, fontSize: "clamp(36px, 5vw, 60px)", fontWeight: 700, letterSpacing: "-0.01em" }}>
+                  <ContentText section="home_services_header" name="headingLine1" fallback="Services We" />{" "}
+                  <span className="text-[#1F93A4]">
+                    <ContentText section="home_services_header" name="headingLine2" fallback="Provide." />
+                  </span>
+                </h2>
+              </div>
+              <p className="text-[#5E5E5E] text-[15px] max-w-sm leading-relaxed" style={{ fontFamily: B }}>
+                <ContentText section="home_services_header" name="subtitle" fallback="Fourteen integrated services spanning the full project lifecycle — engineering, procurement, construction, and management." />
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="flex items-center justify-end mb-6">
               <Link href="/services" className="text-[#213B4D]/70 hover:text-[#1F93A4] text-[12px] font-bold tracking-widest flex items-center gap-2 transition-colors group" style={{ fontFamily: B }}>
-                <ContentText section="home_sectors_header" name="servicesLink" fallback="All 14 Services" /> <span className="group-hover:translate-x-1 transition-transform">→</span>
+                <ContentText section="home_services_header" name="link" fallback="All 14 Services" /> <span className="group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             </div>
           </Reveal>
