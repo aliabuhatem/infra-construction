@@ -42,7 +42,7 @@ export default function ExpertiseHub({
           <Reveal>
             <div className="mb-4 flex items-center gap-3">
               <span className="h-[2px] w-8 bg-[#1F93A4]" />
-              <span className="text-[12px] font-bold tracking-[0.35em] text-[#1F93A4]" style={{ fontFamily: B }}>
+              <span className="text-[12px] font-bold tracking-[0.35em] text-[#F2613C]" style={{ fontFamily: B }}>
                 {eyebrow}
               </span>
             </div>

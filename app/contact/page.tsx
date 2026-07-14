@@ -69,7 +69,7 @@ export default function ContactPage() {
         <Reveal className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-            <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+            <p className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
               <ContentText section="contact_hero" name="eyebrow" fallback="Get in Touch" />
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-              <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="contact_form" name="eyebrow" fallback="Send a Message" />
               </p>
             </div>
@@ -208,7 +208,7 @@ export default function ContactPage() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#213B4D] text-white font-bold py-4 text-[13px]  tracking-widest hover:bg-[#1F93A4] transition-colors duration-300"
+                className="w-full bg-[#F2613C] text-white font-bold py-4 text-[13px]  tracking-widest hover:bg-[#d64b26] transition-colors duration-300"
                 style={{ fontFamily: B }}
               >
                 Send Message →
@@ -220,7 +220,7 @@ export default function ContactPage() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-              <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="contact_offices" name="eyebrow" fallback="Global Offices" />
               </p>
             </div>
@@ -284,7 +284,7 @@ export default function ContactPage() {
           <Reveal className="text-center mb-14">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
-              <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 Global Presence
               </p>
               <div className="w-6 h-[2px] bg-[#1F93A4]" />

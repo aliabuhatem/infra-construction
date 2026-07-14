@@ -38,7 +38,7 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               <span className="flex h-14 w-14 items-center justify-center rounded-md bg-[#1F93A4] text-white text-[22px] font-bold shadow-lg shadow-[#1F93A4]/30" style={{ fontFamily: H }}>
                 {item.num}
               </span>
-              <span className="text-[13px] font-bold tracking-[0.35em] text-[#1F93A4]" style={{ fontFamily: B }}>
+              <span className="text-[13px] font-bold tracking-[0.35em] text-[#F2613C]" style={{ fontFamily: B }}>
                 {kicker} · {item.num}
               </span>
             </div>

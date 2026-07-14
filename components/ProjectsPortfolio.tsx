@@ -113,7 +113,7 @@ export default function ProjectsPortfolio({
         <div className="lg:max-w-2xl">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-            <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+            <p className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
               <ContentText section="projects_header" name="eyebrow" fallback="Portfolio" />
             </p>
           </div>

@@ -50,7 +50,7 @@ export default async function HomePage() {
           <Reveal>
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-[2px] bg-[#1F93A4]" />
-              <span className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+              <span className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="home_hero" name="eyebrow" fallback="Developed By Eng. Ali Abuhatem" />
               </span>
             </div>
@@ -112,7 +112,7 @@ export default async function HomePage() {
               1990
             </div>
             <Reveal className="lg:col-span-5 flex flex-col gap-4">
-              <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="home_statement" name="eyebrowLabel" fallback="Est. 1990" />
               </p>
               <div className="flex items-end leading-none">
@@ -168,7 +168,7 @@ export default async function HomePage() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-6 h-[2px] bg-[#1F93A4]" />
-                  <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+                  <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
                     <ContentText section="home_sectors_header" name="eyebrow" fallback="Our Sectors" />
                   </p>
                 </div>
@@ -208,7 +208,7 @@ export default async function HomePage() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-6 h-[2px] bg-[#1F93A4]" />
-                  <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+                  <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
                     <ContentText section="home_services_header" name="eyebrow" fallback="Our Services" />
                   </p>
                 </div>
@@ -279,7 +279,7 @@ export default async function HomePage() {
           <Reveal>
             <div className="flex items-center justify-center gap-3 mb-6">
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
-              <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="home_philosophy" name="label" fallback="How We Operate" />
               </p>
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
@@ -308,7 +308,7 @@ export default async function HomePage() {
           <Reveal>
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-5">
               <div>
-                <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em] mb-3" style={{ fontFamily: B }}>
+                <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em] mb-3" style={{ fontFamily: B }}>
                   <ContentText section="home_featured_projects" name="eyebrow" fallback="Our Work" />
                 </p>
                 <h2 className="text-[#213B4D] leading-tight" style={{ fontFamily: B, fontSize: "clamp(32px, 4.5vw, 54px)", fontWeight: 700 }}>
@@ -398,7 +398,7 @@ export default async function HomePage() {
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em] mb-4" style={{ fontFamily: B }}>
+              <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em] mb-4" style={{ fontFamily: B }}>
                 <ContentText section="home_about_split" name="eyebrow" fallback="Who We Are" />
               </p>
               <h2 className="text-white leading-tight mb-6" style={{ fontFamily: B, fontSize: "clamp(20px, 3.5vw, 46px)", fontWeight: 700 }}>
@@ -441,7 +441,7 @@ export default async function HomePage() {
               <div>
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-6 h-[2px] bg-[#1F93A4]" />
-                  <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+                  <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
                     <ContentText section="home_news_header" name="eyebrow" fallback="Latest News" />
                   </p>
                 </div>
@@ -492,7 +492,7 @@ export default async function HomePage() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-6 h-[2px] bg-[#1F93A4]" />
-                  <p className="text-[#1F93A4] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
+                  <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
                     <ContentText section="home_global" name="eyebrow" fallback="Where We Operate" />
                   </p>
                 </div>

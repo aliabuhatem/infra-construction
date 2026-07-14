@@ -159,7 +159,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             <div className="mt-14 bg-[#f4f6f8] border-l-4 border-[#1F93A4] p-8">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-                <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+                <p className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                   Project Highlights
                 </p>
               </div>
@@ -196,7 +196,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <div className="max-w-7xl mx-auto px-6 lg:px-14">
             <Reveal className="flex items-center gap-3 mb-10">
               <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
-              <p className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <p className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 More Updates
               </p>
             </Reveal>

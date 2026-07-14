@@ -31,7 +31,7 @@ export default async function AboutPage() {
         <Reveal className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4]" />
-            <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+            <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
               <ContentText section="about_hero" name="eyebrow" fallback="Who We Are" />
             </span>
           </div>
@@ -60,7 +60,7 @@ export default async function AboutPage() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
-              <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="about_story_full" name="eyebrow" fallback="Our Story" />
               </span>
             </div>
@@ -128,7 +128,7 @@ export default async function AboutPage() {
           <div className="text-center mb-14">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
-              <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="about_mvp" name="eyebrow" fallback="Our Foundation" />
               </span>
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
@@ -186,7 +186,7 @@ export default async function AboutPage() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-6 h-[2px] bg-[#1F93A4]" />
-                <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+                <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                   <ContentText section="about_scope_header" name="eyebrow" fallback="What We Do" />
                 </span>
               </div>
@@ -226,7 +226,7 @@ export default async function AboutPage() {
           <div className="max-w-xl">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
-              <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="about_future_goals" name="eyebrow" fallback="Looking Ahead" />
               </span>
             </div>
@@ -265,7 +265,7 @@ export default async function AboutPage() {
           <Reveal>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
-              <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>Our Standards</span>
+              <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>Our Standards</span>
             </div>
             <h2 className="text-[#213B4D]  leading-tight mb-14" style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 48px)", fontWeight: 600 }}>Management Systems</h2>
           </Reveal>
@@ -304,7 +304,7 @@ export default async function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4]" />
-            <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+            <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
               <ContentText section="about_ceo" name="eyebrow" fallback="Founder & Chief Executive" />
             </span>
           </div>
@@ -327,7 +327,7 @@ export default async function AboutPage() {
 
             <div className="lg:col-span-7 p-10 lg:p-16 flex flex-col justify-center relative">
               <span aria-hidden="true" className="absolute top-6 right-10 leading-none select-none pointer-events-none" style={{ fontFamily: H, fontSize: "160px", color: "#1F93A4", opacity: 0.15, lineHeight: 1 }}>&ldquo;</span>
-              <div className="text-[#1F93A4] text-[10px] font-bold  tracking-[0.35em] mb-3" style={{ fontFamily: B }}>
+              <div className="text-[#F2613C] text-[10px] font-bold  tracking-[0.35em] mb-3" style={{ fontFamily: B }}>
                 <ContentText section="about_leadership_founder" name="title" fallback="Founder & Chief Executive Officer" />
               </div>
               <h3 className="text-white  leading-[0.95] mb-2" style={{ fontFamily: H, fontSize: "clamp(36px, 4.5vw, 56px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
@@ -376,7 +376,7 @@ export default async function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4]" />
-            <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>Executive Team</span>
+            <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>Executive Team</span>
           </div>
           <h2 className="text-[#213B4D]  leading-tight mb-4" style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 48px)", fontWeight: 600 }}>Senior Leadership</h2>
           <p className="text-[#5E5E5E] text-[17px] max-w-2xl mb-12" style={{ fontFamily: B }}>
@@ -421,7 +421,7 @@ export default async function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4]" />
-            <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+            <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
               <ContentText section="about_org_full" name="eyebrow" fallback="How We Work" />
             </span>
           </div>
@@ -469,7 +469,7 @@ export default async function AboutPage() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-6 h-[2px] bg-[#1F93A4]" />
-                <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>Where We Are</span>
+                <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>Where We Are</span>
               </div>
               <h2 className="text-[#213B4D]  leading-tight" style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 48px)", fontWeight: 600 }}>Our Global Offices</h2>
             </div>
@@ -503,7 +503,7 @@ export default async function AboutPage() {
           <div className="px-10 lg:px-16 py-16 lg:py-20 flex flex-col justify-center">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#1F93A4]" />
-              <span className="text-[#1F93A4] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
+              <span className="text-[#F2613C] text-[11px] font-bold  tracking-[0.35em]" style={{ fontFamily: B }}>
                 <ContentText section="about_team_roles" name="eyebrow" fallback="Our People" />
               </span>
             </div>
