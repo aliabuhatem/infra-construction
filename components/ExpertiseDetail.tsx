@@ -48,7 +48,7 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               className="mb-5 max-w-4xl leading-[1.02] text-white"
               style={{ fontFamily: H, fontSize: "clamp(38px, 6vw, 76px)", fontWeight: 700, letterSpacing: "-0.01em" }}
             >
-              {item.title}<span style={{ color: "#F2613C" }}>.</span>
+              {item.title}
             </h1>
           </Reveal>
           <Reveal delay={0.16}>

@@ -77,7 +77,7 @@ export default function ContactPage() {
             className="text-white  leading-[0.92] mb-5"
             style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            <ContentText section="contact_hero" name="title" fallback="Contact Us" /><span style={{ color: "#F2613C" }}>.</span>
+            <ContentText section="contact_hero" name="title" fallback="Contact Us" />
           </h1>
           <p className="text-white/85 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="contact_hero" name="subtitle" fallback="Reach out to our team across five global offices — we are ready to discuss your project requirements." />

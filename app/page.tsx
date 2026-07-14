@@ -66,7 +66,6 @@ export default async function HomePage() {
                 <ContentText section="home_hero" name="headlineLine2" fallback="Better" />
               </span><br />
               <ContentText section="home_hero" name="headlineLine3" fallback="Tomorrow" />
-              <span style={{ color: "#F2613C" }}>.</span>
             </h1>
           </Reveal>
 

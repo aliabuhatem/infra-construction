@@ -52,7 +52,7 @@ export default function ExpertiseHub({
               className="mb-5 leading-[0.98] text-white"
               style={{ fontFamily: H, fontSize: "clamp(46px, 8vw, 96px)", fontWeight: 700, letterSpacing: "-0.01em" }}
             >
-              {title}<span style={{ color: "#F2613C" }}>.</span>
+              {title}
             </h1>
           </Reveal>
           <Reveal delay={0.16}>

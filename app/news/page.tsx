@@ -54,7 +54,7 @@ export default async function NewsPage() {
             className="text-white  leading-[0.92] mb-5"
             style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}
           >
-            <ContentText section="news_hero" name="title" fallback="News & Updates" /><span style={{ color: "#F2613C" }}>.</span>
+            <ContentText section="news_hero" name="title" fallback="News & Updates" />
           </h1>
           <p className="text-white/85 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="news_hero" name="subtitle" fallback="Project milestones, partnerships, certifications, and company developments from across our global operations." />
