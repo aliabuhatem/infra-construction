@@ -22,7 +22,10 @@ export function proxy(request: NextRequest) {
   // (trim/lowercase so a stray space or capitalization in the env var still works)
   const comingSoon = (process.env.COMING_SOON ?? "").trim().toLowerCase() === "true";
   if (!comingSoon) {
-    return NextResponse.next();
+    // TEMP DEBUG: expose what the proxy actually sees for COMING_SOON.
+    const res = NextResponse.next();
+    res.headers.set("x-cs-debug", JSON.stringify(process.env.COMING_SOON ?? null));
+    return res;
   }
 
   // If the user has an admin session cookie, show them the real site
