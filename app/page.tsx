@@ -341,9 +341,9 @@ export default async function HomePage() {
               { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.jpeg" },
             ].filter((p) => !deleted.has(p.key)).map((p, i) => (
               <Reveal key={p.key} delay={i * 0.08}>
-                <Link href="/projects" className="img-zoom group block overflow-hidden rounded-lg border border-[#213B4D]/8 hover:border-[#1F93A4] transition-colors duration-300 h-full">
+                <Link href="/projects" className="group relative flex flex-col h-full overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
                   <div className="relative h-60 overflow-hidden">
-                    <MediaImage category={p.key} title={`${p.key}_image`} fallbackSrc={p.fallbackImage} alt={p.fallbackTitle} className="absolute inset-0 w-full h-full object-cover" />
+                    <MediaImage category={p.key} title={`${p.key}_image`} fallbackSrc={p.fallbackImage} alt={p.fallbackTitle} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                     <div className="absolute inset-0 bg-[#213B4D]/25 group-hover:bg-[#213B4D]/10 transition-colors duration-300" />
                     <div className="absolute top-4 left-4">
                       <span className="rounded bg-[#1F93A4] text-white text-[11px] font-bold tracking-wider px-2.5 py-1" style={{ fontFamily: B }}>
@@ -359,6 +359,7 @@ export default async function HomePage() {
                       <ContentText section={p.key} name="title" fallback={p.fallbackTitle} />
                     </h3>
                   </div>
+                  <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#1F93A4] transition-all duration-500 group-hover:w-full" />
                 </Link>
               </Reveal>
             ))}
@@ -456,9 +457,9 @@ export default async function HomePage() {
           <div className="grid lg:grid-cols-3 gap-6">
             {latestNews.map((n, i) => (
               <Reveal key={n._key} delay={i * 0.08}>
-                <Link href={`/news/${n.slug || n._key}`} className="img-zoom group block overflow-hidden rounded-lg border border-[#213B4D]/8 hover:border-[#1F93A4] transition-colors duration-300 h-full">
+                <Link href={`/news/${n.slug || n._key}`} className="group relative flex flex-col h-full overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
                   <div className="relative h-52 overflow-hidden">
-                    <MediaImage category={n._key} title={`${n._key}_image`} fallbackSrc={n.image || ""} alt={n.title || ""} className="absolute inset-0 w-full h-full object-cover" />
+                    <MediaImage category={n._key} title={`${n._key}_image`} fallbackSrc={n.image || ""} alt={n.title || ""} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                     <div className="absolute inset-0 bg-[#213B4D]/25 group-hover:bg-[#213B4D]/10 transition-colors duration-300" />
                     <div className="absolute top-4 left-4">
                       <span className="rounded bg-[#1F93A4] text-white text-[10px] font-bold tracking-wider px-2.5 py-1" style={{ fontFamily: B }}>
@@ -474,6 +475,7 @@ export default async function HomePage() {
                       <ContentText section={n._key} name="title" fallback={n.title || ""} />
                     </h3>
                   </div>
+                  <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#1F93A4] transition-all duration-500 group-hover:w-full" />
                 </Link>
               </Reveal>
             ))}

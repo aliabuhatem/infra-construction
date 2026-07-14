@@ -174,16 +174,16 @@ export default function ProjectsPortfolio({
           No projects match the selected filters.
         </p>
       ) : (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((p) => (
-            <div key={p.sectionKey} className="group bg-white hover:bg-[#f4f6f8] transition-colors overflow-hidden">
+            <div key={p.sectionKey} className="group relative flex flex-col overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
               <div className="relative h-52 overflow-hidden">
                 <MediaImage
                   category={p.sectionKey}
                   title={`${p.sectionKey}_image`}
                   fallbackSrc={p.image}
                   alt={p.title}
-                  className="object-cover object-center w-full h-full group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover object-center w-full h-full group-hover:scale-[1.06] transition-transform duration-[900ms] ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/70 to-transparent" />
                 <div className="absolute top-4 left-4 flex gap-2">
@@ -207,6 +207,7 @@ export default function ProjectsPortfolio({
                   <ContentText section={p.sectionKey} name="description" fallback={p.description} />
                 </p>
               </div>
+              <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#1F93A4] transition-all duration-500 group-hover:w-full" />
             </div>
           ))}
         </div>
