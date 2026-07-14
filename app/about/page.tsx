@@ -37,7 +37,7 @@ export default async function AboutPage() {
           </div>
           <h1 className="text-white  leading-[0.92] mb-5" style={{ fontFamily: H, fontSize: "clamp(44px, 6.5vw, 82px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="about_hero" name="headlineLine1" fallback="About INFRA" /><br />
-            <ContentText section="about_hero" name="headlineLine2" fallback="Construction" />
+            <ContentText section="about_hero" name="headlineLine2" fallback="Construction" /><span style={{ color: "#F2613C" }}>.</span>
           </h1>
           <p className="text-white/85 text-[17px] max-w-md leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="about_hero" name="subtitle" fallback="25 years of engineering excellence across the Middle East, Africa, and beyond." />

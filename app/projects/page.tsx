@@ -52,7 +52,7 @@ export default async function ProjectsPage({
             </p>
           </div>
           <h1 className="text-white  leading-[0.92] mb-5" style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-            <ContentText section="projects_hero" name="title" fallback="Projects" />
+            <ContentText section="projects_hero" name="title" fallback="Projects" /><span style={{ color: "#F2613C" }}>.</span>
           </h1>
           <p className="text-white/85 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="projects_hero" name="subtitle" fallback="Over 75 projects delivered across multiple regions — each one a testament to INFRA's commitment to quality." />

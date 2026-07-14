@@ -36,7 +36,7 @@ export default async function CareersPage() {
           </div>
           <h1 className="text-white  leading-[0.92] mb-5" style={{ fontFamily: H, fontSize: "clamp(44px, 6.5vw, 82px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
             <ContentText section="careers_hero" name="headlineLine1" fallback="Build Your Career" /><br />
-            <ContentText section="careers_hero" name="headlineLine2" fallback="With INFRA" />
+            <ContentText section="careers_hero" name="headlineLine2" fallback="With INFRA" /><span style={{ color: "#F2613C" }}>.</span>
           </h1>
           <p className="text-white/85 text-[17px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="careers_hero" name="subtitle" fallback="Join a team of 175+ core employees and 1,000+ project workforce delivering world-class infrastructure projects across the Middle East, Africa, and beyond." />
