@@ -51,7 +51,7 @@ export default async function HomePage() {
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-[2px] bg-[#1F93A4]" />
               <span className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
-                <ContentText section="home_hero" name="eyebrow" fallback="Developed By Eng. Ali Abuhatem" />
+                <ContentText section="home_hero" name="eyebrow" fallback="EST. 1990. Abu Dhabi, UAE" />
               </span>
             </div>
           </Reveal>

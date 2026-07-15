@@ -150,7 +150,7 @@ export default function Navbar() {
 
         <Link
           href="/contact"
-          className="hidden lg:inline-flex items-center gap-2 px-6 py-2.5 rounded-md bg-[#1F93A4] text-white text-[13px] font-bold tracking-wider hover:bg-[#213B4D] transition-all duration-300"
+          className="hidden lg:inline-flex items-center gap-2 px-6 py-2.5 rounded-md bg-[#F2613C] text-white text-[13px] font-bold tracking-wider hover:bg-[#d64b26] transition-all duration-300"
           style={{ fontFamily: B }}
         >
           <ContentText section="navbar" name="ctaText" fallback="Contact Us" />
@@ -220,7 +220,7 @@ export default function Navbar() {
           ))}
 
           <Link href="/contact" onClick={() => setOpen(false)}
-            className="block mt-4 text-center rounded-md bg-[#1F93A4] text-white py-3 text-sm font-bold tracking-widest hover:bg-[#213B4D] transition-all duration-300"
+            className="block mt-4 text-center rounded-md bg-[#F2613C] text-white py-3 text-sm font-bold tracking-widest hover:bg-[#d64b26] transition-all duration-300"
             style={{ fontFamily: B }}>
             Contact Us
           </Link>
