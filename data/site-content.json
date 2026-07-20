@@ -1201,11 +1201,7 @@
       "phone": "+20 345680875"
     },
     "navbar": {
-<<<<<<< HEAD
       "logo": "/media/Infra-Logo.png",
-=======
-      "logo": "/media/1782904914470-infra-logo.png",
->>>>>>> 94485b81ba302fdd5e62cd7cd62d39e502fde20b
       "ctaText": "Contact US",
       "ctaHref": "/contact"
     },
