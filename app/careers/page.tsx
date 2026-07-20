@@ -102,7 +102,7 @@ export default async function CareersPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-14">
           <div className="grid lg:grid-cols-2 gap-[1px] items-stretch">
             <div className="relative min-h-[480px]">
-              <MediaImage category="careers_empower" title="image" fallbackSrc="/media/water-dam-construction-yemen.jpeg" alt="Work with INFRA" className="absolute inset-0 w-full h-full object-cover object-center" />
+              <MediaImage category="careers_empower" title="image" fallbackSrc="/media/water-dam-construction-yemen.webp" alt="Work with INFRA" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-r from-[#0d1e28]/20 to-transparent" />
             </div>
             <Reveal direction="left" className="py-20 px-10 lg:px-16 flex flex-col justify-center">

@@ -110,7 +110,7 @@ export const newsItems: NewsItem[] = [
     title: "INFRA Expands into Railway Projects and Intelligent Transportation Systems",
     excerpt:
       "INFRA Construction is expanding its presence in railway projects and intelligent transportation systems, following a strategic meeting with a leading Korean company to explore collaboration in this growing sector.",
-    image: "/media/news-railway-transport-expansion-2025.jpg",
+    image: "/media/news-railway-transport-expansion-2025.webp",
     location: "UAE",
     author: "INFRA Communications",
     readTime: "4 min read",
@@ -137,7 +137,7 @@ export const newsItems: NewsItem[] = [
     title: "INFRA Strengthens Its Role Within HS Group with Focus on East Africa",
     excerpt:
       "As part of strengthening its execution role within HS Group, INFRA Construction is expanding its presence in infrastructure, with a renewed strategic focus on East Africa — a key growth region for the Group.",
-    image: "/media/news-hs-group-east-africa-2025.jpg",
+    image: "/media/news-hs-group-east-africa-2025.webp",
     location: "Abu Dhabi, UAE",
     author: "INFRA Communications",
     readTime: "4 min read",
@@ -164,7 +164,7 @@ export const newsItems: NewsItem[] = [
     title: "INFRA Construction Signs Cooperation Agreement with Gradspan",
     excerpt:
       "INFRA Construction is pleased to announce the signing of a cooperation agreement with Gradspan, a company specialised in construction and steel works within the UAE — expanding INFRA's delivery capabilities and specialist partnerships.",
-    image: "/media/news-gradspan-agreement-2025.jpg",
+    image: "/media/news-gradspan-agreement-2025.webp",
     location: "UAE",
     author: "INFRA Communications",
     readTime: "3 min read",

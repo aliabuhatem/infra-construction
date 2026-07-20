@@ -35,7 +35,7 @@ export default async function NewsPage() {
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
         <Image
-          src="/media/news-hero.png"
+          src="/media/news-hero.webp"
           alt="News & Updates"
           fill
           priority

@@ -13,7 +13,7 @@ export default function ComingSoonPage() {
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0d1e28]">
       {/* Background image */}
       <Image
-        src="/media/infrastructure-bani-mazar-bridge-egypt.jpeg"
+        src="/media/infrastructure-bani-mazar-bridge-egypt.webp"
         alt=""
         fill
         className="object-cover object-center"

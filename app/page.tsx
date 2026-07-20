@@ -28,7 +28,7 @@ export default async function HomePage() {
         <MediaImage
           category="home_hero"
           title="home_hero_background"
-          fallbackSrc="/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
+          fallbackSrc="/media/infrastructure-coastal-highway-taiz-yemen.webp"
           alt="INFRA Construction"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -336,9 +336,9 @@ export default async function HomePage() {
 
           <div className="grid lg:grid-cols-3 gap-6">
             {[
-              { key: "home_project_1", fallbackTitle: "Ministry of Foreign Affairs Building, Aden", fallbackCountry: "Yemen", fallbackType: "Building", fallbackImage: "/media/buildings-ministry-foreign-aden-yemen.jpeg" },
-              { key: "home_project_2", fallbackTitle: "Assiut University Buildings", fallbackCountry: "Egypt", fallbackType: "Building", fallbackImage: "/media/buildings-general-facade.jpeg" },
-              { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.jpeg" },
+              { key: "home_project_1", fallbackTitle: "Ministry of Foreign Affairs Building, Aden", fallbackCountry: "Yemen", fallbackType: "Building", fallbackImage: "/media/buildings-ministry-foreign-aden-yemen.webp" },
+              { key: "home_project_2", fallbackTitle: "Assiut University Buildings", fallbackCountry: "Egypt", fallbackType: "Building", fallbackImage: "/media/buildings-general-facade.webp" },
+              { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.webp" },
             ].filter((p) => !deleted.has(p.key)).map((p, i) => (
               <Reveal key={p.key} delay={i * 0.08}>
                 <Link href="/projects" className="group relative flex flex-col h-full overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
@@ -372,7 +372,7 @@ export default async function HomePage() {
         <MediaImage
           category="home_about_split"
           title="home_about_split_background"
-          fallbackSrc="/media/infrastructure-coastal-highway-taiz-yemen.jpeg"
+          fallbackSrc="/media/infrastructure-coastal-highway-taiz-yemen.webp"
           alt="INFRA Construction team"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />

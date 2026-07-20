@@ -39,7 +39,7 @@ export const services: Expertise[] = [
       "Power generation systems",
       "Transportation engineering",
     ],
-    image: "/media/buildings-general-structure.jpeg",
+    image: "/media/buildings-general-structure.webp",
   },
   {
     slug: "procurement-expediting",
@@ -58,7 +58,7 @@ export const services: Expertise[] = [
       "E-procurement & materials catalogue",
       "Supply agreements",
     ],
-    image: "/media/industrial-concrete-mix-plant-yemen.jpeg",
+    image: "/media/industrial-concrete-mix-plant-yemen.webp",
   },
   {
     slug: "construction-services",
@@ -97,7 +97,7 @@ export const services: Expertise[] = [
       "Rapid mobilisation",
       "Multi-site coordination",
     ],
-    image: "/media/infrastructure-highway-expansion-mocha-yemen.jpeg",
+    image: "/media/infrastructure-highway-expansion-mocha-yemen.webp",
 
   },
   {
@@ -117,7 +117,7 @@ export const services: Expertise[] = [
       "Health & safety",
       "On-site teams & help desks",
     ],
-    image: "/media/fm-hotel-moroni-comoros.jpeg",
+    image: "/media/fm-hotel-moroni-comoros.webp",
 
   },
   {
@@ -137,7 +137,7 @@ export const services: Expertise[] = [
       "Manpower support",
       "Performance optimisation",
     ],
-    image: "/media/energy-power-plant-maintenance-taiz-yemen.jpeg",
+    image: "/media/energy-power-plant-maintenance-taiz-yemen.webp",
 
   },
   {
@@ -157,7 +157,7 @@ export const services: Expertise[] = [
       "Value engineering",
       "Scope, time, cost & quality control",
     ],
-    image: "/media/company-team-photo.jpeg",
+    image: "/media/company-team-photo.webp",
 
   },
   {
@@ -177,7 +177,7 @@ export const services: Expertise[] = [
       "Site coordination",
       "Progress verification",
     ],
-    image: "/media/infrastructure-aden-causeway-widening-yemen.jpeg",
+    image: "/media/infrastructure-aden-causeway-widening-yemen.webp",
 
   },
   {
@@ -197,7 +197,7 @@ export const services: Expertise[] = [
       "Tender pricing",
       "Final account settlement",
     ],
-    image: "/media/buildings-general-facade.jpeg",
+    image: "/media/buildings-general-facade.webp",
 
   },
   {
@@ -217,7 +217,7 @@ export const services: Expertise[] = [
       "Contingency planning",
       "Ongoing monitoring",
     ],
-    image: "/media/infrastructure-stormwater-drainage-yemen.jpeg",
+    image: "/media/infrastructure-stormwater-drainage-yemen.webp",
 
   },
   {
@@ -237,7 +237,7 @@ export const services: Expertise[] = [
       "Constructability studies",
       "Performance benchmarking",
     ],
-    image: "/media/infrastructure-bani-mazar-bridge-egypt.jpeg",
+    image: "/media/infrastructure-bani-mazar-bridge-egypt.webp",
   
   },
   {
@@ -257,7 +257,7 @@ export const services: Expertise[] = [
       "Negotiation support",
       "Dispute avoidance",
     ],
-    image: "/media/company-brand-quote.jpeg",
+    image: "/media/company-brand-quote.webp",
 
   },
   {
@@ -277,7 +277,7 @@ export const services: Expertise[] = [
       "Correspondence control",
       "Close-out administration",
     ],
-    image: "/media/about-.sectionjpg.jpg",
+    image: "/media/about-.sectionjpg.webp",
 
   },
   {
@@ -297,7 +297,7 @@ export const services: Expertise[] = [
       "Design collaboration",
       "Lifecycle asset data",
     ],
-    image: "/media/airports-dhobab-airport-diagram.png",
+    image: "/media/airports-dhobab-airport-diagram.webp",
   
   },
 ];
@@ -342,7 +342,7 @@ export const sectors: Expertise[] = [
       "Network rehabilitation",
       "Urban infrastructure",
     ],
-    image: "/media/infrastructure-aden-causeway-widening-yemen.jpeg",
+    image: "/media/infrastructure-aden-causeway-widening-yemen.webp",
   
   },
   {
@@ -362,7 +362,7 @@ export const sectors: Expertise[] = [
       "Earthworks",
       "Reinforced concrete structures",
     ],
-    image: "/media/water-tank-aden-yemen.jpeg",
+    image: "/media/water-tank-aden-yemen.webp",
    
   },
   {
@@ -382,7 +382,7 @@ export const sectors: Expertise[] = [
       "Road maintenance",
       "Traffic & drainage works",
     ],
-    image: "/media/infrastructure-coastal-highway-taiz-yemen.jpeg",
+    image: "/media/infrastructure-coastal-highway-taiz-yemen.webp",
    
   },
   {
@@ -402,7 +402,7 @@ export const sectors: Expertise[] = [
       "Pumping & lift stations",
       "Process & mechanical works",
     ],
-    image: "/media/water-al-atiyat-wastewater-treatment-egypt.jpeg",
+    image: "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
 
   },
   {
@@ -422,7 +422,7 @@ export const sectors: Expertise[] = [
       "Dikes & barrages",
       "Agricultural water supply",
     ],
-    image: "/media/water-hassan-dam-project-yemen.jpeg",
+    image: "/media/water-hassan-dam-project-yemen.webp",
 
   },
   {
@@ -442,7 +442,7 @@ export const sectors: Expertise[] = [
       "3D modelling",
       "Pipe stress analysis",
     ],
-    image: "/media/energy-power-plant-piping-aden-yemen.png",
+    image: "/media/energy-power-plant-piping-aden-yemen.webp",
 
   },
 ];

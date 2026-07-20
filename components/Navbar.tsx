@@ -72,7 +72,7 @@ export default function Navbar() {
 
         <Link href="/" className="flex items-center shrink-0">
           <Image
-            src="/media/infra-logo.png"
+            src="/media/Infra-Logo.png"
             alt="INFRA Construction"
             width={180}
             height={100}

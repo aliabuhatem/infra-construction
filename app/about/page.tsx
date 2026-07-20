@@ -90,7 +90,7 @@ export default async function AboutPage() {
           </div>
 
           <div className="relative h-[500px] lg:h-full min-h-[420px] overflow-hidden">
-            <MediaImage category="about_story_full" title="image" fallbackSrc="/media/infrastructure-aden-causeway-widening-yemen.jpeg" alt="INFRA Construction project site" className="absolute inset-0 w-full h-full object-cover object-center" />
+            <MediaImage category="about_story_full" title="image" fallbackSrc="/media/infrastructure-aden-causeway-widening-yemen.webp" alt="INFRA Construction project site" className="absolute inset-0 w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <div className="flex flex-wrap gap-3">
@@ -219,7 +219,7 @@ export default async function AboutPage() {
       {/* ── FUTURE GOALS ────────────────────────────────────────────── */}
       <section className="py-28 bg-[#f6f8f9] border-y border-[#213B4D]/8 relative overflow-hidden">
         <div className="absolute inset-y-0 right-0 w-1/2 pointer-events-none hidden lg:block">
-          <MediaImage category="about_future_goals" title="image" fallbackSrc="/media/about-.sectionjpg.jpg" alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
+          <MediaImage category="about_future_goals" title="image" fallbackSrc="/media/about-.sectionjpg.webp" alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#f6f8f9] via-[#f6f8f9]/75 to-transparent" />
         </div>
         <Reveal className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14">
@@ -497,7 +497,7 @@ export default async function AboutPage() {
       <section className="bg-[#f4f6f8]">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 min-h-[480px]">
           <div className="relative h-72 lg:h-auto overflow-hidden img-zoom">
-            <MediaImage category="about_team_roles" title="image" fallbackSrc="/media/industrial-floating-marine-pier-yemen.jpeg" alt="Our team" className="absolute inset-0 w-full h-full object-cover object-center" />
+            <MediaImage category="about_team_roles" title="image" fallbackSrc="/media/industrial-floating-marine-pier-yemen.webp" alt="Our team" className="absolute inset-0 w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-[#213B4D]/25" />
           </div>
           <div className="px-10 lg:px-16 py-16 lg:py-20 flex flex-col justify-center">

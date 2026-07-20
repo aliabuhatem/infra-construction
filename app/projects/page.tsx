@@ -42,7 +42,7 @@ export default async function ProjectsPage({
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
-        <MediaImage category="projects_hero" title="backgroundImage" fallbackSrc="/media/project-hero.jpg" alt="Our Projects" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <MediaImage category="projects_hero" title="backgroundImage" fallbackSrc="/media/project-hero.webp" alt="Our Projects" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/72 to-[#213B4D]/42" />
         <Reveal className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">

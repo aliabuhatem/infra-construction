@@ -22,7 +22,7 @@ export default async function ServicesPage() {
       title={g("title", "Our Services")}
       subtitle={g("subtitle", "A full spectrum of services covering the entire project lifecycle — from initial design and procurement through construction, maintenance, and facility management.")}
       intro={g("intro", "INFRA Construction is a comprehensive contracting and project-management firm offering integrated solutions that ensure project success. Our commitment to international standards, quality, and safety drives every one of the 14 services we deliver.")}
-      heroImage={g("heroImage", "/media/company-team-photo.jpeg")}
+      heroImage={g("heroImage", "/media/company-team-photo.webp")}
       ctaTitle={g("ctaTitle", "Have a Project in Mind?")}
       ctaBody={g("ctaBody", "Partner with INFRA Construction for engineering precision and dependable delivery.")}
       stats={[
