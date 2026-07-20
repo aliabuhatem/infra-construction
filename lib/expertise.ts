@@ -77,7 +77,7 @@ export const services: Expertise[] = [
       "Piping systems",
       "Rapid crew & equipment mobilisation",
     ],
-    image: "/media/buildings-social-housing-assiut-egypt.avif",
+    image: "/media/buildings-social-housing-assiut-egypt.webp",
     
   },
   {
@@ -322,7 +322,7 @@ export const sectors: Expertise[] = [
       "Structural & civil works",
       "Fit-out & finishing",
     ],
-    image: "/media/buildings-social-housing-assiut-egypt.avif",
+    image: "/media/buildings-social-housing-assiut-egypt.webp",
 
   },
   {

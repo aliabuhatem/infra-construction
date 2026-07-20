@@ -75,7 +75,7 @@ export default async function HomePage() {
                 <ContentText
                   section="home_hero"
                   name="subtitle"
-                  fallback="World-Class Infrastructure, Buildings, Energy, and Industrial Projects Across the Middle East and Africa — Delivered Since 1990."
+                  fallback="World-Class Infrastructure, Buildings, Energy, and Industrial Projects Across the Middle East and Africa — Delivered Since 2000."
                 />
               </p>
               <div className="flex flex-wrap items-center gap-4">
@@ -136,7 +136,7 @@ export default async function HomePage() {
                 <ContentText
                   section="home_statement"
                   name="heading"
-                  fallback="Since 1990, INFRA Construction Has Delivered 75+ Projects Across the Middle East, Africa, and Beyond — From Highways and Dams to Power Plants and Industrial Facilities."
+                  fallback="Since 2000, INFRA Construction Has Delivered 75+ Projects Across the Middle East, Africa, and Beyond — From Highways and Dams to Power Plants and Industrial Facilities."
                 />
               </p>
               <div className="flex flex-wrap items-center gap-4">

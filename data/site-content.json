@@ -3,91 +3,91 @@
     "svc_detailed_engineering": {
       "title": "Detailed Engineering Services",
       "summary": "Multidisciplinary engineering delivered by 275+ professionals using advanced CAD/CAE tools.",
-      "image": "/media/buildings-general-structurewebp",
+      "image": "/media/buildings-general-structure.webp",
       "description": "Our engineering offices, staffed by over 275 qualified professionals, provide a wide range of detailed engineering services across every discipline a modern project demands.\nWe utilise advanced CAD/CAE design software and maintain in-house capabilities for specialised requirements — covering Buildings, Civil and Structural Works, Water Reservoirs and Networks, Sewage Treatment, Dams and Irrigation, Marine Works, Power Generation, and Transportation Engineering.",
       "capabilities": "Buildings, civil & structural design, Water reservoirs and networks, Sewage treatment engineering, Dams, irrigation & marine works, Power generation systems, Transportation engineering"
     },
     "svc_procurement_expediting": {
       "title": "Procurement & Expediting Services",
       "summary": "ISO 9001 procurement ensuring the right materials arrive on time, at the highest quality.",
-      "image": "/media/industrial-concrete-mix-plant-yemenwebp",
+      "image": "/media/industrial-concrete-mix-plant-yemen.webp",
       "description": "Our central procurement department, operating under an ISO 9001-approved manual, ensures the timely acquisition of materials, equipment, and services at the highest quality standards.\nOur scope includes purchasing and sourcing, shop expediting, quality surveillance, and logistics expertise. We also utilise E-Procurement solutions — including a unified materials catalogue and supply agreements — to enhance efficiency.",
       "capabilities": "Purchasing & strategic sourcing, Shop expediting, Quality surveillance, Logistics & freight management, E-procurement & materials catalogue, Supply agreements"
     },
     "svc_construction_services": {
       "title": "Construction Services",
       "summary": "Comprehensive construction capability across building, civil, and MEP works at any scale.",
-      "image": "/media/buildings-social-housing-assiut-egypt.avif",
+      "image": "/media/buildings-social-housing-assiut-egypt.webp",
       "description": "With teams of experienced construction specialists, INFRA Construction provides comprehensive construction capabilities across multiple fields.\nWe have a proven track record of managing diverse workforces and efficiently mobilising equipment and crews for projects of any scale. Our services include building works, civil engineering, and the erection of mechanical, electrical, and piping systems.",
       "capabilities": "Building works, Civil engineering, Mechanical erection, Electrical installation, Piping systems, Rapid crew & equipment mobilisation"
     },
     "svc_construction_management": {
       "title": "Construction Management Services",
       "summary": "Sophisticated controls that keep large, complex projects safe, on time, and effective.",
-      "image": "/media/infrastructure-highway-expansion-mocha-yemenwebp",
+      "image": "/media/infrastructure-highway-expansion-mocha-yemen.webp",
       "description": "INFRA Construction excels in managing large, complex projects, employing sophisticated management controls for planning and monitoring to ensure safe, timely, and effective construction.\nWe leverage our global experience and deep understanding of local laws to facilitate rapid mobilisation and successful project execution wherever we operate.",
       "capabilities": "Planning & scheduling controls, Progress monitoring, Safety management, Local regulatory compliance, Rapid mobilisation, Multi-site coordination"
     },
     "svc_facilities_management": {
       "title": "Facilities Management Services",
       "summary": "A one-stop-shop for management, maintenance, procurement, design, and health & safety.",
-      "image": "/media/fm-hotel-moroni-comoroswebp",
+      "image": "/media/fm-hotel-moroni-comoros.webp",
       "description": "As a comprehensive “one-stop-shop”, INFRA Construction offers top-tier facility and property management services. Our team provides complete solutions for management, maintenance, procurement, design, and health and safety.\nWe tailor our services on a client-by-client basis, providing both on-site teams and off-site support such as help desks.",
       "capabilities": "Property & facility management, Planned maintenance, Procurement support, Design services, Health & safety, On-site teams & help desks"
     },
     "svc_operation_maintenance": {
       "title": "Operation & Maintenance Services",
       "summary": "Comprehensive O&M that optimises the performance and longevity of your assets.",
-      "image": "/media/energy-power-plant-maintenance-taiz-yemenwebp",
+      "image": "/media/energy-power-plant-maintenance-taiz-yemen.webp",
       "description": "We specialise in providing comprehensive O&M services to optimise the operational performance and longevity of our clients' assets.\nOur services include routine inspections, preventive and corrective maintenance, breakdown and emergency repairs, and manpower support tailored to each facility.",
       "capabilities": "Routine inspections, Preventive maintenance, Corrective maintenance, Breakdown & emergency repairs, Manpower support, Performance optimisation"
     },
     "svc_project_management_consultancy": {
       "title": "Project Management Consultancy",
       "summary": "Expert PMC balancing scope, time, cost, and quality from planning through handover.",
-      "image": "/media/company-team-photowebp",
+      "image": "/media/company-team-photo.webp",
       "description": "We offer expert project management consultancy to ensure your projects meet the best goals of scope, time, cost, and quality.\nOur services cover project planning, risk assessment, claims management, contract administration, and value engineering — a full advisory layer around your programme.",
       "capabilities": "Project planning, Risk assessment, Claims management, Contract administration, Value engineering, Scope, time, cost & quality control"
     },
     "svc_construction_supervision": {
       "title": "Construction Supervision",
       "summary": "Rigorous on-site supervision ensuring work meets specifications and international codes.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemenwebp",
+      "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
       "description": "Our experienced professionals provide rigorous construction supervision to ensure that all work is executed according to specifications, international codes, and quality standards.\nWe oversee every aspect of the construction process to guarantee compliance and quality at each stage of delivery.",
       "capabilities": "Specification compliance, International code adherence, Quality assurance, Workmanship inspection, Site coordination, Progress verification"
     },
     "svc_quantity_surveying": {
       "title": "Quantity Surveying",
       "summary": "Precise cost estimates, bills of quantities, and cost control across the lifecycle.",
-      "image": "/media/buildings-general-facadewebp",
+      "image": "/media/buildings-general-facade.webp",
       "description": "We provide accurate and detailed quantity surveying services to help manage project costs effectively.\nOur team delivers precise cost estimates, bills of quantities, and cost control throughout the project lifecycle, giving clients confidence in every figure.",
       "capabilities": "Cost estimation, Bills of quantities, Cost control & reporting, Valuations & payments, Tender pricing, Final account settlement"
     },
     "svc_risk_assessment_management": {
       "title": "Risk Assessment & Management",
       "summary": "Identifying project challenges early and building strategies that keep delivery stable.",
-      "image": "/media/infrastructure-stormwater-drainage-yemenwebp",
+      "image": "/media/infrastructure-stormwater-drainage-yemen.webp",
       "description": "INFRA Construction conducts thorough risk assessments to identify potential project challenges before they threaten delivery.\nWe develop and implement comprehensive risk management strategies to mitigate these risks, ensuring project stability and success.",
       "capabilities": "Risk identification, Impact & probability analysis, Mitigation strategies, Risk registers, Contingency planning, Ongoing monitoring"
     },
     "svc_value_engineering": {
       "title": "Value Engineering",
       "summary": "Optimising designs and processes for the highest value without compromising quality.",
-      "image": "/media/infrastructure-bani-mazar-bridge-egyptwebp",
+      "image": "/media/infrastructure-bani-mazar-bridge-egypt.webp",
       "description": "We apply value engineering principles to optimise project designs and processes.\nOur goal is to achieve the highest value for our clients by analysing functions and identifying cost-effective alternatives without compromising quality or performance.",
       "capabilities": "Function analysis, Design optimisation, Cost-effective alternatives, Lifecycle cost review, Constructability studies, Performance benchmarking"
     },
     "svc_claims_management": {
       "title": "Claims Management",
       "summary": "Preparing and defending claims efficiently to protect our clients' interests.",
-      "image": "/media/company-brand-quotewebp",
+      "image": "/media/company-brand-quote.webp",
       "description": "Our team has the expertise to navigate complex contractual issues.\nWe provide professional claims management services — preparing and defending claims efficiently and effectively to protect our clients' interests throughout a contract's life.",
       "capabilities": "Claim preparation, Claim defence, Contractual analysis, Delay & disruption analysis, Negotiation support, Dispute avoidance"
     },
     "svc_contract_administration": {
       "title": "Contract Administration",
       "summary": "Managing every contractual obligation so projects run exactly to their terms.",
-      "image": "/media/about-.sectionwebp.webp",
+      "image": "/media/about-.sectionjpg.webp",
       "description": "We offer comprehensive contract administration services to manage all aspects of contractual agreements.\nThis ensures that all parties meet their obligations, and the project is executed according to the contract's terms and conditions.",
       "capabilities": "Contract drafting review, Obligation tracking, Variation management, Payment certification, Correspondence control, Close-out administration"
     },
@@ -101,42 +101,42 @@
     "sct_buildings": {
       "title": "Buildings",
       "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
-      "image": "/media/buildings-social-housing-assiut-egypt.avif",
+      "image": "/media/buildings-social-housing-assiut-egypt.webp",
       "description": "We construct distinguished and exceptional public and private buildings.\nOur portfolio showcases a range of outstanding projects, reflecting our commitment to excellence and innovation in architecture, MEP (Mechanical, Electrical, and Plumbing), and civil works.",
       "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
     },
     "sct_networks_infrastructures": {
       "title": "Networks & Infrastructures",
       "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemenwebp",
+      "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
       "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
       "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
     },
     "sct_civil_works": {
       "title": "Civil Works",
       "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
-      "image": "/media/water-tank-aden-yemenwebp",
+      "image": "/media/water-tank-aden-yemen.webp",
       "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
       "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
     },
     "sct_transportation_roads_bridges": {
       "title": "Transportation, Roads & Bridges",
       "summary": "Complex transport projects that enhance communities and quality of life.",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemenwebp",
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
       "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
       "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
     },
     "sct_water_sewage_treatment": {
       "title": "Water & Sewage Treatment Plants & Networks",
       "summary": "Complete water and sewage solutions — treatment plants to distribution networks.",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egyptwebp",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "description": "INFRA Construction provides complete solutions for water and sewage treatment.\nOur services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
       "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
     },
     "sct_dams_irrigation": {
       "title": "Dams & Irrigation",
       "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
-      "image": "/media/water-hassan-dam-project-yemenwebp",
+      "image": "/media/water-hassan-dam-project-yemen.webp",
       "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
       "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
     },
@@ -152,7 +152,7 @@
       "title": "Our Services",
       "subtitle": "A full spectrum of services covering the entire project lifecycle — from initial design and procurement through construction, maintenance, and facility management.",
       "intro": "INFRA Construction is a comprehensive contracting and project-management firm offering integrated solutions that ensure project success. Our commitment to international standards, quality, and safety drives every one of the 14 services we deliver.",
-      "heroImage": "/media/company-team-photowebp",
+      "heroImage": "/media/company-team-photo.webp",
       "stat1Value": "14",
       "stat1Label": "Integrated Services",
       "stat2Value": "275+",
@@ -186,19 +186,19 @@
       "headlineLine1": "We Do Not Only Aim To Meet Your Expectation, But To Exceed",
       "headlineLine2": "Them At Every Step",
       "headlineLine3": "",
-      "subtitle": "World-class infrastructure, buildings, energy, and industrial projects across the Middle East and Africa — delivered since 1990.",
+      "subtitle": "World-class infrastructure, buildings, energy, and industrial projects across the Middle East and Africa — delivered Since 2000.",
       "ctaPrimaryText": "Our Sectors",
       "ctaSecondaryText": "About Us",
       "locationsLabel": "Operating in",
       "locationsList": "UAE · Egypt · Yemen · Canada",
-      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemenwebp"
+      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.webp"
     },
     "home_statement": {
       "eyebrowLabel": "Est. 1990",
       "bigNumber": "75",
       "bigNumberSuffix": "+",
       "bigNumberLabel": "Projects Delivered",
-      "heading": "Since 1990, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
+      "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
       "cert1": "ISO 9001",
       "cert2": "ISO 14001",
       "linkText": "Our Story"
@@ -223,7 +223,7 @@
       "short": "Residential, commercial, and institutional construction from concept to handover.",
       "exploreText": "Explore",
       "href": "/sectors/buildings",
-      "image": "/media/buildings-social-housing-assiut-egypt.avif"
+      "image": "/media/buildings-social-housing-assiut-egypt.webp"
     },
     "home_sector_infrastructure": {
       "badgeLabel": "02 · Umbrella Sector",
@@ -231,31 +231,31 @@
       "short": "Civil works, water systems, energy, and industrial projects across the Middle East and Africa.",
       "exploreText": "Explore",
       "href": "/sectors/infrastructure",
-      "image": "/media/infrastructure-assiut-plateau-axis-egyptwebp"
+      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp"
     },
     "home_subsector_civil": {
       "num": "01",
       "title": "Civil Works",
       "short": "Roads, bridges, airports, ports, and large-scale civil engineering.",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemenwebp"
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp"
     },
     "home_subsector_water": {
       "num": "02",
       "title": "Water & Utilities",
       "short": "Water supply, wastewater treatment, dams, and utility systems.",
-      "image": "/media/water-dam-construction-yemenwebp"
+      "image": "/media/water-dam-construction-yemen.webp"
     },
     "home_subsector_energy": {
       "num": "03",
       "title": "Energy & Power",
       "short": "Power generation, transmission networks, and substations.",
-      "image": "/media/energy-power-plant-alhaswa-aden-yemenwebp"
+      "image": "/media/energy-power-plant-alhaswa-aden-yemen.webp"
     },
     "home_subsector_industrial": {
       "num": "04",
       "title": "Industrial & Oil",
       "short": "Pipeline engineering, plant construction, and industrial O&M.",
-      "image": "/media/industrial-concrete-mix-plant-yemenwebp"
+      "image": "/media/industrial-concrete-mix-plant-yemen.webp"
     },
     "home_philosophy": {
       "eyebrow": "Our Operating Philosophy",
@@ -274,19 +274,19 @@
       "title": "MINISTRY OF FOREIGN AFFAIRS BUILDING, ADEN",
       "country": "Yemen",
       "type": "Building",
-      "image": "/media/buildings-ministry-foreign-aden-yemenwebp"
+      "image": "/media/buildings-ministry-foreign-aden-yemen.webp"
     },
     "home_project_2": {
       "title": "ASSIUT UNIVERSITY BUILDINGS",
       "country": "Egypt",
       "type": "Building",
-      "image": "/media/buildings-social-housing-assiut-egypt.avif"
+      "image": "/media/buildings-social-housing-assiut-egypt.webp"
     },
     "home_project_3": {
       "title": "BANI MAZAR BRIDGE",
       "country": "Egypt",
       "type": "Transportation",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemenwebp"
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp"
     },
     "home_about_split": {
       "eyebrow": "Who We Are",
@@ -382,43 +382,43 @@
     "about_philosophy": {
       "title": "Operating philosophy",
       "description": "Engineering integrity, safety, and on-time delivery are non-negotiable. We invest in people, plant, and partnerships that compound over years.",
-      "image": "/media/company-team-photowebp"
+      "image": "/media/company-team-photo.webp"
     },
     "about_leadership_founder": {
       "name": "Eng. Hani Sahooly",
       "title": "Founder, HS Group",
-      "image": "/media/1782641732043-document-from-ali.webp",
+      "image": "/media/1782641732043-document-from-ali.png",
       "bio": "Founder and chairman with over three decades of experience in regional infrastructure delivery.",
       "bio2": "His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step."
     },
     "about_leadership_2": {
       "name": "Mr. Khaled Alariqee",
       "title": "Chief Human Resources Officer",
-      "image": "/media/KHALED ALARIQEE.webp",
+      "image": "/media/KHALED ALARIQEE.png",
       "bio": "Senior leader overseeing operations and project delivery."
     },
     "about_leadership_3": {
       "name": "Mr. Adnan Gazaz",
       "title": "Executive Leadership",
-      "image": "/media/Mr. Adnan Gazaz photo.webp",
+      "image": "/media/Mr. Adnan Gazaz photo.png",
       "bio": "Senior leader driving strategic growth across the region."
     },
     "about_leadership_4": {
       "name": "Mr. Osama Abo Ghanem",
       "title": "Executive Leadership",
-      "image": "/media/OSAMA ABO GHANEM.webp",
+      "image": "/media/OSAMA ABO GHANEM.png",
       "bio": "Senior leader in technical and commercial operations."
     },
     "about_leadership_5": {
       "name": "Mr. Nedal Mustafa",
       "title": "Executive Leadership",
-      "image": "/media/Nedal.webp",
+      "image": "/media/Nedal.png",
       "bio": "Technology strategy, digital transformation, and innovation across all project operations."
     },
     "about_leadership_1": {
       "name": "Mr. Mustafa Al Awlaqi",
       "title": "Executive Leadership",
-      "image": "/media/Mr. Khaled Alariqee photo.webp",
+      "image": "/media/Mr. Khaled Alariqee photo.png",
       "bio": "Market expansion, client acquisition, bidding strategy, and international partnership development."
     },
     "about_org_structure": {
@@ -435,7 +435,7 @@
       "eyebrow": "Projects",
       "title": "Our Project Portfolio",
       "subtitle": "Recent and ongoing works across buildings, infrastructure, water, energy and industrial sectors.",
-      "backgroundImage": "/admin-uploads/1782556835612-ministry-of-foreign-aden-yemenwebp"
+      "backgroundImage": "/admin-uploads/1782556835612-ministry-of-foreign-aden-yemen.jpeg"
     },
     "news_hero": {
       "eyebrow": "News & Insights",
@@ -546,7 +546,7 @@
       "role_4": "Quantity Surveyors",
       "role_5": "Project Managers",
       "role_6": "Consultants",
-      "image": "/media/industrial-floating-marine-pier-yemen.jpeg"
+      "image": "/media/industrial-floating-marine-pier-yemen.webp"
     },
     "about_org_full": {
       "eyebrow": "How We Work",
@@ -695,32 +695,32 @@
       "eyebrow": "Founder & CEO",
       "role": "Founder & Chief Executive Officer",
       "name": "Eng. Hani Sahooly",
-      "image": "/media/1782641732043-document-from-ali.webp",
+      "image": "/media/1782641732043-document-from-ali.png",
       "bio": "Founder of HS Group and Chief Executive Officer of INFRA Construction with over three decades of experience in regional infrastructure delivery across the Middle East and Africa."
     },
     "about_leader_1": {
       "role": "Chief Executive Officer",
       "name": "Mr. Hani Sahooly",
       "scope": "Group Strategy & Executive Leadership",
-      "image": "/media/FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.webp"
+      "image": "/media/FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.png"
     },
     "about_leader_2": {
       "role": "Chief Human Resources Officer",
       "name": "Mr. Khaled Alariqee",
       "scope": "Operations & Project Delivery",
-      "image": "/media/KHALED ALARIQEE.webp"
+      "image": "/media/KHALED ALARIQEE.png"
     },
     "about_leader_3": {
       "role": "Executive Leadership",
       "name": "Mr. Adnan Gazaz",
       "scope": "Strategic Growth & Business Development",
-      "image": "/media/Mr. Adnan Gazaz photo.webp"
+      "image": "/media/Mr. Adnan Gazaz photo.png"
     },
     "about_leader_4": {
       "role": "Executive Leadership",
       "name": "Mr. Osama Abo Ghanem",
       "scope": "Technical & Commercial Operations",
-      "image": "/media/OSAMA ABO GHANEM.webp"
+      "image": "/media/OSAMA ABO GHANEM.png"
     },
     "about_leader_5": {
       "role": "Executive Leadership",
@@ -812,7 +812,7 @@
       "sector": "Infrastructure",
       "type": "Excavation / Earthworks",
       "description": "Earthworks and backfilling for a wastewater plant in Egypt.",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egyptwebp"
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp"
     },
     "project_2": {
       "title": "Bani Mazar Bridge",
@@ -820,7 +820,7 @@
       "sector": "Infrastructure",
       "type": "Earthworks / Subgrade",
       "description": "Earthworks and subgrade maintenance for a bridge in Egypt.",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemenwebp"
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp"
     },
     "project_3": {
       "title": "Bassra Wastewater Treatment Plan",
@@ -828,7 +828,7 @@
       "sector": "Infrastructure",
       "type": "Excavation / Earthworks",
       "description": "Excavation and earthworks for wastewater treatment plant in Egypt.",
-      "image": "/media/water-basra-wastewater-treatment-egyptwebp"
+      "image": "/media/water-basra-wastewater-treatment-egypt.webp"
     },
     "project_4": {
       "title": "Abyan Coast Cornich",
@@ -836,7 +836,7 @@
       "sector": "Infrastructure",
       "type": "Construction",
       "description": "Construction of shore protection and roads in Yemen.",
-      "image": "/media/Abyan Coast Cornich-01webp"
+      "image": "/media/Abyan Coast Cornich-01.webp"
     },
     "project_5": {
       "title": "Berbera International Airport",
@@ -844,7 +844,7 @@
       "sector": "Infrastructure ",
       "type": "Refurbishment / Rehabilitation",
       "description": "Rehabilitation of airport terminal and related facilities in Somaliland.",
-      "image": "/admin-uploads/1782561704079-berbera-international-airport.webp"
+      "image": "/admin-uploads/1782561704079-berbera-international-airport.png"
     },
     "project_6": {
       "title": "THREE WATER WELLS  HADIBO",
@@ -868,7 +868,7 @@
       "sector": "Building",
       "type": "Infrastructure Design & Construction",
       "description": "Infrastructure development for a housing project in Yemen.",
-      "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemenwebp"
+      "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.webp"
     },
     "project_9": {
       "title": "Assiut University Buildings",
@@ -876,7 +876,7 @@
       "sector": "Building",
       "type": "Construction",
       "description": "Construction of university medical buildings in Egypt.",
-      "image": "/media/buildings-social-housing-assiut-egypt.avif"
+      "image": "/media/buildings-social-housing-assiut-egypt.webp"
     },
     "project_10": {
       "title": "West Assiut Plateau Road",
@@ -884,7 +884,7 @@
       "sector": "Infrastructure",
       "type": "Excavation / Roadworks",
       "description": "Excavation, pipe, and pitching works for road in Egypt.",
-      "image": "/media/infrastructure-assiut-plateau-axis-egyptwebp"
+      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp"
     },
     "project_11": {
       "title": "Design and Build of Sixteen Low Cost Housing Units",
@@ -892,7 +892,7 @@
       "sector": "Building",
       "type": "Design and build",
       "description": "Design and construction of low-cost housing in Indonesia.",
-      "image": "/media/fm-hotel-moroni-comoroswebp"
+      "image": "/media/fm-hotel-moroni-comoros.webp"
     },
     "project_12": {
       "title": "Dialysis Center",
@@ -900,7 +900,7 @@
       "sector": "Building",
       "type": "Social Housing",
       "description": "Construction of a medical dialysis center in Somaliland.",
-      "image": "/media/buildings-dialysis-center-hargeisa-somalilandwebp"
+      "image": "/media/buildings-dialysis-center-hargeisa-somaliland.webp"
     },
     "project_13": {
       "title": "Implementation of the Ministry of Foreign Affairs building",
@@ -908,7 +908,7 @@
       "sector": "Building",
       "type": "Implementation",
       "description": "Implementation of government ministry building in Aden, Yemen.",
-      "image": "/media/buildings-ministry-foreign-aden-yemenwebp"
+      "image": "/media/buildings-ministry-foreign-aden-yemen.webp"
     },
     "project_14": {
       "title": "Slaughterhouse Barbara",
@@ -1067,7 +1067,7 @@
       "title": "We Empower Our People",
       "p1": "At INFRA Construction, we believe that the quality of our projects is a direct reflection of the quality of our people. We recruit talented individuals and invest in their growth through structured training, challenging project assignments, and a culture of continuous improvement.",
       "p2": "Our technical teams are supported by experienced leadership, modern tools, and a collaborative work environment that rewards initiative, creativity, and professional excellence.",
-      "image": "/media/water-dam-construction-yemenwebp"
+      "image": "/media/water-dam-construction-yemen.webp"
     },
     "careers_openings": {
       "eyebrow": "Open Positions",
@@ -1235,7 +1235,7 @@
       "id": "1784537751483",
       "title": "news3",
       "alt": "news3",
-      "category": "gallery",
+      "category": "gallery",  
       "url": "/media/1784537750434-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities-hero-.webp",
       "source": "upload",
       "createdAt": "2026-07-20T08:55:51.483Z"
@@ -1362,7 +1362,7 @@
       "title": "Eng. Hani",
       "alt": "Eng. Hani",
       "category": "gallery",
-      "url": "/media/1782641732043-document-from-ali.webp",
+      "url": "/media/1782641732043-document-from-ali.png",
       "source": "upload",
       "createdAt": "2026-06-28T10:15:34.021Z"
     },
@@ -1461,7 +1461,7 @@
       "title": "Berbera Airport",
       "alt": "Berbera Airport",
       "category": "gallery",
-      "url": "/admin-uploads/1782561704079-berbera-international-airport.webp",
+      "url": "/admin-uploads/1782561704079-berbera-international-airport.png",
       "source": "upload",
       "createdAt": "2026-06-27T12:01:45.892Z"
     },
@@ -1470,7 +1470,7 @@
       "title": "Berbera Airport",
       "alt": "Berbera Airport",
       "category": "gallery",
-      "url": "/admin-uploads/1782561606391-berbera-international-airport.webp",
+      "url": "/admin-uploads/1782561606391-berbera-international-airport.jpg",
       "source": "upload",
       "createdAt": "2026-06-27T12:00:07.348Z"
     },
@@ -1479,16 +1479,16 @@
       "title": "projects_herobg",
       "alt": "projects_herobg",
       "category": "projects",
-      "url": "/admin-uploads/1782556835612-ministry-of-foreign-aden-yemenwebp",
+      "url": "/admin-uploads/1782556835612-ministry-of-foreign-aden-yemen.jpeg",
       "source": "upload",
       "createdAt": "2026-06-27T10:40:36.409Z"
     },
     {
       "id": "1782482244056",
-      "title": "West Assiut Plateau Road.webpwebp",
-      "alt": "West Assiut Plateau Road.webpwebp",
+      "title": "West Assiut Plateau Road.jpg.jpeg",
+      "alt": "West Assiut Plateau Road.jpg.jpeg",
       "category": "hero",
-      "url": "/admin-uploads/1782482243195-west-assiut-plateau-road.webpwebp",
+      "url": "/admin-uploads/1782482243195-west-assiut-plateau-road.jpg.jpeg",
       "source": "upload",
       "createdAt": "2026-06-26T13:57:24.056Z"
     }

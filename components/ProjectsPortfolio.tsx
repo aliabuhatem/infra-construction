@@ -121,7 +121,7 @@ export default function ProjectsPortfolio({
             <ContentText section="projects_header" name="title" fallback="75+ Projects Delivered Across Multiple Regions" />
           </h2>
           <p className="text-[#5E5E5E] text-[15px] leading-relaxed mt-4" style={{ fontFamily: B }}>
-            <ContentText section="projects_header" name="subtitle" fallback="Since 1990, INFRA Construction has accomplished projects in various fields of specialisation across the Middle East, Africa, and beyond." />
+            <ContentText section="projects_header" name="subtitle" fallback="Since 2000, INFRA Construction has accomplished projects in various fields of specialisation across the Middle East, Africa, and beyond." />
           </p>
         </div>
 
