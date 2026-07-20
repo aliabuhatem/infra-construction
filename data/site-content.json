@@ -546,7 +546,7 @@
       "role_4": "Quantity Surveyors",
       "role_5": "Project Managers",
       "role_6": "Consultants",
-      "image": "/media/industrial-floating-marine-pier-yemenwebg"
+      "image": "/media/industrial-floating-marine-pier-yemen.jpeg"
     },
     "about_org_full": {
       "eyebrow": "How We Work",
@@ -923,7 +923,7 @@
       "date": "Jun 2026",
       "category": "Business Development",
       "excerpt": "As part of its ongoing strategy to expand its footprint in development and infrastructure projects across Africa, Infra Construction has participated in the prequalification process for the construction of two vocational training centers in two cities in Somaliland, a project funded by the German Development Bank (KfW).",
-      "image": "/media/1783859042233-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities.webg",
+      "image": "/media/1783859042233-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities.png",
       "author": "INFRA Communications",
       "location": "Africa",
       "readTime": "3 min read",
@@ -1231,6 +1231,24 @@
     }
   },
   "media": [
+    {
+      "id": "1784537751483",
+      "title": "news3",
+      "alt": "news3",
+      "category": "gallery",
+      "url": "/media/1784537750434-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities-hero-.webp",
+      "source": "upload",
+      "createdAt": "2026-07-20T08:55:51.483Z"
+    },
+    {
+      "id": "1784094144747",
+      "title": "our_poeple",
+      "alt": "our_poeple",
+      "category": "gallery",
+      "url": "/media/1784094143316-our_people.png",
+      "source": "upload",
+      "createdAt": "2026-07-15T05:42:24.747Z"
+    },
     {
       "id": "1783859085984",
       "title": "news 6",
