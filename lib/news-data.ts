@@ -29,7 +29,7 @@ export const newsItems: NewsItem[] = [
     title: "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
     excerpt:
       "As part of its continuous efforts to explore expansion opportunities in the Kuwait market, INFRA Construction held an important meeting with Go Green, marking a strategic step toward establishing a presence in Kuwait.",
-    image: "/media/news-kuwait-expansion-2025.jpg",
+    image: "/media/news-kuwait-expansion-2025.webp",
     location: "Kuwait",
     author: "INFRA Communications",
     readTime: "3 min read",
@@ -56,7 +56,7 @@ export const newsItems: NewsItem[] = [
     title: "Business as Unusual: INFRA Completes Two Residential Plots in Nad Al Sheba, Dubai",
     excerpt:
       "INFRA Construction has successfully completed and delivered two residential plots in Nad Al Sheba, Dubai — each featuring two standalone villas thoroughly designed to offer exceptional privacy and comfortable family living.",
-    image: "/media/news-nad-al-sheba-dubai-villas-2025.jpg",
+    image: "/media/news-nad-al-sheba-dubai-villas-2025.webp",
     location: "Nad Al Sheba, Dubai, UAE",
     author: "INFRA Projects Team",
     readTime: "4 min read",
@@ -83,7 +83,7 @@ export const newsItems: NewsItem[] = [
     title: "INFRA Construction Celebrates Jordan's Independence Day",
     excerpt:
       "On the occasion of the Independence Day of the Hashemite Kingdom of Jordan, INFRA Construction proudly celebrates Jordan's journey of growth, stability, and continuous development.",
-    image: "/media/news-jordan-independence-day-2025.jpg",
+    image: "/media/news-jordan-independence-day-2025.webp",
     location: "Amman, Jordan",
     author: "INFRA Communications",
     readTime: "2 min read",
