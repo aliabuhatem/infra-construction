@@ -26,7 +26,7 @@ export default async function AboutPage() {
     <>
       {/* ── HERO ────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[540px] flex items-end overflow-hidden">
-        <MediaImage category="about_hero" title="backgroundImage" fallbackSrc="/media/Abyan Coast Cornich-01.jpeg" alt="About INFRA Construction" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <MediaImage category="about_hero" title="backgroundImage" fallbackSrc="/media/Abyan Coast Cornich-01.webp" alt="About INFRA Construction" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/75 to-[#213B4D]/45" />
         <Reveal className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">

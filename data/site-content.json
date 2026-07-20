@@ -923,7 +923,7 @@
       "date": "Jun 2026",
       "category": "Business Development",
       "excerpt": "As part of its ongoing strategy to expand its footprint in development and infrastructure projects across Africa, Infra Construction has participated in the prequalification process for the construction of two vocational training centers in two cities in Somaliland, a project funded by the German Development Bank (KfW).",
-      "image": "/media/1783859042233-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities.webp",
+      "image": "/media/1784537750434-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities-hero-.webp",
       "author": "INFRA Communications",
       "location": "Africa",
       "readTime": "3 min read",
@@ -1201,7 +1201,11 @@
       "phone": "+20 345680875"
     },
     "navbar": {
+<<<<<<< HEAD
       "logo": "/media/Infra-Logo.png",
+=======
+      "logo": "/media/1782904914470-infra-logo.png",
+>>>>>>> 94485b81ba302fdd5e62cd7cd62d39e502fde20b
       "ctaText": "Contact US",
       "ctaHref": "/contact"
     },
@@ -1209,7 +1213,7 @@
       "companyName": "INFRA Construction",
       "shortName": "INFRA",
       "logoLight": "/media/infra-logo-transparent.webp",
-      "logoDark": "/media/INFRA LOGO.webp",
+      "logoDark": "/media/1782904914470-infra-logo.png",
       "favicon": "/favicon.ico"
     },
     "home_whoweare": {
@@ -1311,15 +1315,6 @@
       "url": "/media/1783233909458-new-assiut-barrage.webp",
       "source": "upload",
       "createdAt": "2026-07-05T06:45:10.687Z"
-    },
-    {
-      "id": "1782904915121",
-      "title": "logo",
-      "alt": "logo",
-      "category": "gallery",
-      "url": "/media/1782904914470-infra-logo.webp",
-      "source": "upload",
-      "createdAt": "2026-07-01T11:21:55.121Z"
     },
     {
       "id": "1782903521592",

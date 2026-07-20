@@ -58,7 +58,7 @@ export default function ContactPage() {
       {/* ── HERO (second code) ── */}
       <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
         <Image
-          src="/media/contact us hero section photo.png"
+          src="/media/contact us hero section photo.webp"
           alt="Contact Us"
           fill
           priority

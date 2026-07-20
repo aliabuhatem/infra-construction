@@ -22,7 +22,7 @@ export default async function SectorsPage() {
       title={g("title", "Our Sectors")}
       subtitle={g("subtitle", "A rich history of executing projects across a diverse range of sectors — demonstrating our versatility and technical depth across two continents.")}
       intro={g("intro", "INFRA Construction has a strong presence in the Middle East, East Africa, and East Asia. We apply our comprehensive services across seven core sectors of activity, delivering robust and sustainable outcomes in each.")}
-      heroImage={g("heroImage", "/media/sectors hero section photo.png")}
+      heroImage={g("heroImage", "/media/sectors hero section photo.webp")}
       ctaTitle={g("ctaTitle", "Have a Project in Mind?")}
       ctaBody={g("ctaBody", "Partner with INFRA Construction for engineering precision and dependable delivery.")}
       stats={[
