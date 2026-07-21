@@ -1246,6 +1246,15 @@
   },
   "media": [
     {
+      "id": "1784615533142",
+      "title": "news_hero",
+      "alt": "news_hero",
+      "category": "gallery",
+      "url": "/media/1784615532330-another-milestone-of-trust.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:32:13.142Z"
+    },
+    {
       "id": "1784615440263",
       "title": "news6",
       "alt": "news6",
