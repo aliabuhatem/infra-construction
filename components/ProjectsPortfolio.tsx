@@ -176,8 +176,8 @@ export default function ProjectsPortfolio({
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((p) => (
-            <div key={p.sectionKey} className="group relative flex flex-col overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
-              <div className="relative h-52 overflow-hidden">
+            <div key={p.sectionKey} className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
+              <div className="relative h-52 shrink-0 overflow-hidden">
                 <MediaImage
                   category={p.sectionKey}
                   title={`${p.sectionKey}_image`}
@@ -195,12 +195,12 @@ export default function ProjectsPortfolio({
                   </span>
                 </div>
               </div>
-              <div className="p-7">
+              <div className="card-body p-7">
                 <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
                 <div className="text-[#1F93A4] text-[10px] font-bold  tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="sector" fallback={p.sector} />
                 </div>
-                <h3 className="text-[#213B4D] font-bold text-[15px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                <h3 className="card-title text-[#213B4D] font-bold text-[15px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="title" fallback={p.title} />
                 </h3>
                 <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>

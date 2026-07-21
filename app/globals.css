@@ -85,6 +85,39 @@ h1, h2, h3 {
   transform: scale(1.06);
 }
 
+/* ── Shared card system ─────────────────────────────────────────────────────
+   Used by every card on the site (sectors, services, projects, news, …) so a
+   title that wraps to two lines never makes one card taller than its
+   neighbours. Fix these classes, not individual cards. */
+
+/* Card root. Grid/flex parents stretch it; column layout lets the body below
+   absorb the slack so bottom-anchored links line up across a row. */
+.card-base {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Body wrapper directly under the image. */
+.card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+/* Reserves exactly two lines of space no matter what font-size the card sets
+   — `em` resolves against this element, so 2 x 1.4 = 2.8em stays correct for
+   the 17px, 15px and 13px titles alike. Longer titles clamp instead of grow. */
+.card-title {
+  line-height: 1.4;
+  min-height: 2.8em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
 /* Legibility helper: applied to text sitting on top of background images/photos
    so it stays readable regardless of the image behind it. */
 .text-shadow-legible,

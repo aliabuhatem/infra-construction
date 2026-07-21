@@ -43,17 +43,18 @@ export default function ExpertiseCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.6, delay: (index % 4) * 0.07, ease: [0.22, 1, 0.36, 1] }}
+      className="h-full"
       style={{ perspective: 1000 }}
     >
-      <motion.div style={{ rotateX: reduce ? 0 : rx, rotateY: reduce ? 0 : ry, transformStyle: "preserve-3d" }}>
+      <motion.div className="h-full" style={{ rotateX: reduce ? 0 : rx, rotateY: reduce ? 0 : ry, transformStyle: "preserve-3d" }}>
         <Link
           href={`${base}/${item.slug}`}
           onPointerMove={onMove}
           onPointerLeave={reset}
-          className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)]"
+          className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)]"
         >
           {/* Image */}
-          <div className="relative h-44 overflow-hidden">
+          <div className="relative h-44 shrink-0 overflow-hidden">
             <Image
               src={item.image}
               alt={item.title}
@@ -71,9 +72,9 @@ export default function ExpertiseCard({
             </div>
 
           {/* Body */}
-          <div className="flex flex-1 flex-col p-6 pt-9">
+          <div className="card-body p-6 pt-9">
             <h3
-              className="mb-2 text-[17px] font-bold leading-snug text-[#213B4D] transition-colors group-hover:text-[#1F93A4]"
+              className="card-title mb-2 text-[17px] font-bold text-[#213B4D] transition-colors group-hover:text-[#1F93A4]"
               style={{ fontFamily: B }}
             >
               {item.title}

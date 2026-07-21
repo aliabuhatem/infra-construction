@@ -205,9 +205,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <Link
                   key={r._key}
                   href={`/news/${r.slug || r._key}`}
-                  className="group relative flex flex-col overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]"
+                  className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]"
                 >
-                  <div className="relative h-40 overflow-hidden">
+                  <div className="relative h-40 shrink-0 overflow-hidden">
                     <MediaImage
                       category={r._key}
                       title={`${r._key}_image`}
@@ -216,7 +216,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                       className="object-cover w-full h-full group-hover:scale-[1.06] transition-transform duration-[900ms] ease-out"
                     />
                   </div>
-                  <div className="p-6">
+                  <div className="card-body p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span
                         className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1  tracking-[0.15em]"
@@ -229,7 +229,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                       </span>
                     </div>
                     <h3
-                      className="text-[#213B4D] font-bold text-[14px] leading-snug group-hover:text-[#1F93A4] transition-colors"
+                      className="card-title text-[#213B4D] font-bold text-[14px] group-hover:text-[#1F93A4] transition-colors"
                       style={{ fontFamily: B }}
                     >
                       <ContentText section={r._key} name="title" fallback={r.title || ""} />

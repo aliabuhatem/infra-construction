@@ -233,9 +233,9 @@ export default async function HomePage() {
           </Reveal>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {serviceItems.slice(0, 4).map((s, i) => (
-              <Reveal key={s.slug} delay={(i % 4) * 0.05}>
-                <div className="group flex h-full flex-col overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white p-4 shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
-                  <Link href={`/services/${s.slug}`} className="relative block h-40 overflow-hidden rounded-md">
+              <Reveal key={s.slug} delay={(i % 4) * 0.05} className="h-full">
+                <div className="card-base group overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white p-4 shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
+                  <Link href={`/services/${s.slug}`} className="relative block h-40 shrink-0 overflow-hidden rounded-md">
                     <Image
                       src={s.image}
                       alt={s.title}
@@ -248,7 +248,7 @@ export default async function HomePage() {
                     </span>
                   </Link>
                   <Link href={`/services/${s.slug}`}>
-                    <h5 className="mb-2 mt-5 text-[17px] font-bold leading-snug tracking-tight text-[#213B4D] transition-colors group-hover:text-[#1F93A4]" style={{ fontFamily: B }}>
+                    <h5 className="card-title mb-2 mt-5 text-[17px] font-bold tracking-tight text-[#213B4D] transition-colors group-hover:text-[#1F93A4]" style={{ fontFamily: B }}>
                       {s.title}
                     </h5>
                   </Link>
@@ -340,9 +340,9 @@ export default async function HomePage() {
               { key: "home_project_2", fallbackTitle: "Assiut University Buildings", fallbackCountry: "Egypt", fallbackType: "Building", fallbackImage: "/media/buildings-general-facade.webp" },
               { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.webp" },
             ].filter((p) => !deleted.has(p.key)).map((p, i) => (
-              <Reveal key={p.key} delay={i * 0.08}>
-                <Link href="/projects" className="group relative flex flex-col h-full overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
-                  <div className="relative h-60 overflow-hidden">
+              <Reveal key={p.key} delay={i * 0.08} className="h-full">
+                <Link href="/projects" className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
+                  <div className="relative h-60 shrink-0 overflow-hidden">
                     <MediaImage category={p.key} title={`${p.key}_image`} fallbackSrc={p.fallbackImage} alt={p.fallbackTitle} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                     <div className="absolute inset-0 bg-[#213B4D]/25 group-hover:bg-[#213B4D]/10 transition-colors duration-300" />
                     <div className="absolute top-4 left-4">
@@ -351,11 +351,11 @@ export default async function HomePage() {
                       </span>
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="card-body p-6">
                     <p className="text-[#1F93A4] text-[11px] font-bold tracking-widest mb-1" style={{ fontFamily: B }}>
                       <ContentText section={p.key} name="type" fallback={p.fallbackType} />
                     </p>
-                    <h3 className="text-[#213B4D] font-bold text-lg group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                    <h3 className="card-title text-[#213B4D] font-bold text-lg group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                       <ContentText section={p.key} name="title" fallback={p.fallbackTitle} />
                     </h3>
                   </div>
@@ -456,9 +456,9 @@ export default async function HomePage() {
           </Reveal>
           <div className="grid lg:grid-cols-3 gap-6">
             {latestNews.map((n, i) => (
-              <Reveal key={n._key} delay={i * 0.08}>
-                <Link href={`/news/${n.slug || n._key}`} className="group relative flex flex-col h-full overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
-                  <div className="relative h-52 overflow-hidden">
+              <Reveal key={n._key} delay={i * 0.08} className="h-full">
+                <Link href={`/news/${n.slug || n._key}`} className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
+                  <div className="relative h-52 shrink-0 overflow-hidden">
                     <MediaImage category={n._key} title={`${n._key}_image`} fallbackSrc={n.image || ""} alt={n.title || ""} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
                     <div className="absolute inset-0 bg-[#213B4D]/25 group-hover:bg-[#213B4D]/10 transition-colors duration-300" />
                     <div className="absolute top-4 left-4">
@@ -467,11 +467,11 @@ export default async function HomePage() {
                       </span>
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="card-body p-6">
                     <p className="text-[#5E5E5E] text-[11px] tracking-widest mb-2" style={{ fontFamily: B }}>
                       <ContentText section={n._key} name="date" fallback={n.date || ""} />
                     </p>
-                    <h3 className="text-[#213B4D] font-bold text-[15px] leading-snug group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                    <h3 className="card-title text-[#213B4D] font-bold text-[15px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
                       <ContentText section={n._key} name="title" fallback={n.title || ""} />
                     </h3>
                   </div>

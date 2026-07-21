@@ -110,9 +110,9 @@ export default async function NewsPage() {
               <Link
                 key={item.slug}
                 href={`/news/${item.slug}`}
-                className="group relative flex flex-col overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]"
+                className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]"
               >
-                <div className="relative h-44 overflow-hidden">
+                <div className="relative h-44 shrink-0 overflow-hidden">
                   <MediaImage
                     category={item.sectionKey}
                     title={`${item.sectionKey}_image`}
@@ -122,7 +122,7 @@ export default async function NewsPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/20 to-transparent" />
                 </div>
-                <div className="p-7">
+                <div className="card-body p-7">
                   <div className="flex items-center gap-3 mb-4">
                     <span
                       className="bg-[#1F93A4]/12 text-[#1F93A4] text-[10px] font-bold px-2.5 py-1  tracking-[0.15em]"
@@ -136,7 +136,7 @@ export default async function NewsPage() {
                   </div>
                   <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
                   <h3
-                    className="text-[#213B4D] font-bold text-[13px] leading-snug mb-3 group-hover:text-[#1F93A4] transition-colors"
+                    className="card-title text-[#213B4D] font-bold text-[13px] mb-3 group-hover:text-[#1F93A4] transition-colors"
                     style={{ fontFamily: B }}
                   >
                     <ContentText section={item.sectionKey} name="title" fallback={item.title} />
@@ -145,7 +145,7 @@ export default async function NewsPage() {
                     <ContentText section={item.sectionKey} name="excerpt" fallback={item.excerpt} />
                   </p>
                   <div
-                    className="mt-5 text-[#1F93A4] text-[11px] font-bold  tracking-[0.2em] inline-flex items-center gap-2 group-hover:gap-3 transition-all"
+                    className="mt-auto pt-5 text-[#1F93A4] text-[11px] font-bold  tracking-[0.2em] inline-flex items-center gap-2 group-hover:gap-3 transition-all"
                     style={{ fontFamily: B }}
                   >
                     Read More <span>→</span>
