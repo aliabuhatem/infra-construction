@@ -1246,6 +1246,15 @@
   },
   "media": [
     {
+      "id": "1784615387869",
+      "title": "news3",
+      "alt": "news3",
+      "category": "gallery",
+      "url": "/media/1784615387121-news3.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:29:47.869Z"
+    },
+    {
       "id": "1784615368250",
       "title": "news2",
       "alt": "news2",
