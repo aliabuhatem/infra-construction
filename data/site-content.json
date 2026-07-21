@@ -108,42 +108,42 @@
     "sct_networks_infrastructures": {
       "title": "Water & Wastewater Management",
       "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
       "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
     },
     "sct_civil_works": {
       "title": "Dams and Irrigations",
       "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
-      "image": "/media/water-tank-aden-yemen.webp",
+      "image": "/media/water-dam-construction-yemen.webp",
       "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
       "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
     },
     "sct_transportation_roads_bridges": {
       "title": "Ports & Marine",
       "summary": "Complex transport projects that enhance communities and quality of life.",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
+      "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
       "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
       "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
     },
     "sct_water_sewage_treatment": {
       "title": "Airports",
       "summary": "Complete water and sewage solutions — treatment plants to distribution networks.",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+      "image": "/admin-uploads/1782561704079-berbera-international-airport.png",
       "description": "INFRA Construction provides complete solutions for water and sewage treatment.\nOur services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
       "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
     },
     "sct_dams_irrigation": {
       "title": "Roads & Bridges",
       "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
-      "image": "/media/water-hassan-dam-project-yemen.webp",
+      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp",
       "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
       "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
     },
     "sct_pipelines": {
       "title": "Energy",
       "summary": "Complex pipeline systems for refinery, petrochemical, cross-state, and utility use.",
-      "image": "/media/energy-power-plant-piping-aden-yemen.webp",
+      "image": "/media/1784614915593-project-manegment-belhaf-yemen.png",
       "description": "Our capabilities include the construction and installation of complex pipeline systems for various applications.\nWe provide engineering services for refinery piping, petrochemical piping, cross-state pipelines, and utility piping — complete with 3D modelling and stress analysis.",
       "capabilities": "Refinery piping, Petrochemical piping, Cross-state pipelines, Utility piping, 3D modelling, Pipe stress analysis"
     },
