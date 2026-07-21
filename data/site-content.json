@@ -1249,6 +1249,33 @@
       "image": "/media/energy-power-transmission-sulamani-iraq.webp",
       "description": "",
       "capabilities": ""
+    },
+    "news_9": {
+      "title": "",
+      "date": "",
+      "category": "",
+      "excerpt": "",
+      "image": "",
+      "author": "",
+      "location": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "p4": ""
+    },
+    "news_10": {
+      "title": "",
+      "date": "",
+      "category": "",
+      "excerpt": "",
+      "image": "",
+      "author": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "p4": ""
     }
   },
   "media": [
