@@ -1242,6 +1242,13 @@
       "p2": "",
       "p3": "",
       "p4": ""
+    },
+    "sct_power": {
+      "title": "Power",
+      "summary": "",
+      "image": "/media/energy-power-transmission-sulamani-iraq.webp",
+      "description": "",
+      "capabilities": ""
     }
   },
   "media": [
