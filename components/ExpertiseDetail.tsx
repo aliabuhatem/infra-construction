@@ -76,8 +76,10 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
       {/* ── OVERVIEW + CAPABILITIES ───────────────────────────────────────── */}
       <section className="bg-white py-24">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-12 lg:px-14">
-          {/* Overview */}
-          <div className="lg:col-span-7">
+          {/* Overview — hidden until the item has copy, so a newly added
+              sector doesn't render a heading over nothing. */}
+          {item.description.length > 0 && (
+          <div className={item.capabilities.length > 0 ? "lg:col-span-7" : "lg:col-span-12"}>
             <Reveal>
               <div className="mb-5 flex items-center gap-3">
                 <span className="h-[2px] w-8 bg-[#1F93A4]" />
@@ -104,9 +106,11 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               ))}
             </div>
           </div>
+          )}
 
-          {/* Capabilities card */}
-          <div className="lg:col-span-5">
+          {/* Capabilities card — likewise hidden while the list is empty. */}
+          {item.capabilities.length > 0 && (
+          <div className={item.description.length > 0 ? "lg:col-span-5" : "lg:col-span-12"}>
             <Reveal direction="left">
               <div className="rounded-xl bg-[#0d1e28] p-8">
                 <div className="mb-6 flex items-center gap-3">
@@ -130,6 +134,7 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               </div>
             </Reveal>
           </div>
+          )}
         </div>
       </section>
 

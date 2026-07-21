@@ -462,9 +462,13 @@ export const getSector = (slug: string) => sectors.find((s) => s.slug === slug);
 
 export type ExpertiseKind = "service" | "sector";
 
-type StoreLike = { content?: Record<string, Record<string, string>> } | null | undefined;
+type StoreLike = {
+  content?: Record<string, Record<string, string>>;
+  _deletedSections?: string[];
+} | null | undefined;
 
 const underscore = (slug: string) => slug.replace(/-/g, "_");
+const dashify = (key: string) => key.replace(/_/g, "-");
 export const serviceSectionKey = (slug: string) => `svc_${underscore(slug)}`;
 export const sectorSectionKey = (slug: string) => `sct_${underscore(slug)}`;
 const sectionKeyFor = (kind: ExpertiseKind, slug: string) =>
@@ -485,10 +489,62 @@ export function resolveExpertise(store: StoreLike, kind: ExpertiseKind, item: Ex
   };
 }
 
-export const resolveServices = (store: StoreLike): Expertise[] =>
-  services.map((s) => resolveExpertise(store, "service", s));
-export const resolveSectors = (store: StoreLike): Expertise[] =>
-  sectors.map((s) => resolveExpertise(store, "sector", s));
+/* ── Admin-created items ─────────────────────────────────────────────────────
+   The panel's "Add Section" can create a `sct_<slug>` / `svc_<slug>` section
+   with no counterpart in the arrays above — a sector or service authored
+   entirely from the admin panel. We synthesise an Expertise from the stored
+   fields and append it after the built-in ones, so the panel can add items
+   without a code change.
+
+   A stored section only becomes live once it has a title: that stops a
+   half-finished entry from publishing an empty card and a bare detail page. */
+
+const HUB_SUFFIX = "hub";   // sct_hub / svc_hub hold hub-page copy, not items
+const FALLBACK_IMAGE = "/media/sectors hero section photo.webp";
+
+function storeAddedItems(store: StoreLike, kind: ExpertiseKind): Expertise[] {
+  const prefix = kind === "service" ? "svc_" : "sct_";
+  const builtIn = kind === "service" ? services : sectors;
+  const known = new Set(builtIn.map((i) => sectionKeyFor(kind, i.slug)));
+  const deleted = new Set(store?._deletedSections || []);
+
+  return Object.entries(store?.content || {})
+    .filter(([key]) => key.startsWith(prefix) && !known.has(key) && !deleted.has(key))
+    .filter(([key]) => key.slice(prefix.length) !== HUB_SUFFIX)
+    .filter(([, f]) => (f?.title || "").trim() !== "")
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([key, f], i) => ({
+      slug: dashify(key.slice(prefix.length)),
+      num: String(builtIn.length + i + 1).padStart(2, "0"),
+      title: f.title.trim(),
+      summary: f.summary || "",
+      description: f.description ? splitLines(f.description) : [],
+      capabilities: f.capabilities ? splitList(f.capabilities) : [],
+      // next/image throws on an empty src — always hand it something real.
+      image: f.image || FALLBACK_IMAGE,
+    }));
+}
+
+export const resolveServices = (store: StoreLike): Expertise[] => [
+  ...services.map((s) => resolveExpertise(store, "service", s)),
+  ...storeAddedItems(store, "service"),
+];
+export const resolveSectors = (store: StoreLike): Expertise[] => [
+  ...sectors.map((s) => resolveExpertise(store, "sector", s)),
+  ...storeAddedItems(store, "sector"),
+];
+
+/** Look up a single item by slug, covering built-in *and* admin-created
+    entries. Returns undefined when neither matches, so callers can 404. */
+export function resolveBySlug(
+  store: StoreLike,
+  kind: ExpertiseKind,
+  slug: string
+): Expertise | undefined {
+  const builtIn = kind === "service" ? getService(slug) : getSector(slug);
+  if (builtIn) return resolveExpertise(store, kind, builtIn);
+  return storeAddedItems(store, kind).find((i) => i.slug === slug);
+}
 
 /** Default content sections for every service & sector — merged into the admin
     content store so each item is listed and editable. */

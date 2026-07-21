@@ -1,15 +1,21 @@
 import { notFound } from "next/navigation";
 import ExpertiseDetail from "@/components/ExpertiseDetail";
-import { sectors, getSector, resolveExpertise } from "@/lib/expertise";
+import { resolveBySlug, resolveSectors } from "@/lib/expertise";
 import { getContent } from "@/lib/getContent";
 
-export function generateStaticParams() {
-  return sectors.map((s) => ({ slug: s.slug }));
+// Sectors added in the admin panel *after* a build aren't in generateStaticParams,
+// so they must be allowed to render on demand instead of 404ing.
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const c = await getContent();
+  return resolveSectors(c).map((s) => ({ slug: s.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = getSector(slug);
+  const c = await getContent();
+  const item = resolveBySlug(c, "sector", slug);
   if (!item) return { title: "Sector Not Found | INFRA Construction" };
   return {
     title: `${item.title} | INFRA Construction`,
@@ -19,15 +25,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function SectorDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const base = getSector(slug);
-  if (!base) notFound();
-
   const c = await getContent();
-  const item = resolveExpertise(c, "sector", base);
-  const related = sectors
+  const item = resolveBySlug(c, "sector", slug);
+  if (!item) notFound();
+
+  const related = resolveSectors(c)
     .filter((s) => s.slug !== slug)
-    .slice(0, 4)
-    .map((s) => resolveExpertise(c, "sector", s));
+    .slice(0, 4);
 
   return <ExpertiseDetail item={item} kind="sector" related={related} />;
 }

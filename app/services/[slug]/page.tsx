@@ -1,15 +1,21 @@
 import { notFound } from "next/navigation";
 import ExpertiseDetail from "@/components/ExpertiseDetail";
-import { services, getService, resolveExpertise } from "@/lib/expertise";
+import { resolveBySlug, resolveServices } from "@/lib/expertise";
 import { getContent } from "@/lib/getContent";
 
-export function generateStaticParams() {
-  return services.map((s) => ({ slug: s.slug }));
+// Services added in the admin panel *after* a build aren't in generateStaticParams,
+// so they must be allowed to render on demand instead of 404ing.
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const c = await getContent();
+  return resolveServices(c).map((s) => ({ slug: s.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = getService(slug);
+  const c = await getContent();
+  const item = resolveBySlug(c, "service", slug);
   if (!item) return { title: "Service Not Found | INFRA Construction" };
   return {
     title: `${item.title} | INFRA Construction`,
@@ -19,15 +25,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const base = getService(slug);
-  if (!base) notFound();
-
   const c = await getContent();
-  const item = resolveExpertise(c, "service", base);
-  const related = services
+  const item = resolveBySlug(c, "service", slug);
+  if (!item) notFound();
+
+  const related = resolveServices(c)
     .filter((s) => s.slug !== slug)
-    .slice(0, 4)
-    .map((s) => resolveExpertise(c, "service", s));
+    .slice(0, 4);
 
   return <ExpertiseDetail item={item} kind="service" related={related} />;
 }
