@@ -99,49 +99,49 @@
       "capabilities": "3D coordinated modelling, Clash detection, 4D scheduling & 5D cost, Information management, Design collaboration, Lifecycle asset data"
     },
     "sct_buildings": {
-      "title": "Buildings",
+      "title": "Built Environment",
       "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
       "image": "/media/buildings-social-housing-assiut-egypt.webp",
       "description": "We construct distinguished and exceptional public and private buildings.\nOur portfolio showcases a range of outstanding projects, reflecting our commitment to excellence and innovation in architecture, MEP (Mechanical, Electrical, and Plumbing), and civil works.",
       "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
     },
     "sct_networks_infrastructures": {
-      "title": "Networks & Infrastructures",
+      "title": "Water & Wastewater Management",
       "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
       "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
       "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
       "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
     },
     "sct_civil_works": {
-      "title": "Civil Works",
+      "title": "Dams and Irrigations",
       "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
       "image": "/media/water-tank-aden-yemen.webp",
       "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
       "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
     },
     "sct_transportation_roads_bridges": {
-      "title": "Transportation, Roads & Bridges",
+      "title": "Ports & Marine",
       "summary": "Complex transport projects that enhance communities and quality of life.",
       "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
       "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
       "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
     },
     "sct_water_sewage_treatment": {
-      "title": "Water & Sewage Treatment Plants & Networks",
+      "title": "Airports",
       "summary": "Complete water and sewage solutions — treatment plants to distribution networks.",
       "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "description": "INFRA Construction provides complete solutions for water and sewage treatment.\nOur services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
       "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
     },
     "sct_dams_irrigation": {
-      "title": "Dams & Irrigation",
+      "title": "Roads & Bridges",
       "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
       "image": "/media/water-hassan-dam-project-yemen.webp",
       "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
       "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
     },
     "sct_pipelines": {
-      "title": "Pipelines",
+      "title": "Energy",
       "summary": "Complex pipeline systems for refinery, petrochemical, cross-state, and utility use.",
       "image": "/media/energy-power-plant-piping-aden-yemen.webp",
       "description": "Our capabilities include the construction and installation of complex pipeline systems for various applications.\nWe provide engineering services for refinery piping, petrochemical piping, cross-state pipelines, and utility piping — complete with 3D modelling and stress analysis.",
@@ -441,7 +441,7 @@
       "eyebrow": "News & Insights",
       "title": "Latest from INFRA",
       "subtitle": "Project milestones, awards, and company updates.",
-      "backgroundImage": "/media/1782903519939-news_bg.webp"
+      "backgroundImage": "/media/1784615532330-another-milestone-of-trust.webp"
     },
     "careers_hero": {
       "eyebrow": "Careers",
@@ -942,7 +942,7 @@
       "date": "Jun 2026",
       "category": "Projects",
       "excerpt": "As part of its commitment to advancing smart solutions and embracing cutting-edge technologies in the construction sector, Infra Construction participated, in collaboration with Tamdeed, in a tender launched by the Municipality of Abu Dhabi for the implementation of an advanced AI-powered tower crane monitoring system.",
-      "image": "/media/1782639482280-news-2.webp",
+      "image": "/media/1784615366919-news2.png",
       "author": "INFRA Projects Team",
       "location": "Abu Dhabi, UAE",
       "readTime": "4 min read",
@@ -961,7 +961,7 @@
       "date": "May 2026",
       "category": "Community",
       "excerpt": "Infra Construction has successfully completed and delivered two residential plots in Nad Al Sheba, Dubai, each featuring two standalone villas thoughtfully designed to offer exceptional privacy and a comfortable family living experience.",
-      "image": "/media/1782639492444-news-3.webp",
+      "image": "/media/1784615387121-news3.webp",
       "author": "INFRA Communications",
       "location": "Dubai, UAE",
       "readTime": "2 min read",
@@ -980,7 +980,7 @@
       "date": "MAy 2026",
       "category": "Business Development",
       "excerpt": "As part of its continuous efforts to explore expansion opportunities in the Kuwaiti market, Infra Construction held an important meeting with Go Green, attended by Sheikha Al Arefj, to discuss prospects for cooperation and joint investment. 🇰🇼🤝",
-      "image": "/media/1782639506653-news-4.webp",
+      "image": "/media/1784615409504-news4.webp",
       "author": "INFRA Communications",
       "location": "Kuwaiti",
       "readTime": "4 min read",
@@ -999,7 +999,7 @@
       "date": "Apr 2026",
       "category": "Partnerships",
       "excerpt": "In a step that reflects our strategic direction toward expanding regional partnerships, Infra Construction has signed a Memorandum of Understanding with Al Deera Contracting Company on March 12, 2026, in the Hashemite Kingdom of Jordan.",
-      "image": "/media/1782639522275-news-5.webp",
+      "image": "/media/1784615427251-news5.webp",
       "author": "INFRA Communications",
       "location": "Jordan",
       "readTime": "4 min read",
@@ -1018,7 +1018,7 @@
       "date": "Apr 2026",
       "category": "Partnerships",
       "excerpt": "We are pleased to announce the start of construction works for the Al Wathba Slaughterhouse Cold Storage Expansion Project in Abu Dhabi, delivered by Infra Construction in partnership with STBM for the Abu Dhabi Municipality.",
-      "image": "/media/1782639550767-news-6.webp",
+      "image": "/media/1784615439482-news6.webp",
       "author": "INFRA Communications",
       "location": "UAE",
       "readTime": "3 min read",
@@ -1201,7 +1201,7 @@
       "phone": "+20 345680875"
     },
     "navbar": {
-      "logo": "/media/INFRA LOGO.png",
+      "logo": "/media/infra-logo.png",
       "ctaText": "Contact US",
       "ctaHref": "/contact"
     },
@@ -1228,9 +1228,113 @@
       "stat2Sublabel": "of Operation",
       "linkText": "Discover Our Story",
       "image": "/media/1782809288798-who_we_are.webp"
+    },
+    "news_8": {
+      "title": "",
+      "date": "",
+      "category": "",
+      "excerpt": "",
+      "image": "",
+      "author": "",
+      "location": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "p4": ""
     }
   },
   "media": [
+    {
+      "id": "1784615533142",
+      "title": "news_hero",
+      "alt": "news_hero",
+      "category": "gallery",
+      "url": "/media/1784615532330-another-milestone-of-trust.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:32:13.142Z"
+    },
+    {
+      "id": "1784615440263",
+      "title": "news6",
+      "alt": "news6",
+      "category": "gallery",
+      "url": "/media/1784615439482-news6.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:30:40.263Z"
+    },
+    {
+      "id": "1784615428210",
+      "title": "news5",
+      "alt": "news5",
+      "category": "gallery",
+      "url": "/media/1784615427251-news5.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:30:28.210Z"
+    },
+    {
+      "id": "1784615410634",
+      "title": "news4",
+      "alt": "news4",
+      "category": "gallery",
+      "url": "/media/1784615409504-news4.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:30:10.634Z"
+    },
+    {
+      "id": "1784615387869",
+      "title": "news3",
+      "alt": "news3",
+      "category": "gallery",
+      "url": "/media/1784615387121-news3.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:29:47.869Z"
+    },
+    {
+      "id": "1784615368250",
+      "title": "news2",
+      "alt": "news2",
+      "category": "gallery",
+      "url": "/media/1784615366919-news2.png",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:29:28.250Z"
+    },
+    {
+      "id": "1784614961567",
+      "title": "sectore 8",
+      "alt": "sectore 8",
+      "category": "gallery",
+      "url": "/media/1784614960071-power-study-generation-and-transmission-sulamani-iraq.png",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:22:41.567Z"
+    },
+    {
+      "id": "1784614916797",
+      "title": "sectore 7",
+      "alt": "sectore 7",
+      "category": "gallery",
+      "url": "/media/1784614915593-project-manegment-belhaf-yemen.png",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:21:56.797Z"
+    },
+    {
+      "id": "1784614761798",
+      "title": "sectore 3",
+      "alt": "sectore 3",
+      "category": "gallery",
+      "url": "/media/1784614760728-qana-port-shabwah-yemen.png",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:19:21.798Z"
+    },
+    {
+      "id": "1784614577510",
+      "title": "sectore 1",
+      "alt": "sectore 1",
+      "category": "gallery",
+      "url": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:16:17.510Z"
+    },
     {
       "id": "1784537751483",
       "title": "news3",
