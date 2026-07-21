@@ -1246,6 +1246,15 @@
   },
   "media": [
     {
+      "id": "1784615368250",
+      "title": "news2",
+      "alt": "news2",
+      "category": "gallery",
+      "url": "/media/1784615366919-news2.png",
+      "source": "upload",
+      "createdAt": "2026-07-21T06:29:28.250Z"
+    },
+    {
       "id": "1784614961567",
       "title": "sectore 8",
       "alt": "sectore 8",
