@@ -36,6 +36,7 @@ const fieldLabel = (name) =>
 const GROUP_ORDER = [
   "Home Page",
   "Sectors",
+  "Sectors · Subsectors",
   "Services",
   "About Page",
   "Sectors Page",
@@ -52,8 +53,10 @@ const GROUP_ORDER = [
 const sectionGroup = (name) => {
   const lower = name.toLowerCase();
   if (lower.startsWith("home_") || lower === "home") return "Home Page";
-  // New expertise system: svc_<slug> / sct_<slug> (+ svc_hub / sct_hub)
+  // New expertise system: svc_<slug> / sct_<slug> (+ svc_hub / sct_hub),
+  // with sub_<sector>_<subsector> for the divisions inside a sector.
   if (lower.startsWith("svc_")) return "Services";
+  if (lower.startsWith("sub_")) return "Sectors · Subsectors";
   if (lower.startsWith("sct_")) return "Sectors";
   if (lower.startsWith("about_") || lower === "about") return "About Page";
   if (lower.startsWith("sectors_") && !lower.startsWith("sector_")) return "Sectors Page";

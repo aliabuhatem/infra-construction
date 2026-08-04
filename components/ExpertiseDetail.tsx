@@ -15,6 +15,11 @@ interface Props {
 /* Rich, animated detail page shared by /services/[slug] and /sectors/[slug]. */
 
 export default function ExpertiseDetail({ item, kind, related }: Props) {
+  const subsectors = item.subsectors ?? [];
+  const rail: { label: string; href?: string }[] =
+    subsectors.length > 0
+      ? subsectors.map((s) => ({ label: s.title, href: `#${s.slug}` }))
+      : item.capabilities.map((c) => ({ label: c }));
   const base = kind === "service" ? "/services" : "/sectors";
   const hubLabel = kind === "service" ? "Services" : "Sectors";
   const kicker = kind === "service" ? "Our Services" : "Our Sectors";
@@ -108,28 +113,42 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
           </div>
           )}
 
-          {/* Capabilities card — likewise hidden while the list is empty. */}
-          {item.capabilities.length > 0 && (
+          {/* Capabilities card — likewise hidden while the list is empty. When
+              the item has subsectors this doubles as a jump list into the
+              sections below, rather than repeating their titles inertly. */}
+          {rail.length > 0 && (
           <div className={item.description.length > 0 ? "lg:col-span-5" : "lg:col-span-12"}>
             <Reveal direction="left">
               <div className="rounded-xl bg-[#0d1e28] p-8">
                 <div className="mb-6 flex items-center gap-3">
                   <span className="h-[2px] w-6 bg-[#1F93A4]" />
                   <span className="text-[11px] font-bold tracking-[0.32em] text-[#1F93A4]" style={{ fontFamily: B }}>
-                    Capabilities
+                    {subsectors.length > 0 ? "In This Sector" : "Capabilities"}
                   </span>
                 </div>
                 <Stagger className="space-y-3">
-                  {item.capabilities.map((cap, i) => (
-                    <StaggerItem key={i}>
-                      <div className="flex items-center gap-3 border-b border-white/8 pb-3 last:border-0">
+                  {rail.map((row, i) => {
+                    const body = (
+                      <>
                         <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#1F93A4]/15 text-[11px] font-bold text-[#1F93A4]" style={{ fontFamily: H }}>
                           {String(i + 1).padStart(2, "0")}
                         </span>
-                        <span className="text-[14px] text-white/85" style={{ fontFamily: B }}>{cap}</span>
-                      </div>
-                    </StaggerItem>
-                  ))}
+                        <span className="text-[14px] text-white/85" style={{ fontFamily: B }}>{row.label}</span>
+                      </>
+                    );
+                    const cls = "flex items-center gap-3 border-b border-white/8 pb-3 last:border-0";
+                    return (
+                      <StaggerItem key={i}>
+                        {row.href ? (
+                          <a href={row.href} className={`${cls} group transition-colors hover:text-white`}>
+                            {body}
+                          </a>
+                        ) : (
+                          <div className={cls}>{body}</div>
+                        )}
+                      </StaggerItem>
+                    );
+                  })}
                 </Stagger>
               </div>
             </Reveal>
@@ -137,6 +156,98 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
           )}
         </div>
       </section>
+
+      {/* ── SUBSECTORS ────────────────────────────────────────────────────── */}
+      {subsectors.length > 0 && (
+        <section className="border-t border-[#213B4D]/8 bg-[#f6f8f9] py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-14">
+            <Reveal>
+              <div className="mb-14 flex items-center gap-3">
+                <span className="h-[2px] w-8 bg-[#1F93A4]" />
+                <span className="text-[11px] font-bold tracking-[0.32em] text-[#1F93A4]" style={{ fontFamily: B }}>
+                  What We Deliver
+                </span>
+              </div>
+            </Reveal>
+
+            <div className="space-y-20">
+              {subsectors.map((sub, i) => (
+                /* scroll-mt clears the fixed header when the navbar links
+                   straight to one of these anchors. */
+                <div key={sub.slug} id={sub.slug} className="scroll-mt-32">
+                  <div className="grid items-center gap-10 lg:grid-cols-12">
+                    <Reveal
+                      direction={i % 2 === 0 ? "right" : "left"}
+                      className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-2" : ""}`}
+                    >
+                      <div className="relative h-64 w-full overflow-hidden rounded-xl lg:h-80">
+                        <Image
+                          src={sub.image}
+                          alt={sub.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 40vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/45 to-transparent" />
+                        <span
+                          className="absolute left-5 top-4 text-[30px] font-bold leading-none text-white/90"
+                          style={{ fontFamily: H }}
+                        >
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                    </Reveal>
+
+                    <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                      <Reveal>
+                        <h3
+                          className="mb-5 leading-tight text-[#213B4D]"
+                          style={{ fontFamily: H, fontSize: "clamp(22px, 2.6vw, 32px)", fontWeight: 700, letterSpacing: "-0.01em" }}
+                        >
+                          {sub.title}
+                        </h3>
+                      </Reveal>
+                      <div className="space-y-4">
+                        {sub.description.map((para, p) => (
+                          <Reveal key={p} delay={0.05 + p * 0.05}>
+                            <p className="text-[15.5px] leading-relaxed text-[#5E5E5E]" style={{ fontFamily: B }}>
+                              {para}
+                            </p>
+                          </Reveal>
+                        ))}
+                      </div>
+
+                      {sub.points.length > 0 && (
+                        <Stagger className="mt-6 space-y-4">
+                          {sub.points.map((point, p) => {
+                            // "Label: detail" — the lead-in reads as a heading.
+                            const at = point.indexOf(":");
+                            const label = at > 0 ? point.slice(0, at) : "";
+                            const rest = at > 0 ? point.slice(at + 1).trim() : point;
+                            return (
+                              <StaggerItem key={p}>
+                                <div className="flex gap-3.5">
+                                  <span className="mt-[9px] h-[6px] w-[6px] shrink-0 rounded-full bg-[#1F93A4]" />
+                                  <p className="text-[15px] leading-relaxed text-[#5E5E5E]" style={{ fontFamily: B }}>
+                                    {label && (
+                                      <span className="font-bold text-[#213B4D]">{label}: </span>
+                                    )}
+                                    {rest}
+                                  </p>
+                                </div>
+                              </StaggerItem>
+                            );
+                          })}
+                        </Stagger>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── RELATED ───────────────────────────────────────────────────────── */}
       <section className="border-t border-[#213B4D]/8 bg-[#f6f8f9] py-20">

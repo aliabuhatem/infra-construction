@@ -31,7 +31,14 @@ export const metadata: Metadata = {
 
 // Only the fields the menus render — keeps the catalogue's full copy out of the
 // client payload on every page.
-const toNavItem = (i: Expertise) => ({ slug: i.slug, num: i.num, title: i.title });
+const toNavItem = (i: Expertise) => ({
+  slug: i.slug,
+  num: i.num,
+  title: i.title,
+  ...(i.subsectors?.length
+    ? { children: i.subsectors.map((s) => ({ slug: s.slug, title: s.title })) }
+    : {}),
+});
 
 export default async function RootLayout({
   children,

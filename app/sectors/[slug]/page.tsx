@@ -1,6 +1,6 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import ExpertiseDetail from "@/components/ExpertiseDetail";
-import { resolveBySlug, resolveSectors, redirectSlugFor } from "@/lib/expertise";
+import { resolveBySlug, resolveSectors, redirectSlugFor, LEGACY_SECTOR_PATHS } from "@/lib/expertise";
 import { getContent } from "@/lib/getContent";
 
 // Sectors added in the admin panel *after* a build aren't in generateStaticParams,
@@ -31,6 +31,9 @@ export default async function SectorDetailPage({ params }: { params: Promise<{ s
     // A renamed sector keeps its old path working with a 308 to the new one.
     const moved = redirectSlugFor(c, "sector", slug);
     if (moved) permanentRedirect(`/sectors/${moved}`);
+    // Sectors retired by the move to two pillars land on their subsector.
+    const legacy = LEGACY_SECTOR_PATHS[slug];
+    if (legacy) permanentRedirect(legacy);
     notFound();
   }
 

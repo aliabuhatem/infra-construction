@@ -179,7 +179,7 @@ export default async function HomePage() {
                 </h2>
               </div>
               <p className="text-[#5E5E5E] text-[15px] max-w-sm leading-relaxed" style={{ fontFamily: B }}>
-                <ContentText section="home_sectors_header" name="subtitle" fallback="Seven core sectors of activity — from buildings and civil works to pipelines and water treatment." />
+                <ContentText section="home_sectors_header" name="subtitle" fallback="Our operational model is structured around two main pillars — Built Environment and Infrastructure." />
               </p>
             </div>
           </Reveal>
@@ -187,12 +187,13 @@ export default async function HomePage() {
           <Reveal>
             <div className="flex items-center justify-end mb-6">
               <Link href="/sectors" className="text-[#213B4D]/70 hover:text-[#1F93A4] text-[12px] font-bold tracking-widest flex items-center gap-2 transition-colors group" style={{ fontFamily: B }}>
-                <ContentText section="home_sectors_header" name="link" fallback="All 7 Sectors" /> <span className="group-hover:translate-x-1 transition-transform">→</span>
+                <ContentText section="home_sectors_header" name="link" fallback="Explore Both Sectors" /> <span className="group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             </div>
           </Reveal>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {sectorItems.slice(0, 4).map((s, i) => (
+          {/* Two pillars — a wide two-up rather than the 4-col service grid. */}
+          <div className="grid gap-6 sm:grid-cols-2">
+            {sectorItems.map((s, i) => (
               <ExpertiseCard key={s.slug} item={s} base="/sectors" index={i} />
             ))}
           </div>

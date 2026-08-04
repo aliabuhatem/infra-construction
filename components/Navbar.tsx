@@ -11,9 +11,13 @@ const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 /* The menus are fed from the root layout, which resolves the admin-edited
    catalogue server-side. Reading the static arrays here instead would ignore
-   every rename and deletion made in the admin panel. Only these three fields
-   are needed, so the rest never reaches the client payload. */
-export type NavItem = { slug: string; num: string; title: string };
+   every rename and deletion made in the admin panel. Only these fields are
+   needed, so the rest never reaches the client payload.
+
+   `children` are a sector's subsectors — anchors on the sector page, so the
+   dropdown can jump straight to one. Services have none. */
+export type NavChild = { slug: string; title: string };
+export type NavItem = { slug: string; num: string; title: string; children?: NavChild[] };
 
 const preLinks = [
   { label: "Home", href: "/" },
@@ -104,7 +108,7 @@ export default function Navbar({
 
           {/* Sectors + Services mega menus */}
           {([
-            { key: "sectors" as const, label: "Sectors", base: "/sectors", items: sectors, cols: "grid-cols-2", width: "w-[560px]" },
+            { key: "sectors" as const, label: "Sectors", base: "/sectors", items: sectors, cols: "grid-cols-2", width: "w-[680px]" },
             { key: "services" as const, label: "Services", base: "/services", items: services, cols: "grid-cols-2", width: "w-[640px]" },
           ]).map((m) => (
             <li key={m.key} className="relative" onMouseEnter={() => openMenu(m.key)} onMouseLeave={scheduleClose}>
@@ -126,19 +130,51 @@ export default function Navbar({
               >
                 <div className={`grid ${m.cols} gap-1 p-3`}>
                   {m.items.map((it) => (
-                    <Link
-                      key={it.slug}
-                      href={`${m.base}/${it.slug}`}
-                      onClick={closeAll}
-                      className="group flex items-start gap-3 rounded-lg p-3 hover:bg-[#f4f6f8] transition-colors"
-                    >
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[#1F93A4]/10 text-[11px] font-bold text-[#1F93A4] transition-colors group-hover:bg-[#1F93A4] group-hover:text-white" style={{ fontFamily: B }}>
-                        {it.num}
-                      </span>
-                      <span className="text-[12.5px] font-semibold leading-snug text-[#213B4D] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
-                        {it.title}
-                      </span>
-                    </Link>
+                    /* An item with subsectors becomes a titled column of
+                       anchor links; without them it stays a single row. */
+                    it.children?.length ? (
+                      <div key={it.slug} className="p-3">
+                        <Link
+                          href={`${m.base}/${it.slug}`}
+                          onClick={closeAll}
+                          className="group mb-2 flex items-center gap-2.5 border-b border-[#213B4D]/8 pb-2.5"
+                        >
+                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#1F93A4]/10 text-[10px] font-bold text-[#1F93A4] transition-colors group-hover:bg-[#1F93A4] group-hover:text-white" style={{ fontFamily: B }}>
+                            {it.num}
+                          </span>
+                          <span className="text-[11px] font-bold tracking-[0.14em] text-[#213B4D] uppercase transition-colors group-hover:text-[#1F93A4]" style={{ fontFamily: B }}>
+                            {it.title}
+                          </span>
+                        </Link>
+                        <div className="space-y-0.5">
+                          {it.children.map((sub) => (
+                            <Link
+                              key={sub.slug}
+                              href={`${m.base}/${it.slug}#${sub.slug}`}
+                              onClick={closeAll}
+                              className="block rounded-md px-2.5 py-1.5 text-[12.5px] leading-snug text-[#213B4D]/80 transition-colors hover:bg-[#f4f6f8] hover:text-[#1F93A4]"
+                              style={{ fontFamily: B }}
+                            >
+                              {sub.title}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <Link
+                        key={it.slug}
+                        href={`${m.base}/${it.slug}`}
+                        onClick={closeAll}
+                        className="group flex items-start gap-3 rounded-lg p-3 hover:bg-[#f4f6f8] transition-colors"
+                      >
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[#1F93A4]/10 text-[11px] font-bold text-[#1F93A4] transition-colors group-hover:bg-[#1F93A4] group-hover:text-white" style={{ fontFamily: B }}>
+                          {it.num}
+                        </span>
+                        <span className="text-[12.5px] font-semibold leading-snug text-[#213B4D] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                          {it.title}
+                        </span>
+                      </Link>
+                    )
                   ))}
                 </div>
                 <div className="border-t border-[#213B4D]/8 px-5 py-3 bg-[#f6f8f9]">
@@ -204,18 +240,29 @@ export default function Navbar({
                   <path d="M1 1L4.5 4.5L8 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
-              <div className="overflow-hidden transition-all duration-300" style={{ maxHeight: mobilePanel === m.key ? "600px" : "0px" }}>
+              {/* Tall enough for two sectors plus all their subsectors. */}
+              <div className="overflow-hidden transition-all duration-300" style={{ maxHeight: mobilePanel === m.key ? "1400px" : "0px" }}>
                 <div className="pb-3 pl-1 space-y-0.5">
                   <Link href={m.base} onClick={() => setOpen(false)} className="block text-[#1F93A4] hover:text-[#213B4D] py-2 text-[11px] font-bold tracking-widest transition-colors" style={{ fontFamily: B }}>
                     All {m.label} →
                   </Link>
                   {m.items.map((it) => (
-                    <Link key={it.slug} href={`${m.base}/${it.slug}`} onClick={() => setOpen(false)}
-                      className="flex items-center gap-2 text-[#213B4D]/75 hover:text-[#1F93A4] py-2 text-[12.5px] transition-colors"
-                      style={{ fontFamily: B }}>
-                      <span className="text-[#1F93A4] text-[11px] font-bold w-5 shrink-0">{it.num}</span>
-                      {it.title}
-                    </Link>
+                    <div key={it.slug}>
+                      <Link href={`${m.base}/${it.slug}`} onClick={() => setOpen(false)}
+                        className="flex items-center gap-2 text-[#213B4D]/75 hover:text-[#1F93A4] py-2 text-[12.5px] font-semibold transition-colors"
+                        style={{ fontFamily: B }}>
+                        <span className="text-[#1F93A4] text-[11px] font-bold w-5 shrink-0">{it.num}</span>
+                        {it.title}
+                      </Link>
+                      {/* Subsectors sit indented under their sector. */}
+                      {it.children?.map((sub) => (
+                        <Link key={sub.slug} href={`${m.base}/${it.slug}#${sub.slug}`} onClick={() => setOpen(false)}
+                          className="block border-l border-[#213B4D]/10 py-1.5 pl-5 ml-[9px] text-[12px] text-[#213B4D]/60 transition-colors hover:text-[#1F93A4]"
+                          style={{ fontFamily: B }}>
+                          {sub.title}
+                        </Link>
+                      ))}
+                    </div>
                   ))}
                 </div>
               </div>

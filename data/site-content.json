@@ -48,62 +48,6 @@
       "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive Facilities management services.\n\nMaintaining the performance of buildings and infrastructure requires a structured approach to operations and maintenance. Infra Construction provides integrated facilities management services that help organizations maximize asset value while ensuring safe, reliable, and efficient operations.\n\nOur services cover both hard and soft facilities management, including technical maintenance, asset management, building operations, energy management, and support services. Through preventive maintenance strategies and performance monitoring, we help clients reduce operational disruptions, improve energy efficiency, and extend asset life cycles.\n\nBy combining technical expertise with proactive service delivery, we create operational environments that remain efficient, compliant, and sustainable throughout their lifecycle.",
       "capabilities": "Building Operations & Maintenance\nPreventive & Corrective Maintenance\nAsset Lifecycle Management\nEnergy Management\nTechnical Support Services\nCleaning & Housekeeping\nHealth, Safety & Compliance\nPerformance Monitoring & Reporting"
     },
-    "sct_buildings": {
-      "title": "Built Environment",
-      "slug": "built-environment",
-      "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
-      "image": "/media/buildings-social-housing-assiut-egypt.webp",
-      "description": "We construct distinguished and exceptional public and private buildings.\nOur portfolio showcases a range of outstanding projects, reflecting our commitment to excellence and innovation in architecture, MEP (Mechanical, Electrical, and Plumbing), and civil works.",
-      "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
-    },
-    "sct_networks_infrastructures": {
-      "title": "Water & Wastewater Management",
-      "slug": "water-wastewater-management",
-      "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
-      "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
-      "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
-    },
-    "sct_civil_works": {
-      "title": "Dams and Irrigations",
-      "slug": "dams-and-irrigations",
-      "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
-      "image": "/media/water-dam-construction-yemen.webp",
-      "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
-      "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
-    },
-    "sct_transportation_roads_bridges": {
-      "title": "Ports & Marine",
-      "slug": "ports-marine",
-      "summary": "Complex transport projects that enhance communities and quality of life.",
-      "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
-      "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
-      "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
-    },
-    "sct_water_sewage_treatment": {
-      "title": "Airports",
-      "slug": "airports",
-      "summary": "Complete water and sewage solutions — treatment plants to distribution networks.",
-      "image": "/admin-uploads/1782561704079-berbera-international-airport.png",
-      "description": "INFRA Construction provides complete solutions for water and sewage treatment.\nOur services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
-      "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
-    },
-    "sct_dams_irrigation": {
-      "title": "Roads & Bridges",
-      "slug": "roads-bridges",
-      "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
-      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp",
-      "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
-      "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
-    },
-    "sct_pipelines": {
-      "title": "Energy",
-      "slug": "energy",
-      "summary": "Complex pipeline systems for refinery, petrochemical, cross-state, and utility use.",
-      "image": "/media/1784614915593-project-manegment-belhaf-yemen.png",
-      "description": "Our capabilities include the construction and installation of complex pipeline systems for various applications.\nWe provide engineering services for refinery piping, petrochemical piping, cross-state pipelines, and utility piping — complete with 3D modelling and stress analysis.",
-      "capabilities": "Refinery piping, Petrochemical piping, Cross-state pipelines, Utility piping, 3D modelling, Pipe stress analysis"
-    },
     "svc_hub": {
       "eyebrow": "Our Expertise",
       "title": "Our Services",
@@ -124,11 +68,11 @@
     "sct_hub": {
       "eyebrow": "Our Expertise",
       "title": "Our Sectors",
-      "subtitle": "A rich history of executing projects across a diverse range of sectors — demonstrating our versatility and technical depth across two continents.",
-      "intro": "INFRA Construction has a strong presence in the Middle East, East Africa, and East Asia. We apply our comprehensive services across seven core sectors of activity, delivering robust and sustainable outcomes in each.",
+      "subtitle": "Our operational model is structured around two main pillars: Built Environment and Infrastructure.",
+      "intro": "INFRA Construction has a strong presence in the Middle East, East Africa, and East Asia. Built Environment covers high-complexity building structures, public architecture, and commercial facilities, while Infrastructure handles heavy civil engineering, utility networks, marine works, and energy transportation systems.",
       "heroImage": "/media/sectors hero section photo.webp",
-      "stat1Value": "7",
-      "stat1Label": "Sectors of Activity",
+      "stat1Value": "2",
+      "stat1Label": "Core Pillars",
       "stat2Value": "75+",
       "stat2Label": "Projects Delivered",
       "stat3Value": "12+",
@@ -164,8 +108,8 @@
       "eyebrow": "Our Sectors ",
       "headingLine1": "Sectors of",
       "headingLine2": "Activity.",
-      "subtitle": "Seven core sectors of activity — from buildings and civil works to pipelines and water treatment.",
-      "link": "All 7 Sectors"
+      "subtitle": "Our operational model is structured around two main pillars — Built Environment and Infrastructure.",
+      "link": "Explore Both Sectors"
     },
     "home_services_header": {
       "eyebrow": "Our Services ",
@@ -1199,14 +1143,6 @@
       "p2": "",
       "p3": "",
       "p4": ""
-    },
-    "sct_power": {
-      "title": "Power",
-      "slug": "power",
-      "summary": "",
-      "image": "/media/energy-power-transmission-sulamani-iraq.webp",
-      "description": "",
-      "capabilities": ""
     },
     "news_9": {
       "title": "",

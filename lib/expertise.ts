@@ -1,11 +1,21 @@
 /* ────────────────────────────────────────────────────────────────────────
    Expertise catalogue — the single source of truth for INFRA Construction's
-   14 Services and 7 Sectors of activity.
+   Services and its two Sectors of activity.
 
    Both /services and /sectors (hub + dynamic [slug] detail pages) and the
    home "Our Expertise" section read from here, so the whole site stays in
    sync from one place. Titles use Title Case (site-wide convention).
 ──────────────────────────────────────────────────────────────────────────── */
+
+/** A division within a sector. Rendered as an anchored section on the parent
+    sector page rather than a page of its own, so `slug` is an element id. */
+export interface SubSector {
+  slug: string;              // anchor id — keep stable, inbound links use it
+  title: string;
+  description: string[];     // paragraphs
+  points: string[];          // optional bullets, "Label: detail" renders bold
+  image: string;             // /media/…
+}
 
 export interface Expertise {
   slug: string;
@@ -15,6 +25,7 @@ export interface Expertise {
   description: string[];     // full copy — shown on the detail page
   capabilities: string[];    // bullet list of what's included
   image: string;             // /media/… hero + card image
+  subsectors?: SubSector[];  // sectors only; services have none
 }
 
 
@@ -302,150 +313,224 @@ export const services: Expertise[] = [
   },
 ];
 
-/* ── 7 SECTORS OF ACTIVITY ───────────────────────────────────────────────── */
+/* ── 2 SECTORS OF ACTIVITY ────────────────────────────────────────────────────
+   The operating model is two pillars — Built Environment and Infrastructure —
+   and each carries a set of subsectors. Subsectors render as anchored sections
+   on the parent sector page (`/sectors/infrastructure#airports`), so they stay
+   linkable from the navbar without splitting the copy across thin pages. */
 
 export const sectors: Expertise[] = [
   {
-    slug: "buildings",
+    slug: "built-environment",
     num: "01",
-    title: "Buildings",
-    summary: "Distinguished public and private buildings — architecture, MEP, and civil works.",
+    title: "Built Environment",
+    summary: "High-complexity building structures, public architecture, and commercial facilities.",
     description: [
-      "We construct distinguished and exceptional public and private buildings.",
-      "Our portfolio showcases a range of outstanding projects, reflecting our commitment to excellence and innovation in architecture, MEP (Mechanical, Electrical, and Plumbing), and civil works.",
+      "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.",
+      "We manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
     ],
     capabilities: [
-      "Residential & commercial buildings",
-      "Institutional & public facilities",
-      "Architectural design",
-      "MEP engineering",
-      "Structural & civil works",
-      "Fit-out & finishing",
+      "Healthcare Infrastructure",
+      "Educational Facilities",
+      "Tourism & Entertainment",
+      "Residential Sector",
+      "Public & Commercial Buildings",
+      "Special Buildings",
     ],
-    image: "/media/buildings-social-housing-assiut-egypt.webp",
-
+    image: "/media/buildings-hero.webp",
+    subsectors: [
+      {
+        slug: "healthcare-infrastructure",
+        title: "Healthcare Infrastructure",
+        description: [
+          "IC delivers specialized medical facilities engineered to meet international healthcare design and infection control standards. Our capabilities span the construction of general hospital complexes, diagnostic centers, specialized outpatient clinics, and high-capacity kidney dialysis facilities.",
+          "We integrate complex mechanical, electrical, and plumbing (MEP) systems, medical gas networks, cleanroom environments, and emergency power supply infrastructures necessary for critical care environments.",
+        ],
+        points: [],
+        image: "/media/buildings-dialysis-center-hargeisa-somaliland.webp",
+      },
+      {
+        slug: "educational-facilities",
+        title: "Educational Facilities",
+        description: [
+          "We build educational infrastructure designed to support modern learning, research, and campus logistics. Our experience includes the turnkey delivery of university campuses, administrative buildings, technical institutes, research laboratories, and primary/secondary school complexes.",
+          "The scope encompasses heavy structural civil works, material procurement, acoustic and climate-controlled finishing, and complete site infrastructure.",
+        ],
+        points: [],
+        image: "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
+      },
+      {
+        slug: "tourism-entertainment",
+        title: "Tourism & Entertainment",
+        description: [
+          "IC provides engineering and construction services for the hospitality and commercial leisure sectors. We execute structural and architectural works for high-end hotel developments, beachfront resort complexes, cultural centers, and public entertainment hubs.",
+          "Our teams balance aesthetic requirements with structural durability, ensuring full compliance with international safety, accessibility, and environmental standards.",
+        ],
+        points: [],
+        image: "/media/fm-hotel-moroni-comoros.webp",
+      },
+      {
+        slug: "residential-sector",
+        title: "Residential Sector",
+        description: [
+          "Our residential portfolio addresses both public development initiatives and private real estate demand. We execute large-scale social housing programs, integrated gated residential communities, mixed-use residential towers, and custom luxury villas.",
+          "IC emphasizes structural durability, energy-efficient building envelopes, and complete site integration, including internal road networks, landscaping, and residential utility hookups.",
+        ],
+        points: [],
+        image: "/media/buildings-residential-complex-dubai.webp",
+      },
+      {
+        slug: "public-commercial-buildings",
+        title: "Public & Commercial Buildings",
+        description: [
+          "IC delivers complex public and commercial developments designed to support governmental operations, business activities, and community services. Our expertise covers the construction of government administrative buildings, municipal facilities, corporate headquarters, office complexes, financial institutions, retail developments, shopping malls, convention and exhibition centers, and mixed-use commercial projects.",
+          "We execute complete structural, architectural, and MEP works while integrating intelligent building systems, fire and life safety solutions, energy-efficient technologies, and sustainable construction practices to ensure long-term operational performance and compliance with international standards.",
+        ],
+        points: [],
+        image: "/media/buildings-ministry-foreign-aden-yemen.webp",
+      },
+      {
+        slug: "special-buildings",
+        title: "Special Buildings",
+        description: [
+          "IC specializes in the delivery of technically demanding and purpose-built facilities that require advanced engineering solutions, specialized construction methodologies, and stringent operational requirements. Our capabilities include the construction of data centers, command and control centers, security and defense facilities, industrial support buildings, laboratories, logistics hubs, and mission-critical operational facilities.",
+          "These projects involve high-performance structural systems, specialized MEP installations, controlled environments, security infrastructure, and resilient utility networks designed to achieve maximum reliability, operational continuity, and compliance with international technical and safety standards.",
+        ],
+        points: [],
+        image: "/media/1782635477365-slaughterhouse-barbara-somaliland-01.webp",
+      },
+    ],
   },
   {
-    slug: "networks-infrastructures",
+    slug: "infrastructure",
     num: "02",
-    title: "Networks & Infrastructures",
-    summary: "Vital utility networks for water, wastewater, and critical distribution systems.",
+    title: "Infrastructure",
+    summary: "Heavy civil engineering, utility networks, marine works, and energy transportation systems.",
     description: [
-      "INFRA Construction has extensive experience in developing vital infrastructure networks.",
-      "This includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
+      "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
     ],
     capabilities: [
-      "Water distribution networks",
-      "Wastewater collection",
-      "Utility networks",
-      "Pumping stations",
-      "Network rehabilitation",
-      "Urban infrastructure",
+      "Water & Wastewater Management",
+      "Dams and Irrigation",
+      "Ports & Marine Works",
+      "Airports",
+      "Roads, Highways & Bridges",
+      "Energy Infrastructure",
+      "Power Generation & Distribution",
     ],
     image: "/media/infrastructure-aden-causeway-widening-yemen.webp",
-  
-  },
-  {
-    slug: "civil-works",
-    num: "03",
-    title: "Civil Works",
-    summary: "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
-    description: [
-      "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.",
-      "We provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
+    subsectors: [
+      {
+        slug: "water-wastewater-management",
+        title: "Water & Wastewater Management",
+        description: ["IC implements complete water lifecycle engineering solutions. Our operational scope includes:"],
+        points: [
+          "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.",
+          "Marine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.",
+          "Water Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks.",
+        ],
+        image: "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+      },
+      {
+        slug: "dams-irrigation",
+        title: "Dams and Irrigation",
+        description: [
+          "To combat water scarcity and support agricultural development in arid regions, IC constructs water retention and diversion infrastructure:",
+        ],
+        points: [
+          "Dam Construction: Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.",
+          "Irrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates.",
+        ],
+        image: "/media/water-hassan-dam-project-yemen.webp",
+      },
+      {
+        slug: "ports-marine-works",
+        title: "Ports & Marine Works",
+        description: ["IC delivers specialized marine construction and coastal engineering solutions:"],
+        points: [
+          "Port Facilities: Construction of commercial fishing ports, cargo handling quays, and vessel berth infrastructures.",
+          "Coastal Protection: Fabrication and placement of marine breakwaters, riprap slope protection, and shoreline stabilization systems.",
+          "Floating & Fixed Structures: Engineering floating pontoon systems, concrete jetties, and marine access walkways.",
+        ],
+        image: "/media/1784614760728-qana-port-shabwah-yemen.png",
+      },
+      {
+        slug: "airports",
+        title: "Airports",
+        description: [
+          "We support civil aviation authorities and airport operators with specialized airside and landside construction services:",
+        ],
+        points: [
+          "Facilities Rehabilitation: Upgrading, expanding, and modernizing existing passenger terminals, cargo hangars, and administrative buildings.",
+          "Airside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks.",
+        ],
+        image: "/media/airports-al-riyan-airport-yemen.webp",
+      },
+      {
+        slug: "roads-highways-bridges",
+        title: "Roads, Highways & Bridges",
+        description: [
+          "IC manages comprehensive transportation infrastructure programs from ground preparation to final surfacing:",
+        ],
+        points: [
+          "Highway & Urban Road Construction: Grading, paving, and surfacing for multi-lane intercity highways, arterial urban roads, and industrial corridors.",
+          "Bridges & Overpasses: Structural execution of reinforced concrete and steel bridges, flyovers, grade-separated interchanges, and pedestrian crossings.",
+          "Traffic & Maintenance Systems: Installation of signage, safety barriers, intelligent transport system (ITS) conduits, and ongoing highway maintenance programs.",
+        ],
+        image: "/media/infrastructure-coastal-highway-taiz-yemen.webp",
+      },
+      {
+        slug: "energy-infrastructure",
+        title: "Energy Infrastructure",
+        description: [
+          "We execute civil works and structural installations for conventional and renewable energy developments:",
+        ],
+        points: [
+          "Renewable Energy Integration: Site preparation, foundation civil engineering, and structural installations for solar PV parks and utility-scale renewable facilities.",
+          "Sustainable Power Assets: Civil infrastructure for clean energy plants and industrial energy recovery systems.",
+        ],
+        image: "/media/1784614915593-project-manegment-belhaf-yemen.png",
+      },
+      {
+        slug: "power-generation-distribution",
+        title: "Power Generation & Distribution",
+        description: [
+          "IC supports national power grids through heavy power plant engineering and distribution network execution:",
+        ],
+        points: [
+          "Power Generation Facilities: Civil works, equipment foundations, and structural framing for thermal, steam, and gas turbine power stations.",
+          "Substations & Grid Connection: Construction of high-voltage indoor and outdoor substations, including transformer pads, control buildings, and switchyards.",
+          "Transmission & Distribution Networks: Installation of overhead transmission line towers, underground high-voltage cabling networks, and regional distribution grids.",
+        ],
+        image: "/media/1784614960071-power-study-generation-and-transmission-sulamani-iraq.png",
+      },
     ],
-    capabilities: [
-      "Water reservoirs",
-      "Storage tanks",
-      "Dams & dikes",
-      "Irrigation systems",
-      "Earthworks",
-      "Reinforced concrete structures",
-    ],
-    image: "/media/water-tank-aden-yemen.webp",
-   
-  },
-  {
-    slug: "transportation-roads-bridges",
-    num: "04",
-    title: "Transportation, Roads & Bridges",
-    summary: "Complex transport projects that enhance communities and quality of life.",
-    description: [
-      "We specialise in the successful delivery of large, complex transport projects.",
-      "Our services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
-    ],
-    capabilities: [
-      "Highways & expressways",
-      "Urban & rural roads",
-      "Bridges & flyovers",
-      "Causeways",
-      "Road maintenance",
-      "Traffic & drainage works",
-    ],
-    image: "/media/infrastructure-coastal-highway-taiz-yemen.webp",
-   
-  },
-  {
-    slug: "water-sewage-treatment",
-    num: "05",
-    title: "Water & Sewage Treatment Plants & Networks",
-    summary: "Complete water and sewage solutions — treatment plants to distribution networks.",
-    description: [
-      "INFRA Construction provides complete solutions for water and sewage treatment.",
-      "Our services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
-    ],
-    capabilities: [
-      "Water treatment plants",
-      "Sewage treatment plants",
-      "Collection networks",
-      "Distribution networks",
-      "Pumping & lift stations",
-      "Process & mechanical works",
-    ],
-    image: "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
-
-  },
-  {
-    slug: "dams-irrigation",
-    num: "06",
-    title: "Dams & Irrigation",
-    summary: "Planning, design, and construction of dams and irrigation for water and agriculture.",
-    description: [
-      "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.",
-      "These crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
-    ],
-    capabilities: [
-      "Dam construction",
-      "Flood-control structures",
-      "Water storage",
-      "Irrigation canals",
-      "Dikes & barrages",
-      "Agricultural water supply",
-    ],
-    image: "/media/water-hassan-dam-project-yemen.webp",
-
-  },
-  {
-    slug: "pipelines",
-    num: "07",
-    title: "Pipelines",
-    summary: "Complex pipeline systems for refinery, petrochemical, cross-state, and utility use.",
-    description: [
-      "Our capabilities include the construction and installation of complex pipeline systems for various applications.",
-      "We provide engineering services for refinery piping, petrochemical piping, cross-state pipelines, and utility piping — complete with 3D modelling and stress analysis.",
-    ],
-    capabilities: [
-      "Refinery piping",
-      "Petrochemical piping",
-      "Cross-state pipelines",
-      "Utility piping",
-      "3D modelling",
-      "Pipe stress analysis",
-    ],
-    image: "/media/energy-power-plant-piping-aden-yemen.webp",
-
   },
 ];
+
+/* ── Legacy sector paths ──────────────────────────────────────────────────────
+   The catalogue used to be seven flat sectors, then a renamed set of eight.
+   Both generations are still linked from the web, so every retired path maps
+   onto its home in the two-pillar model — usually a subsector anchor. */
+
+export const LEGACY_SECTOR_PATHS: Record<string, string> = {
+  // original taxonomy
+  "buildings":                     "/sectors/built-environment",
+  "networks-infrastructures":      "/sectors/infrastructure#water-wastewater-management",
+  "civil-works":                   "/sectors/infrastructure#dams-irrigation",
+  "transportation-roads-bridges":  "/sectors/infrastructure#roads-highways-bridges",
+  "water-sewage-treatment":        "/sectors/infrastructure#water-wastewater-management",
+  "dams-irrigation":               "/sectors/infrastructure#dams-irrigation",
+  "pipelines":                     "/sectors/infrastructure#energy-infrastructure",
+  // the renamed set that briefly replaced it
+  "water-wastewater-management":   "/sectors/infrastructure#water-wastewater-management",
+  "dams-and-irrigations":          "/sectors/infrastructure#dams-irrigation",
+  "ports-marine":                  "/sectors/infrastructure#ports-marine-works",
+  "airports":                      "/sectors/infrastructure#airports",
+  "roads-bridges":                 "/sectors/infrastructure#roads-highways-bridges",
+  "energy":                        "/sectors/infrastructure#energy-infrastructure",
+  "power":                         "/sectors/infrastructure#power-generation-distribution",
+};
 
 /* ── Lookups ─────────────────────────────────────────────────────────────── */
 
@@ -487,10 +572,36 @@ const cleanSlug = (v: string | undefined) =>
    editable one — that key is what ties saved content to its built-in defaults,
    so it has to stay put even after the URL changes. */
 
+/** Admin section holding one subsector's copy. Keyed off the *sector's*
+    built-in slug so the pairing survives a sector URL change. */
+export const subSectionKey = (sectorSlug: string, subSlug: string) =>
+  `sub_${underscore(sectorSlug)}_${underscore(subSlug)}`;
+
+/** Subsectors of a built-in sector, overlaid with saved edits and minus any the
+    admin deleted. The anchor `slug` is deliberately not editable — inbound
+    links and the navbar both depend on it. */
+function resolveSubsectors(store: StoreLike, sector: Expertise): SubSector[] {
+  const deleted = deletedKeys(store);
+  return (sector.subsectors || [])
+    .filter((sub) => !deleted.has(subSectionKey(sector.slug, sub.slug)))
+    .map((sub) => {
+      const f = store?.content?.[subSectionKey(sector.slug, sub.slug)] || {};
+      return {
+        ...sub,
+        title: f.title || sub.title,
+        image: f.image || sub.image,
+        description: f.description ? splitLines(f.description) : sub.description,
+        // Bullets carry commas of their own, so newlines are the only separator.
+        points: f.points ? splitLines(f.points) : sub.points,
+      };
+    });
+}
+
 export function resolveExpertise(store: StoreLike, kind: ExpertiseKind, item: Expertise): Expertise {
   const f = store?.content?.[sectionKeyFor(kind, item.slug)] || {};
   return {
     ...item,
+    ...(item.subsectors ? { subsectors: resolveSubsectors(store, item) } : {}),
     slug: cleanSlug(f.slug) || item.slug,
     title: f.title || item.title,
     summary: f.summary || item.summary,
@@ -616,6 +727,18 @@ export function expertiseDefaultSections(): Record<string, Record<string, string
     };
   };
   services.forEach((s) => add("service", s));
-  sectors.forEach((s) => add("sector", s));
+  sectors.forEach((s) => {
+    add("sector", s);
+    // Each subsector gets its own section so the panel can edit them
+    // individually under the sector they belong to.
+    (s.subsectors || []).forEach((sub) => {
+      out[subSectionKey(s.slug, sub.slug)] = {
+        title: sub.title,
+        image: sub.image,
+        description: sub.description.join("\n"),
+        points: sub.points.join("\n"),
+      };
+    });
+  });
   return out;
 }
