@@ -1,11 +1,11 @@
 {
   "content": {
     "svc_detailed_engineering": {
-      "title": "Detailed Engineering Services",
-      "summary": "Multidisciplinary engineering delivered by 275+ professionals using advanced CAD/CAE tools.",
+      "title": "Projects Construction",
+      "summary": "Reliable Construction Services for Complex Projects",
       "image": "/media/buildings-general-structure.webp",
-      "description": "Our engineering offices, staffed by over 275 qualified professionals, provide a wide range of detailed engineering services across every discipline a modern project demands.\nWe utilise advanced CAD/CAE design software and maintain in-house capabilities for specialised requirements — covering Buildings, Civil and Structural Works, Water Reservoirs and Networks, Sewage Treatment, Dams and Irrigation, Marine Works, Power Generation, and Transportation Engineering.",
-      "capabilities": "Buildings, civil & structural design, Water reservoirs and networks, Sewage treatment engineering, Dams, irrigation & marine works, Power generation systems, Transportation engineering"
+      "description": "As your trusted partner and advocate, we draw on our network of local and global resources, while applying practical know-how to ensure your project is successfully managed from concept to completion and turnover.\n\nWe have successfully realized some of the world’s most iconic structures and developments for clients that include public and private developers, companies, and institutions.\n\nFrom site preparation and civil works to structural construction, MEP installation, finishing works, and project handover, we manage every stage of construction using internationally recognized quality standards and proven construction methodologies.\n\nOur commitment to collaboration, planning, and technical excellence enables us to successfully deliver projects that meet client expectations while supporting long-term operational performance.",
+      "capabilities": "INCLUDING, WATER, ROADS, BRIDGES, DAMS"
     },
     "svc_procurement_expediting": {
       "title": "Procurement & Expediting Services",
