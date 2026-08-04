@@ -456,9 +456,10 @@ export const getSector = (slug: string) => sectors.find((s) => s.slug === slug);
    The 14 services and 7 sectors ship with the defaults above, but every field
    is editable in the admin panel. Each item maps to a content section:
      service → "svc_<slug>"   sector → "sct_<slug>"   (dashes become underscores)
-   Fields: title, summary, image, description (one paragraph per line),
-   capabilities (comma- or newline-separated). resolveExpertise() overlays any
-   saved values onto the defaults; expertiseDefaultSections() seeds the admin. */
+   Fields: title, slug (the URL segment), summary, image, description (one
+   paragraph per line), capabilities (comma- or newline-separated).
+   resolveExpertise() overlays any saved values onto the defaults;
+   expertiseDefaultSections() seeds the admin. */
 
 export type ExpertiseKind = "service" | "sector";
 
@@ -477,10 +478,20 @@ const sectionKeyFor = (kind: ExpertiseKind, slug: string) =>
 const splitLines = (v: string) => v.split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
 const splitList = (v: string) => v.split(/[,\n]/).map((s) => s.trim()).filter(Boolean);
 
+/** URL-safe form of an admin-entered slug. Anything that isn't a letter or
+    digit becomes a single dash, so "Ports & Marine" → "ports-marine". */
+const cleanSlug = (v: string | undefined) =>
+  (v || "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+/* A section is keyed by the item's *original* slug (`svc_<slug>`), never by the
+   editable one — that key is what ties saved content to its built-in defaults,
+   so it has to stay put even after the URL changes. */
+
 export function resolveExpertise(store: StoreLike, kind: ExpertiseKind, item: Expertise): Expertise {
   const f = store?.content?.[sectionKeyFor(kind, item.slug)] || {};
   return {
     ...item,
+    slug: cleanSlug(f.slug) || item.slug,
     title: f.title || item.title,
     summary: f.summary || item.summary,
     image: f.image || item.image,
@@ -514,7 +525,7 @@ function storeAddedItems(store: StoreLike, kind: ExpertiseKind): Expertise[] {
     .filter(([, f]) => (f?.title || "").trim() !== "")
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([key, f], i) => ({
-      slug: dashify(key.slice(prefix.length)),
+      slug: cleanSlug(f.slug) || dashify(key.slice(prefix.length)),
       num: String(builtIn.length + i + 1).padStart(2, "0"),
       title: f.title.trim(),
       summary: f.summary || "",
@@ -567,6 +578,29 @@ export function resolveBySlug(
   return all.find((i) => i.slug === slug);
 }
 
+/** Where an old URL should now point, or undefined when it shouldn't redirect.
+    Renaming an item's slug orphans its previous path, so the built-in slug that
+    shipped in this file is treated as a permanent alias for that item.
+
+    Nothing is redirected when the path still resolves (a live item's slug always
+    wins, even if another item used to own that path) or when the item behind it
+    was deleted — removed content has to keep 404ing rather than soft-landing on
+    an unrelated page. */
+export function redirectSlugFor(
+  store: StoreLike,
+  kind: ExpertiseKind,
+  slug: string
+): string | undefined {
+  if (resolveBySlug(store, kind, slug)) return undefined;
+
+  const builtIn = kind === "service" ? getService(slug) : getSector(slug);
+  if (!builtIn) return undefined;
+  if (deletedKeys(store).has(sectionKeyFor(kind, builtIn.slug))) return undefined;
+
+  const current = resolveExpertise(store, kind, builtIn).slug;
+  return current === slug ? undefined : current;
+}
+
 /** Default content sections for every service & sector — merged into the admin
     content store so each item is listed and editable. */
 export function expertiseDefaultSections(): Record<string, Record<string, string>> {
@@ -574,6 +608,7 @@ export function expertiseDefaultSections(): Record<string, Record<string, string
   const add = (kind: ExpertiseKind, item: Expertise) => {
     out[sectionKeyFor(kind, item.slug)] = {
       title: item.title,
+      slug: item.slug,
       summary: item.summary,
       image: item.image,
       description: item.description.join("\n"),

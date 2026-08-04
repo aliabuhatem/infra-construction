@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import ExpertiseDetail from "@/components/ExpertiseDetail";
-import { resolveBySlug, resolveServices } from "@/lib/expertise";
+import { resolveBySlug, resolveServices, redirectSlugFor } from "@/lib/expertise";
 import { getContent } from "@/lib/getContent";
 
 // Services added in the admin panel *after* a build aren't in generateStaticParams,
@@ -27,7 +27,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
   const { slug } = await params;
   const c = await getContent();
   const item = resolveBySlug(c, "service", slug);
-  if (!item) notFound();
+  if (!item) {
+    // A renamed service keeps its old path working with a 308 to the new one.
+    const moved = redirectSlugFor(c, "service", slug);
+    if (moved) permanentRedirect(`/services/${moved}`);
+    notFound();
+  }
 
   const related = resolveServices(c)
     .filter((s) => s.slug !== slug)

@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import ExpertiseDetail from "@/components/ExpertiseDetail";
-import { resolveBySlug, resolveSectors } from "@/lib/expertise";
+import { resolveBySlug, resolveSectors, redirectSlugFor } from "@/lib/expertise";
 import { getContent } from "@/lib/getContent";
 
 // Sectors added in the admin panel *after* a build aren't in generateStaticParams,
@@ -27,7 +27,12 @@ export default async function SectorDetailPage({ params }: { params: Promise<{ s
   const { slug } = await params;
   const c = await getContent();
   const item = resolveBySlug(c, "sector", slug);
-  if (!item) notFound();
+  if (!item) {
+    // A renamed sector keeps its old path working with a 308 to the new one.
+    const moved = redirectSlugFor(c, "sector", slug);
+    if (moved) permanentRedirect(`/sectors/${moved}`);
+    notFound();
+  }
 
   const related = resolveSectors(c)
     .filter((s) => s.slug !== slug)
