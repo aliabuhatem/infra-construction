@@ -6,9 +6,14 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import ContentText from "@/components/admin-panel/ContentText";
-import { services, sectors } from "@/lib/expertise";
 
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+
+/* The menus are fed from the root layout, which resolves the admin-edited
+   catalogue server-side. Reading the static arrays here instead would ignore
+   every rename and deletion made in the admin panel. Only these three fields
+   are needed, so the rest never reaches the client payload. */
+export type NavItem = { slug: string; num: string; title: string };
 
 const preLinks = [
   { label: "Home", href: "/" },
@@ -23,7 +28,13 @@ const postLinks = [
 
 type MenuKey = "sectors" | "services" | null;
 
-export default function Navbar() {
+export default function Navbar({
+  sectors,
+  services,
+}: {
+  sectors: NavItem[];
+  services: NavItem[];
+}) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menu, setMenu] = useState<MenuKey>(null);

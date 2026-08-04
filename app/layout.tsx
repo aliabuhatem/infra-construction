@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ContentProvider } from "@/components/admin-panel/ContentProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { getContent } from "@/lib/getContent";
+import { resolveServices, resolveSectors, type Expertise } from "@/lib/expertise";
 
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
@@ -27,11 +29,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+// Only the fields the menus render — keeps the catalogue's full copy out of the
+// client payload on every page.
+const toNavItem = (i: Expertise) => ({ slug: i.slug, num: i.num, title: i.title });
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const c = await getContent();
+
   return (
     <html suppressHydrationWarning
       lang="en"
@@ -39,7 +47,10 @@ export default function RootLayout({
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <ContentProvider>
-          <Navbar />
+          <Navbar
+            sectors={resolveSectors(c).map(toNavItem)}
+            services={resolveServices(c).map(toNavItem)}
+          />
           <main className="flex-1">{children}</main>
           <Footer />
         </ContentProvider>

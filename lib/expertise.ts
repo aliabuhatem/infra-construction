@@ -525,25 +525,46 @@ function storeAddedItems(store: StoreLike, kind: ExpertiseKind): Expertise[] {
     }));
 }
 
-export const resolveServices = (store: StoreLike): Expertise[] => [
-  ...services.map((s) => resolveExpertise(store, "service", s)),
-  ...storeAddedItems(store, "service"),
-];
-export const resolveSectors = (store: StoreLike): Expertise[] => [
-  ...sectors.map((s) => resolveExpertise(store, "sector", s)),
-  ...storeAddedItems(store, "sector"),
-];
+/* ── Deletion ────────────────────────────────────────────────────────────────
+   A built-in item lives in the arrays above, so deleting it in the admin panel
+   cannot remove it from the source. The panel records the section key in
+   `_deletedSections` instead, and every consumer must honour that — otherwise a
+   "deleted" service keeps rendering site-wide, falling back to its default copy
+   because its saved section is gone. */
+
+const deletedKeys = (store: StoreLike) => new Set(store?._deletedSections || []);
+
+/** Built-in items the admin hasn't deleted, each overlaid with saved edits. */
+function liveBuiltIns(store: StoreLike, kind: ExpertiseKind): Expertise[] {
+  const deleted = deletedKeys(store);
+  const builtIn = kind === "service" ? services : sectors;
+  return builtIn
+    .filter((i) => !deleted.has(sectionKeyFor(kind, i.slug)))
+    .map((i) => resolveExpertise(store, kind, i));
+}
+
+/** `num` is a positional display index, so it has to be re-derived after
+    deletions — otherwise removing item 03 leaves a gap in the 01…N sequence. */
+const renumber = (items: Expertise[]): Expertise[] =>
+  items.map((item, i) => ({ ...item, num: String(i + 1).padStart(2, "0") }));
+
+export const resolveServices = (store: StoreLike): Expertise[] =>
+  renumber([...liveBuiltIns(store, "service"), ...storeAddedItems(store, "service")]);
+
+export const resolveSectors = (store: StoreLike): Expertise[] =>
+  renumber([...liveBuiltIns(store, "sector"), ...storeAddedItems(store, "sector")]);
 
 /** Look up a single item by slug, covering built-in *and* admin-created
-    entries. Returns undefined when neither matches, so callers can 404. */
+    entries. Resolved from the same list the hub pages render, so a deleted item
+    returns undefined (callers 404) and `num` matches the card it was opened
+    from. */
 export function resolveBySlug(
   store: StoreLike,
   kind: ExpertiseKind,
   slug: string
 ): Expertise | undefined {
-  const builtIn = kind === "service" ? getService(slug) : getSector(slug);
-  if (builtIn) return resolveExpertise(store, kind, builtIn);
-  return storeAddedItems(store, kind).find((i) => i.slug === slug);
+  const all = kind === "service" ? resolveServices(store) : resolveSectors(store);
+  return all.find((i) => i.slug === slug);
 }
 
 /** Default content sections for every service & sector — merged into the admin
