@@ -15,32 +15,32 @@
       "capabilities": "Strategic Sourcing\nSupplier Evaluation & Qualification\nProcurement Planning\nTender Management\nContract Negotiation\nLogistics & Transportation Coordination\nInventory Management\nSupply Chain Optimization\nVendor Performance Management"
     },
     "svc_construction_services": {
-      "title": "Construction Services",
-      "summary": "Comprehensive construction capability across building, civil, and MEP works at any scale.",
+      "title": "Value Engineering & Cost Management",
+      "summary": "Optimizing Project Value Throughout the Project Lifecycle",
       "image": "/media/buildings-social-housing-assiut-egypt.webp",
-      "description": "With teams of experienced construction specialists, INFRA Construction provides comprehensive construction capabilities across multiple fields.\nWe have a proven track record of managing diverse workforces and efficiently mobilising equipment and crews for projects of any scale. Our services include building works, civil engineering, and the erection of mechanical, electrical, and piping systems.",
-      "capabilities": "Building works, Civil engineering, Mechanical erection, Electrical installation, Piping systems, Rapid crew & equipment mobilisation"
+      "description": "Infra Construction provides value engineering and cost management services that improve project efficiency, optimize budgets, and support sustainable project delivery.\n\nEffective project delivery requires balancing performance, quality, and cost. Infra Construction provides value engineering and cost management services that help clients optimize project resources while maintaining technical integrity and operational performance.\n\nOur specialists evaluate engineering solutions, construction methodologies, procurement strategies, and lifecycle costs to identify opportunities for improved efficiency and measurable\ncost savings. Through detailed financial planning and engineering analysis, we help clients make informed decisions that reduce waste, enhance project value, and support long-term\noperational sustainability.\n\nBy integrating value engineering early in the project lifecycle, we contribute to better budget control, improved resource utilization, and greater confidence throughout project execution.",
+      "capabilities": "Value Engineering Studies\nCost Planning & Budget Development\nCost Estimation & Quantity Surveying\nLifecycle Cost Analysis\nCost Control & Financial Monitoring\nProcurement Cost Optimization\nRisk & Contingency Planning\nProject Cost Reporting"
     },
     "svc_construction_management": {
-      "title": "Construction Management Services",
-      "summary": "Sophisticated controls that keep large, complex projects safe, on time, and effective.",
+      "title": "Engineering & Detailed Construction Designs",
+      "summary": "Transforming Concepts into Buildable Engineering Solutions",
       "image": "/media/infrastructure-highway-expansion-mocha-yemen.webp",
-      "description": "INFRA Construction excels in managing large, complex projects, employing sophisticated management controls for planning and monitoring to ensure safe, timely, and effective construction.\nWe leverage our global experience and deep understanding of local laws to facilitate rapid mobilisation and successful project execution wherever we operate.",
-      "capabilities": "Planning & scheduling controls, Progress monitoring, Safety management, Local regulatory compliance, Rapid mobilisation, Multi-site coordination"
+      "description": "We collaborate with client counterparts to design complex projects that may include engineering, procurement, fabrication, construction, maintenance and project management (EPCM). From the earliest stages of project design, we involve the construction and commissioning teams to provide capital cost and schedule efficiency.\n\nEvery successful project begins with a clear engineering vision and technically coordinated design. At Infra Construction (IC), we deliver comprehensive engineering and detailed construction design services that convert project concepts into practical, efficient, and fully executable solutions.\n\nOur multidisciplinary engineering teams develop architectural, structural, civil, infrastructure, and MEP designs that comply with international engineering standards while meeting local regulatory requirements. By integrating advanced engineering practices, Building Information Modeling (BIM), and collaborative design processes, we help clients improve constructability, reduce project risks, and optimize long-term asset performance.\n\nFrom concept development through detailed construction documentation, our focus is on delivering engineering solutions that support quality construction, efficient execution, and sustainable infrastructure development.",
+      "capabilities": "Architectural & Master Planning Design\nStructural Engineering, Civil & Infrastructure Design\nMechanical, Electrical & Plumbing (MEP) Engineering\nDetailed Construction Drawings \nShop Drawings & Technical Documentation\nBIM Coordination & Clash Detection \nDesign Review & Engineering Optimization\nSustainable & Energy-Efficient Design Solutions"
     },
     "svc_facilities_management": {
-      "title": "Facilities Management Services",
-      "summary": "A one-stop-shop for management, maintenance, procurement, design, and health & safety.",
+      "title": "Projects Construction Management",
+      "summary": "Integrated Leadership for Successful Project Delivery",
       "image": "/media/fm-hotel-moroni-comoros.webp",
-      "description": "As a comprehensive “one-stop-shop”, INFRA Construction offers top-tier facility and property management services. Our team provides complete solutions for management, maintenance, procurement, design, and health and safety.\nWe tailor our services on a client-by-client basis, providing both on-site teams and off-site support such as help desks.",
-      "capabilities": "Property & facility management, Planned maintenance, Procurement support, Design services, Health & safety, On-site teams & help desks"
+      "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive project management services. \n\nSuccessful construction projects require effective planning, coordination, and continuous oversight. Infra Construction provides integrated construction management services that ensure projects are delivered safely, efficiently, and in accordance with established quality, cost, and schedule objectives. \n\nOur project management professionals coordinate contractors, consultants, suppliers, and stakeholders while monitoring project progress, managing risks, and maintaining transparent communication throughout every project phase. \n\nUsing internationally recognized project management practices and advanced reporting systems, we help clients maintain control, improve decision-making, and achieve successful project outcomes.",
+      "capabilities": "Project Planning & Scheduling\nConstruction Supervision\nContract Administration\nProject Controls\nRisk Management\nQuality Assurance & Quality Control (QA/QC)\nProgress Monitoring & Reporting\nStakeholder Coordination\nProject Closeout & Handover"
     },
     "svc_operation_maintenance": {
-      "title": "Operation & Maintenance Services",
-      "summary": "Comprehensive O&M that optimises the performance and longevity of your assets.",
+      "title": "Facilities Management",
+      "summary": "Supporting Long-Term Asset Performance",
       "image": "/media/energy-power-plant-maintenance-taiz-yemen.webp",
-      "description": "We specialise in providing comprehensive O&M services to optimise the operational performance and longevity of our clients' assets.\nOur services include routine inspections, preventive and corrective maintenance, breakdown and emergency repairs, and manpower support tailored to each facility.",
-      "capabilities": "Routine inspections, Preventive maintenance, Corrective maintenance, Breakdown & emergency repairs, Manpower support, Performance optimisation"
+      "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive Facilities management services.\n\nMaintaining the performance of buildings and infrastructure requires a structured approach to operations and maintenance. Infra Construction provides integrated facilities management services that help organizations maximize asset value while ensuring safe, reliable, and efficient operations.\n\nOur services cover both hard and soft facilities management, including technical maintenance, asset management, building operations, energy management, and support services. Through preventive maintenance strategies and performance monitoring, we help clients reduce operational disruptions, improve energy efficiency, and extend asset life cycles.\n\nBy combining technical expertise with proactive service delivery, we create operational environments that remain efficient, compliant, and sustainable throughout their lifecycle.",
+      "capabilities": "Building Operations & Maintenance\nPreventive & Corrective Maintenance\nAsset Lifecycle Management\nEnergy Management\nTechnical Support Services\nCleaning & Housekeeping\nHealth, Safety & Compliance\nPerformance Monitoring & Reporting"
     },
     "svc_project_management_consultancy": {
       "title": "Project Management Consultancy",
