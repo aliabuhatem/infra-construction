@@ -1,102 +1,46 @@
 {
   "content": {
     "svc_detailed_engineering": {
-      "title": "Detailed Engineering Services",
-      "summary": "Multidisciplinary engineering delivered by 275+ professionals using advanced CAD/CAE tools.",
+      "title": "Projects Construction",
+      "summary": "Reliable Construction Services for Complex Projects",
       "image": "/media/buildings-general-structure.webp",
-      "description": "Our engineering offices, staffed by over 275 qualified professionals, provide a wide range of detailed engineering services across every discipline a modern project demands.\nWe utilise advanced CAD/CAE design software and maintain in-house capabilities for specialised requirements — covering Buildings, Civil and Structural Works, Water Reservoirs and Networks, Sewage Treatment, Dams and Irrigation, Marine Works, Power Generation, and Transportation Engineering.",
-      "capabilities": "Buildings, civil & structural design, Water reservoirs and networks, Sewage treatment engineering, Dams, irrigation & marine works, Power generation systems, Transportation engineering"
+      "description": "As your trusted partner and advocate, we draw on our network of local and global resources, while applying practical know-how to ensure your project is successfully managed from concept to completion and turnover.\n\nWe have successfully realized some of the world’s most iconic structures and developments for clients that include public and private developers, companies, and institutions.\n\nFrom site preparation and civil works to structural construction, MEP installation, finishing works, and project handover, we manage every stage of construction using internationally recognized quality standards and proven construction methodologies.\n\nOur commitment to collaboration, planning, and technical excellence enables us to successfully deliver projects that meet client expectations while supporting long-term operational performance.",
+      "capabilities": "INCLUDING, WATER, ROADS, BRIDGES, DAMS"
     },
     "svc_procurement_expediting": {
-      "title": "Procurement & Expediting Services",
-      "summary": "ISO 9001 procurement ensuring the right materials arrive on time, at the highest quality.",
+      "title": "Procurement & Supply Chain",
+      "summary": "Reliable Procurement Solutions for Efficient Project Delivery",
       "image": "/media/industrial-concrete-mix-plant-yemen.webp",
-      "description": "Our central procurement department, operating under an ISO 9001-approved manual, ensures the timely acquisition of materials, equipment, and services at the highest quality standards.\nOur scope includes purchasing and sourcing, shop expediting, quality surveillance, and logistics expertise. We also utilise E-Procurement solutions — including a unified materials catalogue and supply agreements — to enhance efficiency.",
-      "capabilities": "Purchasing & strategic sourcing, Shop expediting, Quality surveillance, Logistics & freight management, E-procurement & materials catalogue, Supply agreements"
+      "description": "Infra Construction provides strategic procurement and supply chain management services that ensure timely material availability, cost efficiency, and operational continuity.\n\nEfficient procurement and reliable supply chain management are essential to successful project delivery. Infra Construction provides integrated procurement solutions that ensure materials, equipment, and services are sourced efficiently while maintaining quality, compliance, and cost control.\n\nOur procurement specialists work closely with trusted suppliers and logistics partners to support infrastructure and industrial projects across multiple sectors. Through strategic sourcing, supplier evaluation, and effective logistics coordination, we help clients reduce procurement risks and maintain uninterrupted project progress.\n\nOur supply chain strategies are designed to improve operational efficiency while supporting project schedules and long-term business objectives.\n",
+      "capabilities": "Strategic Sourcing\nSupplier Evaluation & Qualification\nProcurement Planning\nTender Management\nContract Negotiation\nLogistics & Transportation Coordination\nInventory Management\nSupply Chain Optimization\nVendor Performance Management"
     },
     "svc_construction_services": {
-      "title": "Construction Services",
-      "summary": "Comprehensive construction capability across building, civil, and MEP works at any scale.",
+      "title": "Value Engineering & Cost Management",
+      "summary": "Optimizing Project Value Throughout the Project Lifecycle",
       "image": "/media/buildings-social-housing-assiut-egypt.webp",
-      "description": "With teams of experienced construction specialists, INFRA Construction provides comprehensive construction capabilities across multiple fields.\nWe have a proven track record of managing diverse workforces and efficiently mobilising equipment and crews for projects of any scale. Our services include building works, civil engineering, and the erection of mechanical, electrical, and piping systems.",
-      "capabilities": "Building works, Civil engineering, Mechanical erection, Electrical installation, Piping systems, Rapid crew & equipment mobilisation"
+      "description": "Infra Construction provides value engineering and cost management services that improve project efficiency, optimize budgets, and support sustainable project delivery.\n\nEffective project delivery requires balancing performance, quality, and cost. Infra Construction provides value engineering and cost management services that help clients optimize project resources while maintaining technical integrity and operational performance.\n\nOur specialists evaluate engineering solutions, construction methodologies, procurement strategies, and lifecycle costs to identify opportunities for improved efficiency and measurable\ncost savings. Through detailed financial planning and engineering analysis, we help clients make informed decisions that reduce waste, enhance project value, and support long-term\noperational sustainability.\n\nBy integrating value engineering early in the project lifecycle, we contribute to better budget control, improved resource utilization, and greater confidence throughout project execution.",
+      "capabilities": "Value Engineering Studies\nCost Planning & Budget Development\nCost Estimation & Quantity Surveying\nLifecycle Cost Analysis\nCost Control & Financial Monitoring\nProcurement Cost Optimization\nRisk & Contingency Planning\nProject Cost Reporting"
     },
     "svc_construction_management": {
-      "title": "Construction Management Services",
-      "summary": "Sophisticated controls that keep large, complex projects safe, on time, and effective.",
+      "title": "Engineering & Detailed Construction Designs",
+      "summary": "Transforming Concepts into Buildable Engineering Solutions",
       "image": "/media/infrastructure-highway-expansion-mocha-yemen.webp",
-      "description": "INFRA Construction excels in managing large, complex projects, employing sophisticated management controls for planning and monitoring to ensure safe, timely, and effective construction.\nWe leverage our global experience and deep understanding of local laws to facilitate rapid mobilisation and successful project execution wherever we operate.",
-      "capabilities": "Planning & scheduling controls, Progress monitoring, Safety management, Local regulatory compliance, Rapid mobilisation, Multi-site coordination"
+      "description": "We collaborate with client counterparts to design complex projects that may include engineering, procurement, fabrication, construction, maintenance and project management (EPCM). From the earliest stages of project design, we involve the construction and commissioning teams to provide capital cost and schedule efficiency.\n\nEvery successful project begins with a clear engineering vision and technically coordinated design. At Infra Construction (IC), we deliver comprehensive engineering and detailed construction design services that convert project concepts into practical, efficient, and fully executable solutions.\n\nOur multidisciplinary engineering teams develop architectural, structural, civil, infrastructure, and MEP designs that comply with international engineering standards while meeting local regulatory requirements. By integrating advanced engineering practices, Building Information Modeling (BIM), and collaborative design processes, we help clients improve constructability, reduce project risks, and optimize long-term asset performance.\n\nFrom concept development through detailed construction documentation, our focus is on delivering engineering solutions that support quality construction, efficient execution, and sustainable infrastructure development.",
+      "capabilities": "Architectural & Master Planning Design\nStructural Engineering, Civil & Infrastructure Design\nMechanical, Electrical & Plumbing (MEP) Engineering\nDetailed Construction Drawings \nShop Drawings & Technical Documentation\nBIM Coordination & Clash Detection \nDesign Review & Engineering Optimization\nSustainable & Energy-Efficient Design Solutions"
     },
     "svc_facilities_management": {
-      "title": "Facilities Management Services",
-      "summary": "A one-stop-shop for management, maintenance, procurement, design, and health & safety.",
+      "title": "Projects Construction Management",
+      "summary": "Integrated Leadership for Successful Project Delivery",
       "image": "/media/fm-hotel-moroni-comoros.webp",
-      "description": "As a comprehensive “one-stop-shop”, INFRA Construction offers top-tier facility and property management services. Our team provides complete solutions for management, maintenance, procurement, design, and health and safety.\nWe tailor our services on a client-by-client basis, providing both on-site teams and off-site support such as help desks.",
-      "capabilities": "Property & facility management, Planned maintenance, Procurement support, Design services, Health & safety, On-site teams & help desks"
+      "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive project management services. \n\nSuccessful construction projects require effective planning, coordination, and continuous oversight. Infra Construction provides integrated construction management services that ensure projects are delivered safely, efficiently, and in accordance with established quality, cost, and schedule objectives. \n\nOur project management professionals coordinate contractors, consultants, suppliers, and stakeholders while monitoring project progress, managing risks, and maintaining transparent communication throughout every project phase. \n\nUsing internationally recognized project management practices and advanced reporting systems, we help clients maintain control, improve decision-making, and achieve successful project outcomes.",
+      "capabilities": "Project Planning & Scheduling\nConstruction Supervision\nContract Administration\nProject Controls\nRisk Management\nQuality Assurance & Quality Control (QA/QC)\nProgress Monitoring & Reporting\nStakeholder Coordination\nProject Closeout & Handover"
     },
     "svc_operation_maintenance": {
-      "title": "Operation & Maintenance Services",
-      "summary": "Comprehensive O&M that optimises the performance and longevity of your assets.",
+      "title": "Facilities Management",
+      "summary": "Supporting Long-Term Asset Performance",
       "image": "/media/energy-power-plant-maintenance-taiz-yemen.webp",
-      "description": "We specialise in providing comprehensive O&M services to optimise the operational performance and longevity of our clients' assets.\nOur services include routine inspections, preventive and corrective maintenance, breakdown and emergency repairs, and manpower support tailored to each facility.",
-      "capabilities": "Routine inspections, Preventive maintenance, Corrective maintenance, Breakdown & emergency repairs, Manpower support, Performance optimisation"
-    },
-    "svc_project_management_consultancy": {
-      "title": "Project Management Consultancy",
-      "summary": "Expert PMC balancing scope, time, cost, and quality from planning through handover.",
-      "image": "/media/company-team-photo.webp",
-      "description": "We offer expert project management consultancy to ensure your projects meet the best goals of scope, time, cost, and quality.\nOur services cover project planning, risk assessment, claims management, contract administration, and value engineering — a full advisory layer around your programme.",
-      "capabilities": "Project planning, Risk assessment, Claims management, Contract administration, Value engineering, Scope, time, cost & quality control"
-    },
-    "svc_construction_supervision": {
-      "title": "Construction Supervision",
-      "summary": "Rigorous on-site supervision ensuring work meets specifications and international codes.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
-      "description": "Our experienced professionals provide rigorous construction supervision to ensure that all work is executed according to specifications, international codes, and quality standards.\nWe oversee every aspect of the construction process to guarantee compliance and quality at each stage of delivery.",
-      "capabilities": "Specification compliance, International code adherence, Quality assurance, Workmanship inspection, Site coordination, Progress verification"
-    },
-    "svc_quantity_surveying": {
-      "title": "Quantity Surveying",
-      "summary": "Precise cost estimates, bills of quantities, and cost control across the lifecycle.",
-      "image": "/media/buildings-general-facade.webp",
-      "description": "We provide accurate and detailed quantity surveying services to help manage project costs effectively.\nOur team delivers precise cost estimates, bills of quantities, and cost control throughout the project lifecycle, giving clients confidence in every figure.",
-      "capabilities": "Cost estimation, Bills of quantities, Cost control & reporting, Valuations & payments, Tender pricing, Final account settlement"
-    },
-    "svc_risk_assessment_management": {
-      "title": "Risk Assessment & Management",
-      "summary": "Identifying project challenges early and building strategies that keep delivery stable.",
-      "image": "/media/infrastructure-stormwater-drainage-yemen.webp",
-      "description": "INFRA Construction conducts thorough risk assessments to identify potential project challenges before they threaten delivery.\nWe develop and implement comprehensive risk management strategies to mitigate these risks, ensuring project stability and success.",
-      "capabilities": "Risk identification, Impact & probability analysis, Mitigation strategies, Risk registers, Contingency planning, Ongoing monitoring"
-    },
-    "svc_value_engineering": {
-      "title": "Value Engineering",
-      "summary": "Optimising designs and processes for the highest value without compromising quality.",
-      "image": "/media/infrastructure-bani-mazar-bridge-egypt.webp",
-      "description": "We apply value engineering principles to optimise project designs and processes.\nOur goal is to achieve the highest value for our clients by analysing functions and identifying cost-effective alternatives without compromising quality or performance.",
-      "capabilities": "Function analysis, Design optimisation, Cost-effective alternatives, Lifecycle cost review, Constructability studies, Performance benchmarking"
-    },
-    "svc_claims_management": {
-      "title": "Claims Management",
-      "summary": "Preparing and defending claims efficiently to protect our clients' interests.",
-      "image": "/media/company-brand-quote.webp",
-      "description": "Our team has the expertise to navigate complex contractual issues.\nWe provide professional claims management services — preparing and defending claims efficiently and effectively to protect our clients' interests throughout a contract's life.",
-      "capabilities": "Claim preparation, Claim defence, Contractual analysis, Delay & disruption analysis, Negotiation support, Dispute avoidance"
-    },
-    "svc_contract_administration": {
-      "title": "Contract Administration",
-      "summary": "Managing every contractual obligation so projects run exactly to their terms.",
-      "image": "/media/about-.sectionjpg.webp",
-      "description": "We offer comprehensive contract administration services to manage all aspects of contractual agreements.\nThis ensures that all parties meet their obligations, and the project is executed according to the contract's terms and conditions.",
-      "capabilities": "Contract drafting review, Obligation tracking, Variation management, Payment certification, Correspondence control, Close-out administration"
-    },
-    "svc_building_information_modelling": {
-      "title": "Building Information Modelling (BIM)",
-      "summary": "Intelligent 3D digital models that improve delivery across the facility lifecycle.",
-      "image": "/media/airports-dhobab-airport-diagram.webp",
-      "description": "Our BIM centres are staffed with engineers and IT professionals who support projects of varying size and complexity.\nWe use intelligent 3D digital representations to improve project delivery, facilitate decision-making, and manage information throughout the entire facility lifecycle.",
-      "capabilities": "3D coordinated modelling, Clash detection, 4D scheduling & 5D cost, Information management, Design collaboration, Lifecycle asset data"
+      "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive Facilities management services.\n\nMaintaining the performance of buildings and infrastructure requires a structured approach to operations and maintenance. Infra Construction provides integrated facilities management services that help organizations maximize asset value while ensuring safe, reliable, and efficient operations.\n\nOur services cover both hard and soft facilities management, including technical maintenance, asset management, building operations, energy management, and support services. Through preventive maintenance strategies and performance monitoring, we help clients reduce operational disruptions, improve energy efficiency, and extend asset life cycles.\n\nBy combining technical expertise with proactive service delivery, we create operational environments that remain efficient, compliant, and sustainable throughout their lifecycle.",
+      "capabilities": "Building Operations & Maintenance\nPreventive & Corrective Maintenance\nAsset Lifecycle Management\nEnergy Management\nTechnical Support Services\nCleaning & Housekeeping\nHealth, Safety & Compliance\nPerformance Monitoring & Reporting"
     },
     "sct_buildings": {
       "title": "Built Environment",
@@ -1234,7 +1178,7 @@
       "date": "",
       "category": "",
       "excerpt": "",
-      "image": "",
+      "image": "/media/1784619807585-from-abu-dhabi-to-kuwait-partnerships-shaping-the-future-of-infrastructure.webp",
       "author": "",
       "location": "",
       "slug": "",
@@ -1249,9 +1193,63 @@
       "image": "/media/energy-power-transmission-sulamani-iraq.webp",
       "description": "",
       "capabilities": ""
+    },
+    "news_9": {
+      "title": "",
+      "date": "",
+      "category": "",
+      "excerpt": "",
+      "image": "/media/1784619819057-a-new-step-toward-stronger-healthcare-infrastructure-in-comoros.webp",
+      "author": "",
+      "location": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "p4": ""
+    },
+    "news_10": {
+      "title": "",
+      "date": "",
+      "category": "",
+      "excerpt": "",
+      "image": "/media/1784619831619-proud-to-be-recognized-by-abu-dhabi-municipality-for-our-engineering-excellence-another-milestone-th.webp",
+      "author": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "p4": ""
     }
   },
   "media": [
+    {
+      "id": "1784619832479",
+      "title": "news10",
+      "alt": "news10",
+      "category": "gallery",
+      "url": "/media/1784619831619-proud-to-be-recognized-by-abu-dhabi-municipality-for-our-engineering-excellence-another-milestone-th.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T07:43:52.479Z"
+    },
+    {
+      "id": "1784619820091",
+      "title": "news9",
+      "alt": "news9",
+      "category": "gallery",
+      "url": "/media/1784619819057-a-new-step-toward-stronger-healthcare-infrastructure-in-comoros.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T07:43:40.091Z"
+    },
+    {
+      "id": "1784619808694",
+      "title": "news8",
+      "alt": "news8",
+      "category": "gallery",
+      "url": "/media/1784619807585-from-abu-dhabi-to-kuwait-partnerships-shaping-the-future-of-infrastructure.webp",
+      "source": "upload",
+      "createdAt": "2026-07-21T07:43:28.694Z"
+    },
     {
       "id": "1784615533142",
       "title": "news_hero",
@@ -1635,6 +1633,14 @@
     "project_18",
     "project_19",
     "project_20",
-    "news_1"
+    "news_1",
+    "svc_building_information_modelling",
+    "svc_contract_administration",
+    "svc_claims_management",
+    "svc_value_engineering",
+    "svc_risk_assessment_management",
+    "svc_quantity_surveying",
+    "svc_construction_supervision",
+    "svc_project_management_consultancy"
   ]
 }
