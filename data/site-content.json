@@ -42,62 +42,6 @@
       "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive Facilities management services.\n\nMaintaining the performance of buildings and infrastructure requires a structured approach to operations and maintenance. Infra Construction provides integrated facilities management services that help organizations maximize asset value while ensuring safe, reliable, and efficient operations.\n\nOur services cover both hard and soft facilities management, including technical maintenance, asset management, building operations, energy management, and support services. Through preventive maintenance strategies and performance monitoring, we help clients reduce operational disruptions, improve energy efficiency, and extend asset life cycles.\n\nBy combining technical expertise with proactive service delivery, we create operational environments that remain efficient, compliant, and sustainable throughout their lifecycle.",
       "capabilities": "Building Operations & Maintenance\nPreventive & Corrective Maintenance\nAsset Lifecycle Management\nEnergy Management\nTechnical Support Services\nCleaning & Housekeeping\nHealth, Safety & Compliance\nPerformance Monitoring & Reporting"
     },
-    "svc_project_management_consultancy": {
-      "title": "Project Management Consultancy",
-      "summary": "Expert PMC balancing scope, time, cost, and quality from planning through handover.",
-      "image": "/media/company-team-photo.webp",
-      "description": "We offer expert project management consultancy to ensure your projects meet the best goals of scope, time, cost, and quality.\nOur services cover project planning, risk assessment, claims management, contract administration, and value engineering — a full advisory layer around your programme.",
-      "capabilities": "Project planning, Risk assessment, Claims management, Contract administration, Value engineering, Scope, time, cost & quality control"
-    },
-    "svc_construction_supervision": {
-      "title": "Construction Supervision",
-      "summary": "Rigorous on-site supervision ensuring work meets specifications and international codes.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
-      "description": "Our experienced professionals provide rigorous construction supervision to ensure that all work is executed according to specifications, international codes, and quality standards.\nWe oversee every aspect of the construction process to guarantee compliance and quality at each stage of delivery.",
-      "capabilities": "Specification compliance, International code adherence, Quality assurance, Workmanship inspection, Site coordination, Progress verification"
-    },
-    "svc_quantity_surveying": {
-      "title": "Quantity Surveying",
-      "summary": "Precise cost estimates, bills of quantities, and cost control across the lifecycle.",
-      "image": "/media/buildings-general-facade.webp",
-      "description": "We provide accurate and detailed quantity surveying services to help manage project costs effectively.\nOur team delivers precise cost estimates, bills of quantities, and cost control throughout the project lifecycle, giving clients confidence in every figure.",
-      "capabilities": "Cost estimation, Bills of quantities, Cost control & reporting, Valuations & payments, Tender pricing, Final account settlement"
-    },
-    "svc_risk_assessment_management": {
-      "title": "Risk Assessment & Management",
-      "summary": "Identifying project challenges early and building strategies that keep delivery stable.",
-      "image": "/media/infrastructure-stormwater-drainage-yemen.webp",
-      "description": "INFRA Construction conducts thorough risk assessments to identify potential project challenges before they threaten delivery.\nWe develop and implement comprehensive risk management strategies to mitigate these risks, ensuring project stability and success.",
-      "capabilities": "Risk identification, Impact & probability analysis, Mitigation strategies, Risk registers, Contingency planning, Ongoing monitoring"
-    },
-    "svc_value_engineering": {
-      "title": "Value Engineering",
-      "summary": "Optimising designs and processes for the highest value without compromising quality.",
-      "image": "/media/infrastructure-bani-mazar-bridge-egypt.webp",
-      "description": "We apply value engineering principles to optimise project designs and processes.\nOur goal is to achieve the highest value for our clients by analysing functions and identifying cost-effective alternatives without compromising quality or performance.",
-      "capabilities": "Function analysis, Design optimisation, Cost-effective alternatives, Lifecycle cost review, Constructability studies, Performance benchmarking"
-    },
-    "svc_claims_management": {
-      "title": "Claims Management",
-      "summary": "Preparing and defending claims efficiently to protect our clients' interests.",
-      "image": "/media/company-brand-quote.webp",
-      "description": "Our team has the expertise to navigate complex contractual issues.\nWe provide professional claims management services — preparing and defending claims efficiently and effectively to protect our clients' interests throughout a contract's life.",
-      "capabilities": "Claim preparation, Claim defence, Contractual analysis, Delay & disruption analysis, Negotiation support, Dispute avoidance"
-    },
-    "svc_contract_administration": {
-      "title": "Contract Administration",
-      "summary": "Managing every contractual obligation so projects run exactly to their terms.",
-      "image": "/media/about-.sectionjpg.webp",
-      "description": "We offer comprehensive contract administration services to manage all aspects of contractual agreements.\nThis ensures that all parties meet their obligations, and the project is executed according to the contract's terms and conditions.",
-      "capabilities": "Contract drafting review, Obligation tracking, Variation management, Payment certification, Correspondence control, Close-out administration"
-    },
-    "svc_building_information_modelling": {
-      "title": "Building Information Modelling (BIM)",
-      "summary": "Intelligent 3D digital models that improve delivery across the facility lifecycle.",
-      "image": "/media/airports-dhobab-airport-diagram.webp",
-      "description": "Our BIM centres are staffed with engineers and IT professionals who support projects of varying size and complexity.\nWe use intelligent 3D digital representations to improve project delivery, facilitate decision-making, and manage information throughout the entire facility lifecycle.",
-      "capabilities": "3D coordinated modelling, Clash detection, 4D scheduling & 5D cost, Information management, Design collaboration, Lifecycle asset data"
-    },
     "sct_buildings": {
       "title": "Built Environment",
       "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
@@ -1689,6 +1633,14 @@
     "project_18",
     "project_19",
     "project_20",
-    "news_1"
+    "news_1",
+    "svc_building_information_modelling",
+    "svc_contract_administration",
+    "svc_claims_management",
+    "svc_value_engineering",
+    "svc_risk_assessment_management",
+    "svc_quantity_surveying",
+    "svc_construction_supervision",
+    "svc_project_management_consultancy"
   ]
 }
