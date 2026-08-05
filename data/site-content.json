@@ -1224,7 +1224,7 @@
       "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
     },
     "sct_civil_works": {
-      "title": "Airports",
+      "title": "Ports & Marine",
       "slug": "dams-and-irrigations",
       "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
       "image": "/media/1785926749442-airports.webp",
