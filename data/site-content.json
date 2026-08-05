@@ -839,7 +839,7 @@
       "sector": "Infrastructure ",
       "type": "Refurbishment / Rehabilitation",
       "description": "Rehabilitation of airport terminal and related facilities in Somaliland.",
-      "image": "/admin-uploads/1782561704079-berbera-international-airport.png"
+      "image": "/media/1785924588103-berbera-international-airport.webp"
     },
     "project_6": {
       "title": "THREE WATER WELLS  HADIBO",
@@ -900,7 +900,7 @@
     "project_13": {
       "title": "Implementation of the Ministry of Foreign Affairs building",
       "country": "Yemen",
-      "sector": "Building",
+      "sector": "Built ",
       "type": "Implementation",
       "description": "Implementation of government ministry building in Aden, Yemen.",
       "image": "/media/buildings-ministry-foreign-aden-yemen.webp"
@@ -908,7 +908,7 @@
     "project_14": {
       "title": "Slaughterhouse Barbara",
       "country": "Somaliland",
-      "sector": "Building",
+      "sector": "Built ",
       "type": "Design and build",
       "description": "Design and build of a modern slaughterhouse in Somaliland.",
       "image": "/media/1782635477365-slaughterhouse-barbara-somaliland-01.webp"
@@ -1062,7 +1062,7 @@
       "title": "We Empower Our People",
       "p1": "At INFRA Construction, we believe that the quality of our projects is a direct reflection of the quality of our people. We recruit talented individuals and invest in their growth through structured training, challenging project assignments, and a culture of continuous improvement.",
       "p2": "Our technical teams are supported by experienced leadership, modern tools, and a collaborative work environment that rewards initiative, creativity, and professional excellence.",
-      "image": "/media/water-dam-construction-yemen.webp"
+      "image": "/media/work with us hero section phot.webp"
     },
     "careers_openings": {
       "eyebrow": "Open Positions",
