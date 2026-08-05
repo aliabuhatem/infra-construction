@@ -266,9 +266,9 @@
       "headingLine2": "Multiple Regions"
     },
     "home_project_1": {
-      "title": "MINISTRY OF FOREIGN AFFAIRS BUILDING, ADEN",
-      "country": "Yemen",
-      "type": "Building",
+      "title": "BERBERA INTERNATIONAL AIRPORT",
+      "country": "SOMALILAND",
+      "type": "AIRPORT",
       "image": "/media/buildings-ministry-foreign-aden-yemen.webp"
     },
     "home_project_2": {
@@ -278,9 +278,9 @@
       "image": "/media/buildings-social-housing-assiut-egypt.webp"
     },
     "home_project_3": {
-      "title": "BANI MAZAR BRIDGE",
+      "title": "AL-ATTIYAT AL-BAHARIYA WASTEWATER",
       "country": "Egypt",
-      "type": "Transportation",
+      "type": "Water & Wastewater Management",
       "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp"
     },
     "home_about_split": {
