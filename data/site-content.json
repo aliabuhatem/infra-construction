@@ -1224,10 +1224,10 @@
       "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
     },
     "sct_civil_works": {
-      "title": "Ports & Marine",
+      "title": "Roads & Bridges",
       "slug": "dams-and-irrigations",
       "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
-      "image": "/media/1785927320572-ports-marine.webp",
+      "image": "/media/1785926802002-roads-bridges.webp",
       "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
       "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
     },
@@ -1248,10 +1248,10 @@
       "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
     },
     "sct_dams_irrigation": {
-      "title": "Roads & Bridges",
+      "title": "Airports",
       "slug": "roads-bridges",
       "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
-      "image": "/media/1785926802002-roads-bridges.webp",
+      "image": "/media/1785926749442-airports.webp",
       "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
       "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
     },
