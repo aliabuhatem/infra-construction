@@ -1208,7 +1208,7 @@
       "favicon": "/favicon.ico"
     },
     "sct_buildings": {
-      "title": "Built Environment",
+      "title": "Dams & Irrigations",
       "slug": "built-environment",
       "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
       "image": "/media/1785927072644-dams-and-irrigations.webp",
@@ -1216,7 +1216,7 @@
       "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
     },
     "sct_networks_infrastructures": {
-      "title": "Water & Wastewater Management",
+      "title": "Ports & Marine",
       "slug": "water-wastewater-management",
       "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
       "image": "/media/1785927320572-ports-marine.webp",
@@ -1224,7 +1224,7 @@
       "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
     },
     "sct_civil_works": {
-      "title": "Dams and Irrigations",
+      "title": "Airports",
       "slug": "dams-and-irrigations",
       "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
       "image": "/media/1785926749442-airports.webp",
