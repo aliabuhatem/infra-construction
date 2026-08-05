@@ -1232,10 +1232,10 @@
       "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
     },
     "sct_transportation_roads_bridges": {
-      "title": "Ports & Marine",
+      "title": "Power",
       "slug": "ports-marine",
       "summary": "Complex transport projects that enhance communities and quality of life.",
-      "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
+      "image": "/media/1785926865053-power.webp",
       "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
       "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
     },
