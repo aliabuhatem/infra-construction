@@ -76,7 +76,7 @@
     },
     "sub_built_environment_residential_sector": {
       "title": "Residential Sector",
-      "image": "/media/buildings-residential-complex-dubai.webp",
+      "image": "/media/1785930471786-residential-sector.webp",
       "description": "Our residential portfolio addresses both public development initiatives and private real estate demand. We execute large-scale social housing programs, integrated gated residential communities, mixed-use residential towers, and custom luxury villas.\nIC emphasizes structural durability, energy-efficient building envelopes, and complete site integration, including internal road networks, landscaping, and residential utility hookups.",
       "points": ""
     },
@@ -102,25 +102,25 @@
     },
     "sub_infrastructure_water_wastewater_management": {
       "title": "Water & Wastewater Management",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+      "image": "/media/1785930549947-water-wastewater-management.webp",
       "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
       "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
     },
     "sub_infrastructure_dams_irrigation": {
       "title": "Dams and Irrigation",
-      "image": "/media/water-hassan-dam-project-yemen.webp",
+      "image": "/media/1785930570834-dams-and-irrigation.webp",
       "description": "To combat water scarcity and support agricultural development in arid regions, IC constructs water retention and diversion infrastructure:",
       "points": "Dam Construction: Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates."
     },
     "sub_infrastructure_ports_marine_works": {
       "title": "Ports & Marine Works",
-      "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
+      "image": "/media/1785930583652-ports-marine-works.webp",
       "description": "IC delivers specialized marine construction and coastal engineering solutions:",
       "points": "Port Facilities: Construction of commercial fishing ports, cargo handling quays, and vessel berth infrastructures.\nCoastal Protection: Fabrication and placement of marine breakwaters, riprap slope protection, and shoreline stabilization systems.\nFloating & Fixed Structures: Engineering floating pontoon systems, concrete jetties, and marine access walkways."
     },
     "sub_infrastructure_airports": {
       "title": "Airports",
-      "image": "/media/airports-al-riyan-airport-yemen.webp",
+      "image": "/media/1785930593725-airports.webp",
       "description": "We support civil aviation authorities and airport operators with specialized airside and landside construction services:",
       "points": "Facilities Rehabilitation: Upgrading, expanding, and modernizing existing passenger terminals, cargo hangars, and administrative buildings.\nAirside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks."
     },
@@ -132,13 +132,13 @@
     },
     "sub_infrastructure_energy_infrastructure": {
       "title": "Energy Infrastructure",
-      "image": "/media/1784614915593-project-manegment-belhaf-yemen.png",
+      "image": "/media/1785930619033-energy-infrastructure.webp",
       "description": "We execute civil works and structural installations for conventional and renewable energy developments:",
       "points": "Renewable Energy Integration: Site preparation, foundation civil engineering, and structural installations for solar PV parks and utility-scale renewable facilities.\nSustainable Power Assets: Civil infrastructure for clean energy plants and industrial energy recovery systems."
     },
     "sub_infrastructure_power_generation_distribution": {
       "title": "Power Generation & Distribution",
-      "image": "/media/1784614960071-power-study-generation-and-transmission-sulamani-iraq.png",
+      "image": "/media/1785930633240-power-generation-distribution.webp",
       "description": "IC supports national power grids through heavy power plant engineering and distribution network execution:",
       "points": "Power Generation Facilities: Civil works, equipment foundations, and structural framing for thermal, steam, and gas turbine power stations.\nSubstations & Grid Connection: Construction of high-voltage indoor and outdoor substations, including transformer pads, control buildings, and switchyards.\nTransmission & Distribution Networks: Installation of overhead transmission line towers, underground high-voltage cabling networks, and regional distribution grids."
     },
