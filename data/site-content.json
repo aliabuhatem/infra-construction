@@ -1216,10 +1216,10 @@
       "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
     },
     "sct_networks_infrastructures": {
-      "title": "Ports & Marine",
+      "title": "Roads & Bridges",
       "slug": "water-wastewater-management",
       "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
-      "image": "/media/1785927320572-ports-marine.webp",
+      "image": "/media/1785926802002-roads-bridges.webp",
       "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
       "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
     },
