@@ -2,107 +2,145 @@
   "content": {
     "svc_detailed_engineering": {
       "title": "Projects Construction",
+      "slug": "projects-construction",
       "summary": "Reliable Construction Services for Complex Projects",
       "image": "/media/buildings-general-structure.webp",
       "description": "As your trusted partner and advocate, we draw on our network of local and global resources, while applying practical know-how to ensure your project is successfully managed from concept to completion and turnover.\n\nWe have successfully realized some of the world’s most iconic structures and developments for clients that include public and private developers, companies, and institutions.\n\nFrom site preparation and civil works to structural construction, MEP installation, finishing works, and project handover, we manage every stage of construction using internationally recognized quality standards and proven construction methodologies.\n\nOur commitment to collaboration, planning, and technical excellence enables us to successfully deliver projects that meet client expectations while supporting long-term operational performance.",
-      "capabilities": "INCLUDING, WATER, ROADS, BRIDGES, DAMS",
-      "slug": "projects-construction"
+      "capabilities": "INCLUDING, WATER, ROADS, BRIDGES, DAMS"
     },
     "svc_procurement_expediting": {
       "title": "Procurement & Supply Chain",
+      "slug": "procurement-supply-chain",
       "summary": "Reliable Procurement Solutions for Efficient Project Delivery",
       "image": "/media/industrial-concrete-mix-plant-yemen.webp",
       "description": "Infra Construction provides strategic procurement and supply chain management services that ensure timely material availability, cost efficiency, and operational continuity.\n\nEfficient procurement and reliable supply chain management are essential to successful project delivery. Infra Construction provides integrated procurement solutions that ensure materials, equipment, and services are sourced efficiently while maintaining quality, compliance, and cost control.\n\nOur procurement specialists work closely with trusted suppliers and logistics partners to support infrastructure and industrial projects across multiple sectors. Through strategic sourcing, supplier evaluation, and effective logistics coordination, we help clients reduce procurement risks and maintain uninterrupted project progress.\n\nOur supply chain strategies are designed to improve operational efficiency while supporting project schedules and long-term business objectives.\n",
-      "capabilities": "Strategic Sourcing\nSupplier Evaluation & Qualification\nProcurement Planning\nTender Management\nContract Negotiation\nLogistics & Transportation Coordination\nInventory Management\nSupply Chain Optimization\nVendor Performance Management",
-      "slug": "procurement-supply-chain"
+      "capabilities": "Strategic Sourcing\nSupplier Evaluation & Qualification\nProcurement Planning\nTender Management\nContract Negotiation\nLogistics & Transportation Coordination\nInventory Management\nSupply Chain Optimization\nVendor Performance Management"
     },
     "svc_construction_services": {
       "title": "Value Engineering & Cost Management",
+      "slug": "value-engineering-cost-management",
       "summary": "Optimizing Project Value Throughout the Project Lifecycle",
       "image": "/media/buildings-social-housing-assiut-egypt.webp",
       "description": "Infra Construction provides value engineering and cost management services that improve project efficiency, optimize budgets, and support sustainable project delivery.\n\nEffective project delivery requires balancing performance, quality, and cost. Infra Construction provides value engineering and cost management services that help clients optimize project resources while maintaining technical integrity and operational performance.\n\nOur specialists evaluate engineering solutions, construction methodologies, procurement strategies, and lifecycle costs to identify opportunities for improved efficiency and measurable\ncost savings. Through detailed financial planning and engineering analysis, we help clients make informed decisions that reduce waste, enhance project value, and support long-term\noperational sustainability.\n\nBy integrating value engineering early in the project lifecycle, we contribute to better budget control, improved resource utilization, and greater confidence throughout project execution.",
-      "capabilities": "Value Engineering Studies\nCost Planning & Budget Development\nCost Estimation & Quantity Surveying\nLifecycle Cost Analysis\nCost Control & Financial Monitoring\nProcurement Cost Optimization\nRisk & Contingency Planning\nProject Cost Reporting",
-      "slug": "value-engineering-cost-management"
+      "capabilities": "Value Engineering Studies\nCost Planning & Budget Development\nCost Estimation & Quantity Surveying\nLifecycle Cost Analysis\nCost Control & Financial Monitoring\nProcurement Cost Optimization\nRisk & Contingency Planning\nProject Cost Reporting"
     },
     "svc_construction_management": {
       "title": "Engineering & Detailed Construction Designs",
+      "slug": "engineering-detailed-construction-designs",
       "summary": "Transforming Concepts into Buildable Engineering Solutions",
       "image": "/media/infrastructure-highway-expansion-mocha-yemen.webp",
       "description": "We collaborate with client counterparts to design complex projects that may include engineering, procurement, fabrication, construction, maintenance and project management (EPCM). From the earliest stages of project design, we involve the construction and commissioning teams to provide capital cost and schedule efficiency.\n\nEvery successful project begins with a clear engineering vision and technically coordinated design. At Infra Construction (IC), we deliver comprehensive engineering and detailed construction design services that convert project concepts into practical, efficient, and fully executable solutions.\n\nOur multidisciplinary engineering teams develop architectural, structural, civil, infrastructure, and MEP designs that comply with international engineering standards while meeting local regulatory requirements. By integrating advanced engineering practices, Building Information Modeling (BIM), and collaborative design processes, we help clients improve constructability, reduce project risks, and optimize long-term asset performance.\n\nFrom concept development through detailed construction documentation, our focus is on delivering engineering solutions that support quality construction, efficient execution, and sustainable infrastructure development.",
-      "capabilities": "Architectural & Master Planning Design\nStructural Engineering, Civil & Infrastructure Design\nMechanical, Electrical & Plumbing (MEP) Engineering\nDetailed Construction Drawings \nShop Drawings & Technical Documentation\nBIM Coordination & Clash Detection \nDesign Review & Engineering Optimization\nSustainable & Energy-Efficient Design Solutions",
-      "slug": "engineering-detailed-construction-designs"
+      "capabilities": "Architectural & Master Planning Design\nStructural Engineering, Civil & Infrastructure Design\nMechanical, Electrical & Plumbing (MEP) Engineering\nDetailed Construction Drawings \nShop Drawings & Technical Documentation\nBIM Coordination & Clash Detection \nDesign Review & Engineering Optimization\nSustainable & Energy-Efficient Design Solutions"
     },
     "svc_facilities_management": {
       "title": "Projects Construction Management",
+      "slug": "projects-construction-management",
       "summary": "Integrated Leadership for Successful Project Delivery",
       "image": "/media/fm-hotel-moroni-comoros.webp",
       "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive project management services. \n\nSuccessful construction projects require effective planning, coordination, and continuous oversight. Infra Construction provides integrated construction management services that ensure projects are delivered safely, efficiently, and in accordance with established quality, cost, and schedule objectives. \n\nOur project management professionals coordinate contractors, consultants, suppliers, and stakeholders while monitoring project progress, managing risks, and maintaining transparent communication throughout every project phase. \n\nUsing internationally recognized project management practices and advanced reporting systems, we help clients maintain control, improve decision-making, and achieve successful project outcomes.",
-      "capabilities": "Project Planning & Scheduling\nConstruction Supervision\nContract Administration\nProject Controls\nRisk Management\nQuality Assurance & Quality Control (QA/QC)\nProgress Monitoring & Reporting\nStakeholder Coordination\nProject Closeout & Handover",
-      "slug": "projects-construction-management"
+      "capabilities": "Project Planning & Scheduling\nConstruction Supervision\nContract Administration\nProject Controls\nRisk Management\nQuality Assurance & Quality Control (QA/QC)\nProgress Monitoring & Reporting\nStakeholder Coordination\nProject Closeout & Handover"
     },
     "svc_operation_maintenance": {
       "title": "Facilities Management",
+      "slug": "facilities-management",
       "summary": "Supporting Long-Term Asset Performance",
       "image": "/media/energy-power-plant-maintenance-taiz-yemen.webp",
       "description": "We are uniquely positioned to leverage our extensive experience to deliver comprehensive Facilities management services.\n\nMaintaining the performance of buildings and infrastructure requires a structured approach to operations and maintenance. Infra Construction provides integrated facilities management services that help organizations maximize asset value while ensuring safe, reliable, and efficient operations.\n\nOur services cover both hard and soft facilities management, including technical maintenance, asset management, building operations, energy management, and support services. Through preventive maintenance strategies and performance monitoring, we help clients reduce operational disruptions, improve energy efficiency, and extend asset life cycles.\n\nBy combining technical expertise with proactive service delivery, we create operational environments that remain efficient, compliant, and sustainable throughout their lifecycle.",
-      "capabilities": "Building Operations & Maintenance\nPreventive & Corrective Maintenance\nAsset Lifecycle Management\nEnergy Management\nTechnical Support Services\nCleaning & Housekeeping\nHealth, Safety & Compliance\nPerformance Monitoring & Reporting",
-      "slug": "facilities-management"
+      "capabilities": "Building Operations & Maintenance\nPreventive & Corrective Maintenance\nAsset Lifecycle Management\nEnergy Management\nTechnical Support Services\nCleaning & Housekeeping\nHealth, Safety & Compliance\nPerformance Monitoring & Reporting"
     },
-    "sct_buildings": {
+    "sct_built_environment": {
       "title": "Built Environment",
       "slug": "built-environment",
-      "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
-      "image": "/media/buildings-social-housing-assiut-egypt.webp",
-      "description": "We construct distinguished and exceptional public and private buildings.\nOur portfolio showcases a range of outstanding projects, reflecting our commitment to excellence and innovation in architecture, MEP (Mechanical, Electrical, and Plumbing), and civil works.",
-      "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
+      "summary": "High-complexity building structures, public architecture, and commercial facilities.",
+      "image": "/media/buildings-hero.webp",
+      "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
+      "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings"
     },
-    "sct_networks_infrastructures": {
+    "sub_built_environment_healthcare_infrastructure": {
+      "title": "Healthcare Infrastructure",
+      "image": "/media/buildings-dialysis-center-hargeisa-somaliland.webp",
+      "description": "IC delivers specialized medical facilities engineered to meet international healthcare design and infection control standards. Our capabilities span the construction of general hospital complexes, diagnostic centers, specialized outpatient clinics, and high-capacity kidney dialysis facilities.\nWe integrate complex mechanical, electrical, and plumbing (MEP) systems, medical gas networks, cleanroom environments, and emergency power supply infrastructures necessary for critical care environments.",
+      "points": ""
+    },
+    "sub_built_environment_educational_facilities": {
+      "title": "Educational Facilities",
+      "image": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
+      "description": "We build educational infrastructure designed to support modern learning, research, and campus logistics. Our experience includes the turnkey delivery of university campuses, administrative buildings, technical institutes, research laboratories, and primary/secondary school complexes.\nThe scope encompasses heavy structural civil works, material procurement, acoustic and climate-controlled finishing, and complete site infrastructure.",
+      "points": ""
+    },
+    "sub_built_environment_tourism_entertainment": {
+      "title": "Tourism & Entertainment",
+      "image": "/media/fm-hotel-moroni-comoros.webp",
+      "description": "IC provides engineering and construction services for the hospitality and commercial leisure sectors. We execute structural and architectural works for high-end hotel developments, beachfront resort complexes, cultural centers, and public entertainment hubs.\nOur teams balance aesthetic requirements with structural durability, ensuring full compliance with international safety, accessibility, and environmental standards.",
+      "points": ""
+    },
+    "sub_built_environment_residential_sector": {
+      "title": "Residential Sector",
+      "image": "/media/buildings-residential-complex-dubai.webp",
+      "description": "Our residential portfolio addresses both public development initiatives and private real estate demand. We execute large-scale social housing programs, integrated gated residential communities, mixed-use residential towers, and custom luxury villas.\nIC emphasizes structural durability, energy-efficient building envelopes, and complete site integration, including internal road networks, landscaping, and residential utility hookups.",
+      "points": ""
+    },
+    "sub_built_environment_public_commercial_buildings": {
+      "title": "Public & Commercial Buildings",
+      "image": "/media/buildings-ministry-foreign-aden-yemen.webp",
+      "description": "IC delivers complex public and commercial developments designed to support governmental operations, business activities, and community services. Our expertise covers the construction of government administrative buildings, municipal facilities, corporate headquarters, office complexes, financial institutions, retail developments, shopping malls, convention and exhibition centers, and mixed-use commercial projects.\nWe execute complete structural, architectural, and MEP works while integrating intelligent building systems, fire and life safety solutions, energy-efficient technologies, and sustainable construction practices to ensure long-term operational performance and compliance with international standards.",
+      "points": ""
+    },
+    "sub_built_environment_special_buildings": {
+      "title": "Special Buildings",
+      "image": "/media/1782635477365-slaughterhouse-barbara-somaliland-01.webp",
+      "description": "IC specializes in the delivery of technically demanding and purpose-built facilities that require advanced engineering solutions, specialized construction methodologies, and stringent operational requirements. Our capabilities include the construction of data centers, command and control centers, security and defense facilities, industrial support buildings, laboratories, logistics hubs, and mission-critical operational facilities.\nThese projects involve high-performance structural systems, specialized MEP installations, controlled environments, security infrastructure, and resilient utility networks designed to achieve maximum reliability, operational continuity, and compliance with international technical and safety standards.",
+      "points": ""
+    },
+    "sct_infrastructure": {
+      "title": "Infrastructure",
+      "slug": "infrastructure",
+      "summary": "Heavy civil engineering, utility networks, marine works, and energy transportation systems.",
+      "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
+      "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
+      "capabilities": "Water & Wastewater Management, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
+    },
+    "sub_infrastructure_water_wastewater_management": {
       "title": "Water & Wastewater Management",
-      "slug": "water-wastewater-management",
-      "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
       "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
-      "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
-      "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
+      "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
+      "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
     },
-    "sct_civil_works": {
-      "title": "Dams and Irrigations",
-      "slug": "dams-and-irrigations",
-      "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
-      "image": "/media/water-dam-construction-yemen.webp",
-      "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
-      "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
+    "sub_infrastructure_dams_irrigation": {
+      "title": "Dams and Irrigation",
+      "image": "/media/water-hassan-dam-project-yemen.webp",
+      "description": "To combat water scarcity and support agricultural development in arid regions, IC constructs water retention and diversion infrastructure:",
+      "points": "Dam Construction: Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates."
     },
-    "sct_transportation_roads_bridges": {
-      "title": "Ports & Marine",
-      "slug": "ports-marine",
-      "summary": "Complex transport projects that enhance communities and quality of life.",
+    "sub_infrastructure_ports_marine_works": {
+      "title": "Ports & Marine Works",
       "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
-      "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
-      "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
+      "description": "IC delivers specialized marine construction and coastal engineering solutions:",
+      "points": "Port Facilities: Construction of commercial fishing ports, cargo handling quays, and vessel berth infrastructures.\nCoastal Protection: Fabrication and placement of marine breakwaters, riprap slope protection, and shoreline stabilization systems.\nFloating & Fixed Structures: Engineering floating pontoon systems, concrete jetties, and marine access walkways."
     },
-    "sct_water_sewage_treatment": {
+    "sub_infrastructure_airports": {
       "title": "Airports",
-      "slug": "airports",
-      "summary": "Complete water and sewage solutions — treatment plants to distribution networks.",
-      "image": "/admin-uploads/1782561704079-berbera-international-airport.png",
-      "description": "INFRA Construction provides complete solutions for water and sewage treatment.\nOur services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
-      "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
+      "image": "/media/airports-al-riyan-airport-yemen.webp",
+      "description": "We support civil aviation authorities and airport operators with specialized airside and landside construction services:",
+      "points": "Facilities Rehabilitation: Upgrading, expanding, and modernizing existing passenger terminals, cargo hangars, and administrative buildings.\nAirside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks."
     },
-    "sct_dams_irrigation": {
-      "title": "Roads & Bridges",
-      "slug": "roads-bridges",
-      "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
-      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp",
-      "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
-      "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
+    "sub_infrastructure_roads_highways_bridges": {
+      "title": "Roads, Highways & Bridges",
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
+      "description": "IC manages comprehensive transportation infrastructure programs from ground preparation to final surfacing:",
+      "points": "Highway & Urban Road Construction: Grading, paving, and surfacing for multi-lane intercity highways, arterial urban roads, and industrial corridors.\nBridges & Overpasses: Structural execution of reinforced concrete and steel bridges, flyovers, grade-separated interchanges, and pedestrian crossings.\nTraffic & Maintenance Systems: Installation of signage, safety barriers, intelligent transport system (ITS) conduits, and ongoing highway maintenance programs."
     },
-    "sct_pipelines": {
-      "title": "Energy",
-      "slug": "energy",
-      "summary": "Complex pipeline systems for refinery, petrochemical, cross-state, and utility use.",
+    "sub_infrastructure_energy_infrastructure": {
+      "title": "Energy Infrastructure",
       "image": "/media/1784614915593-project-manegment-belhaf-yemen.png",
-      "description": "Our capabilities include the construction and installation of complex pipeline systems for various applications.\nWe provide engineering services for refinery piping, petrochemical piping, cross-state pipelines, and utility piping — complete with 3D modelling and stress analysis.",
-      "capabilities": "Refinery piping, Petrochemical piping, Cross-state pipelines, Utility piping, 3D modelling, Pipe stress analysis"
+      "description": "We execute civil works and structural installations for conventional and renewable energy developments:",
+      "points": "Renewable Energy Integration: Site preparation, foundation civil engineering, and structural installations for solar PV parks and utility-scale renewable facilities.\nSustainable Power Assets: Civil infrastructure for clean energy plants and industrial energy recovery systems."
+    },
+    "sub_infrastructure_power_generation_distribution": {
+      "title": "Power Generation & Distribution",
+      "image": "/media/1784614960071-power-study-generation-and-transmission-sulamani-iraq.png",
+      "description": "IC supports national power grids through heavy power plant engineering and distribution network execution:",
+      "points": "Power Generation Facilities: Civil works, equipment foundations, and structural framing for thermal, steam, and gas turbine power stations.\nSubstations & Grid Connection: Construction of high-voltage indoor and outdoor substations, including transformer pads, control buildings, and switchyards.\nTransmission & Distribution Networks: Installation of overhead transmission line towers, underground high-voltage cabling networks, and regional distribution grids."
     },
     "svc_hub": {
       "eyebrow": "Our Expertise",
@@ -147,11 +185,11 @@
       "ctaPrimaryText": "Our Sectors",
       "ctaSecondaryText": "About Us",
       "locationsLabel": "Operating in",
-      "locationsList": "UAE · Egypt · Yemen · Canada",
+      "locationsList": "UAE · Canada · Egypt · Yemen ",
       "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.webp"
     },
     "home_statement": {
-      "eyebrowLabel": "Est. 1990",
+      "eyebrowLabel": "Est. 2000",
       "bigNumber": "75",
       "bigNumberSuffix": "+",
       "bigNumberLabel": "Projects Delivered",
@@ -172,7 +210,7 @@
       "headingLine1": "Services We",
       "headingLine2": "Provide.",
       "subtitle": "Fourteen integrated services spanning the full project lifecycle — engineering, procurement, construction, and management.",
-      "link": "All 14 Services"
+      "link": "All 6 Services"
     },
     "home_sector_buildings": {
       "badgeLabel": "01 · Standalone Sector",
@@ -1168,6 +1206,62 @@
       "logoLight": "/media/infra-logo-transparent.webp",
       "logoDark": "/media/1782904914470-infra-logo.png",
       "favicon": "/favicon.ico"
+    },
+    "sct_buildings": {
+      "title": "Built Environment",
+      "slug": "built-environment",
+      "summary": "Distinguished public and private buildings — architecture, MEP, and civil works.",
+      "image": "/media/buildings-social-housing-assiut-egypt.webp",
+      "description": "We construct distinguished and exceptional public and private buildings.\nOur portfolio showcases a range of outstanding projects, reflecting our commitment to excellence and innovation in architecture, MEP (Mechanical, Electrical, and Plumbing), and civil works.",
+      "capabilities": "Residential & commercial buildings, Institutional & public facilities, Architectural design, MEP engineering, Structural & civil works, Fit-out & finishing"
+    },
+    "sct_networks_infrastructures": {
+      "title": "Water & Wastewater Management",
+      "slug": "water-wastewater-management",
+      "summary": "Vital utility networks for water, wastewater, and critical distribution systems.",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+      "description": "INFRA Construction has extensive experience in developing vital infrastructure networks.\nThis includes projects for water and wastewater collection and distribution, as well as other critical utility networks that connect communities and industry.",
+      "capabilities": "Water distribution networks, Wastewater collection, Utility networks, Pumping stations, Network rehabilitation, Urban infrastructure"
+    },
+    "sct_civil_works": {
+      "title": "Dams and Irrigations",
+      "slug": "dams-and-irrigations",
+      "summary": "Reservoirs, storage tanks, dams, and irrigation — sustainable water resource works.",
+      "image": "/media/water-dam-construction-yemen.webp",
+      "description": "Our expertise in civil works covers a broad scope of projects including water reservoirs, storage tanks, dams, and irrigation systems.\nWe provide robust and sustainable solutions for essential water resource management, engineered to endure in demanding environments.",
+      "capabilities": "Water reservoirs, Storage tanks, Dams & dikes, Irrigation systems, Earthworks, Reinforced concrete structures"
+    },
+    "sct_transportation_roads_bridges": {
+      "title": "Ports & Marine",
+      "slug": "ports-marine",
+      "summary": "Complex transport projects that enhance communities and quality of life.",
+      "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
+      "description": "We specialise in the successful delivery of large, complex transport projects.\nOur services cover all aspects of road, highway, and bridge engineering — from planning and design to construction and maintenance. We aim to enhance communities and improve quality of life through sustainable transportation solutions.",
+      "capabilities": "Highways & expressways, Urban & rural roads, Bridges & flyovers, Causeways, Road maintenance, Traffic & drainage works"
+    },
+    "sct_water_sewage_treatment": {
+      "title": "Airports",
+      "slug": "airports",
+      "summary": "Complete water and sewage solutions — treatment plants to distribution networks.",
+      "image": "/admin-uploads/1782561704079-berbera-international-airport.png",
+      "description": "INFRA Construction provides complete solutions for water and sewage treatment.\nOur services range from the construction of treatment plants to the installation of vast collection and distribution networks. We are dedicated to maximising efficiencies and delivering sustainable solutions in this critical sector.",
+      "capabilities": "Water treatment plants, Sewage treatment plants, Collection networks, Distribution networks, Pumping & lift stations, Process & mechanical works"
+    },
+    "sct_dams_irrigation": {
+      "title": "Roads & Bridges",
+      "slug": "roads-bridges",
+      "summary": "Planning, design, and construction of dams and irrigation for water and agriculture.",
+      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp",
+      "description": "We have the technical expertise for the planning, design, and construction of dams and irrigation systems.\nThese crucial structures manage flood control, provide water storage, and support agriculture — especially in arid regions where water security is vital.",
+      "capabilities": "Dam construction, Flood-control structures, Water storage, Irrigation canals, Dikes & barrages, Agricultural water supply"
+    },
+    "sct_pipelines": {
+      "title": "Energy",
+      "slug": "energy",
+      "summary": "Complex pipeline systems for refinery, petrochemical, cross-state, and utility use.",
+      "image": "/media/1784614915593-project-manegment-belhaf-yemen.png",
+      "description": "Our capabilities include the construction and installation of complex pipeline systems for various applications.\nWe provide engineering services for refinery piping, petrochemical piping, cross-state pipelines, and utility piping — complete with 3D modelling and stress analysis.",
+      "capabilities": "Refinery piping, Petrochemical piping, Cross-state pipelines, Utility piping, 3D modelling, Pipe stress analysis"
     },
     "home_whoweare": {
       "eyebrow": "Who We Are",
