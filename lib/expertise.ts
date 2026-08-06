@@ -522,14 +522,6 @@ export const LEGACY_SECTOR_PATHS: Record<string, string> = {
   "water-sewage-treatment":        "/sectors/infrastructure#water-wastewater-management",
   "dams-irrigation":               "/sectors/infrastructure#dams-irrigation",
   "pipelines":                     "/sectors/infrastructure#energy-infrastructure",
-  // the renamed set that briefly replaced it
-  "water-wastewater-management":   "/sectors/infrastructure#water-wastewater-management",
-  "dams-and-irrigations":          "/sectors/infrastructure#dams-irrigation",
-  "ports-marine":                  "/sectors/infrastructure#ports-marine-works",
-  "airports":                      "/sectors/infrastructure#airports",
-  "roads-bridges":                 "/sectors/infrastructure#roads-highways-bridges",
-  "energy":                        "/sectors/infrastructure#energy-infrastructure",
-  "power":                         "/sectors/infrastructure#power-generation-distribution",
 };
 
 /* ── Lookups ─────────────────────────────────────────────────────────────── */
