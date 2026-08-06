@@ -219,6 +219,8 @@ export default function AdminPanel() {
     }
   }
 
+
+  
   async function handleLogin(event) {
     event.preventDefault();
     setLoginError("");
@@ -778,11 +780,15 @@ export default function AdminPanel() {
                               />
                             )}
 
-                            {/* Fields */}
+{/* Fields */}
                             {Object.entries(fields || {}).map(([key, value]) => {
                               const imgField = isLikelyImageField(key, value);
                               const showPreview = imgField && isImagePath(value);
-                              const longText = String(value || "").length > 100;
+                              // Multiline fields (paragraphs / bullet points) should always be
+                              // editable as a textarea so authors can add as many new lines as
+                              // they need — see subsector "points" and "description".
+                              const multilineField = /^(points|description|capabilities|summary)$/i.test(key);
+                              const longText = multilineField || String(value || "").length > 100;
                               const isRenaming = renamingField?.section === section && renamingField?.key === key;
 
                               return (
