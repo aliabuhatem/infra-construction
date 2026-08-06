@@ -405,7 +405,7 @@ export const sectors: Expertise[] = [
     slug: "infrastructure",
     num: "02",
     title: "Infrastructure",
-    summary: "Heavy civil engineering, utility networks, marine works, and energy transportation systems.",
+    summary: "Water and wastewater systems, dams and irrigation, ports and marine works, airports, roads and bridges, and energy and power infrastructure.",
     description: [
       "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
     ],
