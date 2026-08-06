@@ -195,7 +195,7 @@ export default async function AboutPage() {
               </h2>
             </div>
             <div className="flex flex-col items-end">
-              <span className="leading-none" style={{ fontFamily: H, fontSize: "100px", color: "#1F93A4", opacity: 0.12, lineHeight: 1 }}>14</span>
+              <span className="leading-none" style={{ fontFamily: H, fontSize: "100px", color: "#1F93A4", opacity: 0.12, lineHeight: 1 }}>06</span>
               <span className="text-[#5E5E5E] text-[11px]  tracking-widest" style={{ fontFamily: B }}>Disciplines</span>
             </div>
           </Reveal>
