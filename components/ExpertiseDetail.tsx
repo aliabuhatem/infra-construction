@@ -232,10 +232,20 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                       {sub.points.length > 0 && (
                         <Stagger as="ul" className="mt-5 list-none space-y-3 p-0">
                           {sub.points.map((point, p) => {
-                            // "Label: detail" — the lead-in reads as a heading.
+                            /* Each line of the admin "points" field is one
+                               highlighted bullet. Three shapes occur in the
+                               copy, so all three have to read as deliberate:
+                                 "Label: detail" → bold lead-in + body detail
+                                 a bare list item → emphasised whole
+                                 a longer bare sentence → body weight, so a
+                                 paragraph-length line doesn't shout.
+                               The label cap stops a colon mid-sentence from
+                               bolding half the line. */
                             const at = point.indexOf(":");
-                            const label = at > 0 ? point.slice(0, at) : "";
-                            const rest = at > 0 ? point.slice(at + 1).trim() : point;
+                            const hasLabel = at > 0 && at <= 60 && point.length > at + 1;
+                            const label = hasLabel ? point.slice(0, at) : "";
+                            const rest = hasLabel ? point.slice(at + 1).trim() : point;
+                            const emphasise = !hasLabel && rest.length <= 80;
                             return (
                               <StaggerItem
                                 as="li"
@@ -248,7 +258,10 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                                 {/* Nudged onto the first line's optical centre:
                                     (1.6 × 15.5px − 6px) / 2 ≈ 9px. */}
                                 <span className="mt-[9px] h-[6px] w-[6px] shrink-0 rounded-full bg-[#1F93A4]" />
-                                <span style={{ fontFamily: B }}>
+                                <span
+                                  style={{ fontFamily: B }}
+                                  className={emphasise ? "font-semibold text-[#213B4D]" : undefined}
+                                >
                                   {label && (
                                     <span className="font-bold text-[#213B4D]">{label}: </span>
                                   )}

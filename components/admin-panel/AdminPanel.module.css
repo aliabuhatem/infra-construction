@@ -608,6 +608,14 @@
   resize: vertical; min-height: 70px;
 }
 
+/* Line-per-item guidance under a points/description/capabilities box. */
+.fieldHint {
+  margin: 0; font-size: 11.5px; line-height: 1.5;
+  color: var(--ap-text-muted, #6b7280);
+}
+.fieldHint strong { color: var(--ap-text); font-weight: 600; }
+.fieldHintCount { color: var(--ap-primary); font-weight: 600; }
+
 .fieldTextarea:focus {
   border-color: var(--ap-primary); background: white;
   box-shadow: 0 0 0 3px var(--ap-primary-light);

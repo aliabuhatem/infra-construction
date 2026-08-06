@@ -32,6 +32,32 @@ const fieldLabel = (name) =>
     .trim()
     .replace(/\\b\\w/g, (c) => c.toUpperCase());
 
+/* Fields the site splits on newlines, so one line here is exactly one item on
+   the page (see splitLines() in lib/expertise.ts). Without this spelled out in
+   the editor, several items end up typed onto a single line and render as one
+   run-on bullet. `placeholder` shows the shape on an empty field. */
+const LINE_FIELD_HINTS = {
+  points: {
+    rule: "One line = one highlighted point.",
+    noun: "point",
+    nounPlural: "points",
+    placeholder:
+      "Dialysis Center in Hargeisa\nNew College of Nursing (Fatima College of Health Sciences), Ajman - UAE",
+  },
+  description: {
+    rule: "One line = one paragraph.",
+    noun: "paragraph",
+    nounPlural: "paragraphs",
+    placeholder: "First paragraph…\nSecond paragraph…",
+  },
+  capabilities: {
+    rule: "One line = one capability.",
+    noun: "capability",
+    nounPlural: "capabilities",
+    placeholder: "Healthcare Infrastructure\nEducational Facilities",
+  },
+};
+
 // Map section prefix → display group name with order priority
 const GROUP_ORDER = [
   "Home Page",
@@ -791,6 +817,16 @@ export default function AdminPanel() {
                               const longText = multilineField || String(value || "").length > 100;
                               const isRenaming = renamingField?.section === section && renamingField?.key === key;
 
+                              // Line-per-item fields: the site splits these on newlines, so one
+                              // line in this box is exactly one bullet/paragraph on the page.
+                              // Size the box by how many lines it holds (not how many characters)
+                              // and say so, otherwise items get typed onto a single line.
+                              const lineHint = LINE_FIELD_HINTS[String(key).toLowerCase()];
+                              const lines = String(value || "").split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+                              const textareaRows = lineHint
+                                ? Math.min(16, Math.max(4, lines.length + 1))
+                                : Math.min(6, Math.max(3, Math.ceil(String(value || "").length / 80)));
+
                               return (
                                 <div key={key} className={styles.fieldRow}>
                                   {/* Field label row */}
@@ -836,7 +872,9 @@ export default function AdminPanel() {
                                         <textarea
                                           value={String(value || "")}
                                           onChange={(e) => updateField(section, key, e.target.value)}
-                                          rows={Math.min(6, Math.max(3, Math.ceil(String(value || "").length / 80)))}
+                                          rows={textareaRows}
+                                          wrap="soft"
+                                          placeholder={lineHint ? lineHint.placeholder : undefined}
                                           className={styles.fieldTextarea}
                                         />
                                       ) : (
@@ -846,6 +884,17 @@ export default function AdminPanel() {
                                           placeholder={imgField ? "/media/your-image.jpg" : `Enter ${fieldLabel(key).toLowerCase()}…`}
                                           className={styles.fieldInput}
                                         />
+                                      )}
+                                      {lineHint && (
+                                        <p className={styles.fieldHint}>
+                                          <strong>{lineHint.rule}</strong>{" "}
+                                          Press Enter to start the next one.{" "}
+                                          {lines.length > 0 && (
+                                            <span className={styles.fieldHintCount}>
+                                              {lines.length} {lines.length === 1 ? lineHint.noun : lineHint.nounPlural} right now.
+                                            </span>
+                                          )}
+                                        </p>
                                       )}
                                       {imgField && (
                                         <button
