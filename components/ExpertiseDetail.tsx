@@ -217,9 +217,12 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                         >
                           {sub.title}
                         </h3>
+                        {/* Tailwind's preflight already zeroes <p> margins, so
+                            space-y-3 alone sets the rhythm — an explicit m-0
+                            here would beat it and run the paragraphs together. */}
                         <div className="space-y-3">
                           {sub.description.map((para, p) => (
-                            <p key={p} className="m-0 text-[15.5px] leading-[1.6] text-[#5E5E5E]" style={{ fontFamily: B }}>
+                            <p key={p} className="text-[15.5px] leading-[1.6] text-[#5E5E5E]" style={{ fontFamily: B }}>
                               {para}
                             </p>
                           ))}
@@ -237,10 +240,13 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                               <StaggerItem
                                 as="li"
                                 key={p}
-                                className="flex gap-3.5 text-[15px] leading-[1.6] text-[#5E5E5E]"
+                                /* Same size + leading as the paragraphs above,
+                                   so every line in the block sits on one
+                                   24.8px rhythm. */
+                                className="flex gap-3.5 text-[15.5px] leading-[1.6] text-[#5E5E5E]"
                               >
-                                {/* Nudged to sit on the first line's optical
-                                    centre: (1.6 × 15px − 6px) / 2. */}
+                                {/* Nudged onto the first line's optical centre:
+                                    (1.6 × 15.5px − 6px) / 2 ≈ 9px. */}
                                 <span className="mt-[9px] h-[6px] w-[6px] shrink-0 rounded-full bg-[#1F93A4]" />
                                 <span style={{ fontFamily: B }}>
                                   {label && (
