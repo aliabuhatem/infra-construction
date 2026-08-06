@@ -174,13 +174,13 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               {subsectors.map((sub, i) => (
                 /* scroll-mt clears the fixed header when the navbar links
                    straight to one of these anchors. */
-                <div key={sub.slug} id={sub.slug} className="scroll-mt-32">
-                  <div className="grid items-center gap-10 lg:grid-cols-12">
+<div key={sub.slug} id={sub.slug} className="scroll-mt-32">
+                  <div className="grid gap-10 lg:grid-cols-12">
                     <Reveal
                       direction={i % 2 === 0 ? "right" : "left"}
-                      className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-2" : ""}`}
+                      className={`h-full lg:col-span-5 ${i % 2 === 1 ? "lg:order-2" : ""}`}
                     >
-                      <div className="relative h-64 w-full overflow-hidden rounded-xl lg:h-80">
+                      <div className="relative h-full min-h-[18rem] w-full overflow-hidden rounded-xl">
                         <Image
                           src={sub.image}
                           alt={sub.title}
@@ -198,7 +198,7 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                       </div>
                     </Reveal>
 
-                    <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+            <div className={`flex flex-col justify-center lg:col-span-7 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
                       <Reveal>
                         <h3
                           className="mb-5 leading-tight text-[#213B4D]"

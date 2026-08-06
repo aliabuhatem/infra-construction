@@ -37,12 +37,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  /* Never fake a weight/style — if a weight isn't loaded, fail loud rather
-     than render a jagged synthesized glyph. We load all used weights above. */
+
   font-synthesis: none;
-  /* Hide the stray blinking text caret that the browser paints when clicking
-     on non-editable content (e.g. with caret-browsing on). Real form fields
-     re-enable it below so typing still shows a cursor. */
   caret-color: transparent;
 }
 
@@ -84,14 +80,6 @@ h1, h2, h3 {
 .img-zoom:hover img {
   transform: scale(1.06);
 }
-
-/* ── Shared card system ─────────────────────────────────────────────────────
-   Used by every card on the site (sectors, services, projects, news, …) so a
-   title that wraps to two lines never makes one card taller than its
-   neighbours. Fix these classes, not individual cards. */
-
-/* Card root. Grid/flex parents stretch it; column layout lets the body below
-   absorb the slack so bottom-anchored links line up across a row. */
 .card-base {
   display: flex;
   flex-direction: column;
@@ -105,9 +93,6 @@ h1, h2, h3 {
   flex-direction: column;
 }
 
-/* Reserves exactly two lines of space no matter what font-size the card sets
-   — `em` resolves against this element, so 2 x 1.4 = 2.8em stays correct for
-   the 17px, 15px and 13px titles alike. Longer titles clamp instead of grow. */
 .card-title {
   line-height: 1.4;
   min-height: 2.8em;
@@ -118,8 +103,6 @@ h1, h2, h3 {
   flex-shrink: 0;
 }
 
-/* Legibility helper: applied to text sitting on top of background images/photos
-   so it stays readable regardless of the image behind it. */
 .text-shadow-legible,
 .text-shadow-legible * {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 2px 14px rgba(0, 0, 0, 0.4);
