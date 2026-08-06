@@ -100,9 +100,9 @@
       "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
     },
-    "sub_infrastructure_water_wastewater_management": {
-      "title": "Water & Wastewater Management",
-      "image": "/media/1785930549947-water-wastewater-management.webp",
+    "sub_infrastructure_Infrastructure": {
+      "title": "Infrastructure",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
       "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
     },
@@ -1207,6 +1207,12 @@
       "logoDark": "/media/1782904914470-infra-logo.png",
       "favicon": "/favicon.ico"
     },
+    "sub_infrastructure_water_wastewater_management": {
+      "title": "Water & Wastewater Management",
+      "image": "/media/1785930549947-water-wastewater-management.webp",
+      "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
+      "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
+    },
     "sct_buildings": {
       "title": "Dams & Irrigations",
       "slug": "built-environment",
@@ -1323,6 +1329,15 @@
     }
   },
   "media": [
+    {
+      "id": "1786005261524",
+      "title": "Mr. Osama Abo Ghanem.webp",
+      "alt": "Mr. Osama Abo Ghanem.webp",
+      "category": "gallery",
+      "url": "/media/1786005260751-mr.-osama-abo-ghanem.webp",
+      "source": "upload",
+      "createdAt": "2026-08-06T08:34:21.524Z"
+    },
     {
       "id": "1786002894416",
       "title": "Mr. Adnan Gazaz photo.webp",
