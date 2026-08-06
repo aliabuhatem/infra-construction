@@ -70,7 +70,7 @@ export default async function AboutPage() {
             <div className="inline-flex items-center gap-4 bg-[#f6f8f9] border border-[#213B4D]/10 rounded-lg px-6 py-4 mb-8">
               <div>
                 <div className="text-[#1F93A4] text-[10px] font-bold  tracking-[0.3em] mb-0.5" style={{ fontFamily: B }}>Founded</div>
-                <div className="text-[#213B4D] font-bold" style={{ fontFamily: H, fontSize: "32px", letterSpacing: "-0.01em" }}>Est. 1990</div>
+                <div className="text-[#213B4D] font-bold" style={{ fontFamily: H, fontSize: "32px", letterSpacing: "-0.01em" }}>Est. 2000</div>
               </div>
               <div className="w-[1px] h-10 bg-[#213B4D]/15" />
               <div>
@@ -321,7 +321,7 @@ export default async function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28] via-transparent to-transparent" />
               <div className="absolute top-6 left-6 bg-[#1F93A4] px-4 py-2">
                 <div className="text-white text-[9px] font-bold  tracking-[0.3em]" style={{ fontFamily: B }}>Since</div>
-                <div className="text-white font-bold leading-none" style={{ fontFamily: H, fontSize: "28px" }}>1990</div>
+                <div className="text-white font-bold leading-none" style={{ fontFamily: H, fontSize: "28px" }}>2000</div>
               </div>
             </div>
 
@@ -335,7 +335,7 @@ export default async function AboutPage() {
               </h3>
               <div className="w-12 h-[2px] bg-[#1F93A4] mb-7 mt-4" />
               <p className="text-white/75 text-[17px] leading-relaxed mb-5" style={{ fontFamily: B }}>
-                <ContentText section="about_leadership_founder" name="bio" fallback="As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 1990." />
+                <ContentText section="about_leadership_founder" name="bio" fallback="As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 2000." />
               </p>
               <p className="text-white/85 text-[15px] leading-relaxed mb-8" style={{ fontFamily: B }}>
                 <ContentText section="about_leadership_founder" name="bio2" fallback="His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step." />

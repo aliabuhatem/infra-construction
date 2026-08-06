@@ -51,7 +51,7 @@ export default async function HomePage() {
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-[2px] bg-[#1F93A4]" />
               <span className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
-                <ContentText section="home_hero" name="eyebrow" fallback="EST. 1990. Abu Dhabi, UAE" />
+                <ContentText section="home_hero" name="eyebrow" fallback="EST. 2000. Abu Dhabi, UAE" />
               </span>
             </div>
           </Reveal>
@@ -108,11 +108,11 @@ export default async function HomePage() {
               className="pointer-events-none select-none absolute bottom-0 right-0 leading-none hidden lg:block"
               style={{ fontFamily: B, fontSize: "300px", fontWeight: 700, color: "#213B4D", opacity: 0.03, lineHeight: 1 }}
             >
-              1990
+              2000
             </div>
             <Reveal className="lg:col-span-5 flex flex-col gap-4">
               <p className="text-[#F2613C] text-[11px] font-bold tracking-[0.35em]" style={{ fontFamily: B }}>
-                <ContentText section="home_statement" name="eyebrowLabel" fallback="Est. 1990" />
+                <ContentText section="home_statement" name="eyebrowLabel" fallback="Est. 2000" />
               </p>
               <div className="flex items-end leading-none">
                 <Counter
@@ -405,7 +405,7 @@ export default async function HomePage() {
                 <ContentText section="home_about_split" name="heading" fallback="A Global Engineering & Construction Partner" />
               </h2>
               <p className="text-white/90 text-[17px] leading-relaxed mb-5" style={{ fontFamily: B }}>
-                <ContentText section="home_about_split" name="paragraph1" fallback="Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 1990. Every task is executed through hard work, dedication, and optimal management of resources." />
+                <ContentText section="home_about_split" name="paragraph1" fallback="Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000. Every task is executed through hard work, dedication, and optimal management of resources." />
               </p>
             </Reveal>
             <Reveal delay={0.18}>

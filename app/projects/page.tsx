@@ -87,7 +87,7 @@ export default async function ProjectsPage({
           </div>
           <div className="lg:col-span-3 border-l border-[#213B4D]/12 pl-10 hidden lg:block">
             <div className="text-[#5E5E5E] text-[12px] font-semibold  tracking-[0.2em] mb-2" style={{ fontFamily: B }}>Est.</div>
-            <div className="text-[#1F93A4] leading-none" style={{ fontFamily: H, fontSize: "72px", fontWeight: 600 }}>1990</div>
+            <div className="text-[#1F93A4] leading-none" style={{ fontFamily: H, fontSize: "72px", fontWeight: 600 }}>2000</div>
             <div className="text-[#5E5E5E] text-[12px] font-semibold  tracking-[0.2em] mt-2" style={{ fontFamily: B }}>Abu Dhabi, UAE</div>
           </div>
         </Reveal>
