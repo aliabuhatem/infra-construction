@@ -410,7 +410,7 @@ export const sectors: Expertise[] = [
       "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
     ],
     capabilities: [
-      "Water & Wastewater Management",
+      "Infrastructure",
       "Dams and Irrigation",
       "Ports & Marine Works",
       "Airports",
@@ -421,8 +421,8 @@ export const sectors: Expertise[] = [
     image: "/media/infrastructure-aden-causeway-widening-yemen.webp",
     subsectors: [
       {
-        slug: "water-wastewater-management",
-        title: "Water & Wastewater Management",
+        slug: "Infrastructure",
+        title: "Infrastructure",
         description: ["IC implements complete water lifecycle engineering solutions. Our operational scope includes:"],
         points: [
           "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.",
