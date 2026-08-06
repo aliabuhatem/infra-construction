@@ -59,7 +59,7 @@
     "sub_built_environment_healthcare_infrastructure": {
       "title": "Healthcare Infrastructure",
       "image": "/media/1785925875972-healthcare-infrastructure.webp",
-      "description": "IC delivers specialized medical facilities engineered to meet international healthcare design and infection control standards. Our capabilities span the construction of general hospital complexes, diagnostic centers, specialized outpatient clinics, and high-capacity kidney dialysis facilities.\nWe integrate complex mechanical, electrical, and plumbing (MEP) systems, medical gas networks, cleanroom environments, and emergency power supply infrastructures necessary for critical care environments.",
+      "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities. We manage the entire project lifecycle—from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.\n\nHealthcare Infrastructure IC delivers specialized medical facilities engineered to meet international healthcare design and infection control standards. Our capabilities span the construction of general hospital complexes, diagnostic centers, specialized outpatient clinics, and high-capacity kidney dialysis facilities. We integrate complex mechanical, electrical, and plumbing (MEP) systems, medical gas networks, cleanroom environments, and emergency power supply infrastructures necessary for critical care environments.\n\n- Dialysis Center in Hargeisa\n- New College of Nursing (Fatima College of Health Sciences), Ajman - UAE",
       "points": ""
     },
     "sub_built_environment_educational_facilities": {
@@ -506,13 +506,13 @@
     "about_story_full": {
       "eyebrow": "Our Story",
       "title": "A Legacy of Building the World",
-      "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000.",
+      "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 1990.",
       "p2": "Every task Infra Construction took up was executed through hard work and dedication from our team professionals. Possessing all the needed resources is a crucial factor in achieving any project successfully — however, the factor that delivers outstanding results is managing these resources optimally.",
       "p3": "Infra Construction represents the working arm providing professional services in the contracting niche — especially in the infrastructure field — executing according to international codes and project specifications across the UAE, Egypt, Yemen, and Canada.",
       "image": "/media/1782815816981-our_story.webp"
     },
     "about_ceo_bio": {
-      "bio1": "As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 2000 — shaping it into a trusted name in buildings, infrastructure, and industrial construction across the Middle East, Africa, and North America.",
+      "bio1": "As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 1990 — shaping it into a trusted name in buildings, infrastructure, and industrial construction across the Middle East, Africa, and North America.",
       "bio2": "His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step.",
       "stat1Value": "25+",
       "stat1Label": "Years of Leadership",
@@ -555,7 +555,7 @@
     "about_intro": {
       "eyebrow": "Our Story",
       "title": "Two Decades of Infrastructure Excellence",
-      "p1": "INFRA Construction was established in 2000 with a clear mission: to deliver complex infrastructure and construction projects to international standards in markets where excellence is most needed. From a specialist contractor serving the Middle East, INFRA has grown into a multi-sector, multi-regional construction group operating across the UAE, Egypt, Yemen, Jordan, Canada, and East Africa.",
+      "p1": "INFRA Construction was established in 1990 with a clear mission: to deliver complex infrastructure and construction projects to international standards in markets where excellence is most needed. From a specialist contractor serving the Middle East, INFRA has grown into a multi-sector, multi-regional construction group operating across the UAE, Egypt, Yemen, Jordan, Canada, and East Africa.",
       "p2": "Today, INFRA Construction operates as a member of HS Group — delivering projects across Buildings & Architecture, Infrastructure & Civil Works, Water & Utilities, Energy & Power, Industrial & Oil Services, Engineering & EPC, and Facilities Management. Our integrated capabilities allow us to serve as a single trusted partner from project inception through long-term operations.",
       "p3": "Backed by ISO 9001 and ISO 14001, certifications, our commitment to quality, safety, and environmental responsibility is embedded in every project we undertake."
     },
@@ -635,7 +635,7 @@
     "about_foundation": {
       "eyebrow": "Foundation",
       "title": "Built on Engineering Discipline",
-      "p1": "INFRA Construction was established in 2000 as a specialist contracting company, with the goal of delivering complex infrastructure work to international standards. The company's foundation rests on engineering discipline, operational integrity, and a commitment to delivering every project safely, on time, and to specification.",
+      "p1": "INFRA Construction was established in 1990 as a specialist contracting company, with the goal of delivering complex infrastructure work to international standards. The company's foundation rests on engineering discipline, operational integrity, and a commitment to delivering every project safely, on time, and to specification.",
       "p2": "Over more than two decades, INFRA has expanded its capabilities, its geographic reach, and its sector coverage — evolving from a regional contractor into a multi-disciplinary construction group with a presence across the Middle East, Africa, and Canada.",
       "p3": "INFRA is a member of HS Group, which provides the group-level strategic direction, financial backing, and executive leadership that enables INFRA to compete for and deliver major programmes across international markets."
     },
@@ -1249,7 +1249,7 @@
       "eyebrow": "Who We Are",
       "headingLine1": "A Global Engineering &",
       "headingLine2": "Construction Partner",
-      "paragraph1": "Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000. Every task is executed through hard work, dedication, and optimal management of resources.",
+      "paragraph1": "Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 1990. Every task is executed through hard work, dedication, and optimal management of resources.",
       "paragraph2": "We provide professional services in contracting — especially in the infrastructure field — executing according to international codes and project specifications, with offices across the UAE, Egypt, Yemen, Jordan, and Canada.",
       "stat1Value": "25",
       "stat1Suffix": "",
@@ -1311,15 +1311,6 @@
     }
   },
   "media": [
-    {
-      "id": "1786017382564",
-      "title": "New College of Nursing (Fatima College of Health Sciences) Location A.webp",
-      "alt": "New College of Nursing (Fatima College of Health Sciences) Location A.webp",
-      "category": "gallery",
-      "url": "/media/1786017381750-new-college-of-nursing-fatima-college-of-health-sciences-location-a.webp",
-      "source": "upload",
-      "createdAt": "2026-08-06T11:56:22.564Z"
-    },
     {
       "id": "1786016094195",
       "title": "Layal",
