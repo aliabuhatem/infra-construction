@@ -82,13 +82,13 @@
     },
     "sub_built_environment_public_commercial_buildings": {
       "title": "Public & Commercial Buildings",
-      "image": "/media/buildings-ministry-foreign-aden-yemen.webp",
+      "image": "/media/1786002444360-public-commercial-buildings.webp",
       "description": "IC delivers complex public and commercial developments designed to support governmental operations, business activities, and community services. Our expertise covers the construction of government administrative buildings, municipal facilities, corporate headquarters, office complexes, financial institutions, retail developments, shopping malls, convention and exhibition centers, and mixed-use commercial projects.\nWe execute complete structural, architectural, and MEP works while integrating intelligent building systems, fire and life safety solutions, energy-efficient technologies, and sustainable construction practices to ensure long-term operational performance and compliance with international standards.",
       "points": ""
     },
     "sub_built_environment_special_buildings": {
       "title": "Special Buildings",
-      "image": "/media/1782635477365-slaughterhouse-barbara-somaliland-01.webp",
+      "image": "/media/1786002462892-special-buildings.webp",
       "description": "IC specializes in the delivery of technically demanding and purpose-built facilities that require advanced engineering solutions, specialized construction methodologies, and stringent operational requirements. Our capabilities include the construction of data centers, command and control centers, security and defense facilities, industrial support buildings, laboratories, logistics hubs, and mission-critical operational facilities.\nThese projects involve high-performance structural systems, specialized MEP installations, controlled environments, security infrastructure, and resilient utility networks designed to achieve maximum reliability, operational continuity, and compliance with international technical and safety standards.",
       "points": ""
     },
@@ -382,7 +382,7 @@
     "about_leadership_founder": {
       "name": "Eng. Hani Sahooly",
       "title": "Founder, HS Group",
-      "image": "/media/1782641732043-document-from-ali.png",
+      "image": "/media/1786002726848-founder-of-hs-group-mr.-hani-sahooly-photo.webp",
       "bio": "Founder and chairman with over three decades of experience in regional infrastructure delivery.",
       "bio2": "His vision drives every project we deliver — built on integrity, engineering excellence, and a commitment to exceeding client expectations at every step."
     },
@@ -395,7 +395,7 @@
     "about_leadership_3": {
       "name": "Mr. Adnan Gazaz",
       "title": "Executive Leadership",
-      "image": "/media/Mr. Adnan Gazaz photo.png",
+      "image": "/media/1786002892927-mr.-adnan-gazaz-photo.webp",
       "bio": "Senior leader driving strategic growth across the region."
     },
     "about_leadership_4": {
@@ -1323,6 +1323,42 @@
     }
   },
   "media": [
+    {
+      "id": "1786002894416",
+      "title": "Mr. Adnan Gazaz photo.webp",
+      "alt": "Mr. Adnan Gazaz photo.webp",
+      "category": "gallery",
+      "url": "/media/1786002892927-mr.-adnan-gazaz-photo.webp",
+      "source": "upload",
+      "createdAt": "2026-08-06T07:54:54.416Z"
+    },
+    {
+      "id": "1786002727812",
+      "title": "FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.webp",
+      "alt": "FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.webp",
+      "category": "gallery",
+      "url": "/media/1786002726848-founder-of-hs-group-mr.-hani-sahooly-photo.webp",
+      "source": "upload",
+      "createdAt": "2026-08-06T07:52:07.812Z"
+    },
+    {
+      "id": "1786002463734",
+      "title": "Special Buildings.webp",
+      "alt": "Special Buildings.webp",
+      "category": "gallery",
+      "url": "/media/1786002462892-special-buildings.webp",
+      "source": "upload",
+      "createdAt": "2026-08-06T07:47:43.734Z"
+    },
+    {
+      "id": "1786002445495",
+      "title": "Public & Commercial Buildings.webp",
+      "alt": "Public & Commercial Buildings.webp",
+      "category": "gallery",
+      "url": "/media/1786002444360-public-commercial-buildings.webp",
+      "source": "upload",
+      "createdAt": "2026-08-06T07:47:25.495Z"
+    },
     {
       "id": "1785998638291",
       "title": "About - Future Goals & Partnerships.webp",
