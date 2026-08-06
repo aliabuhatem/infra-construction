@@ -49,13 +49,18 @@ export function Stagger({
   children,
   className,
   gap = 0.08,
+  as = "div",
 }: {
   children: React.ReactNode;
   className?: string;
   gap?: number;
+  /* `ul`/`ol` let a staggered bullet list stay a real list for screen readers
+     — pair with `as="li"` on the items. */
+  as?: "div" | "ul" | "ol";
 }) {
+  const M = motion[as] as React.ElementType;
   return (
-    <motion.div
+    <M
       className={className}
       initial="hidden"
       whileInView="show"
@@ -63,20 +68,23 @@ export function Stagger({
       variants={{ show: { transition: { staggerChildren: gap } } }}
     >
       {children}
-    </motion.div>
+    </M>
   );
 }
 
 export function StaggerItem({
   children,
   className,
+  as = "div",
 }: {
   children: React.ReactNode;
   className?: string;
+  as?: "div" | "li";
 }) {
   const reduce = useReducedMotion();
+  const M = motion[as] as React.ElementType;
   return (
-    <motion.div
+    <M
       className={className}
       variants={{
         hidden: { opacity: 0, y: reduce ? 0 : 26 },
@@ -84,7 +92,7 @@ export function StaggerItem({
       }}
     >
       {children}
-    </motion.div>
+    </M>
   );
 }
 

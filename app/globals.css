@@ -107,3 +107,30 @@ h1, h2, h3 {
 .text-shadow-legible * {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 2px 14px rgba(0, 0, 0, 0.4);
 }
+
+/* ── Subsector blocks (/sectors/[slug]) ───────────────────────────────────
+   The alternating image + copy rows under "What We Deliver". Both knobs live
+   here: change one value and every block on every sector page follows.
+
+   `padding-block` rather than a margin between blocks so the rhythm also
+   applies above the first and below the last, and so an anchored block
+   (the navbar links straight to #<subsector>) lands with room above it.
+   Two adjacent blocks therefore sit 2 × the gap apart. */
+:root {
+  --subsector-block-gap: clamp(1.75rem, 3.5vw, 2.5rem);
+  --subsector-media-ratio: 4 / 3;
+}
+
+.subsector-block {
+  padding-block: var(--subsector-block-gap);
+}
+
+/* A fixed box the photo crops into, so neither the image's native pixel
+   dimensions nor the length of the copy beside it can change its size.
+   Paired with object-fit: cover on the <img> Next.js renders inside. */
+.subsector-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--subsector-media-ratio);
+  overflow: hidden;
+}

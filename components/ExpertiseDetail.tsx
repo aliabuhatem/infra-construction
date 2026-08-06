@@ -158,11 +158,13 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
       </section>
 
       {/* ── SUBSECTORS ────────────────────────────────────────────────────── */}
+      {/* pb is lighter than pt because the last block carries its own bottom
+          padding-block, as every block does. */}
       {subsectors.length > 0 && (
-        <section className="border-t border-[#213B4D]/8 bg-[#f6f8f9] py-24">
+        <section className="border-t border-[#213B4D]/8 bg-[#f6f8f9] pt-24 pb-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-14">
             <Reveal>
-              <div className="mb-14 flex items-center gap-3">
+              <div className="mb-6 flex items-center gap-3">
                 <span className="h-[2px] w-8 bg-[#1F93A4]" />
                 <span className="text-[11px] font-bold tracking-[0.32em] text-[#1F93A4]" style={{ fontFamily: B }}>
                   What We Deliver
@@ -170,22 +172,28 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               </div>
             </Reveal>
 
-            <div className="space-y-20">
+            {/* Every block shares one vertical rhythm (--subsector-block-gap)
+                and one image box (--subsector-media-ratio), both set in
+                globals.css, so no block's proportions depend on its own photo
+                or on how much copy it carries. */}
+            <div>
               {subsectors.map((sub, i) => (
                 /* scroll-mt clears the fixed header when the navbar links
                    straight to one of these anchors. */
-<div key={sub.slug} id={sub.slug} className="scroll-mt-32">
-                  <div className="grid gap-10 lg:grid-cols-12">
+                <div key={sub.slug} id={sub.slug} className="subsector-block scroll-mt-32">
+                  {/* items-center keeps the shorter column centred against the
+                      taller one, so light copy doesn't strand at the top. */}
+                  <div className="grid items-center gap-10 lg:grid-cols-12">
                     <Reveal
                       direction={i % 2 === 0 ? "right" : "left"}
-                      className={`h-full lg:col-span-5 ${i % 2 === 1 ? "lg:order-2" : ""}`}
+                      className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-2" : ""}`}
                     >
-                      <div className="relative h-full min-h-[18rem] w-full overflow-hidden rounded-xl">
+                      <div className="subsector-media rounded-xl">
                         <Image
                           src={sub.image}
                           alt={sub.title}
                           fill
-                          className="object-cover"
+                          className="object-cover object-center"
                           sizes="(max-width: 1024px) 100vw, 40vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/45 to-transparent" />
@@ -198,43 +206,48 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                       </div>
                     </Reveal>
 
-            <div className={`flex flex-col justify-center lg:col-span-7 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                    <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                      {/* One Reveal for the whole copy column: a per-paragraph
+                          wrapper made each line its own animated block, which is
+                          what opened the oversized gaps between them. */}
                       <Reveal>
                         <h3
-                          className="mb-5 leading-tight text-[#213B4D]"
+                          className="mb-4 leading-tight text-[#213B4D]"
                           style={{ fontFamily: H, fontSize: "clamp(22px, 2.6vw, 32px)", fontWeight: 700, letterSpacing: "-0.01em" }}
                         >
                           {sub.title}
                         </h3>
-                      </Reveal>
-                      <div className="space-y-4">
-                        {sub.description.map((para, p) => (
-                          <Reveal key={p} delay={0.05 + p * 0.05}>
-                            <p className="text-[15.5px] leading-relaxed text-[#5E5E5E]" style={{ fontFamily: B }}>
+                        <div className="space-y-3">
+                          {sub.description.map((para, p) => (
+                            <p key={p} className="m-0 text-[15.5px] leading-[1.6] text-[#5E5E5E]" style={{ fontFamily: B }}>
                               {para}
                             </p>
-                          </Reveal>
-                        ))}
-                      </div>
+                          ))}
+                        </div>
+                      </Reveal>
 
                       {sub.points.length > 0 && (
-                        <Stagger className="mt-6 space-y-4">
+                        <Stagger as="ul" className="mt-5 list-none space-y-3 p-0">
                           {sub.points.map((point, p) => {
                             // "Label: detail" — the lead-in reads as a heading.
                             const at = point.indexOf(":");
                             const label = at > 0 ? point.slice(0, at) : "";
                             const rest = at > 0 ? point.slice(at + 1).trim() : point;
                             return (
-                              <StaggerItem key={p}>
-                                <div className="flex gap-3.5">
-                                  <span className="mt-[9px] h-[6px] w-[6px] shrink-0 rounded-full bg-[#1F93A4]" />
-                                  <p className="text-[15px] leading-relaxed text-[#5E5E5E]" style={{ fontFamily: B }}>
-                                    {label && (
-                                      <span className="font-bold text-[#213B4D]">{label}: </span>
-                                    )}
-                                    {rest}
-                                  </p>
-                                </div>
+                              <StaggerItem
+                                as="li"
+                                key={p}
+                                className="flex gap-3.5 text-[15px] leading-[1.6] text-[#5E5E5E]"
+                              >
+                                {/* Nudged to sit on the first line's optical
+                                    centre: (1.6 × 15px − 6px) / 2. */}
+                                <span className="mt-[9px] h-[6px] w-[6px] shrink-0 rounded-full bg-[#1F93A4]" />
+                                <span style={{ fontFamily: B }}>
+                                  {label && (
+                                    <span className="font-bold text-[#213B4D]">{label}: </span>
+                                  )}
+                                  {rest}
+                                </span>
                               </StaggerItem>
                             );
                           })}
