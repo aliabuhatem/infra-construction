@@ -102,13 +102,13 @@
     },
     "sub_infrastructure_Infrastructure": {
       "title": "Infrastructure",
-      "image": "/media/1785930549947-water-wastewater-management.webp",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
       "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
     },
     "sub_infrastructure_dams_irrigation": {
       "title": "Dams and Irrigation",
-      "image": "/media/1785927072644-dams-and-irrigations.webp",
+      "image": "/media/1785930570834-dams-and-irrigation.webp",
       "description": "To combat water scarcity and support agricultural development in arid regions, IC constructs water retention and diversion infrastructure:",
       "points": "Dam Construction: Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates."
     },
@@ -120,13 +120,13 @@
     },
     "sub_infrastructure_airports": {
       "title": "Airports",
-      "image": "/media/1785926749442-airports.webp",
+      "image": "/media/1785930593725-airports.webp",
       "description": "We support civil aviation authorities and airport operators with specialized airside and landside construction services:",
       "points": "Facilities Rehabilitation: Upgrading, expanding, and modernizing existing passenger terminals, cargo hangars, and administrative buildings.\nAirside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks."
     },
     "sub_infrastructure_roads_highways_bridges": {
       "title": "Roads, Highways & Bridges",
-      "image": "/media/1786012566187-roads-highways-bridges.webp",
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
       "description": "IC manages comprehensive transportation infrastructure programs from ground preparation to final surfacing:",
       "points": "Highway & Urban Road Construction: Grading, paving, and surfacing for multi-lane intercity highways, arterial urban roads, and industrial corridors.\nBridges & Overpasses: Structural execution of reinforced concrete and steel bridges, flyovers, grade-separated interchanges, and pedestrian crossings.\nTraffic & Maintenance Systems: Installation of signage, safety barriers, intelligent transport system (ITS) conduits, and ongoing highway maintenance programs."
     },
@@ -138,7 +138,7 @@
     },
     "sub_infrastructure_power_generation_distribution": {
       "title": "Power Generation & Distribution",
-      "image": "/media/1785926865053-power.webp",
+      "image": "/media/1785930633240-power-generation-distribution.webp",
       "description": "IC supports national power grids through heavy power plant engineering and distribution network execution:",
       "points": "Power Generation Facilities: Civil works, equipment foundations, and structural framing for thermal, steam, and gas turbine power stations.\nSubstations & Grid Connection: Construction of high-voltage indoor and outdoor substations, including transformer pads, control buildings, and switchyards.\nTransmission & Distribution Networks: Installation of overhead transmission line towers, underground high-voltage cabling networks, and regional distribution grids."
     },
@@ -274,13 +274,13 @@
     "home_project_2": {
       "title": "ASSIUT UNIVERSITY BUILDINGS",
       "country": "Egypt",
-      "type": "BUILT ENVIRONMENT, EDUCATION",
+      "type": "Education",
       "image": "/media/buildings-social-housing-assiut-egypt.webp"
     },
     "home_project_3": {
       "title": "AL-ATTIYAT AL-BAHARIYA WASTEWATER",
       "country": "Egypt",
-      "type": "INFRASTRUCTURE, WATER & WASTEWATER MANAGEMENT",
+      "type": "Water & Wastewater Management",
       "image": "/media/1785924603665-al-attiyat-al-bahariya-wastewater-cairo-egypt.webp"
     },
     "home_about_split": {
@@ -506,7 +506,7 @@
     "about_story_full": {
       "eyebrow": "Our Story",
       "title": "A Legacy of Building the World",
-      "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000.",
+      "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 1990.",
       "p2": "Every task Infra Construction took up was executed through hard work and dedication from our team professionals. Possessing all the needed resources is a crucial factor in achieving any project successfully — however, the factor that delivers outstanding results is managing these resources optimally.",
       "p3": "Infra Construction represents the working arm providing professional services in the contracting niche — especially in the infrastructure field — executing according to international codes and project specifications across the UAE, Egypt, Yemen, and Canada.",
       "image": "/media/1782815816981-our_story.webp"
@@ -628,30 +628,6 @@
     "about_service_6": {
       "title": "Industrial & Oil Services"
     },
-    "about_service_7": {
-      "title": "Engineering & EPC"
-    },
-    "about_service_8": {
-      "title": "Facilities Management"
-    },
-    "about_service_9": {
-      "title": "Project Management"
-    },
-    "about_service_10": {
-      "title": "Design & Build"
-    },
-    "about_service_11": {
-      "title": "Civil Engineering"
-    },
-    "about_service_12": {
-      "title": "Structural Engineering"
-    },
-    "about_service_13": {
-      "title": "MEP Engineering"
-    },
-    "about_service_14": {
-      "title": "Operations & Maintenance"
-    },
     "about_quote": {
       "text": "Engineering integrity, safety, and on-time delivery are non-negotiable. We invest in people, plant, and partnerships that compound over years.",
       "author": "INFRA Construction — Operating Philosophy"
@@ -659,7 +635,7 @@
     "about_foundation": {
       "eyebrow": "Foundation",
       "title": "Built on Engineering Discipline",
-      "p1": "INFRA Construction was established in 2000 as a specialist contracting company, with the goal of delivering complex infrastructure work to international standards. The company's foundation rests on engineering discipline, operational integrity, and a commitment to delivering every project safely, on time, and to specification.",
+      "p1": "INFRA Construction was established in 1990 as a specialist contracting company, with the goal of delivering complex infrastructure work to international standards. The company's foundation rests on engineering discipline, operational integrity, and a commitment to delivering every project safely, on time, and to specification.",
       "p2": "Over more than two decades, INFRA has expanded its capabilities, its geographic reach, and its sector coverage — evolving from a regional contractor into a multi-disciplinary construction group with a presence across the Middle East, Africa, and Canada.",
       "p3": "INFRA is a member of HS Group, which provides the group-level strategic direction, financial backing, and executive leadership that enables INFRA to compete for and deliver major programmes across international markets."
     },
@@ -1329,15 +1305,6 @@
     }
   },
   "media": [
-    {
-      "id": "1786012567304",
-      "title": "Roads, Highways & Bridges.webp",
-      "alt": "Roads, Highways & Bridges.webp",
-      "category": "gallery",
-      "url": "/media/1786012566187-roads-highways-bridges.webp",
-      "source": "upload",
-      "createdAt": "2026-08-06T10:36:07.304Z"
-    },
     {
       "id": "1786006130626",
       "title": "Mr. Nedal Mustafa.webp",
@@ -2125,6 +2092,14 @@
     "svc_risk_assessment_management",
     "svc_quantity_surveying",
     "svc_construction_supervision",
-    "svc_project_management_consultancy"
+    "svc_project_management_consultancy",
+    "about_service_7",
+    "about_service_8",
+    "about_service_9",
+    "about_service_10",
+    "about_service_11",
+    "about_service_12",
+    "about_service_13",
+    "about_service_14"
   ]
 }
