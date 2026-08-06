@@ -59,14 +59,14 @@
     "sub_built_environment_healthcare_infrastructure": {
       "title": "Healthcare Infrastructure",
       "image": "/media/1785925875972-healthcare-infrastructure.webp",
-      "description": "IC delivers specialized medical facilities engineered to meet international healthcare design and infection control standards. Our capabilities span the construction of general hospital complexes, diagnostic centers, specialized outpatient clinics, and high-capacity kidney dialysis facilities.\nWe integrate complex mechanical, electrical, and plumbing (MEP) systems, medical gas networks, cleanroom environments, and emergency power supply infrastructures necessary for critical care environments.",
-      "points": ""
+      "description": "IC delivers specialized healthcare facilities that meet international standards for medical planning, infection control, and operational efficiency. Our expertise includes hospitals, diagnostic centers, outpatient clinics, and dialysis facilities, supported by advanced MEP systems, medical gas networks, cleanroom environments, and reliable emergency power infrastructure.",
+      "points": "Dialysis Center – Hargeisa Fatima College of Health Sciences (New College of Nursing) – Ajman, UAE"
     },
     "sub_built_environment_educational_facilities": {
       "title": "Educational Facilities",
       "image": "/media/1785925950515-educational-facilities.webp",
-      "description": "We build educational infrastructure designed to support modern learning, research, and campus logistics. Our experience includes the turnkey delivery of university campuses, administrative buildings, technical institutes, research laboratories, and primary/secondary school complexes. The scope encompasses heavy structural civil works, material procurement, acoustic and climate-controlled finishing, and complete site infrastructure. \nAssiut University Building: Assiut - Egypt\nDesign And build of Attaya School: Hadibo - Socotra\n- Mohamed V. University, Ajman, UAE   |   - School of the 100 Low-Cost Housing Units Project, Moroni, Comoros\n- Dorms for Moroni University in Moroni, Comoros   |   - Sheikh Khalifa School Project, AL Mukalla Hadramout, Yemen",
-      "points": ""
+      "description": "We build educational infrastructure designed to support modern learning, research, and campus logistics. Our experience includes the turnkey delivery of university campuses, administrative buildings, technical institutes, research laboratories, and primary/secondary school complexes. The scope encompasses heavy structural civil works, material procurement, acoustic and climate-controlled finishing, and complete site infrastructure. ",
+      "points": "Assiut University Building: Assiut - Egypt, Design And build of Attaya School: Hadibo - Socotra, Design And build of Attaya School: Hadibo - Socotra, Design And build of Attaya School: Hadibo - Socotra, Mohamed V. University, Ajman, UAE, School of the 100 Low-Cost Housing Units Project, Moroni, Comoros, Dorms for Moroni University in Moroni, Comoros, Sheikh Khalifa School Project, AL Mukalla Hadramout, Yemen."
     },
     "sub_built_environment_tourism_entertainment": {
       "title": "Tourism & Entertainment",
@@ -110,7 +110,7 @@
       "title": "Dams and Irrigation",
       "image": "/media/1785930570834-dams-and-irrigation.webp",
       "description": "To combat water scarcity and support agricultural development in arid regions, IC constructs water retention and diversion infrastructure:",
-      "points": "Dam Construction: Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates."
+      "points": "Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates."
     },
     "sub_infrastructure_ports_marine_works": {
       "title": "Ports & Marine Works",
