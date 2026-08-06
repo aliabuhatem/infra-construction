@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 
@@ -9,6 +10,7 @@ const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
 export interface PortfolioProject {
   sectionKey: string;
+  slug: string;
   title: string;
   country: string;
   sector: string;
@@ -176,7 +178,12 @@ export default function ProjectsPortfolio({
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((p) => (
-            <div key={p.sectionKey} className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
+            <Link
+              key={p.sectionKey}
+              href={`/projects/${p.slug}`}
+              aria-label={`View project details: ${p.title}`}
+              className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1F93A4]"
+            >
               <div className="relative h-52 shrink-0 overflow-hidden">
                 <MediaImage
                   category={p.sectionKey}
@@ -206,9 +213,16 @@ export default function ProjectsPortfolio({
                 <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="description" fallback={p.description} />
                 </p>
+                <span
+                  className="mt-5 inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.18em] text-[#1F93A4]"
+                  style={{ fontFamily: B }}
+                >
+                  View Details
+                  <span className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
+                </span>
               </div>
               <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#1F93A4] transition-all duration-500 group-hover:w-full" />
-            </div>
+            </Link>
           ))}
         </div>
       )}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
+import { resolveProjects } from "@/lib/projects";
 import ProjectsPortfolio from "@/components/ProjectsPortfolio";
 import { Reveal } from "@/components/motion";
 
@@ -15,7 +16,6 @@ export default async function ProjectsPage({
   searchParams: Promise<{ category?: string; country?: string }>;
 }) {
   const c = await getContent();
-  const deleted = new Set(c._deletedSections || []);
 
   // Read the optional ?category= / ?country= filters from the URL (set by the
   // home page links and reflected by the on-page filter buttons). Unknown values
@@ -26,18 +26,18 @@ export default async function ProjectsPage({
     rawCategory === "infrastructure" || rawCategory === "building" ? rawCategory : "all";
   const initialCountry = sp?.country?.toLowerCase() || "all";
 
-  const visibleProjects = Object.entries(c.content || {})
-    .filter(([k]) => /^project_\d+$/.test(k) && !deleted.has(k))
-    .sort(([a], [b]) => parseInt(a.replace("project_", ""), 10) - parseInt(b.replace("project_", ""), 10))
-    .map(([k, f]) => ({
-      sectionKey:  k,
-      title:       f.title       || "",
-      country:     f.country     || "",
-      sector:      f.sector      || "",
-      type:        f.type        || "",
-      description: f.description || "",
-      image:       f.image       || "",
-    }));
+  // Resolved through lib/projects so each card's link matches the slug the
+  // detail route prerenders.
+  const visibleProjects = resolveProjects(c).map((p) => ({
+    sectionKey:  p.sectionKey,
+    slug:        p.slug,
+    title:       p.title,
+    country:     p.country,
+    sector:      p.sector,
+    type:        p.type,
+    description: p.description,
+    image:       p.image,
+  }));
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}

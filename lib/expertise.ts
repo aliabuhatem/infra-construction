@@ -616,14 +616,29 @@ export function resolveExpertise(store: StoreLike, kind: ExpertiseKind, item: Ex
 const HUB_SUFFIX = "hub";   // sct_hub / svc_hub hold hub-page copy, not items
 const FALLBACK_IMAGE = "/media/sectors hero section photo.webp";
 
+/* Section keys of the retired sectors in LEGACY_SECTOR_PATHS. The admin store
+   still carries a `sct_<slug>` section for each — leftovers from when they were
+   real sectors, since renaming the taxonomy in code never removed their content
+   — and storeAddedItems would otherwise resurrect all seven as phantom sectors
+   numbered 03…09 after the two real pillars.
+
+   This has to be enforced here rather than by deleting them from
+   data/site-content.json: the live admin panel commits its own store back to
+   the repo, so a JSON-only cleanup is undone by the next "Admin content update"
+   merge. Deriving the set from LEGACY_SECTOR_PATHS keeps the two lists from
+   drifting — retiring a sector there retires its leftover section here too. */
+const RETIRED_SECTOR_KEYS = new Set(Object.keys(LEGACY_SECTOR_PATHS).map(sectorSectionKey));
+
 function storeAddedItems(store: StoreLike, kind: ExpertiseKind): Expertise[] {
   const prefix = kind === "service" ? "svc_" : "sct_";
   const builtIn = kind === "service" ? services : sectors;
   const known = new Set(builtIn.map((i) => sectionKeyFor(kind, i.slug)));
   const deleted = new Set(store?._deletedSections || []);
+  const retired = kind === "sector" ? RETIRED_SECTOR_KEYS : new Set<string>();
 
   return Object.entries(store?.content || {})
     .filter(([key]) => key.startsWith(prefix) && !known.has(key) && !deleted.has(key))
+    .filter(([key]) => !retired.has(key))
     .filter(([key]) => key.slice(prefix.length) !== HUB_SUFFIX)
     .filter(([, f]) => (f?.title || "").trim() !== "")
     .sort(([a], [b]) => a.localeCompare(b))
