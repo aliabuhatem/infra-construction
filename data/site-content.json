@@ -78,19 +78,19 @@
       "title": "Residential Sector",
       "image": "/media/1785930471786-residential-sector.webp",
       "description": "Our residential portfolio addresses both public development initiatives and private real estate demand. We execute large-scale social housing programs, integrated gated residential communities, mixed-use residential towers, and custom luxury villas.\nIC emphasizes structural durability, energy-efficient building envelopes, and complete site integration, including internal road networks, landscaping, and residential utility hookups.",
-      "points": ""
+      "points": "•\tDesign And Build of Sixteen Low-Cost Housing Units in Jakarta - Indonesia\n•\tDesign And Build of Sheikh Zayed City 361 Low-Cost Housing Units in Socotra - Yemen\n•\tPrivate Residential Complex, Dubai - UAE\n•\tConstruction of Social Housing, Assiut – Egypt\n•\tDorms for Moroni University in Moroni, Comoros\n•\t100 Low-Cost Housing Units with Community Facilities (Services Buildings, Mosque, and School) in Moroni, Comoros\n"
     },
     "sub_built_environment_public_commercial_buildings": {
       "title": "Public & Commercial Buildings",
       "image": "/media/1786002444360-public-commercial-buildings.webp",
       "description": "IC delivers complex public and commercial developments designed to support governmental operations, business activities, and community services. Our expertise covers the construction of government administrative buildings, municipal facilities, corporate headquarters, office complexes, financial institutions, retail developments, shopping malls, convention and exhibition centers, and mixed-use commercial projects.\nWe execute complete structural, architectural, and MEP works while integrating intelligent building systems, fire and life safety solutions, energy-efficient technologies, and sustainable construction practices to ensure long-term operational performance and compliance with international standards.",
-      "points": ""
+      "points": "•\tAl-Kutbi Building – UAE\n•\tEstero Commercial Shopping Center, Socotra - Yemen\n•\tImplementation Of the Ministry of Foreign Affairs Building In Aden - Yemen\n•\tBader Offices Buildings, Aden – Yemen \n"
     },
     "sub_built_environment_special_buildings": {
       "title": "Special Buildings",
       "image": "/media/1786002462892-special-buildings.webp",
       "description": "IC specializes in the delivery of technically demanding and purpose-built facilities that require advanced engineering solutions, specialized construction methodologies, and stringent operational requirements. Our capabilities include the construction of data centers, command and control centers, security and defense facilities, industrial support buildings, laboratories, logistics hubs, and mission-critical operational facilities.\nThese projects involve high-performance structural systems, specialized MEP installations, controlled environments, security infrastructure, and resilient utility networks designed to achieve maximum reliability, operational continuity, and compliance with international technical and safety standards.",
-      "points": ""
+      "points": "•\tDesign And Build of Modern Slaughterhouse, Barbara - Somaliland\n•\tDesign And Build of Hadibo Modern Slaughterhouse, Hadibo - Socotra\n•\tAlwathba Slaughterhouse, Abu Dhabi – UAE\n"
     },
     "sct_infrastructure": {
       "title": "Infrastructure",
@@ -178,15 +178,15 @@
     },
     "home_hero": {
       "eyebrow": "EST. 2000. Abu Dhabi, UAE",
-      "headlineLine1": "We Do Not Only Aim To Meet Your Expectation, But To Exceed",
-      "headlineLine2": "Them At Every Step",
-      "headlineLine3": "",
       "subtitle": "World-class infrastructure, buildings, energy, and industrial projects across the Middle East and Africa — delivered Since 2000.",
       "ctaPrimaryText": "Our Sectors",
       "ctaSecondaryText": "About Us",
       "locationsLabel": "Operating in",
       "locationsList": "UAE · Canada · Egypt · Yemen ",
-      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.webp"
+      "backgroundImage": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
+      "headlineLine1": "We Do Not Only Aim To Meet Your Expectation, But To Exceed",
+      "headlineLine2": "Them At Every Step",
+      "headlineLine3": ""
     },
     "home_statement": {
       "eyebrowLabel": "Est. 2000",
