@@ -16,10 +16,14 @@ interface Props {
 
 export default function ExpertiseDetail({ item, kind, related }: Props) {
   const subsectors = item.subsectors ?? [];
-  const rail: { label: string; href?: string }[] =
-    subsectors.length > 0
-      ? subsectors.map((s) => ({ label: s.title, href: `#${s.slug}` }))
-      : item.capabilities.map((c) => ({ label: c }));
+  /* The rail is two different things wearing one layout: a table of contents
+     on a sector page, an inert capability list on a service page. Only the
+     first is interactive, so the styling below keys off this rather than
+     giving static text link affordances it can't honour. */
+  const isNav = subsectors.length > 0;
+  const rail: { label: string; href?: string }[] = isNav
+    ? subsectors.map((s) => ({ label: s.title, href: `#${s.slug}` }))
+    : item.capabilities.map((c) => ({ label: c }));
   const base = kind === "service" ? "/services" : "/sectors";
   const hubLabel = kind === "service" ? "Services" : "Sectors";
   const kicker = kind === "service" ? "Our Services" : "Our Sectors";
@@ -118,33 +122,85 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               sections below, rather than repeating their titles inertly. */}
           {rail.length > 0 && (
           <div className={item.description.length > 0 ? "lg:col-span-5" : "lg:col-span-12"}>
-            <Reveal direction="left">
-              <div className="rounded-xl bg-[#0d1e28] p-8">
-                <div className="mb-6 flex items-center gap-3">
+            {/* Pinned only when the rows actually go somewhere: on a sector
+                page this is a table of contents and earns its keep by staying
+                in view while the subsectors scroll past. `top-32` matches the
+                `scroll-mt-32` on the anchors, so the card clears the fixed
+                header by exactly as much as its targets do.
+
+                The sticky lives on the Reveal itself, not on a wrapper inside
+                it: sticky needs a containing block taller than the element,
+                and only this grid column gets stretched to the row height. */}
+            <Reveal direction="left" className={isNav ? "lg:sticky lg:top-32" : undefined}>
+              <div className="relative overflow-hidden rounded-xl bg-[#0d1e28] p-8 ring-1 ring-white/10">
+                {/* Depth without a second colour — one soft teal bloom off the
+                    corner, under the content. */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#1F93A4]/25 blur-3xl"
+                />
+
+                <div className="relative mb-5 flex items-center gap-3">
                   <span className="h-[2px] w-6 bg-[#1F93A4]" />
                   <span className="text-[11px] font-bold tracking-[0.32em] text-[#1F93A4]" style={{ fontFamily: B }}>
-                    {subsectors.length > 0 ? "In This Sector" : "Capabilities"}
+                    {isNav ? "In This Sector" : "Capabilities"}
+                  </span>
+                  {/* Same count treatment as the Reference Projects card, so
+                      both index blocks on the page read as one family. */}
+                  <span className="ml-auto text-[11px] font-bold text-white/30" style={{ fontFamily: H }}>
+                    {String(rail.length).padStart(2, "0")}
                   </span>
                 </div>
-                <Stagger className="space-y-3">
+
+                <Stagger as="ul" className="relative list-none p-0">
                   {rail.map((row, i) => {
-                    const body = (
-                      <>
-                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#1F93A4]/15 text-[11px] font-bold text-[#1F93A4]" style={{ fontFamily: H }}>
-                          {String(i + 1).padStart(2, "0")}
-                        </span>
-                        <span className="text-[14px] text-white/85" style={{ fontFamily: B }}>{row.label}</span>
-                      </>
+                    /* Squared badge rather than the old filled circle: it
+                       echoes the `num` chip in the hero, and a column of six
+                       circles read as a stack of blobs. */
+                    const index = (
+                      <span
+                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-white/[0.06] text-[11px] font-bold text-[#1F93A4] ring-1 ring-white/10${
+                          isNav ? " transition-colors duration-300 group-hover:bg-[#1F93A4] group-hover:text-white group-hover:ring-[#1F93A4]" : ""
+                        }`}
+                        style={{ fontFamily: H }}
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
                     );
-                    const cls = "flex items-center gap-3 border-b border-white/8 pb-3 last:border-0";
+                    const label = (
+                      <span
+                        className={`text-[14px] leading-snug text-white/85${
+                          isNav ? " transition-colors duration-300 group-hover:text-white" : ""
+                        }`}
+                        style={{ fontFamily: B }}
+                      >
+                        {row.label}
+                      </span>
+                    );
                     return (
-                      <StaggerItem key={i}>
+                      /* Symmetric py + the divider on the <li>: the old
+                         `space-y-3` with `pb-3` left each rule 12px under its
+                         own row but 12px clear of the next, so it read as
+                         attached to the wrong item. */
+                      <StaggerItem as="li" key={i} className="border-b border-white/10 last:border-0">
                         {row.href ? (
-                          <a href={row.href} className={`${cls} group transition-colors hover:text-white`}>
-                            {body}
+                          <a href={row.href} className="group flex items-center gap-3.5 py-3.5">
+                            {index}
+                            {label}
+                            {/* Reserved space (ml-auto + pl-2) so the arrow
+                                arriving on hover never reflows the label. */}
+                            <span
+                              aria-hidden
+                              className="ml-auto -translate-x-1 pl-2 text-[13px] text-[#1F93A4] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                            >
+                              →
+                            </span>
                           </a>
                         ) : (
-                          <div className={cls}>{body}</div>
+                          <div className="flex items-center gap-3.5 py-3.5">
+                            {index}
+                            {label}
+                          </div>
                         )}
                       </StaggerItem>
                     );
