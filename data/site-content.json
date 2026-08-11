@@ -51,7 +51,7 @@
     "sct_built_environment": {
       "title": "Built Environment",
       "slug": "built-environment",
-      "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities. We manage the entire project lifecycle—from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
+      "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities, managing the full project lifecycle from design review through to final commissioning and handover.",
       "image": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
       "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings"
@@ -60,7 +60,7 @@
       "title": "Healthcare Infrastructure",
       "image": "/media/1785925875972-healthcare-infrastructure.webp",
       "description": "IC delivers specialized healthcare facilities that meet international standards for medical planning, infection control, and operational efficiency. Our expertise includes hospitals, diagnostic centers, outpatient clinics, and dialysis facilities, supported by advanced MEP systems, medical gas networks, cleanroom environments, and reliable emergency power infrastructure.",
-      "points": "Dialysis Center: Hargeisa Fatima College of Health Sciences (New College of Nursing) – Ajman, UAE"
+      "points": "Dialysis Center: Hargeisa Fatima College of Health Sciences (New College of Nursing) – Ajman, UAE\n\n"
     },
     "sub_built_environment_educational_facilities": {
       "title": "Educational Facilities",
@@ -95,7 +95,7 @@
     "sct_infrastructure": {
       "title": "Infrastructure",
       "slug": "infrastructure",
-      "summary": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
+      "summary": "IC's Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems, all carefully designed to withstand demanding environmental conditions and meet strict long-term operational demands reliably.",
       "image": "/media/1785926802002-roads-bridges.webp",
       "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
