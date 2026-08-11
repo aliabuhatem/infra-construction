@@ -60,37 +60,43 @@
       "title": "Healthcare Infrastructure",
       "image": "/media/1785925875972-healthcare-infrastructure.webp",
       "description": "IC delivers specialized healthcare facilities that meet international standards for medical planning, infection control, and operational efficiency. Our expertise includes hospitals, diagnostic centers, outpatient clinics, and dialysis facilities, supported by advanced MEP systems, medical gas networks, cleanroom environments, and reliable emergency power infrastructure.",
-      "points": "Dialysis Center: Hargeisa Fatima College of Health Sciences (New College of Nursing) – Ajman, UAE \nNew College of Nursing: (Fatima College of Health Sciences), Ajman - UAE"
+      "points": "",
+      "projects": "Dialysis Center, Hargeisa — Somaliland\nNew College of Nursing (Fatima College of Health Sciences), Ajman — UAE"
     },
     "sub_built_environment_educational_facilities": {
       "title": "Educational Facilities",
       "image": "/media/1785925950515-educational-facilities.webp",
       "description": "We build educational infrastructure designed to support modern learning, research, and campus logistics. Our experience includes the turnkey delivery of university campuses, administrative buildings, technical institutes, research laboratories, and primary/secondary school complexes. The scope encompasses heavy structural civil works, material procurement, acoustic and climate-controlled finishing, and complete site infrastructure. ",
-      "points": "Assiut University Building: Assiut - Egypt, \nDesign And build of Attaya School: Hadibo - Socotra, \nMohamed V. University: Ajman, UAE, \nSchool of the 100 Low-Cost Housing Units Project: Moroni, Comoros,\nDorms for Moroni University: in Moroni, Comoros,\nSheikh Khalifa School Project: AL Mukalla Hadramout, Yemen."
+      "points": "",
+      "projects": "Assiut University Building, Assiut — Egypt\nDesign and Build of Attaya School, Hadibo — Socotra\nMohamed V. University, Ajman — UAE\nSchool of the 100 Low-Cost Housing Units Project, Moroni — Comoros\nDorms for Moroni University, Moroni — Comoros\nSheikh Khalifa School Project, Al Mukalla Hadramout — Yemen"
     },
     "sub_built_environment_tourism_entertainment": {
       "title": "Tourism & Entertainment",
       "image": "/media/1785930351542-tourism-entertainment.webp",
       "description": "IC provides engineering and construction services for the hospitality and commercial leisure sectors. We execute structural and architectural works for high-end hotel developments, beachfront resort complexes, cultural centers, and public entertainment hubs. Our teams balance aesthetic requirements with structural durability, ensuring full compliance with international safety, accessibility, and environmental standards.",
-      "points": "Budget Hotels: in Moroni, Comoros, \nRehabilitation of Sheraton Hotel: Aden - Yemen,\nConstruction of Civil Works and Shore Protection: for Abyan Coast Corniche in Aden - Yemen,"
+      "points": "",
+      "projects": "Budget Hotels, Moroni — Comoros\nRehabilitation of Sheraton Hotel, Aden — Yemen\nConstruction of Civil Works and Shore Protection for Abyan Coast Corniche, Aden — Yemen"
     },
     "sub_built_environment_residential_sector": {
       "title": "Residential Sector",
       "image": "/media/1785930471786-residential-sector.webp",
       "description": "Our residential portfolio addresses both public development initiatives and private real estate demand. We execute large-scale social housing programs, integrated gated residential communities, mixed-use residential towers, and custom luxury villas.\nIC emphasizes structural durability, energy-efficient building envelopes, and complete site integration, including internal road networks, landscaping, and residential utility hookups.",
-      "points": "•\tDesign And Build of Sixteen Low-Cost Housing Units in Jakarta - Indonesia\n•\tDesign And Build of Sheikh Zayed City 361 Low-Cost Housing Units in Socotra - Yemen\n•\tPrivate Residential Complex, Dubai - UAE\n•\tConstruction of Social Housing, Assiut – Egypt\n•\tDorms for Moroni University in Moroni, Comoros\n•\t100 Low-Cost Housing Units with Community Facilities (Services Buildings, Mosque, and School) in Moroni, Comoros\n"
+      "points": "",
+      "projects": "Design and Build of Sixteen Low-Cost Housing Units, Jakarta — Indonesia\nDesign and Build of Sheikh Zayed City 361 Low-Cost Housing Units, Socotra — Yemen\nPrivate Residential Complex, Dubai — UAE\nConstruction of Social Housing, Assiut — Egypt\nDorms for Moroni University, Moroni — Comoros\n100 Low-Cost Housing Units with Community Facilities (Services Buildings, Mosque, and School), Moroni — Comoros"
     },
     "sub_built_environment_public_commercial_buildings": {
       "title": "Public & Commercial Buildings",
       "image": "/media/1786002444360-public-commercial-buildings.webp",
       "description": "IC delivers complex public and commercial developments designed to support governmental operations, business activities, and community services. Our expertise covers the construction of government administrative buildings, municipal facilities, corporate headquarters, office complexes, financial institutions, retail developments, shopping malls, convention and exhibition centers, and mixed-use commercial projects.\nWe execute complete structural, architectural, and MEP works while integrating intelligent building systems, fire and life safety solutions, energy-efficient technologies, and sustainable construction practices to ensure long-term operational performance and compliance with international standards.",
-      "points": "•\tAl-Kutbi Building – UAE\n•\tEstero Commercial Shopping Center, Socotra - Yemen\n•\tImplementation Of the Ministry of Foreign Affairs Building In Aden - Yemen\n•\tBader Offices Buildings, Aden – Yemen \n"
+      "points": "",
+      "projects": "Al-Kutbi Building — UAE\nEstero Commercial Shopping Center, Socotra — Yemen\nImplementation of the Ministry of Foreign Affairs Building, Aden — Yemen\nBader Offices Buildings, Aden — Yemen"
     },
     "sub_built_environment_special_buildings": {
       "title": "Special Buildings",
       "image": "/media/1786002462892-special-buildings.webp",
       "description": "IC specializes in the delivery of technically demanding and purpose-built facilities that require advanced engineering solutions, specialized construction methodologies, and stringent operational requirements. Our capabilities include the construction of data centers, command and control centers, security and defense facilities, industrial support buildings, laboratories, logistics hubs, and mission-critical operational facilities.\nThese projects involve high-performance structural systems, specialized MEP installations, controlled environments, security infrastructure, and resilient utility networks designed to achieve maximum reliability, operational continuity, and compliance with international technical and safety standards.",
-      "points": "•\tDesign And Build of Modern Slaughterhouse, Barbara - Somaliland\n•\tDesign And Build of Hadibo Modern Slaughterhouse, Hadibo - Socotra\n•\tAlwathba Slaughterhouse, Abu Dhabi – UAE\n"
+      "points": "",
+      "projects": "Design and Build of Modern Slaughterhouse, Barbara — Somaliland\nDesign and Build of Hadibo Modern Slaughterhouse, Hadibo — Socotra\nAl Wathba Slaughterhouse, Abu Dhabi — UAE"
     },
     "sct_infrastructure": {
       "title": "Infrastructure",

@@ -353,6 +353,10 @@ export const sectors: Expertise[] = [
         ],
         points: [],
         image: "/media/buildings-dialysis-center-hargeisa-somaliland.webp",
+        projects: [
+          "Dialysis Center, Hargeisa — Somaliland",
+          "New College of Nursing (Fatima College of Health Sciences), Ajman — UAE",
+        ],
       },
       {
         slug: "educational-facilities",
@@ -363,6 +367,14 @@ export const sectors: Expertise[] = [
         ],
         points: [],
         image: "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
+        projects: [
+          "Assiut University Building, Assiut — Egypt",
+          "Design and Build of Attaya School, Hadibo — Socotra",
+          "Mohamed V. University, Ajman — UAE",
+          "School of the 100 Low-Cost Housing Units Project, Moroni — Comoros",
+          "Dorms for Moroni University, Moroni — Comoros",
+          "Sheikh Khalifa School Project, Al Mukalla Hadramout — Yemen",
+        ],
       },
       {
         slug: "tourism-entertainment",
@@ -373,6 +385,11 @@ export const sectors: Expertise[] = [
         ],
         points: [],
         image: "/media/fm-hotel-moroni-comoros.webp",
+        projects: [
+          "Budget Hotels, Moroni — Comoros",
+          "Rehabilitation of Sheraton Hotel, Aden — Yemen",
+          "Construction of Civil Works and Shore Protection for Abyan Coast Corniche, Aden — Yemen",
+        ],
       },
       {
         slug: "residential-sector",
@@ -383,6 +400,14 @@ export const sectors: Expertise[] = [
         ],
         points: [],
         image: "/media/buildings-residential-complex-dubai.webp",
+        projects: [
+          "Design and Build of Sixteen Low-Cost Housing Units, Jakarta — Indonesia",
+          "Design and Build of Sheikh Zayed City 361 Low-Cost Housing Units, Socotra — Yemen",
+          "Private Residential Complex, Dubai — UAE",
+          "Construction of Social Housing, Assiut — Egypt",
+          "Dorms for Moroni University, Moroni — Comoros",
+          "100 Low-Cost Housing Units with Community Facilities (Services Buildings, Mosque, and School), Moroni — Comoros",
+        ],
       },
       {
         slug: "public-commercial-buildings",
@@ -393,6 +418,12 @@ export const sectors: Expertise[] = [
         ],
         points: [],
         image: "/media/buildings-ministry-foreign-aden-yemen.webp",
+        projects: [
+          "Al-Kutbi Building — UAE",
+          "Estero Commercial Shopping Center, Socotra — Yemen",
+          "Implementation of the Ministry of Foreign Affairs Building, Aden — Yemen",
+          "Bader Offices Buildings, Aden — Yemen",
+        ],
       },
       {
         slug: "special-buildings",
@@ -403,6 +434,11 @@ export const sectors: Expertise[] = [
         ],
         points: [],
         image: "/media/1782635477365-slaughterhouse-barbara-somaliland-01.webp",
+        projects: [
+          "Design and Build of Modern Slaughterhouse, Barbara — Somaliland",
+          "Design and Build of Hadibo Modern Slaughterhouse, Hadibo — Socotra",
+          "Al Wathba Slaughterhouse, Abu Dhabi — UAE",
+        ],
       },
     ],
   },
@@ -443,7 +479,7 @@ export const sectors: Expertise[] = [
           "Infrastructure for Sheikh Khalifa Housing Project, Housing Units, Al Mukalla Hadramout, Yemen",
           "Al Saad Villas, Al Ain — UAE",
           "Al-Attiyat Al-Bahariya Wastewater Treatment Plant in Abnoub — Hayah Kareema",
-          "Bassra Wastewater Treatment Plant",
+          "Bassra Wastewater Treatment Plan",
           "Industrial Zone Sewerage System in Arab El A’wamer",
           "Sewerage System for 14 Villages in Abnoub",
           "Civil works and material supply, sewage network for 13 villages, Manfalut — Egypt",
