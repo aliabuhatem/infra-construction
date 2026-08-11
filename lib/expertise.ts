@@ -15,6 +15,11 @@ export interface SubSector {
   description: string[];     // paragraphs
   points: string[];          // optional bullets, "Label: detail" renders bold
   image: string;             // /media/…
+  /** Named reference projects delivered in this subsector. Rendered as a
+      full-width roster under the block, below the copy — deliberately plain
+      text, not links: these are historical references and most have no
+      counterpart in the projects store, so linking them would 404. */
+  projects?: string[];
 }
 
 export interface Expertise {
@@ -422,7 +427,7 @@ export const sectors: Expertise[] = [
     image: "/media/infrastructure-aden-causeway-widening-yemen.webp",
     subsectors: [
       {
-        slug: "water_&_wastewater_management",
+        slug: "water-wastewater-management",
         title: "Water & Wastewater Management",
         description: ["IC implements complete water lifecycle engineering solutions. Our operational scope includes:"],
         points: [
@@ -431,6 +436,18 @@ export const sectors: Expertise[] = [
           "Water Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks.",
         ],
         image: "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+        projects: [
+          "Soum, Asba and Assem Water Supply Network Project",
+          "Five Water Supply Wells and water transitions line, Qalansiyah and Hadibo",
+          "Infrastructure for Sheikh Khalifa Housing Project, (204) Housing Units, Tarim Hadramout, Yemen",
+          "Infrastructure for Sheikh Khalifa Housing Project, Housing Units, Al Mukalla Hadramout, Yemen",
+          "Al Saad Villas, Al Ain — UAE",
+          "Al-Attiyat Al-Bahariya Wastewater Treatment Plant in Abnoub — Hayah Kareema",
+          "Bassra Wastewater Treatment Plant",
+          "Industrial Zone Sewerage System in Arab El A’wamer",
+          "Sewerage System for 14 Villages in Abnoub",
+          "Civil works and material supply, sewage network for 13 villages, Manfalut — Egypt",
+        ],
       },
       {
         slug: "dams-irrigation",
@@ -443,6 +460,12 @@ export const sectors: Expertise[] = [
           "Irrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates.",
         ],
         image: "/media/water-hassan-dam-project-yemen.webp",
+        projects: [
+          "Beryan Dam Project, Yemen",
+          "New Assiut Barrage",
+          "Al-Dhaytayn Dam Project",
+          "Al-Lafag Dam Project",
+        ],
       },
       {
         slug: "ports-marine-works",
@@ -454,6 +477,11 @@ export const sectors: Expertise[] = [
           "Floating & Fixed Structures: Engineering floating pontoon systems, concrete jetties, and marine access walkways.",
         ],
         image: "/media/1784614760728-qana-port-shabwah-yemen.png",
+        projects: [
+          "Breakwater and Fixed Pier, Aden — Yemen",
+          "Angoche Fishing Port — Mozambique",
+          "Marine Breakwater Project — Socotra",
+        ],
       },
       {
         slug: "airports",
@@ -466,6 +494,11 @@ export const sectors: Expertise[] = [
           "Airside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks.",
         ],
         image: "/media/airports-al-riyan-airport-yemen.webp",
+        projects: [
+          "Berbera International Airport, Somaliland",
+          "Rehabilitation and Expansion of Al Riyan Airport, Hadramout — Yemen",
+          "Salah Alden Airport, Aden — Yemen",
+        ],
       },
       {
         slug: "roads-highways-bridges",
@@ -479,6 +512,18 @@ export const sectors: Expertise[] = [
           "Traffic & Maintenance Systems: Installation of signage, safety barriers, intelligent transport system (ITS) conduits, and ongoing highway maintenance programs.",
         ],
         image: "/media/infrastructure-coastal-highway-taiz-yemen.webp",
+        projects: [
+          "Bani Mazar Bridge",
+          "West Assiut Plateau Road",
+          "Facilities 1304 Feddans, Assiut",
+          "Arabco Projects — Cairo, Egypt",
+          "New Road Links Sheikh Khalifa Road from Maleha Area through Al-Madam to Al Showaib Area (Phase 3), from Sharjah Border to Al-Showaib Roundabout Area at Al Ain — UAE",
+          "Al Gazal wal Naseej and Cairo Intersection and Bridges",
+          "As-Suwayda — Wadi Al Zubayrah Road 2.4 M Project",
+          "Al-Zarbi Road — Hayfan — Taiz",
+          "Zy Al-Barh Al-Sarari Road — Lower Section",
+          "Al Saad Villas — Al Ain, UAE",
+        ],
       },
       {
         slug: "energy-infrastructure",
@@ -504,6 +549,12 @@ export const sectors: Expertise[] = [
           "Transmission & Distribution Networks: Installation of overhead transmission line towers, underground high-voltage cabling networks, and regional distribution grids.",
         ],
         image: "/media/1784614960071-power-study-generation-and-transmission-sulamani-iraq.png",
+        projects: [
+          "Construction & Operation of Power Plant, Hadibo",
+          "Construction & Operation of Power Plant, Qalansiyah",
+          "Civil works for Power Plant in Alhaswa Power Station, Aden",
+          "Al Saad Villas — Al Ain, UAE",
+        ],
       },
     ],
   },
@@ -586,6 +637,8 @@ function resolveSubsectors(store: StoreLike, sector: Expertise): SubSector[] {
         description: f.description ? splitLines(f.description) : sub.description,
         // Bullets carry commas of their own, so newlines are the only separator.
         points: f.points ? splitLines(f.points) : sub.points,
+        // Same rule — project names are full of commas ("…, Hadramout, Yemen").
+        projects: f.projects ? splitLines(f.projects) : sub.projects,
       };
     });
 }
@@ -745,6 +798,9 @@ export function expertiseDefaultSections(): Record<string, Record<string, string
         image: sub.image,
         description: sub.description.join("\n"),
         points: sub.points.join("\n"),
+        // Seeded even when empty so every subsector offers the field, and a
+        // subsector with no references yet can gain them from the panel alone.
+        projects: (sub.projects || []).join("\n"),
       };
     });
   });

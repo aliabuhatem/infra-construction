@@ -274,6 +274,52 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                       )}
                     </div>
                   </div>
+
+                  {/* Reference projects — full width beneath the row rather than
+                      inside the copy column: the longest lists run to ten
+                      entries, which would tower over the paired photo and break
+                      the alternating rhythm every other block depends on. */}
+                  {(sub.projects?.length ?? 0) > 0 && (
+                    <Reveal>
+                      <div className="mt-8 rounded-xl border border-[#213B4D]/10 bg-white p-6 sm:p-7">
+                        <div className="mb-5 flex items-center gap-3">
+                          <span className="h-[2px] w-6 bg-[#F2613C]" />
+                          <span
+                            className="text-[11px] font-bold tracking-[0.28em] text-[#213B4D]"
+                            style={{ fontFamily: B }}
+                          >
+                            Reference Projects
+                          </span>
+                          <span
+                            className="text-[11px] font-bold text-[#213B4D]/35"
+                            style={{ fontFamily: H }}
+                          >
+                            {String(sub.projects!.length).padStart(2, "0")}
+                          </span>
+                        </div>
+                        {/* Names wrap to two or three lines at narrow widths, so
+                            the columns are balanced by the grid rather than by
+                            an even split of the list. */}
+                        <Stagger as="ul" className="subsector-projects list-none p-0">
+                          {sub.projects!.map((project, p) => (
+                            <StaggerItem
+                              as="li"
+                              key={p}
+                              className="flex gap-3 border-b border-[#213B4D]/8 py-2.5 text-[14.5px] leading-[1.55] text-[#213B4D]"
+                            >
+                              {/* Same optical-centre nudge as the bullets
+                                  above: (1.55 × 14.5px − 7px) / 2 ≈ 8px. */}
+                              <span
+                                className="mt-[8px] h-[7px] w-[7px] shrink-0 rotate-45 bg-[#1F93A4]/60"
+                                aria-hidden
+                              />
+                              <span style={{ fontFamily: B }}>{project}</span>
+                            </StaggerItem>
+                          ))}
+                        </Stagger>
+                      </div>
+                    </Reveal>
+                  )}
                 </div>
               ))}
             </div>

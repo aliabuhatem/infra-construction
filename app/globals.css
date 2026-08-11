@@ -134,3 +134,25 @@ h1, h2, h3 {
   aspect-ratio: var(--subsector-media-ratio);
   overflow: hidden;
 }
+
+/* The reference-project roster inside a subsector block. Column count is
+   driven by available width rather than a breakpoint, so a three-entry list
+   and a ten-entry one both fill the card instead of one of them stranding a
+   half-empty column. --subsector-project-col is the narrowest a column may
+   get before the grid drops to fewer of them; below that width a single
+   column is the only sensible layout for names this long.
+
+   `min()` guards the one case auto-fill cannot: on a viewport narrower than
+   the track minimum, `minmax(22rem, 1fr)` would overflow its container. */
+:root {
+  --subsector-project-col: 22rem;
+}
+
+.subsector-projects {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(100%, var(--subsector-project-col)), 1fr)
+  );
+  column-gap: clamp(1.5rem, 3vw, 2.75rem);
+}

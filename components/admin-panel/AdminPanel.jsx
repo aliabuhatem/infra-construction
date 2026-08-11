@@ -56,6 +56,13 @@ const LINE_FIELD_HINTS = {
     nounPlural: "capabilities",
     placeholder: "Healthcare Infrastructure\nEducational Facilities",
   },
+  projects: {
+    rule: "One line = one reference project.",
+    noun: "project",
+    nounPlural: "projects",
+    placeholder:
+      "Berbera International Airport, Somaliland\nSalah Alden Airport, Aden — Yemen",
+  },
 };
 
 // Map section prefix → display group name with order priority
@@ -813,7 +820,7 @@ export default function AdminPanel() {
                               // Multiline fields (paragraphs / bullet points) should always be
                               // editable as a textarea so authors can add as many new lines as
                               // they need — see subsector "points" and "description".
-                              const multilineField = /^(points|description|capabilities|summary)$/i.test(key);
+                              const multilineField = /^(points|projects|description|capabilities|summary)$/i.test(key);
                               const longText = multilineField || String(value || "").length > 100;
                               const isRenaming = renamingField?.section === section && renamingField?.key === key;
 
