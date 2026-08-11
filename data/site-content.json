@@ -51,7 +51,7 @@
     "sct_built_environment": {
       "title": "Built Environment",
       "slug": "built-environment",
-      "summary": "High-complexity building structures, public architecture, and commercial facilities.",
+      "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.",
       "image": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
       "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings"
@@ -196,7 +196,8 @@
       "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
       "cert1": "ISO 9001",
       "cert2": "ISO 14001",
-      "linkText": "Our Story"
+      "linkText": "Our Story",
+      "cert3": "ISO 45001"
     },
     "home_sectors_header": {
       "eyebrow": "Our Sectors ",
@@ -657,9 +658,7 @@
       "desc": "Environmental management system demonstrating our commitment to sustainable construction practices.",
       "items": "Environmental impact assessment, waste management, pollution prevention, sustainability compliance"
     },
-
     "about_mgmtsys_3": {
-      "code": "ISO 45001",
       "title": "Occupational Health & Safety",
       "desc": "Health and safety management system ensuring the protection of all workers and project stakeholders.",
       "items": "Risk assessment, HSE training, incident management, safety audits"
@@ -1155,7 +1154,8 @@
       "cert1Title": "Quality Management",
       "cert2Code": "ISO 14001",
       "cert2Title": "Environmental Management",
-      "cert3Title": "Health & Safety"
+      "cert3Title": "Health & Safety",
+      "cert3Code": "ISO 45001"
     },
     "contact_cta": {
       "eyebrow": "Start Your Project",
