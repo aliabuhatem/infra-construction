@@ -32,6 +32,13 @@ export default function ExpertiseHub({
   const base = kind === "service" ? "/services" : "/sectors";
   const label = kind === "service" ? "Services" : "Sectors";
 
+  // With only a couple of entries (the two sectors) a 4-up grid leaves them
+  // quarter-width and stranded on the left, so switch to large centered cards.
+  const featured = items.length <= 2;
+  const gridClass = featured
+    ? "mx-auto grid max-w-5xl gap-8 sm:grid-cols-2"
+    : "grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4";
+
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
@@ -110,9 +117,9 @@ export default function ExpertiseHub({
               </p>
             </div>
           </Reveal>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className={gridClass}>
             {items.map((item, i) => (
-              <ExpertiseCard key={item.slug} item={item} base={base} index={i} />
+              <ExpertiseCard key={item.slug} item={item} base={base} index={i} featured={featured} />
             ))}
           </div>
         </div>

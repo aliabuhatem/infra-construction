@@ -14,10 +14,13 @@ export default function ExpertiseCard({
   item,
   base,
   index = 0,
+  featured = false,
 }: {
   item: Expertise;
   base: string;
   index?: number;
+  /* Large variant used when a hub renders only a couple of entries. */
+  featured?: boolean;
 }) {
   const reduce = useReducedMotion();
 
@@ -51,39 +54,50 @@ export default function ExpertiseCard({
           href={`${base}/${item.slug}`}
           onPointerMove={onMove}
           onPointerLeave={reset}
-          className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)]"
+          className={`card-base group relative overflow-hidden border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)] ${
+            featured ? "rounded-xl" : "rounded-lg"
+          }`}
         >
           {/* Image */}
-          <div className="relative h-44 shrink-0 overflow-hidden">
+          <div className={`relative shrink-0 overflow-hidden ${featured ? "h-64 sm:h-72" : "h-44"}`}>
             <Image
               src={item.image}
               alt={item.title}
               fill
               className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]"
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes={featured ? "(max-width: 640px) 100vw, 50vw" : "(max-width: 768px) 100vw, 33vw"}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/70 via-[#0d1e28]/10 to-transparent" />
             <span
-              className="absolute right-4 top-3 text-[26px] font-bold leading-none text-white/85"
+              className={`absolute right-4 top-3 font-bold leading-none text-white/85 ${
+                featured ? "text-[34px]" : "text-[26px]"
+              }`}
               style={{ fontFamily: B }}
             >
               {item.num}
-            </span>  
+            </span>
             </div>
 
           {/* Body */}
-          <div className="card-body p-6 pt-9">
+          <div className={`card-body ${featured ? "p-8 pt-10" : "p-6 pt-9"}`}>
             <h3
-              className="card-title mb-2 text-[17px] font-bold text-[#213B4D] transition-colors group-hover:text-[#1F93A4]"
+              className={`mb-2 font-bold text-[#213B4D] transition-colors group-hover:text-[#1F93A4] ${
+                featured ? "text-[24px] leading-snug" : "card-title text-[17px]"
+              }`}
               style={{ fontFamily: B }}
             >
               {item.title}
             </h3>
-            <p className="mb-5 flex-1 text-[13px] leading-relaxed text-[#5E5E5E]" style={{ fontFamily: B }}>
+            <p
+              className={`flex-1 leading-relaxed text-[#5E5E5E] ${featured ? "mb-7 text-[15px]" : "mb-5 text-[13px]"}`}
+              style={{ fontFamily: B }}
+            >
               {item.summary}
             </p>
             <span
-              className="mt-auto inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.18em] text-[#1F93A4]"
+              className={`mt-auto inline-flex items-center gap-2 font-bold tracking-[0.18em] text-[#1F93A4] ${
+                featured ? "text-[12px]" : "text-[11px]"
+              }`}
               style={{ fontFamily: B }}
             >
               View Details
