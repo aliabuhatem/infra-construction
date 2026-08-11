@@ -52,7 +52,7 @@
       "title": "Built Environment",
       "slug": "built-environment",
       "summary": "High-complexity building structures, public architecture, and commercial facilities.",
-      "image": "/media/1785924202906-built-environment.webp",
+      "image": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
       "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings"
     },
@@ -96,37 +96,37 @@
       "title": "Infrastructure",
       "slug": "infrastructure",
       "summary": "Water and wastewater systems, dams and irrigation, ports and marine works, airports, roads and bridges, and energy and power infrastructure.",
-      "image": "/media/infrastructure-aden-causeway-widening-yemen.webp",
+      "image": "/media/1785926802002-roads-bridges.webp",
       "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
     },
     "sub_infrastructure_Infrastructure": {
       "title": "Infrastructure",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+      "image": "/media/1785930549947-water-wastewater-management.webp",
       "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
       "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
     },
     "sub_infrastructure_dams_irrigation": {
       "title": "Dams and Irrigation",
-      "image": "/media/1785930570834-dams-and-irrigation.webp",
+      "image": "/media/1785927072644-dams-and-irrigations.webp",
       "description": "To combat water scarcity and support agricultural development in arid regions, IC constructs water retention and diversion infrastructure:",
       "points": "Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates."
     },
     "sub_infrastructure_ports_marine_works": {
       "title": "Ports & Marine Works",
-      "image": "/media/1785930583652-ports-marine-works.webp",
+      "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
       "description": "IC delivers specialized marine construction and coastal engineering solutions:",
       "points": "Port Facilities: Construction of commercial fishing ports, cargo handling quays, and vessel berth infrastructures.\nCoastal Protection: Fabrication and placement of marine breakwaters, riprap slope protection, and shoreline stabilization systems.\nFloating & Fixed Structures: Engineering floating pontoon systems, concrete jetties, and marine access walkways."
     },
     "sub_infrastructure_airports": {
       "title": "Airports",
-      "image": "/media/1785930593725-airports.webp",
+      "image": "/media/1785926749442-airports.webp",
       "description": "We support civil aviation authorities and airport operators with specialized airside and landside construction services:",
       "points": "Facilities Rehabilitation: Upgrading, expanding, and modernizing existing passenger terminals, cargo hangars, and administrative buildings.\nAirside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks."
     },
     "sub_infrastructure_roads_highways_bridges": {
       "title": "Roads, Highways & Bridges",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
+      "image": "/media/1786012566187-roads-highways-bridges.webp",
       "description": "IC manages comprehensive transportation infrastructure programs from ground preparation to final surfacing:",
       "points": "Highway & Urban Road Construction: Grading, paving, and surfacing for multi-lane intercity highways, arterial urban roads, and industrial corridors.\nBridges & Overpasses: Structural execution of reinforced concrete and steel bridges, flyovers, grade-separated interchanges, and pedestrian crossings.\nTraffic & Maintenance Systems: Installation of signage, safety barriers, intelligent transport system (ITS) conduits, and ongoing highway maintenance programs."
     },
@@ -407,7 +407,7 @@
     "about_leadership_5": {
       "name": "Mr. Nedal Mustafa",
       "title": "Executive Leadership",
-      "image": "/media/1786006129792-mr.-nedal-mustafa.webp",
+      "image": "/media/1786171121635-mr.-nedal-mustafa-1.webp",
       "bio": "Technology strategy, digital transformation, and innovation across all project operations."
     },
     "about_leadership_1": {
@@ -506,7 +506,7 @@
     "about_story_full": {
       "eyebrow": "Our Story",
       "title": "A Legacy of Building the World",
-      "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 1990.",
+      "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000.",
       "p2": "Every task Infra Construction took up was executed through hard work and dedication from our team professionals. Possessing all the needed resources is a crucial factor in achieving any project successfully — however, the factor that delivers outstanding results is managing these resources optimally.",
       "p3": "Infra Construction represents the working arm providing professional services in the contracting niche — especially in the infrastructure field — executing according to international codes and project specifications across the UAE, Egypt, Yemen, and Canada.",
       "image": "/media/1782815816981-our_story.webp"
@@ -611,22 +611,22 @@
       "title": "What We Do"
     },
     "about_service_1": {
-      "title": "Construction Services"
+      "title": "Projects Construction"
     },
     "about_service_2": {
-      "title": "Infrastructure Projects"
+      "title": "Procurement & Supply Chain"
     },
     "about_service_3": {
-      "title": "Buildings & Architecture"
+      "title": "Value Engineering & Cost Management"
     },
     "about_service_4": {
-      "title": "Water & Utilities"
+      "title": "Engineering & Detailed Construction Designs"
     },
     "about_service_5": {
-      "title": "Energy & Power"
+      "title": "Projects Construction Management"
     },
     "about_service_6": {
-      "title": "Industrial & Oil Services"
+      "title": "Facilities Management"
     },
     "about_quote": {
       "text": "Engineering integrity, safety, and on-time delivery are non-negotiable. We invest in people, plant, and partnerships that compound over years.",
@@ -1306,28 +1306,28 @@
     "about_leadership_6": {
       "name": "Layal Sahooly",
       "title": "CFO",
-      "image": "/media/1786016093118-03-1-.webp",
+      "image": "/media/1786171030051-layal-sahooly.webp",
       "bio": "Leads the company's financial strategy, budgeting, and overall financial health. Oversees accounting, reporting, cash flow, risk management, and supports key business decisions."
     }
   },
   "media": [
     {
-      "id": "1786016094195",
-      "title": "Layal",
-      "alt": "Layal",
+      "id": "1786171122672",
+      "title": "Mr. Nedal Mustafa 1.webp",
+      "alt": "Mr. Nedal Mustafa 1.webp",
       "category": "gallery",
-      "url": "/media/1786016093118-03-1-.webp",
+      "url": "/media/1786171121635-mr.-nedal-mustafa-1.webp",
       "source": "upload",
-      "createdAt": "2026-08-06T11:34:54.195Z"
+      "createdAt": "2026-08-08T06:38:42.672Z"
     },
     {
-      "id": "1786006130626",
-      "title": "Mr. Nedal Mustafa.webp",
-      "alt": "Mr. Nedal Mustafa.webp",
+      "id": "1786171031032",
+      "title": "Layal Sahooly.webp",
+      "alt": "Layal Sahooly.webp",
       "category": "gallery",
-      "url": "/media/1786006129792-mr.-nedal-mustafa.webp",
+      "url": "/media/1786171030051-layal-sahooly.webp",
       "source": "upload",
-      "createdAt": "2026-08-06T08:48:50.626Z"
+      "createdAt": "2026-08-08T06:37:11.032Z"
     },
     {
       "id": "1786005493945",
@@ -1400,33 +1400,6 @@
       "url": "/media/1785930619033-energy-infrastructure.webp",
       "source": "upload",
       "createdAt": "2026-08-05T11:50:20.058Z"
-    },
-    {
-      "id": "1785930602138",
-      "title": "Roads, Highways & Bridges.webp",
-      "alt": "Roads, Highways & Bridges.webp",
-      "category": "gallery",
-      "url": "/media/1785930601250-roads-highways-bridges.webp",
-      "source": "upload",
-      "createdAt": "2026-08-05T11:50:02.138Z"
-    },
-    {
-      "id": "1785930594843",
-      "title": "Airports.webp",
-      "alt": "Airports.webp",
-      "category": "gallery",
-      "url": "/media/1785930593725-airports.webp",
-      "source": "upload",
-      "createdAt": "2026-08-05T11:49:54.843Z"
-    },
-    {
-      "id": "1785930584557",
-      "title": "Ports & Marine Works.webp",
-      "alt": "Ports & Marine Works.webp",
-      "category": "gallery",
-      "url": "/media/1785930583652-ports-marine-works.webp",
-      "source": "upload",
-      "createdAt": "2026-08-05T11:49:44.557Z"
     },
     {
       "id": "1785930571998",
@@ -1627,15 +1600,6 @@
       "createdAt": "2026-08-05T10:09:49.151Z"
     },
     {
-      "id": "1785924328907",
-      "title": "Roads & Bridges.webp",
-      "alt": "Roads & Bridges.webp",
-      "category": "gallery",
-      "url": "/media/1785924327921-roads-bridges.webp",
-      "source": "upload",
-      "createdAt": "2026-08-05T10:05:28.907Z"
-    },
-    {
       "id": "1785924203794",
       "title": "Built Environment.webp",
       "alt": "Built Environment.webp",
@@ -1780,15 +1744,6 @@
       "createdAt": "2026-07-21T06:22:41.567Z"
     },
     {
-      "id": "1784614916797",
-      "title": "sectore 7",
-      "alt": "sectore 7",
-      "category": "gallery",
-      "url": "/media/1784614915593-project-manegment-belhaf-yemen.png",
-      "source": "upload",
-      "createdAt": "2026-07-21T06:21:56.797Z"
-    },
-    {
       "id": "1784614761798",
       "title": "sectore 3",
       "alt": "sectore 3",
@@ -1832,15 +1787,6 @@
       "url": "/media/1783859084682-we-are-pleased-to-announce-the-start-of-construction-works-for-the-al-wathba-slaughterhouse-cold-sto.webp",
       "source": "upload",
       "createdAt": "2026-07-12T12:24:45.984Z"
-    },
-    {
-      "id": "1783859074143",
-      "title": "news 5",
-      "alt": "news 5",
-      "category": "gallery",
-      "url": "/media/1783859073214-infra-construction-has-successfully-completed-and-delivered-two-residential-plots-in-nad-al-sheba-d.webp",
-      "source": "upload",
-      "createdAt": "2026-07-12T12:24:34.143Z"
     },
     {
       "id": "1783859062113",
@@ -1906,24 +1852,6 @@
       "createdAt": "2026-06-30T10:36:57.896Z"
     },
     {
-      "id": "1782815674576",
-      "title": "location_ahead",
-      "alt": "location_ahead",
-      "category": "gallery",
-      "url": "/media/1782815673567-location_ahead.webp",
-      "source": "upload",
-      "createdAt": "2026-06-30T10:34:34.576Z"
-    },
-    {
-      "id": "1782809289521",
-      "title": "who_we_are",
-      "alt": "who_we_are",
-      "category": "gallery",
-      "url": "/media/1782809288798-who_we_are.webp",
-      "source": "upload",
-      "createdAt": "2026-06-30T08:48:09.521Z"
-    },
-    {
       "id": "1782808760807",
       "title": "about_bg.webp",
       "alt": "Abou Hero",
@@ -1933,60 +1861,6 @@
       "createdAt": "2026-06-30T08:39:20.807Z"
     },
     {
-      "id": "1782641734021",
-      "title": "Eng. Hani",
-      "alt": "Eng. Hani",
-      "category": "gallery",
-      "url": "/media/1782641732043-document-from-ali.png",
-      "source": "upload",
-      "createdAt": "2026-06-28T10:15:34.021Z"
-    },
-    {
-      "id": "1782639551806",
-      "title": "news 6",
-      "alt": "news 6",
-      "category": "gallery",
-      "url": "/media/1782639550767-news-6.webp",
-      "source": "upload",
-      "createdAt": "2026-06-28T09:39:11.806Z"
-    },
-    {
-      "id": "1782639523335",
-      "title": "news 5",
-      "alt": "news 5",
-      "category": "gallery",
-      "url": "/media/1782639522275-news-5.webp",
-      "source": "upload",
-      "createdAt": "2026-06-28T09:38:43.335Z"
-    },
-    {
-      "id": "1782639507640",
-      "title": "news 4",
-      "alt": "news 4",
-      "category": "gallery",
-      "url": "/media/1782639506653-news-4.webp",
-      "source": "upload",
-      "createdAt": "2026-06-28T09:38:27.640Z"
-    },
-    {
-      "id": "1782639493227",
-      "title": "news 3",
-      "alt": "news 3",
-      "category": "gallery",
-      "url": "/media/1782639492444-news-3.webp",
-      "source": "upload",
-      "createdAt": "2026-06-28T09:38:13.227Z"
-    },
-    {
-      "id": "1782639483283",
-      "title": "news 2",
-      "alt": "news 2",
-      "category": "gallery",
-      "url": "/media/1782639482280-news-2.webp",
-      "source": "upload",
-      "createdAt": "2026-06-28T09:38:03.283Z"
-    },
-    {
       "id": "1782639072343",
       "title": "news 2",
       "alt": "news 2",
@@ -1994,15 +1868,6 @@
       "url": "/media/1782639071637-1781529865992.webp",
       "source": "upload",
       "createdAt": "2026-06-28T09:31:12.343Z"
-    },
-    {
-      "id": "1782639051067",
-      "title": "news 1",
-      "alt": "news 1",
-      "category": "gallery",
-      "url": "/media/1782639050032-screenshot-2026-06-28-122302.webp",
-      "source": "upload",
-      "createdAt": "2026-06-28T09:30:51.067Z"
     },
     {
       "id": "1782635478530",
@@ -2030,24 +1895,6 @@
       "url": "/media/1782632769253-3-water-supply-wells-in-the-zone-of-qalansiyah-01.webp",
       "source": "upload",
       "createdAt": "2026-06-28T07:46:10.236Z"
-    },
-    {
-      "id": "1782561705892",
-      "title": "Berbera Airport",
-      "alt": "Berbera Airport",
-      "category": "gallery",
-      "url": "/admin-uploads/1782561704079-berbera-international-airport.png",
-      "source": "upload",
-      "createdAt": "2026-06-27T12:01:45.892Z"
-    },
-    {
-      "id": "1782561607348",
-      "title": "Berbera Airport",
-      "alt": "Berbera Airport",
-      "category": "gallery",
-      "url": "/admin-uploads/1782561606391-berbera-international-airport.jpg",
-      "source": "upload",
-      "createdAt": "2026-06-27T12:00:07.348Z"
     },
     {
       "id": "1782556836409",
