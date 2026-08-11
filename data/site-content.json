@@ -51,7 +51,7 @@
     "sct_built_environment": {
       "title": "Built Environment",
       "slug": "built-environment",
-      "summary": "High-complexity building structures, public architecture, and commercial facilities.",
+      "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities. We manage the entire project lifecycle—from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
       "image": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
       "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings"
@@ -60,7 +60,7 @@
       "title": "Healthcare Infrastructure",
       "image": "/media/1785925875972-healthcare-infrastructure.webp",
       "description": "IC delivers specialized healthcare facilities that meet international standards for medical planning, infection control, and operational efficiency. Our expertise includes hospitals, diagnostic centers, outpatient clinics, and dialysis facilities, supported by advanced MEP systems, medical gas networks, cleanroom environments, and reliable emergency power infrastructure.",
-      "points": "Dialysis Center: Hargeisa Fatima College of Health Sciences (New College of Nursing) – Ajman, UAE"
+      "points": "Dialysis Center: Hargeisa Fatima College of Health Sciences (New College of Nursing) – Ajman, UAE \nNew College of Nursing: (Fatima College of Health Sciences), Ajman - UAE"
     },
     "sub_built_environment_educational_facilities": {
       "title": "Educational Facilities",
@@ -95,7 +95,7 @@
     "sct_infrastructure": {
       "title": "Infrastructure",
       "slug": "infrastructure",
-      "summary": "Water and wastewater systems, dams and irrigation, ports and marine works, airports, roads and bridges, and energy and power infrastructure.",
+      "summary": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "image": "/media/1785926802002-roads-bridges.webp",
       "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
@@ -196,6 +196,7 @@
       "heading": "Since 2000, INFRA Construction has delivered 75+ projects across the Middle East, Africa, and beyond — from highways and dams to power plants and industrial facilities.",
       "cert1": "ISO 9001",
       "cert2": "ISO 14001",
+      "cert3": "ISO 45001",
       "linkText": "Our Story"
     },
     "home_sectors_header": {
@@ -657,7 +658,6 @@
       "desc": "Environmental management system demonstrating our commitment to sustainable construction practices.",
       "items": "Environmental impact assessment, waste management, pollution prevention, sustainability compliance"
     },
-
     "about_mgmtsys_3": {
       "code": "ISO 45001",
       "title": "Occupational Health & Safety",
@@ -1155,6 +1155,7 @@
       "cert1Title": "Quality Management",
       "cert2Code": "ISO 14001",
       "cert2Title": "Environmental Management",
+      "cert3Code": "ISO 45001",
       "cert3Title": "Health & Safety"
     },
     "contact_cta": {
