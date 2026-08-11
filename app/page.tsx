@@ -4,7 +4,7 @@ import ContentText from "../components/admin-panel/ContentText";
 import MediaImage from "../components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "../lib/getContent";
 import { resolveServices, resolveSectors } from "../lib/expertise";
-import ExpertiseCard from "../components/ExpertiseCard";
+import SectorCardWide from "../components/SectorCardWide";
 import OfficesMap from "../components/OfficesMap";
 import { Reveal, Counter } from "../components/motion";
 
@@ -146,6 +146,9 @@ export default async function HomePage() {
                 <span className="border border-[#1F93A4] text-[#1F93A4] text-[10px] font-bold tracking-[0.25em] px-3 py-1.5" style={{ fontFamily: B }}>
                   <ContentText section="home_statement" name="cert2" fallback="ISO 14001" />
                 </span>
+                  <span className="border border-[#1F93A4] text-[#1F93A4] text-[10px] font-bold tracking-[0.25em] px-3 py-1.5" style={{ fontFamily: B }}>
+                  <ContentText section="home_statement" name="cert3" fallback="ISO 45001" />
+                </span>
                 <Link
                   href="/about"
                   className="inline-flex items-center gap-2 text-[#213B4D] text-[12px] font-bold tracking-widest hover:text-[#1F93A4] transition-colors"
@@ -191,10 +194,12 @@ export default async function HomePage() {
               </Link>
             </div>
           </Reveal>
-          {/* Two pillars — a wide two-up rather than the 4-col service grid. */}
+          {/* Two pillars — wide horizontal cards rather than the 4-col service grid. */}
           <div className="grid gap-6 sm:grid-cols-2">
             {sectorItems.map((s, i) => (
-              <ExpertiseCard key={s.slug} item={s} base="/sectors" index={i} />
+              <Reveal key={s.slug} delay={i * 0.08}>
+                <SectorCardWide item={s} />
+              </Reveal>
             ))}
           </div>
         </div>
