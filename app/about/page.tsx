@@ -314,7 +314,7 @@ export default async function AboutPage() {
               <MediaImage
                 category="about_leadership_founder"
                 title="about_leadership_founder_image"
-                fallbackSrc="/media/FOUNDER OF HS GROUP - Mr. Hani Sahooly photo.png"
+                fallbackSrc="/media/FOUNDER OF Infra Construction - Mr. Hani Sahooly photo.png"
                 alt="Mr. Hany El-Sahooly — Founder & CEO"
                 className="object-cover object-top w-full h-full absolute inset-0"
               />
