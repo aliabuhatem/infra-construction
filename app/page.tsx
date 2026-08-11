@@ -56,7 +56,18 @@ export default async function HomePage() {
             </div>
           </Reveal>
 
-          
+          <Reveal delay={0.1}>
+            <h1
+              className="text-white leading-[0.95] mb-0"
+              style={{ fontFamily: B, fontSize: "clamp(30px, 6.5vw, 70px)", fontWeight: 700, letterSpacing: "-0.01em" }}
+            >
+              <ContentText section="home_hero" name="headlineLine1" fallback="Building A" /><br />
+              <span className="text-[#1F93A4]">
+                <ContentText section="home_hero" name="headlineLine2" fallback="Better" />
+              </span><br />
+              <ContentText section="home_hero" name="headlineLine3" fallback="Tomorrow" />
+            </h1>
+          </Reveal>
 
           <Reveal delay={0.2}>
             <div className="mt-7 pt-6 border-t border-white/15 max-w-2xl">
