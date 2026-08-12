@@ -106,47 +106,54 @@
       "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
     },
-    "sub_infrastructure_water__wastewater_management": {
+    "sub_infrastructure_water_wastewater_management": {
       "title": "Water & Wastewater Management",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+      "image": "/media/1785930549947-water-wastewater-management.webp",
       "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
-      "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
+      "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks.",
+      "projects": "Soum, Asba and Assem Water Supply Network Project\nFive Water Supply Wells and water transitions line, Qalansiyah and Hadibo\nInfrastructure for Sheikh Khalifa Housing Project, (204) Housing Units, Tarim Hadramout, Yemen\nInfrastructure for Sheikh Khalifa Housing Project, Housing Units, Al Mukalla Hadramout, Yemen\nAl Saad Villas, Al Ain — UAE\nAl-Attiyat Al-Bahariya Wastewater Treatment Plant in Abnoub — Hayah Kareema\nBassra Wastewater Treatment Plan\nIndustrial Zone Sewerage System in Arab El A’wamer\nSewerage System for 14 Villages in Abnoub\nCivil works and material supply, sewage network for 13 villages, Manfalut — Egypt"
     },
     "sub_infrastructure_dams_irrigation": {
       "title": "Dams and Irrigation",
       "image": "/media/1785927072644-dams-and-irrigations.webp",
       "description": "To combat water scarcity and support agricultural development in arid regions, IC constructs water retention and diversion infrastructure:",
-      "points": "Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates."
+      "points": "Engineering earth-fill, rock-fill, and concrete dams for flood control, stormwater management, and strategic water storage.\nIrrigation Networks: Designing and installing primary and secondary irrigation canals, pressurized water distribution pipes, agricultural pumping stations, and control gates.",
+      "projects": "Beryan Dam Project, Yemen\nNew Assiut Barrage\nAl-Dhaytayn Dam Project\nAl-Lafag Dam Project"
     },
     "sub_infrastructure_ports_marine_works": {
       "title": "Ports & Marine Works",
       "image": "/media/1784614760728-qana-port-shabwah-yemen.png",
       "description": "IC delivers specialized marine construction and coastal engineering solutions:",
-      "points": "Port Facilities: Construction of commercial fishing ports, cargo handling quays, and vessel berth infrastructures.\nCoastal Protection: Fabrication and placement of marine breakwaters, riprap slope protection, and shoreline stabilization systems.\nFloating & Fixed Structures: Engineering floating pontoon systems, concrete jetties, and marine access walkways."
+      "points": "Port Facilities: Construction of commercial fishing ports, cargo handling quays, and vessel berth infrastructures.\nCoastal Protection: Fabrication and placement of marine breakwaters, riprap slope protection, and shoreline stabilization systems.\nFloating & Fixed Structures: Engineering floating pontoon systems, concrete jetties, and marine access walkways.",
+      "projects": "Breakwater and Fixed Pier, Aden — Yemen\nAngoche Fishing Port — Mozambique\nMarine Breakwater Project — Socotra"
     },
     "sub_infrastructure_airports": {
       "title": "Airports",
       "image": "/media/1785926749442-airports.webp",
       "description": "We support civil aviation authorities and airport operators with specialized airside and landside construction services:",
-      "points": "Facilities Rehabilitation: Upgrading, expanding, and modernizing existing passenger terminals, cargo hangars, and administrative buildings.\nAirside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks."
+      "points": "Facilities Rehabilitation: Upgrading, expanding, and modernizing existing passenger terminals, cargo hangars, and administrative buildings.\nAirside Infrastructure: Civil works for runway expansions, taxiway overlays, apron pavements, and specialized drainage networks.",
+      "projects": "Berbera International Airport, Somaliland\nRehabilitation and Expansion of Al Riyan Airport, Hadramout — Yemen\nSalah Alden Airport, Aden — Yemen"
     },
     "sub_infrastructure_roads_highways_bridges": {
       "title": "Roads, Highways & Bridges",
       "image": "/media/1786012566187-roads-highways-bridges.webp",
       "description": "IC manages comprehensive transportation infrastructure programs from ground preparation to final surfacing:",
-      "points": "Highway & Urban Road Construction: Grading, paving, and surfacing for multi-lane intercity highways, arterial urban roads, and industrial corridors.\nBridges & Overpasses: Structural execution of reinforced concrete and steel bridges, flyovers, grade-separated interchanges, and pedestrian crossings.\nTraffic & Maintenance Systems: Installation of signage, safety barriers, intelligent transport system (ITS) conduits, and ongoing highway maintenance programs."
+      "points": "Highway & Urban Road Construction: Grading, paving, and surfacing for multi-lane intercity highways, arterial urban roads, and industrial corridors.\nBridges & Overpasses: Structural execution of reinforced concrete and steel bridges, flyovers, grade-separated interchanges, and pedestrian crossings.\nTraffic & Maintenance Systems: Installation of signage, safety barriers, intelligent transport system (ITS) conduits, and ongoing highway maintenance programs.",
+      "projects": "Bani Mazar Bridge\nWest Assiut Plateau Road\nFacilities 1304 Feddans, Assiut\nArabco Projects — Cairo, Egypt\nNew Road Links Sheikh Khalifa Road from Maleha Area through Al-Madam to Al Showaib Area (Phase 3), from Sharjah Border to Al-Showaib Roundabout Area at Al Ain — UAE\nAl Gazal wal Naseej and Cairo Intersection and Bridges\nAs-Suwayda — Wadi Al Zubayrah Road 2.4 M Project\nAl-Zarbi Road — Hayfan — Taiz\nZy Al-Barh Al-Sarari Road — Lower Section\nAl Saad Villas — Al Ain, UAE"
     },
     "sub_infrastructure_energy_infrastructure": {
       "title": "Energy Infrastructure",
       "image": "/media/1785930619033-energy-infrastructure.webp",
       "description": "We execute civil works and structural installations for conventional and renewable energy developments:",
-      "points": "Renewable Energy Integration: Site preparation, foundation civil engineering, and structural installations for solar PV parks and utility-scale renewable facilities.\nSustainable Power Assets: Civil infrastructure for clean energy plants and industrial energy recovery systems."
+      "points": "Renewable Energy Integration: Site preparation, foundation civil engineering, and structural installations for solar PV parks and utility-scale renewable facilities.\nSustainable Power Assets: Civil infrastructure for clean energy plants and industrial energy recovery systems.",
+      "projects": ""
     },
     "sub_infrastructure_power_generation_distribution": {
       "title": "Power Generation & Distribution",
       "image": "/media/1785930633240-power-generation-distribution.webp",
       "description": "IC supports national power grids through heavy power plant engineering and distribution network execution:",
-      "points": "Power Generation Facilities: Civil works, equipment foundations, and structural framing for thermal, steam, and gas turbine power stations.\nSubstations & Grid Connection: Construction of high-voltage indoor and outdoor substations, including transformer pads, control buildings, and switchyards.\nTransmission & Distribution Networks: Installation of overhead transmission line towers, underground high-voltage cabling networks, and regional distribution grids."
+      "points": "Power Generation Facilities: Civil works, equipment foundations, and structural framing for thermal, steam, and gas turbine power stations.\nSubstations & Grid Connection: Construction of high-voltage indoor and outdoor substations, including transformer pads, control buildings, and switchyards.\nTransmission & Distribution Networks: Installation of overhead transmission line towers, underground high-voltage cabling networks, and regional distribution grids.",
+      "projects": "Construction & Operation of Power Plant, Hadibo\nConstruction & Operation of Power Plant, Qalansiyah\nCivil works for Power Plant in Alhaswa Power Station, Aden\nAl Saad Villas — Al Ain, UAE"
     },
     "svc_hub": {
       "eyebrow": "Our Expertise",
@@ -786,13 +793,13 @@
       "buttonText": "Contact Our Team"
     },
     "project_1": {
-      "slug": "al-attiyat-al-bahariya-wastewater",
       "title": "Al-Attiyat Al-Bahariya Wastewater Treatment Plant",
       "country": "Abnoub, Egypt",
       "sector": "Infrastructure",
       "type": "Excavation / Earthworks",
-      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "description": "Excavation, backfilling and earthworks for the Hayah Kareema wastewater treatment plant at Abnoub, Egypt.",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
+      "slug": "al-attiyat-al-bahariya-wastewater",
       "client": "Hayah Kareema Foundation",
       "role": "Subcontractor",
       "principalContractor": "The Arab Contractors – Osman Ahmed Osman & Co.",
@@ -810,13 +817,13 @@
       "h4": "Cement block structures: 744 m³"
     },
     "project_2": {
-      "slug": "bani-mazar-bridge",
       "title": "Bani Mazar Bridge",
       "country": "Egypt",
       "sector": "Infrastructure",
       "type": "Earthworks / Subgrade",
-      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
       "description": "Supply and placement of clean fill and subgrade maintenance for the Bani Mazar bridge crossing in Egypt.",
+      "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
+      "slug": "bani-mazar-bridge",
       "client": "GARB – General Authority for Roads, Bridges & Land Transport",
       "role": "Subcontractor",
       "principalContractor": "The Arab Contractors – Osman Ahmed Osman & Co.",
@@ -831,13 +838,13 @@
       "h2": "Maintenance of subgrade: 100,000 m²"
     },
     "project_3": {
-      "slug": "bassra-wastewater-treatment-plan",
       "title": "Bassra Wastewater Treatment Plant",
       "country": "Egypt",
       "sector": "Infrastructure",
       "type": "Excavation / Earthworks",
-      "image": "/media/water-basra-wastewater-treatment-egypt.webp",
       "description": "Excavation, backfilling and site preparation for the Hayah Kareema wastewater treatment plant at Bassra, Egypt.",
+      "image": "/media/water-basra-wastewater-treatment-egypt.webp",
+      "slug": "bassra-wastewater-treatment-plan",
       "client": "Hayah Kareema Foundation",
       "role": "Subcontractor",
       "principalContractor": "The Arab Contractors – Osman Ahmed Osman & Co.",
@@ -854,13 +861,13 @@
       "h3": "Mechanical excavation works: 19,325 m³"
     },
     "project_5": {
-      "slug": "berbera-international-airport",
       "title": "Berbera International Airport — Terminal Refurbishment",
       "country": "Berbera, Somaliland",
       "sector": "Infrastructure",
       "type": "Refurbishment / Rehabilitation",
-      "image": "/media/1785924588103-berbera-international-airport.webp",
       "description": "Complete rehabilitation of Berbera International Airport — passenger terminal, control tower, security fencing and supporting infrastructure.",
+      "image": "/media/1785924588103-berbera-international-airport.webp",
+      "slug": "berbera-international-airport",
       "client": "Berbera International Airport Company",
       "role": "Main Contractor",
       "year": "2022 – 2024",
@@ -879,13 +886,13 @@
       "h6": "GRP tank installation: 108 m³; water filtration rated for 200 people per day"
     },
     "project_7": {
-      "slug": "new-assiut-barrage",
       "title": "New Assiut Barrage",
       "country": "Assiut, Egypt",
       "sector": "Infrastructure",
       "type": "Earthworks",
-      "image": "/media/1782633413952-new-assiut-barrage-01.webp",
       "description": "Bulk earthmoving for the New Assiut Barrage on the Nile — 6.5 million m³ of material loaded, moved and offloaded.",
+      "image": "/media/1782633413952-new-assiut-barrage-01.webp",
+      "slug": "new-assiut-barrage",
       "client": "Ministry of Water Resources and Irrigation",
       "role": "Subcontractor",
       "principalContractor": "The Arab Contractors – Osman Ahmed Osman & Co.",
@@ -899,13 +906,13 @@
       "h1": "6,500,000 m³ of material loaded, moved and offloaded"
     },
     "project_8": {
-      "slug": "sheikh-khalifa-housing-204-units",
       "title": "Infrastructure for Sheikh Khalifa Housing Project — 204 Housing Units",
       "country": "Hadramout, Yemen",
       "sector": "Building",
       "type": "Infrastructure Design & Construction",
-      "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.webp",
       "description": "Design and construction of the road, water, wastewater and solar power networks serving the 204-unit Sheikh Khalifa housing project in Hadramout, Yemen.",
+      "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.webp",
+      "slug": "sheikh-khalifa-housing-204-units",
       "client": "Emirates Red Crescent",
       "role": "Main Contractor",
       "year": "2016 – 2018",
@@ -921,13 +928,13 @@
       "h6": "Solar power network: 204 units at 250 watts each"
     },
     "project_9": {
-      "slug": "assiut-university-buildings",
       "title": "Assiut University Buildings",
       "country": "Assiut, Egypt",
       "sector": "Building",
       "type": "Construction",
-      "image": "/media/buildings-social-housing-assiut-egypt.webp",
       "description": "Structural and building works across the Emergency Centre, Dentistry College and Oncology Institute at Assiut University, Egypt.",
+      "image": "/media/buildings-social-housing-assiut-egypt.webp",
+      "slug": "assiut-university-buildings",
       "client": "Assiut University",
       "role": "Main Contractor",
       "year": "2013 – 2015",
@@ -941,13 +948,13 @@
       "h1": "8,000 m³ of supply and building works"
     },
     "project_10": {
-      "slug": "west-assiut-plateau-road",
       "title": "West Assiut Plateau Road",
       "country": "Assiut, Egypt",
       "sector": "Infrastructure",
       "type": "Excavation / Roadworks",
-      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp",
       "description": "Excavation, backfilling, site preparation and pitching works for the West Assiut Plateau road corridor in Egypt.",
+      "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp",
+      "slug": "west-assiut-plateau-road",
       "client": "GARB – General Authority for Roads, Bridges & Land Transport",
       "role": "Subcontractor",
       "principalContractor": "The Arab Contractors – Osman Ahmed Osman & Co.",
@@ -965,13 +972,13 @@
       "h4": "Concrete-pipe works: 2,000 m³"
     },
     "project_13": {
-      "slug": "implementation-of-the-ministry-of-foreign-affairs-building",
       "title": "Ministry of Foreign Affairs Building — Aden",
       "country": "Aden, Yemen",
       "sector": "Building",
       "type": "Government Buildings",
-      "image": "/media/buildings-ministry-foreign-aden-yemen.webp",
       "description": "Construction of the Ministry of Foreign Affairs complex in Aden — a three-storey main building with separate Consular and Protocol Affairs buildings.",
+      "image": "/media/buildings-ministry-foreign-aden-yemen.webp",
+      "slug": "implementation-of-the-ministry-of-foreign-affairs-building",
       "client": "Ministry of Foreign Affairs, Yemen",
       "role": "Main Contractor",
       "year": "2019 – 2023",
@@ -982,6 +989,30 @@
       "p1": "The site is at Khormaksar, Aden, opposite Aden International Airport on the main road linking the airport's main gate to the Al-Arish area.",
       "h1": "Total land area: 3,280 m²",
       "h2": "Built-up area: 2,920 m²"
+    },
+    "project_15": {
+      "title": "Mohamed V. University",
+      "country": "Ajman, UAE",
+      "sector": "Building",
+      "type": "Education",
+      "description": "University project in Ajman, UAE.",
+      "image": ""
+    },
+    "project_16": {
+      "title": "New College of Nursing — Fatima College of Health Sciences",
+      "country": "Ajman, UAE",
+      "sector": "Building",
+      "type": "Education",
+      "description": "New college of nursing building for Fatima College of Health Sciences.",
+      "image": "/media/1786018332496-new-college-of-nursing-fatima-college-of-health-sciences-location-a.webp"
+    },
+    "project_17": {
+      "title": "Private Residential Complex",
+      "country": "Dubai, UAE",
+      "sector": "Building",
+      "type": "Residential",
+      "description": "Private residential complex in Dubai, UAE.",
+      "image": "/media/buildings-residential-complex-dubai.webp"
     },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
@@ -1278,14 +1309,14 @@
       "logoDark": "/media/1782904914470-infra-logo.png",
       "favicon": "/favicon.ico"
     },
-    "sub_infrastructure_Infrastructure": {
-      "title": "Infrastructure",
-      "image": "/media/1785930549947-water-wastewater-management.webp",
+    "sub_infrastructure_water__wastewater_management": {
+      "title": "Water & Wastewater Management",
+      "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
       "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
     },
-    "sub_infrastructure_water_wastewater_management": {
-      "title": "Water & Wastewater Management",
+    "sub_infrastructure_Infrastructure": {
+      "title": "Infrastructure",
       "image": "/media/1785930549947-water-wastewater-management.webp",
       "description": "IC implements complete water lifecycle engineering solutions. Our operational scope includes:",
       "points": "Wastewater Treatment & Collection: Construction of municipal sewage treatment plants (STPs), pumping stations, trunk sewers, and deep gravity collection networks.\nMarine Outfalls & Treatment: Engineering marine water treatment systems and coastal discharge infrastructure designed to protect marine ecosystems.\nWater Reuse & Conservation: Development of tertiary treatment systems, industrial effluent recycling facilities, and non-revenue water (NRW) reduction networks."
@@ -1409,33 +1440,18 @@
       "title": "CFO",
       "image": "/media/1786171030051-layal-sahooly.webp",
       "bio": "Leads the company's financial strategy, budgeting, and overall financial health. Oversees accounting, reporting, cash flow, risk management, and supports key business decisions."
-    },
-    "project_15": {
-      "title": "Mohamed V. University",
-      "country": "Ajman, UAE",
-      "sector": "Building",
-      "type": "Education",
-      "description": "University project in Ajman, UAE.",
-      "image": ""
-    },
-    "project_16": {
-      "title": "New College of Nursing — Fatima College of Health Sciences",
-      "country": "Ajman, UAE",
-      "sector": "Building",
-      "type": "Education",
-      "description": "New college of nursing building for Fatima College of Health Sciences.",
-      "image": "/media/1786018332496-new-college-of-nursing-fatima-college-of-health-sciences-location-a.webp"
-    },
-    "project_17": {
-      "title": "Private Residential Complex",
-      "country": "Dubai, UAE",
-      "sector": "Building",
-      "type": "Residential",
-      "description": "Private residential complex in Dubai, UAE.",
-      "image": "/media/buildings-residential-complex-dubai.webp"
     }
   },
   "media": [
+    {
+      "id": "1786529706253",
+      "title": "Mohamed V. University",
+      "alt": "Mohamed V. University",
+      "category": "gallery",
+      "url": "/media/1786529705375-mohamed-v.-university-ajman-uae-2.webp",
+      "source": "upload",
+      "createdAt": "2026-08-12T10:15:06.253Z"
+    },
     {
       "id": "1786171122672",
       "title": "Mr. Nedal Mustafa 1.webp",
