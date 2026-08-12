@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Expertise } from "@/lib/expertise";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
+import WorkProjectCard, { type WorkProject } from "@/components/WorkProjectCard";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -10,11 +11,14 @@ interface Props {
   item: Expertise;
   kind: "service" | "sector";
   related: Expertise[];
+  /* Work delivered in this sector, picked by the caller. Empty on service
+     pages, which have no category of their own to select against. */
+  projects?: WorkProject[];
 }
 
 /* Rich, animated detail page shared by /services/[slug] and /sectors/[slug]. */
 
-export default function ExpertiseDetail({ item, kind, related }: Props) {
+export default function ExpertiseDetail({ item, kind, related, projects = [] }: Props) {
   const subsectors = item.subsectors ?? [];
   /* The rail is two different things wearing one layout: a table of contents
      on a sector page, an inert capability list on a service page. Only the
@@ -24,6 +28,11 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
   const rail: { label: string; href?: string }[] = isNav
     ? subsectors.map((s) => ({ label: s.title, href: `#${s.slug}` }))
     : item.capabilities.map((c) => ({ label: c }));
+  /* The rail runs as two side-by-side columns filled top-to-bottom (1–3 left,
+     4–6 right), which is what keeps the box wide rather than tall. Below four
+     rows a split would leave two lonely columns, so short rails stay single. */
+  const railTwoCol = rail.length >= 4;
+  const railRows = Math.ceil(rail.length / 2);
   const base = kind === "service" ? "/services" : "/sectors";
   const hubLabel = kind === "service" ? "Services" : "Sectors";
   const kicker = kind === "service" ? "Our Services" : "Our Sectors";
@@ -88,7 +97,12 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
           {/* Overview — hidden until the item has copy, so a newly added
               sector doesn't render a heading over nothing. */}
           {item.description.length > 0 && (
-          <div className={item.capabilities.length > 0 ? "lg:col-span-7" : "lg:col-span-12"}>
+          /* The copy column yields the wider half to the quote box beside it:
+             the box carries two columns of rows and needs the room, while the
+             paragraphs read better at a narrower measure anyway. Keyed off
+             `rail` rather than `capabilities` so a sector whose rows come from
+             its subsectors still gets the split. */
+          <div className={rail.length > 0 ? "lg:col-span-5" : "lg:col-span-12"}>
             <Reveal>
               <div className="mb-5 flex items-center gap-3">
                 <span className="h-[2px] w-8 bg-[#1F93A4]" />
@@ -121,7 +135,7 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
               the item has subsectors this doubles as a jump list into the
               sections below, rather than repeating their titles inertly. */}
           {rail.length > 0 && (
-          <div className={item.description.length > 0 ? "lg:col-span-5" : "lg:col-span-12"}>
+          <div className={item.description.length > 0 ? "lg:col-span-7" : "lg:col-span-12"}>
             {/* Pinned only when the rows actually go somewhere: on a sector
                 page this is a table of contents and earns its keep by staying
                 in view while the subsectors scroll past. `top-32` matches the
@@ -132,15 +146,29 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                 it: sticky needs a containing block taller than the element,
                 and only this grid column gets stretched to the row height. */}
             <Reveal direction="left" className={isNav ? "lg:sticky lg:top-32" : undefined}>
-              <div className="relative overflow-hidden rounded-xl bg-[#0d1e28] p-8 ring-1 ring-white/10">
+              {/* Pull-quote treatment: the teal spine down the left edge and the
+                  oversized glyph behind the header turn what was a plain list
+                  card into a callout, without introducing a colour the page
+                  doesn't already use. */}
+              <div className="relative overflow-hidden rounded-2xl border-l-[3px] border-[#1F93A4] bg-[#0d1e28] p-8 shadow-[0_28px_60px_-32px_rgba(13,30,40,0.9)] ring-1 ring-white/10 sm:p-10">
                 {/* Depth without a second colour — one soft teal bloom off the
                     corner, under the content. */}
                 <span
                   aria-hidden
                   className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#1F93A4]/25 blur-3xl"
                 />
+                {/* Watermark quote mark. Bleeds off the top edge (the box clips
+                    it) so it reads as a texture behind the label rather than a
+                    character sitting in the layout. */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute -top-14 left-3 select-none text-[150px] leading-none text-[#1F93A4]/20"
+                  style={{ fontFamily: H }}
+                >
+                  &ldquo;
+                </span>
 
-                <div className="relative mb-5 flex items-center gap-3">
+                <div className="relative mb-6 flex items-center gap-3">
                   <span className="h-[2px] w-6 bg-[#1F93A4]" />
                   <span className="text-[11px] font-bold tracking-[0.32em] text-[#1F93A4]" style={{ fontFamily: B }}>
                     {isNav ? "In This Sector" : "Capabilities"}
@@ -152,7 +180,20 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                   </span>
                 </div>
 
-                <Stagger as="ul" className="relative list-none p-0">
+                {/* One list, two columns: `grid-flow-col` over an explicit row
+                    count fills the left column before starting the right, so
+                    reading order still matches the numbering. The row count is
+                    derived from the list length, which Tailwind can't express
+                    as a static class — hence the inline `gridTemplateRows`. It
+                    is inert until the `sm:grid` kicks in, so the stacked mobile
+                    layout is unaffected. */}
+                <Stagger
+                  as="ul"
+                  className={`relative flex list-none flex-col p-0${
+                    railTwoCol ? " sm:grid sm:grid-flow-col sm:gap-x-10" : ""
+                  }`}
+                  style={railTwoCol ? { gridTemplateRows: `repeat(${railRows}, auto)` } : undefined}
+                >
                   {rail.map((row, i) => {
                     /* Squared badge rather than the old filled circle: it
                        echoes the `num` chip in the hero, and a column of six
@@ -181,8 +222,22 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                       /* Symmetric py + the divider on the <li>: the old
                          `space-y-3` with `pb-3` left each rule 12px under its
                          own row but 12px clear of the next, so it read as
-                         attached to the wrong item. */
-                      <StaggerItem as="li" key={i} className="border-b border-white/10 last:border-0">
+                         attached to the wrong item.
+
+                         `last:border-0` alone would leave a rule dangling under
+                         the foot of the left column, so the bottom row of each
+                         column drops its divider explicitly. */
+                      <StaggerItem
+                        as="li"
+                        key={i}
+                        className={
+                          i === rail.length - 1
+                            ? undefined
+                            : railTwoCol && i === railRows - 1
+                              ? "border-b border-white/10 sm:border-0"
+                              : "border-b border-white/10"
+                        }
+                      >
                         {row.href ? (
                           <a href={row.href} className="group flex items-center gap-3.5 py-3.5">
                             {index}
@@ -377,6 +432,49 @@ export default function ExpertiseDetail({ item, kind, related }: Props) {
                     </Reveal>
                   )}
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── PROJECTS ──────────────────────────────────────────────────────── */}
+      {/* Same eyebrow, heading rhythm and card as the home page's Our Work
+          block, and the same selection rule (the first entries in the admin
+          panel's order), so the strip reads as that section scoped to one
+          sector rather than a second, competing project treatment. */}
+      {projects.length > 0 && (
+        <section className="border-t border-[#213B4D]/8 bg-white py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-14">
+            <Reveal>
+              <div className="mb-12 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+                <div>
+                  <p className="mb-3 text-[11px] font-bold tracking-[0.35em] text-[#F2613C]" style={{ fontFamily: B }}>
+                    Our Work
+                  </p>
+                  <h2
+                    className="leading-tight text-[#213B4D]"
+                    style={{ fontFamily: H, fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, letterSpacing: "-0.01em" }}
+                  >
+                    {item.title} Projects
+                  </h2>
+                </div>
+                <Link
+                  href="/projects"
+                  className="group flex shrink-0 items-center gap-2 text-[12px] font-bold tracking-widest text-[#213B4D]/70 transition-colors hover:text-[#1F93A4]"
+                  style={{ fontFamily: B }}
+                >
+                  View All Featured Projects{" "}
+                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                </Link>
+              </div>
+            </Reveal>
+
+            <div className="grid gap-6 lg:grid-cols-3">
+              {projects.map((p, i) => (
+                <Reveal key={p.sectionKey} delay={i * 0.08} className="h-full">
+                  <WorkProjectCard project={p} />
+                </Reveal>
               ))}
             </div>
           </div>

@@ -10,6 +10,14 @@ import { Reveal } from "@/components/motion";
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 
+/* The page keeps its /projects URL — only the label changed — so no redirect is
+   needed and every existing inbound link and its ranking survive intact. */
+export const metadata = {
+  title: "Featured Projects | INFRA Construction",
+  description:
+    "Featured projects delivered by INFRA Construction across infrastructure and building sectors in the Middle East, Africa, and beyond.",
+};
+
 export default async function ProjectsPage({
   searchParams,
 }: {
@@ -42,7 +50,7 @@ export default async function ProjectsPage({
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
-        <MediaImage category="projects_hero" title="backgroundImage" fallbackSrc="/media/project-hero.webp" alt="Our Projects" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <MediaImage category="projects_hero" title="backgroundImage" fallbackSrc="/media/project-hero.webp" alt="Featured Projects" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#213B4D]/72 to-[#213B4D]/42" />
         <Reveal className="relative z-10 max-w-7xl mx-auto px-6 lg:px-14 pb-16 w-full text-shadow-legible">
           <div className="flex items-center gap-3 mb-4">
@@ -52,7 +60,7 @@ export default async function ProjectsPage({
             </p>
           </div>
           <h1 className="text-white  leading-[0.92] mb-5" style={{ fontFamily: H, fontSize: "clamp(52px, 8vw, 100px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-            <ContentText section="projects_hero" name="title" fallback="Projects" />
+            <ContentText section="projects_hero" name="title" fallback="Featured Projects" />
           </h1>
           <p className="text-white/85 text-[15px] max-w-xl leading-relaxed" style={{ fontFamily: B }}>
             <ContentText section="projects_hero" name="subtitle" fallback="Over 75 projects delivered across multiple regions — each one a testament to INFRA's commitment to quality." />
@@ -65,7 +73,7 @@ export default async function ProjectsPage({
         <div className="max-w-7xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em] " style={{ fontFamily: B }}>
           <Link href="/" className="text-[#5E5E5E] hover:text-[#1F93A4] transition-colors">Home</Link>
           <span className="text-[#213B4D]/25">›</span>
-          <span className="text-[#1F93A4] font-semibold">Projects</span>
+          <span className="text-[#1F93A4] font-semibold">Featured Projects</span>
         </div>
       </div>
 

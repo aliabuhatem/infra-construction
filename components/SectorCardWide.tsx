@@ -13,15 +13,18 @@ export default function SectorCardWide({ item }: { item: Expertise }) {
   return (
     <Link
       href={`/sectors/${item.slug}`}
-      className="group flex w-full flex-col items-center rounded-lg border border-[#213B4D]/10 bg-[#f6f8f9] p-6 shadow-xs transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)] md:flex-row md:items-stretch"
+      className="group flex w-full flex-col items-center rounded-lg border border-[#213B4D]/10 bg-[#f6f8f9] p-6 shadow-xs transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)] md:flex-row md:items-center"
     >
-      <div className="relative mb-4 h-64 w-full shrink-0 overflow-hidden rounded-lg md:mb-0 md:h-auto md:w-48 md:self-stretch">
+      {/* Fixed 1:1 box. Stretching the photo to the card's height (the old
+          `md:h-auto md:self-stretch`) made it as tall as whatever copy sat
+          beside it, so the crop changed from card to card. */}
+      <div className="relative mb-4 aspect-square w-full shrink-0 overflow-hidden rounded-lg md:mb-0 md:w-56">
         <Image
           src={item.image}
           alt={item.title}
           fill
           className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]"
-          sizes="(max-width: 768px) 100vw, 192px"
+          sizes="(max-width: 768px) 100vw, 224px"
         />
         <span
           className="absolute left-3 top-2 text-[22px] font-bold leading-none text-white/85"

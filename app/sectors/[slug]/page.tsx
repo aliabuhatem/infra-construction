@@ -2,6 +2,7 @@ import { notFound, permanentRedirect } from "next/navigation";
 import ExpertiseDetail from "@/components/ExpertiseDetail";
 import { resolveBySlug, resolveSectors, redirectSlugFor, LEGACY_SECTOR_PATHS } from "@/lib/expertise";
 import { getContent } from "@/lib/getContent";
+import { resolveProjects, projectsInCategory, categoryForSector } from "@/lib/projects";
 
 // Sectors added in the admin panel *after* a build aren't in generateStaticParams,
 // so they must be allowed to render on demand instead of 404ing.
@@ -41,5 +42,21 @@ export default async function SectorDetailPage({ params }: { params: Promise<{ s
     .filter((s) => s.slug !== slug)
     .slice(0, 4);
 
-  return <ExpertiseDetail item={item} kind="sector" related={related} />;
+  /* Three projects from this pillar for the strip at the foot of the page.
+     Keyed off the sector's built-in slug rather than its (renameable) title,
+     and empty for any sector outside the two pillars, which then renders the
+     page exactly as before. */
+  const category = categoryForSector(item.slug) ?? categoryForSector(item.title);
+  const projects = category
+    ? projectsInCategory(resolveProjects(c), category).map((p) => ({
+        sectionKey: p.sectionKey,
+        href: `/projects/${p.slug}`,
+        title: p.title,
+        country: p.country,
+        type: p.type,
+        image: p.image,
+      }))
+    : [];
+
+  return <ExpertiseDetail item={item} kind="sector" related={related} projects={projects} />;
 }

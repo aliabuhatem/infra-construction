@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
+import { categoryOf, countryOf } from "@/lib/projects";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -27,27 +28,10 @@ const CATEGORIES: { key: CategoryKey; label: string }[] = [
   { key: "building", label: "Building" },
 ];
 
-// Map a project's free-form `sector` value onto a filter category.
-// Handles inconsistencies in the data such as trailing spaces
-// ("Infrastructure ") and singular/plural ("Building" / "Buildings").
-function categoryOf(sector: string): CategoryKey | "other" {
-  const n = (sector || "").trim().toLowerCase();
-  if (n.startsWith("infra")) return "infrastructure";
-  if (n.startsWith("build")) return "building";
-  return "other";
-}
-
-// Normalise messy country values ("Cairo, Egypt", "Socotra - Yemen",
-// " Somaliland") onto a single canonical country name so the filter stays clean.
-function countryOf(raw: string): string {
-  const n = (raw || "").toLowerCase();
-  if (n.includes("yemen")) return "Yemen";
-  if (n.includes("egypt") || n.includes("cairo")) return "Egypt";
-  if (n.includes("somaliland")) return "Somaliland";
-  if (n.includes("indonesia")) return "Indonesia";
-  const trimmed = (raw || "").trim();
-  return trimmed || "Other";
-}
+// Countries that stay on the filter bar whether or not a project currently
+// carries them — a market we operate in is worth showing before the first
+// project for it is published. Everything else is derived from the data.
+const ALWAYS_LISTED_COUNTRIES = ["UAE"];
 
 // Update the address bar to reflect the active filters without a full
 // navigation, so the view stays shareable / bookmarkable.
@@ -76,6 +60,7 @@ export default function ProjectsPortfolio({
       const label = countryOf(p.country);
       map.set(label.toLowerCase(), label);
     }
+    for (const label of ALWAYS_LISTED_COUNTRIES) map.set(label.toLowerCase(), label);
     return Array.from(map, ([key, label]) => ({ key, label })).sort((a, b) =>
       a.label.localeCompare(b.label)
     );

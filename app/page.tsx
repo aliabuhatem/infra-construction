@@ -5,6 +5,7 @@ import MediaImage from "../components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "../lib/getContent";
 import { resolveServices, resolveSectors } from "../lib/expertise";
 import SectorCardWide from "../components/SectorCardWide";
+import WorkProjectCard from "../components/WorkProjectCard";
 import OfficesMap from "../components/OfficesMap";
 import { Reveal, Counter } from "../components/motion";
 
@@ -347,26 +348,16 @@ export default async function HomePage() {
               { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.webp" },
             ].filter((p) => !deleted.has(p.key)).map((p, i) => (
               <Reveal key={p.key} delay={i * 0.08} className="h-full">
-                <Link href="/projects" className="card-base group relative overflow-hidden rounded-lg border border-[#213B4D]/10 bg-white shadow-[0_1px_2px_rgba(33,59,77,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#1F93A4] hover:shadow-[0_22px_46px_-24px_rgba(33,59,77,0.4)]">
-                  <div className="relative h-60 shrink-0 overflow-hidden">
-                    <MediaImage category={p.key} title={`${p.key}_image`} fallbackSrc={p.fallbackImage} alt={p.fallbackTitle} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]" />
-                    <div className="absolute inset-0 bg-[#213B4D]/25 group-hover:bg-[#213B4D]/10 transition-colors duration-300" />
-                    <div className="absolute top-4 left-4">
-                      <span className="rounded bg-[#1F93A4] text-white text-[11px] font-bold tracking-wider px-2.5 py-1" style={{ fontFamily: B }}>
-                        <ContentText section={p.key} name="country" fallback={p.fallbackCountry} />
-                      </span>
-                    </div>
-                  </div>
-                  <div className="card-body p-6">
-                    <p className="text-[#1F93A4] text-[11px] font-bold tracking-widest mb-1" style={{ fontFamily: B }}>
-                      <ContentText section={p.key} name="type" fallback={p.fallbackType} />
-                    </p>
-                    <h3 className="card-title text-[#213B4D] font-bold text-lg group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
-                      <ContentText section={p.key} name="title" fallback={p.fallbackTitle} />
-                    </h3>
-                  </div>
-                  <span className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#1F93A4] transition-all duration-500 group-hover:w-full" />
-                </Link>
+                <WorkProjectCard
+                  project={{
+                    sectionKey: p.key,
+                    href: "/projects",
+                    title: p.fallbackTitle,
+                    country: p.fallbackCountry,
+                    type: p.fallbackType,
+                    image: p.fallbackImage,
+                  }}
+                />
               </Reveal>
             ))}
           </div>

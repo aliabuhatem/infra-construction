@@ -104,7 +104,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <div className="max-w-5xl mx-auto px-6 lg:px-14 py-3 flex items-center gap-2 text-[11px] tracking-[0.15em]" style={{ fontFamily: B }}>
           <Link href="/" className="text-[#5E5E5E] hover:text-[#1F93A4] transition-colors">Home</Link>
           <span className="text-[#213B4D]/25">›</span>
-          <Link href="/projects" className="text-[#5E5E5E] hover:text-[#1F93A4] transition-colors">Projects</Link>
+          <Link href="/projects" className="text-[#5E5E5E] hover:text-[#1F93A4] transition-colors">Featured Projects</Link>
           <span className="text-[#213B4D]/25">›</span>
           <span className="text-[#1F93A4] font-semibold truncate max-w-[60vw]">{project.title}</span>
         </div>
@@ -195,7 +195,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             className="text-[#1F93A4] text-[12px] font-bold tracking-[0.2em] inline-flex items-center gap-2 hover:gap-3 transition-all"
             style={{ fontFamily: B }}
           >
-            <span>←</span> Back to All Projects
+            <span>←</span> Back to Featured Projects
           </Link>
         </div>
       </section>

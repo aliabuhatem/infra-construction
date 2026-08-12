@@ -25,7 +25,9 @@ const preLinks = [
 ];
 
 const postLinks = [
-  { label: "Projects", href: "/projects" },
+  /* "Featured Projects" — deliberately distinct from the separate Future
+     Projects page; the two must never read as the same destination. */
+  { label: "Featured Projects", href: "/projects" },
   { label: "News", href: "/news" },
   { label: "Careers", href: "/careers" },
 ];

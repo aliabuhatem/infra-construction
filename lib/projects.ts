@@ -97,6 +97,57 @@ export function resolveProjects(store: StoreLike): Project[] {
     });
 }
 
+/* ── Categories & countries ───────────────────────────────────────────────
+   Shared by the portfolio filter and the project strip at the foot of each
+   sector page, so a project can never be "Infrastructure" in one place and
+   uncategorised in the other. */
+
+export type ProjectCategory = "infrastructure" | "building";
+
+/** Map a project's free-form `sector` value onto a filter category. Handles the
+    inconsistencies in the data: trailing spaces ("Infrastructure "),
+    singular/plural ("Building" / "Buildings"), and shorthand ("Built"). */
+export function categoryOf(sector: string): ProjectCategory | "other" {
+  const n = (sector || "").trim().toLowerCase();
+  if (n.startsWith("infra")) return "infrastructure";
+  if (n.startsWith("build") || n.startsWith("built")) return "building";
+  return "other";
+}
+
+/** Normalise messy country values ("Cairo, Egypt", "Socotra - Yemen",
+    " Somaliland") onto a single canonical country name so the filter stays
+    clean. Emirates spellings all collapse onto "UAE". */
+export function countryOf(raw: string): string {
+  const n = (raw || "").toLowerCase();
+  if (n.includes("yemen")) return "Yemen";
+  if (n.includes("egypt") || n.includes("cairo")) return "Egypt";
+  if (n.includes("somaliland")) return "Somaliland";
+  if (n.includes("indonesia")) return "Indonesia";
+  if (n.includes("uae") || n.includes("emirat") || n.includes("dubai") || n.includes("abu dhabi"))
+    return "UAE";
+  const trimmed = (raw || "").trim();
+  return trimmed || "Other";
+}
+
+/** The first `limit` projects in a category, in store order.
+    Order is the admin panel's — the same "whatever is listed first" rule the
+    home page's Our Work block follows — so the strip on a sector page is
+    curated by reordering projects in the panel, not by a code change. */
+export const projectsInCategory = (
+  all: Project[],
+  category: ProjectCategory,
+  limit = 3
+): Project[] => all.filter((p) => categoryOf(p.sector) === category).slice(0, limit);
+
+/** The project category a sector page shows work from. The two pillars are
+    "infrastructure" and "built-environment"; anything else has no strip. */
+export function categoryForSector(sectorSlug: string): ProjectCategory | null {
+  const n = (sectorSlug || "").toLowerCase();
+  if (n.startsWith("infra")) return "infrastructure";
+  if (n.startsWith("built") || n.startsWith("build")) return "building";
+  return null;
+}
+
 /** Look up one project. The section key is accepted alongside the slug so a
     link built before a title was renamed still resolves instead of 404ing. */
 export const getProjectBySlug = (store: StoreLike, slug: string): Project | undefined =>

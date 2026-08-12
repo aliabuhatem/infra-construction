@@ -48,11 +48,15 @@ export function Reveal({
 export function Stagger({
   children,
   className,
+  style,
   gap = 0.08,
   as = "div",
 }: {
   children: React.ReactNode;
   className?: string;
+  /* Escape hatch for values Tailwind can't express as a static class — e.g. a
+     row count computed from the list's own length. */
+  style?: React.CSSProperties;
   gap?: number;
   /* `ul`/`ol` let a staggered bullet list stay a real list for screen readers
      — pair with `as="li"` on the items. */
@@ -62,6 +66,7 @@ export function Stagger({
   return (
     <M
       className={className}
+      style={style}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-60px" }}
