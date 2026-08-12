@@ -198,7 +198,7 @@ export default async function HomePage() {
           {/* Two pillars — wide horizontal cards rather than the 4-col service grid. */}
           <div className="grid gap-6 sm:grid-cols-2">
             {sectorItems.map((s, i) => (
-              <Reveal key={s.slug} delay={i * 0.08}>
+              <Reveal key={s.slug} delay={i * 0.08} className="h-full">
                 <SectorCardWide item={s} />
               </Reveal>
             ))}

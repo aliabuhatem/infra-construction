@@ -13,7 +13,10 @@ export default function SectorCardWide({ item }: { item: Expertise }) {
   return (
     <Link
       href={`/sectors/${item.slug}`}
-      className="group flex w-full flex-col items-center rounded-lg border border-[#213B4D]/10 bg-[#f6f8f9] p-6 shadow-xs transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)] md:flex-row md:items-center"
+      /* h-full so the pair of cards match: with the photo no longer stretching
+         to the card's height, nothing else was equalising them and the shorter
+         summary left a visibly stubbier card next to the longer one. */
+      className="group flex h-full w-full flex-col items-center rounded-lg border border-[#213B4D]/10 bg-[#f6f8f9] p-6 shadow-xs transition-shadow duration-300 hover:shadow-[0_24px_50px_-20px_rgba(33,59,77,0.35)] md:flex-row md:items-center"
     >
       {/* Fixed 1:1 box. Stretching the photo to the card's height (the old
           `md:h-auto md:self-stretch`) made it as tall as whatever copy sat
