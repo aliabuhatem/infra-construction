@@ -16,10 +16,34 @@ const benefitIcons = [
   <svg key="6" className="w-6 h-6 text-[#1F93A4] group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
 ];
 
+/* How many openings the page shows. The rest stay in the admin panel and rotate
+   in as newer ones are posted. */
+const MAX_OPENINGS = 3;
+
 export default async function CareersPage() {
   const c = await getContent();
-  const openings = getSectionsByPrefix(c, "careers_opening_");
   const benefits = getSectionsByPrefix(c, "careers_benefit_");
+
+  /* Newest three only. `postedAt` (any Date-parsable string, e.g. "2026-08-01")
+     is the sort key when it's filled in from the admin panel; openings without
+     one fall back to their section number, so the most recently added posting
+     still leads. Dated postings always outrank undated ones — otherwise adding
+     a date to one opening would silently reshuffle the rest. */
+  const postedTime = (job: Record<string, string>) => {
+    const t = Date.parse(job.postedAt || "");
+    return Number.isNaN(t) ? null : t;
+  };
+  const openings = getSectionsByPrefix(c, "careers_opening_")
+    .slice()
+    .sort((a, b) => {
+      const [ta, tb] = [postedTime(a), postedTime(b)];
+      if (ta !== null && tb !== null) return tb - ta;
+      if (ta !== null) return -1;
+      if (tb !== null) return 1;
+      const num = (k: string) => parseInt(k.replace("careers_opening_", ""), 10) || 0;
+      return num(b._key) - num(a._key);
+    })
+    .slice(0, MAX_OPENINGS);
 
   return (
     <>
@@ -152,8 +176,8 @@ export default async function CareersPage() {
           </Reveal>
 
           <div className="space-y-[1px] bg-[#213B4D]/8">
-            {openings.map((job, i) => (
-              <div key={i} className="bg-white hover:bg-[#f4f6f8] transition-colors px-8 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 group">
+            {openings.map((job) => (
+              <div key={job._key} className="bg-white hover:bg-[#f4f6f8] transition-colors px-8 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 group">
                 <div>
                   <div className="text-[#1F93A4] text-[10px] font-bold  tracking-[0.25em] mb-2" style={{ fontFamily: B }}>
                     <ContentText section={job._key} name="sector" fallback={job.sector || ""} />

@@ -25,7 +25,9 @@ type CategoryKey = "all" | "infrastructure" | "building";
 const CATEGORIES: { key: CategoryKey; label: string }[] = [
   { key: "all", label: "All" },
   { key: "infrastructure", label: "Infrastructure" },
-  { key: "building", label: "Building" },
+  /* The key stays "building" — it is the ?category= value the home page links
+     use — while the visible label follows the sector's name. */
+  { key: "building", label: "Built Environment" },
 ];
 
 // Countries that stay on the filter bar whether or not a project currently

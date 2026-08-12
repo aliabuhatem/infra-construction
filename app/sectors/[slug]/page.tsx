@@ -1,8 +1,8 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import ExpertiseDetail from "@/components/ExpertiseDetail";
-import { resolveBySlug, resolveSectors, redirectSlugFor, LEGACY_SECTOR_PATHS } from "@/lib/expertise";
+import { resolveBySlug, resolveSectors, redirectSlugFor, LEGACY_SECTOR_PATHS, sectorSectionKey } from "@/lib/expertise";
 import { getContent } from "@/lib/getContent";
-import { resolveProjects, projectsInCategory, categoryForSector } from "@/lib/projects";
+import { resolveProjects, projectsInCategory, categoryForSector, projectsBySlugs } from "@/lib/projects";
 
 // Sectors added in the admin panel *after* a build aren't in generateStaticParams,
 // so they must be allowed to render on demand instead of 404ing.
@@ -47,8 +47,16 @@ export default async function SectorDetailPage({ params }: { params: Promise<{ s
      and empty for any sector outside the two pillars, which then renders the
      page exactly as before. */
   const category = categoryForSector(item.slug) ?? categoryForSector(item.title);
+  /* An explicit `featuredProjects` list on the sector's admin section wins;
+     without one the strip falls back to the first three in the category. */
+  const all = resolveProjects(c);
+  const featured = projectsBySlugs(
+    all,
+    c.content?.[sectorSectionKey(item.slug)]?.featuredProjects || ""
+  );
+  const picked = featured.length > 0 ? featured.slice(0, 3) : null;
   const projects = category
-    ? projectsInCategory(resolveProjects(c), category).map((p) => ({
+    ? (picked ?? projectsInCategory(all, category)).map((p) => ({
         sectionKey: p.sectionKey,
         href: `/projects/${p.slug}`,
         title: p.title,

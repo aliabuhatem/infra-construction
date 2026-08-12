@@ -22,6 +22,21 @@ export default async function AboutPage() {
   const deptItems     = getSectionsByPrefix(c, "about_dept_");
   const officeItems   = getSectionsByPrefix(c, "about_office_");
 
+  /* Offices collapsed by country, in first-appearance order, so a country with
+     more than one location renders as a single card with branches rather than
+     one card per city. Keyed off the `country` field, which is what the admin
+     panel already stores — no new field to keep in sync. */
+  const officeGroups = officeItems.reduce<{ country: string; offices: typeof officeItems }[]>(
+    (groups, office) => {
+      const country = (office.country || "").trim() || office.city || "";
+      const existing = groups.find((g) => g.country.toLowerCase() === country.toLowerCase());
+      if (existing) existing.offices.push(office);
+      else groups.push({ country, offices: [office] });
+      return groups;
+    },
+    []
+  );
+
   return (
     <>
       {/* ── HERO ────────────────────────────────────────────────────── */}
@@ -475,18 +490,42 @@ export default async function AboutPage() {
             </div>
           </Reveal>
 
+          {/* One card per country, not per office: the two UAE entries used to
+              read as two separate offices. A country with several entries keeps
+              them as named branches inside its single card, each still its own
+              admin section so every address stays independently editable. */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[#213B4D]/8">
-            {officeItems.map((o) => (
-              <div key={o._key} className="bg-white p-8 hover:bg-[#eef1f3] transition-colors group">
+            {officeGroups.map((group) => (
+              <div key={group.country} className="bg-white p-8 hover:bg-[#eef1f3] transition-colors group">
                 <div className="text-[#1F93A4] text-[10px] font-bold  tracking-[0.3em] mb-2" style={{ fontFamily: B }}>
-                  <ContentText section={o._key} name="country" fallback={o.country || ""} />
+                  <ContentText section={group.offices[0]._key} name="country" fallback={group.country} />
                 </div>
                 <div className="text-[#213B4D] font-bold mb-2 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: H, fontSize: "26px" }}>
-                  <ContentText section={o._key} name="city" fallback={o.city || ""} />
+                  {group.offices.length > 1 ? (
+                    `${group.country} Office`
+                  ) : (
+                    <ContentText section={group.offices[0]._key} name="city" fallback={group.offices[0].city || ""} />
+                  )}
                 </div>
-                <div className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
-                  <ContentText section={o._key} name="address" fallback={o.address || ""} />
-                </div>
+
+                {group.offices.length > 1 ? (
+                  <div className="mt-4 space-y-4">
+                    {group.offices.map((o) => (
+                      <div key={o._key} className="border-l-2 border-[#1F93A4]/30 pl-4">
+                        <div className="text-[#213B4D] text-[13px] font-bold mb-1" style={{ fontFamily: B }}>
+                          <ContentText section={o._key} name="city" fallback={o.city || ""} /> Branch
+                        </div>
+                        <div className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                          <ContentText section={o._key} name="address" fallback={o.address || ""} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-[#5E5E5E] text-[12px] leading-relaxed" style={{ fontFamily: B }}>
+                    <ContentText section={group.offices[0]._key} name="address" fallback={group.offices[0].address || ""} />
+                  </div>
+                )}
               </div>
             ))}
           </div>

@@ -146,6 +146,20 @@ export const projectsInCategory = (
   limit = 3
 ): Project[] => all.filter((p) => categoryOf(p.sector) === category).slice(0, limit);
 
+/** Projects named explicitly by slug (or section key), in the order given.
+    Feeds the `featuredProjects` field on a sector's admin section — a newline-
+    or comma-separated list — so the strip at the foot of a sector page can be
+    curated from the panel instead of being whatever happens to sort first.
+    Unknown names are skipped rather than rendering a gap. */
+export function projectsBySlugs(all: Project[], list: string): Project[] {
+  return (list || "")
+    .split(/[\n,]/)
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .map((name) => all.find((p) => p.slug === name || p.sectionKey === name))
+    .filter((p): p is Project => Boolean(p));
+}
+
 /** The project category a sector page shows work from. The two pillars are
     "infrastructure" and "built-environment"; anything else has no strip. */
 export function categoryForSector(sectorSlug: string): ProjectCategory | null {
