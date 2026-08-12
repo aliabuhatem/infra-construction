@@ -343,9 +343,14 @@ export default async function HomePage() {
 
           <div className="grid lg:grid-cols-3 gap-6">
             {[
-              { key: "home_project_1", fallbackTitle: "Ministry of Foreign Affairs Building, Aden", fallbackCountry: "Yemen", fallbackType: "Building", fallbackImage: "/media/buildings-ministry-foreign-aden-yemen.webp" },
-              { key: "home_project_2", fallbackTitle: "Assiut University Buildings", fallbackCountry: "Egypt", fallbackType: "Building", fallbackImage: "/media/buildings-general-facade.webp" },
-              { key: "home_project_3", fallbackTitle: "Highway Expansion Project", fallbackCountry: "Yemen", fallbackType: "Transportation", fallbackImage: "/media/infrastructure-highway-expansion-mocha-yemen.webp" },
+              /* Fallbacks mirror what the store holds for these three sections.
+                 They have to name projects that are actually in the portfolio —
+                 the old third entry ("Highway Expansion Project") no longer
+                 exists anywhere, so an empty store would have advertised work
+                 the site can't show. */
+              { key: "home_project_1", fallbackTitle: "Berbera International Airport", fallbackCountry: "Somaliland", fallbackType: "Infrastructure, Airport", fallbackImage: "/media/1785924588103-berbera-international-airport.webp" },
+              { key: "home_project_2", fallbackTitle: "Assiut University Buildings", fallbackCountry: "Egypt", fallbackType: "Education", fallbackImage: "/media/buildings-social-housing-assiut-egypt.webp" },
+              { key: "home_project_3", fallbackTitle: "Al-Attiyat Al-Bahariya Wastewater", fallbackCountry: "Egypt", fallbackType: "Water & Wastewater Management", fallbackImage: "/media/1785924603665-al-attiyat-al-bahariya-wastewater-cairo-egypt.webp" },
             ].filter((p) => !deleted.has(p.key)).map((p, i) => (
               <Reveal key={p.key} delay={i * 0.08} className="h-full">
                 <WorkProjectCard

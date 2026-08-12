@@ -54,6 +54,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
     { label: "Sector",   name: "sector",   value: project.sector },
     { label: "Type",     name: "type",     value: project.type },
     { label: "Client",   name: "client",   value: project.client || "" },
+    { label: "Role",     name: "role",     value: project.role || "" },
+    { label: "Principal Contractor", name: "principalContractor", value: project.principalContractor || "" },
     { label: "Year",     name: "year",     value: project.year || "" },
     { label: "Duration", name: "duration", value: project.duration || "" },
     { label: "Value",    name: "value",    value: project.value || "" },

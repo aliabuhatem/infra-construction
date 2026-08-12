@@ -25,6 +25,11 @@ export interface Project {
      can be enriched from the admin panel without a code change. Mirrors the
      `p1…pN` / `h1…hN` convention already used by the news articles. */
   client?: string;
+  /* Tender-document facts. `role` is INFRA's own position on the contract
+     (Main Contractor / Subcontractor); `principalContractor` names the party
+     above it, so it only appears on subcontracted work. */
+  role?: string;
+  principalContractor?: string;
   year?: string;
   value?: string;
   duration?: string;
@@ -86,6 +91,8 @@ export function resolveProjects(store: StoreLike): Project[] {
         description: f.description || "",
         image:       f.image       || "",
         client:   optional("client"),
+        role:                optional("role"),
+        principalContractor: optional("principalContractor"),
         year:     optional("year"),
         value:    optional("value"),
         duration: optional("duration"),
