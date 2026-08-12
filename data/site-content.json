@@ -288,13 +288,13 @@
     "home_project_2": {
       "title": "ASSIUT UNIVERSITY BUILDINGS",
       "country": "Egypt",
-      "type": "Education",
+      "type": "BUILT ENVIRONMENT, EDUCATION",
       "image": "/media/buildings-social-housing-assiut-egypt.webp"
     },
     "home_project_3": {
       "title": "AL-ATTIYAT AL-BAHARIYA WASTEWATER",
       "country": "Egypt",
-      "type": "Water & Wastewater Management",
+      "type": "INFRASTRUCTURE, WATER & WASTEWATER MANAGEMENT",
       "image": "/media/1785924603665-al-attiyat-al-bahariya-wastewater-cairo-egypt.webp"
     },
     "home_about_split": {
@@ -1007,26 +1007,12 @@
       "image": "/media/1786018332496-new-college-of-nursing-fatima-college-of-health-sciences-location-a.webp"
     },
     "project_17": {
-      "slug": "residential-villas-compound-nad-al-sheba",
-      "title": "Residential Villas Compound, Nad Al Sheba, Dubai",
+      "title": "Private Residential Complex",
       "country": "Dubai, UAE",
       "sector": "Building",
       "type": "Residential",
-      "image": "/media/buildings-residential-complex-dubai.webp",
-      "client": "Private client",
-      "role": "Main Contractor",
-      "year": "2022 – ongoing",
-      "duration": "18 months (awarded 1 June 2022)",
-      "value": "USD 1,783,690",
-      "status": "Ongoing",
-      "description": "Construction of a four-villa compound on two attached plots at Nad Al Sheba, Dubai, with internal roads, parking, landscaping and full MEP installation.",
-      "scope": "Built environment: construction of a villa compound comprising four villas on two attached plots of land. Roads: pavement of areas within the compound and the parking areas. MEP: electrical and mechanical systems for the villas, including all lighting, plumbing, HVAC and sanitary works.",
-      "p1": "Dubai's strict regulations required careful compliance, leading to numerous modifications over the course of the project. A shortage of subcontractors posed a further challenge to holding the programme, and the client's request to position the swimming pool very close to the buildings called for a conceptual redesign to accommodate it. The regulatory and logistical hurdles were navigated successfully.",
-      "p2": "Delivered as a modern design built in the traditional way, with marble stone and gloss finishes used to set the theme in the right places.",
-      "h1": "Two attached plots totalling 1,805.96 m²",
-      "h2": "Two villas per plot — 1,129.29 m² total built-up area",
-      "h3": "Parking space of 40 m² for each villa",
-      "h4": "Landscaped green space of 35 m², planted with 36 bushes"
+      "description": "Private residential complex in Dubai, UAE.",
+      "image": "/media/buildings-residential-complex-dubai.webp"
     },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
@@ -1406,7 +1392,7 @@
       "stat2Label": "Countries",
       "stat2Sublabel": "of Operation",
       "linkText": "Discover Our Story",
-      "image": "/media/1786529968944-private-residential-complex-dubai-uae.webp"
+      "image": "/media/1782809288798-who_we_are.webp"
     },
     "news_8": {
       "title": "",
@@ -1457,15 +1443,6 @@
     }
   },
   "media": [
-    {
-      "id": "1786529969950",
-      "title": "Private Residential Complex, Dubai - UAE",
-      "alt": "Private Residential Complex, Dubai - UAE",
-      "category": "gallery",
-      "url": "/media/1786529968944-private-residential-complex-dubai-uae.webp",
-      "source": "upload",
-      "createdAt": "2026-08-12T10:19:29.950Z"
-    },
     {
       "id": "1786529706253",
       "title": "Mohamed V. University",
