@@ -150,19 +150,20 @@ export default function ExpertiseDetail({ item, kind, related, projects = [] }: 
                   oversized glyph behind the header turn what was a plain list
                   card into a callout, without introducing a colour the page
                   doesn't already use. */}
-              <div className="relative overflow-hidden rounded-2xl border-l-[3px] border-[#1F93A4] bg-[#0d1e28] p-8 shadow-[0_28px_60px_-32px_rgba(13,30,40,0.9)] ring-1 ring-white/10 sm:p-10">
+              <div className="relative overflow-hidden rounded-2xl border-l-[3px] border-[#1F93A4] bg-[#0d1e28] p-7 shadow-[0_28px_60px_-32px_rgba(13,30,40,0.9)] ring-1 ring-white/10 sm:p-9">
                 {/* Depth without a second colour — one soft teal bloom off the
                     corner, under the content. */}
                 <span
                   aria-hidden
                   className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#1F93A4]/25 blur-3xl"
                 />
-                {/* Watermark quote mark. Bleeds off the top edge (the box clips
-                    it) so it reads as a texture behind the label rather than a
-                    character sitting in the layout. */}
+                {/* Watermark quote mark. `leading-none` puts the glyph's ink in
+                    roughly the top third of its own box, so the offsets here are
+                    what lands it behind the label rather than above the card's
+                    clipped top edge. */}
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute -top-14 left-3 select-none text-[150px] leading-none text-[#1F93A4]/20"
+                  className="pointer-events-none absolute -top-4 left-2 select-none text-[160px] leading-none text-[#1F93A4]/20"
                   style={{ fontFamily: H }}
                 >
                   &ldquo;
@@ -190,7 +191,7 @@ export default function ExpertiseDetail({ item, kind, related, projects = [] }: 
                 <Stagger
                   as="ul"
                   className={`relative flex list-none flex-col p-0${
-                    railTwoCol ? " sm:grid sm:grid-flow-col sm:gap-x-10" : ""
+                    railTwoCol ? " sm:grid sm:grid-flow-col sm:gap-x-8" : ""
                   }`}
                   style={railTwoCol ? { gridTemplateRows: `repeat(${railRows}, auto)` } : undefined}
                 >
