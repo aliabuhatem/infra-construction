@@ -52,9 +52,10 @@
       "title": "Built Environment",
       "slug": "built-environment",
       "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities. We manage the entire project lifecycle—from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
-      "image": "/media/1786542748760-screenshot-2026-08-12-165155.png",
+      "image": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
-      "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings"
+      "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings",
+      "featuredProjects": "mohamed-v-university\nassiut-university-buildings\nimplementation-of-the-ministry-of-foreign-affairs-building"
     },
     "sub_built_environment_healthcare_infrastructure": {
       "title": "Healthcare Infrastructure",
@@ -907,30 +908,29 @@
     },
     "project_8": {
       "title": "Design and Build of Hadibu Modern Slaughterhouse",
-      "country": "Socotra - Yemen",
-      "sector": "Built Environment:",
+      "country": "Socotra, Yemen",
+      "sector": "Built Environment",
       "type": "Design and Build",
-      "description": "The Design and Build of Hadibu Modern Slaughterhouse project delivered a fully equipped, modern slaughterhouse facility for Hadibu city on Socotra Island, Yemen, commissioned by H.H. Sheikh Mansour Bin Zayed Al Nahyan's Engineering Office.\nThe scope covered the design and construction of the slaughterhouse itself, along with the supply, installation, and commissioning of a cold store and modern processing facilities and equipment.\nDedicated spaces were provided for bleeding, skinning, and meat dispatch, complete with an external outer wall enclosing the site, plus paved yards and parking lots and a solar power supply network.\nStrict hygiene-driven MEP systems were installed throughout, preventing contact between meat and floors, walls, and fixtures, supporting sufficient slaughter lines to avoid cross-contamination, and supplying hot water at no less than 82°C for tool disinfection, alongside handwashing stations and separate lockable storage for meat declared unfit for human consumption.\nThe completed facility spans 250 m² with a processing capacity of 125–150 sheep and 7–10 cattle, built with airtight, non-deforming, non-permeable, anti-corrosion doors and windows and integral, easily cleaned and disinfected stairs, handrails, and railings.",
-      "image": "/media/Sheikh Khalifa Housing Project 204  housing units Hadramout Yemen.webp",
+      "description": "Design and construction of a modern slaughterhouse for Hadibu city, Socotra, complete with cold store, hygiene systems, paved yards and a solar power supply network.",
+      "image": "/media/1786541653592-document-from-ali.webp",
       "slug": "hadibu-modern-slaughterhouse",
       "client": "H.H. Sheikh Mansour Bin Zayed Al Nahyan's Engineering Office",
-      "role": "Subcontractor / Management Contractor",
-      "year": "April/ 2016,",
-      "duration": "12 months",
+      "year": "2016 – 2017",
+      "duration": "12 months (awarded April 2016)",
       "value": "USD 500,000",
-      "status": "Completed",
-      "scope": "Built Environment, Roads, Power, MEP",
-      "h1": "Design and Build of Hadibu Modern Slaughterhouse",
-      "h2": "Socotra - Yemen",
-      "h3": "Contract Identification",
-      "h4": "Design and Build of Hadibu Modern Slaughterhouse / Hadibo, Socotra",
-      "h5": "Award Date, Implementation Period",
-      "h6": "April 2016, (12) Twelve months"
+      "status": "Completed April 2017",
+      "scope": "Built environment: design and construction of a modern slaughterhouse for Hadibu city, Socotra; supply, installation and commissioning of a cold store; supply, installation and commissioning of modern facilities and equipment; dedicated spaces for bleeding, skinning and meat dispatch; and an external outer wall. Roads: paving of yards, including parking lots. Power: solar power supply network.",
+      "p1": "Hygiene systems (MEP): installations that prevent contact between meat and the floors, walls and fixtures; sufficient slaughter lines to avoid cross-contamination; tool-disinfection facilities supplying hot water at no less than 82°C; handwashing stations to stop staff transferring contamination to meat; and separate lockable storage for meat declared unfit for human consumption.",
+      "p2": "The contract value breaks down as USD 373,359 for the built environment — the construction cost of the slaughterhouse including the required equipment installation — USD 105,471 for the solar power supply network, and USD 21,170 for the parking lots and outdoor yards.",
+      "p3": "Doors and windows were made of airtight, non-deforming, non-permeable, anti-corrosion materials. Stairs, handrails and railings were built as integral units with an impermeable surface layer, for easy cleaning and disinfection.",
+      "h1": "250 m² facility",
+      "h2": "Capacity of 125–150 sheep and 7–10 cattle",
+      "h3": "Solar power supply network"
     },
     "project_9": {
       "title": "Assiut University Buildings",
       "country": "Assiut, Egypt",
-      "sector": "Building",
+      "sector": "Built Environment",
       "type": "Construction",
       "description": "Structural and building works across the Emergency Centre, Dentistry College and Oncology Institute at Assiut University, Egypt.",
       "image": "/media/buildings-social-housing-assiut-egypt.webp",
@@ -974,7 +974,7 @@
     "project_13": {
       "title": "Ministry of Foreign Affairs Building — Aden",
       "country": "Aden, Yemen",
-      "sector": "Building",
+      "sector": "Built Environment",
       "type": "Government Buildings",
       "description": "Construction of the Ministry of Foreign Affairs complex in Aden — a three-storey main building with separate Consular and Protocol Affairs buildings.",
       "image": "/media/buildings-ministry-foreign-aden-yemen.webp",
@@ -993,7 +993,7 @@
     "project_15": {
       "title": "Mohamed V. University",
       "country": "Ajman, UAE",
-      "sector": "Building",
+      "sector": "Built Environment",
       "type": "Education",
       "description": "University project in Ajman, UAE.",
       "image": "/media/1786529705375-mohamed-v.-university-ajman-uae-2.webp"
@@ -1001,7 +1001,7 @@
     "project_16": {
       "title": "New College of Nursing — Fatima College of Health Sciences",
       "country": "Ajman, UAE",
-      "sector": "Building",
+      "sector": "Built Environment",
       "type": "Education",
       "description": "New college of nursing building for Fatima College of Health Sciences.",
       "image": "/media/1786018332496-new-college-of-nursing-fatima-college-of-health-sciences-location-a.webp"
@@ -1009,7 +1009,7 @@
     "project_17": {
       "title": "Private Residential Complex",
       "country": "Dubai, UAE",
-      "sector": "Building",
+      "sector": "Built Environment",
       "type": "Residential",
       "description": "RESIDENTIAL VILLAS COMPOUND, NAD ALSHEBA, DUBAI",
       "image": "/media/buildings-residential-complex-dubai.webp",
@@ -1193,13 +1193,13 @@
       "title": "Project Manager",
       "location": "Cairo, Egypt",
       "type": "Full Time",
-      "sector": "Buildings"
+      "sector": "Built Environment"
     },
     "careers_opening_3": {
       "title": "MEP Engineer",
       "location": "Abu Dhabi, UAE",
       "type": "Full Time",
-      "sector": "Buildings"
+      "sector": "Built Environment"
     },
     "careers_opening_4": {
       "title": "Structural Engineer",
@@ -1457,13 +1457,13 @@
   },
   "media": [
     {
-      "id": "1786542750585",
-      "title": "New College of Nursing (Fatima College of Health Sciences) Location A",
-      "alt": "New College of Nursing (Fatima College of Health Sciences) Location A",
+      "id": "1786541654666",
+      "title": "Design and Build of Hadibu Modern Slaughterhouse",
+      "alt": "Design and Build of Hadibu Modern Slaughterhouse",
       "category": "gallery",
-      "url": "/media/1786542748760-screenshot-2026-08-12-165155.png",
+      "url": "/media/1786541653592-document-from-ali.webp",
       "source": "upload",
-      "createdAt": "2026-08-12T13:52:30.585Z"
+      "createdAt": "2026-08-12T13:34:14.666Z"
     },
     {
       "id": "1786529969950",
