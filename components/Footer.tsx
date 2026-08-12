@@ -38,7 +38,9 @@ export default async function Footer() {
             <span className="text-2xl font-normal text-[#1F93A4]"> Construction</span>
           </div>
           <p className="text-[#5E5E5E] text-sm leading-relaxed mb-5 max-w-xs" style={{ fontFamily: B }}>
-            <ContentText section="footer" name="tagline" fallback="A leading contracting company delivering world-class infrastructure, buildings, and industrial projects Since 2000." />
+            <ContentText section="footer" name="tagline" fallback="Engineered infrastructure for the modern world.
+
+" />
           </p>
           {/* All three certifications INFRA holds — the same set the home page
               and contact page list. flex-wrap so the third badge drops to a
