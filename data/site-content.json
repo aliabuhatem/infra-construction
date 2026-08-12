@@ -51,7 +51,7 @@
     "sct_built_environment": {
       "title": "Built Environment",
       "slug": "built-environment",
-      "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities. We manage the entire project lifecycle—from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
+      "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities. We manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
       "image": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
       "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings"
@@ -101,9 +101,9 @@
     "sct_infrastructure": {
       "title": "Infrastructure",
       "slug": "infrastructure",
-      "summary": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
+      "summary": "IC's Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands. We manage the entire lifecycle — from design and site works to installation and handover.",
       "image": "/media/1785926802002-roads-bridges.webp",
-      "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
+      "description": "IC's Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands. We manage the entire lifecycle — from design and site works to installation and handover.",
       "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
     },
     "sub_infrastructure_water_wastewater_management": {
