@@ -1011,8 +1011,21 @@
       "country": "Dubai, UAE",
       "sector": "Building",
       "type": "Residential",
-      "description": "The complexities came from several factors. First, Dubai's strict regulations required careful compliance, leading to numerous modications throughout the project.",
-      "image": "/media/buildings-residential-complex-dubai.webp"
+      "description": "RESIDENTIAL VILLAS COMPOUND, NAD ALSHEBA, DUBAI",
+      "image": "/media/buildings-residential-complex-dubai.webp",
+      "slug": "Nad Alsheba, Dubai",
+      "role": "Subcontractor",
+      "principalContractor": "Private client",
+      "year": "Completed June 2022,",
+      "value": "1,783,690 USD",
+      "scope": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "h1": "",
+      "h2": "",
+      "h3": "",
+      "duration": "Ongoing"
     },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
