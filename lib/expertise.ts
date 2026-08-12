@@ -448,7 +448,7 @@ export const sectors: Expertise[] = [
     title: "Infrastructure",
     summary: "Water and wastewater systems, dams and irrigation, ports and marine works, airports, roads and bridges, and energy and power infrastructure.",
     description: [
-      "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
+      "IC's Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands. We manage the entire lifecycle — from design and site works to installation and handover",
     ],
     capabilities: [
       "Water & Wastewater Management",
