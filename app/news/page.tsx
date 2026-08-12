@@ -19,7 +19,6 @@ export default async function NewsPage() {
   const deleted = new Set(c._deletedSections || []);
   const allItems = Object.entries(c.content || {})
     .filter(([k]) => /^news_\d+$/.test(k) && !deleted.has(k))
-    .sort(([a], [b]) => parseInt(a.replace("news_", ""), 10) - parseInt(b.replace("news_", ""), 10))
     .map(([k, f]) => ({
       sectionKey: k,
       slug:       f.slug     || k,
@@ -28,7 +27,8 @@ export default async function NewsPage() {
       category:   f.category || "",
       excerpt:    f.excerpt  || "",
       image:      f.image    || "",
-    }));
+    }))
+    .sort(compareNewsByNewest);
 
   return (
     <>
