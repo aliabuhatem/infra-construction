@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Expertise } from "@/lib/expertise";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion";
 import WorkProjectCard, { type WorkProject } from "@/components/WorkProjectCard";
+import { imageSize } from "@/lib/image-size";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -31,6 +32,11 @@ export default function ExpertiseDetail({ item, kind, related, projects = [] }: 
   /* The rail runs as two side-by-side columns filled top-to-bottom (1–3 left,
      4–6 right), which is what keeps the box wide rather than tall. Below four
      rows a split would leave two lonely columns, so short rails stay single. */
+  /* The hero band mirrors its photo's proportions. 16/9 is the stand-in when
+     the file can't be measured (missing, or a format the reader doesn't cover)
+     — the same shape the heroes had before, so nothing regresses. */
+  const heroDims = imageSize(item.image);
+  const heroRatio = heroDims ? `${heroDims.width} / ${heroDims.height}` : "16 / 9";
   const railTwoCol = rail.length >= 4;
   const railRows = Math.ceil(rail.length / 2);
   const base = kind === "service" ? "/services" : "/sectors";
@@ -40,17 +46,31 @@ export default function ExpertiseDetail({ item, kind, related, projects = [] }: 
   return (
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section className="relative flex min-h-[62vh] items-end overflow-hidden pt-24">
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          priority
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#0d1e28]/75 to-[#213B4D]/35" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-16 lg:px-14 text-shadow-legible">
+      {/* The band takes the photo's own aspect ratio, so `object-cover` has
+          nothing left to trim — the previous fixed `min-h-[62vh]` cut roughly
+          half the height off any image that wasn't extremely wide.
+
+          Image and copy are stacked in one grid cell rather than the copy being
+          absolutely positioned: the row is then as tall as whichever is taller,
+          so on a narrow screen — where a landscape photo is only a couple of
+          hundred pixels tall — the text extends the section over the navy
+          background instead of overflowing a fixed box. */}
+      <section className="relative grid overflow-hidden bg-[#0d1e28]">
+        <div
+          className="col-start-1 row-start-1 relative w-full"
+          style={{ aspectRatio: heroRatio }}
+        >
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#0d1e28]/95 via-[#0d1e28]/75 to-[#213B4D]/35" />
+        </div>
+        <div className="col-start-1 row-start-1 z-10 mx-auto flex w-full max-w-7xl flex-col justify-end px-6 pt-28 pb-16 lg:px-14 text-shadow-legible">
           <Reveal>
             <div className="mb-6 flex items-center gap-4">
               <span className="flex h-14 w-14 items-center justify-center rounded-md bg-[#1F93A4] text-white text-[22px] font-bold shadow-lg shadow-[#1F93A4]/30" style={{ fontFamily: H }}>
