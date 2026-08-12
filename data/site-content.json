@@ -907,18 +907,18 @@
       "h1": "6,500,000 m³ of material loaded, moved and offloaded"
     },
     "project_8": {
-      "slug": "hadibu-modern-slaughterhouse",
       "title": "Design and Build of Hadibu Modern Slaughterhouse",
       "country": "Socotra, Yemen",
       "sector": "Built Environment",
       "type": "Design and Build",
+      "description": "Design and construction of a modern slaughterhouse for Hadibu city, Socotra, complete with cold store, hygiene systems, paved yards and a solar power supply network.",
       "image": "",
+      "slug": "hadibu-modern-slaughterhouse",
       "client": "H.H. Sheikh Mansour Bin Zayed Al Nahyan's Engineering Office",
       "year": "2016 – 2017",
       "duration": "12 months (awarded April 2016)",
       "value": "USD 500,000",
       "status": "Completed April 2017",
-      "description": "Design and construction of a modern slaughterhouse for Hadibu city, Socotra, complete with cold store, hygiene systems, paved yards and a solar power supply network.",
       "scope": "Built environment: design and construction of a modern slaughterhouse for Hadibu city, Socotra; supply, installation and commissioning of a cold store; supply, installation and commissioning of modern facilities and equipment; dedicated spaces for bleeding, skinning and meat dispatch; and an external outer wall. Roads: paving of yards, including parking lots. Power: solar power supply network.",
       "p1": "Hygiene systems (MEP): installations that prevent contact between meat and the floors, walls and fixtures; sufficient slaughter lines to avoid cross-contamination; tool-disinfection facilities supplying hot water at no less than 82°C; handwashing stations to stop staff transferring contamination to meat; and separate lockable storage for meat declared unfit for human consumption.",
       "p2": "The contract value breaks down as USD 373,359 for the built environment — the construction cost of the slaughterhouse including the required equipment installation — USD 105,471 for the solar power supply network, and USD 21,170 for the parking lots and outdoor yards.",
@@ -1456,6 +1456,15 @@
     }
   },
   "media": [
+    {
+      "id": "1786541654666",
+      "title": "Design and Build of Hadibu Modern Slaughterhouse",
+      "alt": "Design and Build of Hadibu Modern Slaughterhouse",
+      "category": "gallery",
+      "url": "/media/1786541653592-document-from-ali.webp",
+      "source": "upload",
+      "createdAt": "2026-08-12T13:34:14.666Z"
+    },
     {
       "id": "1786529969950",
       "title": "Private Residential Complex, Dubai - UAE",
