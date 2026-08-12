@@ -55,7 +55,10 @@ export default function ExpertiseDetail({ item, kind, related, projects = [] }: 
           so on a narrow screen — where a landscape photo is only a couple of
           hundred pixels tall — the text extends the section over the navy
           background instead of overflowing a fixed box. */}
-      <section className="relative grid overflow-hidden bg-[#0d1e28]">
+      {/* grid-cols-1 rather than a bare `grid`: it lays the column out as
+          minmax(0,1fr), so the copy's own max-width can't stretch the column
+          past the viewport on a narrow screen. */}
+      <section className="relative grid grid-cols-1 overflow-hidden bg-[#0d1e28]">
         <div
           className="col-start-1 row-start-1 relative w-full"
           style={{ aspectRatio: heroRatio }}
