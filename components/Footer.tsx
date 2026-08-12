@@ -40,8 +40,11 @@ export default async function Footer() {
           <p className="text-[#5E5E5E] text-sm leading-relaxed mb-5 max-w-xs" style={{ fontFamily: B }}>
             <ContentText section="footer" name="tagline" fallback="A leading contracting company delivering world-class infrastructure, buildings, and industrial projects Since 2000." />
           </p>
-          <div className="flex gap-2 mb-6">
-            {["ISO 9001", "ISO 14001"].map((cert) => (
+          {/* All three certifications INFRA holds — the same set the home page
+              and contact page list. flex-wrap so the third badge drops to a
+              second line rather than squeezing the row at narrow widths. */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            {["ISO 9001", "ISO 14001", "ISO 45001"].map((cert) => (
               <span key={cert} className="text-[10px] tracking-widest border border-[#1F93A4]/40 text-[#1F93A4] px-2 py-1" style={{ fontFamily: B }}>
                 {cert}
               </span>
