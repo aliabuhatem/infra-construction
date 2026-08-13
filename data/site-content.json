@@ -347,31 +347,31 @@
       "num": "01",
       "city": "Abu Dhabi",
       "country": "UAE",
-      "address": "Business Bay, Abu Dhabi, United Arab Emirates"
+      "address": " Oce 606, Emirates Real Estate Corporation (EREC) Building, Zone 1, Al Danah, Dubai- UAE,"
     },
     "home_office_2": {
       "num": "02",
       "city": "Dubai",
       "country": "UAE",
-      "address": "Business Bay, Dubai, United Arab Emirates"
+      "address": "Oce no. (306), Bld no.(121), Al Manar Area , Dubai, UAE"
     },
     "home_office_3": {
       "num": "03",
       "city": "Cairo",
       "country": "Egypt",
-      "address": "New Cairo, Cairo, Egypt"
+      "address": " Ground Floor, Villa 224C, Khaled Ibn Alwaleed St., South Academy, 5th Settlement, Cairo, Egypt"
     },
     "home_office_4": {
       "num": "04",
       "city": "Aden",
       "country": "Yemen",
-      "address": "Crater District, Aden, Republic of Yemen"
+      "address": " Bldg. 1, Bader Roundabout, P.O. Box 70116 Khormaksar, Aden, Yemen"
     },
     "home_office_5": {
       "num": "05",
       "city": "Ontario",
       "country": "Canada",
-      "address": "Ontario, Canada"
+      "address": "3280 Donald Mackay St, Oakville,"
     },
     "home_cta": {
       "eyebrow": "Start Your Project",
@@ -483,7 +483,7 @@
     "contact_offices_uae": {
       "city": "Abu Dhabi",
       "country": "UAE",
-      "address": "Business Bay, Abu Dhabi, United Arab Emirates",
+      "address": " Oce 606, Emirates Real Estate Corporation (EREC) Building, Zone 1, Al Danah, Dubai- UAE,",
       "phone": "+971 4 000 0000",
       "email": "uae@ic-gp.com"
     },
@@ -744,7 +744,7 @@
     "about_office_1": {
       "city": "Abu Dhabi",
       "country": "UAE",
-      "address": "Business Bay, Abu Dhabi, United Arab Emirates"
+      "address": " Oce 606, Emirates Real Estate Corporation (EREC) Building, Zone 1, Al Danah, Dubai- UAE,"
     },
     "about_office_2": {
       "city": "Dubai",
@@ -1257,7 +1257,7 @@
     "contact_office_1": {
       "city": "Abu Dhabi",
       "country": "UAE",
-      "address": "Business Bay, Abu Dhabi, United Arab Emirates",
+      "address": " Oce 606, Emirates Real Estate Corporation (EREC) Building, Zone 1, Al Danah, Dubai- UAE,",
       "license": "UAE Trade License No. —"
     },
     "contact_office_2": {
