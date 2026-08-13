@@ -1454,16 +1454,6 @@
       "title": "CFO",
       "image": "/media/1786171030051-layal-sahooly.webp",
       "bio": "Leads the company's financial strategy, budgeting, and overall financial health. Oversees accounting, reporting, cash flow, risk management, and supports key business decisions."
-    },
-    "news_11": {
-      "title": "",
-      "slug": "",
-      "excerpt": "",
-      "p1": "",
-      "p2": "",
-      "p3": "",
-      "p4": "",
-      "image": ""
     }
   },
   "media": [
@@ -2130,6 +2120,7 @@
     "project_6",
     "project_11",
     "project_12",
-    "project_14"
+    "project_14",
+    "news_11"
   ]
 }
