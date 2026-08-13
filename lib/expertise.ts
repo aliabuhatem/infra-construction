@@ -332,7 +332,7 @@ export const sectors: Expertise[] = [
     summary: "High-complexity building structures, public architecture, and commercial facilities.",
     description: [
       "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.",
-      "We manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration, and final commissioning.",
+      "We manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration. ",
     ],
     capabilities: [
       "Healthcare Infrastructure",
