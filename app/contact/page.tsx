@@ -268,7 +268,7 @@ export default function ContactPage() {
                   Certifications
                 </span>
               </div>
-              {["ISO 9001:2015 — Quality Management", "and ISO 45001","ISO 14001:2015 — Environmental Management"].map((cert) => (
+              {["ISO 9001:2015 — Quality Management", "and ISO 45001 — Health & Safety Management","ISO 14001:2015 — Environmental Management"].map((cert) => (
                 <div key={cert} className="border border-[#1F93A4]/30 bg-white px-4 py-3">
                   <div className="text-[#1F93A4] text-[11px] font-bold" style={{ fontFamily: B }}>{cert}</div>
                 </div>
