@@ -508,7 +508,7 @@ export default async function HomePage() {
           </Reveal>
           <OfficesMap
             offices={[
-              { key: "home_office_1", city: "Abu Dhabi", country: "UAE", address: "Abu Dhabi - UAE, Oce 606, Emirates Real Estate Corporation (EREC) Building, Zone 1, Al Danah", lat: 24.45, lng: 54.38, nudgeX: -1.4, nudgeY: 1.4 },
+              { key: "home_office_1", city: "Abu Dhabi &", country: "UAE", address: "Abu Dhabi - UAE, Oce 606, Emirates Real Estate Corporation (EREC) Building, Zone 1, Al Danah", lat: 24.45, lng: 54.38, nudgeX: -1.4, nudgeY: 1.4 },
               { key: "home_office_2", city: "Dubai", country: "UAE", address: "Dubai- UAE, Oce no. (306), Bld no.(121), Al Manar Area , Dubai, UAE", lat: 25.19, lng: 55.27, nudgeX: 1.4, nudgeY: -1.4 },
               { key: "home_office_3", city: "Cairo", country: "Egypt", address: " Ground Floor, Villa 224C, Khaled Ibn Alwaleed St., South Academy, 5th Settlement, Cairo, Egypt", lat: 30.03, lng: 31.47 },
               { key: "home_office_4", city: "Aden", country: "Yemen", address: "Bldg. 1, Bader Roundabout, P.O. Box 70116 Khormaksar, Aden, Yemen", lat: 12.78, lng: 45.03 },
