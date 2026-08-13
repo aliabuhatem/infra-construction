@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import styles from "./AdminPanel.module.css";
+import { describeField, FIELD_TYPES } from "@/lib/admin/field-schema";
 
 /* ─────────────────────────────────────────────
    HELPERS
@@ -56,38 +57,9 @@ const fieldLabel = (name) =>
     .trim()
     .replace(/\\b\\w/g, (c) => c.toUpperCase());
 
-/* Fields the site splits on newlines, so one line here is exactly one item on
-   the page (see splitLines() in lib/expertise.ts). Without this spelled out in
-   the editor, several items end up typed onto a single line and render as one
-   run-on bullet. `placeholder` shows the shape on an empty field. */
-const LINE_FIELD_HINTS = {
-  points: {
-    rule: "One line = one highlighted point.",
-    noun: "point",
-    nounPlural: "points",
-    placeholder:
-      "Dialysis Center in Hargeisa\nNew College of Nursing (Fatima College of Health Sciences), Ajman - UAE",
-  },
-  description: {
-    rule: "One line = one paragraph.",
-    noun: "paragraph",
-    nounPlural: "paragraphs",
-    placeholder: "First paragraph…\nSecond paragraph…",
-  },
-  capabilities: {
-    rule: "One line = one capability.",
-    noun: "capability",
-    nounPlural: "capabilities",
-    placeholder: "Healthcare Infrastructure\nEducational Facilities",
-  },
-  projects: {
-    rule: "One line = one reference project.",
-    noun: "project",
-    nounPlural: "projects",
-    placeholder:
-      "Berbera International Airport, Somaliland\nSalah Alden Airport, Aden — Yemen",
-  },
-};
+/* Line-per-item hints used to live here as LINE_FIELD_HINTS. They now come from
+   describeField() in lib/admin/field-schema.js, so the editor and the schema
+   cannot drift apart — see the `lineRule` / `noun` / `nounPlural` fields there. */
 
 // Map section prefix → display group name with order priority
 const GROUP_ORDER = [
@@ -139,6 +111,182 @@ const sortedGroups = (groups) => {
   }
   return ordered;
 };
+
+/* ─────────────────────────────────────────────
+   FIELD ROW
+   One editable field. The control is chosen from the field's descriptor
+   (lib/admin/field-schema.js) rather than guessed inline, so a field's type
+   is declared in one place instead of being re-derived at every render.
+
+   Everything still reads and writes a plain String — the descriptor changes
+   how a value is edited, never how it is stored, so the content store and
+   every consumer of it are unaffected.
+───────────────────────────────────────────── */
+function FieldRow({
+  section,
+  fieldKey,
+  value,
+  descriptor,
+  isRenaming,
+  onStartRename,
+  onSaveRename,
+  onCancelRename,
+  onChange,
+  onDelete,
+  onPickImage,
+}) {
+  const str = String(value || "");
+  const d = descriptor;
+
+  const isImage = d.type === FIELD_TYPES.IMAGE;
+  const isList  = d.type === FIELD_TYPES.LINES || d.type === FIELD_TYPES.LIST;
+
+  // A field typed as free-form prose, a list, or simply holding a lot of text
+  // gets a textarea. The length fallback preserves the previous behaviour for
+  // fields the schema has no entry for.
+  const useTextarea =
+    d.type === FIELD_TYPES.TEXTAREA || isList || str.length > 100;
+
+  const lines = str.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  const rows = isList
+    ? Math.min(16, Math.max(4, lines.length + 1))
+    : Math.min(6, Math.max(3, Math.ceil(str.length / 80)));
+
+  // Map the descriptor onto a native input type so browsers give the right
+  // keyboard and affordances. monthYear stays `text` on purpose: it holds
+  // "March 2025", which a date input cannot represent.
+  const inputType =
+    d.type === FIELD_TYPES.EMAIL ? "email" :
+    d.type === FIELD_TYPES.URL   ? "url"   :
+    d.type === FIELD_TYPES.TEL   ? "tel"   : "text";
+
+  const placeholder =
+    d.placeholder ||
+    (isImage ? "/media/your-image.jpg" : `Enter ${d.label.toLowerCase()}…`);
+
+  const listId = `opts-${section}-${fieldKey}`;
+
+  /* A closed set still has to tolerate a value that predates it. Rendering a
+     <select> whose options exclude the stored value would silently rewrite
+     that value on the next save, so the current value is always offered. */
+  const enumOptions = Array.isArray(d.options) ? d.options : [];
+  const needsCurrent = str && !enumOptions.includes(str);
+
+  function renderControl() {
+    if (d.type === FIELD_TYPES.ENUM && enumOptions.length) {
+      return (
+        <select
+          value={str}
+          onChange={(e) => onChange(e.target.value)}
+          className={styles.fieldInput}
+        >
+          <option value="">— not set —</option>
+          {enumOptions.map((o) => <option key={o} value={o}>{o}</option>)}
+          {needsCurrent && <option value={str}>{str} (current)</option>}
+        </select>
+      );
+    }
+
+    if (useTextarea) {
+      return (
+        <textarea
+          value={str}
+          onChange={(e) => onChange(e.target.value)}
+          rows={rows}
+          wrap="soft"
+          placeholder={d.placeholder || undefined}
+          className={styles.fieldTextarea}
+        />
+      );
+    }
+
+    return (
+      <>
+        <input
+          type={inputType}
+          value={str}
+          onChange={(e) => onChange(e.target.value)}
+          placeholder={placeholder}
+          maxLength={d.max || undefined}
+          list={d.type === FIELD_TYPES.COMBOBOX && enumOptions.length ? listId : undefined}
+          className={styles.fieldInput}
+        />
+        {d.type === FIELD_TYPES.COMBOBOX && enumOptions.length > 0 && (
+          <datalist id={listId}>
+            {enumOptions.map((o) => <option key={o} value={o} />)}
+          </datalist>
+        )}
+      </>
+    );
+  }
+
+  return (
+    <div className={styles.fieldRow}>
+      <div className={styles.fieldLabelRow}>
+        {isRenaming ? (
+          <InlineRename initial={fieldKey} onSave={onSaveRename} onCancel={onCancelRename} />
+        ) : (
+          <div className={styles.fieldLabel}>
+            <span className={styles.fieldLabelText}>{d.label}</span>
+            <code className={styles.fieldKeyCode}>{fieldKey}</code>
+            {isImage && <span className={styles.fieldTypeBadge}>image</span>}
+          </div>
+        )}
+        <div className={styles.fieldActions}>
+          {/* Renaming a field the site resolves by name (MediaImage guesses
+              `image`, `logo`, …) breaks its image silently, so it is blocked. */}
+          <button
+            type="button"
+            className={styles.fieldActionBtn}
+            title={d.locked
+              ? "This field name is used by the site to find its image — renaming it would break the image."
+              : "Rename field"}
+            disabled={d.locked}
+            onClick={onStartRename}
+          >Rename</button>
+          <button
+            type="button"
+            className={`${styles.fieldActionBtn} ${styles.fieldDeleteBtn}`}
+            title="Delete field"
+            onClick={onDelete}
+          >Delete</button>
+        </div>
+      </div>
+
+      <div className={styles.fieldInputArea}>
+        {isImage && isImagePath(str) && (
+          <div className={styles.imgPreview}><img src={str} alt="" /></div>
+        )}
+        <div className={styles.fieldControls}>
+          {renderControl()}
+
+          {d.lineRule && (
+            <p className={styles.fieldHint}>
+              <strong>{d.lineRule}</strong>{" "}
+              Press Enter to start the next one.{" "}
+              {lines.length > 0 && (
+                <span className={styles.fieldHintCount}>
+                  {lines.length} {lines.length === 1 ? d.noun : d.nounPlural} right now.
+                </span>
+              )}
+            </p>
+          )}
+
+          {isImage && (
+            <button
+              type="button"
+              className={styles.pickFromLibraryBtn}
+              onClick={onPickImage}
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              Pick from Media Library
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 /* ─────────────────────────────────────────────
    INLINE RENAME INPUT (replaces prompt())
@@ -865,107 +1013,29 @@ export default function AdminPanel() {
 
 {/* Fields */}
                             {Object.entries(fields || {}).map(([key, value]) => {
-                              const imgField = isLikelyImageField(key, value);
-                              const showPreview = imgField && isImagePath(value);
-                              // Multiline fields (paragraphs / bullet points) should always be
-                              // editable as a textarea so authors can add as many new lines as
-                              // they need — see subsector "points" and "description".
-                              const multilineField = /^(points|projects|description|capabilities|summary)$/i.test(key);
-                              const longText = multilineField || String(value || "").length > 100;
-                              const isRenaming = renamingField?.section === section && renamingField?.key === key;
-
-                              // Line-per-item fields: the site splits these on newlines, so one
-                              // line in this box is exactly one bullet/paragraph on the page.
-                              // Size the box by how many lines it holds (not how many characters)
-                              // and say so, otherwise items get typed onto a single line.
-                              const lineHint = LINE_FIELD_HINTS[String(key).toLowerCase()];
-                              const lines = String(value || "").split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
-                              const textareaRows = lineHint
-                                ? Math.min(16, Math.max(4, lines.length + 1))
-                                : Math.min(6, Math.max(3, Math.ceil(String(value || "").length / 80)));
-
+                              const descriptor = describeField(section, key, value);
+                              /* Preserve the previous heuristic as a widening
+                                 fallback: any key that used to get the image
+                                 treatment (icon, favicon, thumb…) still does,
+                                 even if the schema has no entry for it. */
+                              if (descriptor.type !== FIELD_TYPES.IMAGE && isLikelyImageField(key, value)) {
+                                descriptor.type = FIELD_TYPES.IMAGE;
+                              }
                               return (
-                                <div key={key} className={styles.fieldRow}>
-                                  {/* Field label row */}
-                                  <div className={styles.fieldLabelRow}>
-                                    {isRenaming ? (
-                                      <InlineRename
-                                        initial={key}
-                                        onSave={(newKey) => renameField(section, key, newKey)}
-                                        onCancel={() => setRenamingField(null)}
-                                      />
-                                    ) : (
-                                      <div className={styles.fieldLabel}>
-                                        <span className={styles.fieldLabelText}>{fieldLabel(key)}</span>
-                                        <code className={styles.fieldKeyCode}>{key}</code>
-                                        {imgField && <span className={styles.fieldTypeBadge}>image</span>}
-                                      </div>
-                                    )}
-                                    <div className={styles.fieldActions}>
-                                      <button
-                                        type="button"
-                                        className={styles.fieldActionBtn}
-                                        title="Rename field"
-                                        onClick={() => setRenamingField({ section, key })}
-                                      >Rename</button>
-                                      <button
-                                        type="button"
-                                        className={`${styles.fieldActionBtn} ${styles.fieldDeleteBtn}`}
-                                        title="Delete field"
-                                        onClick={() => deleteField(section, key)}
-                                      >Delete</button>
-                                    </div>
-                                  </div>
-
-                                  {/* Field input area */}
-                                  <div className={styles.fieldInputArea}>
-                                    {showPreview && (
-                                      <div className={styles.imgPreview}>
-                                        <img src={value} alt="" />
-                                      </div>
-                                    )}
-                                    <div className={styles.fieldControls}>
-                                      {longText ? (
-                                        <textarea
-                                          value={String(value || "")}
-                                          onChange={(e) => updateField(section, key, e.target.value)}
-                                          rows={textareaRows}
-                                          wrap="soft"
-                                          placeholder={lineHint ? lineHint.placeholder : undefined}
-                                          className={styles.fieldTextarea}
-                                        />
-                                      ) : (
-                                        <input
-                                          value={String(value || "")}
-                                          onChange={(e) => updateField(section, key, e.target.value)}
-                                          placeholder={imgField ? "/media/your-image.jpg" : `Enter ${fieldLabel(key).toLowerCase()}…`}
-                                          className={styles.fieldInput}
-                                        />
-                                      )}
-                                      {lineHint && (
-                                        <p className={styles.fieldHint}>
-                                          <strong>{lineHint.rule}</strong>{" "}
-                                          Press Enter to start the next one.{" "}
-                                          {lines.length > 0 && (
-                                            <span className={styles.fieldHintCount}>
-                                              {lines.length} {lines.length === 1 ? lineHint.noun : lineHint.nounPlural} right now.
-                                            </span>
-                                          )}
-                                        </p>
-                                      )}
-                                      {imgField && (
-                                        <button
-                                          type="button"
-                                          className={styles.pickFromLibraryBtn}
-                                          onClick={() => { setActiveTab("media"); setPickerFor({ section, key }); }}
-                                        >
-                                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                                          Pick from Media Library
-                                        </button>
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
+                                <FieldRow
+                                  key={key}
+                                  section={section}
+                                  fieldKey={key}
+                                  value={value}
+                                  descriptor={descriptor}
+                                  isRenaming={renamingField?.section === section && renamingField?.key === key}
+                                  onStartRename={() => setRenamingField({ section, key })}
+                                  onSaveRename={(newKey) => renameField(section, key, newKey)}
+                                  onCancelRename={() => setRenamingField(null)}
+                                  onChange={(v) => updateField(section, key, v)}
+                                  onDelete={() => deleteField(section, key)}
+                                  onPickImage={() => { setActiveTab("media"); setPickerFor({ section, key }); }}
+                                />
                               );
                             })}
 
