@@ -109,7 +109,8 @@ export default async function Footer() {
           <div className="space-y-2 pt-5 border-t border-[#213B4D]/10" style={{ fontFamily: B }}>
             {offices.length > 0 && (
               <p className="text-[11px] tracking-[0.2em] text-[#5E5E5E] mb-1">
-                {offices.map((o) => o.city).filter(Boolean).join(" · ")}
+                {/* Countries, not cities — Abu Dhabi and Dubai both resolve to UAE, so dedupe */}
+                {[...new Set(offices.map((o) => o.country || o.city).filter(Boolean))].join(" · ")}
               </p>
             )}
             <a href={`mailto:${email}`} className="block text-[13px] text-[#213B4D]/80 hover:text-[#1F93A4] transition-colors">✉ {email}</a>

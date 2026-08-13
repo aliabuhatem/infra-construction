@@ -331,7 +331,7 @@ export default async function HomePage() {
                     Infrastructure
                   </Link>
                   <Link href="/projects?category=building" className="rounded-md bg-[#213B4D] text-white border border-[#213B4D] hover:bg-[#1F93A4] hover:border-[#1F93A4] text-[12px] font-bold tracking-[0.1em] px-5 py-2.5 transition-colors" style={{ fontFamily: B }}>
-                    Building
+                    Built Environment
                   </Link>
                   <Link href="/projects" className="rounded-md border border-[#213B4D]/15 text-[#213B4D] hover:border-[#1F93A4] hover:text-[#1F93A4] text-[12px] font-bold tracking-[0.1em] px-5 py-2.5 transition-colors" style={{ fontFamily: B }}>
                     All

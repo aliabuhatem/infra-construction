@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
+import { compareNewsByNewest } from "@/lib/news";
 import { Reveal } from "@/components/motion";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
