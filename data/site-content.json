@@ -780,7 +780,7 @@
     },
     "projects_header": {
       "eyebrow": "Our Work",
-      "title": "Project",
+      "title": "Projects",
       "subtitle": "A selection of completed and ongoing projects across all sectors and regions."
     },
     "projects_statement": {
@@ -931,7 +931,7 @@
       "title": "Assiut University Buildings",
       "country": "Assiut, Egypt",
       "sector": "Built Environment",
-      "type": "BUILT ENVIRONMENT",
+      "type": "EDUCATION",
       "description": "Structural and building works across the Emergency Centre, Dentistry College and Oncology Institute at Assiut University, Egypt.",
       "image": "/media/buildings-social-housing-assiut-egypt.webp",
       "slug": "assiut-university-buildings",
