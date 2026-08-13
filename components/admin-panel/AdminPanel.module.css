@@ -825,6 +825,22 @@
 
 .mediaCard:hover .mediaThumb img { transform: scale(1.03); }
 
+/* Field groups inside a section card: Identity → Content → Media → Details →
+   Links. The heading is a quiet divider, not a competing title — it orients
+   without turning one section into a page of its own. */
+.fieldGroup { display: contents; }
+
+.fieldGroupLabel {
+  margin: 18px 0 2px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--ap-border);
+  font-size: 10px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--ap-muted);
+}
+
+.fieldGroup:first-child .fieldGroupLabel { margin-top: 4px; }
+
 /* Shown over a thumbnail whose image failed to load, so a broken upload is
    obvious in the library instead of just rendering the browser's broken icon. */
 .brokenBadge {

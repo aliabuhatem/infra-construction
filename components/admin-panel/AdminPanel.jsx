@@ -2,7 +2,13 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import styles from "./AdminPanel.module.css";
-import { describeField, FIELD_TYPES } from "@/lib/admin/field-schema";
+import {
+  describeSection,
+  sectionGroup as sectionGroupRule,
+  sortedSectionGroups,
+  FIELD_GROUPS,
+  FIELD_TYPES,
+} from "@/lib/admin/field-schema";
 
 /* ─────────────────────────────────────────────
    HELPERS
@@ -38,8 +44,9 @@ function verifyImageLoads(url, timeoutMs = 15000) {
   });
 }
 
-const isLikelyImageField = (key, value) =>
-  /image|photo|logo|icon|background|favicon|cover|thumb/i.test(key) || isImagePath(value);
+/* The image-field name heuristic that used to live here is now part of
+   describeField() in lib/admin/field-schema.js, so field typing has a single
+   source of truth. */
 
 const sectionTitle = (name) =>
   name
@@ -61,56 +68,28 @@ const fieldLabel = (name) =>
    describeField() in lib/admin/field-schema.js, so the editor and the schema
    cannot drift apart — see the `lineRule` / `noun` / `nounPlural` fields there. */
 
-// Map section prefix → display group name with order priority
-const GROUP_ORDER = [
-  "Home Page",
-  "Sectors",
-  "Sectors · Subsectors",
-  "Services",
-  "About Page",
-  "Sectors Page",
-  "Sector Pages",
-  "Projects Page",
-  "News Page",
-  "Careers Page",
-  "Contact Page",
-  "Global · Navigation",
-  "Global · Footer",
-  "Global · Branding",
-];
+/* Section grouping rules moved to lib/admin/field-schema.js. sectionGroupRule()
+   returns null when no rule matches; the label for that case is a presentation
+   concern, so it stays here. */
+const sectionGroup = (name) =>
+  sectionGroupRule(name) ?? sectionTitle(name.split("_")[0]);
 
-const sectionGroup = (name) => {
-  const lower = name.toLowerCase();
-  if (lower.startsWith("home_") || lower === "home") return "Home Page";
-  // New expertise system: svc_<slug> / sct_<slug> (+ svc_hub / sct_hub),
-  // with sub_<sector>_<subsector> for the divisions inside a sector.
-  if (lower.startsWith("svc_")) return "Services";
-  if (lower.startsWith("sub_")) return "Sectors · Subsectors";
-  if (lower.startsWith("sct_")) return "Sectors";
-  if (lower.startsWith("about_") || lower === "about") return "About Page";
-  if (lower.startsWith("sectors_") && !lower.startsWith("sector_")) return "Sectors Page";
-  if (lower.startsWith("sector_")) return "Sector Pages";
-  if (lower.startsWith("infra_hub")) return "Sector Pages";
-  if (lower.startsWith("projects_") || lower.startsWith("project_")) return "Projects Page";
-  if (lower.startsWith("news_") || lower.startsWith("news-")) return "News Page";
-  if (lower.startsWith("careers_") || lower.startsWith("career_")) return "Careers Page";
-  if (lower.startsWith("contact_")) return "Contact Page";
-  if (lower.startsWith("navbar_") || lower.startsWith("nav_")) return "Global · Navigation";
-  if (lower.startsWith("footer_")) return "Global · Footer";
-  if (lower.startsWith("branding_")) return "Global · Branding";
-  return sectionTitle(name.split("_")[0]);
-};
+const sortedGroups = sortedSectionGroups;
 
-const sortedGroups = (groups) => {
-  const ordered = [];
-  for (const g of GROUP_ORDER) {
-    if (groups[g]) ordered.push([g, groups[g]]);
+/** Field-group id → heading shown inside a section card. */
+const FIELD_GROUP_LABEL = Object.fromEntries(FIELD_GROUPS.map((g) => [g.id, g.label]));
+
+/** Split an ordered descriptor list into contiguous runs of the same group.
+    describeSection() already sorts by group, so runs are complete. */
+function groupDescriptors(descriptors) {
+  const runs = [];
+  for (const d of descriptors) {
+    const last = runs[runs.length - 1];
+    if (last && last.id === d.group) last.items.push(d);
+    else runs.push({ id: d.group, items: [d] });
   }
-  for (const [g, v] of Object.entries(groups)) {
-    if (!GROUP_ORDER.includes(g)) ordered.push([g, v]);
-  }
-  return ordered;
-};
+  return runs;
+}
 
 /* ─────────────────────────────────────────────
    FIELD ROW
@@ -1011,33 +990,43 @@ export default function AdminPanel() {
                               />
                             )}
 
-{/* Fields */}
-                            {Object.entries(fields || {}).map(([key, value]) => {
-                              const descriptor = describeField(section, key, value);
-                              /* Preserve the previous heuristic as a widening
-                                 fallback: any key that used to get the image
-                                 treatment (icon, favicon, thumb…) still does,
-                                 even if the schema has no entry for it. */
-                              if (descriptor.type !== FIELD_TYPES.IMAGE && isLikelyImageField(key, value)) {
-                                descriptor.type = FIELD_TYPES.IMAGE;
-                              }
-                              return (
-                                <FieldRow
-                                  key={key}
-                                  section={section}
-                                  fieldKey={key}
-                                  value={value}
-                                  descriptor={descriptor}
-                                  isRenaming={renamingField?.section === section && renamingField?.key === key}
-                                  onStartRename={() => setRenamingField({ section, key })}
-                                  onSaveRename={(newKey) => renameField(section, key, newKey)}
-                                  onCancelRename={() => setRenamingField(null)}
-                                  onChange={(v) => updateField(section, key, v)}
-                                  onDelete={() => deleteField(section, key)}
-                                  onPickImage={() => { setActiveTab("media"); setPickerFor({ section, key }); }}
-                                />
-                              );
-                            })}
+{/* Fields, ordered and grouped:
+                                Identity → Content → Media → Details → Links.
+                                Headings only appear once a section actually
+                                spans more than one group, so small sections
+                                stay as plain as they are today. */}
+                            {(() => {
+                              const runs = groupDescriptors(describeSection(section, fields));
+                              const showHeadings = runs.length > 1;
+                              return runs.map((run) => (
+                                <div key={run.id} className={styles.fieldGroup}>
+                                  {showHeadings && (
+                                    <div className={styles.fieldGroupLabel}>
+                                      {FIELD_GROUP_LABEL[run.id] || "Other"}
+                                    </div>
+                                  )}
+                                  {run.items.map((descriptor) => {
+                                    const key = descriptor.name;
+                                    return (
+                                      <FieldRow
+                                        key={key}
+                                        section={section}
+                                        fieldKey={key}
+                                        value={fields?.[key]}
+                                        descriptor={descriptor}
+                                        isRenaming={renamingField?.section === section && renamingField?.key === key}
+                                        onStartRename={() => setRenamingField({ section, key })}
+                                        onSaveRename={(newKey) => renameField(section, key, newKey)}
+                                        onCancelRename={() => setRenamingField(null)}
+                                        onChange={(v) => updateField(section, key, v)}
+                                        onDelete={() => deleteField(section, key)}
+                                        onPickImage={() => { setActiveTab("media"); setPickerFor({ section, key }); }}
+                                      />
+                                    );
+                                  })}
+                                </div>
+                              ));
+                            })()}
 
                             {Object.keys(fields || {}).length === 0 && addingFieldTo !== section && (
                               <div className={styles.emptyFields}>
