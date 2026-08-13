@@ -15,7 +15,11 @@ const ContentSecurityPolicy = [
   "base-uri 'self'",
   "object-src 'none'",
   "frame-ancestors 'self'",
-  "img-src 'self' data: blob:",
+  // NOTE: the `blob:` token below is the blob: URI *scheme* — it has nothing to
+  // do with Vercel Blob. Admin uploads are served from the Vercel Blob CDN on
+  // *.public.blob.vercel-storage.com, so that host must be allowed explicitly
+  // or every uploaded image is blocked by CSP and renders as a broken icon.
+  "img-src 'self' data: blob: https://*.public.blob.vercel-storage.com",
   "font-src 'self' data:",
   "style-src 'self' 'unsafe-inline'",
   `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
@@ -43,6 +47,12 @@ const nextConfig: NextConfig = {
     // including inside next/image <Image> components on the sectors, services,
     // and expertise pages.
     unoptimized: true,
+    // Admin uploads live on the Vercel Blob CDN. Declared so that any
+    // next/image <Image> pointed at an uploaded URL keeps working if the
+    // optimizer is ever switched back on.
+    remotePatterns: [
+      { protocol: "https", hostname: "*.public.blob.vercel-storage.com" },
+    ],
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];

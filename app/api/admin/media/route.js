@@ -73,6 +73,9 @@ export async function POST(request) {
     const baseName = String(file.name || "image").replace(/\.[^./\\]+$/, "").slice(0, 100) || "image";
     const safeName = `${baseName}.${detectedExt}`;
 
+    // uploadMediaFile throws unless the bytes are stored AND readable back, so
+    // reaching the next line means the file genuinely exists. The media record
+    // is only written after that — never record an item that points at nothing.
     const url = await uploadMediaFile(safeName, buffer, `image/${detectedExt}`);
     const store = await readContentStore({ includeSiteMedia: false });
     const item = {
@@ -89,6 +92,9 @@ export async function POST(request) {
     await writeContentStore(store, "Admin media upload");
     return NextResponse.json({ ok: true, item });
   } catch (error) {
+    // Log server-side as well: a silent 500 here is what let broken uploads go
+    // unnoticed. This shows up in `vercel logs` with the real cause.
+    console.error("[admin/media] upload failed:", error);
     return NextResponse.json({ error: error.message || "Upload failed" }, { status: 500 });
   }
 }

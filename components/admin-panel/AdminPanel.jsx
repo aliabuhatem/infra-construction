@@ -8,10 +8,34 @@ import styles from "./AdminPanel.module.css";
 ───────────────────────────────────────────── */
 const blankStore = { content: {}, media: [], _deletedSections: [] };
 
+// Matches both legacy site-relative paths (/media/…, /admin-uploads/…) and the
+// absolute Vercel Blob CDN URLs that new uploads now return.
 const isImagePath = (v) =>
   typeof v === "string" &&
-  /^\/?(?:media|admin-uploads)\//.test(v.trim()) &&
-  /\.(jpe?g|png|webp|gif|avif|svg|bmp|tiff)$/i.test(v.trim());
+  /^(?:https?:\/\/|\/?(?:media|admin-uploads)\/)/.test(v.trim()) &&
+  /\.(jpe?g|png|webp|gif|avif|svg|bmp|tiff)(\?.*)?$/i.test(v.trim());
+
+/* Resolves true only if the URL genuinely decodes as an image in this browser.
+   The upload API already reads the bytes back from storage, but that cannot see
+   the rest of the chain — CSP, the CDN, a wrong host. Checking here means the
+   panel can never report "uploaded successfully" for something the user is
+   about to see as a broken icon. */
+function verifyImageLoads(url, timeoutMs = 15000) {
+  return new Promise((resolve) => {
+    const img = new window.Image();
+    let timer;
+    const done = (ok) => {
+      clearTimeout(timer);
+      img.onload = null;
+      img.onerror = null;
+      resolve(ok);
+    };
+    timer = setTimeout(() => done(false), timeoutMs);
+    img.onload  = () => done(img.naturalWidth > 0);
+    img.onerror = () => done(false);
+    img.src = url;
+  });
+}
 
 const isLikelyImageField = (key, value) =>
   /image|photo|logo|icon|background|favicon|cover|thumb/i.test(key) || isImagePath(value);
@@ -205,6 +229,9 @@ export default function AdminPanel() {
   const [uploading, setUploading] = useState(false);
   const [search, setSearch] = useState("");
   const [mediaFilter, setMediaFilter] = useState("all");
+  // URLs whose thumbnail failed to load, so the library flags them instead of
+  // silently showing the browser's broken-image icon.
+  const [brokenMedia, setBrokenMedia] = useState(() => new Set());
   const [collapsed, setCollapsed] = useState({});
   const [pickerFor, setPickerFor] = useState(null);
   const [uploadForm, setUploadForm] = useState({ title: "", alt: "", category: "gallery", file: null });
@@ -392,12 +419,35 @@ export default function AdminPanel() {
       form.append("alt", uploadForm.alt || uploadForm.title || uploadForm.file.name);
       form.append("category", uploadForm.category || "gallery");
       const response = await fetch("/api/admin/media", { method: "POST", body: form });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || "Upload failed");
+
+      // Never assume the response is JSON — a platform-level failure (413, 502,
+      // a proxy error page) returns HTML, and blindly parsing it would surface
+      // "Unexpected token <" instead of what actually went wrong.
+      const raw = await response.text();
+      let data = {};
+      try { data = raw ? JSON.parse(raw) : {}; } catch {
+        throw new Error(
+          `Upload failed (HTTP ${response.status}). The server returned a non-JSON response: ` +
+          `${raw.slice(0, 160) || "empty body"}`
+        );
+      }
+      if (!response.ok) throw new Error(data.error || `Upload failed (HTTP ${response.status})`);
+      if (!data.item?.url) throw new Error("Upload succeeded but the server returned no image URL.");
+
+      // Confirm the stored image is genuinely displayable before calling it a win.
+      const displays = await verifyImageLoads(data.item.url);
+      if (!displays) {
+        throw new Error(
+          `Saved to storage, but the image could not be loaded back from ${data.item.url} — ` +
+          `it will show as broken on the site. Check that the storage URL is publicly readable ` +
+          `and allowed by the site's img-src CSP.`
+        );
+      }
+
       setStore((cur) => ({ ...cur, media: [data.item, ...(cur.media || [])] }));
       setUploadForm({ title: "", alt: "", category: "gallery", file: null });
       if (fileInputRef.current) fileInputRef.current.value = "";
-      showToast("success", "Image uploaded successfully!");
+      showToast("success", "Image uploaded and verified!");
     } catch (error) {
       showToast("error", error.message);
     } finally {
@@ -1089,7 +1139,29 @@ export default function AdminPanel() {
                         } : undefined}
                       >
                         <div className={styles.mediaThumb}>
-                          <img src={item.url} alt={item.alt || item.title} loading="lazy" />
+                          <img
+                            src={item.url}
+                            alt={item.alt || item.title}
+                            loading="lazy"
+                            onError={() =>
+                              setBrokenMedia((cur) =>
+                                cur.has(item.url) ? cur : new Set(cur).add(item.url)
+                              )
+                            }
+                            onLoad={() =>
+                              setBrokenMedia((cur) => {
+                                if (!cur.has(item.url)) return cur;
+                                const next = new Set(cur);
+                                next.delete(item.url);
+                                return next;
+                              })
+                            }
+                          />
+                          {brokenMedia.has(item.url) && (
+                            <div className={styles.brokenBadge} title={`This image failed to load from ${item.url}`}>
+                              ⚠ Not loading
+                            </div>
+                          )}
                           {pickerFor && (
                             <div className={styles.pickOverlay}>
                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>

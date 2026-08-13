@@ -825,6 +825,16 @@
 
 .mediaCard:hover .mediaThumb img { transform: scale(1.03); }
 
+/* Shown over a thumbnail whose image failed to load, so a broken upload is
+   obvious in the library instead of just rendering the browser's broken icon. */
+.brokenBadge {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: #fef2f2; color: #b91c1c;
+  font-size: 12px; font-weight: 700; text-align: center; padding: 8px;
+  border: 2px solid #fecaca;
+}
+
 .pickOverlay {
   position: absolute; inset: 0;
   background: rgba(0,0,0,0.55);
