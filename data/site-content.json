@@ -392,7 +392,7 @@
     "about_philosophy": {
       "title": "Operating philosophy",
       "description": "Engineering integrity, safety, and on-time delivery are non-negotiable. We invest in people, plant, and partnerships that compound over years.",
-      "image": "/media/company-team-photo.webp"
+      "image": "/media/1786603083794-our-story.webp"
     },
     "about_leadership_founder": {
       "name": "Eng. Hani Sahooly",
@@ -416,7 +416,7 @@
     "about_leadership_4": {
       "name": "Mr. Osama Abo Ghanem",
       "title": "Executive Leadership",
-      "image": "/media/1786005492967-mr.-osama-abo-ghanem.webp",
+      "image": "/media/1786603067716-osama.webp",
       "bio": "Senior leader in technical and commercial operations."
     },
     "about_leadership_5": {
@@ -524,7 +524,7 @@
       "p1": "Actualizing design and shop drawings is our main critical mission — implemented based on past experiences and the vast knowledge of our engineers. Infra Construction is a contracting company that has carried out numerous and various projects since its establishment in 2000.",
       "p2": "Every task Infra Construction took up was executed through hard work and dedication from our team professionals. Possessing all the needed resources is a crucial factor in achieving any project successfully — however, the factor that delivers outstanding results is managing these resources optimally.",
       "p3": "Infra Construction represents the working arm providing professional services in the contracting niche — especially in the infrastructure field — executing according to international codes and project specifications across the UAE, Egypt, Yemen, and Canada.",
-      "image": "/media/1782815816981-our_story.webp"
+      "image": "/media/1786603083794-our-story.webp"
     },
     "about_ceo_bio": {
       "bio1": "As Founder and Chief Executive Officer of INFRA Construction, Mr. Hany El-Sahooly has led the company since its establishment in 1990 — shaping it into a trusted name in buildings, infrastructure, and industrial construction across the Middle East, Africa, and North America.",
@@ -707,7 +707,7 @@
       "role": "Executive Leadership",
       "name": "Mr. Osama Abo Ghanem",
       "scope": "Technical & Commercial Operations",
-      "image": "/media/OSAMA ABO GHANEM.png"
+      "image": "/media/1786603067716-osama.webp"
     },
     "about_leader_5": {
       "role": "Executive Leadership",
@@ -1457,6 +1457,60 @@
   },
   "media": [
     {
+      "id": "1786604573209",
+      "title": "new college",
+      "alt": "new college",
+      "category": "gallery",
+      "url": "/media/1786604572068-new-college-of-nursing-fatima-college-of-health-sciences-location-a.png",
+      "source": "upload",
+      "createdAt": "2026-08-13T07:02:53.209Z"
+    },
+    {
+      "id": "1786603369085",
+      "title": "Our people",
+      "alt": "Our people",
+      "category": "gallery",
+      "url": "/media/1786603368262-our-people.webp",
+      "source": "upload",
+      "createdAt": "2026-08-13T06:42:49.085Z"
+    },
+    {
+      "id": "1786603118565",
+      "title": "specail building",
+      "alt": "specail building",
+      "category": "gallery",
+      "url": "/media/1786603117591-specail-building.webp",
+      "source": "upload",
+      "createdAt": "2026-08-13T06:38:38.565Z"
+    },
+    {
+      "id": "1786603104657",
+      "title": "roads highways & bridges",
+      "alt": "roads highways & bridges",
+      "category": "gallery",
+      "url": "/media/1786603103795-roads-highways-bridges.webp",
+      "source": "upload",
+      "createdAt": "2026-08-13T06:38:24.657Z"
+    },
+    {
+      "id": "1786603084855",
+      "title": "our story",
+      "alt": "our story",
+      "category": "gallery",
+      "url": "/media/1786603083794-our-story.webp",
+      "source": "upload",
+      "createdAt": "2026-08-13T06:38:04.855Z"
+    },
+    {
+      "id": "1786603068715",
+      "title": "osama",
+      "alt": "osama",
+      "category": "gallery",
+      "url": "/media/1786603067716-osama.webp",
+      "source": "upload",
+      "createdAt": "2026-08-13T06:37:48.715Z"
+    },
+    {
       "id": "1786541654666",
       "title": "Design and Build of Hadibu Modern Slaughterhouse",
       "alt": "Design and Build of Hadibu Modern Slaughterhouse",
@@ -1500,15 +1554,6 @@
       "url": "/media/1786171030051-layal-sahooly.webp",
       "source": "upload",
       "createdAt": "2026-08-08T06:37:11.032Z"
-    },
-    {
-      "id": "1786005493945",
-      "title": "Mr. Osama Abo Ghanem.webp",
-      "alt": "Mr. Osama Abo Ghanem.webp",
-      "category": "gallery",
-      "url": "/media/1786005492967-mr.-osama-abo-ghanem.webp",
-      "source": "upload",
-      "createdAt": "2026-08-06T08:38:13.945Z"
     },
     {
       "id": "1786002894416",
@@ -1925,15 +1970,6 @@
       "createdAt": "2026-07-21T06:19:21.798Z"
     },
     {
-      "id": "1784614577510",
-      "title": "sectore 1",
-      "alt": "sectore 1",
-      "category": "gallery",
-      "url": "/media/1784614576280-new-college-of-nursing-fatima-college-of-health-sciences-location-ajman-uae-1.jpg",
-      "source": "upload",
-      "createdAt": "2026-07-21T06:16:17.510Z"
-    },
-    {
       "id": "1784537751483",
       "title": "news3",
       "alt": "news3",
@@ -2015,15 +2051,6 @@
       "createdAt": "2026-07-01T10:58:41.592Z"
     },
     {
-      "id": "1782815817895",
-      "title": "our_story",
-      "alt": "our_story",
-      "category": "gallery",
-      "url": "/media/1782815816981-our_story.webp",
-      "source": "upload",
-      "createdAt": "2026-06-30T10:36:57.896Z"
-    },
-    {
       "id": "1782808760807",
       "title": "about_bg.webp",
       "alt": "Abou Hero",
@@ -2031,15 +2058,6 @@
       "url": "/media/1782808759944-about_bg.webp",
       "source": "upload",
       "createdAt": "2026-06-30T08:39:20.807Z"
-    },
-    {
-      "id": "1782639072343",
-      "title": "news 2",
-      "alt": "news 2",
-      "category": "gallery",
-      "url": "/media/1782639071637-1781529865992.webp",
-      "source": "upload",
-      "createdAt": "2026-06-28T09:31:12.343Z"
     },
     {
       "id": "1782635478530",
