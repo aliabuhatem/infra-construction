@@ -1273,16 +1273,16 @@
       "license": "Canada Corporation No. —"
     },
     "contact_office_4": {
-      "city": "Aden",
-      "country": "Yemen",
-      "address": "Bldg. 1, Bader Roundabout, P.O. Box 70116 Khormaksar, Aden, Yemen",
-      "license": "Yemen Commercial Registration No. —"
-    },
-    "contact_office_5": {
       "city": "Cairo",
       "country": "Egypt",
       "address": "Ground Floor, Villa 224C, Khaled Ibn Alwaleed St., South Academy, 5th Settlement, Cairo, Egypt",
       "license": "Egypt Commercial Registration No. —"
+    },
+    "contact_office_5": {
+      "city": "Aden",
+      "country": "Yemen",
+      "address": "Bldg. 1, Bader Roundabout, P.O. Box 70116 Khormaksar, Aden, Yemen",
+      "license": "Yemen Commercial Registration No. —"
     },
     "contact_certs": {
       "eyebrow": "Our Certifications",
