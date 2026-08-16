@@ -37,17 +37,19 @@ export default function WorkProjectCard({ project: p }: { project: WorkProject }
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]"
         />
         <div className="absolute inset-0 bg-[#213B4D]/25 group-hover:bg-[#213B4D]/10 transition-colors duration-300" />
-        <div className="absolute top-4 left-4">
-          <span className="rounded bg-[#1F93A4] text-white text-[11px] font-bold tracking-wider px-2.5 py-1" style={{ fontFamily: B }}>
-            <ContentText section={p.sectionKey} name="country" fallback={p.country} />
-          </span>
-        </div>
+        {/* The teal country pill that sat at top-4 left-4 is off, matching the
+            portfolio grid. `country` stays on the props and in the store, so
+            restoring the badge is a markup change only. This variant has no
+            sub-sector badge on the image — it carries the sub-sector as the
+            teal label under it, and two of them would just repeat. */}
       </div>
       <div className="card-body p-6">
-        <p className="text-[#1F93A4] text-[11px] font-bold tracking-widest mb-1" style={{ fontFamily: B }}>
+        <p className="text-[#1F93A4] text-sm font-medium uppercase tracking-[0.08em] mb-2" style={{ fontFamily: B }}>
           <ContentText section={p.sectionKey} name="type" fallback={p.type} />
         </p>
-        <h3 className="card-title text-[#213B4D] font-bold text-lg group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+        {/* lineHeight inline: .card-title (globals.css) is unlayered and so
+            outranks Tailwind's leading-* utility. */}
+        <h3 className="card-title text-[#213B4D] font-bold text-[17px] lg:text-[18px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.35 }}>
           <ContentText section={p.sectionKey} name="title" fallback={p.title} />
         </h3>
       </div>

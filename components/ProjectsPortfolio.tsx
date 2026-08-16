@@ -4,10 +4,23 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
-import { categoryOf, countryOf } from "@/lib/projects";
+import { categoryOf, countryOf, interleaveBySubSector } from "@/lib/projects";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
+
+/* The sector and country filter bars are switched off: with barely a dozen
+   published projects the chips filtered a grid that already fits on one screen.
+   The filters are expected back once the portfolio grows, so nothing below is
+   deleted — the chips, the state, the ?category=/?country= URL sync and the
+   filtering itself all stay wired up. Flip this to true to bring them back.
+   Typed as boolean (not the literal `false`) so both branches keep being
+   type-checked while it is off. */
+const SHOW_PROJECT_FILTERS: boolean = false;
+
+/* Desktop column count of the grid below (lg:grid-cols-3). Drives the
+   sub-sector interleave, so a change here and in the grid classes go together. */
+const GRID_COLUMNS = 3;
 
 export interface PortfolioProject {
   sectionKey: string;
@@ -74,10 +87,20 @@ export default function ProjectsPortfolio({
     countryKeys.includes(initialCountry) ? initialCountry : "all"
   );
 
-  const filtered = projects.filter(
-    (p) =>
-      (activeCategory === "all" || categoryOf(p.sector) === activeCategory) &&
-      (activeCountry === "all" || countryOf(p.country).toLowerCase() === activeCountry)
+  // Filtered, then dealt out so neighbouring cards in a row carry different
+  // sub-sector badges. The interleave is deterministic, so the order the server
+  // renders is the order the client hydrates.
+  const filtered = useMemo(
+    () =>
+      interleaveBySubSector(
+        projects.filter(
+          (p) =>
+            (activeCategory === "all" || categoryOf(p.sector) === activeCategory) &&
+            (activeCountry === "all" || countryOf(p.country).toLowerCase() === activeCountry)
+        ),
+        GRID_COLUMNS
+      ),
+    [projects, activeCategory, activeCountry]
   );
 
   const selectCategory = (key: CategoryKey) => {
@@ -97,8 +120,14 @@ export default function ProjectsPortfolio({
 
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-14">
-      {/* Header: heading on the left, category filter on the right */}
-      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-8">
+      {/* Header: heading on the left, category filter on the right. With the
+          filters off the country row below no longer supplies the gap down to
+          the grid, so the header carries it instead. */}
+      <div
+        className={`flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 ${
+          SHOW_PROJECT_FILTERS ? "mb-8" : "mb-12 pb-8 border-b border-[#213B4D]/8"
+        }`}
+      >
         <div className="lg:max-w-2xl">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-[2px] bg-[#1F93A4] shrink-0" />
@@ -114,49 +143,53 @@ export default function ProjectsPortfolio({
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2 shrink-0" role="group" aria-label="Filter projects by category">
-          {CATEGORIES.map((c) => (
+        {SHOW_PROJECT_FILTERS && (
+          <div className="flex flex-wrap gap-2 shrink-0" role="group" aria-label="Filter projects by category">
+            {CATEGORIES.map((c) => (
+              <button
+                key={c.key}
+                type="button"
+                onClick={() => selectCategory(c.key)}
+                aria-pressed={activeCategory === c.key}
+                className={`${chipBase} ${activeCategory === c.key ? chipOn : chipOff}`}
+                style={{ fontFamily: B }}
+              >
+                {c.label}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Country filter row */}
+      {SHOW_PROJECT_FILTERS && (
+        <div className="flex flex-wrap items-center gap-2 mb-12 pb-8 border-b border-[#213B4D]/8" role="group" aria-label="Filter projects by country">
+          <span className="text-[#213B4D]/75 text-[10px] font-bold  tracking-[0.25em] mr-1" style={{ fontFamily: B }}>
+            Country
+          </span>
+          <button
+            type="button"
+            onClick={() => selectCountry("all")}
+            aria-pressed={activeCountry === "all"}
+            className={`${chipBase} ${activeCountry === "all" ? chipOn : chipOff}`}
+            style={{ fontFamily: B }}
+          >
+            All
+          </button>
+          {countryOptions.map((c) => (
             <button
               key={c.key}
               type="button"
-              onClick={() => selectCategory(c.key)}
-              aria-pressed={activeCategory === c.key}
-              className={`${chipBase} ${activeCategory === c.key ? chipOn : chipOff}`}
+              onClick={() => selectCountry(c.key)}
+              aria-pressed={activeCountry === c.key}
+              className={`${chipBase} ${activeCountry === c.key ? chipOn : chipOff}`}
               style={{ fontFamily: B }}
             >
               {c.label}
             </button>
           ))}
         </div>
-      </div>
-
-      {/* Country filter row */}
-      <div className="flex flex-wrap items-center gap-2 mb-12 pb-8 border-b border-[#213B4D]/8" role="group" aria-label="Filter projects by country">
-        <span className="text-[#213B4D]/75 text-[10px] font-bold  tracking-[0.25em] mr-1" style={{ fontFamily: B }}>
-          Country
-        </span>
-        <button
-          type="button"
-          onClick={() => selectCountry("all")}
-          aria-pressed={activeCountry === "all"}
-          className={`${chipBase} ${activeCountry === "all" ? chipOn : chipOff}`}
-          style={{ fontFamily: B }}
-        >
-          All
-        </button>
-        {countryOptions.map((c) => (
-          <button
-            key={c.key}
-            type="button"
-            onClick={() => selectCountry(c.key)}
-            aria-pressed={activeCountry === c.key}
-            className={`${chipBase} ${activeCountry === c.key ? chipOn : chipOff}`}
-            style={{ fontFamily: B }}
-          >
-            {c.label}
-          </button>
-        ))}
-      </div>
+      )}
 
       {filtered.length === 0 ? (
         <p className="text-[#5E5E5E] text-[15px] py-12 text-center" style={{ fontFamily: B }}>
@@ -180,10 +213,11 @@ export default function ProjectsPortfolio({
                   className="object-cover object-center w-full h-full group-hover:scale-[1.06] transition-transform duration-[900ms] ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1e28]/70 to-transparent" />
+                {/* The teal country pill that used to sit first here is off —
+                    the country stays on the model and on the detail page, only
+                    the badge is gone — so the sub-sector badge inherits the
+                    same top-left offset. */}
                 <div className="absolute top-4 left-4 flex gap-2">
-                  <span className="bg-[#1F93A4] text-white text-[10px] font-bold px-2.5 py-1  tracking-wider" style={{ fontFamily: B }}>
-                    <ContentText section={p.sectionKey} name="country" fallback={p.country} />
-                  </span>
                   <span className="bg-[#0d1e28]/80 text-white text-[10px] font-bold px-2.5 py-1  tracking-wider" style={{ fontFamily: B }}>
                     <ContentText section={p.sectionKey} name="type" fallback={p.type} />
                   </span>
@@ -191,10 +225,12 @@ export default function ProjectsPortfolio({
               </div>
               <div className="card-body p-7">
                 <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
-                <div className="text-[#1F93A4] text-[10px] font-bold  tracking-[0.2em] mb-2" style={{ fontFamily: B }}>
+                <div className="text-[#1F93A4] text-sm font-medium uppercase tracking-[0.08em] mb-2" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="sector" fallback={p.sector} />
                 </div>
-                <h3 className="card-title text-[#213B4D] font-bold text-[15px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B }}>
+                {/* lineHeight is set inline because .card-title (globals.css,
+                    unlayered) outranks Tailwind's layered leading-* utility. */}
+                <h3 className="card-title text-[#213B4D] font-bold text-[17px] lg:text-[18px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.35 }}>
                   <ContentText section={p.sectionKey} name="title" fallback={p.title} />
                 </h3>
                 <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>

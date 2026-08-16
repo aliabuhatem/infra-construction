@@ -169,6 +169,70 @@ export function categoryForSector(sectorSlug: string): ProjectCategory | null {
   return null;
 }
 
+/* ── Grid ordering ────────────────────────────────────────────────────────
+   A card's sub-sector is its `type` ("Excavation / Earthworks", "Education").
+   Store order groups projects of one sub-sector together, so the portfolio
+   grid ends up with two identical dark badges side by side in the same row. */
+
+/** Reorder projects so that, as far as the data allows, no two cards in the
+    same visual row share a sub-sector.
+
+    Deterministic by construction — no randomness, no clock — because the grid
+    is server-rendered and re-rendered on the client, and any instability would
+    hydrate into a different order than it prerendered.
+
+    The deal: group by sub-sector, then repeatedly take from the largest
+    remaining group whose sub-sector is absent from the previous `columns - 1`
+    cards. Working largest-first is what keeps a dominant sub-sector from being
+    left stranded in one block at the end. When every remaining group is
+    already inside that window — one sub-sector dominates the tail — the
+    largest one is taken anyway, so the output always holds every input project
+    exactly once rather than throwing or leaving a gap.
+
+    `columns` is the desktop column count: the widest row is the one worth
+    optimising, and the single order it produces is used at every breakpoint
+    (the grid is never re-sorted on resize). */
+export function interleaveBySubSector<T extends { type: string }>(
+  projects: T[],
+  columns = 3
+): T[] {
+  if (columns < 2 || projects.length < 3) return [...projects];
+
+  const subSector = (p: T) => (p.type || "").trim().toLowerCase();
+
+  // Grouped in first-appearance order, so equal-sized groups break their tie
+  // on store order — the same rule the rest of the catalogue follows.
+  const groups: { key: string; order: number; items: T[] }[] = [];
+  const seen = new Map<string, number>();
+  for (const p of projects) {
+    const key = subSector(p);
+    let at = seen.get(key);
+    if (at === undefined) {
+      at = groups.length;
+      seen.set(key, at);
+      groups.push({ key, order: at, items: [] });
+    }
+    groups[at].items.push(p);
+  }
+
+  const out: T[] = [];
+  const recent: string[] = []; // sub-sectors of the previous columns-1 cards
+
+  while (out.length < projects.length) {
+    const remaining = groups
+      .filter((g) => g.items.length > 0)
+      .sort((a, b) => b.items.length - a.items.length || a.order - b.order);
+
+    const pick = remaining.find((g) => !recent.includes(g.key)) ?? remaining[0];
+    out.push(pick.items.shift()!);
+
+    recent.push(pick.key);
+    if (recent.length > columns - 1) recent.shift();
+  }
+
+  return out;
+}
+
 /** Look up one project. The section key is accepted alongside the slug so a
     link built before a title was renamed still resolves instead of 404ing. */
 export const getProjectBySlug = (store: StoreLike, slug: string): Project | undefined =>
