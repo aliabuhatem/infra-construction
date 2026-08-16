@@ -4,7 +4,7 @@
       "title": "Projects Construction",
       "slug": "projects-construction",
       "summary": "Reliable Construction Services for Complex Projects",
-      "image": "/media/1785920067273-projects-construction.webp",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786880040251-projects-construction.webp",
       "description": "As your trusted partner and advocate, we draw on our network of local and global resources, while applying practical know-how to ensure your project is successfully managed from concept to completion and turnover.\n\nWe have successfully realized some of the world’s most iconic structures and developments for clients that include public and private developers, companies, and institutions.\n\nFrom site preparation and civil works to structural construction, MEP installation, finishing works, and project handover, we manage every stage of construction using internationally recognized quality standards and proven construction methodologies.\n\nOur commitment to collaboration, planning, and technical excellence enables us to successfully deliver projects that meet client expectations while supporting long-term operational performance.",
       "capabilities": "WATERX, ROADS, BRIDGES, DAMS, PORTS, POWER PLANTS, ENERGY"
     },
@@ -21,7 +21,7 @@
       "slug": "value-engineering-cost-management",
       "summary": "Optimizing Project Value Throughout the Project Lifecycle",
       "image": "/media/1785920102462-value-engineering-cost-management.webp",
-      "description": "Infra Construction provides value engineering and cost management services that improve project efficiency, optimize budgets, and support sustainable project delivery.\n\nEffective project delivery requires balancing performance, quality, and cost. Infra Construction provides value engineering and cost management services that help clients optimize project resources while maintaining technical integrity and operational performance.\n\nOur specialists evaluate engineering solutions, construction methodologies, procurement strategies, and lifecycle costs to identify opportunities for improved efficiency and measurable\ncost savings. Through detailed financial planning and engineering analysis, we help clients make informed decisions that reduce waste, enhance project value, and support long-term\noperational sustainability.\n\nBy integrating value engineering early in the project lifecycle, we contribute to better budget control, improved resource utilization, and greater confidence throughout project execution.",
+      "description": "Infra Construction provides value engineering and cost management services that improve project efficiency, optimize budgets, and support sustainable project delivery.\n\nEffective project delivery requires balancing performance, quality, and cost. Infra Construction provides value engineering and cost management services that help clients optimize project resources while maintaining technical integrity and operational performance.\n\nOur specialists evaluate engineering solutions, construction methodologies, procurement strategies, and lifecycle costs to identify opportunities for improved efficiency and measurable cost savings. Through detailed financial planning and engineering analysis, we help clients make informed decisions that reduce waste, enhance project value, and support long-term operational sustainability.\n\nBy integrating value engineering early in the project lifecycle, we contribute to better budget control, improved resource utilization, and greater confidence throughout project execution.",
       "capabilities": "Value Engineering Studies\nCost Planning & Budget Development\nCost Estimation & Quantity Surveying\nLifecycle Cost Analysis\nCost Control & Financial Monitoring\nProcurement Cost Optimization\nRisk & Contingency Planning\nProject Cost Reporting"
     },
     "svc_construction_management": {
@@ -29,7 +29,7 @@
       "slug": "engineering-detailed-construction-designs",
       "summary": "Transforming Concepts into Buildable Engineering Solutions",
       "image": "/media/1785920119872-engineering-detailed-construction-designs.webp",
-      "description": "We collaborate with client counterparts to design complex projects that may include engineering, procurement, fabrication, construction, maintenance and project management (EPCM). From the earliest stages of project design, we involve the construction and commissioning teams to provide capital cost and schedule efficiency.\n\nEvery successful project begins with a clear engineering vision and technically coordinated design. At Infra Construction (IC), we deliver comprehensive engineering and detailed construction design services that convert project concepts into practical, efficient, and fully executable solutions.\n\nOur multidisciplinary engineering teams develop architectural, structural, civil, infrastructure, and MEP designs that comply with international engineering standards while meeting local regulatory requirements. By integrating advanced engineering practices, Building Information Modeling (BIM), and collaborative design processes, we help clients improve constructability, reduce project risks, and optimize long-term asset performance.\n\nFrom concept development through detailed construction documentation, our focus is on delivering engineering solutions that support quality construction, efficient execution, and sustainable infrastructure development.",
+      "description": "We collaborate with client counterparts to design complex projects that may include engineering, procurement, fabrication, construction, maintenance and project management (EPCM). From the earliest stages of project design, we involve the construction and commissioning teams to provide capital cost and schedule efficiency.\n\nEvery successful project begins with a clear engineering vision and technically coordinated design. At Infra Construction (IC), we deliver comprehensive engineering and detailed construction design services that convert project concepts into practical, efficient, and fully executable solutions.\nOur multidisciplinary engineering teams develop architectural, structural, civil, infrastructure, and MEP designs that comply with international engineering standards while meeting local regulatory requirements. By integrating advanced engineering practices, Building Information Modeling (BIM), and collaborative design processes, we help clients improve constructability, reduce project risks, and optimize long-term asset performance.\n\nFrom concept development through detailed construction documentation, our focus is on delivering engineering solutions that support quality construction, efficient execution, and sustainable infrastructure development.",
       "capabilities": "Architectural & Master Planning Design\nStructural Engineering, Civil & Infrastructure Design\nMechanical, Electrical & Plumbing (MEP) Engineering\nDetailed Construction Drawings \nShop Drawings & Technical Documentation\nBIM Coordination & Clash Detection \nDesign Review & Engineering Optimization\nSustainable & Energy-Efficient Design Solutions"
     },
     "svc_facilities_management": {
@@ -52,7 +52,7 @@
       "title": "Built Environment",
       "slug": "built-environment",
       "summary": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities. We manage the entire project lifecycle—from pre-construction design review and civil execution to structural fit-outs, building services integration.",
-      "image": "/media/1786604572068-new-college-of-nursing-fatima-college-of-health-sciences-location-a.png",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881030097-sheik-khalifah-housing-project-al-mukala-yemen.webp",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration.",
       "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings",
       "featuredProjects": "mohamed-v-university\nassiut-university-buildings\nimplementation-of-the-ministry-of-foreign-affairs-building"
@@ -103,7 +103,7 @@
       "title": "Infrastructure",
       "slug": "infrastructure",
       "summary": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
-      "image": "/media/1785926802002-roads-bridges.webp",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881403414-new-assiut-barrage.webp",
       "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
     },
@@ -445,7 +445,7 @@
       "eyebrow": "Our Work",
       "title": "Featured Projects",
       "subtitle": "Recent and ongoing works across buildings, infrastructure, water, energy and industrial sectors.",
-      "backgroundImage": "/media/1785929442102-projects-hero-section-.webp"
+      "backgroundImage": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881250065-featured-projects.webp"
     },
     "news_hero": {
       "eyebrow": "News & Insights",
@@ -780,7 +780,7 @@
     },
     "projects_header": {
       "eyebrow": "Our Work",
-      "title": "Project",
+      "title": "Projects",
       "subtitle": "A selection of completed and ongoing projects across all sectors and regions."
     },
     "projects_statement": {
@@ -797,7 +797,7 @@
       "title": "Al-Attiyat Al-Bahariya Wastewater Treatment Plant",
       "country": "Abnoub, Egypt",
       "sector": "Infrastructure",
-      "type": "Excavation / Earthworks",
+      "type": "WATER & WASTEWATER MANAGEMENT",
       "description": "Excavation, backfilling and earthworks for the Hayah Kareema wastewater treatment plant at Abnoub, Egypt.",
       "image": "/media/water-al-atiyat-wastewater-treatment-egypt.webp",
       "slug": "al-attiyat-al-bahariya-wastewater",
@@ -821,7 +821,7 @@
       "title": "Bani Mazar Bridge",
       "country": "Egypt",
       "sector": "Infrastructure",
-      "type": "Earthworks / Subgrade",
+      "type": "ROADS & BRIDGES",
       "description": "Supply and placement of clean fill and subgrade maintenance for the Bani Mazar bridge crossing in Egypt.",
       "image": "/media/infrastructure-coastal-highway-taiz-yemen.webp",
       "slug": "bani-mazar-bridge",
@@ -842,7 +842,7 @@
       "title": "Bassra Wastewater Treatment Plant",
       "country": "Egypt",
       "sector": "Infrastructure",
-      "type": "Excavation / Earthworks",
+      "type": "WATER & WASTEWATER MANAGEMENT",
       "description": "Excavation, backfilling and site preparation for the Hayah Kareema wastewater treatment plant at Bassra, Egypt.",
       "image": "/media/water-basra-wastewater-treatment-egypt.webp",
       "slug": "bassra-wastewater-treatment-plan",
@@ -865,7 +865,7 @@
       "title": "Berbera International Airport — Terminal Refurbishment",
       "country": "Berbera, Somaliland",
       "sector": "Infrastructure",
-      "type": "Refurbishment / Rehabilitation",
+      "type": "AIRPORTS",
       "description": "Complete rehabilitation of Berbera International Airport — passenger terminal, control tower, security fencing and supporting infrastructure.",
       "image": "/media/1785924588103-berbera-international-airport.webp",
       "slug": "berbera-international-airport",
@@ -890,7 +890,7 @@
       "title": "New Assiut Barrage",
       "country": "Assiut, Egypt",
       "sector": "Infrastructure",
-      "type": "Earthworks",
+      "type": "DAMS & IRRIGATIONS",
       "description": "Bulk earthmoving for the New Assiut Barrage on the Nile — 6.5 million m³ of material loaded, moved and offloaded.",
       "image": "/media/1782633413952-new-assiut-barrage-01.webp",
       "slug": "new-assiut-barrage",
@@ -910,7 +910,7 @@
       "title": "Design and Build of Hadibu Modern Slaughterhouse",
       "country": "Socotra, Yemen",
       "sector": "Built Environment",
-      "type": "Design and Build",
+      "type": "SPECIAL BUILDINGS",
       "description": "Design and construction of a modern slaughterhouse for Hadibu city, Socotra, complete with cold store, hygiene systems, paved yards and a solar power supply network.",
       "image": "/media/1786541653592-document-from-ali.webp",
       "slug": "hadibu-modern-slaughterhouse",
@@ -931,7 +931,7 @@
       "title": "Assiut University Buildings",
       "country": "Assiut, Egypt",
       "sector": "Built Environment",
-      "type": "Construction",
+      "type": "EDUCATION",
       "description": "Structural and building works across the Emergency Centre, Dentistry College and Oncology Institute at Assiut University, Egypt.",
       "image": "/media/buildings-social-housing-assiut-egypt.webp",
       "slug": "assiut-university-buildings",
@@ -951,7 +951,7 @@
       "title": "West Assiut Plateau Road",
       "country": "Assiut, Egypt",
       "sector": "Infrastructure",
-      "type": "Excavation / Roadworks",
+      "type": "ROADS & BRIDGES",
       "description": "Excavation, backfilling, site preparation and pitching works for the West Assiut Plateau road corridor in Egypt.",
       "image": "/media/infrastructure-assiut-plateau-axis-egypt.webp",
       "slug": "west-assiut-plateau-road",
@@ -975,7 +975,7 @@
       "title": "Ministry of Foreign Affairs Building — Aden",
       "country": "Aden, Yemen",
       "sector": "Built Environment",
-      "type": "Government Buildings",
+      "type": "PUBLIC & COMMERCIAL BUILDINGS",
       "description": "Construction of the Ministry of Foreign Affairs complex in Aden — a three-storey main building with separate Consular and Protocol Affairs buildings.",
       "image": "/media/buildings-ministry-foreign-aden-yemen.webp",
       "slug": "implementation-of-the-ministry-of-foreign-affairs-building",
@@ -994,7 +994,7 @@
       "title": "Mohamed V. University",
       "country": "Ajman, UAE",
       "sector": "Built Environment",
-      "type": "Education",
+      "type": "EDUCATION",
       "description": "University project in Ajman, UAE.",
       "image": "/media/1786529705375-mohamed-v.-university-ajman-uae-2.webp"
     },
@@ -1002,17 +1002,17 @@
       "title": "New College of Nursing — Fatima College of Health Sciences",
       "country": "Ajman, UAE",
       "sector": "Built Environment",
-      "type": "Education",
+      "type": "EDUCATION",
       "description": "New college of nursing building for Fatima College of Health Sciences.",
-      "image": "/media/1786018332496-new-college-of-nursing-fatima-college-of-health-sciences-location-a.webp"
+      "image": "/media/1786604572068-new-college-of-nursing-fatima-college-of-health-sciences-location-a.png"
     },
     "project_17": {
       "title": "Private Residential Complex",
       "country": "Dubai, UAE",
       "sector": "Built Environment",
-      "type": "Residential",
+      "type": "RESIDENTIAL",
       "description": "RESIDENTIAL VILLAS COMPOUND, NAD ALSHEBA, DUBAI",
-      "image": "/media/buildings-residential-complex-dubai.webp",
+      "image": "/media/1786529968944-private-residential-complex-dubai-uae.webp",
       "slug": "Nad Alsheba, Dubai",
       "role": "Subcontractor",
       "principalContractor": "Private client",
@@ -1214,7 +1214,7 @@
       "sector": "Infrastructure"
     },
     "careers_opening_6": {
-      "title": "HSE Officer",
+      "title": "Senior Civil Construction Engineer",
       "location": "Multiple Locations",
       "type": "Full Time",
       "sector": "All Sectors"
@@ -1226,10 +1226,10 @@
       "sector": "Commercial"
     },
     "careers_opening_8": {
-      "title": "Planning Engineer",
-      "location": "Cairo, Egypt",
+      "title": "Senior Business Developmet & Tendering Management",
+      "location": "Jorden",
       "type": "Full Time",
-      "sector": "Infrastructure"
+      "sector": "All Sectors"
     },
     "careers_cta": {
       "eyebrow": "Join Our Team",
@@ -1267,22 +1267,22 @@
       "license": ""
     },
     "contact_office_3": {
+      "city": "Ontario",
+      "country": "Canada",
+      "address": "3280 Donald Mackay St, Oakville, Ontario, Canada",
+      "license": "Canada Corporation No. —"
+    },
+    "contact_office_4": {
       "city": "Cairo",
       "country": "Egypt",
       "address": "Ground Floor, Villa 224C, Khaled Ibn Alwaleed St., South Academy, 5th Settlement, Cairo, Egypt",
       "license": "Egypt Commercial Registration No. —"
     },
-    "contact_office_4": {
+    "contact_office_5": {
       "city": "Aden",
       "country": "Yemen",
       "address": "Bldg. 1, Bader Roundabout, P.O. Box 70116 Khormaksar, Aden, Yemen",
       "license": "Yemen Commercial Registration No. —"
-    },
-    "contact_office_5": {
-      "city": "Ontario",
-      "country": "Canada",
-      "address": "3280 Donald Mackay St, Oakville, Ontario, Canada",
-      "license": "Canada Corporation No. —"
     },
     "contact_certs": {
       "eyebrow": "Our Certifications",
@@ -1408,49 +1408,44 @@
       "image": "/media/1786529968944-private-residential-complex-dubai-uae.webp"
     },
     "news_8": {
-      "title": "Infra Construction and SAK Construction Explore Strategic Partnership in Kuwait",
+      "title": "",
       "date": "",
-      "category": "Partnerships",
-      "excerpt": "Infra Construction held a high-level meeting with SAK Construction in Kuwait to explore collaboration on major infrastructure projects financed by the Kuwait Fund for Arab Economic Development.",
+      "category": "",
+      "excerpt": "",
       "image": "/media/1784619807585-from-abu-dhabi-to-kuwait-partnerships-shaping-the-future-of-infrastructure.webp",
-      "author": "INFRA Communications",
-      "location": "State of Kuwait",
-      "readTime": "3 min read",
-      "slug": "infra-construction-kuwait-sak-partnership",
-      "p1": "As part of its strategy to expand across the GCC and strengthen its regional presence, Infra Construction conducted a strategic business visit to the State of Kuwait, where the team held a high-level meeting with SAK Construction to explore opportunities for future collaboration.",
-      "p2": "The discussions focused on developing strategic partnerships for the delivery of major development and infrastructure projects, particularly those financed by the Kuwait Fund for Arab Economic Development (KFAED). The meeting highlighted the shared commitment of both organizations to supporting impactful infrastructure initiatives that contribute to sustainable economic growth across the region.",
-      "p3": "This visit reflects Infra Construction's ongoing commitment to building long-term partnerships with leading local organizations and expanding its presence in key regional markets. By collaborating with trusted industry leaders, the company continues to strengthen its ability to deliver integrated engineering and construction solutions that meet the evolving needs of governments, development institutions, and private sector clients.",
-      "p4": "As Infra Construction continues its regional growth journey, strategic collaborations such as this reinforce its vision of creating lasting value through innovation, technical excellence, and sustainable infrastructure development."
+      "author": "",
+      "location": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "p4": ""
     },
     "news_9": {
-      "title": "Infra Construction Submits Bid for Hospital Rehabilitation Project in the Union of the Comoros",
+      "title": "",
       "date": "",
       "category": "Business Development",
       "excerpt": "Infra Construction has submitted a bid for a major infrastructure tender in the Union of the Comoros to rehabilitate and construct three hospitals, reinforcing its regional expansion strategy.",
       "image": "/media/1784619819057-a-new-step-toward-stronger-healthcare-infrastructure-in-comoros.webp",
-      "author": "INFRA Communications",
-      "location": "Union of the Comoros",
-      "readTime": "4 min read",
-      "slug": "infra-construction-comoros-hospital-tender-bid",
-      "p1": "As part of its regional expansion strategy and commitment to strengthening its presence across emerging markets, Infra Construction has submitted a bid for a major infrastructure tender in the Union of the Comoros, involving the rehabilitation and construction of three hospitals.",
-      "p2": "The project forms part of the country's ongoing efforts to enhance healthcare infrastructure, improve access to quality medical services, and deliver modern healthcare facilities that better serve local communities.",
-      "p3": "Infra Construction's participation is backed by its extensive regional expertise and strong local presence through the Group's consulting office in the Union of the Comoros, which continuously monitors market developments and supports the identification and evaluation of strategic project opportunities.",
-      "p4": "According to the Group's local consulting office, Infra Construction's proposal ranked among the competitive bids submitted for the tender, highlighting the company's strong technical capabilities, competitive financial offering, and ability to successfully deliver large-scale development projects across the region.",
-      "p5": "This milestone reflects Infra Construction's continued commitment to delivering sustainable infrastructure solutions and engineering excellence, contributing to national development priorities while creating long-term value in the markets where it operates."
+      "author": "",
+      "location": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
+      "p4": ""
     },
     "news_10": {
-      "title": "Abu Dhabi Municipality Commends Infra Construction's Engineering Performance",
+      "title": "",
       "date": "",
-      "category": "Certifications",
-      "excerpt": "Abu Dhabi Municipality representatives visited Infra Construction to review its engineering performance evaluation, commending the company's professionalism and full compliance with approved standards.",
+      "category": "",
+      "excerpt": "",
       "image": "/media/1784619831619-proud-to-be-recognized-by-abu-dhabi-municipality-for-our-engineering-excellence-another-milestone-th.webp",
-      "author": "INFRA Communications",
-      "location": "Abu Dhabi, United Arab Emirates",
-      "readTime": "2 min read",
-      "slug": "abu-dhabi-municipality-commends-infra-construction",
-      "p1": "Infra Construction was pleased to welcome representatives from the Abu Dhabi Municipality for a visit to discuss the results of the company's engineering performance evaluation as part of the municipality's ongoing commitment to monitoring quality standards and ensuring compliance with approved engineering requirements.",
-      "p2": "During the visit, the municipality's representatives commended the company's engineering performance, recognizing the professionalism of its teams and their dedication to delivering projects in full compliance with the highest engineering and industry standards.",
-      "p3": "This recognition reflects Infra Construction's unwavering commitment to delivering high-quality engineering and construction services, further strengthening its position as a trusted partner in the successful delivery of projects in line with international best practices and approved standards.",
+      "author": "",
+      "slug": "",
+      "p1": "",
+      "p2": "",
+      "p3": "",
       "p4": ""
     },
     "about_leadership_6": {
@@ -1461,6 +1456,42 @@
     }
   },
   "media": [
+    {
+      "id": "1786881403810",
+      "title": "New Assiut Barrage.webp",
+      "alt": "New Assiut Barrage.webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881403414-new-assiut-barrage.webp",
+      "source": "upload",
+      "createdAt": "2026-08-16T11:56:43.810Z"
+    },
+    {
+      "id": "1786881250526",
+      "title": "Featured Projects.webp",
+      "alt": "Featured Projects.webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881250065-featured-projects.webp",
+      "source": "upload",
+      "createdAt": "2026-08-16T11:54:10.526Z"
+    },
+    {
+      "id": "1786881030508",
+      "title": "Sheik Khalifah Housing project, Al-Mukala - Yemen.webp",
+      "alt": "Sheik Khalifah Housing project, Al-Mukala - Yemen.webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881030097-sheik-khalifah-housing-project-al-mukala-yemen.webp",
+      "source": "upload",
+      "createdAt": "2026-08-16T11:50:30.508Z"
+    },
+    {
+      "id": "1786880040636",
+      "title": "Projects Construction.webp",
+      "alt": "Projects Construction.webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786880040251-projects-construction.webp",
+      "source": "upload",
+      "createdAt": "2026-08-16T11:34:00.636Z"
+    },
     {
       "id": "1786604573209",
       "title": "new college",
@@ -1840,24 +1871,6 @@
       "createdAt": "2026-08-05T08:55:53.744Z"
     },
     {
-      "id": "1785920142635",
-      "title": "Projects & Construction Management.webp",
-      "alt": "Projects & Construction Management.webp",
-      "category": "gallery",
-      "url": "/media/1785920141771-projects-construction-management.webp",
-      "source": "upload",
-      "createdAt": "2026-08-05T08:55:42.635Z"
-    },
-    {
-      "id": "1785920120869",
-      "title": "Engineering & Detailed Construction Designs.webp",
-      "alt": "Engineering & Detailed Construction Designs.webp",
-      "category": "gallery",
-      "url": "/media/1785920119872-engineering-detailed-construction-designs.webp",
-      "source": "upload",
-      "createdAt": "2026-08-05T08:55:20.869Z"
-    },
-    {
       "id": "1785920103333",
       "title": "Value Engineering & Cost Management.webp",
       "alt": "Value Engineering & Cost Management.webp",
@@ -1984,15 +1997,6 @@
       "createdAt": "2026-07-20T08:55:51.483Z"
     },
     {
-      "id": "1784094144747",
-      "title": "our_poeple",
-      "alt": "our_poeple",
-      "category": "gallery",
-      "url": "/media/1784094143316-our_people.png",
-      "source": "upload",
-      "createdAt": "2026-07-15T05:42:24.747Z"
-    },
-    {
       "id": "1783859085984",
       "title": "news 6",
       "alt": "news 6",
@@ -2009,15 +2013,6 @@
       "url": "/media/1783859061055-in-a-step-that-reflects-our-strategic-direction-toward-expanding-regional-partnerships..webp",
       "source": "upload",
       "createdAt": "2026-07-12T12:24:22.113Z"
-    },
-    {
-      "id": "1783859043576",
-      "title": "news 3 ",
-      "alt": "news 3 ",
-      "category": "gallery",
-      "url": "/media/1783859042233-a-strategic-step-toward-kuwait-infra-explores-market-expansion-opportunities.webp",
-      "source": "upload",
-      "createdAt": "2026-07-12T12:24:03.576Z"
     },
     {
       "id": "1783858979396",
@@ -2160,6 +2155,7 @@
     "project_6",
     "project_11",
     "project_12",
-    "project_14"
+    "project_14",
+    "news_11"
   ]
 }
