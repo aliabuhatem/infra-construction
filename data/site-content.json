@@ -445,7 +445,7 @@
       "eyebrow": "Our Work",
       "title": "Featured Projects",
       "subtitle": "Recent and ongoing works across buildings, infrastructure, water, energy and industrial sectors.",
-      "backgroundImage": "/media/1785929442102-projects-hero-section-.webp"
+      "backgroundImage": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786880268187-featured-projects.webp"
     },
     "news_hero": {
       "eyebrow": "News & Insights",
