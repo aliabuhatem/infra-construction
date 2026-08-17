@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getContent } from "../../lib/getContent";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -8,7 +9,15 @@ export const metadata = {
   description: "INFRA Construction website is under construction. We'll be back shortly.",
 };
 
-export default function ComingSoonPage() {
+export default async function ComingSoonPage() {
+  /* While COMING_SOON is on, this is the only page the public can reach, so
+     this button is the site's entire contact surface. It used to hardcode
+     info@infraconstruction.com — a domain the rest of the site doesn't use —
+     which sent every enquiry into a mailbox nobody reads. Same store field as
+     the footer and the contact page now, so all three stay in step. */
+  const c = await getContent();
+  const email = c.content?.footer?.email?.trim() || "info@ic-gp.com";
+
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0d1e28]">
       {/* Background image */}
@@ -76,7 +85,7 @@ export default function ComingSoonPage() {
 
         {/* Contact CTA */}
         <a
-          href="mailto:info@infraconstruction.com"
+          href={`mailto:${email}`}
           className="inline-flex items-center gap-3 bg-[#F2613C] text-white font-bold px-10 py-4 text-[13px]  tracking-widest hover:bg-white hover:text-[#de4821] transition-all duration-300"
           style={{ fontFamily: B }}
         >

@@ -25,6 +25,11 @@ export default function ContactPage() {
     .map(([k, f]) => ({ _key: k, city: f.city || "", country: f.country || "", address: f.address || "", license: f.license || "" }));
 
   const [showOptions, setShowOptions] = useState(false);
+  /* "sent" is the only state the visitor can't retry out of — the message is
+     already in the INFRA inbox, so the form is replaced by a confirmation
+     rather than left inviting a duplicate. "failed" keeps their text on screen
+     and opens the channel modal so nothing typed is ever lost. */
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "failed">("idle");
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -32,6 +37,8 @@ export default function ContactPage() {
     company: "",
     subject: "Project Inquiry",
     message: "",
+    // Honeypot — see the matching check in app/api/contact/route.ts.
+    website: "",
   });
 
   const onChange = (
@@ -48,9 +55,25 @@ export default function ContactPage() {
 
   const buildSubject = () => encodeURIComponent(form.subject || "Inquiry from website");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  /* Send server-side, and fall back to the channel modal on any failure —
+     a misconfigured key or a Resend outage must never end with the visitor
+     believing they've been heard when they haven't. */
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setShowOptions(true);
+    if (status === "sending") return;
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      setStatus("sent");
+    } catch {
+      setStatus("failed");
+      setShowOptions(true);
+    }
   };
 
   return (
@@ -111,6 +134,21 @@ export default function ContactPage() {
             >
               <ContentText section="contact_form" name="title" fallback="Let's Discuss Your Project" />
             </h2>
+            {status === "sent" ? (
+              <div className="border border-[#1F93A4]/40 bg-[#1F93A4]/5 px-8 py-10 text-center">
+                <span className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-[#1F93A4] text-2xl text-white">
+                  ✓
+                </span>
+                <h3 className="mb-3 text-2xl font-bold text-[#213B4D]" style={{ fontFamily: H }}>
+                  Message sent
+                </h3>
+                <p className="mx-auto max-w-sm text-[14px] leading-relaxed text-[#213B4D]/80" style={{ fontFamily: B }}>
+                  Thank you, {form.firstName || "there"} — your message has reached our team at{" "}
+                  <span className="font-semibold">{email}</span>. We reply to {form.email} within two
+                  business days.
+                </p>
+              </div>
+            ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
@@ -206,14 +244,34 @@ export default function ContactPage() {
                   style={{ fontFamily: B }}
                 />
               </div>
+              {/* Hidden from people, visible to bots. Not `type="hidden"` —
+                  that is the one field a bot knows to leave alone. */}
+              <input
+                type="text"
+                name="website"
+                value={form.website}
+                onChange={onChange}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden
+                className="absolute left-[-9999px] h-0 w-0 opacity-0"
+              />
               <button
                 type="submit"
-                className="w-full bg-[#F2613C] text-white font-bold py-4 text-[13px]  tracking-widest hover:bg-[#d64b26] transition-colors duration-300"
+                disabled={status === "sending"}
+                className="w-full bg-[#F2613C] text-white font-bold py-4 text-[13px]  tracking-widest hover:bg-[#d64b26] transition-colors duration-300 disabled:cursor-not-allowed disabled:opacity-60"
                 style={{ fontFamily: B }}
               >
-                Send Message →
+                {status === "sending" ? "Sending…" : "Send Message →"}
               </button>
+              {status === "failed" && (
+                <p className="text-[13px] leading-relaxed text-[#F2613C]" style={{ fontFamily: B }}>
+                  We couldn&apos;t send that from the website. Your message is still here — pick
+                  another channel below, or write to {email} directly.
+                </p>
+              )}
             </form>
+            )}
           </div>
 
           {/* Offices (unchanged from second code) */}
@@ -373,10 +431,13 @@ export default function ContactPage() {
               </span>
             </div>
             <h3 className="text-2xl font-bold text-[#213B4D] mb-2" style={{ fontFamily: H }}>
-              How would you like to send it?
+              Reach us another way
             </h3>
+            {/* The modal is now the fallback path, not the primary one: it
+                opens only when the server-side send failed. */}
             <p className="text-sm text-[#213B4D]/80 mb-6" style={{ fontFamily: B }}>
-              Pick any channel below — your message details will be sent along.
+              The website couldn&apos;t deliver your message just now. Pick a channel below — what
+              you typed is carried across.
             </p>
 
             <div className="space-y-3">

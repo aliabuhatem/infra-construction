@@ -44,12 +44,16 @@ export default function WorkProjectCard({ project: p }: { project: WorkProject }
             teal label under it, and two of them would just repeat. */}
       </div>
       <div className="card-body p-6">
-        <p className="text-[#1F93A4] text-sm font-medium uppercase tracking-[0.08em] mb-2" style={{ fontFamily: B }}>
+        {/* The sub-sector leads the card, not the project name: the type is
+            what the reader is scanning for in a three-card row, and it is the
+            shorter, more repeatable phrase. So the weight and size sit here,
+            and the title reads as the caption underneath. */}
+        <p className="text-[#1F93A4] font-bold text-[17px] lg:text-[18px] uppercase tracking-[0.06em] mb-1.5 leading-[1.25]" style={{ fontFamily: B }}>
           <ContentText section={p.sectionKey} name="type" fallback={p.type} />
         </p>
         {/* lineHeight inline: .card-title (globals.css) is unlayered and so
             outranks Tailwind's leading-* utility. */}
-        <h3 className="card-title text-[#213B4D] font-bold text-[17px] lg:text-[18px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.35 }}>
+        <h3 className="card-title text-[#213B4D] font-normal text-[13.5px] lg:text-sm group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.4 }}>
           <ContentText section={p.sectionKey} name="title" fallback={p.title} />
         </h3>
       </div>
