@@ -844,7 +844,7 @@
       "sector": "Infrastructure",
       "type": "WATER & WASTEWATER MANAGEMENT",
       "description": "Excavation, backfilling and site preparation for the Hayah Kareema wastewater treatment plant at Bassra, Egypt.",
-      "image": "/media/water-basra-wastewater-treatment-egypt.webp",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786947271441-bassra-wastewater-treatment-plan.webp",
       "slug": "bassra-wastewater-treatment-plan",
       "client": "Hayah Kareema Foundation",
       "role": "Subcontractor",
@@ -1524,15 +1524,6 @@
       "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786947271441-bassra-wastewater-treatment-plan.webp",
       "source": "upload",
       "createdAt": "2026-08-17T06:14:31.705Z"
-    },
-    {
-      "id": "1786947238260",
-      "title": "Bassra Wastewater Treatment Plan.webp",
-      "alt": "Bassra Wastewater Treatment Plan.webp",
-      "category": "gallery",
-      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786947237546-bassra-wastewater-treatment-plan.webp",
-      "source": "upload",
-      "createdAt": "2026-08-17T06:13:58.260Z"
     },
     {
       "id": "1786885192429",
