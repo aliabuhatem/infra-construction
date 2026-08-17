@@ -234,12 +234,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                         card carries, so the two read as one card family. The
                         country is still on the project and still listed in "At
                         a glance" above. */}
-                    <div className="text-[#1F93A4] text-sm font-medium uppercase tracking-[0.08em] mb-2" style={{ fontFamily: B }}>
+                    <div className="text-[#1F93A4] font-bold text-[17px] lg:text-[18px] uppercase tracking-[0.06em] mb-1.5 leading-[1.25]" style={{ fontFamily: B }}>
                       <ContentText section={r.sectionKey} name="sector" fallback={r.sector} />
                     </div>
                     {/* lineHeight inline: .card-title (globals.css) is unlayered
                         and outranks Tailwind's leading-* utility. */}
-                    <h3 className="card-title text-[#213B4D] font-bold text-[17px] lg:text-[18px] group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.35 }}>
+                    <h3 className="card-title text-[#213B4D] font-normal text-[13.5px] lg:text-sm group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.4 }}>
                       <ContentText section={r.sectionKey} name="title" fallback={r.title} />
                     </h3>
                   </div>

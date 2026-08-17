@@ -225,12 +225,17 @@ export default function ProjectsPortfolio({
               </div>
               <div className="card-body p-7">
                 <div className="w-5 h-[2px] bg-[#1F93A4] mb-4 group-hover:w-8 transition-all duration-300" />
-                <div className="text-[#1F93A4] text-sm font-medium uppercase tracking-[0.08em] mb-2" style={{ fontFamily: B }}>
+                {/* Sector leads, title reads as its caption — the same weight
+                    and size relationship WorkProjectCard uses on the home page
+                    and the sector strips, so a project looks the same wherever
+                    it is shown. The teal line binds `sector` here rather than
+                    `type`, which is already on the badge over the image. */}
+                <div className="text-[#1F93A4] font-bold text-[17px] lg:text-[18px] uppercase tracking-[0.06em] mb-1.5 leading-[1.25]" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="sector" fallback={p.sector} />
                 </div>
                 {/* lineHeight is set inline because .card-title (globals.css,
                     unlayered) outranks Tailwind's layered leading-* utility. */}
-                <h3 className="card-title text-[#213B4D] font-bold text-[17px] lg:text-[18px] mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.35 }}>
+                <h3 className="card-title text-[#213B4D] font-normal text-[13.5px] lg:text-sm mb-3 group-hover:text-[#1F93A4] transition-colors" style={{ fontFamily: B, lineHeight: 1.4 }}>
                   <ContentText section={p.sectionKey} name="title" fallback={p.title} />
                 </h3>
                 <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
