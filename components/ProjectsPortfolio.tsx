@@ -136,7 +136,7 @@ export default function ProjectsPortfolio({
             </p>
           </div>
           <h2 className="text-[#213B4D]  leading-tight" style={{ fontFamily: H, fontSize: "clamp(20px, 4vw, 48px)", fontWeight: 600, letterSpacing: "-0.01em" }}>
-            <ContentText section="projects_header" name="title" fallback="75+ Projects Delivered Across Multiple Regions" />
+            <ContentText section="projects_header" name="title" fallback="" />
           </h2>
           <p className="text-[#5E5E5E] text-[15px] leading-relaxed mt-4" style={{ fontFamily: B }}>
             <ContentText section="projects_header" name="subtitle" fallback="Since 2000, INFRA Construction has accomplished projects in various fields of specialisation across the Middle East, Africa, and beyond." />
