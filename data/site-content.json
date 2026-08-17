@@ -55,7 +55,7 @@
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881030097-sheik-khalifah-housing-project-al-mukala-yemen.webp",
       "description": "The Built Environment division at IC focuses on high-complexity building structures, public architecture, and commercial facilities.\nWe manage the entire project lifecycle — from pre-construction design review and civil execution to structural fit-outs, building services integration.",
       "capabilities": "Healthcare Infrastructure, Educational Facilities, Tourism & Entertainment, Residential Sector, Public & Commercial Buildings, Special Buildings",
-      "featuredProjects": "mohamed-v-university\nassiut-university-buildings\nimplementation-of-the-ministry-of-foreign-affairs-building"
+      "featuredProjects": "nad-alsheba-dubai\nassiut-university-buildings\nimplementation-of-the-ministry-of-foreign-affairs-building"
     },
     "sub_built_environment_healthcare_infrastructure": {
       "title": "Healthcare Infrastructure",
@@ -105,7 +105,8 @@
       "summary": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786881403414-new-assiut-barrage.webp",
       "description": "IC’s Infrastructure division handles heavy civil engineering, utility networks, marine works, and energy transportation systems designed to withstand demanding environmental conditions and long-term operational demands.",
-      "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution"
+      "capabilities": "Infrastructure, Dams and Irrigation, Ports & Marine Works, Airports, Roads, Highways & Bridges, Energy Infrastructure, Power Generation & Distribution",
+      "featuredProjects": "berbera-international-airport\nbani-mazar-bridge\nbassra-wastewater-treatment-plan"
     },
     "sub_infrastructure_water_wastewater_management": {
       "title": "Water & Wastewater Management",
