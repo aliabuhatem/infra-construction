@@ -913,7 +913,7 @@
       "sector": "Built Environment",
       "type": "SPECIAL BUILDINGS",
       "description": "Design and construction of a modern slaughterhouse for Hadibu city, Socotra, complete with cold store, hygiene systems, paved yards and a solar power supply network.",
-      "image": "/media/1786541653592-document-from-ali.webp",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786948511034-design-and-build-of-hadibu-modern-slaughterhouse-hadibo-socotra.webp",
       "slug": "hadibu-modern-slaughterhouse",
       "client": "H.H. Sheikh Mansour Bin Zayed Al Nahyan's Engineering Office",
       "year": "2016 – 2017",
@@ -1453,7 +1453,6 @@
       "p4": "As Infra Construction continues its regional growth journey, strategic collaborations such as this reinforce its vision of creating lasting value through innovation, technical excellence, and sustainable infrastructure development.",
       "location": "Kuwait"
     },
-    
     "about_leadership_6": {
       "name": "Layal Sahooly",
       "title": "CFO",
@@ -1518,6 +1517,15 @@
     }
   },
   "media": [
+    {
+      "id": "1786948511486",
+      "title": "Design and Build of Hadibu Modern Slaughterhouse Hadibo Socotra.webp",
+      "alt": "Design and Build of Hadibu Modern Slaughterhouse Hadibo Socotra.webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1786948511034-design-and-build-of-hadibu-modern-slaughterhouse-hadibo-socotra.webp",
+      "source": "upload",
+      "createdAt": "2026-08-17T06:35:11.486Z"
+    },
     {
       "id": "1786947271705",
       "title": "Bassra Wastewater Treatment Plan.webp",
