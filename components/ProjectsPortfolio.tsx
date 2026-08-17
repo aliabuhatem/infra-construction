@@ -241,8 +241,15 @@ export default function ProjectsPortfolio({
                 <p className="text-[#5E5E5E] text-[13px] leading-relaxed" style={{ fontFamily: B }}>
                   <ContentText section={p.sectionKey} name="description" fallback={p.description} />
                 </p>
+                {/* mt-auto, not a fixed margin: the grid stretches every card
+                    in a row to the tallest, .card-base/.card-body (globals.css)
+                    carry that height down as a flex column, and the auto margin
+                    eats the leftover space so this link sits on the floor of
+                    every card regardless of how many lines the description ran
+                    to. pt-5 is the floor on the gap, for the longest card where
+                    there is no leftover space to eat. */}
                 <span
-                  className="mt-5 inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.18em] text-[#1F93A4]"
+                  className="mt-auto pt-5 inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.18em] text-[#1F93A4]"
                   style={{ fontFamily: B }}
                 >
                   View Details

@@ -45,7 +45,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const c = await getContent();
+  /* Site media included: this store is handed to ContentProvider, and it has to
+     be the same shape /api/content serves so the provider's background refresh
+     is a no-op rather than a second, visible render. */
+  const c = await getContent({ includeSiteMedia: true });
 
   return (
     <html suppressHydrationWarning
@@ -53,7 +56,9 @@ export default async function RootLayout({
       className={`${sourceSans.variable} h-full antialiased`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col">
-        <ContentProvider>
+        {/* Seeded with the store this render already read, so the first paint
+            carries the real copy instead of each component's fallback prop. */}
+        <ContentProvider initialStore={c}>
           <Navbar
             sectors={resolveSectors(c).map(toNavItem)}
             services={resolveServices(c).map(toNavItem)}

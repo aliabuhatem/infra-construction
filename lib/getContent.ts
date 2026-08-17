@@ -24,18 +24,37 @@ export type ContentStore = {
   _deletedSections: string[];
 };
 
-let cache: { data: ContentStore; ts: number } | null = null;
+let cache: { data: ContentStore; ts: number; withSiteMedia: boolean } | null = null;
 const CACHE_TTL = 0; // always fresh in dev; Next.js handles cache in prod
 
-export async function getContent(): Promise<ContentStore> {
-  // In dev, skip memory cache so every request is fresh
-  if (process.env.NODE_ENV === "production" && cache && Date.now() - cache.ts < CACHE_TTL) {
+/**
+ * The content store, for any Server Component.
+ *
+ * `includeSiteMedia` adds the auto-scanned entries for files shipped in
+ * /public/media to `media[]`. Pages don't need them — they pass an explicit
+ * fallback image — so it stays off by default and keeps the payload down. The
+ * root layout turns it on for the one case that does: the store it seeds into
+ * ContentProvider has to match what /api/content returns, or MediaImage would
+ * resolve one image on the server and a different one after the background
+ * refresh, reintroducing the very flash the seeding removes.
+ */
+export async function getContent(
+  { includeSiteMedia = false }: { includeSiteMedia?: boolean } = {}
+): Promise<ContentStore> {
+  // In dev, skip memory cache so every request is fresh. The cached shape has
+  // to match the one asked for — the two differ in `media`.
+  if (
+    process.env.NODE_ENV === "production" &&
+    cache &&
+    cache.withSiteMedia === includeSiteMedia &&
+    Date.now() - cache.ts < CACHE_TTL
+  ) {
     return cache.data;
   }
   try {
-    const store = await readContentStore({ includeSiteMedia: false });
+    const store = await readContentStore({ includeSiteMedia });
     const data = store as ContentStore;
-    cache = { data, ts: Date.now() };
+    cache = { data, ts: Date.now(), withSiteMedia: includeSiteMedia };
     return data;
   } catch {
     return { content: {}, media: [], _deletedSections: [] };

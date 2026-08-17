@@ -318,11 +318,7 @@ export const services: Expertise[] = [
   },
 ];
 
-/* ── 2 SECTORS OF ACTIVITY ────────────────────────────────────────────────────
-   The operating model is two pillars — Built Environment and Infrastructure —
-   and each carries a set of subsectors. Subsectors render as anchored sections
-   on the parent sector page (`/sectors/infrastructure#airports`), so they stay
-   linkable from the navbar without splitting the copy across thin pages. */
+/* ── 2 SECTORS OF ACTIVITY ────────────────────────────────────────────────────*/
 
 export const sectors: Expertise[] = [
   {
