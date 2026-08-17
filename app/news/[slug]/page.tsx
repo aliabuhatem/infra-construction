@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { readContentStore } from "@/lib/admin/content-store";
+import { withNewsSlugs } from "@/lib/news";
 import { Reveal } from "@/components/motion";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -14,18 +15,28 @@ type NewsItem = { _key: string } & Fields;
 
 function getNewsItems(store: Store): NewsItem[] {
   const deleted = new Set(store._deletedSections || []);
-  return Object.entries(store.content || {})
-    .filter(([k]) => /^news_\d+$/.test(k) && !deleted.has(k))
-    .sort(([a], [b]) => parseInt(a.replace("news_", ""), 10) - parseInt(b.replace("news_", ""), 10))
-    .map(([k, f]) => ({ _key: k, ...f } as NewsItem));
+  return withNewsSlugs(
+    Object.entries(store.content || {})
+      .filter(([k]) => /^news_\d+$/.test(k) && !deleted.has(k))
+      .sort(([a], [b]) => parseInt(a.replace("news_", ""), 10) - parseInt(b.replace("news_", ""), 10))
+      .map(([k, f]) => ({ _key: k, ...f } as NewsItem))
+  );
 }
+
+/** The article a URL segment refers to. The section key is accepted alongside
+    the slug so the `slug || _key` links the lists build always resolve — the
+    same alias lib/projects.ts's getProjectBySlug allows. Only the resolved
+    slug is prerendered below, so that stays the canonical URL. */
+const findNewsItem = (items: NewsItem[], slug: string) =>
+  items.find((n) => n.slug === slug || n._key === slug);
 
 export async function generateStaticParams() {
   try {
     const store = (await readContentStore({ includeSiteMedia: false })) as Store;
-    return getNewsItems(store)
-      .filter((n) => n.slug)
-      .map((n) => ({ slug: n.slug }));
+    // Every article, not just the ones carrying a `slug` field — withNewsSlugs
+    // guarantees each one has a usable segment, and the articles that were
+    // filtered out here are exactly the ones that used to 404.
+    return getNewsItems(store).map((n) => ({ slug: n.slug }));
   } catch {
     return [];
   }
@@ -35,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   try {
     const store = (await readContentStore({ includeSiteMedia: false })) as Store;
-    const item = getNewsItems(store).find((n) => n.slug === slug);
+    const item = findNewsItem(getNewsItems(store), slug);
     if (!item) return { title: "Article — INFRA Construction" };
     return {
       title: `${item.title || slug} — INFRA Construction`,
@@ -56,10 +67,12 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const store = (await readContentStore({ includeSiteMedia: false })) as Store;
   const allItems = getNewsItems(store);
-  const item = allItems.find((n) => n.slug === slug);
+  const item = findNewsItem(allItems, slug);
   if (!item) notFound();
 
-  const related = allItems.filter((n) => n.slug !== slug).slice(0, 3);
+  // Compared on the section key, not the segment, so the article is excluded
+  // from its own "More Updates" strip when it was reached via the key alias.
+  const related = allItems.filter((n) => n._key !== item._key).slice(0, 3);
   const paragraphs = [1, 2, 3, 4, 5].map((n) => item[`p${n}`]).filter(Boolean);
   const highlights = [1, 2, 3, 4].map((n) => item[`h${n}`]).filter(Boolean);
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import ContentText from "../components/admin-panel/ContentText";
 import MediaImage from "../components/admin-panel/MediaImage";
 import { getContent, getSectionsByPrefix } from "../lib/getContent";
+import { compareNewsByNewest, withNewsSlugs } from "../lib/news";
 import { resolveServices, resolveSectors } from "../lib/expertise";
 import SectorCardWide from "../components/SectorCardWide";
 import WorkProjectCard from "../components/WorkProjectCard";
@@ -15,8 +16,16 @@ export default async function HomePage() {
   const c = await getContent();
   const deleted = new Set(c._deletedSections || []);
 
-  const latestNews = getSectionsByPrefix(c, "news_")
-    .filter((n) => /^news_\d+$/.test(n._key))
+  // The three newest articles, not the three lowest section numbers —
+  // getSectionsByPrefix orders by section number, which only matched
+  // publication order by coincidence, so a newly added article never showed up
+  // here. Sorted through the same comparator as /news so both agree on what
+  // "latest" means. Slugs resolved through withNewsSlugs, so the cards below
+  // can never link at a URL the article route rejects.
+  const latestNews = withNewsSlugs(
+    getSectionsByPrefix(c, "news_").filter((n) => /^news_\d+$/.test(n._key))
+  )
+    .sort(compareNewsByNewest)
     .slice(0, 3);
 
   const sectorItems = resolveSectors(c);

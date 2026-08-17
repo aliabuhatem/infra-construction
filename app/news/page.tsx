@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
 import { getContent } from "@/lib/getContent";
-import { compareNewsByNewest } from "@/lib/news";
+import { compareNewsByNewest, withNewsSlugs } from "@/lib/news";
 import { Reveal } from "@/components/motion";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -18,18 +18,23 @@ export const metadata = {
 export default async function NewsPage() {
   const c = await getContent();
   const deleted = new Set(c._deletedSections || []);
-  const allItems = Object.entries(c.content || {})
-    .filter(([k]) => /^news_\d+$/.test(k) && !deleted.has(k))
-    .map(([k, f]) => ({
-      sectionKey: k,
-      slug:       f.slug     || k,
-      title:      f.title    || "",
-      date:       f.date     || "",
-      category:   f.category || "",
-      excerpt:    f.excerpt  || "",
-      image:      f.image    || "",
-    }))
-    .sort(compareNewsByNewest);
+  // Slugs come from withNewsSlugs rather than `f.slug || k` so this page, the
+  // home page and the article route agree on every URL — including which of
+  // two articles sharing a slug keeps it.
+  const allItems = withNewsSlugs(
+    Object.entries(c.content || {})
+      .filter(([k]) => /^news_\d+$/.test(k) && !deleted.has(k))
+      .map(([k, f]) => ({
+        _key:       k,
+        sectionKey: k,
+        title:      f.title    || "",
+        date:       f.date     || "",
+        category:   f.category || "",
+        excerpt:    f.excerpt  || "",
+        image:      f.image    || "",
+        slug:       f.slug     || "",
+      }))
+  ).sort(compareNewsByNewest);
 
   return (
     <>
