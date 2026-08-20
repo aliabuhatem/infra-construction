@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import ContentText from "@/components/admin-panel/ContentText";
 import MediaImage from "@/components/admin-panel/MediaImage";
-import { categoryOf, countryOf, interleaveBySubSector } from "@/lib/projects";
+import { applyGridPrecedence, categoryOf, countryOf, interleaveBySubSector } from "@/lib/projects";
 
 const H = "var(--font-myriad), system-ui, -apple-system, sans-serif";
 const B = "var(--font-myriad), system-ui, -apple-system, sans-serif";
@@ -88,17 +88,20 @@ export default function ProjectsPortfolio({
   );
 
   // Filtered, then dealt out so neighbouring cards in a row carry different
-  // sub-sector badges. The interleave is deterministic, so the order the server
-  // renders is the order the client hydrates.
+  // sub-sector badges, then the hand-set precedence pairs are honoured. Both
+  // passes are deterministic, so the order the server renders is the order the
+  // client hydrates.
   const filtered = useMemo(
     () =>
-      interleaveBySubSector(
-        projects.filter(
-          (p) =>
-            (activeCategory === "all" || categoryOf(p.sector) === activeCategory) &&
-            (activeCountry === "all" || countryOf(p.country).toLowerCase() === activeCountry)
-        ),
-        GRID_COLUMNS
+      applyGridPrecedence(
+        interleaveBySubSector(
+          projects.filter(
+            (p) =>
+              (activeCategory === "all" || categoryOf(p.sector) === activeCategory) &&
+              (activeCountry === "all" || countryOf(p.country).toLowerCase() === activeCountry)
+          ),
+          GRID_COLUMNS
+        )
       ),
     [projects, activeCategory, activeCountry]
   );

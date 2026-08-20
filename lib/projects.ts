@@ -233,6 +233,40 @@ export function interleaveBySubSector<T extends { type: string }>(
   return out;
 }
 
+/* ── Manual grid precedence ───────────────────────────────────────────────
+   The interleave decides a card's slot from its sub-sector alone, which is the
+   right rule for badge variety but occasionally lands two projects in an order
+   the business wants the other way round. Each pair below reads "this slug
+   comes before that one": if the interleave already agrees, nothing happens;
+   if it does not, the two projects trade the slots the interleave gave them.
+
+   Trading slots — rather than lifting one card out and reinserting it — is
+   what keeps the rest of the grid untouched: every other project stays exactly
+   where it was, and each of the pair lands in a slot the algorithm had already
+   judged free of a neighbouring badge clash. Living in code, not the store, so
+   it survives an admin content sync. */
+const GRID_PRECEDENCE: [string, string][] = [
+  // Ministry of Foreign Affairs ahead of Arab El A'wamer (requested 2026-08-20).
+  [
+    "implementation-of-the-ministry-of-foreign-affairs-building",
+    "industrial-zone-sewerage-system-arab-el-awamer",
+  ],
+];
+
+/** Apply GRID_PRECEDENCE to an already-interleaved list. Idempotent, and a
+    no-op when a filter has left only one of a pair on screen. Deterministic
+    like the interleave itself, so server render and client hydration agree. */
+export function applyGridPrecedence<T extends { slug: string }>(order: T[]): T[] {
+  const out = [...order];
+  for (const [first, second] of GRID_PRECEDENCE) {
+    const i = out.findIndex((p) => p.slug === first);
+    const j = out.findIndex((p) => p.slug === second);
+    if (i < 0 || j < 0 || i < j) continue;
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
 /** Look up one project. The section key is accepted alongside the slug so a
     link built before a title was renamed still resolves instead of 404ing. */
 export const getProjectBySlug = (store: StoreLike, slug: string): Project | undefined =>
