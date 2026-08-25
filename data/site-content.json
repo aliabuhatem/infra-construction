@@ -819,7 +819,7 @@
       "h4": "Cement block structures: 744 m³"
     },
     "project_2": {
-      "title": "Bani Mazar Bridge",
+      "title": "Bani Mazar Bridge, Cairo - Egypt",
       "country": "Egypt",
       "sector": "Infrastructure",
       "type": "ROADS & BRIDGES",
@@ -840,7 +840,7 @@
       "h2": "Maintenance of subgrade: 100,000 m²"
     },
     "project_3": {
-      "title": "Bassra Wastewater Treatment Plant",
+      "title": "Bassra Wastewater Treatment Plan, Cairo - Egypt",
       "country": "Egypt",
       "sector": "Infrastructure",
       "type": "WATER & WASTEWATER MANAGEMENT",
@@ -863,7 +863,7 @@
       "h3": "Mechanical excavation works: 19,325 m³"
     },
     "project_5": {
-      "title": "Berbera International Airport — Terminal Refurbishment",
+      "title": "Berbera International Airport, Berbera - Somaliland",
       "country": "Berbera, Somaliland",
       "sector": "Infrastructure",
       "type": "AIRPORTS",
@@ -888,7 +888,7 @@
       "h6": "GRP tank installation: 108 m³; water filtration rated for 200 people per day"
     },
     "project_7": {
-      "title": "New Assiut Barrage",
+      "title": "New Assiut Barrage, Assiut - Egypt",
       "country": "Assiut, Egypt",
       "sector": "Infrastructure",
       "type": "DAMS & IRRIGATIONS",
@@ -908,7 +908,7 @@
       "h1": "6,500,000 m³ of material loaded, moved and offloaded"
     },
     "project_9": {
-      "title": "Assiut University Buildings",
+      "title": "Assiut University Building, Assiut - Egypt",
       "country": "Assiut, Egypt",
       "sector": "Built Environment",
       "type": "EDUCATION",
@@ -928,7 +928,7 @@
       "h1": "8,000 m³ of supply and building works"
     },
     "project_10": {
-      "title": "West Assiut Plateau Road",
+      "title": "West Assiut Plateau Road, Assiut - Egypt",
       "country": "Assiut, Egypt",
       "sector": "Infrastructure",
       "type": "ROADS & BRIDGES",
@@ -952,7 +952,7 @@
       "h4": "Concrete-pipe works: 2,000 m³"
     },
     "project_13": {
-      "title": "Ministry of Foreign Affairs Building — Aden",
+      "title": "Ministry of Foreign Affairs Building, Aden - Yemen",
       "country": "Aden, Yemen",
       "sector": "Built Environment",
       "type": "PUBLIC & COMMERCIAL BUILDINGS",
@@ -995,7 +995,7 @@
       "h3": "Concrete works: 1,000 m²"
     },
     "project_15": {
-      "title": "Mohamed V. University",
+      "title": "Mohamed V. University, Ajman - UAE",
       "country": "Ajman, UAE",
       "sector": "Built Environment",
       "type": "EDUCATION",
@@ -1003,7 +1003,7 @@
       "image": "/media/1786529705375-mohamed-v.-university-ajman-uae-2.webp"
     },
     "project_16": {
-      "title": "New College of Nursing — Fatima College of Health Sciences",
+      "title": "New College of Nursing (Fatima College of Health Sciences), Ajman - UAE",
       "country": "Ajman, UAE",
       "sector": "Built Environment",
       "type": "EDUCATION",
@@ -1011,7 +1011,7 @@
       "image": "/media/1786604572068-new-college-of-nursing-fatima-college-of-health-sciences-location-a.png"
     },
     "project_17": {
-      "title": "Private Residential Complex",
+      "title": "Private Residential Complex, Dubai - UAE",
       "country": "Dubai, UAE",
       "sector": "Built Environment",
       "type": "RESIDENTIAL",
