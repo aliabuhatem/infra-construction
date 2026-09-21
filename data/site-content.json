@@ -1517,19 +1517,6 @@
       "author": "Infra Construction",
       "location": "Amman, Jordan",
       "category": "Business Development"
-    },
-    "Qijia_partnership": {
-      "title": "Infra Global Group Signs MoU and Cooperation Agreement with Chinese Qijia Group",
-      "URLSlug": "infra-global-group-qijia-cooperation-agreement",
-      "Heading1": "A Strategic Partnership Between Infra Global Group and Qijia Group",
-      "Heading2": "Innovative Parking Solutions for Growing Cities",
-      "Heading3": "Vertical Parking Systems for Maximum Space Utilization",
-      "Heading4": "Expanding Investment and Operational Opportunities Across the Middle East",
-      "Excerpt": "Infra Global Group has signed a Memorandum of Understanding and cooperation agreement with Chinese industrial leader Qijia Group, paving the way for innovative vertical parking solutions and new investment and operational opportunities across the Middle East.",
-      "Paragraph1": "Infra Global Group has signed a Memorandum of Understanding and cooperation agreement with Qijia Group, a leading Chinese industrial company, as part of a strategic partnership aimed at developing advanced solutions in the parking sector.",
-      "Paragraph2": "Qijia specializes in vertical parking systems that directly address congestion and parking shortages in major cities such as Abu Dhabi by maximizing the efficient use of available space.",
-      "Paragraph3": "The partnership paves the way for broad investment and operational opportunities for both parties across the Middle East, opening new prospects for cooperation and expansion throughout the region.",
-      "Category": "Strategic Partnerships"
     }
   },
   "media": [
@@ -2386,6 +2373,7 @@
     "project_11",
     "project_12",
     "project_8",
-    "strategicpartnershipQijia"
+    "strategicpartnershipQijia",
+    "Qijia_partnership"
   ]
 }
