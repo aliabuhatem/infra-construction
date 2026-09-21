@@ -1517,12 +1517,6 @@
       "author": "Infra Construction",
       "location": "Amman, Jordan",
       "category": "Business Development"
-    },
-    "strategicpartnershipQijia": {
-      "title": ""
-    },
-    "Qijia_partnership": {
-      "title": ""
     }
   },
   "media": [
@@ -2378,6 +2372,8 @@
     "project_6",
     "project_11",
     "project_12",
-    "project_8"
+    "project_8",
+    "Qijia_partnership",
+    "strategicpartnershipQijia"
   ]
 }
