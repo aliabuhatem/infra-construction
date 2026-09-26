@@ -1052,6 +1052,26 @@
       "p2": "The two-story building has a total area of 505 square meters. Each floor comprises two apartments, with each apartment featuring a living room, kitchen, three bedrooms, and three bathrooms.",
       "p3": "Despite the security and logistical challenges encountered during implementation, the project was delivered within the specified schedule. The shortage of local expertise was addressed through the engagement of international specialists, while all construction materials were imported for the project."
     },
+    "project_19": {
+      "title": "Qalansiyah Power Station Rehabilitation & Expansion – Socotra Island",
+      "country": "Yemen",
+      "sector": "Infrastructure",
+      "type": "Transportation",
+      "description": "Civil rehabilitation and expansion works for Qalansiyah Power Station, including the restoration of existing buildings, modifications to external areas, and station expansion.",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790448418748-50827346_293381071530477_7400303379143983104_n.webp",
+      "slug": "qalansiyah-power-station-rehabilitation-socotra",
+      "h1": "Rehabilitating Power Infrastructure in Qalansiyah",
+      "h2": "Restoring Existing Facilities and Civil Works",
+      "h3": "Expanding the Station’s External Works",
+      "h4": "Implementation in Line with Approved Plans",
+      "excerpt": "Infra Construction undertook civil works and rehabilitation at Qalansiyah Power Station in Socotra, including maintenance of existing buildings and expansion of the station’s external works in accordance with the approved project plans.",
+      "p1": "Infra Construction commenced the rehabilitation of Qalansiyah Power Station in Socotra Island, undertaking civil works alongside the restoration and maintenance of the station’s existing buildings.",
+      "p2": "The scope also included modifications to the external works and expansion of the station to accommodate the approved development requirements, with the interventions carried out in accordance with the project’s approved drawings and plans.",
+      "p3": "The works were implemented according to the established project schedule, with completion planned for the first quarter of 2019. The project was funded through the Saudi Program for the Development and Reconstruction of Yemen.",
+      "scope": "Civil works\nRehabilitation of existing buildings\nMaintenance of existing facilities\nModification of external works\nExpansion of the power station\nImplementation in accordance with approved drawings and plans",
+      "ContractorRole": "Construction & Rehabilitation Contractor",
+      "ProjectType": "Power Station Rehabilitation & Expansion"
+    },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
       "date": "Jun 2026",
@@ -1614,27 +1634,18 @@
       "p4": "We bring adaptability, inclusivity, and effective execution to construction projects across different cultural and operational contexts, enabling us to deliver professional construction management services in diverse markets.",
       "category": "Business Development",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790444111544-505527928_1317357153727981_4370540372016006484_n.jpg"
-    },
-    "project_19": {
-      "title": "Qalansiyah Power Station Rehabilitation & Expansion – Socotra Island",
-      "slug": "qalansiyah-power-station-rehabilitation-socotra",
-      "h1": "Rehabilitating Power Infrastructure in Qalansiyah",
-      "h2": "Restoring Existing Facilities and Civil Works",
-      "h3": "Expanding the Station’s External Works",
-      "h4": "Implementation in Line with Approved Plans",
-      "excerpt": "Infra Construction undertook civil works and rehabilitation at Qalansiyah Power Station in Socotra, including maintenance of existing buildings and expansion of the station’s external works in accordance with the approved project plans.",
-      "p1": "Infra Construction commenced the rehabilitation of Qalansiyah Power Station in Socotra Island, undertaking civil works alongside the restoration and maintenance of the station’s existing buildings.",
-      "p2": "The scope also included modifications to the external works and expansion of the station to accommodate the approved development requirements, with the interventions carried out in accordance with the project’s approved drawings and plans.",
-      "p3": "The works were implemented according to the established project schedule, with completion planned for the first quarter of 2019. The project was funded through the Saudi Program for the Development and Reconstruction of Yemen.",
-      "scope": "Civil works\nRehabilitation of existing buildings\nMaintenance of existing facilities\nModification of external works\nExpansion of the power station\nImplementation in accordance with approved drawings and plans",
-      "description": "Civil rehabilitation and expansion works for Qalansiyah Power Station, including the restoration of existing buildings, modifications to external areas, and station expansion.",
-      "ContractorRole": "Construction & Rehabilitation Contractor",
-      "ProjectType": "Power Station Rehabilitation & Expansion",
-      "sector": "Infrastructure",
-      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790448418748-50827346_293381071530477_7400303379143983104_n.webp"
     }
   },
   "media": [
+    {
+      "id": "1790451105688",
+      "title": "50827346_293381071530477_7400303379143983104_n (1).webp",
+      "alt": "50827346_293381071530477_7400303379143983104_n (1).webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790451105165-50827346_293381071530477_7400303379143983104_n-1-.webp",
+      "source": "upload",
+      "createdAt": "2026-09-26T19:31:45.688Z"
+    },
     {
       "id": "1790448419161",
       "title": "50827346_293381071530477_7400303379143983104_n.webp",
