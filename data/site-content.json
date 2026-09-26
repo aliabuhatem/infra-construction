@@ -1072,6 +1072,27 @@
       "ContractorRole": "Construction & Rehabilitation Contractor",
       "ProjectType": "Power Station Rehabilitation & Expansion"
     },
+    "project_20": {
+      "title": "Ministry of Foreign Affairs Headquarters – Construction Progress",
+      "country": "Aden, Yemen",
+      "sector": "Built Environment",
+      "type": "Administrative Building",
+      "description": "Ongoing construction of the Ministry of Foreign Affairs Headquarters in Aden and its associated facilities, implemented according to the agreed project plans and schedule.",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790451122905-56232296_332209054314345_64709712448323584_n.jpg",
+      "slug": "ministry-foreign-affairs-headquarters-construction-progress",
+      "h1": "Progressing Toward the Timely Delivery of the Ministry of Foreign Affairs Headquarters",
+      "h2": "Construction Works Continue According to Approved Plans",
+      "h3": "Coordination Across the Main Building and Its Facilities",
+      "h4": "Scheduled for Completion by the End of 2019",
+      "excerpt": "Infra Construction continued construction works on the Ministry of Foreign Affairs Headquarters in Aden and its associated facilities, following the agreed drawings and plans, with completion targeted for the end of 2019.",
+      "p1": "Infra Construction continued the implementation of construction works for the Ministry of Foreign Affairs Headquarters in Aden and its associated facilities, maintaining progress in line with the established project schedule.",
+      "p2": "The works were carried out in accordance with the agreed drawings and approved plans, ensuring that the different components of the development progressed in coordination with the project requirements.",
+      "p3": "Funded by the Ministry of Foreign Affairs, the project was scheduled for completion and handover to the owner no later than the end of 2019.",
+      "scope": "Construction works\nImplementation according to approved drawings and plans\nWorks for the main Ministry of Foreign Affairs building and associated facilities\nProject execution and coordination\nHandover upon completion",
+      "ContractorRole": "Construction Contractor",
+      "ProjectType": "Government / Administrative Building",
+      "client": "Ministry of Foreign Affairs"
+    },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
       "date": "Jun 2026",
@@ -1634,26 +1655,6 @@
       "p4": "We bring adaptability, inclusivity, and effective execution to construction projects across different cultural and operational contexts, enabling us to deliver professional construction management services in diverse markets.",
       "category": "Business Development",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790444111544-505527928_1317357153727981_4370540372016006484_n.jpg"
-    },
-    "project_20": {
-      "title": "Ministry of Foreign Affairs Headquarters – Construction Progress",
-      "slug": "ministry-foreign-affairs-headquarters-construction-progress",
-      "h1": "Progressing Toward the Timely Delivery of the Ministry of Foreign Affairs Headquarters",
-      "h2": "Construction Works Continue According to Approved Plans",
-      "h3": "Coordination Across the Main Building and Its Facilities",
-      "h4": "Scheduled for Completion by the End of 2019",
-      "excerpt": "Infra Construction continued construction works on the Ministry of Foreign Affairs Headquarters in Aden and its associated facilities, following the agreed drawings and plans, with completion targeted for the end of 2019.",
-      "p1": "Infra Construction continued the implementation of construction works for the Ministry of Foreign Affairs Headquarters in Aden and its associated facilities, maintaining progress in line with the established project schedule.",
-      "p2": "The works were carried out in accordance with the agreed drawings and approved plans, ensuring that the different components of the development progressed in coordination with the project requirements.",
-      "p3": "Funded by the Ministry of Foreign Affairs, the project was scheduled for completion and handover to the owner no later than the end of 2019.",
-      "scope": "Construction works\nImplementation according to approved drawings and plans\nWorks for the main Ministry of Foreign Affairs building and associated facilities\nProject execution and coordination\nHandover upon completion",
-      "description": "Ongoing construction of the Ministry of Foreign Affairs Headquarters in Aden and its associated facilities, implemented according to the agreed project plans and schedule.",
-      "ContractorRole": "Construction Contractor",
-      "sector": "Built Environment",
-      "ProjectType": "Government / Administrative Building",
-      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790451122905-56232296_332209054314345_64709712448323584_n.jpg",
-      "country": "Aden, Yemen",
-      "client": "Ministry of Foreign Affairs"
     }
   },
   "media": [
