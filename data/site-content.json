@@ -1093,6 +1093,27 @@
       "ProjectType": "Government / Administrative Building",
       "client": "Ministry of Foreign Affairs"
     },
+    "project_21": {
+      "title": "Groundwater Well Drilling Project – Socotra Island",
+      "country": "Yemen",
+      "sector": "Infrastructure",
+      "type": "Groundwater Well Drilling & Water Infrastructure",
+      "description": "Comprehensive highway expansion and rehabilitation including earthworks, pavement, drainage, and road safety.",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790451956705-60171927_352893798912537_7698695562018684928_n.webp",
+      "slug": "groundwater-well-drilling-project-socotra",
+      "h1": "Expanding Water Access Across Socotra",
+      "h2": "Six Groundwater Wells Across Two Cities",
+      "h3": "Supporting Infrastructure for Reliable Operation",
+      "h4": "Designed and Implemented with Saudi Development Program Support",
+      "excerpt": "Infra Construction was commissioned to design and implement six groundwater wells across Hadibu and Qalansiyah in Socotra, together with the electrical and operational infrastructure required for reliable water extraction.",
+      "p1": "Under the supervision and support of the Saudi Program for the Development and Reconstruction of Yemen, Infra Construction was commissioned to design and implement a groundwater well drilling project in Socotra Governorate. Following the preparation and approval of the required designs, construction works commenced on site.",
+      "p2": "The project comprises four groundwater wells in Hadibu and two additional wells in Qalansiyah, providing a total of six wells across the two cities.",
+      "p3": "Each well is equipped with the essential systems required for operation, including electrical generators, control panels, and power cables to support proper pumping and transfer of groundwater to storage tanks.",
+      "p4": "The supporting facilities also include dedicated rooms for backup generators and separate accommodation for security guards, providing the operational infrastructure needed to support the wells and their associated equipment.",
+      "ContractorRole": "Design & Construction Contractor",
+      "ProjectType": "Groundwater Well Drilling & Water Infrastructure",
+      "scope": "Design of groundwater wells\nDrilling of six groundwater wells\nFour wells in Hadibu\nTwo wells in Qalansiyah\nElectrical generators\nElectrical control panels\nPower cables\nSystems for pumping water to storage tanks\nBackup generator rooms\nGuard rooms"
+    },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
       "date": "Jun 2026",
@@ -1655,25 +1676,6 @@
       "p4": "We bring adaptability, inclusivity, and effective execution to construction projects across different cultural and operational contexts, enabling us to deliver professional construction management services in diverse markets.",
       "category": "Business Development",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790444111544-505527928_1317357153727981_4370540372016006484_n.jpg"
-    },
-    "project_21": {
-      "title": "Groundwater Well Drilling Project – Socotra Island",
-      "slug": "groundwater-well-drilling-project-socotra",
-      "h1": "Expanding Water Access Across Socotra",
-      "h2": "Six Groundwater Wells Across Two Cities",
-      "h3": "Supporting Infrastructure for Reliable Operation",
-      "h4": "Designed and Implemented with Saudi Development Program Support",
-      "excerpt": "Infra Construction was commissioned to design and implement six groundwater wells across Hadibu and Qalansiyah in Socotra, together with the electrical and operational infrastructure required for reliable water extraction.",
-      "p1": "Under the supervision and support of the Saudi Program for the Development and Reconstruction of Yemen, Infra Construction was commissioned to design and implement a groundwater well drilling project in Socotra Governorate. Following the preparation and approval of the required designs, construction works commenced on site.",
-      "p2": "The project comprises four groundwater wells in Hadibu and two additional wells in Qalansiyah, providing a total of six wells across the two cities.",
-      "p3": "Each well is equipped with the essential systems required for operation, including electrical generators, control panels, and power cables to support proper pumping and transfer of groundwater to storage tanks.",
-      "p4": "The supporting facilities also include dedicated rooms for backup generators and separate accommodation for security guards, providing the operational infrastructure needed to support the wells and their associated equipment.",
-      "ContractorRole": "Design & Construction Contractor",
-      "ProjectType": "Groundwater Well Drilling & Water Infrastructure",
-      "sector": "Infrastructure",
-      "country": "Yemen",
-      "scope": "Design of groundwater wells\nDrilling of six groundwater wells\nFour wells in Hadibu\nTwo wells in Qalansiyah\nElectrical generators\nElectrical control panels\nPower cables\nSystems for pumping water to storage tanks\nBackup generator rooms\nGuard rooms",
-      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790451956705-60171927_352893798912537_7698695562018684928_n.webp"
     }
   },
   "media": [
