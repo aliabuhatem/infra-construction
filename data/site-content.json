@@ -1115,6 +1115,26 @@
       "scope": "Design of groundwater wells\nDrilling of six groundwater wells\nFour wells in Hadibu\nTwo wells in Qalansiyah\nElectrical generators\nElectrical control panels\nPower cables\nSystems for pumping water to storage tanks\nBackup generator rooms\nGuard rooms",
       "media": ""
     },
+    "project_22": {
+      "title": "Kapichira Dam Rehabilitation and Strengthening Works – Malawi",
+      "country": "Mozambique",
+      "sector": "Infrastructure",
+      "type": "Wastewater",
+      "description": "Tender participation for the rehabilitation and strengthening of Kapichira Dam in Malawi, covering spillway rehabilitation, embankment strengthening, irrigation infrastructure, and dam monitoring systems.",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791841111136-1790585771780.webp",
+      "slug": "kapichira-dam-rehabilitation-strengthening-malawi",
+      "h1": "Kapichira Dam Rehabilitation and Strengthening Works in Malawi",
+      "h2": "Project Scope and Key Rehabilitation Works",
+      "h3": "Dam Strengthening, Spillway Rehabilitation, and Safety Systems",
+      "h4": "Technical and Financial Proposal Preparation",
+      "excerpt": "Infra Construction is participating in the tender for the rehabilitation and strengthening of Kapichira Dam in Malawi, a World Bank-funded project owned by the Electricity Generation Company Malawi (EGENCO). The scope includes dam strengthening, spillway rehabilitation, irrigation infrastructure, and monitoring systems.",
+      "p1": "Infra Construction is participating in the tender for the Kapichira Dam Rehabilitation and Strengthening Works in Malawi. Funded by the World Bank and owned by the Electricity Generation Company Malawi (EGENCO), the project focuses on rehabilitating and strengthening critical dam infrastructure.",
+      "p2": "The project scope includes the rehabilitation of the main spillway and radial gates, reconstruction and strengthening of the embankment dam, and construction of an emergency spillway and a permanent irrigation intake.",
+      "p3": "Additional works include the rehabilitation of the right abutment and guide wall, installation of dam instrumentation and monitoring systems, and coordination with the Shire Valley Transformation Programme.",
+      "p4": "Infra Construction is currently preparing its technical and financial proposals in accordance with the project requirements. Follow Infra Construction for updates on the tender and its progress.",
+      "ProjectType": "Dam Rehabilitation and Strengthening",
+      "ContractorRole": "Tender Participant – Technical and Financial Proposal Preparation"
+    },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
       "date": "Jun 2026",
@@ -1677,28 +1697,18 @@
       "p4": "We bring adaptability, inclusivity, and effective execution to construction projects across different cultural and operational contexts, enabling us to deliver professional construction management services in diverse markets.",
       "category": "Business Development",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790444111544-505527928_1317357153727981_4370540372016006484_n.jpg"
-    },
-    "project_22": {
-      "title": "Kapichira Dam Rehabilitation and Strengthening Works – Malawi",
-      "slug": "kapichira-dam-rehabilitation-strengthening-malawi",
-      "h1": "Kapichira Dam Rehabilitation and Strengthening Works in Malawi",
-      "h2": "Project Scope and Key Rehabilitation Works",
-      "h3": "Dam Strengthening, Spillway Rehabilitation, and Safety Systems",
-      "h4": "Technical and Financial Proposal Preparation",
-      "excerpt": "Infra Construction is participating in the tender for the rehabilitation and strengthening of Kapichira Dam in Malawi, a World Bank-funded project owned by the Electricity Generation Company Malawi (EGENCO). The scope includes dam strengthening, spillway rehabilitation, irrigation infrastructure, and monitoring systems.",
-      "p1": "Infra Construction is participating in the tender for the Kapichira Dam Rehabilitation and Strengthening Works in Malawi. Funded by the World Bank and owned by the Electricity Generation Company Malawi (EGENCO), the project focuses on rehabilitating and strengthening critical dam infrastructure.",
-      "p2": "The project scope includes the rehabilitation of the main spillway and radial gates, reconstruction and strengthening of the embankment dam, and construction of an emergency spillway and a permanent irrigation intake.",
-      "p3": "Additional works include the rehabilitation of the right abutment and guide wall, installation of dam instrumentation and monitoring systems, and coordination with the Shire Valley Transformation Programme.",
-      "p4": "Infra Construction is currently preparing its technical and financial proposals in accordance with the project requirements. Follow Infra Construction for updates on the tender and its progress.",
-      "description": "Tender participation for the rehabilitation and strengthening of Kapichira Dam in Malawi, covering spillway rehabilitation, embankment strengthening, irrigation infrastructure, and dam monitoring systems.",
-      "country": "Mozambique",
-      "ProjectType": "Dam Rehabilitation and Strengthening",
-      "sector": "Infrastructure",
-      "ContractorRole": "Tender Participant – Technical and Financial Proposal Preparation",
-      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791841111136-1790585771780.webp"
     }
   },
   "media": [
+    {
+      "id": "1791841811021",
+      "title": "1790245782841.webp",
+      "alt": "1790245782841.webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791841810540-1790245782841.webp",
+      "source": "upload",
+      "createdAt": "2026-10-12T21:50:11.021Z"
+    },
     {
       "id": "1791841111609",
       "title": "1790585771780.webp",
