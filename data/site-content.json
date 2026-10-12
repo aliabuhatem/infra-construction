@@ -1139,7 +1139,7 @@
       "title": "Amman Sustainable Slaughterhouse Project – Jordan",
       "country": "Jordan",
       "sector": "Infrastructure",
-      "type": "Civil Works",
+      "type": "Sustainable Slaughterhouse Development",
       "description": "Large-scale stormwater drainage system to mitigate flooding and improve urban infrastructure resilience.",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791841810540-1790245782841.webp",
       "slug": "amman-sustainable-slaughterhouse-project-jordan",
@@ -1717,6 +1717,24 @@
       "p4": "We bring adaptability, inclusivity, and effective execution to construction projects across different cultural and operational contexts, enabling us to deliver professional construction management services in diverse markets.",
       "category": "Business Development",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790444111544-505527928_1317357153727981_4370540372016006484_n.jpg"
+    },
+    "project_24": {
+      "title": "ISCED Huambo Academic Infrastructure Development Project – Angola",
+      "slug": "isced-huambo-academic-infrastructure-development-angola",
+      "h1": "ISCED Huambo Academic Infrastructure Development Project in Angola",
+      "h2": "Developing Educational Infrastructure in Huambo",
+      "h3": "Academic Buildings and Integrated Educational Facilities",
+      "h4": "Technical Assessment and Proposal Preparation",
+      "excerpt": "Infra Construction is conducting a technical review of its proposal for the ISCED Huambo Academic Infrastructure Development Project in Angola. Funded by the World Bank and overseen by Angola’s Ministry of Higher Education, Science, Technology and Innovation, the project aims to develop an integrated educational complex in Huambo Province.",
+      "description": "Technical review and proposal preparation for the ISCED Huambo Academic Infrastructure Development Project in Angola, a World Bank-funded educational infrastructure initiative overseen by Angola’s Ministry of Higher Education, Science, Technology and Innovation.",
+      "p1": "Infra Construction is currently conducting an in-depth technical review of its proposal for the ISCED Huambo Academic Infrastructure Development Project in Huambo Province, Angola. The opportunity marks a step toward expanding the company’s presence in West Africa and exploring new markets for infrastructure development.",
+      "p2": "Funded by the World Bank and overseen by Angola’s Ministry of Higher Education, Science, Technology and Innovation, the project aims to develop an integrated educational complex comprising academic buildings and supporting facilities designed to serve students and educational institutions over the long term.",
+      "p3": "The project aligns with Infra Construction’s growing experience in construction and educational infrastructure, while supporting its broader strategy to expand its regional presence, establish new business relationships, and pursue infrastructure opportunities across African markets.",
+      "p4": "The technical assessment and proposal evaluation are currently ongoing ahead of finalizing and submitting the proposal within the required timeframe. Follow Infra Construction as it continues to explore opportunities across Africa, one project at a time.",
+      "country": "Angola",
+      "ContractorRole": "Prospective Contractor – Technical Assessment and Proposal Preparation",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791842678622-1787567613530.webp",
+      "sector": "Infrastructure"
     }
   },
   "media": [
@@ -2669,7 +2687,6 @@
     "project_taiz_power_maintenance",
     "project_abyan_corniche",
     "project_aden_causeway",
-    "project_24",
     "news_1",
     "svc_building_information_modelling",
     "svc_contract_administration",
