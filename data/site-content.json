@@ -1135,6 +1135,26 @@
       "ProjectType": "Dam Rehabilitation and Strengthening",
       "ContractorRole": "Tender Participant – Technical and Financial Proposal Preparation"
     },
+    "project_23": {
+      "title": "Amman Sustainable Slaughterhouse Project – Jordan",
+      "country": "Jordan",
+      "sector": "Infrastructure",
+      "type": "Civil Works",
+      "description": "Large-scale stormwater drainage system to mitigate flooding and improve urban infrastructure resilience.",
+      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791841810540-1790245782841.webp",
+      "slug": "amman-sustainable-slaughterhouse-project-jordan",
+      "p1": "Infra Construction, in partnership with STBM, has successfully passed the qualification stage and been shortlisted to submit a proposal for the Amman Sustainable Slaughterhouse Project, under the Greater Amman Municipality in Jordan.",
+      "p2": "The project brings together Infra Construction’s expertise in engineering and infrastructure with STBM’s specialized experience in the design, construction, and operation of slaughterhouses, combining complementary capabilities to address the project’s requirements.",
+      "p3": "This milestone represents another step in Infra Construction’s involvement in infrastructure development and public-private partnership (PPP) projects, reinforcing its participation in opportunities that bring together engineering expertise and specialized operational capabilities.",
+      "p4": "The partnership is currently preparing the technical and financial proposal and reviewing the project requirements ahead of submission. Follow Infra Construction for updates on the project’s progress.",
+      "h1": "Amman Sustainable Slaughterhouse Project in Jordan",
+      "h2": "Project Overview and Strategic Partnership",
+      "h3": "Sustainable Slaughterhouse Design, Construction, and Operation",
+      "h4": "Technical and Financial Proposal Preparation",
+      "excerpt": "Infra Construction and STBM have successfully passed the qualification stage and been shortlisted to submit a proposal for the Amman Sustainable Slaughterhouse Project under the Greater Amman Municipality. The partnership combines engineering and infrastructure expertise with specialized slaughterhouse design, construction, and operational experience.",
+      "ProjectType": "Sustainable Slaughterhouse Development",
+      "ContractorRole": "Joint Venture / Partnership – Shortlisted Tender Participant (Infra Construction and STBM)"
+    },
     "news_2": {
       "title": "A Strategic Step Toward Kuwait: INFRA Explores Market Expansion Opportunities",
       "date": "Jun 2026",
@@ -1697,27 +1717,18 @@
       "p4": "We bring adaptability, inclusivity, and effective execution to construction projects across different cultural and operational contexts, enabling us to deliver professional construction management services in diverse markets.",
       "category": "Business Development",
       "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1790444111544-505527928_1317357153727981_4370540372016006484_n.jpg"
-    },
-    "project_23": {
-      "title": "Amman Sustainable Slaughterhouse Project – Jordan",
-      "slug": "amman-sustainable-slaughterhouse-project-jordan",
-      "p1": "Infra Construction, in partnership with STBM, has successfully passed the qualification stage and been shortlisted to submit a proposal for the Amman Sustainable Slaughterhouse Project, under the Greater Amman Municipality in Jordan.",
-      "p2": "The project brings together Infra Construction’s expertise in engineering and infrastructure with STBM’s specialized experience in the design, construction, and operation of slaughterhouses, combining complementary capabilities to address the project’s requirements.",
-      "p3": "This milestone represents another step in Infra Construction’s involvement in infrastructure development and public-private partnership (PPP) projects, reinforcing its participation in opportunities that bring together engineering expertise and specialized operational capabilities.",
-      "p4": "The partnership is currently preparing the technical and financial proposal and reviewing the project requirements ahead of submission. Follow Infra Construction for updates on the project’s progress.",
-      "h1": "Amman Sustainable Slaughterhouse Project in Jordan",
-      "h2": "Project Overview and Strategic Partnership",
-      "h3": "Sustainable Slaughterhouse Design, Construction, and Operation",
-      "h4": "Technical and Financial Proposal Preparation",
-      "excerpt": "Infra Construction and STBM have successfully passed the qualification stage and been shortlisted to submit a proposal for the Amman Sustainable Slaughterhouse Project under the Greater Amman Municipality. The partnership combines engineering and infrastructure expertise with specialized slaughterhouse design, construction, and operational experience.",
-      "sector": "Infrastructure",
-      "ProjectType": "Sustainable Slaughterhouse Development",
-      "country": "Jordan",
-      "image": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791841810540-1790245782841.webp",
-      "ContractorRole": "Joint Venture / Partnership – Shortlisted Tender Participant (Infra Construction and STBM)"
     }
   },
   "media": [
+    {
+      "id": "1791842679163",
+      "title": "1787567613530.webp",
+      "alt": "1787567613530.webp",
+      "category": "gallery",
+      "url": "https://1qh84idcziewtffi.public.blob.vercel-storage.com/media/1791842678622-1787567613530.webp",
+      "source": "upload",
+      "createdAt": "2026-10-12T22:04:39.163Z"
+    },
     {
       "id": "1791841811021",
       "title": "1790245782841.webp",
